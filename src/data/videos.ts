@@ -196,7 +196,7 @@ export const videos: Record<string, VideoClip> = {
   },
   happyBambiWild: {
     id: 'happy-bambi-wild',
-    title: 'ㄅㄆㄇ野生動物｜Wild Animals',
+    title: '野生動物｜Wild Animals',
     channel: '快樂斑比 HAPPY BAMBI',
     videoId: 'JCbxmXzOUho',
     start: 4,
@@ -205,7 +205,7 @@ export const videos: Record<string, VideoClip> = {
   },
   happyBambiSea: {
     id: 'happy-bambi-sea',
-    title: '海洋動物 ㄅㄆㄇ｜Sea Animals',
+    title: '海洋動物｜Sea Animals',
     channel: '快樂斑比 HAPPY BAMBI',
     videoId: 'JCbxmXzOUho',
     start: 607,

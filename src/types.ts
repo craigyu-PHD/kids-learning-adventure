@@ -58,10 +58,17 @@ export type CourseDay = {
   bonus: string;
 };
 
+export type FamilyUserRole = 'father' | 'mother' | 'caregiver' | 'child' | 'other';
+
 export type ChildProfile = {
   id: string;
   name: string;
   avatar: string;
+  role?: FamilyUserRole;
+  disabled?: boolean;
+  userPinHash?: string;
+  userPinSalt?: string;
+  userPinIterations?: number;
 };
 
 export type ChildProgress = {

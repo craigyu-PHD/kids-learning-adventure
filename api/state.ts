@@ -27,17 +27,17 @@ function familyNamespace(pin: string) {
   return createHmac('sha256', pepper).update(`kids-learning:${pin}`).digest('hex');
 }
 
-function familyPrefix(pin: string) {
-  return `families-v21/${familyNamespace(pin)}/`;
+function familyPrefix(pin: string, generation: 'v21' | 'v22' = 'v22') {
+  return `families-${generation}/${familyNamespace(pin)}/`;
 }
 
-async function latestBlob(pin: string) {
-  const result = await list({ prefix: familyPrefix(pin), limit: 200 });
+async function latestBlob(pin: string, generation: 'v21' | 'v22' = 'v22') {
+  const result = await list({ prefix: familyPrefix(pin, generation), limit: 200 });
   return result.blobs.sort((a, b) => b.uploadedAt.getTime() - a.uploadedAt.getTime())[0] ?? null;
 }
 
 async function readLatest(pin: string) {
-  const latest = await latestBlob(pin);
+  const latest = await latestBlob(pin, 'v22') ?? await latestBlob(pin, 'v21');
   if (!latest) return null;
   const result = await get(latest.pathname, { access: 'private' });
   if (!result || result.statusCode !== 200 || !result.stream) return null;
@@ -46,10 +46,16 @@ async function readLatest(pin: string) {
 }
 
 async function prune(pin: string) {
-  const result = await list({ prefix: familyPrefix(pin), limit: 200 });
+  const result = await list({ prefix: familyPrefix(pin, 'v22'), limit: 200 });
   const ordered = result.blobs.sort((a, b) => b.uploadedAt.getTime() - a.uploadedAt.getTime());
   const stale = ordered.slice(KEEP_SNAPSHOTS);
   if (stale.length) await del(stale.map((blob) => blob.url));
+}
+
+async function deleteV22Family(pin: string) {
+  const result = await list({ prefix: familyPrefix(pin, 'v22'), limit: 200 });
+  if (result.blobs.length) await del(result.blobs.map((blob) => blob.url));
+  return result.blobs.length;
 }
 
 function sanitizeSnapshot(payload: Record<string, unknown>) {
@@ -87,7 +93,7 @@ export default {
 
         const serverUpdatedAt = new Date().toISOString();
         const snapshot = { ...sanitizeSnapshot(payload), updatedAt: serverUpdatedAt };
-        const pathname = `${familyPrefix(pin)}${Date.now()}-${crypto.randomUUID()}.json`;
+        const pathname = `${familyPrefix(pin, 'v22')}${Date.now()}-${crypto.randomUUID()}.json`;
         await put(pathname, JSON.stringify(snapshot), {
           access: 'private',
           contentType: 'application/json; charset=utf-8',
@@ -96,6 +102,14 @@ export default {
         });
         await prune(pin);
         return json({ ok: true, updatedAt: serverUpdatedAt });
+      }
+
+      if (request.method === 'DELETE') {
+        if (request.headers.get('x-family-confirm') !== 'delete-v22-family-state') {
+          return json({ error: 'Explicit deletion confirmation required' }, 400);
+        }
+        const deleted = await deleteV22Family(pin);
+        return json({ ok: true, deleted });
       }
 
       return json({ error: 'Method not allowed' }, 405);

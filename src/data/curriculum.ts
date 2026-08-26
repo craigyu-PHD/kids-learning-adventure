@@ -22,7 +22,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['hello', 'hi', 'bye', 'yes', 'no', 'please', 'thank you', 'friend', 'teacher', 'family'],
     sentence: 'Hello! My name is ___.', videos: ['hello', 'follow', 'alphabet'],
     crossSubjects: ['Life', 'Math', 'Zhuyin', 'English', 'Review'],
-    crossTopics: ['輪流與打招呼', '數 1–5 位家人', 'ㄅㄆㄇ暖身', 'ABC 初體驗', '本週任務'],
+    crossTopics: ['輪流與打招呼', '數 1–5 位家人', '中文聲音暖身', 'ABC 初體驗', '本週任務'],
     younger: '只要求跟說單字或做動作，不要求完整句。', older: '鼓勵用完整句自我介紹，再問對方名字。',
     caregiverTip: '第一次使用時請大人先示範；孩子不回答也沒關係，先讓他模仿聲音與動作。', bonus: '全家互相用英文打招呼一次。'
   },
@@ -31,7 +31,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['red', 'yellow', 'green', 'blue', 'orange', 'purple', 'pink', 'circle', 'square', 'triangle'],
     sentence: 'It is ___.', videos: ['colors', 'happyBambiColors', 'follow'],
     crossSubjects: ['Math', 'English', 'Zhuyin', 'Life', 'Review'],
-    crossTopics: ['形狀分類', '找顏色', '顏色＋注音', '交通號誌', '彩虹複習'],
+    crossTopics: ['形狀分類', '找顏色', '顏色＋中文聲音', '交通號誌', '彩虹複習'],
     younger: '能指對顏色就算成功，再邀請說出英文。', older: '要求說 It is red / It is a circle，並加入兩個特徵。',
     caregiverTip: '每教 2–3 個顏色就暫停，立刻請孩子找家中同色物品。', bonus: '找出家中 5 種不同顏色。'
   },
@@ -40,7 +40,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['head', 'shoulders', 'knees', 'toes', 'eyes', 'ears', 'hands', 'feet', 'jump', 'turn'],
     sentence: 'Touch your ___.', videos: ['body', 'follow', 'happy'],
     crossSubjects: ['Science', 'Math', 'English', 'Zhuyin', 'Review'],
-    crossTopics: ['五官功能', '數手指腳趾', '動作指令', '身體部位注音', '動作王'],
+    crossTopics: ['五官功能', '數手指腳趾', '動作指令', '身體部位聲音', '動作王'],
     younger: '以「聽指令＋摸對部位」為主。', older: '輪流當小老師發指令，加入 left / right。',
     caregiverTip: '不要要求坐好；本週就是要站起來。用「先聽、再做、最後說」三步驟。', bonus: '玩 3 回合 Simon Says。'
   },
@@ -49,7 +49,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['mom', 'dad', 'brother', 'family', 'happy', 'sad', 'angry', 'tired', 'hug', 'love'],
     sentence: 'I am ___. / I love ___.', videos: ['happy', 'hello', 'body'],
     crossSubjects: ['Life', 'Zhuyin', 'Math', 'English', 'Review'],
-    crossTopics: ['辨認心情', '家人名字注音', '數家人', 'I am 句型', '感謝任務'],
+    crossTopics: ['辨認心情', '家人名字聲音', '數家人', 'I am 句型', '感謝任務'],
     younger: '用表情或指圖選 happy / sad 即可。', older: '說 I am happy because...，原因可先用中文補充。',
     caregiverTip: '不要糾正情緒答案；重點是把真實感受連到英文。', bonus: '睡前對一位家人說 Thank you。'
   },
@@ -58,7 +58,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['dog', 'cat', 'bird', 'fish', 'cow', 'pig', 'duck', 'lion', 'shark', 'insect'],
     sentence: 'I see a ___. / I have a ___.', videos: ['pets', 'farm', 'happyBambiWild'],
     crossSubjects: ['Science', 'Math', 'Zhuyin', 'English', 'Review'],
-    crossTopics: ['動物住哪裡', '動物數數', '動物ㄅㄆㄇ', '叫聲猜謎', '動物大挑戰'],
+    crossTopics: ['動物住哪裡', '動物數數', '動物聲音配對', '叫聲猜謎', '動物大挑戰'],
     younger: '看圖／聽叫聲後說單字。', older: '加入 It can... / It lives... 的描述。',
     caregiverTip: '讓兄弟輪流模仿動物，另一位猜；競賽只比「完成」，不要比誰比較會。', bonus: '畫一隻最喜歡的動物並說英文名。'
   },
@@ -76,7 +76,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['apple', 'banana', 'orange', 'grape', 'strawberry', 'broccoli', 'pizza', 'juice', 'ice cream', 'soup'],
     sentence: 'Do you like ___? Yes, I do. / No, I don’t.', videos: ['food', 'happyBambiColors', 'count20'],
     crossSubjects: ['Life', 'Math', 'Zhuyin', 'English', 'Review'],
-    crossTopics: ['健康食物', '水果數數', '水果ㄅㄆㄇ', '喜好問答', '小小市場'],
+    crossTopics: ['健康食物', '水果數數', '水果聲音配對', '喜好問答', '小小市場'],
     younger: '回答 Yes / No 再說食物名稱。', older: '完整問答並加入 I like / I don’t like。',
     caregiverTip: '如果家裡剛好有影片中的食物，直接拿出來；實物比再看一次影片更有效。', bonus: '明天早餐前說出 3 個食物英文。'
   },
@@ -94,7 +94,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['home', 'room', 'bed', 'table', 'chair', 'toy', 'book', 'clean', 'open', 'close'],
     sentence: 'This is my ___. / Clean up, please.', videos: ['cleanup', 'follow', 'hello'],
     crossSubjects: ['Life', 'Math', 'Zhuyin', 'English', 'Review'],
-    crossTopics: ['整理玩具', '家具形狀', '家用品注音', '房間尋寶', '好習慣任務'],
+    crossTopics: ['整理玩具', '家具形狀', '家用品聲音', '房間尋寶', '好習慣任務'],
     younger: '聽懂 clean up / open / close 並做動作。', older: '用 This is my... 帶大家介紹一個房間。',
     caregiverTip: '第二節最後直接做 3 分鐘真正整理，不要把「生活課」變成只看影片。', bonus: '自己收好今天使用的教材。'
   },
@@ -103,7 +103,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['car', 'bus', 'train', 'bike', 'go', 'stop', 'school', 'park', 'store', 'road'],
     sentence: 'I go to ___ by ___.', videos: ['car', 'colors', 'follow'],
     crossSubjects: ['Life', 'Math', 'English', 'Zhuyin', 'Review'],
-    crossTopics: ['交通安全', '數車輪', 'go/stop 指令', '交通工具注音', '城市地圖'],
+    crossTopics: ['交通安全', '數車輪', 'go/stop 指令', '交通工具聲音', '城市地圖'],
     younger: '說交通工具單字＋模仿聲音。', older: '說 I go to school by car 等完整句。',
     caregiverTip: '可拿玩具車排成道路；讓孩子自己設計紅綠燈規則。', bonus: '明天出門時找 3 種交通工具。'
   },
@@ -112,7 +112,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['sun', 'moon', 'star', 'sky', 'tree', 'flower', 'water', 'mountain', 'big', 'small'],
     sentence: 'I see a ___. It is ___.', videos: ['mountains', 'weather', 'colors'],
     crossSubjects: ['Science', 'Math', 'Zhuyin', 'English', 'Review'],
-    crossTopics: ['自然觀察', '大小比較', '自然ㄅㄆㄇ', 'I see 句型', '戶外賓果'],
+    crossTopics: ['自然觀察', '大小比較', '自然聲音配對', 'I see 句型', '戶外賓果'],
     younger: '找到並說出 3 個自然物。', older: '用顏色＋大小＋名詞組成描述。',
     caregiverTip: '如果方便，這週至少一次把課程移到陽台、窗邊或戶外。', bonus: '找一片葉子，回家描述顏色與大小。'
   },
@@ -121,7 +121,7 @@ const weekPlans: WeekPlan[] = [
     vocab: ['A apple', 'B ball', 'C cat', 'D dog', 'E egg', 'F fish', 'G grape', 'H hat', 'I ice', 'J juice'],
     sentence: 'A is for apple.', videos: ['alphabet', 'phonics', 'food'],
     crossSubjects: ['English', 'Math', 'Zhuyin', 'Life', 'Review'],
-    crossTopics: ['A–E', 'F–J', '英注符號比較', '字母尋寶', 'A–M 複習'],
+    crossTopics: ['A–E', 'F–J', '英中聲音比較', '字母尋寶', 'A–M 複習'],
     younger: '先認大寫字母＋代表圖像。', older: '加入小寫字母與最基本的字首音。',
     caregiverTip: '不要一次要求背 13 個；每天只鎖定 2–3 個，再從舊字母中穿插辨認。', bonus: '在包裝或書上找到 5 個英文字母。'
   },
@@ -130,25 +130,25 @@ const weekPlans: WeekPlan[] = [
     vocab: ['N nose', 'O orange', 'P pig', 'Q queen', 'R red', 'S sun', 'T toy', 'U umbrella', 'V van', 'W water'],
     sentence: '___ is for ___.', videos: ['phonics', 'alphabet', 'colors'],
     crossSubjects: ['English', 'Math', 'Zhuyin', 'Life', 'Review'],
-    crossTopics: ['N–R', 'S–W', 'X–Z＋注音比較', 'ABC 排序', 'A–Z 闖關'],
+    crossTopics: ['N–R', 'S–W', 'X–Z＋中文聲音比較', 'ABC 排序', 'A–Z 闖關'],
     younger: '以圖像配對字母為主。', older: '說出字首音並試找另一個同音開頭單字。',
     caregiverTip: '孩子把字母名稱和音混在一起很正常；V1 目標是熟悉，不做正式 phonics 測驗。', bonus: '一起唱一遍 ABC，不要求完全跟上。'
   },
   {
-    title: 'ㄅㄆㄇ雙語橋', emoji: '🌉', bigIdea: '利用熟悉的中文詞與英文主題建立符號敏感度，不互相混成考試。',
-    vocab: ['ㄅ ball', 'ㄆ pig', 'ㄇ moon', 'ㄈ fish', 'ㄉ dog', 'ㄊ toy', 'ㄋ nose', 'ㄌ lion', 'ㄍ grape', 'ㄎ cat'],
+    title: '中英聲音橋', emoji: '🌉', bigIdea: '利用熟悉的中文詞與英文主題建立聲音敏感度，不互相混成考試。',
+    vocab: ['ball 球', 'pig 豬', 'moon 月亮', 'fish 魚', 'dog 狗', 'toy 玩具', 'nose 鼻子', 'lion 獅子', 'grape 葡萄', 'cat 貓'],
     sentence: '這個詞從哪個聲音開始？', videos: ['happyBambiWild', 'happyBambiSea', 'alphabet'],
     crossSubjects: ['Zhuyin', 'English', 'Zhuyin', 'Math', 'Review'],
-    crossTopics: ['ㄅ–ㄈ', '英文聲音比較', 'ㄉ–ㄏ', '符號配對', '雙語挑戰'],
-    younger: '聽聲音、跟念、找圖片。', older: '嘗試把熟悉詞語拆出第一個注音符號。',
-    caregiverTip: '中文注音與英文 phonics 分開教；可以比較，但不要說它們「是一樣的」。', bonus: '從家人名字找出一個注音開頭。'
+    crossTopics: ['中文開頭聲音', '英文聲音比較', '聽音找圖', '聲音配對', '雙語挑戰'],
+    younger: '聽聲音、跟念、找圖片。', older: '嘗試把熟悉詞語拆出第一個聲音。',
+    caregiverTip: '中文語音與英文 phonics 分開練習；可以比較，但不要說它們「是一樣的」。', bonus: '從家人名字找出一個中文開頭聲音。'
   },
   {
     title: '恐龍、海洋與太空', emoji: '🦕', bigIdea: '用高興趣主題承載舊單字：大小、顏色、數量、動作。',
     vocab: ['dinosaur', 'shark', 'fish', 'ocean', 'space', 'moon', 'star', 'rocket', 'big', 'fast'],
     sentence: 'It is a ___. It is big / fast.', videos: ['happyBambiSea', 'happyBambiWild', 'mountains'],
     crossSubjects: ['Science', 'Math', 'English', 'Zhuyin', 'Review'],
-    crossTopics: ['海洋生物', '數恐龍', '大小速度描述', '主題注音', '探險家考驗'],
+    crossTopics: ['海洋生物', '數恐龍', '大小速度描述', '主題聲音', '探險家考驗'],
     younger: '先用動作表現 big / fast，再說單字。', older: '嘗試比較：The shark is bigger。',
     caregiverTip: '這週可允許孩子主導：先問「你想知道什麼？」再帶著問題看影片。', bonus: '設計自己的太空生物並取英文名字。'
   },
@@ -172,7 +172,7 @@ const weekPlans: WeekPlan[] = [
   },
   {
     title: '星際總複習與畢業任務', emoji: '🏆', bigIdea: '用遊戲完成全學期回顧，讓孩子感受到「我做得到」。',
-    vocab: ['hello', 'colors', 'body', 'family', 'animals', 'numbers', 'food', 'weather', 'ABC', 'ㄅㄆㄇ'],
+    vocab: ['hello', 'colors', 'body', 'family', 'animals', 'numbers', 'food', 'weather', 'ABC', '中文聲音'],
     sentence: 'I can learn and play in English!', videos: ['hello', 'follow', 'happy'],
     crossSubjects: ['Review', 'Math', 'English', 'Zhuyin', 'Review'],
     crossTopics: ['十主題快閃', '數字與分類', '英文任務', '符號任務', '畢業派對'],

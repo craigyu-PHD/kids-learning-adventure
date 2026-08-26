@@ -49,10 +49,7 @@ export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = fa
   return (
     <div className={`avatar-hero avatar-photo-hero avatar-${id} stage-${stage}`} style={style} title={`${option.name} · Level ${level}`}>
       <span className="avatar-photo-glow" aria-hidden="true" />
-      <img src={imageSrc} alt={`${option.name}，第 ${stage} 階`} loading="lazy" decoding="async" />
-      {stage >= 2 && <span className="avatar-evolution-badge evolution-two">Ⅱ</span>}
-      {stage >= 3 && <span className="avatar-evolution-badge evolution-three">✦</span>}
-      {stage >= 4 && <span className="avatar-evolution-badge evolution-four">★</span>}
+      <img src={imageSrc} alt={option.name} loading="lazy" decoding="async" />
       {showStage && <span className="avatar-stage-label">進化 {stage}/4</span>}
     </div>
   );
