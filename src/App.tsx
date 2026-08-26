@@ -12,6 +12,8 @@ import {
   CloudOff,
   Coins,
   Copy,
+  KeyRound,
+  LogOut,
   ExternalLink,
   Gift,
   GraduationCap,
@@ -33,8 +35,9 @@ import {
 import { curriculum, semesterStats, weekSummaries } from './data/curriculum';
 import { youtubeChannelLinks } from './data/videos';
 import AvatarHero, { avatarName, avatarOptions, normalizeAvatarId } from './components/AvatarHero';
+import AnimatedBadge from './components/AnimatedBadge';
 import PhoneticText from './components/PhoneticText';
-import { generateFamilyCode, loadCloudSnapshot, normalizeFamilyCode, saveCloudSnapshot } from './cloud';
+import { loadCloudSnapshot, normalizeFamilyPin, saveCloudSnapshot, validFamilyPin } from './cloud';
 import {
   avatarStageFromXp,
   BLOCK_REWARD,
@@ -66,6 +69,19 @@ const SETTINGS_KEY = 'star-learning-settings-v1';
 const PROGRESS_KEY = 'star-learning-progress-v1';
 const ATTENDANCE_KEY = 'star-learning-attendance-v1';
 const REFLECTION_KEY = 'star-learning-reflections-v1';
+const ACTIVE_PIN_KEY = 'star-learning-active-family-pin-v21';
+
+const familyStorageKey = (pin: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections') =>
+  `star-learning-v21:${pin}:${kind}`;
+
+function hasLegacyLocalData() {
+  return Boolean(
+    localStorage.getItem(SETTINGS_KEY)
+    || localStorage.getItem(PROGRESS_KEY)
+    || localStorage.getItem(ATTENDANCE_KEY)
+    || localStorage.getItem(REFLECTION_KEY),
+  );
+}
 
 const defaultSettings: AppSettings = {
   theme: 'system',
@@ -110,10 +126,17 @@ function normalizeSettings(raw?: Partial<AppSettings> | null): AppSettings {
     semesterStart: raw?.semesterStart || defaultSettings.semesterStart,
     children,
     cloudSync: {
-      enabled: Boolean(raw?.cloudSync?.enabled && raw?.cloudSync?.familyCode),
-      familyCode: normalizeFamilyCode(raw?.cloudSync?.familyCode ?? ''),
+      enabled: Boolean(raw?.cloudSync?.enabled),
+      familyCode: String(raw?.cloudSync?.familyCode ?? '').slice(0, 24),
     },
   };
+}
+
+function loadFamilyValue<T>(pin: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections', legacyKey: string, fallback: T): T {
+  const namespaced = safeLoad<T>(familyStorageKey(pin, kind), fallback);
+  if (localStorage.getItem(familyStorageKey(pin, kind))) return namespaced;
+  if (pin === '1234' && hasLegacyLocalData()) return safeLoad<T>(legacyKey, fallback);
+  return fallback;
 }
 
 function normalizeProgressMap(raw: AppProgress | undefined, children: ChildProfile[]) {
@@ -163,7 +186,8 @@ function youtubeEmbedUrl(clip: VideoClip) {
 }
 
 function snapshotNow(settings: AppSettings, progress: AppProgress, attendance: AttendanceMap, reflections: ReflectionMap): CloudSnapshot {
-  return { version: 2, updatedAt: new Date().toISOString(), settings, progress, attendance, reflections };
+  const cloudSafeSettings = { ...settings, cloudSync: { enabled: true, familyCode: '' } };
+  return { version: 2, updatedAt: new Date().toISOString(), settings: cloudSafeSettings, progress, attendance, reflections };
 }
 
 function ProgressBar({ value, max = 100 }: { value: number; max?: number }) {
@@ -218,17 +242,21 @@ function CloudPill({ status }: { status: CloudStatus }) {
   return <span className={`cloud-pill cloud-${status}`}>{status === 'local' || status === 'error' ? <CloudOff size={14} /> : <Cloud size={14} />}{label}</span>;
 }
 
-function App() {
-  const initialSettings = useMemo(() => normalizeSettings(safeLoad<Partial<AppSettings>>(SETTINGS_KEY, defaultSettings)), []);
+function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: string; onSwitchFamily: () => void; onOpenFamily: (pin: string) => void }) {
+  const initialSettings = useMemo(() => {
+    const raw = loadFamilyValue<Partial<AppSettings>>(familyPin, 'settings', SETTINGS_KEY, defaultSettings);
+    const normalized = normalizeSettings(raw);
+    return { ...normalized, cloudSync: { enabled: true, familyCode: familyPin } };
+  }, [familyPin]);
   const [settings, setSettings] = useState<AppSettings>(initialSettings);
-  const [progress, setProgress] = useState<AppProgress>(() => normalizeProgressMap(safeLoad<AppProgress>(PROGRESS_KEY, {}), initialSettings.children));
-  const [attendance, setAttendance] = useState<AttendanceMap>(() => safeLoad<AttendanceMap>(ATTENDANCE_KEY, {}));
-  const [reflections, setReflections] = useState<ReflectionMap>(() => safeLoad<ReflectionMap>(REFLECTION_KEY, {}));
+  const [progress, setProgress] = useState<AppProgress>(() => normalizeProgressMap(loadFamilyValue<AppProgress>(familyPin, 'progress', PROGRESS_KEY, {}), initialSettings.children));
+  const [attendance, setAttendance] = useState<AttendanceMap>(() => loadFamilyValue<AttendanceMap>(familyPin, 'attendance', ATTENDANCE_KEY, {}));
+  const [reflections, setReflections] = useState<ReflectionMap>(() => loadFamilyValue<ReflectionMap>(familyPin, 'reflections', REFLECTION_KEY, {}));
   const [view, setView] = useState<'home' | 'semester' | 'settings'>('home');
   const [selectedDayId, setSelectedDayId] = useState<string | null>(null);
-  const [cloudStatus, setCloudStatus] = useState<CloudStatus>(initialSettings.cloudSync.enabled ? 'loading' : 'local');
-  const [cloudMessage, setCloudMessage] = useState('');
-  const [cloudReady, setCloudReady] = useState(!initialSettings.cloudSync.enabled);
+  const [cloudStatus, setCloudStatus] = useState<CloudStatus>('loading');
+  const [cloudMessage, setCloudMessage] = useState('正在辨識家庭 PIN…');
+  const [cloudReady, setCloudReady] = useState(false);
   const [lastCloudSync, setLastCloudSync] = useState('');
   const [rewardToast, setRewardToast] = useState<RewardToast>(null);
   const [bursts, setBursts] = useState<ClickBurst[]>([]);
@@ -239,10 +267,10 @@ function App() {
     setProgress((current) => normalizeProgressMap(current, settings.children));
   }, [settings.children]);
 
-  useEffect(() => localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings)), [settings]);
-  useEffect(() => localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress)), [progress]);
-  useEffect(() => localStorage.setItem(ATTENDANCE_KEY, JSON.stringify(attendance)), [attendance]);
-  useEffect(() => localStorage.setItem(REFLECTION_KEY, JSON.stringify(reflections)), [reflections]);
+  useEffect(() => localStorage.setItem(familyStorageKey(familyPin, 'settings'), JSON.stringify(settings)), [settings, familyPin]);
+  useEffect(() => localStorage.setItem(familyStorageKey(familyPin, 'progress'), JSON.stringify(progress)), [progress, familyPin]);
+  useEffect(() => localStorage.setItem(familyStorageKey(familyPin, 'attendance'), JSON.stringify(attendance)), [attendance, familyPin]);
+  useEffect(() => localStorage.setItem(familyStorageKey(familyPin, 'reflections'), JSON.stringify(reflections)), [reflections, familyPin]);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -288,27 +316,28 @@ function App() {
     window.setTimeout(() => setCloudReady(true), 0);
   };
 
-  const pullCloud = async (code: string, force = true) => {
-    const normalized = normalizeFamilyCode(code);
-    if (normalized.length < 10) {
+  const pullCloud = async (pin: string, force = true) => {
+    const normalized = normalizeFamilyPin(pin);
+    if (!validFamilyPin(normalized)) {
       setCloudStatus('error');
-      setCloudMessage('同步碼至少需要 10 碼。');
+      setCloudMessage('家庭 PIN 必須是 4–6 位數字。');
       return false;
     }
     setCloudStatus('loading');
-    setCloudMessage('正在讀取家庭雲端進度…');
+    setCloudMessage('正在讀取這個家庭的雲端進度…');
     try {
       const snapshot = await loadCloudSnapshot(normalized);
       if (!snapshot) {
         setCloudStatus('error');
-        setCloudMessage('找不到這組家庭同步碼，請確認輸入是否正確。');
+        setCloudMessage('這組 PIN 尚未建立雲端資料。');
         return false;
       }
       if (force || !cloudUpdatedAtRef.current || new Date(snapshot.updatedAt) > new Date(cloudUpdatedAtRef.current)) {
         applyCloudSnapshot(snapshot, normalized);
       }
+      setCloudReady(true);
       setCloudStatus('synced');
-      setCloudMessage('已載入最新家庭進度。');
+      setCloudMessage('已載入這個家庭的最新進度。');
       return true;
     } catch (error) {
       setCloudStatus('error');
@@ -320,15 +349,21 @@ function App() {
   useEffect(() => {
     if (!initialSettings.cloudSync.enabled || !initialSettings.cloudSync.familyCode) return;
     void (async () => {
-      const snapshot = await loadCloudSnapshot(initialSettings.cloudSync.familyCode).catch(() => null);
-      if (snapshot) {
-        applyCloudSnapshot(snapshot, initialSettings.cloudSync.familyCode);
-        setCloudStatus('synced');
-        setCloudMessage('啟動時已讀取雲端進度。');
-      } else {
-        setCloudReady(true);
-        setCloudStatus('saving');
-        setCloudMessage('第一次建立雲端副本…');
+      try {
+        const snapshot = await loadCloudSnapshot(initialSettings.cloudSync.familyCode);
+        if (snapshot) {
+          applyCloudSnapshot(snapshot, initialSettings.cloudSync.familyCode);
+          setCloudStatus('synced');
+          setCloudMessage('啟動時已讀取雲端進度。');
+        } else {
+          setCloudReady(true);
+          setCloudStatus('saving');
+          setCloudMessage('雲端尚無資料，正在建立第一份副本…');
+        }
+      } catch (error) {
+        setCloudReady(false);
+        setCloudStatus('error');
+        setCloudMessage(error instanceof Error ? `${error.message}；為避免覆寫雲端，本機暫停自動上傳。` : '啟動時無法讀取雲端；為避免覆寫，本機暫停自動上傳。');
       }
     })();
     // Initial bootstrap is intentionally one-time.
@@ -364,19 +399,6 @@ function App() {
     return () => document.removeEventListener('visibilitychange', onVisible);
   }, [settings.cloudSync.enabled, settings.cloudSync.familyCode]);
 
-  const enableCloud = () => {
-    const code = settings.cloudSync.familyCode || generateFamilyCode();
-    setCloudReady(true);
-    setSettings((current) => ({ ...current, cloudSync: { enabled: true, familyCode: code } }));
-    setCloudStatus('saving');
-    setCloudMessage('已建立家庭同步碼，正在上傳本機進度。');
-  };
-
-  const connectCloud = async (code: string) => {
-    const ok = await pullCloud(code, true);
-    if (ok) setView('home');
-  };
-
   const syncNow = async () => {
     const code = settings.cloudSync.familyCode;
     if (!code) return;
@@ -385,19 +407,13 @@ function App() {
       const response = await saveCloudSnapshot(code, snapshotNow(settings, progress, attendance, reflections));
       cloudUpdatedAtRef.current = response.updatedAt;
       setLastCloudSync(response.updatedAt);
+      setCloudReady(true);
       setCloudStatus('synced');
-      setCloudMessage('手動同步完成。');
+      setCloudMessage('手動同步完成，已恢復自動同步。');
     } catch (error) {
       setCloudStatus('error');
       setCloudMessage(error instanceof Error ? error.message : '手動同步失敗');
     }
-  };
-
-  const disableCloud = () => {
-    setSettings((current) => ({ ...current, cloudSync: { ...current.cloudSync, enabled: false } }));
-    setCloudStatus('local');
-    setCloudMessage('已切換成本機模式；雲端既有資料不會刪除。');
-    setCloudReady(true);
   };
 
   const selectedDay = selectedDayId ? curriculum.find((day) => day.id === selectedDayId) ?? null : null;
@@ -431,16 +447,27 @@ function App() {
   };
 
   const toggleMission = (childId: string, mission: LessonBlock['missions'][number]) => {
-    const before = progress[childId] ?? emptyProgress();
+    const before = normalizeProgress(progress[childId]);
     const done = before.completedMissions.includes(mission.id);
+    const parentDay = curriculum.find((day) => day.blocks.some((block) => block.missions.some((item) => item.id === mission.id)));
+    const parentBlock = parentDay?.blocks.find((block) => block.missions.some((item) => item.id === mission.id));
     setProgress((current) => {
       const child = normalizeProgress(current[childId]);
       const isDone = child.completedMissions.includes(mission.id);
+      if (!isDone) {
+        return { ...current, [childId]: { ...child, completedMissions: [...child.completedMissions, mission.id] } };
+      }
+
+      const nextMissions = child.completedMissions.filter((id) => id !== mission.id);
+      const nextBlocks = parentBlock ? child.completedBlocks.filter((id) => id !== parentBlock.id) : child.completedBlocks;
+      const nextDays = parentDay ? child.completedDays.filter((id) => id !== parentDay.id) : child.completedDays;
       return {
         ...current,
         [childId]: {
           ...child,
-          completedMissions: isDone ? child.completedMissions.filter((id) => id !== mission.id) : [...child.completedMissions, mission.id],
+          completedMissions: nextMissions,
+          completedBlocks: nextBlocks,
+          completedDays: nextDays,
         },
       };
     });
@@ -519,7 +546,9 @@ function App() {
           <span><strong>星際共學基地</strong><small>Family Learning Mission · V2</small></span>
         </button>
         <nav className="top-actions">
-          {settings.cloudSync.enabled && <CloudPill status={cloudStatus} />}
+          <CloudPill status={cloudStatus} />
+          <span className="family-pin-chip"><KeyRound size={14} /> 家庭 {familyPin}</span>
+          <button className="nav-button switch-family-button" onClick={onSwitchFamily} title="切換家庭"><LogOut size={17} /><span>切換家庭</span></button>
           <button className="nav-button" onClick={cycleTheme} title="切換顯示模式">
             {settings.theme === 'dark' ? <Moon size={18} /> : settings.theme === 'light' ? <Sun size={18} /> : <Monitor size={18} />}
           </button>
@@ -540,14 +569,14 @@ function App() {
             setProgress={setProgress}
             setAttendance={setAttendance}
             setReflections={setReflections}
+            familyPin={familyPin}
             cloudStatus={cloudStatus}
             cloudMessage={cloudMessage}
             lastCloudSync={lastCloudSync}
-            onEnableCloud={enableCloud}
-            onConnectCloud={connectCloud}
             onSyncNow={syncNow}
-            onPullCloud={() => pullCloud(settings.cloudSync.familyCode, true)}
-            onDisableCloud={disableCloud}
+            onPullCloud={() => pullCloud(familyPin, true)}
+            onSwitchFamily={onSwitchFamily}
+            onOpenFamily={onOpenFamily}
             goHome={() => setView('home')}
           />
         )}
@@ -597,11 +626,11 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
       <section className="hero-card v2-hero">
         <div className="hero-copy">
           <div className="pill"><Sparkles size={15} /> V2 · 18 週家庭共學任務</div>
-          <h1>今晚不用備課，<br /><span>一起唱、一起玩、一起變強。</span></h1>
+          <h1><PhoneticText text="今晚不用備課" />，<br /><span><PhoneticText text="一起唱、一起玩、一起變強" />。</span></h1>
           <p>每節先用孩子喜歡的食物歌開機，再由爸爸、媽媽或照顧者控制影片節奏。暫停、複誦、回看、找東西、動起來，全部都寫在教案裡。</p>
           <div className="hero-actions">
-            <button className="primary-button" onClick={() => openDay(featuredDay)}><PlayCircle size={20} /> {todayDay ? '開始今天課程' : `繼續 Day ${featuredDay.index}`}</button>
-            <button className="secondary-button" onClick={goSemester}><BookOpen size={19} /> 看完整學期</button>
+            <button className="primary-button" onClick={() => openDay(featuredDay)}><PlayCircle size={20} /> <PhoneticText text={todayDay ? '開始今天課程' : '繼續課程'} />{!todayDay && ` Day ${featuredDay.index}`}</button>
+            <button className="secondary-button" onClick={goSemester}><BookOpen size={19} /> <PhoneticText text="看完整學期" /></button>
           </div>
           {settings.cloudSync.enabled && <div className="hero-cloud-line"><Cloud size={15} /> {cloudStatus === 'synced' ? '家庭進度已在雲端同步' : '家庭雲端同步已啟用'}</div>}
         </div>
@@ -614,18 +643,18 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
 
       <section className="dashboard-grid compact-dashboard">
         <article className="mission-card today-card">
-          <div className="card-heading"><div><span className="eyebrow">{todayDay ? 'TODAY MISSION' : 'NEXT MISSION'}</span><h2>{featuredDay.emoji} Day {featuredDay.index}｜{featuredDay.title}</h2></div><span className="date-chip">{formatCourseDate(addCourseWeekdays(settings.semesterStart, featuredDay.index - 1))}</span></div>
+          <div className="card-heading"><div><span className="eyebrow">{todayDay ? 'TODAY MISSION' : 'NEXT MISSION'}</span><h2>{featuredDay.emoji} <PhoneticText text={`Day ${featuredDay.index}｜${featuredDay.title}`} /></h2></div><span className="date-chip">{formatCourseDate(addCourseWeekdays(settings.semesterStart, featuredDay.index - 1))}</span></div>
           <p>{featuredDay.bigIdea}</p>
           <div className="lesson-preview-row">{featuredDay.blocks.map((block, i) => <div className="lesson-preview" key={block.id}><span>第 {i + 1} 節 · 約 {block.duration} 分鐘</span><strong>{block.title}</strong><SubjectBadge subject={block.subject} /></div>)}</div>
-          <button className="primary-button full" onClick={() => openDay(featuredDay)}>進入教案 <ChevronRight size={18} /></button>
+          <button className="primary-button full" onClick={() => openDay(featuredDay)}><PhoneticText text="進入教案" /> <ChevronRight size={18} /></button>
         </article>
 
         <article className="mission-card progress-card">
-          <div className="card-heading"><div><span className="eyebrow">SEMESTER PROGRESS</span><h2>Level {level} 家庭探險隊</h2></div><Trophy size={28} /></div>
+          <div className="card-heading"><div><span className="eyebrow">SEMESTER PROGRESS</span><h2><PhoneticText text={`Level ${level} 家庭探險隊`} /></h2></div><AnimatedBadge art="trophy" size={54} label="學期獎盃" /></div>
           <div className="big-number">{completionPct}<small>%</small></div>
           <ProgressBar value={completedDays} max={90} />
           <div className="progress-meta"><span>{completedDays} / 90 學習日</span><span>下一里程碑：{nextMilestone} 天</span></div>
-          <div className="milestone-row"><div className={completedDays >= 5 ? 'reached' : ''}><Star size={17} /> 5 天</div><div className={completedDays >= 30 ? 'reached' : ''}><Zap size={17} /> 30 天</div><div className={completedDays >= 60 ? 'reached' : ''}><Rocket size={17} /> 60 天</div><div className={completedDays >= 90 ? 'reached' : ''}><GraduationCap size={17} /> 90 天</div></div>
+          <div className="milestone-row rich-milestones"><div className={completedDays >= 5 ? 'reached' : ''}><AnimatedBadge art="star" size={38} /> <span>5 天</span></div><div className={completedDays >= 30 ? 'reached' : ''}><AnimatedBadge art="xp" size={38} /> <span>30 天</span></div><div className={completedDays >= 60 ? 'reached' : ''}><AnimatedBadge art="rocket" size={38} /> <span>60 天</span></div><div className={completedDays >= 90 ? 'reached' : ''}><AnimatedBadge art="trophy" size={38} /> <span>90 天</span></div></div>
         </article>
       </section>
 
@@ -733,7 +762,7 @@ function DayView({ day, date, settings, progress, participants, onBack, onToggle
 
         {day.blocks.map((block, blockIndex) => <LessonBlockView key={block.id} block={block} blockIndex={blockIndex} day={day} settings={settings} progress={progress} participants={participants} onToggleMission={onToggleMission} onToggleBlock={onToggleBlock} />)}
 
-        <section className="bonus-card"><div className="bonus-icon">🎁</div><div><span className="eyebrow">BONUS QUEST</span><h3>今日加碼任務</h3><p>{day.bonus}</p></div></section>
+        <section className="bonus-card"><div className="bonus-icon rich-bonus-icon"><AnimatedBadge art="treasure" size={58} /></div><div><span className="eyebrow">BONUS QUEST</span><h3><PhoneticText text="今日加碼任務" /></h3><p>{day.bonus}</p></div></section>
         <ReflectionPanel day={day} reflection={reflection} onUpdate={onUpdateReflection} />
       </main>
     </div>
@@ -824,7 +853,7 @@ function LessonBlockView({ block, blockIndex, day, settings, progress, participa
   );
 }
 
-function SettingsView({ settings, setSettings, progress, attendance, reflections, setProgress, setAttendance, setReflections, cloudStatus, cloudMessage, lastCloudSync, onEnableCloud, onConnectCloud, onSyncNow, onPullCloud, onDisableCloud, goHome }: {
+function SettingsView({ settings, setSettings, progress, attendance, reflections, setProgress, setAttendance, setReflections, familyPin, cloudStatus, cloudMessage, lastCloudSync, onSyncNow, onPullCloud, onSwitchFamily, onOpenFamily, goHome }: {
   settings: AppSettings;
   setSettings: Dispatch<SetStateAction<AppSettings>>;
   progress: AppProgress;
@@ -833,19 +862,20 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
   setProgress: Dispatch<SetStateAction<AppProgress>>;
   setAttendance: Dispatch<SetStateAction<AttendanceMap>>;
   setReflections: Dispatch<SetStateAction<ReflectionMap>>;
+  familyPin: string;
   cloudStatus: CloudStatus;
   cloudMessage: string;
   lastCloudSync: string;
-  onEnableCloud: () => void;
-  onConnectCloud: (code: string) => Promise<void>;
   onSyncNow: () => Promise<void>;
   onPullCloud: () => Promise<boolean>;
-  onDisableCloud: () => void;
+  onSwitchFamily: () => void;
+  onOpenFamily: (pin: string) => void;
   goHome: () => void;
 }) {
   const [confirmReset, setConfirmReset] = useState(false);
-  const [connectCode, setConnectCode] = useState('');
   const [copied, setCopied] = useState(false);
+  const [nextFamilyPin, setNextFamilyPin] = useState('');
+  const [pinSwitchError, setPinSwitchError] = useState('');
 
   const addChild = () => {
     const id = `child-${Date.now()}`;
@@ -866,13 +896,27 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
   };
 
   const copyCode = async () => {
-    await navigator.clipboard.writeText(settings.cloudSync.familyCode);
+    await navigator.clipboard.writeText(familyPin);
     setCopied(true); window.setTimeout(() => setCopied(false), 1300);
+  };
+
+  const openAnotherFamily = () => {
+    const normalized = normalizeFamilyPin(nextFamilyPin);
+    if (!validFamilyPin(normalized)) {
+      setPinSwitchError('請輸入 4–6 位數字 PIN。');
+      return;
+    }
+    if (normalized === familyPin) {
+      setPinSwitchError('這就是目前家庭的 PIN。');
+      return;
+    }
+    setPinSwitchError('');
+    onOpenFamily(normalized);
   };
 
   return (
     <div className="page settings-page v2-settings">
-      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">CONTROL CENTER · V2</span><h1><PhoneticText text="家庭共學設定" /></h1><p>不需要帳號、PIN 或密碼；可選擇本機模式，或用家庭同步碼讓多台裝置讀取同一份雲端進度。</p></div></div>
+      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">CONTROL CENTER · V2</span><h1><PhoneticText text="家庭共學設定" /></h1><p>每個家庭以專屬 PIN 識別。相同 PIN 在手機、平板、Mac 與 Windows 會讀取同一份獨立進度；不同家庭彼此分開。</p></div></div>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示明暗</h3><p>亮色、暗色或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '暗黑'}</button>)}</div></section>
 
@@ -892,27 +936,86 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
         <button className="secondary-button add-child" onClick={addChild}><Plus size={18} /> 新增小朋友</button>
       </section>
 
-      <section className="settings-card vertical cloud-settings-card">
-        <div className="setting-label"><span className="setting-icon"><Cloud size={20} /></span><div><h3><PhoneticText text="雲端同步" /></h3><p>V2 使用 Vercel 私有雲端儲存。學習進度仍會先保存在本機；啟用後再自動上傳，其他手機、平板、Mac 或 Windows 輸入同一組家庭同步碼即可載入。</p></div></div>
-        {!settings.cloudSync.enabled ? (
-          <div className="cloud-setup-grid">
-            <div className="cloud-option-card"><strong>這台是主要裝置</strong><p>保留目前資料，產生新的家庭同步碼並建立雲端副本。</p><button className="primary-button" onClick={onEnableCloud}><Cloud size={18} /> 啟用雲端同步</button></div>
-            <div className="cloud-option-card"><strong>這台是另一台裝置</strong><p>輸入主要裝置顯示的家庭同步碼，下載同一份進度。</p><div className="connect-code-row"><input value={connectCode} onChange={(e) => setConnectCode(normalizeFamilyCode(e.target.value))} placeholder="輸入家庭同步碼" /><button className="secondary-button" disabled={connectCode.length < 10 || cloudStatus === 'loading'} onClick={() => void onConnectCloud(connectCode)}>{cloudStatus === 'loading' ? <RefreshCw className="spin" size={17} /> : <Cloud size={17} />} 載入</button></div></div>
+      <section className="settings-card vertical cloud-settings-card pin-profile-card">
+        <div className="setting-label"><span className="setting-icon"><KeyRound size={20} /></span><div><h3><PhoneticText text="家庭 PIN" /> 與雲端同步</h3><p>目前登入的家庭資料會自動存到 Vercel 私有雲端；同一組 PIN 在其他裝置登入，就會讀取同一份進度。</p></div></div>
+        <div className="cloud-active-panel">
+          <div className="cloud-code-box pin-code-box"><span>目前家庭 PIN</span><strong>{familyPin}</strong><button className="icon-button" onClick={() => void copyCode()} title="複製家庭 PIN">{copied ? <Check size={18} /> : <Copy size={18} />}</button></div>
+          <div className="family-pin-switcher">
+            <div><strong>新增／切換家庭 PIN</strong><span>新 PIN 會建立新的家庭設定檔；已存在的 PIN 會載入原本那一家。</span></div>
+            <div className="family-pin-switch-row"><input type="password" inputMode="numeric" maxLength={6} value={nextFamilyPin} onChange={(e) => { setNextFamilyPin(normalizeFamilyPin(e.target.value)); setPinSwitchError(''); }} onKeyDown={(e) => { if (e.key === 'Enter') openAnotherFamily(); }} placeholder="例如 0000" /><button className="secondary-button" disabled={!validFamilyPin(nextFamilyPin)} onClick={openAnotherFamily}><KeyRound size={17} /> 開啟家庭</button></div>
+            {pinSwitchError && <div className="pin-error inline-pin-error">{pinSwitchError}</div>}
           </div>
-        ) : (
-          <div className="cloud-active-panel">
-            <div className="cloud-code-box"><span>家庭同步碼</span><strong>{settings.cloudSync.familyCode}</strong><button className="icon-button" onClick={() => void copyCode()} title="複製同步碼">{copied ? <Check size={18} /> : <Copy size={18} />}</button></div>
-            <div className={`cloud-status-box cloud-${cloudStatus}`}><CloudPill status={cloudStatus} /><p>{cloudMessage || '系統會在進度變更後自動同步。'}</p>{lastCloudSync && <small>最近同步：{new Date(lastCloudSync).toLocaleString('zh-TW')}</small>}</div>
-            <div className="cloud-actions"><button className="secondary-button" onClick={() => void onSyncNow()}><Cloud size={17} /> 立即上傳目前進度</button><button className="secondary-button" onClick={() => void onPullCloud()}><RefreshCw size={17} /> 從雲端重新載入</button><button className="secondary-button danger-outline" onClick={onDisableCloud}><CloudOff size={17} /> 暫停雲端同步</button></div>
-            <p className="cloud-security-note">同步碼等同這個家庭資料的存取鑰匙。網站不要求額外密碼，因此請只在自己的裝置間分享，不要公開貼出。</p>
-          </div>
-        )}
-        {cloudStatus === 'error' && !settings.cloudSync.enabled && <div className="cloud-error-line">{cloudMessage}</div>}
+          <div className={`cloud-status-box cloud-${cloudStatus}`}><CloudPill status={cloudStatus} /><p>{cloudMessage || '進度變更後會自動同步到這個家庭。'}</p>{lastCloudSync && <small>最近同步：{new Date(lastCloudSync).toLocaleString('zh-TW')}</small>}</div>
+          <div className="cloud-actions"><button className="secondary-button" onClick={() => void onSyncNow()}><Cloud size={17} /> 立即儲存</button><button className="secondary-button" onClick={() => void onPullCloud()}><RefreshCw size={17} /> 重新讀取雲端</button><button className="secondary-button danger-outline" onClick={onSwitchFamily}><LogOut size={17} /> 切換家庭</button></div>
+          <p className="cloud-security-note">4 位 PIN 的主要用途是區分家庭資料，不等同銀行等級密碼。請避免使用生日或公開資訊；若分享給朋友，請各家使用不同 PIN。</p>
+        </div>
       </section>
 
       <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V2 JSON。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
     </div>
   );
+}
+
+function PinGate({ onEnter }: { onEnter: (pin: string) => void }) {
+  const legacyDetected = hasLegacyLocalData();
+  const [pin, setPin] = useState(legacyDetected ? '1234' : '');
+  const [error, setError] = useState('');
+
+  const submit = () => {
+    const normalized = normalizeFamilyPin(pin);
+    if (!validFamilyPin(normalized)) {
+      setError('請輸入 4–6 位數字 PIN。');
+      return;
+    }
+    setError('');
+    onEnter(normalized);
+  };
+
+  return (
+    <main className="pin-gate-shell">
+      <section className="pin-gate-card">
+        <div className="pin-gate-visual" aria-hidden="true">
+          <div className="pin-orb pin-orb-one" /><div className="pin-orb pin-orb-two" />
+          <div className="pin-shield"><KeyRound size={38} /></div>
+          <span>★</span><span>✦</span><span>●</span>
+        </div>
+        <div className="pin-gate-copy">
+          <span className="eyebrow">FAMILY PROFILE · V2.1</span>
+          <h1><PhoneticText text="歡迎回到星際共學基地" /></h1>
+          <p>輸入家庭專屬 PIN，系統會自動載入這一家人的孩子名單、課程進度、XP、金幣與上課紀錄。首頁不公開列出其他家庭設定檔。</p>
+          {legacyDetected && <div className="legacy-pin-note"><Sparkles size={17} /><span>偵測到這台裝置有舊版學習資料，已為你預填家庭 PIN <strong>1234</strong>；第一次進入後會自動建立獨立雲端資料。</span></div>}
+          <label className="pin-input-label" htmlFor="family-pin">家庭 PIN</label>
+          <div className="pin-input-row">
+            <KeyRound size={21} />
+            <input id="family-pin" type="password" inputMode="numeric" autoComplete="current-password" maxLength={6} value={pin} onChange={(event) => setPin(normalizeFamilyPin(event.target.value))} onKeyDown={(event) => { if (event.key === 'Enter') submit(); }} placeholder="例如 1234" autoFocus />
+            <button className="primary-button" disabled={!validFamilyPin(pin)} onClick={submit}>進入家庭基地 <ChevronRight size={18} /></button>
+          </div>
+          {error && <div className="pin-error">{error}</div>}
+          <div className="pin-privacy-note"><Cloud size={16} /><span>PIN 只在裝置與加密連線中使用；雲端儲存路徑會先經伺服器 HMAC 轉換，不直接以 PIN 命名。</span></div>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function App() {
+  const [familyPin, setFamilyPin] = useState(() => {
+    const saved = normalizeFamilyPin(localStorage.getItem(ACTIVE_PIN_KEY) ?? '');
+    return validFamilyPin(saved) ? saved : '';
+  });
+
+  const enterFamily = (pin: string) => {
+    localStorage.setItem(ACTIVE_PIN_KEY, pin);
+    setFamilyPin(pin);
+  };
+
+  const switchFamily = () => {
+    localStorage.removeItem(ACTIVE_PIN_KEY);
+    setFamilyPin('');
+  };
+
+  if (!familyPin) return <PinGate onEnter={enterFamily} />;
+  return <FamilyApp key={familyPin} familyPin={familyPin} onSwitchFamily={switchFamily} onOpenFamily={enterFamily} />;
 }
 
 export default App;

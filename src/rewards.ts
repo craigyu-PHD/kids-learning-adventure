@@ -5,6 +5,7 @@ export const BLOCK_REWARD = { xp: 15, coins: 5 };
 export const EGG_REWARD = { xp: 25, coins: 10 };
 
 export const easterEggDays = new Set([7, 18, 36, 54, 72, 90]);
+const validEggIds = new Set(Array.from(easterEggDays, (day) => `egg-day-${day}`));
 
 const missionRewards = new Map<string, { xp: number; coins: number }>();
 const knownBlocks = new Set<string>();
@@ -43,7 +44,8 @@ export function calculateRewards(progress?: Partial<ChildProgress> | null) {
     coins += BLOCK_REWARD.coins;
   });
 
-  normalized.claimedEggs.forEach(() => {
+  normalized.claimedEggs.forEach((id) => {
+    if (!validEggIds.has(id)) return;
     xp += EGG_REWARD.xp;
     coins += EGG_REWARD.coins;
   });

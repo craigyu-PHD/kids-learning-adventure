@@ -1,15 +1,11 @@
 import type { CloudSnapshot } from './types';
 
-const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-
-export function generateFamilyCode(length = 14) {
-  const bytes = new Uint8Array(length);
-  crypto.getRandomValues(bytes);
-  return Array.from(bytes, (byte) => ALPHABET[byte % ALPHABET.length]).join('');
+export function normalizeFamilyPin(value: string) {
+  return value.replace(/\D/g, '').slice(0, 6);
 }
 
-export function normalizeFamilyCode(value: string) {
-  return value.toUpperCase().replace(/[^A-Z2-9]/g, '').slice(0, 24);
+export function validFamilyPin(value: string) {
+  return /^\d{4,6}$/.test(normalizeFamilyPin(value));
 }
 
 async function parseJsonResponse(response: Response) {
@@ -18,26 +14,33 @@ async function parseJsonResponse(response: Response) {
   return response.json();
 }
 
-export async function loadCloudSnapshot(familyCode: string): Promise<CloudSnapshot | null> {
-  const code = normalizeFamilyCode(familyCode);
-  if (code.length < 10) throw new Error('家庭同步碼格式不正確');
-  const response = await fetch(`/api/state?familyCode=${encodeURIComponent(code)}&t=${Date.now()}`, {
+export async function loadCloudSnapshot(familyPin: string): Promise<CloudSnapshot | null> {
+  const pin = normalizeFamilyPin(familyPin);
+  if (!validFamilyPin(pin)) throw new Error('家庭 PIN 必須是 4–6 位數字');
+  const response = await fetch(`/api/state?t=${Date.now()}`, {
     cache: 'no-store',
-    headers: { Accept: 'application/json' },
+    headers: {
+      Accept: 'application/json',
+      'X-Family-Pin': pin,
+    },
   });
   if (response.status === 404) return null;
-  if (!response.ok) throw new Error(`讀取雲端資料失敗（${response.status}）`);
+  if (!response.ok) throw new Error(`讀取家庭資料失敗（${response.status}）`);
   return parseJsonResponse(response) as Promise<CloudSnapshot>;
 }
 
-export async function saveCloudSnapshot(familyCode: string, snapshot: CloudSnapshot) {
-  const code = normalizeFamilyCode(familyCode);
-  if (code.length < 10) throw new Error('家庭同步碼格式不正確');
-  const response = await fetch(`/api/state?familyCode=${encodeURIComponent(code)}`, {
+export async function saveCloudSnapshot(familyPin: string, snapshot: CloudSnapshot) {
+  const pin = normalizeFamilyPin(familyPin);
+  if (!validFamilyPin(pin)) throw new Error('家庭 PIN 必須是 4–6 位數字');
+  const response = await fetch('/api/state', {
     method: 'PUT',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      'X-Family-Pin': pin,
+    },
     body: JSON.stringify(snapshot),
   });
-  if (!response.ok) throw new Error(`寫入雲端資料失敗（${response.status}）`);
+  if (!response.ok) throw new Error(`寫入家庭資料失敗（${response.status}）`);
   return parseJsonResponse(response) as Promise<{ ok: boolean; updatedAt: string }>;
 }
