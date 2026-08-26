@@ -543,7 +543,7 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
       <header className="topbar">
         <button className="brand" onClick={() => setView('home')}>
           <span className="brand-mark"><Rocket size={21} /></span>
-          <span><strong>星際共學基地</strong><small>Family Learning Mission · V2</small></span>
+          <span><strong>星際共學基地</strong><small>Family Learning Mission · V2.1</small></span>
         </button>
         <nav className="top-actions">
           <CloudPill status={cloudStatus} />
@@ -625,7 +625,7 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
     <div className="page home-page">
       <section className="hero-card v2-hero">
         <div className="hero-copy">
-          <div className="pill"><Sparkles size={15} /> V2 · 18 週家庭共學任務</div>
+          <div className="pill"><Sparkles size={15} /> V2.1 · 18 週家庭共學任務</div>
           <h1><PhoneticText text="今晚不用備課" />，<br /><span><PhoneticText text="一起唱、一起玩、一起變強" />。</span></h1>
           <p>每節先用孩子喜歡的食物歌開機，再由爸爸、媽媽或照顧者控制影片節奏。暫停、複誦、回看、找東西、動起來，全部都寫在教案裡。</p>
           <div className="hero-actions">
@@ -887,7 +887,7 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
 
   const exportData = () => {
     const blob = new Blob([JSON.stringify({ version: 2, settings, progress, attendance, reflections }, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `星際共學基地-V2-學習紀錄-${ymd(new Date())}.json`; a.click(); URL.revokeObjectURL(url);
+    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `星際共學基地-V2.1-學習紀錄-${ymd(new Date())}.json`; a.click(); URL.revokeObjectURL(url);
   };
 
   const resetProgress = () => {
@@ -916,7 +916,7 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
 
   return (
     <div className="page settings-page v2-settings">
-      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">CONTROL CENTER · V2</span><h1><PhoneticText text="家庭共學設定" /></h1><p>每個家庭以專屬 PIN 識別。相同 PIN 在手機、平板、Mac 與 Windows 會讀取同一份獨立進度；不同家庭彼此分開。</p></div></div>
+      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">CONTROL CENTER · V2.1</span><h1><PhoneticText text="家庭共學設定" /></h1><p>每個家庭以專屬 PIN 識別。相同 PIN 在手機、平板、Mac 與 Windows 會讀取同一份獨立進度；不同家庭彼此分開。</p></div></div>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示明暗</h3><p>亮色、暗色或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '暗黑'}</button>)}</div></section>
 
@@ -951,7 +951,7 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
         </div>
       </section>
 
-      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V2 JSON。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
+      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V2.1 JSON。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
     </div>
   );
 }
