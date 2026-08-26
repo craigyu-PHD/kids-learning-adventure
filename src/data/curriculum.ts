@@ -189,7 +189,7 @@ const dayModes = [
   { name: '任務日', verb: '複習', mission: '本週闖關', kind: 'race' as const },
 ];
 
-const warmupKeys = ['hello', 'follow', 'happy', 'body', 'days'];
+const warmupKeys = ['fruitYummy', 'applesBananas', 'food', 'vegetables', 'countingBananas'];
 
 function pickWords(words: string[], day: number) {
   const start = (day * 2) % words.length;
@@ -199,7 +199,7 @@ function pickWords(words: string[], day: number) {
 function makeSteps(plan: WeekPlan, day: number, blockNo: 1 | 2, words: string[], crossTopic?: string) {
   if (blockNo === 1) {
     return [
-      { minute: '0–3', title: '唱跳開機', instruction: '播放暖身歌，大人一起唱、一起做動作。孩子只動不唱也算參與。', cue: '第一次先跟著做；第二次可在關鍵字前停半拍，等孩子補字。' },
+      { minute: '0–3', title: '美食唱跳開機', instruction: '先播放食物／水果主題暖身歌。大人一起唱、一起做「吃、咬、好吃」等誇張動作；孩子只動不唱也算參與。', cue: '看到喜歡的食物就暫停一下，讓孩子指畫面、說中文也可以，再由大人補上英文。' },
       { minute: '3–6', title: '今天先看這幾個字', instruction: `大人先快速示範：${words.join('、')}。每個字只說 1–2 次，不考試。` },
       { minute: '6–12', title: '影片第一輪', instruction: '播放主題影片。第一次以理解與興趣為主，不需要每句都暫停。', cue: `看到今天的核心字時可暫停 1 次，指著畫面問：「What is it?」` },
       { minute: '12–16', title: '停下來複誦', instruction: `挑 3 個字做「大人說 → 一起說 → 孩子自己說」。如果卡住就回看片段。`, cue: '4 歲可只說單字；6 歲嘗試接上今天的句型。' },
@@ -210,7 +210,7 @@ function makeSteps(plan: WeekPlan, day: number, blockNo: 1 | 2, words: string[],
   }
 
   return [
-    { minute: '0–3', title: '第二節重開機', instruction: '換一首短歌或動作歌。讓孩子喝水、站起來、重新集中。' },
+    { minute: '0–3', title: '第二節美食重開機', instruction: '換另一首水果、蔬菜或食物短歌。讓孩子喝水、站起來，邊唱邊用手比出「大口吃、好吃、不要」重新集中。' },
     { minute: '3–7', title: `跨域任務：${crossTopic}`, instruction: '大人先用中文說明玩法，再把關鍵英文字／注音／數字帶進去。' },
     { minute: '7–13', title: '素材觀看', instruction: '播放第二段影片，請大人控制節奏；孩子出現想說話、指畫面時就停下來讓他說。' },
     { minute: '13–18', title: '回頭找舊知識', instruction: `刻意混入前幾週學過的 2 個字，問「你還記得嗎？」記不得就直接提示，不扣分。` },
@@ -243,6 +243,7 @@ function makeBlock(plan: WeekPlan, weekIndex: number, day: number, blockNo: 1 | 
         id: `${baseId}-m1`,
         title: dayModes[day].mission,
         prompt: `完成 3 次「${dayModes[day].verb}」：${words.slice(0, 3).join(' / ')}`,
+        criteria: `只有孩子真的完成 3 次指定的「${dayModes[day].verb}」才按完成；大人示範不算，答錯後提示再完成可以算。`,
         kind: dayModes[day].kind,
         xp: 10 + day * 2,
         coins: 5 + day,
@@ -251,6 +252,7 @@ function makeBlock(plan: WeekPlan, weekIndex: number, day: number, blockNo: 1 | 
         id: `${baseId}-m2`,
         title: blockNo === 1 ? '開口任務' : '合作任務',
         prompt: blockNo === 1 ? `至少開口一次：${plan.sentence}` : `和兄弟／家人輪流完成「${crossTopic}」一題。`,
+        criteria: blockNo === 1 ? '孩子有主動發出目標單字或句型即可；4 歲只說最後一個關鍵字也算，6 歲鼓勵完整句。' : '孩子有實際輪到一次「回答／操作」才算；只在旁邊看不勾，完成後再按領獎。',
         kind: blockNo === 1 ? 'repeat' : 'roleplay',
         xp: 12 + day * 2,
         coins: 6 + day,

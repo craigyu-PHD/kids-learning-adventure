@@ -1,4 +1,5 @@
 export type ThemeMode = 'system' | 'light' | 'dark';
+export type AdventureTheme = 'hero' | 'mecha' | 'tank' | 'racing' | 'creature';
 export type Subject = 'English' | 'Math' | 'Zhuyin' | 'Life' | 'Science' | 'Review';
 
 export type VideoClip = {
@@ -22,6 +23,7 @@ export type InteractiveMission = {
   id: string;
   title: string;
   prompt: string;
+  criteria: string;
   kind: 'repeat' | 'race' | 'find' | 'move' | 'quiz' | 'match' | 'count' | 'roleplay';
   xp: number;
   coins: number;
@@ -63,17 +65,45 @@ export type ChildProfile = {
 };
 
 export type ChildProgress = {
-  xp: number;
-  coins: number;
+  /** Legacy V1 fields are accepted but ignored by V2's derived reward engine. */
+  xp?: number;
+  coins?: number;
   completedDays: string[];
   completedBlocks: string[];
   completedMissions: string[];
+  claimedEggs: string[];
+};
+
+export type CloudSyncSettings = {
+  enabled: boolean;
+  familyCode: string;
 };
 
 export type AppSettings = {
   theme: ThemeMode;
+  visualTheme: AdventureTheme;
   semesterStart: string;
   children: ChildProfile[];
+  cloudSync: CloudSyncSettings;
 };
 
 export type AppProgress = Record<string, ChildProgress>;
+
+export type ViewingStatus = 'full' | 'partial' | 'skip';
+export type DayReflection = {
+  engagement: '' | 'great' | 'ok' | 'tired';
+  note: string;
+  viewing: Record<string, ViewingStatus>;
+};
+
+export type ReflectionMap = Record<string, DayReflection>;
+export type AttendanceMap = Record<string, string[]>;
+
+export type CloudSnapshot = {
+  version: 2;
+  updatedAt: string;
+  settings: AppSettings;
+  progress: AppProgress;
+  attendance: AttendanceMap;
+  reflections: ReflectionMap;
+};
