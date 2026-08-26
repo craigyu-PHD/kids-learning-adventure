@@ -44,7 +44,20 @@ export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = fa
     width: size,
     height: size,
   } as CSSProperties;
-  const imageSrc = `${import.meta.env.BASE_URL}assets/generated/avatar-${id}.webp`;
+  const v22BaseArt: Record<string, string> = {
+    nova: 'avatar-brother.webp',
+    thunder: 'avatar-brother.webp',
+    titan: 'avatar-mother.webp',
+    turbo: 'avatar-father.webp',
+    rex: 'avatar-younger.webp',
+    aqua: 'avatar-robot.webp',
+  };
+  const stagedArt = id === 'nova'
+    ? `brother-stage-${stage}.webp`
+    : id === 'rex'
+      ? `younger-stage-${stage}.webp`
+      : v22BaseArt[id];
+  const imageSrc = `${import.meta.env.BASE_URL}assets/v22/${showStage ? stagedArt : v22BaseArt[id]}`;
 
   return (
     <div className={`avatar-hero avatar-photo-hero avatar-${id} stage-${stage}`} style={style} title={`${option.name} · Level ${level}`}>

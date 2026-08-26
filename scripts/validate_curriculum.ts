@@ -11,6 +11,7 @@ const blocks = days.flatMap((day) => day.blocks);
 const missions = blocks.flatMap((block) => block.missions);
 const allClips: VideoClip[] = blocks.flatMap((block) => [block.warmup, block.video]);
 const videoMap = new Map(Object.values(videos).map((video) => [video.videoId, video]));
+let alignedBlocks = 0;
 
 assert(days.length === 90, `Expected 90 course days, got ${days.length}`);
 assert(new Set(days.map((day) => day.id)).size === 90, 'Course day IDs must be unique');
@@ -37,6 +38,15 @@ for (const day of days) {
     assert(block.steps.length >= 6, `${block.id}: needs at least 6 caregiver steps`);
     assert(block.missions.length >= 2, `${block.id}: needs at least 2 interactive missions`);
     assert(Boolean(block.caregiverTip && block.younger && block.older), `${block.id}: missing caregiver/age-level guidance`);
+    assert(Boolean(block.videoFocus.trim()), `${block.id}: videoFocus is missing`);
+    assert(block.requiredVideoTopics.length > 0, `${block.id}: requiredVideoTopics is empty`);
+    assert(block.video.topics.length > 0, `${block.id}: main video has no audited topics`);
+    const matchedTopics = block.requiredVideoTopics.filter((topic) => block.video.topics.includes(topic));
+    assert(
+      matchedTopics.length > 0,
+      `${block.id}: main video "${block.video.title}" topics [${block.video.topics.join(', ')}] do not match required [${block.requiredVideoTopics.join(', ')}] for "${block.videoFocus}"`,
+    );
+    alignedBlocks += 1;
 
     for (const mission of block.missions) {
       assert(Boolean(mission.title && mission.prompt && mission.criteria), `${mission.id}: mission guidance is incomplete`);
@@ -45,6 +55,7 @@ for (const day of days) {
 
     for (const clip of [block.warmup, block.video]) {
       assert(Boolean(clip.videoId && clip.channel && clip.title), `${block.id}: video metadata incomplete`);
+      assert(Array.isArray(clip.topics) && clip.topics.length > 0, `${clip.id}: audited topic metadata missing`);
       assert(typeof clip.sourceUrl === 'string' && clip.sourceUrl.length > 0, `${block.id}: sourceUrl missing`);
       assert(videoMap.has(clip.videoId), `${block.id}: unknown video ID ${clip.videoId}`);
       assert(clip.sourceUrl.includes(clip.videoId), `${clip.id}: sourceUrl does not match videoId`);
@@ -113,6 +124,7 @@ async function validateYouTubeOnline() {
 console.log(`STRUCTURE OK  ${days.length} days / ${blocks.length} blocks / ${missions.length} missions`);
 console.log(`SUBJECTS      ${[...subjects.entries()].map(([key, value]) => `${key}:${value}`).join('  ')}`);
 console.log(`VIDEOS        ${new Set(allClips.map((clip) => clip.videoId)).size} unique YouTube IDs`);
+console.log(`ALIGNMENT     ${alignedBlocks}/${blocks.length} main lesson videos match audited lesson-topic tags`);
 
 if (process.argv.includes('--online')) {
   const count = await validateYouTubeOnline();

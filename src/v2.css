@@ -166,7 +166,7 @@ body::before { opacity: .52; background-image: var(--theme-pattern), radial-grad
 .theme-settings-card .setting-label { margin-bottom: 16px; }
 .visual-theme-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
 .visual-theme-option { min-height: 102px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); padding: 10px; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; text-align: left; position: relative; transition: .18s ease; }
-.visual-theme-option > .avatar-hero { flex: 0 0 auto; }
+.visual-theme-art { width: 100%; height: 66px; object-fit: cover; object-position: center; border-radius: 10px; border: 1px solid color-mix(in srgb, var(--brand) 18%, var(--border)); background: var(--surface); }
 .visual-theme-option strong, .visual-theme-option small { display: block; }
 .visual-theme-option strong { font-size: 12px; }
 .visual-theme-option small { color: var(--muted); font-size: 9px; line-height: 1.4; margin-top: 2px; }

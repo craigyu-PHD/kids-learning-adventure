@@ -59,7 +59,9 @@
 .active-user-chip > span { display: grid; text-align: left; line-height: 1.15; }
 .active-user-chip strong { font-size: 10px; }
 .active-user-chip small { margin-top: 3px; color: var(--muted); font-size: 8px; }
-.active-user-chip .avatar-hero { flex: 0 0 auto; }
+.active-user-chip .avatar-hero, .active-user-chip .caregiver-avatar { flex: 0 0 auto; }
+.caregiver-avatar { display: block; object-fit: cover; border-radius: 22px; border: 2px solid color-mix(in srgb, var(--cyan) 55%, white 15%); background: color-mix(in srgb, var(--brand) 16%, var(--surface)); box-shadow: 0 8px 24px color-mix(in srgb, var(--brand) 22%, transparent); }
+.active-user-chip .caregiver-avatar { border-radius: 10px; border-width: 1px; }
 
 .v22-home { max-width: 1440px; }
 .v22-space-hero {
@@ -224,6 +226,10 @@
 .user-select-card strong { font-size: 13px; }
 .user-select-card > span { color: var(--brand); font-size: 9px; font-weight: 900; }
 .user-select-card small { color: var(--muted); font-size: 8px; }
+.user-select-card .caregiver-avatar { margin-bottom: 2px; }
+.caregiver-settings-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.caregiver-setting-card .child-setting-head { grid-template-columns: auto minmax(0, 1fr) auto; }
+.learner-admin-card { border-color: color-mix(in srgb, var(--cyan) 26%, var(--border)); }
 
 .v2-settings { max-width: 1180px; }
 .v2-settings .page-heading { margin-bottom: 15px; }
@@ -283,6 +289,28 @@
 .v22-shop-grid article > span { margin-top: 5px; color: var(--brand); font-size: 9px; font-weight: 950; }
 .v22-shop-grid h3 { margin: 4px 0 5px; font-size: 14px; }
 .v22-shop-grid p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.55; }
+
+.video-alignment-card {
+  margin: 14px 0 0;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, #22c55e 38%, var(--border));
+  border-radius: 18px;
+  background: linear-gradient(135deg, color-mix(in srgb, #22c55e 10%, var(--surface)), color-mix(in srgb, var(--cyan) 7%, var(--surface)));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.45), 0 12px 30px rgba(14,67,86,.08);
+}
+.video-alignment-title { display: flex; align-items: center; gap: 9px; color: #159447; }
+.video-alignment-title > div { display: grid; gap: 2px; }
+.video-alignment-title strong { color: var(--text); font-size: 14px; }
+.video-alignment-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 9px; margin-top: 11px; }
+.video-alignment-grid > span { position: relative; min-width: 0; display: grid; gap: 3px; padding: 10px 34px 10px 11px; border-radius: 12px; border: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 94%, transparent); }
+.video-alignment-grid small { color: var(--muted); font-size: 9px; font-weight: 850; letter-spacing: .04em; }
+.video-alignment-grid b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
+.video-alignment-grid svg { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #16a34a; }
+
+@media (max-width: 760px) {
+  .video-alignment-grid { grid-template-columns: 1fr; }
+  .video-alignment-grid b { white-space: normal; }
+}
 
 @media (max-width: 1180px) {
   .topbar { height: auto; min-height: 74px; flex-wrap: wrap; gap: 6px 12px; padding-top: 7px; padding-bottom: 7px; }

@@ -49,7 +49,7 @@ import {
   nextAvatarStageXp,
   normalizeProgress,
 } from './rewards';
-import { iconForWord, subjectAction, visualThemeOptions } from './uiData';
+import { subjectAction, visualThemeOptions } from './uiData';
 import type {
   AppProgress,
   AppSettings,
@@ -61,6 +61,7 @@ import type {
   DayReflection,
   LessonBlock,
   ReflectionMap,
+  FamilyUserProfile,
   FamilyUserRole,
   ThemeMode,
   VideoClip,
@@ -92,9 +93,13 @@ const defaultSettings: AppSettings = {
   theme: 'system',
   visualTheme: 'hero',
   semesterStart: '2026-08-31',
+  users: [
+    { id: 'user-father', name: '爸爸', role: 'father', disabled: false },
+    { id: 'user-mother', name: '媽媽', role: 'mother', disabled: false },
+  ],
   children: [
-    { id: 'child-1', name: '哥哥', avatar: 'nova', role: 'child' },
-    { id: 'child-2', name: '弟弟', avatar: 'rex', role: 'child' },
+    { id: 'child-1', name: '哥哥', avatar: 'nova', role: 'child', disabled: false },
+    { id: 'child-2', name: '弟弟', avatar: 'rex', role: 'child', disabled: false },
   ],
   cloudSync: { enabled: false, familyCode: '' },
 };
@@ -110,21 +115,30 @@ const userRoleOptions: Array<{ id: FamilyUserRole; label: string }> = [
   { id: 'father', label: '爸爸' },
   { id: 'mother', label: '媽媽' },
   { id: 'caregiver', label: '其他照顧者' },
-  { id: 'child', label: '兒童' },
   { id: 'other', label: '其他' },
 ];
 
 function normalizeUserRole(value?: string): FamilyUserRole {
-  if (value === 'parent') return 'caregiver';
-  return userRoleOptions.some((option) => option.id === value) ? value as FamilyUserRole : 'child';
+  if (value === 'father' || value === 'mother' || value === 'caregiver' || value === 'other') return value;
+  return 'caregiver';
 }
 
 function roleLabel(role?: FamilyUserRole) {
-  return userRoleOptions.find((option) => option.id === normalizeUserRole(role))?.label ?? '兒童';
+  return userRoleOptions.find((option) => option.id === normalizeUserRole(role))?.label ?? '照顧者';
 }
 
-function hasUserPin(child: ChildProfile) {
-  return Boolean(child.userPinHash && child.userPinSalt && (child.userPinIterations ?? 0) >= 100_000);
+function hasUserPin(user: FamilyUserProfile) {
+  return Boolean(user.userPinHash && user.userPinSalt && (user.userPinIterations ?? 0) >= 100_000);
+}
+
+function caregiverArt(role: FamilyUserRole) {
+  if (role === 'father') return 'avatar-father.webp';
+  if (role === 'mother') return 'avatar-mother.webp';
+  return 'avatar-robot.webp';
+}
+
+function CaregiverAvatar({ user, size = 64 }: { user: FamilyUserProfile; size?: number }) {
+  return <img className="caregiver-avatar" src={v22Asset(caregiverArt(user.role))} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
 }
 
 function safeLoad<T>(key: string, fallback: T): T {
@@ -139,22 +153,40 @@ function safeLoad<T>(key: string, fallback: T): T {
 function normalizeSettings(raw?: Partial<AppSettings> | null): AppSettings {
   const theme = raw?.theme === 'light' || raw?.theme === 'dark' || raw?.theme === 'system' ? raw.theme : 'system';
   const visualTheme = visualThemeOptions.some((option) => option.id === raw?.visualTheme) ? raw!.visualTheme! : 'hero';
-  const children = Array.isArray(raw?.children) && raw!.children!.length
-    ? raw!.children!.map((child, index) => ({
-        id: child.id || `child-${index + 1}`,
-        name: child.name || `小朋友 ${index + 1}`,
-        avatar: normalizeAvatarId(child.avatar),
-        role: normalizeUserRole(child.role),
-        disabled: Boolean(child.disabled),
-        userPinHash: typeof child.userPinHash === 'string' ? child.userPinHash : '',
-        userPinSalt: typeof child.userPinSalt === 'string' ? child.userPinSalt : '',
-        userPinIterations: typeof child.userPinIterations === 'number' ? child.userPinIterations : 0,
-      }))
-    : defaultSettings.children;
+  const rawChildren = Array.isArray(raw?.children) ? raw!.children! : [];
+  const legacyCaregivers = rawChildren.filter((child) => child.role === 'father' || child.role === 'mother' || child.role === 'caregiver' || child.role === 'other');
+  const learnerSource = rawChildren.filter((child) => !legacyCaregivers.includes(child));
+  const children = (learnerSource.length ? learnerSource : defaultSettings.children).map((child, index) => ({
+    id: child.id || `child-${index + 1}`,
+    name: child.name || `小朋友 ${index + 1}`,
+    avatar: normalizeAvatarId(child.avatar),
+    role: 'child' as const,
+    disabled: Boolean(child.disabled),
+  }));
+  const rawUsers = Array.isArray(raw?.users) ? raw!.users! : [];
+  const userSource = rawUsers.length ? rawUsers : legacyCaregivers.length ? legacyCaregivers.map((child) => ({
+    id: `user-${child.id}`,
+    name: child.name,
+    role: normalizeUserRole(child.role),
+    disabled: child.disabled,
+    userPinHash: child.userPinHash,
+    userPinSalt: child.userPinSalt,
+    userPinIterations: child.userPinIterations,
+  })) : defaultSettings.users;
+  const users: FamilyUserProfile[] = userSource.map((user, index) => ({
+    id: user.id || `user-${index + 1}`,
+    name: user.name || `照顧者 ${index + 1}`,
+    role: normalizeUserRole(user.role),
+    disabled: Boolean(user.disabled),
+    userPinHash: typeof user.userPinHash === 'string' ? user.userPinHash : '',
+    userPinSalt: typeof user.userPinSalt === 'string' ? user.userPinSalt : '',
+    userPinIterations: typeof user.userPinIterations === 'number' ? user.userPinIterations : 0,
+  }));
   return {
     theme,
     visualTheme,
     semesterStart: raw?.semesterStart || defaultSettings.semesterStart,
+    users,
     children,
     cloudSync: {
       enabled: Boolean(raw?.cloudSync?.enabled),
@@ -235,6 +267,19 @@ function SubjectBadge({ subject }: { subject: LessonBlock['subject'] }) {
   return <span className={`subject-badge subject-${subject.toLowerCase()}`}>{labels[subject]}</span>;
 }
 
+const v22Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v22/${file}`;
+
+function lessonIllustrationFile(block: LessonBlock) {
+  const tags = new Set(block.requiredVideoTopics ?? []);
+  if (tags.has('numbers') || tags.has('counting') || block.subject === 'Math') return 'lesson-numbers.webp';
+  if (tags.has('food') || tags.has('fruit') || tags.has('vegetables') || tags.has('colors')) return 'lesson-food.webp';
+  return 'robot-helper.webp';
+}
+
+function LessonIllustration({ block }: { block: LessonBlock }) {
+  return <img className="v22-lesson-illustration" src={v22Asset(lessonIllustrationFile(block))} alt="本節原創教學插圖" loading="lazy" decoding="async" />;
+}
+
 function VideoPlayer({ clip, compact = false, warmup = false }: { clip: VideoClip; compact?: boolean; warmup?: boolean }) {
   return (
     <div className={`video-card ${compact ? 'compact' : ''} ${warmup ? 'food-warmup-card' : ''}`}>
@@ -288,7 +333,7 @@ function AdminPinDialog({ familyPin, onUnlock, onClose }: { familyPin: string; o
   return <div className="modal-scrim" role="dialog" aria-modal="true" aria-label="管理者驗證"><div className="game-modal admin-modal"><div className="modal-icon"><KeyRound size={30} /></div><span className="eyebrow">ADMIN ACCESS</span><h2><PhoneticText text="管理者驗證" /></h2><p>只有家庭管理者可以新增、刪除使用者、設定個別 PIN 與變更家庭設定。</p><label>家庭管理者 PIN</label><div className="modal-pin-row"><input type="password" inputMode="numeric" maxLength={6} value={pin} onChange={(e) => setPin(normalizeFamilyPin(e.target.value))} onKeyDown={(e) => { if (e.key === 'Enter') submit(); }} autoFocus placeholder="輸入管理者 PIN" /><button className="primary-button" onClick={submit}>解鎖設定</button></div>{error && <div className="pin-error">{error}</div>}<button className="modal-close-link" onClick={onClose}>取消</button><small className="modal-family-hint">目前家庭識別：•••• · {familyPin.length} 位數</small></div></div>;
 }
 
-function UserSwitchDialog({ users, progress, activeUserId, onActivate, onClose }: { users: ChildProfile[]; progress: AppProgress; activeUserId: string | null; onActivate: (id: string) => void; onClose: () => void }) {
+function UserSwitchDialog({ users, activeUserId, onActivate, onClose }: { users: FamilyUserProfile[]; activeUserId: string | null; onActivate: (id: string) => void; onClose: () => void }) {
   const availableUsers = users.filter((user) => !user.disabled);
   const [selectedId, setSelectedId] = useState(activeUserId ?? availableUsers[0]?.id ?? '');
   const [pin, setPin] = useState('');
@@ -308,7 +353,7 @@ function UserSwitchDialog({ users, progress, activeUserId, onActivate, onClose }
     setError('');
     onActivate(selected.id);
   };
-  return <div className="modal-scrim" role="dialog" aria-modal="true" aria-label="切換使用者"><div className="game-modal user-switch-modal"><span className="eyebrow">PLAYER SELECT</span><h2>選擇使用者</h2><p className="dialog-intro">一般使用者只需選擇自己的角色並輸入個人 PIN；家庭管理功能仍會要求管理者 PIN。</p><div className="user-select-grid">{availableUsers.map((user) => { const rewards = calculateRewards(progress[user.id]); return <button key={user.id} className={`user-select-card ${selectedId === user.id ? 'selected' : ''}`} onClick={() => { setSelectedId(user.id); setPin(''); setError(''); }}><AvatarHero avatarId={user.avatar} xp={rewards.xp} size={74} /><strong>{user.name}</strong><span>{roleLabel(user.role)}</span><small>{hasUserPin(user) ? '個人 PIN 已啟用' : '尚未設定個人 PIN'}</small></button>; })}</div>{selected && hasUserPin(selected) && <div className="modal-pin-row"><input type="password" inputMode="numeric" autoComplete="current-password" maxLength={6} value={pin} onChange={(e) => setPin(normalizeFamilyPin(e.target.value))} onKeyDown={(e) => { if (e.key === 'Enter') void submit(); }} placeholder="輸入個人 PIN" /><button className="primary-button" onClick={() => void submit()}>進入</button></div>}{selected && !hasUserPin(selected) && <button className="primary-button full" onClick={() => void submit()}>使用此角色</button>}{!availableUsers.length && <div className="pin-error">目前沒有可登入的家庭使用者，請由管理者重新啟用成員。</div>}{error && <div className="pin-error">{error}</div>}<button className="modal-close-link" onClick={onClose}>取消</button></div></div>;
+  return <div className="modal-scrim" role="dialog" aria-modal="true" aria-label="切換家長或照顧者"><div className="game-modal user-switch-modal"><span className="eyebrow">CAREGIVER SELECT</span><h2>選擇家長／照顧者</h2><p className="dialog-intro">這裡選的是操作網站的大人。哥哥、弟弟是學習者，會在課程與「小小探險隊成長」中分別記錄進度、XP 與金幣。</p><div className="user-select-grid">{availableUsers.map((user) => <button key={user.id} className={`user-select-card ${selectedId === user.id ? 'selected' : ''}`} onClick={() => { setSelectedId(user.id); setPin(''); setError(''); }}><CaregiverAvatar user={user} size={74} /><strong>{user.name}</strong><span>{roleLabel(user.role)}</span><small>{hasUserPin(user) ? '個人 PIN 已啟用' : '尚未設定個人 PIN'}</small></button>)}</div>{selected && hasUserPin(selected) && <div className="modal-pin-row"><input type="password" inputMode="numeric" autoComplete="current-password" maxLength={6} value={pin} onChange={(e) => setPin(normalizeFamilyPin(e.target.value))} onKeyDown={(e) => { if (e.key === 'Enter') void submit(); }} placeholder="輸入個人 PIN" /><button className="primary-button" onClick={() => void submit()}>進入</button></div>}{selected && !hasUserPin(selected) && <button className="primary-button full" onClick={() => void submit()}>使用此帳號</button>}{!availableUsers.length && <div className="pin-error">目前沒有可登入的家長／照顧者帳號，請由家庭管理者重新啟用。</div>}{error && <div className="pin-error">{error}</div>}<button className="modal-close-link" onClick={onClose}>取消</button></div></div>;
 }
 
 function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: string; onSwitchFamily: () => void; onOpenFamily: (pin: string) => void }) {
@@ -339,14 +384,14 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
   useEffect(() => {
     setProgress((current) => normalizeProgressMap(current, settings.children));
     if (activeUserId) {
-      const currentUser = settings.children.find((child) => child.id === activeUserId);
+      const currentUser = settings.users.find((user) => user.id === activeUserId);
       if (!currentUser || currentUser.disabled) {
         sessionStorage.removeItem(`star-learning-v22:${familyPin}:active-user`);
         setActiveUserId(null);
         setUserPromptOpen(true);
       }
     }
-  }, [settings.children, activeUserId, familyPin]);
+  }, [settings.children, settings.users, activeUserId, familyPin]);
 
   useEffect(() => localStorage.setItem(familyStorageKey(familyPin, 'settings'), JSON.stringify(settings)), [settings, familyPin]);
   useEffect(() => localStorage.setItem(familyStorageKey(familyPin, 'progress'), JSON.stringify(progress)), [progress, familyPin]);
@@ -498,7 +543,8 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
   };
 
   const selectedDay = selectedDayId ? curriculum.find((day) => day.id === selectedDayId) ?? null : null;
-  const participantIds = (day: CourseDay) => attendance[day.id] ?? settings.children.map((child) => child.id);
+  const enabledLearnerIds = settings.children.filter((child) => !child.disabled).map((child) => child.id);
+  const participantIds = (day: CourseDay) => (attendance[day.id] ?? enabledLearnerIds).filter((id) => enabledLearnerIds.includes(id));
   const isChildBlockDone = (childId: string, blockId: string) => Boolean(progress[childId]?.completedBlocks.includes(blockId));
   const isChildDayDone = (childId: string, day: CourseDay) => day.blocks.every((block) => isChildBlockDone(childId, block.id));
   const isDayDone = (day: CourseDay) => {
@@ -514,13 +560,13 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
   const featuredDay = todayDay ?? nextDay;
 
   const openDay = (day: CourseDay) => {
-    setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: settings.children.map((child) => child.id) });
+    setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
     setSelectedDayId(day.id);
   };
 
   const toggleAttendance = (day: CourseDay, childId: string) => {
     setAttendance((current) => {
-      const currentIds = current[day.id] ?? settings.children.map((child) => child.id);
+      const currentIds = (current[day.id] ?? enabledLearnerIds).filter((id) => enabledLearnerIds.includes(id));
       if (currentIds.includes(childId) && currentIds.length === 1) return current;
       const nextIds = currentIds.includes(childId) ? currentIds.filter((id) => id !== childId) : [...currentIds, childId];
       return { ...current, [day.id]: nextIds };
@@ -618,8 +664,7 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     setUserPromptOpen(false);
   };
 
-  const activeUser = settings.children.find((user) => user.id === activeUserId) ?? null;
-  const activeUserRewards = activeUser ? calculateRewards(progress[activeUser.id]) : null;
+  const activeUser = settings.users.find((user) => user.id === activeUserId) ?? null;
 
   if (selectedDay) {
     return (
@@ -648,7 +693,7 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     <div className="app-shell">
       <header className="topbar">
         <button className="brand" onClick={() => setView('home')}>
-          <span className="brand-mark"><Rocket size={21} /></span>
+          <span className="brand-mark v22-brand-art"><img src={v22Asset('hero-rocket.webp')} alt="" aria-hidden="true" /></span>
           <span><strong>小小探險隊</strong><small>Family Learning Mission · V2.2</small></span>
         </button>
         <nav className="game-main-nav" aria-label="主要功能">
@@ -662,7 +707,7 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
         </nav>
         <nav className="top-actions">
           <CloudPill status={cloudStatus} />
-          <button className="active-user-chip" onClick={() => setUserPromptOpen(true)} title="切換使用者">{activeUser ? <><AvatarHero avatarId={activeUser.avatar} xp={activeUserRewards?.xp ?? 0} size={30} /><span><strong>{activeUser.name}</strong><small>切換使用者</small></span></> : <><Users size={17} /><span><strong>家庭共用</strong><small>選擇使用者</small></span></>}</button>
+          <button className="active-user-chip" onClick={() => setUserPromptOpen(true)} title="切換家長／照顧者">{activeUser ? <><CaregiverAvatar user={activeUser} size={30} /><span><strong>{activeUser.name}</strong><small>{roleLabel(activeUser.role)} · 切換使用者</small></span></> : <><Users size={17} /><span><strong>尚未登入</strong><small>選擇家長／照顧者</small></span></>}</button>
           <button className="nav-button switch-family-button" onClick={onSwitchFamily} title="切換家庭"><LogOut size={17} /><span>切換家庭</span></button>
           <button className="nav-button" onClick={cycleTheme} title="切換顯示模式">
             {settings.theme === 'dark' ? <Moon size={18} /> : settings.theme === 'light' ? <Sun size={18} /> : <Monitor size={18} />}
@@ -707,7 +752,7 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
       <ClickEffects bursts={bursts} />
       {rewardToast && <div className="reward-toast" key={rewardToast.id}><Sparkles size={22} /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
       {adminPromptOpen && <AdminPinDialog familyPin={familyPin} onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
-      {userPromptOpen && <UserSwitchDialog users={settings.children} progress={progress} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
+      {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
     </div>
   );
 }
@@ -733,8 +778,6 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
     .filter(({ date }) => date.getFullYear() === featuredDate.getFullYear() && date.getMonth() === featuredDate.getMonth()), [settings.semesterStart, featuredDay.index]);
   const monthOffset = monthItems.length ? Math.max(0, monthItems[0].date.getDay() - 1) : 0;
   const activeChildren = settings.children.filter((child) => !child.disabled);
-  const leadChild = activeChildren[0] ?? settings.children[0];
-  const leadRewards = calculateRewards(progress[leadChild?.id]);
 
   return (
     <div className="page home-page v22-home">
@@ -751,22 +794,20 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
           <div className="v22-hero-status"><span><Cloud size={15} /> {cloudStatus === 'synced' ? '雲端已同步' : '家庭資料同步中'}</span><span><Trophy size={15} /> 學期完成 {completionPct}%</span><span><Rocket size={15} /> Level {level}</span></div>
         </div>
         <div className="v22-hero-art" aria-hidden="true">
-          <div className="v22-hero-avatar-primary">{leadChild && <AvatarHero avatarId={leadChild.avatar} xp={leadRewards.xp} size={210} showStage />}</div>
-          {activeChildren[1] && <div className="v22-hero-avatar-secondary"><AvatarHero avatarId={activeChildren[1].avatar} xp={calculateRewards(progress[activeChildren[1].id]).xp} size={118} /></div>}
-          <span className="v22-floating-art rocket-art"><AnimatedBadge art="rocket" size={86} /></span>
-          <span className="v22-floating-art star-art"><AnimatedBadge art="star" size={58} /></span>
-          <span className="v22-floating-art treasure-art"><AnimatedBadge art="treasure" size={76} /></span>
+          <img className="v22-hero-crew-image" src={v22Asset('hero-crew.webp')} alt="" />
+          <img className="v22-hero-rocket-image" src={v22Asset('hero-rocket.webp')} alt="" />
+          <img className="v22-hero-robot-image" src={v22Asset('robot-helper.webp')} alt="" />
         </div>
       </section>
 
       <section className="v22-command-grid">
         <aside className="v22-panel v22-crew-panel">
-          <div className="v22-panel-heading"><div><span className="eyebrow">FAMILY CREW</span><h2>家庭成員</h2></div><Users size={20} /></div>
+          <div className="v22-panel-heading"><div><span className="eyebrow">LEARNING CREW</span><h2>小小探險隊成員</h2></div><Users size={20} /></div>
           <div className="v22-crew-list">
             {settings.children.map((child) => {
               const rewards = calculateRewards(progress[child.id]);
               const childDays = curriculum.filter((day) => isChildDayDone(child.id, day)).length;
-              return <article className={`v22-crew-card ${child.disabled ? 'is-disabled' : ''}`} key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={66} /><div><span>{roleLabel(child.role)} · LV.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={childDays} max={90} /><small>{rewards.xp} XP · {rewards.coins} 金幣</small></div></article>;
+              return <article className={`v22-crew-card ${child.disabled ? 'is-disabled' : ''}`} key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={66} /><div><span>學習者 · LV.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={childDays} max={90} /><small>{rewards.xp} XP · {rewards.coins} 金幣</small></div></article>;
             })}
           </div>
           <div className="v22-reward-shelf"><div><AnimatedBadge art="xp" size={42} /><span>XP</span></div><div><AnimatedBadge art="treasure" size={42} /><span>寶箱</span></div><div><AnimatedBadge art="trophy" size={42} /><span>成就</span></div></div>
@@ -776,7 +817,7 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
           <article className="v22-panel v22-calendar-panel">
             <div className="v22-panel-heading"><div><span className="eyebrow">SEMESTER CALENDAR</span><h2>學期日曆</h2></div><button className="text-button" onClick={goSemester}>完整 18 週 <ChevronRight size={17} /></button></div>
             <div className="v22-progress-summary"><div><strong>{completionPct}%</strong><span>{completedDays} / 90 學習日</span></div><ProgressBar value={completedDays} max={90} /><small>下一里程碑：{nextMilestone} 天</small></div>
-            {monthItems.length > 0 && <div className="v22-month-card"><div className="month-title"><strong>{formatMonth(monthItems[0].date)}</strong><span>{monthItems.length} 個任務日</span></div><div className="month-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><div className="month-days">{Array.from({ length: monthOffset }, (_, i) => <span className="calendar-spacer" key={`s-${i}`} />)}{monthItems.map(({ day, date }) => { const done = isDayDone(day); const current = day.id === featuredDay.id; return <button key={day.id} className={`mini-calendar-day ${done ? 'done' : ''} ${current ? 'today' : ''}`} onClick={() => openDay(day)}><span className="mini-date">{date.getDate()}</span><span className="mini-emoji">{done ? '✓' : day.emoji}</span><small>D{day.index}</small></button>; })}</div></div>}
+            {monthItems.length > 0 && <div className="v22-month-card"><div className="month-title"><strong>{formatMonth(monthItems[0].date)}</strong><span>{monthItems.length} 個任務日</span></div><div className="month-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><div className="month-days">{Array.from({ length: monthOffset }, (_, i) => <span className="calendar-spacer" key={`s-${i}`} />)}{monthItems.map(({ day, date }) => { const done = isDayDone(day); const current = day.id === featuredDay.id; return <button key={day.id} className={`mini-calendar-day ${done ? 'done' : ''} ${current ? 'today' : ''}`} onClick={() => openDay(day)}><span className="mini-date">{date.getDate()}</span><span className="mini-emoji">{done ? <Check size={14} /> : <img src={v22Asset('hero-rocket.webp')} alt="" aria-hidden="true" />}</span><small>D{day.index}</small></button>; })}</div></div>}
           </article>
 
           <article className="v22-panel v22-growth-panel">
@@ -789,7 +830,7 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
         <aside className="v22-panel v22-today-panel">
           <div className="v22-panel-heading"><div><span className="eyebrow">TODAY MISSION</span><h2>今日課程</h2></div><span className="date-chip">{formatCourseDate(featuredDate)}</span></div>
           <div className="v22-day-title"><span>DAY {featuredDay.index}</span><h3>{featuredDay.title}</h3><p>{featuredDay.bigIdea}</p></div>
-          <div className="v22-lesson-stack">{featuredDay.blocks.map((block, index) => <article key={block.id}><div><span>第 {index + 1} 節 · 約 {block.duration} 分鐘</span><SubjectBadge subject={block.subject} /></div><strong>{block.title}</strong><small>{block.vocabulary.slice(0, 4).join(' · ')}</small></article>)}</div>
+          <div className="v22-lesson-stack">{featuredDay.blocks.map((block, index) => <article key={block.id}><LessonIllustration block={block} /><div><span>第 {index + 1} 節 · 約 {block.duration} 分鐘</span><SubjectBadge subject={block.subject} /></div><strong>{block.title}</strong><small>{block.vocabulary.slice(0, 4).join(' · ')}</small></article>)}</div>
           <button className="primary-button full v22-gold-cta" onClick={() => openDay(featuredDay)}>開始上課 <ChevronRight size={18} /></button>
           <div className="v22-secret-preview"><AnimatedBadge art="treasure" size={50} /><div><strong>隱藏彩蛋</strong><span>完成指定學習日會解鎖額外金幣與成就。</span></div></div>
         </aside>
@@ -805,11 +846,11 @@ function AchievementsView({ settings, progress, completedDays, goHome }: { setti
     { days: 60, title: '星際遠征', art: 'rocket' as const },
     { days: 90, title: '學期冠軍', art: 'trophy' as const },
   ];
-  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">ACHIEVEMENTS</span><h1>成就獎勵</h1><p>所有 XP、金幣、里程碑與彩蛋都從完成紀錄即時計算，不另外累加總額。</p></div></div><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">SEMESTER MILESTONES</span><h2>家庭里程碑</h2></div><AnimatedBadge art="trophy" size={54} /></div><div className="v22-achievement-page-grid">{milestones.map((item) => <article className={completedDays >= item.days ? 'unlocked' : ''} key={item.days}><AnimatedBadge art={item.art} size={62} /><div><span>{item.days} 學習日</span><strong>{item.title}</strong><small>{completedDays >= item.days ? '已解鎖' : `還差 ${Math.max(0, item.days - completedDays)} 天`}</small></div></article>)}</div></section><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">PLAYER REWARDS</span><h2>個人成就</h2></div><Users size={20} /></div><div className="v22-report-grid">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={72} /><div><span>{roleLabel(child.role)} · LV.{levelFromXp(rewards.xp)}</span><strong>{child.name}</strong><small>{rewards.xp} XP · {rewards.coins} 金幣 · 彩蛋 {normalized.claimedEggs.length}/{easterEggDays.size}</small></div></article>; })}</div></section></div>;
+  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">ACHIEVEMENTS</span><h1>成就獎勵</h1><p>所有 XP、金幣、里程碑與彩蛋都從完成紀錄即時計算，不另外累加總額。</p></div></div><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">SEMESTER MILESTONES</span><h2>家庭里程碑</h2></div><AnimatedBadge art="trophy" size={54} /></div><div className="v22-achievement-page-grid">{milestones.map((item) => <article className={completedDays >= item.days ? 'unlocked' : ''} key={item.days}><AnimatedBadge art={item.art} size={62} /><div><span>{item.days} 學習日</span><strong>{item.title}</strong><small>{completedDays >= item.days ? '已解鎖' : `還差 ${Math.max(0, item.days - completedDays)} 天`}</small></div></article>)}</div></section><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">PLAYER REWARDS</span><h2>個人成就</h2></div><Users size={20} /></div><div className="v22-report-grid">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={72} /><div><span>學習者 · LV.{levelFromXp(rewards.xp)}</span><strong>{child.name}</strong><small>{rewards.xp} XP · {rewards.coins} 金幣 · 彩蛋 {normalized.claimedEggs.length}/{easterEggDays.size}</small></div></article>; })}</div></section></div>;
 }
 
 function LearningReportView({ settings, progress, isChildDayDone, goHome }: { settings: AppSettings; progress: AppProgress; isChildDayDone: (childId: string, day: CourseDay) => boolean; goHome: () => void }) {
-  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">LEARNING REPORT</span><h1>學習報表</h1><p>依實際完成的任務、單元與學習日整理，不用額外維護第二套統計資料。</p></div></div><section className="v22-report-summary"><article><strong>18</strong><span>學習週</span></article><article><strong>90</strong><span>學習日</span></article><article><strong>180</strong><span>課程單元</span></article><article><strong>360</strong><span>互動任務</span></article></section><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">FAMILY PROGRESS</span><h2>家庭成員進度</h2></div><GraduationCap size={22} /></div><div className="v22-learning-report-list">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const days = curriculum.filter((day) => isChildDayDone(child.id, day)).length; return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={78} /><div className="report-main"><div><span>{roleLabel(child.role)}</span><h3>{child.name}</h3></div><ProgressBar value={days} max={90} /><small>{days}/90 天 · {normalized.completedBlocks.length}/180 單元 · {normalized.completedMissions.length}/360 任務</small></div><div className="report-rewards"><strong>{rewards.xp}</strong><span>XP</span><strong>{rewards.coins}</strong><span>金幣</span></div></article>; })}</div></section></div>;
+  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">LEARNING REPORT</span><h1>學習報表</h1><p>依實際完成的任務、單元與學習日整理，不用額外維護第二套統計資料。</p></div></div><section className="v22-report-summary"><article><strong>18</strong><span>學習週</span></article><article><strong>90</strong><span>學習日</span></article><article><strong>180</strong><span>課程單元</span></article><article><strong>360</strong><span>互動任務</span></article></section><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">LEARNER PROGRESS</span><h2>學習者進度</h2></div><GraduationCap size={22} /></div><div className="v22-learning-report-list">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const days = curriculum.filter((day) => isChildDayDone(child.id, day)).length; return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={78} /><div className="report-main"><div><span>學習者</span><h3>{child.name}</h3></div><ProgressBar value={days} max={90} /><small>{days}/90 天 · {normalized.completedBlocks.length}/180 單元 · {normalized.completedMissions.length}/360 任務</small></div><div className="report-rewards"><strong>{rewards.xp}</strong><span>XP</span><strong>{rewards.coins}</strong><span>金幣</span></div></article>; })}</div></section></div>;
 }
 
 function TreasureShopView({ settings, progress, goHome }: { settings: AppSettings; progress: AppProgress; goHome: () => void }) {
@@ -830,7 +871,7 @@ function SemesterView({ settings, isDayDone, openDay, goHome }: { settings: AppS
       <div className="week-list">{weekSummaries.map((week) => {
         const days = curriculum.filter((day) => day.week === week.week);
         const doneCount = days.filter(isDayDone).length;
-        return <section className="week-card" key={week.week}><div className="week-head"><div className="week-number">W{String(week.week).padStart(2, '0')}</div><div className="week-copy"><h2>{week.emoji} {week.title}</h2><p>{week.bigIdea}</p></div><div className="week-progress"><strong>{doneCount}/5</strong><small>完成</small></div></div><div className="week-vocab">{week.vocab.slice(0, 7).map((word) => <span key={word}>{iconForWord(word)} {word}</span>)}</div><div className="week-days">{days.map((day) => { const date = addCourseWeekdays(settings.semesterStart, day.index - 1); const done = isDayDone(day); return <button key={day.id} onClick={() => openDay(day)} className={`week-day-button ${done ? 'done' : ''}`}><div><span>DAY {day.index}</span><strong>{day.title.split('｜')[1]}</strong><small>{formatCourseDate(date)}</small></div>{done ? <CheckCircle2 size={21} /> : <ChevronRight size={20} />}</button>; })}</div></section>;
+        return <section className="week-card" key={week.week}><div className="week-head"><div className="week-number">W{String(week.week).padStart(2, '0')}</div><div className="week-copy"><h2>{week.title}</h2><p>{week.bigIdea}</p></div><div className="week-progress"><strong>{doneCount}/5</strong><small>完成</small></div></div><div className="week-vocab">{week.vocab.slice(0, 7).map((word) => <span key={word}>{word}</span>)}</div><div className="week-days">{days.map((day) => { const date = addCourseWeekdays(settings.semesterStart, day.index - 1); const done = isDayDone(day); return <button key={day.id} onClick={() => openDay(day)} className={`week-day-button ${done ? 'done' : ''}`}><div><span>DAY {day.index}</span><strong>{day.title.split('｜')[1]}</strong><small>{formatCourseDate(date)}</small></div>{done ? <CheckCircle2 size={21} /> : <ChevronRight size={20} />}</button>; })}</div></section>;
       })}</div>
     </div>
   );
@@ -854,15 +895,15 @@ function DayView({ day, date, settings, progress, participants, onBack, onToggle
     <div className="lesson-page">
       <header className="lesson-header v2-lesson-header">
         <button className="icon-button glass" onClick={onBack}><ArrowLeft size={20} /></button>
-        <div className="lesson-header-copy"><span>WEEK {day.week} · DAY {day.index} · {formatCourseDate(date)}</span><h1>{day.emoji} {day.title}</h1><p>{day.bigIdea}</p></div>
+        <div className="lesson-header-copy"><span>WEEK {day.week} · DAY {day.index} · {formatCourseDate(date)}</span><h1>{day.title}</h1><p>{day.bigIdea}</p></div>
         <div className="mission-badge"><Rocket size={20} /> Mission {day.index}/90</div>
         {easterEggDays.has(day.index) && <EasterEgg day={day} settings={settings} progress={progress} participants={participants} onClaim={onClaimEgg} />}
       </header>
 
       <main className="lesson-content">
         <section className="attendance-panel">
-          <div><span className="eyebrow">TODAY'S CREW</span><h2><PhoneticText text="今天誰一起上課" />？</h2><p>每天都能重新選擇參與的小朋友；每位孩子分開記錄任務、XP、金幣與頭像進化。</p></div>
-          <div className="attendance-chips">{settings.children.map((child) => {
+          <div><span className="eyebrow">TODAY'S CREW</span><h2><PhoneticText text="今天誰一起上課" />？</h2><p>每天都能重新選擇參與的學習者；哥哥、弟弟等孩子分開記錄任務、XP、金幣與角色進化。</p></div>
+          <div className="attendance-chips">{settings.children.filter((child) => !child.disabled).map((child) => {
             const active = participants.includes(child.id); const rewards = calculateRewards(progress[child.id]);
             return <button key={child.id} className={`attendance-chip ${active ? 'active' : ''}`} onClick={() => onToggleAttendance(child.id)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={42} /><strong>{child.name}</strong>{active ? <Check size={17} /> : <Circle size={17} />}</button>;
           })}</div>
@@ -888,7 +929,7 @@ function EasterEgg({ day, settings, progress, participants, onClaim }: { day: Co
   return (
     <div className={`secret-egg ${revealed ? 'revealed' : ''}`}>
       {!revealed ? <button className="secret-egg-trigger" onClick={() => setRevealed(true)} title="這裡好像有東西…"><AnimatedBadge art="crystal" size={24} label="隱藏彩蛋" /></button> : (
-        <div className="egg-popover"><strong>🥚 找到祕密彩蛋！</strong><span>今天上課的小朋友都可以各領一次。</span><div>{settings.children.filter((child) => participants.includes(child.id)).map((child) => {
+        <div className="egg-popover"><strong>找到祕密彩蛋！</strong><span>今天上課的小朋友都可以各領一次。</span><div>{settings.children.filter((child) => participants.includes(child.id)).map((child) => {
           const claimed = normalizeProgress(progress[child.id]).claimedEggs.includes(eggId);
           return <button key={child.id} disabled={claimed} onClick={() => onClaim(child.id)}>{claimed ? '✓ 已領' : `${child.name} 領獎`}</button>;
         })}</div></div>
@@ -899,14 +940,14 @@ function EasterEgg({ day, settings, progress, participants, onClaim }: { day: Co
 
 function ReflectionPanel({ day, reflection, onUpdate }: { day: CourseDay; reflection: DayReflection; onUpdate: (patch: Partial<DayReflection>) => void }) {
   const viewingLabels: Record<ViewingStatus, string> = { full: '完整看', partial: '片段看', skip: '跳過' };
-  const engagementOptions = [{ value: 'great' as const, emoji: '🤩', label: '很投入' }, { value: 'ok' as const, emoji: '🙂', label: '普通' }, { value: 'tired' as const, emoji: '😴', label: '今天累了' }];
+  const engagementOptions = [{ value: 'great' as const, label: '很投入' }, { value: 'ok' as const, label: '普通' }, { value: 'tired' as const, label: '今天累了' }];
   const setViewing = (blockId: string, status: ViewingStatus) => onUpdate({ viewing: { ...reflection.viewing, [blockId]: status } });
   return (
     <section className="reflection-card enlarged-reflection">
       <div className="panel-heading"><CalendarDays size={22} /><div><span className="eyebrow">30-SECOND LOG</span><h3><PhoneticText text="課後紀錄" /></h3></div></div>
       <p className="reflection-help">只記「實際發生什麼」，不是替孩子打成績。影片只看片段完全可以；如果今天累了，也照實留下紀錄。</p>
       <div className="viewing-log-grid">{day.blocks.map((block, index) => <div className="viewing-log-row" key={block.id}><strong>第 {index + 1} 節影片看多少？</strong><div className="viewing-options">{(['full', 'partial', 'skip'] as ViewingStatus[]).map((status) => <button key={status} className={reflection.viewing[block.id] === status ? 'active' : ''} onClick={() => setViewing(block.id, status)}>{viewingLabels[status]}</button>)}</div></div>)}</div>
-      <div className="engagement-row">{engagementOptions.map((option) => <button key={option.value} className={reflection.engagement === option.value ? 'active' : ''} onClick={() => onUpdate({ engagement: option.value })}><span>{option.emoji}</span>{option.label}</button>)}</div>
+      <div className="engagement-row">{engagementOptions.map((option) => <button key={option.value} className={reflection.engagement === option.value ? 'active' : ''} onClick={() => onUpdate({ engagement: option.value })}>{option.label}</button>)}</div>
       <textarea className="reflection-note" value={reflection.note} onChange={(e) => onUpdate({ note: e.target.value })} placeholder="可選填：今天最喜歡什麼？哪裡卡住？下次要注意什麼？" rows={3} />
     </section>
   );
@@ -929,12 +970,21 @@ function LessonBlockView({ block, blockIndex, day, settings, progress, participa
 
       <div className="lesson-media-grid"><VideoPlayer clip={block.warmup} compact warmup /><VideoPlayer clip={block.video} /></div>
 
+      <div className="video-alignment-card" aria-label="影片對應檢查">
+        <div className="video-alignment-title"><CheckCircle2 size={21} /><div><span className="eyebrow">VIDEO MATCH CHECK</span><strong>影片與本節內容已對應</strong></div></div>
+        <div className="video-alignment-grid">
+          <span><small>暖身歌曲</small><b>{block.warmup.title}</b><CheckCircle2 size={17} /></span>
+          <span><small>主影片</small><b>{block.video.title}</b><CheckCircle2 size={17} /></span>
+          <span><small>本節焦點</small><b>{block.videoFocus}</b><CheckCircle2 size={17} /></span>
+        </div>
+      </div>
+
       <div className="focus-deck">
         <div className="focus-heading"><div><span className="eyebrow">TODAY'S FOCUS</span><h3><PhoneticText text="今日重點" /></h3></div><span className="focus-hint">看得到 · 說得出 · 做得到</span></div>
         <div className="focus-grid">
-          <div className="focus-card focus-words"><strong>👀 今天要認得</strong><div className="picture-word-grid">{block.vocabulary.map((word) => <span key={word}><b>{iconForWord(word)}</b><em>{word}</em></span>)}</div></div>
-          <div className="focus-card focus-sentence"><strong>🗣️ <PhoneticText text="句型" /></strong><p>{block.sentence}</p><small>4 歲：能補最後一個字就很棒。<br />6 歲：試著自己說完整句。</small></div>
-          <div className="focus-card focus-action"><strong>{action.icon} {action.label}</strong><p>{action.text}</p><small>把眼睛、嘴巴、手和身體都加入，記憶會比只看影片更牢。</small></div>
+          <div className="focus-card focus-words"><LessonIllustration block={block} /><strong>今天要認得</strong><div className="picture-word-grid v22-word-grid">{block.vocabulary.map((word) => <span key={word}><em>{word}</em></span>)}</div></div>
+          <div className="focus-card focus-sentence"><strong><PhoneticText text="句型" /></strong><p>{block.sentence}</p><small>4 歲：能補最後一個字就很棒。<br />6 歲：試著自己說完整句。</small></div>
+          <div className="focus-card focus-action"><strong>{action.label}</strong><p>{action.text}</p><small>把眼睛、嘴巴、手和身體都加入，記憶會比只看影片更牢。</small></div>
         </div>
       </div>
 
@@ -949,7 +999,7 @@ function LessonBlockView({ block, blockIndex, day, settings, progress, participa
       <div className="interactive-section v2-missions">
         <div className="panel-heading"><Zap size={22} /><div><span className="eyebrow">INTERACTIVE MISSIONS</span><h3><PhoneticText text="互動任務" />｜做到標準再領獎</h3></div></div>
         <div className="mission-rule-banner"><strong>家長怎麼判斷？</strong><span>先讓孩子實際做 → 對照「完成標準」→ 達標才按孩子的領獎按鈕。答錯後經提示完成也算，不需要一次就答對。</span></div>
-        <div className="mission-grid">{block.missions.map((mission, missionIndex) => <article className="mini-mission v2-mini-mission" key={mission.id}><div className="mission-top"><span className={`mission-kind kind-${mission.kind}`}>任務 {missionIndex + 1}｜{mission.title}</span><span className="reward">+{mission.xp} XP · +{mission.coins} 🪙</span></div><p className="mission-prompt">{mission.prompt}</p><div className="mission-criteria"><strong>✓ 完成標準</strong><span>{mission.criteria}</span></div><div className="mission-players">{settings.children.filter((child) => participants.includes(child.id)).map((child) => { const done = progress[child.id]?.completedMissions.includes(mission.id) ?? false; const rewards = calculateRewards(progress[child.id]); return <button key={child.id} className={`player-score reward-button ${done ? 'done' : ''}`} onClick={() => onToggleMission(child.id, mission)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={34} /><span><strong>{child.name}</strong><small>{done ? '已領獎 · 再按可撤銷' : `完成了！領 +${mission.xp} XP`}</small></span>{done ? <CheckCircle2 size={18} /> : <Gift size={18} />}</button>; })}</div></article>)}</div>
+        <div className="mission-grid">{block.missions.map((mission, missionIndex) => <article className="mini-mission v2-mini-mission" key={mission.id}><div className="mission-top"><span className={`mission-kind kind-${mission.kind}`}>任務 {missionIndex + 1}｜{mission.title}</span><span className="reward">+{mission.xp} XP · +{mission.coins} 金幣</span></div><p className="mission-prompt">{mission.prompt}</p><div className="mission-criteria"><strong>✓ 完成標準</strong><span>{mission.criteria}</span></div><div className="mission-players">{settings.children.filter((child) => participants.includes(child.id)).map((child) => { const done = progress[child.id]?.completedMissions.includes(mission.id) ?? false; const rewards = calculateRewards(progress[child.id]); return <button key={child.id} className={`player-score reward-button ${done ? 'done' : ''}`} onClick={() => onToggleMission(child.id, mission)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={34} /><span><strong>{child.name}</strong><small>{done ? '已領獎 · 再按可撤銷' : `完成了！領 +${mission.xp} XP`}</small></span>{done ? <CheckCircle2 size={18} /> : <Gift size={18} />}</button>; })}</div></article>)}</div>
       </div>
 
       <div className="complete-row v2-complete-row">
@@ -992,16 +1042,29 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
   const [nextFamilyPin, setNextFamilyPin] = useState('');
   const [pinSwitchError, setPinSwitchError] = useState('');
 
+  const addUser = () => {
+    const id = `user-${Date.now()}`;
+    const user: FamilyUserProfile = { id, name: `照顧者 ${settings.users.length + 1}`, role: 'caregiver', disabled: false };
+    setSettings((current) => ({ ...current, users: [...current.users, user] }));
+  };
+  const updateUser = (id: string, patch: Partial<FamilyUserProfile>) => setSettings((current) => ({ ...current, users: current.users.map((user) => user.id === id ? { ...user, ...patch } : user) }));
+  const removeUser = (id: string) => {
+    if (settings.users.length <= 1) return;
+    const user = settings.users.find((item) => item.id === id);
+    if (!user || !window.confirm(`確定要刪除「${user.name}」的登入帳號嗎？學習者進度不會受影響。`)) return;
+    setSettings((current) => ({ ...current, users: current.users.filter((item) => item.id !== id) }));
+  };
+
   const addChild = () => {
     const id = `child-${Date.now()}`;
-    const child: ChildProfile = { id, name: `家庭成員 ${settings.children.length + 1}`, avatar: avatarOptions[settings.children.length % avatarOptions.length].id, role: 'child', disabled: false };
+    const child: ChildProfile = { id, name: `學習者 ${settings.children.length + 1}`, avatar: avatarOptions[settings.children.length % avatarOptions.length].id, role: 'child', disabled: false };
     setSettings((current) => ({ ...current, children: [...current.children, child] }));
   };
   const updateChild = (id: string, patch: Partial<ChildProfile>) => setSettings((current) => ({ ...current, children: current.children.map((child) => child.id === id ? { ...child, ...patch } : child) }));
   const removeChild = (id: string) => {
     if (settings.children.length <= 1) return;
     const child = settings.children.find((item) => item.id === id);
-    if (!child || !window.confirm(`確定要刪除「${child.name}」嗎？此操作會移除這位使用者的學習進度與出席紀錄。`)) return;
+    if (!child || !window.confirm(`確定要刪除學習者「${child.name}」嗎？此操作會移除這位孩子的學習進度與出席紀錄。`)) return;
     setSettings((current) => ({ ...current, children: current.children.filter((item) => item.id !== id) }));
     setProgress((current) => {
       const next = { ...current };
@@ -1011,25 +1074,25 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
     setAttendance((current) => Object.fromEntries(Object.entries(current).map(([dayId, participants]) => [dayId, participants.filter((participant) => participant !== id)])));
   };
 
-  const setUserPin = async (child: ChildProfile) => {
-    const pin = normalizeFamilyPin(userPinDrafts[child.id] ?? '');
+  const setUserPin = async (user: FamilyUserProfile) => {
+    const pin = normalizeFamilyPin(userPinDrafts[user.id] ?? '');
     if (!validFamilyPin(pin)) {
-      setUserPinMessages((current) => ({ ...current, [child.id]: '請輸入 4–6 位數字 PIN。' }));
+      setUserPinMessages((current) => ({ ...current, [user.id]: '請輸入 4–6 位數字 PIN。' }));
       return;
     }
     const credential = await createUserPinCredential(pin);
-    updateChild(child.id, {
+    updateUser(user.id, {
       userPinHash: credential.hash,
       userPinSalt: credential.salt,
       userPinIterations: credential.iterations,
     });
-    setUserPinDrafts((current) => ({ ...current, [child.id]: '' }));
-    setUserPinMessages((current) => ({ ...current, [child.id]: '個人 PIN 已安全更新。' }));
+    setUserPinDrafts((current) => ({ ...current, [user.id]: '' }));
+    setUserPinMessages((current) => ({ ...current, [user.id]: '個人 PIN 已安全更新。' }));
   };
 
-  const clearUserPin = (child: ChildProfile) => {
-    updateChild(child.id, { userPinHash: '', userPinSalt: '', userPinIterations: 0 });
-    setUserPinMessages((current) => ({ ...current, [child.id]: '個人 PIN 已清除。' }));
+  const clearUserPin = (user: FamilyUserProfile) => {
+    updateUser(user.id, { userPinHash: '', userPinSalt: '', userPinIterations: 0 });
+    setUserPinMessages((current) => ({ ...current, [user.id]: '個人 PIN 已清除。' }));
   };
 
   const exportData = () => {
@@ -1065,18 +1128,48 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
     <div className="page settings-page v2-settings">
       <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">FAMILY CONTROL CENTER · V2.2</span><h1>星際家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、視覺主題、雲端同步與高風險資料操作。一般使用者無法直接進入此頁。</p></div></div>
       <div className="admin-unlocked-banner"><div><strong>管理者 PIN 已解鎖</strong><span>目前為家庭最高管理權限；離開家庭或重新載入後需再次驗證。</span></div><KeyRound size={20} /></div>
+      <section className="v22-family-hero" aria-label="星際家庭管理中心">
+        <div><span className="eyebrow">FAMILY COMMAND DECK</span><h2>全家的學習基地，由管理者守護</h2><p>家長／照顧者登入帳號、學習者、個人 PIN、雲端同步與主題都集中在這裡管理；一般使用者不會看到這些高權限操作。</p></div>
+        <div className="v22-family-hero-art" aria-hidden="true"><img src={v22Asset('avatar-father.webp')} alt="" /><img src={v22Asset('avatar-mother.webp')} alt="" /><img className="robot" src={v22Asset('robot-helper.webp')} alt="" /></div>
+      </section>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示明暗</h3><p>亮色、暗色或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '暗黑'}</button>)}</div></section>
 
       <section className="settings-card vertical theme-settings-card">
-        <div className="setting-label"><span className="setting-icon"><Sparkles size={20} /></span><div><h3>冒險主題風格</h3><p>保留五套原創風格；主題選擇以既有生成角色圖作為預覽，套用後會同步調整背景、面板、按鈕與點擊特效。</p></div></div>
-        <div className="visual-theme-grid">{visualThemeOptions.map((option, index) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><AvatarHero avatarId={avatarOptions[index % avatarOptions.length].id} xp={index * 430} size={54} /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
+        <div className="setting-label"><span className="setting-icon"><Sparkles size={20} /></span><div><h3>冒險主題風格</h3><p>五套主題全部使用 ChatGPT Image 產製素材作為預覽；套用後同步調整背景、面板、按鈕與點擊特效。</p></div></div>
+        <div className="visual-theme-grid">{visualThemeOptions.map((option) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><img className="visual-theme-art" src={v22Asset(option.art)} alt="" aria-hidden="true" /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
       </section>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><CalendarDays size={20} /></span><div><h3>學期起始日</h3><p>改日期後，90 個平日課程會自動重新排程，首頁月份日曆也一起更新。</p></div></div><input className="date-input" type="date" value={settings.semesterStart} onChange={(e) => setSettings((current) => ({ ...current, semesterStart: e.target.value }))} /></section>
 
       <section className="settings-card vertical user-admin-card">
-        <div className="setting-label"><span className="setting-icon"><Users size={20} /></span><div><h3><PhoneticText text="家庭使用者設定" /></h3><p>此區只有輸入家庭管理者 PIN 後才能進入。管理者可新增、刪除使用者、選擇角色頭像，並設定每位使用者自己的 4–6 位 PIN。</p></div></div>
+        <div className="setting-label"><span className="setting-icon"><Users size={20} /></span><div><h3>家長／照顧者登入帳號</h3><p>這些是操作網站的大人帳號，頂部「切換使用者」只會列出這裡的人。爸爸、媽媽或其他照顧者可各自設定 4–6 位 PIN；學習 XP 不會記在大人帳號上。</p></div></div>
+        <div className="caregiver-settings-list">{settings.users.map((user) => (
+          <div className={`child-setting-card caregiver-setting-card ${user.disabled ? 'is-disabled' : ''}`} key={user.id}>
+            <div className="child-setting-head">
+              <CaregiverAvatar user={user} size={88} />
+              <div className="child-name-editor">
+                <input value={user.name} onChange={(e) => updateUser(user.id, { name: e.target.value })} />
+                <span>{roleLabel(user.role)} · 網站登入帳號</span>
+              </div>
+              <button className="icon-button danger" onClick={() => removeUser(user.id)} disabled={settings.users.length <= 1} title="刪除登入帳號"><Trash2 size={17} /></button>
+            </div>
+            <div className="user-admin-row">
+              <label>身份<select value={user.role} onChange={(e) => updateUser(user.id, { role: e.target.value as FamilyUserRole })}>{userRoleOptions.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}</select></label>
+              <label className="status-toggle"><input type="checkbox" checked={!user.disabled} onChange={(e) => updateUser(user.id, { disabled: !e.target.checked })} /><span>{user.disabled ? '已停用' : '可登入'}</span></label>
+            </div>
+            <div className="user-pin-editor">
+              <div><strong><KeyRound size={16} /> 個人 PIN</strong><small>{hasUserPin(user) ? 'PBKDF2 驗證已啟用；切換到這位家長／照顧者時會要求輸入。' : '尚未設定；管理者可建立 4–6 位個人 PIN。'}</small></div>
+              <div className="user-pin-controls"><input type="password" inputMode="numeric" autoComplete="new-password" maxLength={6} value={userPinDrafts[user.id] ?? ''} onChange={(e) => setUserPinDrafts((current) => ({ ...current, [user.id]: normalizeFamilyPin(e.target.value) }))} placeholder="輸入新 PIN" /><button className="secondary-button" onClick={() => void setUserPin(user)}>{hasUserPin(user) ? '重設 PIN' : '設定 PIN'}</button>{hasUserPin(user) && <button className="text-button danger-text" onClick={() => clearUserPin(user)}>清除</button>}</div>
+              {userPinMessages[user.id] && <span className="user-pin-message">{userPinMessages[user.id]}</span>}
+            </div>
+          </div>
+        ))}</div>
+        <button className="secondary-button add-child" onClick={addUser}><Plus size={18} /> 新增家長／照顧者</button>
+      </section>
+
+      <section className="settings-card vertical learner-admin-card">
+        <div className="setting-label"><span className="setting-icon"><GraduationCap size={20} /></span><div><h3>小小探險隊學習者</h3><p>哥哥、弟弟等孩子只存在於學習者名單；每人分開計算出席、任務、XP、金幣與角色進化，不會出現在頂部登入帳號選單。</p></div></div>
         <div className="children-settings-list v2-children-settings">{settings.children.map((child) => {
           const rewards = calculateRewards(progress[child.id]); const stage = avatarStageFromXp(rewards.xp);
           return (
@@ -1085,25 +1178,17 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
                 <AvatarHero avatarId={child.avatar} xp={rewards.xp} size={94} showStage />
                 <div className="child-name-editor">
                   <input value={child.name} onChange={(e) => updateChild(child.id, { name: e.target.value })} />
-                  <span>{roleLabel(child.role)} · {avatarName(child.avatar)} · Level {levelFromXp(rewards.xp)} · 進化 {stage}/4</span>
+                  <span>學習者 · {avatarName(child.avatar)} · Level {levelFromXp(rewards.xp)} · 進化 {stage}/4</span>
                   <div className="child-inline-stats"><span><Zap size={15} /> {rewards.xp} XP</span><span><Coins size={15} /> {rewards.coins}</span></div>
                 </div>
-                <button className="icon-button danger" onClick={() => removeChild(child.id)} disabled={settings.children.length <= 1} title="刪除使用者"><Trash2 size={17} /></button>
+                <button className="icon-button danger" onClick={() => removeChild(child.id)} disabled={settings.children.length <= 1} title="刪除學習者"><Trash2 size={17} /></button>
               </div>
-              <div className="user-admin-row">
-                <label>身份<select value={normalizeUserRole(child.role)} onChange={(e) => updateChild(child.id, { role: e.target.value as FamilyUserRole })}>{userRoleOptions.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}</select></label>
-                <label className="status-toggle"><input type="checkbox" checked={!child.disabled} onChange={(e) => updateChild(child.id, { disabled: !e.target.checked })} /><span>{child.disabled ? '已停用' : '可登入'}</span></label>
-              </div>
+              <div className="user-admin-row"><label className="status-toggle"><input type="checkbox" checked={!child.disabled} onChange={(e) => updateChild(child.id, { disabled: !e.target.checked })} /><span>{child.disabled ? '暫停參與' : '參與學習'}</span></label></div>
               <div className="avatar-choice-grid">{avatarOptions.map((option) => <button key={option.id} className={normalizeAvatarId(child.avatar) === option.id ? 'active' : ''} onClick={() => updateChild(child.id, { avatar: option.id })}><AvatarHero avatarId={option.id} xp={rewards.xp} size={46} /><span>{option.short}</span></button>)}</div>
-              <div className="user-pin-editor">
-                <div><strong><KeyRound size={16} /> 個人 PIN</strong><small>{hasUserPin(child) ? 'PBKDF2 驗證已啟用；切換到這位使用者時會要求輸入。' : '尚未設定；管理者可在此建立 4–6 位個人 PIN。'}</small></div>
-                <div className="user-pin-controls"><input type="password" inputMode="numeric" autoComplete="new-password" maxLength={6} value={userPinDrafts[child.id] ?? ''} onChange={(e) => setUserPinDrafts((current) => ({ ...current, [child.id]: normalizeFamilyPin(e.target.value) }))} placeholder="輸入新 PIN" /><button className="secondary-button" onClick={() => void setUserPin(child)}>{hasUserPin(child) ? '重設 PIN' : '設定 PIN'}</button>{hasUserPin(child) && <button className="text-button danger-text" onClick={() => clearUserPin(child)}>清除</button>}</div>
-                {userPinMessages[child.id] && <span className="user-pin-message">{userPinMessages[child.id]}</span>}
-              </div>
             </div>
           );
         })}</div>
-        <button className="secondary-button add-child" onClick={addChild}><Plus size={18} /> 新增使用者</button>
+        <button className="secondary-button add-child" onClick={addChild}><Plus size={18} /> 新增學習者</button>
       </section>
 
       <section className="settings-card vertical cloud-settings-card pin-profile-card">
@@ -1145,8 +1230,9 @@ function PinGate({ onEnter }: { onEnter: (pin: string) => void }) {
     <main className="pin-gate-shell">
       <section className="pin-gate-card">
         <div className="pin-gate-visual" aria-hidden="true">
-          <div className="pin-gate-avatar"><AvatarHero avatarId="nova" xp={1100} size={190} /></div>
-          <span className="pin-art pin-art-one"><AnimatedBadge art="star" size={42} /></span><span className="pin-art pin-art-two"><AnimatedBadge art="crystal" size={38} /></span><span className="pin-art pin-art-three"><AnimatedBadge art="rocket" size={40} /></span>
+          <img className="pin-gate-crew" src={v22Asset('hero-crew.webp')} alt="" />
+          <img className="pin-gate-robot" src={v22Asset('robot-helper.webp')} alt="" />
+          <img className="pin-gate-rocket" src={v22Asset('hero-rocket.webp')} alt="" />
         </div>
         <div className="pin-gate-copy">
           <span className="eyebrow">FAMILY PROFILE · V2.2</span>

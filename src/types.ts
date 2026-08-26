@@ -7,6 +7,8 @@ export type VideoClip = {
   title: string;
   channel: string;
   videoId: string;
+  /** Human-audited semantic tags used by curriculum QA to prevent topic/video drift. */
+  topics: string[];
   start?: number;
   end?: number;
   sourceUrl?: string;
@@ -36,6 +38,10 @@ export type LessonBlock = {
   duration: number;
   warmup: VideoClip;
   video: VideoClip;
+  /** Exact lesson focus that the selected main video must support. */
+  videoFocus: string;
+  /** At least one of these tags must be declared by the main video. */
+  requiredVideoTopics: string[];
   vocabulary: string[];
   sentence: string;
   steps: LessonStep[];
@@ -58,14 +64,32 @@ export type CourseDay = {
   bonus: string;
 };
 
-export type FamilyUserRole = 'father' | 'mother' | 'caregiver' | 'child' | 'other';
+export type FamilyUserRole = 'father' | 'mother' | 'caregiver' | 'other';
 
+/**
+ * Adult/caregiver account used to enter the family learning console.
+ * These accounts may have their own PIN, but they do not own learning XP/progress.
+ */
+export type FamilyUserProfile = {
+  id: string;
+  name: string;
+  role: FamilyUserRole;
+  disabled?: boolean;
+  userPinHash?: string;
+  userPinSalt?: string;
+  userPinIterations?: number;
+};
+
+/**
+ * Learner profile. Learning progress, XP, coins, attendance and evolution are keyed by this id.
+ * Legacy V2.1/V2.2 fields remain optional so existing local/cloud payloads can be migrated safely.
+ */
 export type ChildProfile = {
   id: string;
   name: string;
   avatar: string;
-  role?: FamilyUserRole;
   disabled?: boolean;
+  role?: FamilyUserRole | 'child';
   userPinHash?: string;
   userPinSalt?: string;
   userPinIterations?: number;
@@ -90,6 +114,9 @@ export type AppSettings = {
   theme: ThemeMode;
   visualTheme: AdventureTheme;
   semesterStart: string;
+  /** Adult/caregiver login accounts such as 爸爸、媽媽. */
+  users: FamilyUserProfile[];
+  /** Learners such as 哥哥、弟弟. */
   children: ChildProfile[];
   cloudSync: CloudSyncSettings;
 };

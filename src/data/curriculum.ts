@@ -191,6 +191,106 @@ const dayModes = [
 
 const warmupKeys = ['fruitYummy', 'applesBananas', 'food', 'vegetables', 'countingBananas'];
 
+type VideoAssignment = readonly [videoKey: string, requiredTopic: string];
+type WeekVideoAssignment = readonly [
+  readonly VideoAssignment[],
+  readonly VideoAssignment[],
+];
+
+/**
+ * V2.2 explicit main-video map.
+ *
+ * The old implementation rotated a week-level video pool independently from
+ * `crossTopics`, which could pair a perfectly playable YouTube clip with the
+ * wrong lesson. Every day/block is now assigned intentionally. The second
+ * tuple member is the semantic tag that the validator requires the clip to
+ * declare in `videos.ts`.
+ */
+const weeklyVideoAssignments: WeekVideoAssignment[] = [
+  [
+    [['hello', 'greetings'], ['hello', 'greetings'], ['familyPeople', 'family'], ['hello', 'greetings'], ['familyTree', 'family']],
+    [['hello', 'greetings'], ['familyPeople', 'family'], ['happyBambiWild', 'bilingual'], ['alphabet', 'alphabet'], ['hello', 'greetings']],
+  ],
+  [
+    [['colors', 'colors'], ['shapes', 'shapes'], ['seeBlue', 'colors'], ['colors', 'colors'], ['happyBambiColors', 'colors']],
+    [['shapes', 'shapes'], ['seeBlue', 'find'], ['happyBambiColors', 'bilingual'], ['colors', 'colors'], ['colors', 'colors']],
+  ],
+  [
+    [['body', 'body'], ['body', 'body'], ['follow', 'actions'], ['bathBody', 'body'], ['follow', 'actions']],
+    [['body', 'body'], ['sevenSteps', 'numbers'], ['follow', 'actions'], ['body', 'body'], ['follow', 'actions']],
+  ],
+  [
+    [['happyFace', 'feelings'], ['familyPeople', 'family'], ['familyPeople', 'family'], ['happyFace', 'feelings'], ['familyTree', 'family']],
+    [['happyFace', 'feelings'], ['familyPeople', 'family'], ['familyPeople', 'family'], ['happyFace', 'feelings'], ['familyTree', 'family']],
+  ],
+  [
+    [['pets', 'pets'], ['farm', 'farm'], ['animalSounds', 'animals'], ['zoo', 'zoo'], ['happyBambiWild', 'wild-animals']],
+    [['zoo', 'zoo'], ['happyBambiCounting', 'numbers'], ['animalSounds', 'sounds'], ['animalSounds', 'sounds'], ['zoo', 'zoo']],
+  ],
+  [
+    [['count20', 'numbers'], ['sevenSteps', 'numbers'], ['add10', 'addition'], ['countingBananas', 'counting'], ['happyBambiCounting', 'numbers']],
+    [['sevenSteps', 'numbers'], ['count20', 'numbers'], ['add10', 'addition'], ['count20', 'numbers'], ['sevenSteps', 'numbers']],
+  ],
+  [
+    [['fruitYummy', 'fruit'], ['applesBananas', 'fruit'], ['vegetables', 'vegetables'], ['food', 'preferences'], ['fruitYummy', 'food']],
+    [['vegetables', 'healthy-food'], ['countingBananas', 'numbers'], ['fruitYummy', 'fruit'], ['food', 'preferences'], ['fruitYummy', 'food']],
+  ],
+  [
+    [['weather', 'weather'], ['clothes', 'clothes'], ['days', 'days'], ['weather', 'weather'], ['clothes', 'clothes']],
+    [['weather', 'weather'], ['clothes', 'clothes'], ['days', 'days'], ['weather', 'weather'], ['clothes', 'clothes']],
+  ],
+  [
+    [['houseKitchen', 'home'], ['houseHide', 'home'], ['cleanupDirect', 'cleaning'], ['houseKitchen', 'rooms'], ['cleanupDirect', 'habits']],
+    [['cleanupDirect', 'cleaning'], ['shapes', 'shapes'], ['houseKitchen', 'home'], ['houseHide', 'find'], ['cleanupDirect', 'habits']],
+  ],
+  [
+    [['wheelsBus', 'transport'], ['car', 'car'], ['follow', 'actions'], ['car', 'transport'], ['wheelsBus', 'transport']],
+    [['wheelsBus', 'transport'], ['wheelsBus', 'transport'], ['follow', 'actions'], ['car', 'car'], ['wheelsBus', 'transport']],
+  ],
+  [
+    [['mountains', 'nature'], ['weather', 'nature'], ['seeBlue', 'colors'], ['twinkle', 'sky'], ['mountains', 'outdoors']],
+    [['mountains', 'nature'], ['mountains', 'nature'], ['animalSounds', 'sounds'], ['seeBlue', 'i-see'], ['mountains', 'outdoors']],
+  ],
+  [
+    [['alphabet', 'alphabet'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'letters'], ['phonics', 'phonics']],
+    [['alphabet', 'letters'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'letters'], ['alphabet', 'alphabet']],
+  ],
+  [
+    [['phonics', 'phonics'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'alphabet'], ['phonics', 'letters']],
+    [['alphabet', 'letters'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'alphabet'], ['phonics', 'phonics']],
+  ],
+  [
+    [['happyBambiWild', 'bilingual'], ['animalSounds', 'sounds'], ['phonics', 'phonics'], ['happyBambiSea', 'bilingual'], ['happyBambiWild', 'bilingual']],
+    [['happyBambiWild', 'bilingual'], ['phonics', 'phonics'], ['animalSounds', 'listening'], ['animalSounds', 'sounds'], ['happyBambiWild', 'bilingual']],
+  ],
+  [
+    [['happyBambiSea', 'ocean'], ['dinosaur10', 'dinosaurs'], ['dinosaur10', 'dinosaurs'], ['animalSounds', 'sounds'], ['twinkle', 'space']],
+    [['happyBambiSea', 'ocean'], ['dinosaur10', 'numbers'], ['dinosaur10', 'dinosaurs'], ['animalSounds', 'sounds'], ['twinkle', 'space']],
+  ],
+  [
+    [['seeBlue', 'colors'], ['count20', 'numbers'], ['alphabet', 'alphabet'], ['pets', 'i-have'], ['food', 'preferences']],
+    [['seeBlue', 'find'], ['count20', 'numbers'], ['alphabet', 'alphabet'], ['pets', 'i-have'], ['food', 'preferences']],
+  ],
+  [
+    [['food', 'preferences'], ['pets', 'i-have'], ['seeBlue', 'i-see'], ['follow', 'speaking'], ['familyPeople', 'speaking']],
+    [['food', 'preferences'], ['pets', 'i-have'], ['hello', 'speaking'], ['follow', 'speaking'], ['familyPeople', 'family']],
+  ],
+  [
+    [['seeBlue', 'colors'], ['count20', 'numbers'], ['hello', 'speaking'], ['alphabet', 'alphabet'], ['happy', 'feelings']],
+    [['seeBlue', 'colors'], ['count20', 'numbers'], ['hello', 'speaking'], ['alphabet', 'alphabet'], ['happy', 'feelings']],
+  ],
+];
+
+const videoFocusLabels: Record<string, string> = {
+  greetings: '打招呼與開口說', family: '家庭成員', bilingual: '中英雙語詞彙', alphabet: '英文字母', letters: '字母辨識', phonics: '字母與發音',
+  colors: '顏色辨識', shapes: '形狀辨識', find: '看畫面找東西', body: '身體部位', actions: '動作與指令', numbers: '數字與數量',
+  feelings: '心情與表情', pets: '寵物', farm: '農場動物', animals: '動物', zoo: '動物與動作', 'wild-animals': '野生動物', sounds: '聽聲音辨識', listening: '聽力辨識',
+  addition: '10 以內加法', counting: '數數', fruit: '水果', vegetables: '蔬菜', 'healthy-food': '健康食物', preferences: '喜好問答', food: '食物詞彙',
+  weather: '天氣', clothes: '衣服', days: '星期與日曆', home: '家與房間', rooms: '房間', cleaning: '整理與清潔', habits: '生活好習慣',
+  transport: '交通工具', car: '汽車與交通', nature: '自然觀察', sky: '天空與星星', outdoors: '戶外自然', 'i-see': 'I see 句型', 'i-have': 'I have 句型',
+  dinosaurs: '恐龍', ocean: '海洋生物', space: '太空與星星', speaking: '英文開口與問答',
+};
+
 function pickWords(words: string[], day: number) {
   const start = (day * 2) % words.length;
   return Array.from({ length: Math.min(5, words.length) }, (_, i) => words[(start + i) % words.length]);
@@ -222,7 +322,13 @@ function makeSteps(plan: WeekPlan, day: number, blockNo: 1 | 2, words: string[],
 
 function makeBlock(plan: WeekPlan, weekIndex: number, day: number, blockNo: 1 | 2): LessonBlock {
   const words = pickWords(plan.vocab, day + (blockNo === 2 ? 1 : 0));
-  const videoKey = plan.videos[(day + blockNo - 1) % plan.videos.length];
+  const weekAssignment = weeklyVideoAssignments[weekIndex];
+  if (!weekAssignment) throw new Error(`Missing video assignment for week ${weekIndex + 1}`);
+  const assignment = weekAssignment[blockNo - 1][day];
+  if (!assignment) throw new Error(`Missing video assignment for week ${weekIndex + 1}, day ${day + 1}, block ${blockNo}`);
+  const [videoKey, requiredTopic] = assignment;
+  const mainVideo = videos[videoKey];
+  if (!mainVideo) throw new Error(`Unknown assigned video key: ${videoKey}`);
   const warmupKey = warmupKeys[(weekIndex + day + blockNo) % warmupKeys.length];
   const subject = blockNo === 1 ? 'English' : plan.crossSubjects[day];
   const crossTopic = plan.crossTopics[day];
@@ -234,7 +340,9 @@ function makeBlock(plan: WeekPlan, weekIndex: number, day: number, blockNo: 1 | 
     subject,
     duration: 30,
     warmup: videos[warmupKey],
-    video: videos[videoKey],
+    video: mainVideo,
+    videoFocus: blockNo === 1 ? (videoFocusLabels[requiredTopic] ?? plan.title) : `${crossTopic}（${videoFocusLabels[requiredTopic] ?? requiredTopic}）`,
+    requiredVideoTopics: [requiredTopic],
     vocabulary: words,
     sentence: plan.sentence,
     steps: makeSteps(plan, day, blockNo, words, crossTopic),
