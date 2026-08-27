@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react';
-import { avatarStageFromXp, levelFromXp } from '../rewards';
+import { cosmeticById } from '../cosmetics';
+import { avatarStageFromXp, avatarStageName, levelFromXp } from '../rewards';
 
 export const avatarOptions = [
   { id: 'nova', name: '星光少年', short: '星光', colors: ['#5b5cf0', '#39c6e3', '#ffd166'] },
@@ -26,11 +27,12 @@ export function avatarName(value?: string) {
   return avatarOptions.find((option) => option.id === id)?.name ?? '星光少年';
 }
 
-export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = false }: {
+export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = false, equippedCosmetics = [] }: {
   avatarId?: string;
   xp?: number;
   size?: number;
   showStage?: boolean;
+  equippedCosmetics?: string[];
 }) {
   const id = normalizeAvatarId(avatarId);
   const option = avatarOptions.find((item) => item.id === id) ?? avatarOptions[0];
@@ -44,26 +46,18 @@ export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = fa
     width: size,
     height: size,
   } as CSSProperties;
-  const v22BaseArt: Record<string, string> = {
-    nova: 'avatar-brother.webp',
-    thunder: 'avatar-brother.webp',
-    titan: 'avatar-mother.webp',
-    turbo: 'avatar-father.webp',
-    rex: 'avatar-younger.webp',
-    aqua: 'avatar-robot.webp',
-  };
-  const stagedArt = id === 'nova'
-    ? `brother-stage-${stage}.webp`
-    : id === 'rex'
-      ? `younger-stage-${stage}.webp`
-      : v22BaseArt[id];
-  const imageSrc = `${import.meta.env.BASE_URL}assets/v23/${showStage ? stagedArt : v22BaseArt[id]}`;
+  const stagedArt = `${id}-stage-${stage}.webp`;
+  const imageSrc = `${import.meta.env.BASE_URL}assets/v30/characters/${stagedArt}`;
+  const equippedItems = equippedCosmetics.map((cosmeticId) => cosmeticById.get(cosmeticId)).filter(Boolean) as Array<NonNullable<ReturnType<typeof cosmeticById.get>>>;
+  const cosmeticNames = equippedItems.map((item) => item.name);
 
   return (
-    <div className={`avatar-hero avatar-photo-hero avatar-${id} stage-${stage}`} style={style} title={`${option.name} · Level ${level}`}>
+    <div className={`avatar-hero avatar-photo-hero avatar-${id} stage-${stage}`} style={style} title={`${option.name} · Level ${level} · ${avatarStageName(xp)}`} data-stage={stage} data-cosmetics={equippedCosmetics.join(' ')}>
       <span className="avatar-photo-glow" aria-hidden="true" />
-      <img src={imageSrc} alt={option.name} loading="lazy" decoding="async" />
-      {showStage && <span className="avatar-stage-label">進化 {stage}/4</span>}
+      <img src={imageSrc} alt={`${option.name}，${avatarStageName(xp)}`} loading="lazy" decoding="async" />
+      {equippedItems.map((item) => <span key={item.id} className={`avatar-equipped-cosmetic cosmetic-${item.id} slot-${item.slot}`} aria-hidden="true" />)}
+      {showStage && <span className="avatar-stage-label">Stage {stage}/5 · {avatarStageName(xp)}</span>}
+      {showStage && cosmeticNames.length > 0 && <span className="avatar-cosmetic-summary" aria-label={`已裝備：${cosmeticNames.join('、')}`}>{cosmeticNames.length} 件裝備</span>}
     </div>
   );
 }

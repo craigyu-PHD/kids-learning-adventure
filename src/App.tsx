@@ -15,9 +15,11 @@ import {
   Coins,
   Copy,
   KeyRound,
+  Lock,
   LogOut,
   ExternalLink,
   Flame,
+  Footprints,
   Gamepad2,
   Gift,
   GraduationCap,
@@ -46,11 +48,13 @@ import { curriculum, semesterStats, weekSummaries } from './data/curriculum';
 import { youtubeChannelLinks } from './data/videos';
 import AvatarHero, { avatarName, avatarOptions, normalizeAvatarId } from './components/AvatarHero';
 import AnimatedBadge from './components/AnimatedBadge';
+import GameBadge from './components/GameBadge';
 import PhoneticText from './components/PhoneticText';
 import { loadCloudSnapshot, normalizeFamilyPin, saveCloudSnapshot, validFamilyPin } from './cloud';
 import { createUserPinCredential, verifyUserPin } from './security';
 import {
   avatarStageFromXp,
+  avatarStageName,
   BLOCK_REWARD,
   calculateRewards,
   easterEggDays,
@@ -59,7 +63,19 @@ import {
   nextAvatarStageXp,
   normalizeProgress,
 } from './rewards';
-import { subjectAction, visualThemeOptions } from './uiData';
+import { badges, badgeById, applyNewBadgeUnlocks } from './badges';
+import { cosmeticById, cosmetics } from './cosmetics';
+import { visualThemeOptions } from './uiData';
+import {
+  addCourseWeekdaysYmd,
+  courseDayAccess,
+  fetchTrustedTaipeiDate,
+  formatTaipeiCourseDate,
+  shortUnlockDate,
+  taipeiYmd,
+  ymdToTaipeiDate,
+} from './dailyChallenge';
+import type { CourseDayAccess, TrustedTaipeiDate } from './dailyChallenge';
 import type {
   AppProgress,
   AppSettings,
@@ -114,11 +130,12 @@ const defaultSettings: AppSettings = {
   cloudSync: { enabled: false, familyCode: '' },
 };
 
-const emptyReflection = (): DayReflection => ({ engagement: '', note: '', viewing: {} });
+const emptyReflection = (): DayReflection => ({ engagement: '', note: '', viewing: {}, dailyChallenge: { warmup: false, learn: false } });
 const emptyProgress = (): ChildProgress => normalizeProgress();
 
 type CloudStatus = 'local' | 'loading' | 'saving' | 'synced' | 'error';
-type RewardToast = { id: number; title: string; detail: string } | null;
+type CelebrationMoment = { id: number; childName: string; xp: number; coins: number; newBadgeIds: string[]; kind: 'mission' | 'block' | 'day' | 'bonus' } | null;
+const LOCAL_FAMILY_KEY = '__local__';
 
 const userRoleOptions: Array<{ id: FamilyUserRole; label: string }> = [
   { id: 'father', label: '爸爸' },
@@ -143,11 +160,11 @@ function hasUserPin(user: FamilyUserProfile) {
 function caregiverArt(role: FamilyUserRole) {
   if (role === 'father') return 'avatar-father.webp';
   if (role === 'mother') return 'avatar-mother.webp';
-  return 'avatar-robot.webp';
+  return 'avatar-caregiver.webp';
 }
 
 function CaregiverAvatar({ user, size = 64 }: { user: FamilyUserProfile; size?: number }) {
-  return <img className="caregiver-avatar" src={v23Asset(caregiverArt(user.role))} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
+  return <img className="caregiver-avatar" src={`${import.meta.env.BASE_URL}assets/v30/characters/${caregiverArt(user.role)}`} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
 }
 
 function safeLoad<T>(key: string, fallback: T): T {
@@ -222,34 +239,16 @@ function normalizeProgressMap(raw: AppProgress | undefined, children: ChildProfi
   return next;
 }
 
-function parseYmd(value: string) {
-  const [y, m, d] = value.split('-').map(Number);
-  return new Date(y, m - 1, d, 12, 0, 0);
-}
-
 function ymd(date: Date) {
-  const y = date.getFullYear();
-  const m = `${date.getMonth() + 1}`.padStart(2, '0');
-  const d = `${date.getDate()}`.padStart(2, '0');
-  return `${y}-${m}-${d}`;
+  return taipeiYmd(date);
 }
 
 function addCourseWeekdays(start: string, offset: number) {
-  const date = parseYmd(start);
-  let left = offset;
-  while (left > 0) {
-    date.setDate(date.getDate() + 1);
-    if (date.getDay() !== 0 && date.getDay() !== 6) left -= 1;
-  }
-  return date;
+  return ymdToTaipeiDate(addCourseWeekdaysYmd(start, offset));
 }
 
 function formatCourseDate(date: Date) {
-  return new Intl.DateTimeFormat('zh-TW', { month: 'numeric', day: 'numeric', weekday: 'short' }).format(date);
-}
-
-function formatMonth(date: Date) {
-  return new Intl.DateTimeFormat('zh-TW', { year: 'numeric', month: 'long' }).format(date);
+  return formatTaipeiCourseDate(taipeiYmd(date));
 }
 
 function youtubeEmbedUrl(clip: VideoClip) {
@@ -276,7 +275,6 @@ function SubjectBadge({ subject }: { subject: LessonBlock['subject'] }) {
   return <span className={`subject-badge subject-${subject.toLowerCase()}`}>{labels[subject]}</span>;
 }
 
-const v23Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v23/${file}`;
 const v30Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v30/${file}`;
 
 const worldArtByTheme: Record<AppSettings['visualTheme'], string> = {
@@ -289,12 +287,41 @@ const worldArtByTheme: Record<AppSettings['visualTheme'], string> = {
 
 function lessonWorldArt(block: LessonBlock) {
   const tags = new Set(block.requiredVideoTopics ?? []);
-  if (tags.has('food') || tags.has('fruit') || tags.has('vegetables') || tags.has('preferences')) return 'world-food.webp';
-  if (tags.has('colors') || tags.has('shapes')) return 'world-color.webp';
-  if (tags.has('animals') || tags.has('pets') || tags.has('farm') || tags.has('zoo') || tags.has('wild-animals')) return 'world-animal.webp';
+  if (tags.has('dinosaurs')) return 'world-dino.webp';
   if (tags.has('ocean')) return 'world-ocean.webp';
-  if (tags.has('space') || tags.has('sky')) return 'world-space.webp';
+  if (tags.has('space') || tags.has('weather')) return 'world-space.webp';
+  if (tags.has('family') || tags.has('home')) return 'world-family.webp';
+  if (tags.has('numbers')) return 'world-number.webp';
+  if (tags.has('food')) return 'world-food.webp';
+  if (tags.has('animals')) return 'world-animal.webp';
+  if (tags.has('colors') || tags.has('shapes')) return 'world-color.webp';
   return 'world-hello.webp';
+}
+
+const learningWorlds = [
+  { id: 'hello', name: 'Hello Town', accent: 'purple', art: 'world-hello.webp', npc: 'Milo' },
+  { id: 'color', name: 'Color Garden', accent: 'sky', art: 'world-color.webp', npc: 'Pip' },
+  { id: 'animal', name: 'Animal Forest', accent: 'mint', art: 'world-animal.webp', npc: 'Coco' },
+  { id: 'family', name: 'Family Village', accent: 'coral', art: 'world-family.webp', npc: 'Lulu' },
+  { id: 'number', name: 'Number Mountain', accent: 'orange', art: 'world-number.webp', npc: 'Rocky' },
+  { id: 'food', name: 'Food Market', accent: 'yellow', art: 'world-food.webp', npc: 'Berry' },
+  { id: 'ocean', name: 'Ocean Adventure', accent: 'sky', art: 'world-ocean.webp', npc: 'Finn' },
+  { id: 'dino', name: 'Dino Island', accent: 'mint', art: 'world-dino.webp', npc: 'Dino' },
+  { id: 'space', name: 'Space Station', accent: 'purple', art: 'world-space.webp', npc: 'Nova' },
+] as const;
+
+function worldForDay(day: CourseDay) {
+  const tags = new Set(day.blocks.flatMap((block) => block.requiredVideoTopics ?? []));
+  const id = tags.has('dinosaurs') ? 'dino'
+    : tags.has('ocean') ? 'ocean'
+      : tags.has('space') || tags.has('weather') ? 'space'
+        : tags.has('family') || tags.has('home') ? 'family'
+          : tags.has('numbers') ? 'number'
+            : tags.has('food') ? 'food'
+              : tags.has('animals') ? 'animal'
+                : tags.has('colors') || tags.has('shapes') ? 'color'
+                  : 'hello';
+  return learningWorlds.find((world) => world.id === id) ?? learningWorlds[0];
 }
 
 function speakWord(word: string) {
@@ -306,12 +333,29 @@ function speakWord(word: string) {
   window.speechSynthesis.speak(utterance);
 }
 
-function VocabularyCard({ word, block }: { word: string; block: LessonBlock }) {
+function vocabularyAssetFile(word: string) {
+  const normalized = word
+    .toLowerCase()
+    .trim()
+    .replace(/[?!]/g, '')
+    .replace(/\s+[\u4e00-\u9fff]+$/, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+  return `${normalized || 'zh-audio'}.webp`;
+}
+
+function VocabularyCard({ word }: { word: string; block: LessonBlock }) {
+  const [reacted, setReacted] = useState(false);
+  const play = () => {
+    speakWord(word);
+    setReacted(true);
+    window.setTimeout(() => setReacted(false), 520);
+  };
   return (
-    <button className="v30-vocab-card" onClick={() => speakWord(word)} aria-label={`播放 ${word} 發音`}>
-      <span className="v30-vocab-art"><img src={v30Asset(lessonWorldArt(block))} alt="" aria-hidden="true" /></span>
+    <button className={`v30-vocab-card ${reacted ? 'reacted' : ''}`} onClick={play} aria-label={`播放 ${word} 發音`}>
+      <span className="v30-vocab-art"><img src={v30Asset(`vocab/${vocabularyAssetFile(word)}`)} alt={`${word} 教材插畫`} loading="lazy" decoding="async" /></span>
       <strong>{word}</strong>
-      <span className="v30-audio-action"><Volume2 size={18} /> 聽發音</span>
+      <span className="v30-audio-action"><Volume2 size={18} /> Listen</span>
     </button>
   );
 }
@@ -348,17 +392,68 @@ function CloudPill({ status }: { status: CloudStatus }) {
   return <span className={`cloud-pill cloud-${status}`}>{status === 'local' || status === 'error' ? <CloudOff size={14} /> : <Cloud size={14} />}{label}</span>;
 }
 
+function CelebrationOverlay({ moment, onClose }: { moment: Exclude<CelebrationMoment, null>; onClose: () => void }) {
+  const newBadge = moment.newBadgeIds.map((id) => badgeById.get(id)).find(Boolean);
+  const isDay = moment.kind === 'day';
+  const labels = moment.kind === 'mission'
+    ? { overline: 'MISSION COMPLETE', title: 'Great!', detail: '任務完成' }
+    : moment.kind === 'block'
+      ? { overline: 'MISSION SET COMPLETE', title: 'Awesome!', detail: '完成一組挑戰' }
+      : moment.kind === 'bonus'
+        ? { overline: 'SECRET REWARD', title: 'Surprise!', detail: '找到祕密獎勵' }
+        : { overline: 'DAILY CHALLENGE COMPLETE', title: 'Amazing!', detail: '完成今天的冒險' };
+  useEffect(() => {
+    const timer = window.setTimeout(onClose, isDay ? 2000 : 1600);
+    return () => window.clearTimeout(timer);
+  }, [isDay, moment.id, onClose]);
+  return (
+    <div className={`v30-celebration reward-${moment.kind}`} role="dialog" aria-modal="true" aria-label={`${labels.detail}獎勵`}>
+      <button className="v30-celebration-skip" onClick={onClose}>Skip</button>
+      <div className="v30-celebration-burst" aria-hidden="true"><span /><span /><span /><span /><span /></div>
+      <div className="v30-celebration-character"><img src={v30Asset('characters/mascot-helper.webp')} alt="小星" /></div>
+      <span className="v30-overline">{labels.overline}</span>
+      <h2>{labels.title}</h2>
+      <p>{moment.childName} {labels.detail}</p>
+      <div className="v30-celebration-rewards"><strong>+{moment.xp} XP</strong><strong>+{moment.coins} Coins</strong></div>
+      {newBadge && <div className="v30-celebration-badge"><GameBadge badge={newBadge} unlocked size={88} label={false} /><div><span>NEW BADGE!</span><strong>{newBadge.name}</strong><small>{newBadge.description}</small></div></div>}
+      <button className="v30-primary-cta v30-celebration-continue" onClick={onClose}>Continue Adventure <ChevronRight size={20} /></button>
+    </div>
+  );
+}
+
 function AdminPinDialog({ familyPin, onUnlock, onClose }: { familyPin: string; onUnlock: (pin: string) => boolean; onClose: () => void }) {
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => { if (event.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [onClose]);
   const submit = () => {
     if (!validFamilyPin(pin) || !onUnlock(pin)) {
-      setError('管理者 PIN 不正確。');
+      setError('PIN 還沒有對上，再確認一次即可。');
       return;
     }
     setError('');
   };
-  return <div className="modal-scrim" role="dialog" aria-modal="true" aria-label="管理者驗證"><div className="game-modal admin-modal"><div className="modal-icon"><KeyRound size={30} /></div><span className="eyebrow">ADMIN ACCESS</span><h2><PhoneticText text="管理者驗證" /></h2><p>只有家庭管理者可以新增、刪除使用者、設定個別 PIN 與變更家庭設定。</p><label>家庭管理者 PIN</label><div className="modal-pin-row"><input type="password" inputMode="numeric" maxLength={6} value={pin} onChange={(e) => setPin(normalizeFamilyPin(e.target.value))} onKeyDown={(e) => { if (e.key === 'Enter') submit(); }} autoFocus placeholder="輸入管理者 PIN" /><button className="primary-button" onClick={submit}>解鎖設定</button></div>{error && <div className="pin-error">{error}</div>}<button className="modal-close-link" onClick={onClose}>取消</button><small className="modal-family-hint">目前家庭識別：•••• · {familyPin.length} 位數</small></div></div>;
+  return <div className="modal-scrim" role="dialog" aria-modal="true" aria-label="管理者驗證"><div className="game-modal admin-modal"><button className="v30-modal-x" onClick={onClose} aria-label="關閉">×</button><div className="modal-icon"><KeyRound size={30} /></div><span className="eyebrow">ADMIN ACCESS</span><h2><PhoneticText text="管理者驗證" /></h2><p>只有家庭管理者可以進入敏感設定；若是不小心點到，可以直接關閉回到孩子的冒險。</p><label>家庭管理者 PIN</label><div className="modal-pin-row"><input type="password" inputMode="numeric" maxLength={6} value={pin} onChange={(e) => { setPin(normalizeFamilyPin(e.target.value)); setError(''); }} onKeyDown={(e) => { if (e.key === 'Enter') submit(); }} autoFocus placeholder="輸入管理者 PIN" /><button className="primary-button" onClick={submit}>解鎖設定</button></div>{error && <div className="pin-error">{error}</div>}<button className="modal-close-link" onClick={onClose}>取消</button><small className="modal-family-hint">目前家庭識別：•••• · {familyPin.length} 位數 · Esc 可關閉</small></div></div>;
+}
+
+function FamilySetupDialog({ onSetPin, onClose }: { onSetPin: (pin: string) => void; onClose: () => void }) {
+  const [pin, setPin] = useState('');
+  const [error, setError] = useState('');
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => { if (event.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [onClose]);
+  const submit = () => {
+    const normalized = normalizeFamilyPin(pin);
+    if (!validFamilyPin(normalized)) { setError('請設定 4–6 位數字 PIN。'); return; }
+    setError('');
+    onSetPin(normalized);
+  };
+  return <div className="modal-scrim" role="dialog" aria-modal="true" aria-label="設定家庭 PIN"><div className="game-modal admin-modal v30-family-setup-modal"><button className="v30-modal-x" onClick={onClose} aria-label="關閉">×</button><div className="modal-icon"><KeyRound size={30} /></div><span className="eyebrow">PARENT AREA</span><h2>先保護家長專區</h2><p>孩子可以繼續使用首頁、冒險世界、獎勵與角色。只有進入家長專區、雲端同步或敏感設定時才需要家庭 PIN。</p><label>設定家庭管理者 PIN</label><div className="modal-pin-row"><input type="password" inputMode="numeric" maxLength={6} value={pin} onChange={(event) => { setPin(normalizeFamilyPin(event.target.value)); setError(''); }} onKeyDown={(event) => { if (event.key === 'Enter') submit(); }} autoFocus placeholder="4–6 位數字"/><button className="primary-button" onClick={submit}>設定 PIN</button></div>{error && <div className="pin-error">{error}</div>}<div className="v30-pin-cancel-row"><button className="secondary-button" onClick={onClose}>稍後再說</button><button className="modal-close-link" onClick={onClose}>取消</button></div><small className="modal-family-hint">Esc 可關閉。設定後會把目前本機進度搬入這個家庭並啟用私有雲端同步。</small></div></div>;
 }
 
 function UserSwitchDialog({ users, activeUserId, onActivate, onClose }: { users: FamilyUserProfile[]; activeUserId: string | null; onActivate: (id: string) => void; onClose: () => void }) {
@@ -385,28 +480,52 @@ function UserSwitchDialog({ users, activeUserId, onActivate, onClose }: { users:
 }
 
 function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: string; onSwitchFamily: () => void; onOpenFamily: (pin: string) => void }) {
+  const isLocalFamily = familyPin === LOCAL_FAMILY_KEY;
   const initialSettings = useMemo(() => {
     const raw = loadFamilyValue<Partial<AppSettings>>(familyPin, 'settings', SETTINGS_KEY, defaultSettings);
     const normalized = normalizeSettings(raw);
-    return { ...normalized, cloudSync: { enabled: true, familyCode: familyPin } };
-  }, [familyPin]);
+    return { ...normalized, cloudSync: { enabled: !isLocalFamily, familyCode: isLocalFamily ? '' : familyPin } };
+  }, [familyPin, isLocalFamily]);
   const [settings, setSettings] = useState<AppSettings>(initialSettings);
   const [progress, setProgress] = useState<AppProgress>(() => normalizeProgressMap(loadFamilyValue<AppProgress>(familyPin, 'progress', PROGRESS_KEY, {}), initialSettings.children));
   const [attendance, setAttendance] = useState<AttendanceMap>(() => loadFamilyValue<AttendanceMap>(familyPin, 'attendance', ATTENDANCE_KEY, {}));
   const [reflections, setReflections] = useState<ReflectionMap>(() => loadFamilyValue<ReflectionMap>(familyPin, 'reflections', REFLECTION_KEY, {}));
   const [view, setView] = useState<'home' | 'semester' | 'achievements' | 'character' | 'report' | 'shop' | 'settings'>('home');
   const [selectedDayId, setSelectedDayId] = useState<string | null>(null);
-  const [cloudStatus, setCloudStatus] = useState<CloudStatus>('loading');
-  const [cloudMessage, setCloudMessage] = useState('正在辨識家庭 PIN…');
-  const [cloudReady, setCloudReady] = useState(false);
+  const [cloudStatus, setCloudStatus] = useState<CloudStatus>(() => isLocalFamily ? 'local' : 'loading');
+  const [cloudMessage, setCloudMessage] = useState(() => isLocalFamily ? '目前使用本機家庭模式；Child Mode 不需要 PIN。' : '正在辨識家庭 PIN…');
+  const [cloudReady, setCloudReady] = useState(isLocalFamily);
   const [lastCloudSync, setLastCloudSync] = useState('');
-  const [rewardToast, setRewardToast] = useState<RewardToast>(null);
+  const [celebration, setCelebration] = useState<CelebrationMoment>(null);
   const [adminUnlocked, setAdminUnlocked] = useState(false);
   const [adminPromptOpen, setAdminPromptOpen] = useState(false);
+  const [adminDestination, setAdminDestination] = useState<'report' | 'settings'>('report');
+  const [familySetupOpen, setFamilySetupOpen] = useState(false);
   const [userPromptOpen, setUserPromptOpen] = useState(() => !sessionStorage.getItem(`star-learning-v22:${familyPin}:active-user`));
   const [activeUserId, setActiveUserId] = useState<string | null>(() => sessionStorage.getItem(`star-learning-v22:${familyPin}:active-user`));
+  const [trustedDate, setTrustedDate] = useState<TrustedTaipeiDate>(() => ({
+    ymd: taipeiYmd(),
+    verified: false,
+    source: 'device-fallback',
+  }));
   const cloudUpdatedAtRef = useRef('');
-  const rewardTimerRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    const syncTrustedDate = async () => {
+      const next = await fetchTrustedTaipeiDate();
+      if (!cancelled) setTrustedDate(next);
+    };
+    void syncTrustedDate();
+    const onVisible = () => { if (document.visibilityState === 'visible') void syncTrustedDate(); };
+    document.addEventListener('visibilitychange', onVisible);
+    const timer = window.setInterval(() => void syncTrustedDate(), 60 * 60 * 1000);
+    return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVisible);
+      window.clearInterval(timer);
+    };
+  }, []);
 
   useEffect(() => {
     setProgress((current) => normalizeProgressMap(current, settings.children));
@@ -438,13 +557,6 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     media.addEventListener('change', sync);
     return () => media.removeEventListener('change', sync);
   }, [settings.theme, settings.visualTheme]);
-
-  const showReward = (title: string, detail: string) => {
-    const next = { id: Date.now(), title, detail };
-    setRewardToast(next);
-    if (rewardTimerRef.current) window.clearTimeout(rewardTimerRef.current);
-    rewardTimerRef.current = window.setTimeout(() => setRewardToast(null), 1800);
-  };
 
   const applyCloudSnapshot = (snapshot: CloudSnapshot, code: string) => {
     const remoteSettings = normalizeSettings(snapshot.settings);
@@ -571,17 +683,27 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
 
   const completedDays = curriculum.filter(isDayDone).length;
   const completionPct = Math.round((completedDays / curriculum.length) * 100);
-  const todayKey = ymd(new Date());
-  const todayDay = curriculum.find((day) => ymd(addCourseWeekdays(settings.semesterStart, day.index - 1)) === todayKey);
-  const nextDay = curriculum.find((day) => !isDayDone(day)) ?? curriculum[curriculum.length - 1];
+  const todayKey = trustedDate.ymd;
+  const courseDateKey = (day: CourseDay) => addCourseWeekdaysYmd(settings.semesterStart, day.index - 1);
+  const accessForDay = (day: CourseDay): CourseDayAccess => courseDayAccess(courseDateKey(day), todayKey);
+  const canEarnToday = (day: CourseDay) => trustedDate.verified && accessForDay(day) === 'today';
+  const challengeSteps = (day: CourseDay) => reflections[day.id]?.dailyChallenge ?? { warmup: false, learn: false };
+  const todayDay = curriculum.find((day) => courseDateKey(day) === todayKey);
+  const nextDay = curriculum.find((day) => courseDateKey(day) >= todayKey) ?? curriculum[curriculum.length - 1];
+  const nextUnlockDay = curriculum.find((day) => courseDateKey(day) > todayKey) ?? null;
   const featuredDay = todayDay ?? nextDay;
 
   const openDay = (day: CourseDay) => {
-    setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
+    const access = accessForDay(day);
+    if (access === 'future') return;
+    if (access === 'today') {
+      setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
+    }
     setSelectedDayId(day.id);
   };
 
   const toggleAttendance = (day: CourseDay, childId: string) => {
+    if (!canEarnToday(day)) return;
     setAttendance((current) => {
       const currentIds = (current[day.id] ?? enabledLearnerIds).filter((id) => enabledLearnerIds.includes(id));
       if (currentIds.includes(childId) && currentIds.length === 1) return current;
@@ -590,67 +712,121 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     });
   };
 
-  const toggleMission = (childId: string, mission: LessonBlock['missions'][number]) => {
-    const before = normalizeProgress(progress[childId]);
-    const done = before.completedMissions.includes(mission.id);
-    const parentDay = curriculum.find((day) => day.blocks.some((block) => block.missions.some((item) => item.id === mission.id)));
-    const parentBlock = parentDay?.blocks.find((block) => block.missions.some((item) => item.id === mission.id));
-    setProgress((current) => {
-      const child = normalizeProgress(current[childId]);
-      const isDone = child.completedMissions.includes(mission.id);
-      if (!isDone) {
-        return { ...current, [childId]: { ...child, completedMissions: [...child.completedMissions, mission.id] } };
-      }
-
-      const nextMissions = child.completedMissions.filter((id) => id !== mission.id);
-      const nextBlocks = parentBlock ? child.completedBlocks.filter((id) => id !== parentBlock.id) : child.completedBlocks;
-      const nextDays = parentDay ? child.completedDays.filter((id) => id !== parentDay.id) : child.completedDays;
+  const completeChallengeStep = (day: CourseDay, step: 'warmup' | 'learn') => {
+    if (!canEarnToday(day)) return;
+    const currentSteps = challengeSteps(day);
+    if (currentSteps[step]) return;
+    if (step === 'learn' && !currentSteps.warmup) return;
+    setReflections((current) => {
+      const previous = current[day.id] ?? emptyReflection();
+      const previousSteps = previous.dailyChallenge ?? { warmup: false, learn: false };
       return {
         ...current,
-        [childId]: {
-          ...child,
-          completedMissions: nextMissions,
-          completedBlocks: nextBlocks,
-          completedDays: nextDays,
+        [day.id]: {
+          ...previous,
+          dailyChallenge: { ...previousSteps, [step]: true },
         },
       };
     });
-    if (!done) {
-      const name = settings.children.find((child) => child.id === childId)?.name ?? '小朋友';
-      showReward(`${name} 任務完成！`, `+${mission.xp} XP · +${mission.coins} 金幣`);
-    }
+  };
+
+  const toggleMission = (childId: string, mission: LessonBlock['missions'][number]) => {
+    const before = normalizeProgress(progress[childId]);
+    if (before.completedMissions.includes(mission.id)) return;
+    const parentDay = curriculum.find((day) => day.blocks.some((block) => block.missions.some((item) => item.id === mission.id)));
+    if (!parentDay || !canEarnToday(parentDay)) return;
+    const steps = challengeSteps(parentDay);
+    if (!steps.warmup || !steps.learn) return;
+    const preview = applyNewBadgeUnlocks(before, { ...before, completedMissions: [...before.completedMissions, mission.id] }, todayKey);
+    setProgress((current) => {
+      const child = normalizeProgress(current[childId]);
+      if (child.completedMissions.includes(mission.id)) return current;
+      const rawNext = { ...child, completedMissions: [...child.completedMissions, mission.id] };
+      const awarded = applyNewBadgeUnlocks(child, rawNext, todayKey);
+      return { ...current, [childId]: awarded.progress };
+    });
+    const name = settings.children.find((child) => child.id === childId)?.name ?? '小朋友';
+    setCelebration({ id: Date.now(), childName: name, xp: mission.xp, coins: mission.coins, newBadgeIds: preview.newBadgeIds, kind: 'mission' });
   };
 
   const toggleBlock = (childId: string, day: CourseDay, block: LessonBlock) => {
+    if (!canEarnToday(day)) return;
+    const steps = challengeSteps(day);
+    if (!steps.warmup || !steps.learn) return;
     const before = normalizeProgress(progress[childId]);
-    const done = before.completedBlocks.includes(block.id);
+    if (before.completedBlocks.includes(block.id)) return;
     const allMissionsDone = block.missions.every((mission) => before.completedMissions.includes(mission.id));
-    if (!done && !allMissionsDone) return;
+    if (!allMissionsDone) return;
+    const nextBlocksPreview = Array.from(new Set([...before.completedBlocks, block.id]));
+    const willFinishDay = day.blocks.every((item) => nextBlocksPreview.includes(item.id));
+    const completionIso = new Date().toISOString();
+    const previewRaw: ChildProgress = {
+      ...before,
+      completedBlocks: nextBlocksPreview,
+      completedDays: willFinishDay ? Array.from(new Set([...before.completedDays, day.id])) : before.completedDays,
+      completionTimestamps: willFinishDay ? { ...(before.completionTimestamps ?? {}), [day.id]: before.completionTimestamps?.[day.id] ?? completionIso } : before.completionTimestamps,
+    };
+    const preview = applyNewBadgeUnlocks(before, previewRaw, todayKey);
 
     setProgress((current) => {
       const child = normalizeProgress(current[childId]);
-      const isDone = child.completedBlocks.includes(block.id);
-      const nextBlocks = isDone ? child.completedBlocks.filter((id) => id !== block.id) : [...child.completedBlocks, block.id];
+      if (child.completedBlocks.includes(block.id)) return current;
+      const nextBlocks = Array.from(new Set([...child.completedBlocks, block.id]));
       const dayDone = day.blocks.every((item) => nextBlocks.includes(item.id));
-      const nextDays = dayDone ? Array.from(new Set([...child.completedDays, day.id])) : child.completedDays.filter((id) => id !== day.id);
-      return { ...current, [childId]: { ...child, completedBlocks: nextBlocks, completedDays: nextDays } };
+      const rawNext: ChildProgress = {
+        ...child,
+        completedBlocks: nextBlocks,
+        completedDays: dayDone ? Array.from(new Set([...child.completedDays, day.id])) : child.completedDays,
+        completionTimestamps: dayDone ? { ...(child.completionTimestamps ?? {}), [day.id]: child.completionTimestamps?.[day.id] ?? completionIso } : child.completionTimestamps,
+      };
+      const awarded = applyNewBadgeUnlocks(child, rawNext, todayKey);
+      return { ...current, [childId]: awarded.progress };
     });
-    if (!done) {
-      const name = settings.children.find((child) => child.id === childId)?.name ?? '小朋友';
-      showReward(`${name} 完成本節！`, `通關獎勵 +${BLOCK_REWARD.xp} XP · +${BLOCK_REWARD.coins} 金幣`);
+    const name = settings.children.find((child) => child.id === childId)?.name ?? '小朋友';
+    if (willFinishDay) {
+      const missionReward = day.blocks.flatMap((item) => item.missions).reduce((sum, mission) => ({ xp: sum.xp + mission.xp, coins: sum.coins + mission.coins }), { xp: 0, coins: 0 });
+      setCelebration({ id: Date.now(), childName: name, xp: missionReward.xp + BLOCK_REWARD.xp * day.blocks.length, coins: missionReward.coins + BLOCK_REWARD.coins * day.blocks.length, newBadgeIds: preview.newBadgeIds, kind: 'day' });
+    } else {
+      setCelebration({ id: Date.now(), childName: name, xp: BLOCK_REWARD.xp, coins: BLOCK_REWARD.coins, newBadgeIds: preview.newBadgeIds, kind: 'block' });
     }
   };
 
   const claimEgg = (childId: string, day: CourseDay) => {
+    if (!canEarnToday(day)) return;
     const eggId = `egg-day-${day.index}`;
     const child = normalizeProgress(progress[childId]);
     if (child.claimedEggs.includes(eggId)) return;
     setProgress((current) => {
       const item = normalizeProgress(current[childId]);
+      if (item.claimedEggs.includes(eggId)) return current;
       return { ...current, [childId]: { ...item, claimedEggs: [...item.claimedEggs, eggId] } };
     });
     const name = settings.children.find((item) => item.id === childId)?.name ?? '小朋友';
-    showReward(`${name} 找到隱藏彩蛋！`, `祕密獎勵 +${EGG_REWARD.xp} XP · +${EGG_REWARD.coins} 金幣`);
+    setCelebration({ id: Date.now(), childName: name, xp: EGG_REWARD.xp, coins: EGG_REWARD.coins, newBadgeIds: [], kind: 'bonus' });
+  };
+
+  const unlockCosmetic = (childId: string, cosmeticId: string) => {
+    const item = cosmeticById.get(cosmeticId);
+    if (!item) return;
+    setProgress((current) => {
+      const child = normalizeProgress(current[childId]);
+      const rewards = calculateRewards(child);
+      if (child.unlockedCosmetics?.includes(cosmeticId) || rewards.coins < item.cost || levelFromXp(rewards.xp) < item.unlockLevel) return current;
+      return { ...current, [childId]: { ...child, unlockedCosmetics: [...(child.unlockedCosmetics ?? []), cosmeticId] } };
+    });
+  };
+
+  const toggleCosmetic = (childId: string, cosmeticId: string) => {
+    const item = cosmeticById.get(cosmeticId);
+    if (!item) return;
+    setProgress((current) => {
+      const child = normalizeProgress(current[childId]);
+      if (!child.unlockedCosmetics?.includes(cosmeticId)) return current;
+      const equipped = child.equippedCosmetics ?? [];
+      const isEquipped = equipped.includes(cosmeticId);
+      const withoutSameSlot = equipped.filter((id) => cosmeticById.get(id)?.slot !== item.slot);
+      return { ...current, [childId]: { ...child, equippedCosmetics: isEquipped ? withoutSameSlot : [...withoutSameSlot, cosmeticId] } };
+    });
   };
 
   const cycleTheme = () => {
@@ -659,19 +835,48 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     setSettings((current) => ({ ...current, theme: next }));
   };
 
+  const requestParentArea = () => {
+    if (isLocalFamily) {
+      setFamilySetupOpen(true);
+      return;
+    }
+    if (adminUnlocked) {
+      setView('report');
+      return;
+    }
+    setAdminDestination('report');
+    setAdminPromptOpen(true);
+  };
+
   const requestSettings = () => {
+    if (isLocalFamily) {
+      setFamilySetupOpen(true);
+      return;
+    }
     if (adminUnlocked) {
       setView('settings');
       return;
     }
+    setAdminDestination('settings');
     setAdminPromptOpen(true);
   };
 
+  const promoteLocalFamily = (pin: string) => {
+    if (!isLocalFamily || !validFamilyPin(pin)) return;
+    const nextSettings = { ...settings, cloudSync: { enabled: true, familyCode: pin } };
+    localStorage.setItem(familyStorageKey(pin, 'settings'), JSON.stringify(nextSettings));
+    localStorage.setItem(familyStorageKey(pin, 'progress'), JSON.stringify(progress));
+    localStorage.setItem(familyStorageKey(pin, 'attendance'), JSON.stringify(attendance));
+    localStorage.setItem(familyStorageKey(pin, 'reflections'), JSON.stringify(reflections));
+    setFamilySetupOpen(false);
+    onOpenFamily(pin);
+  };
+
   const unlockAdmin = (pin: string) => {
-    if (normalizeFamilyPin(pin) !== familyPin) return false;
+    if (isLocalFamily || normalizeFamilyPin(pin) !== familyPin) return false;
     setAdminUnlocked(true);
     setAdminPromptOpen(false);
-    setView('settings');
+    setView(adminDestination);
     return true;
   };
 
@@ -692,15 +897,18 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
           settings={settings}
           progress={progress}
           participants={participantIds(selectedDay)}
+          access={accessForDay(selectedDay)}
+          trustedDateVerified={trustedDate.verified}
           onBack={() => setSelectedDayId(null)}
           onToggleAttendance={(childId) => toggleAttendance(selectedDay, childId)}
           onToggleMission={toggleMission}
           onToggleBlock={(childId, block) => toggleBlock(childId, selectedDay, block)}
+          onCompleteChallengeStep={(step) => completeChallengeStep(selectedDay, step)}
           reflection={reflections[selectedDay.id] ?? emptyReflection()}
           onUpdateReflection={(patch) => setReflections((current) => ({ ...current, [selectedDay.id]: { ...(current[selectedDay.id] ?? emptyReflection()), ...patch } }))}
           onClaimEgg={(childId) => claimEgg(childId, selectedDay)}
         />
-        {rewardToast && <div className="reward-toast v30-reward-toast" key={rewardToast.id}><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
+        {celebration && <CelebrationOverlay moment={celebration} onClose={() => setCelebration(null)} />}
       </>
     );
   }
@@ -720,16 +928,16 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
         </nav>
         <nav className="top-actions v30-utility-nav">
           <button className="active-user-chip" onClick={() => setUserPromptOpen(true)} title="切換家長／照顧者">{activeUser ? <><CaregiverAvatar user={activeUser} size={32} /><span><strong>{activeUser.name}</strong><small>{roleLabel(activeUser.role)}</small></span></> : <><Users size={18} /><span><strong>選擇照顧者</strong></span></>}</button>
-          <button className={`v30-parent-entry ${view === 'report' || view === 'settings' ? 'active' : ''}`} onClick={() => setView('report')}><BarChart3 size={18} /><span>家長專區</span></button>
+          <button className={`v30-parent-entry ${view === 'report' || view === 'settings' ? 'active' : ''}`} onClick={requestParentArea}><BarChart3 size={18} /><span>家長專區</span></button>
           <button className="nav-button v30-display-toggle" onClick={cycleTheme} title="切換顯示模式">{settings.theme === 'dark' ? <Moon size={18} /> : settings.theme === 'light' ? <Sun size={18} /> : <Monitor size={18} />}</button>
         </nav>
       </header>
 
       <main className="v30-main">
-        {view === 'home' && <HomeView settings={settings} progress={progress} featuredDay={featuredDay} todayDay={todayDay} completedDays={completedDays} completionPct={completionPct} isChildDayDone={isChildDayDone} openDay={openDay} goSemester={() => setView('semester')} />}
-        {view === 'semester' && <SemesterView settings={settings} isDayDone={isDayDone} openDay={openDay} goHome={() => setView('home')} />}
-        {view === 'achievements' && <AchievementsView settings={settings} progress={progress} completedDays={completedDays} goHome={() => setView('home')} goShop={() => setView('shop')} />}
-        {view === 'character' && <CharacterView settings={settings} progress={progress} goHome={() => setView('home')} />}
+        {view === 'home' && <HomeView settings={settings} progress={progress} featuredDay={featuredDay} todayDay={todayDay} nextUnlockDay={nextUnlockDay} trustedDate={trustedDate} todayChallengeSteps={todayDay ? challengeSteps(todayDay) : { warmup: false, learn: false }} completedDays={completedDays} completionPct={completionPct} isChildDayDone={isChildDayDone} openDay={openDay} goSemester={() => setView('semester')} />}
+        {view === 'semester' && <SemesterView settings={settings} trustedDate={trustedDate} isDayDone={isDayDone} openDay={openDay} goHome={() => setView('home')} />}
+        {view === 'achievements' && <AchievementsView settings={settings} progress={progress} completedDays={completedDays} goHome={() => setView('home')} goShop={() => setView('character')} />}
+        {view === 'character' && <CharacterView settings={settings} progress={progress} goHome={() => setView('home')} onUnlockCosmetic={unlockCosmetic} onToggleCosmetic={toggleCosmetic} />}
         {view === 'report' && <LearningReportView settings={settings} progress={progress} isChildDayDone={isChildDayDone} goHome={() => setView('home')} goSettings={requestSettings} cloudStatus={cloudStatus} />}
         {view === 'shop' && <TreasureShopView settings={settings} progress={progress} goHome={() => setView('achievements')} />}
         {view === 'settings' && (
@@ -759,104 +967,176 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
         <div><strong>教材來源</strong>{youtubeChannelLinks.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}</div>
         <div className="asset-credit">V3.0 採 Premium Storybook Adventure EdTech 視覺系統；品牌場景與 Adventure World 使用 ChatGPT Image 製作並裁切為 WebP，主要場景素材位於 <code>public/assets/v30/</code>，既有角色進化素材保留作可解鎖 Avatar／Costume。功能圖示統一採 <a href="https://lucide.dev/" target="_blank" rel="noreferrer">Lucide（ISC）</a>。</div>
       </footer>
-      {rewardToast && <div className="reward-toast v30-reward-toast" key={rewardToast.id}><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
-      {adminPromptOpen && <AdminPinDialog familyPin={familyPin} onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
+      {adminPromptOpen && !isLocalFamily && <AdminPinDialog familyPin={familyPin} onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
+      {familySetupOpen && isLocalFamily && <FamilySetupDialog onSetPin={promoteLocalFamily} onClose={() => setFamilySetupOpen(false)} />}
       {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
     </div>
   );
 }
 
-function HomeView({ settings, progress, featuredDay, todayDay, completedDays, completionPct, isChildDayDone, openDay, goSemester }: {
+function HomeView({ settings, progress, featuredDay, todayDay, nextUnlockDay, trustedDate, todayChallengeSteps, completedDays, completionPct, isChildDayDone, openDay, goSemester }: {
   settings: AppSettings;
   progress: AppProgress;
   featuredDay: CourseDay;
   todayDay?: CourseDay;
+  nextUnlockDay: CourseDay | null;
+  trustedDate: TrustedTaipeiDate;
+  todayChallengeSteps: { warmup: boolean; learn: boolean };
   completedDays: number;
   completionPct: number;
   isChildDayDone: (childId: string, day: CourseDay) => boolean;
   openDay: (day: CourseDay) => void;
   goSemester: () => void;
 }) {
-  const featuredDate = addCourseWeekdays(settings.semesterStart, featuredDay.index - 1);
   const activeChildren = settings.children.filter((child) => !child.disabled).slice(0, 2);
-  const todayWords = featuredDay.blocks[0].vocabulary.slice(0, 3);
-  const worldCards = [
-    ...visualThemeOptions.map((option) => ({ title: option.title, subtitle: option.subtitle, art: worldArtByTheme[option.id] })),
-    { title: 'Space Station', subtitle: '太空與科學探索', art: 'world-space.webp' },
-  ];
+  const todayCompleted = Boolean(todayDay && activeChildren.length && activeChildren.every((child) => isChildDayDone(child.id, todayDay)));
+  const featuredDateKey = addCourseWeekdaysYmd(settings.semesterStart, featuredDay.index - 1);
+  const nextUnlockKey = nextUnlockDay ? addCourseWeekdaysYmd(settings.semesterStart, nextUnlockDay.index - 1) : null;
+  const vocabulary = Array.from(new Set(featuredDay.blocks.flatMap((block) => block.vocabulary))).slice(0, 5);
+  const missionCount = featuredDay.blocks.reduce((sum, block) => sum + block.missions.length, 0);
+  const worldArt = lessonWorldArt(featuredDay.blocks[0]);
+  const worldName = worldArt === 'world-animal.webp' ? 'Animal Forest'
+    : worldArt === 'world-color.webp' ? 'Color Garden'
+      : worldArt === 'world-food.webp' ? 'Food Market'
+        : worldArt === 'world-ocean.webp' ? 'Ocean Adventure'
+          : worldArt === 'world-space.webp' ? 'Space Station'
+            : 'Hello Town';
+  const challengeDone = todayCompleted;
+  const challengeProgress = [todayChallengeSteps.warmup, todayChallengeSteps.learn, challengeDone];
+  const formalToday = Boolean(todayDay && trustedDate.verified);
+  const heroState = !trustedDate.verified ? 'checking' : todayDay ? (todayCompleted ? 'complete' : 'today') : 'locked';
 
   return (
-    <div className="page home-page v30-home">
-      <section className="v30-story-hero">
+    <div className="page home-page v30-home v30-game-home">
+      <section className={`v30-story-hero v30-daily-hero state-${heroState}`}>
         <div className="v30-hero-copy">
-          <span className="v30-overline">TODAY'S ADVENTURE · DAY {featuredDay.index}</span>
-          <h1>今天一起去冒險！</h1>
-          <h2>{featuredDay.title}</h2>
-          <div className="v30-today-learning"><BookOpen size={20} /><span>今天要學</span><strong>{todayWords.join(' · ')}</strong></div>
-          <div className="v30-hero-actions">
-            <button className="v30-primary-cta" onClick={() => openDay(featuredDay)}><PlayCircle size={23} />開始今天的冒險</button>
-            <button className="v30-secondary-cta" onClick={goSemester}><Map size={19} />看看冒險地圖</button>
+          <div className="v30-hero-date-row">
+            <span className="v30-overline">DAILY CHALLENGE · DAY {featuredDay.index}</span>
+            <span className={`v30-time-trust ${trustedDate.verified ? 'verified' : ''}`}>{trustedDate.verified ? `台北時間 · ${formatTaipeiCourseDate(trustedDate.ymd)}` : '正在確認台北日期…'}</span>
           </div>
-          <small>{todayDay ? formatCourseDate(featuredDate) : `下一個任務 · ${formatCourseDate(featuredDate)}`}</small>
+          <h1>Hi, 小小探險家！</h1>
+          <div className="v30-adventure-title"><span>今天的冒險</span><h2>{worldName}</h2></div>
+          <ul className="v30-daily-goals" aria-label="今日挑戰目標">
+            <li><BookOpen size={19} /><span>Learn {vocabulary.length} words</span></li>
+            <li><Headphones size={19} /><span>Sing 1 song</span></li>
+            <li><Gamepad2 size={19} /><span>Complete {missionCount} missions</span></li>
+          </ul>
+          <div className="v30-hero-actions">
+            {heroState === 'today' && <button className="v30-primary-cta" onClick={() => openDay(featuredDay)}><PlayCircle size={23} />開始今天的冒險</button>}
+            {heroState === 'complete' && <button className="v30-primary-cta is-complete" disabled><CheckCircle2 size={23} />今天完成了！</button>}
+            {heroState === 'checking' && <button className="v30-primary-cta" disabled><RefreshCw size={22} />正在確認今天</button>}
+            {heroState === 'locked' && <button className="v30-primary-cta" disabled><Lock size={22} />{shortUnlockDate(featuredDateKey)}</button>}
+          </div>
+          <div className="v30-daily-progress" aria-label="Daily Challenge 三階段進度">
+            <div>{challengeProgress.map((done, index) => <span key={index} className={done ? 'done' : index === challengeProgress.findIndex((item) => !item) ? 'current' : ''} />)}</div>
+            <strong>{challengeProgress.filter(Boolean).length} / 3 missions</strong>
+          </div>
+          {todayCompleted && nextUnlockKey && <small className="v30-next-unlock">下一個冒險 · {shortUnlockDate(nextUnlockKey)}</small>}
+          {!todayDay && trustedDate.verified && <small className="v30-next-unlock">今天沒有正式挑戰 · 下一關 {shortUnlockDate(featuredDateKey)}</small>}
+          {!formalToday && !trustedDate.verified && <small className="v30-next-unlock">日期尚未由伺服器確認前，只能瀏覽，不會發放 XP 或金幣。</small>}
         </div>
-        <div className="v30-hero-illustration" aria-hidden="true"><img src={v30Asset('hero-storybook.webp')} alt="" /></div>
+        <div className="v30-hero-illustration" aria-hidden="true"><img src={v30Asset(worldArt)} alt="" /></div>
       </section>
 
-      <section className="v30-section v30-world-section">
-        <div className="v30-section-heading"><div><span className="v30-overline">ADVENTURE WORLDS</span><h2>選擇你的冒險世界</h2></div><button className="v30-text-link" onClick={goSemester}>查看全部課程 <ChevronRight size={18} /></button></div>
-        <div className="v30-world-grid">{worldCards.map((world) => <button className="v30-world-card" key={world.title} onClick={goSemester}><img src={v30Asset(world.art)} alt="" /><span><strong>{world.title}</strong><small>{world.subtitle}</small></span></button>)}</div>
+      <section className="v30-home-quick-row" aria-label="冒險摘要">
+        <button className="v30-quick-card" onClick={goSemester}><Map size={24} /><span><strong>冒險地圖</strong><small>查看 18 週關卡</small></span><ChevronRight size={18} /></button>
+        <div className="v30-quick-card is-progress"><Trophy size={24} /><span><strong>學期進度 {completionPct}%</strong><small>已完成 {completedDays} 個學習日</small></span></div>
       </section>
 
-      <section className="v30-section v30-journey-section">
-        <div className="v30-section-heading"><div><span className="v30-overline">LEARNING JOURNEY</span><h2>今天只要走完四步</h2></div><span className="v30-progress-label">學期進度 {completionPct}%</span></div>
-        <div className="v30-journey-grid">
-          <article><span className="v30-step-number">1</span><Headphones size={28} /><strong>Listen</strong><small>先聽一聽</small></article>
-          <article><span className="v30-step-number">2</span><MessageCircle size={28} /><strong>Repeat</strong><small>跟著說一說</small></article>
-          <article><span className="v30-step-number">3</span><Gamepad2 size={28} /><strong>Play</strong><small>動手玩任務</small></article>
-          <article><span className="v30-step-number">4</span><CheckCircle2 size={28} /><strong>Complete</strong><small>完成就領獎</small></article>
-        </div>
-      </section>
-
-      <section className="v30-section v30-growth-section">
-        <div className="v30-section-heading"><div><span className="v30-overline">MY CHARACTERS</span><h2>我們今天也長大了一點</h2></div><span className="v30-streak"><Flame size={18} /> 已完成 {completedDays} 個學習日</span></div>
-        <div className="v30-character-strip">{activeChildren.map((child) => { const rewards = calculateRewards(progress[child.id]); const childDays = curriculum.filter((day) => isChildDayDone(child.id, day)).length; const nextStage = nextAvatarStageXp(rewards.xp); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={104} showStage /><div><span>Lv.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={childDays} max={90} /><small>{nextStage ? `再 ${Math.max(0, nextStage - rewards.xp)} XP 進化` : '已達最高進化'}</small></div></article>; })}</div>
+      <section className="v30-section v30-growth-section v30-home-growth">
+        <div className="v30-section-heading"><div><span className="v30-overline">MY EXPLORERS</span><h2>角色成長</h2></div></div>
+        <div className="v30-character-strip">{activeChildren.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const nextStage = nextAvatarStageXp(rewards.xp); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={96} showStage equippedCosmetics={normalized.equippedCosmetics}/><div><span>Lv.{levelFromXp(rewards.xp)} · {avatarStageName(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={rewards.xp % 220} max={220} /><small>{nextStage ? `再 ${Math.max(0, nextStage - rewards.xp)} XP 進化` : 'Legendary Explorer'}</small></div></article>; })}</div>
       </section>
     </div>
   );
 }
 
-function AchievementsView({ settings, progress, completedDays, goHome, goShop }: { settings: AppSettings; progress: AppProgress; completedDays: number; goHome: () => void; goShop: () => void }) {
-  const milestones = [
-    { days: 5, title: '第一張冒險地圖', art: 'star' as const },
-    { days: 30, title: '故事好朋友', art: 'xp' as const },
-    { days: 60, title: '遠方探險家', art: 'rocket' as const },
-    { days: 90, title: '學期故事王', art: 'trophy' as const },
-  ];
+function AchievementsView({ settings, progress, goHome, goShop }: { settings: AppSettings; progress: AppProgress; completedDays: number; goHome: () => void; goShop: () => void }) {
+  const categories = [
+    ['streak', 'Streak'], ['speaking', 'Speaking'], ['listening', 'Listening'], ['learning', 'Learning'], ['adventure', 'Adventure'], ['special', 'Special'],
+  ] as const;
   return (
     <div className="page v30-secondary-page v30-rewards-page">
-      <div className="v30-page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">REWARDS</span><h1>我的獎勵</h1><p>完成學習後，獎勵才出場。角色成長比數字更重要。</p></div><button className="v30-secondary-cta" onClick={goShop}><Gift size={19} />打開寶物櫃</button></div>
-      <section className="v30-section"><div className="v30-section-heading"><div><span className="v30-overline">MILESTONES</span><h2>冒險里程碑</h2></div></div><div className="v30-milestone-grid">{milestones.map((item) => <article className={completedDays >= item.days ? 'unlocked' : ''} key={item.days}><AnimatedBadge art={item.art} size={68} /><div><span>{item.days} 個學習日</span><strong>{item.title}</strong><small>{completedDays >= item.days ? '已解鎖，做得很好！' : `再完成 ${Math.max(0, item.days - completedDays)} 天`}</small></div></article>)}</div></section>
-      <section className="v30-section"><div className="v30-section-heading"><div><span className="v30-overline">LEARNER GROWTH</span><h2>角色成長</h2></div></div><div className="v30-character-strip">{settings.children.filter((child) => !child.disabled).map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={108} showStage /><div><span>Lv.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={avatarStageFromXp(rewards.xp)} max={4} /><small>{rewards.xp} XP · {rewards.coins} 金幣 · 彩蛋 {normalized.claimedEggs.length}/{easterEggDays.size}</small></div></article>; })}</div></section>
+      <div className="v30-page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">BADGE COLLECTION</span><h1>我的徽章收藏</h1><p>24 枚原創徽章都由正式學習紀錄解鎖；未解鎖徽章保留低飽和剪影。</p></div><button className="v30-secondary-cta" onClick={goShop}><Gift size={19} />角色裝備</button></div>
+      {settings.children.filter((child) => !child.disabled).map((child) => {
+        const normalized = normalizeProgress(progress[child.id]);
+        const rewards = calculateRewards(normalized);
+        const unlocks = normalized.badgeUnlocks ?? {};
+        const unlockedCount = Object.keys(unlocks).filter((id) => badgeById.has(id)).length;
+        return <section className="v30-badge-learner" key={child.id}>
+          <div className="v30-badge-learner-head"><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={86} showStage equippedCosmetics={normalized.equippedCosmetics}/><div><span className="v30-overline">{child.name} · {avatarStageName(rewards.xp)}</span><h2>{unlockedCount} / 24 Badges</h2><p>{rewards.xp} XP · {rewards.coins} 可用金幣</p></div><ProgressBar value={unlockedCount} max={24}/></div>
+          {categories.map(([category, label]) => <div className="v30-badge-category" key={category}><div className="v30-badge-category-title"><strong>{label}</strong><span>{badges.filter((badge) => badge.category === category && unlocks[badge.id]).length}/4</span></div><div className="v30-badge-grid">{badges.filter((badge) => badge.category === category).map((badge) => <GameBadge key={badge.id} badge={badge} unlocked={Boolean(unlocks[badge.id])} earnedDate={unlocks[badge.id]} size={92}/>)}</div></div>)}
+        </section>;
+      })}
     </div>
   );
 }
 
-function CharacterView({ settings, progress, goHome }: { settings: AppSettings; progress: AppProgress; goHome: () => void }) {
+function CharacterView({ settings, progress, goHome, onUnlockCosmetic, onToggleCosmetic }: {
+  settings: AppSettings;
+  progress: AppProgress;
+  goHome: () => void;
+  onUnlockCosmetic: (childId: string, cosmeticId: string) => void;
+  onToggleCosmetic: (childId: string, cosmeticId: string) => void;
+}) {
   return (
     <div className="page v30-secondary-page v30-character-page">
-      <div className="v30-page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">MY CHARACTER</span><h1>我的角色</h1><p>每完成一次真實學習，角色就離下一階進化更近一步。</p></div></div>
-      <div className="v30-character-gallery">{settings.children.filter((child) => !child.disabled).map((child) => { const rewards = calculateRewards(progress[child.id]); const stage = avatarStageFromXp(rewards.xp); const nextStage = nextAvatarStageXp(rewards.xp); return <article key={child.id}><div className="v30-character-stage"><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={190} showStage /></div><div><span className="v30-overline">{child.name} · LEVEL {levelFromXp(rewards.xp)}</span><h2>{avatarName(child.avatar)}</h2><p>{stage === 4 ? '已完成目前最高進化。' : `再累積 ${Math.max(0, (nextStage ?? rewards.xp) - rewards.xp)} XP，就會解鎖下一個造型。`}</p><ProgressBar value={stage} max={4} /><div className="v30-character-reward"><AnimatedBadge art="xp" size={42} /><strong>{rewards.xp} XP</strong><span>進化 {stage}/4</span></div></div></article>; })}</div>
-      <div className="v30-mascot-note"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><strong>小星提醒</strong><p>角色造型是冒險獎勵，不會改變學習資料。每一點 XP 都來自你真正完成的任務。</p></div></div>
+      <div className="v30-page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">MY CHARACTER</span><h1>我的角色</h1><p>XP 決定 Level 與五階進化；金幣可以解鎖裝備，不需要任何付費功能。</p></div></div>
+      <div className="v30-character-gallery">{settings.children.filter((child) => !child.disabled).map((child) => {
+        const normalized = normalizeProgress(progress[child.id]);
+        const rewards = calculateRewards(normalized);
+        const stage = avatarStageFromXp(rewards.xp);
+        const nextStage = nextAvatarStageXp(rewards.xp);
+        const level = levelFromXp(rewards.xp);
+        const unlocked = new Set(normalized.unlockedCosmetics ?? []);
+        const equipped = new Set(normalized.equippedCosmetics ?? []);
+        return <article key={child.id} className="v30-character-growth-card">
+          <div className="v30-character-stage"><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={210} showStage equippedCosmetics={normalized.equippedCosmetics} /></div>
+          <div className="v30-character-growth-copy"><span className="v30-overline">{child.name} · LEVEL {level}</span><h2>{avatarStageName(rewards.xp)}</h2><p>{stage === 5 ? 'Legendary Explorer 已解鎖。接下來的 XP 仍會累積在學習紀錄。' : `再累積 ${Math.max(0, (nextStage ?? rewards.xp) - rewards.xp)} XP，解鎖下一階角色造型。`}</p><ProgressBar value={stage} max={5} /><div className="v30-character-reward"><AnimatedBadge art="xp" size={42} /><strong>{rewards.xp} XP</strong><span>Stage {stage}/5</span><span className="v30-coin-wallet"><Coins size={16}/>{rewards.coins} 可用</span></div>
+            <div className="v30-stage-road" aria-label="五階角色成長">{['Little Explorer','Adventure Rookie','Star Explorer','Adventure Master','Legendary Explorer'].map((name, index) => <span key={name} className={stage >= index + 1 ? 'unlocked' : ''}><b>{index + 1}</b><small>{name}</small></span>)}</div>
+          </div>
+          <div className="v30-cosmetic-section"><div><span className="v30-overline">COSMETICS</span><h3>冒險裝備</h3><p>解鎖紀錄會保存；可用金幣由「學習所得 − 已解鎖裝備成本」即時計算。</p></div><div className="v30-cosmetic-grid">{cosmetics.map((item) => {
+            const owned = unlocked.has(item.id);
+            const active = equipped.has(item.id);
+            const levelReady = level >= item.unlockLevel;
+            const affordable = rewards.coins >= item.cost;
+            const disabled = !owned && (!levelReady || !affordable);
+            return <button key={item.id} disabled={disabled} className={`${owned ? 'owned' : ''} ${active ? 'equipped' : ''}`} onClick={() => owned ? onToggleCosmetic(child.id, item.id) : onUnlockCosmetic(child.id, item.id)}><span className={`v30-cosmetic-symbol slot-${item.slot}`} aria-hidden="true"/><strong>{item.name}</strong><small>{active ? '已裝備' : owned ? '點一下裝備' : !levelReady ? `Lv.${item.unlockLevel} 解鎖` : affordable ? `${item.cost} 金幣解鎖` : `還差 ${item.cost - rewards.coins} 金幣`}</small></button>;
+          })}</div></div>
+        </article>;
+      })}</div>
+      <div className="v30-mascot-note"><img src={v30Asset('characters/mascot-helper.webp')} alt="小星" /><div><strong>每一階都要看得出成長</strong><p>五階造型使用同一角色 Art Bible；裝備只改外觀，不會改動 XP、課程或完成紀錄。</p></div></div>
     </div>
   );
+}
+
+function ParentCalendar({ settings, isChildDayDone }: { settings: AppSettings; isChildDayDone: (childId: string, day: CourseDay) => boolean }) {
+  const activeChildren = settings.children.filter((child) => !child.disabled);
+  const monthGroups = new globalThis.Map<string, CourseDay[]>();
+  curriculum.forEach((day) => {
+    const key = addCourseWeekdaysYmd(settings.semesterStart, day.index - 1).slice(0, 7);
+    monthGroups.set(key, [...(monthGroups.get(key) ?? []), day]);
+  });
+  return <section className="v30-parent-panel v30-parent-calendar-panel"><div className="v30-section-heading"><div><span className="v30-overline">PARENT CALENDAR</span><h2>課程月曆</h2><p>孩子看 Adventure Map；日期、排程與完成概況留在家長區。</p></div><CalendarDays size={24}/></div><div className="v30-parent-months">{Array.from(monthGroups.entries()).map(([monthKey, days]) => {
+    const monthDate = ymdToTaipeiDate(`${monthKey}-01`);
+    const label = new Intl.DateTimeFormat('zh-TW',{ timeZone:'Asia/Taipei', year:'numeric', month:'long' }).format(monthDate);
+    return <article className="v30-parent-month" key={monthKey}><h3>{label}</h3><div className="v30-parent-calendar-weekdays">{['日','一','二','三','四','五','六'].map((day) => <span key={day}>{day}</span>)}</div><div className="v30-parent-calendar-grid">{days.map((day) => {
+      const dateKey = addCourseWeekdaysYmd(settings.semesterStart, day.index - 1);
+      const date = ymdToTaipeiDate(dateKey);
+      const completedLearners = activeChildren.filter((child) => isChildDayDone(child.id, day)).length;
+      const allDone = activeChildren.length > 0 && completedLearners === activeChildren.length;
+      return <div key={day.id} className={`v30-parent-calendar-day ${allDone ? 'done' : completedLearners ? 'partial' : ''}`} style={{ gridColumnStart: date.getUTCDay() + 1 }} title={`Day ${day.index} · ${completedLearners}/${activeChildren.length} 位完成`}><strong>{Number(dateKey.slice(-2))}</strong><small>D{day.index}</small><span>{allDone ? '完成' : completedLearners ? `${completedLearners}/${activeChildren.length}` : '—'}</span></div>;
+    })}</div></article>;
+  })}</div></section>;
 }
 
 function LearningReportView({ settings, progress, isChildDayDone, goHome, goSettings, cloudStatus }: { settings: AppSettings; progress: AppProgress; isChildDayDone: (childId: string, day: CourseDay) => boolean; goHome: () => void; goSettings: () => void; cloudStatus: CloudStatus }) {
   return (
     <div className="page v30-parent-page">
-      <div className="v30-parent-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT MODE</span><h1>家長學習中心</h1><p>學習報表、家庭設定、PIN 與雲端資訊集中在這裡，不干擾兒童首頁。</p></div></div><div className="v30-parent-actions"><CloudPill status={cloudStatus} /><button className="v30-secondary-cta" onClick={goSettings}><SettingsIcon size={18} />家庭設定</button></div></div>
+      <div className="v30-parent-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT MODE</span><h1>家長學習中心</h1><p>學習報表、課程月曆、家庭設定、PIN 與雲端資訊集中在這裡，不干擾兒童首頁。</p></div></div><div className="v30-parent-actions"><CloudPill status={cloudStatus} /><button className="v30-secondary-cta" onClick={goSettings}><SettingsIcon size={18} />家庭設定</button></div></div>
       <section className="v30-report-summary"><article><strong>18</strong><span>學習週</span></article><article><strong>90</strong><span>學習日</span></article><article><strong>180</strong><span>課程單元</span></article><article><strong>360</strong><span>互動任務</span></article></section>
-      <section className="v30-parent-panel"><div className="v30-section-heading"><div><span className="v30-overline">LEARNER PROGRESS</span><h2>學習者進度</h2></div><GraduationCap size={24} /></div><div className="v30-report-list">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const days = curriculum.filter((day) => isChildDayDone(child.id, day)).length; return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={74} /><div className="report-main"><div><span>學習者</span><h3>{child.name}</h3></div><ProgressBar value={days} max={90} /><small>{days}/90 天 · {normalized.completedBlocks.length}/180 單元 · {normalized.completedMissions.length}/360 任務</small></div><div className="report-rewards"><strong>{rewards.xp}</strong><span>XP</span><strong>{rewards.coins}</strong><span>金幣</span></div></article>; })}</div></section>
+      <section className="v30-parent-panel"><div className="v30-section-heading"><div><span className="v30-overline">LEARNER PROGRESS</span><h2>學習者進度</h2></div><GraduationCap size={24} /></div><div className="v30-report-list">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const days = curriculum.filter((day) => isChildDayDone(child.id, day)).length; return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={74} equippedCosmetics={normalized.equippedCosmetics}/><div className="report-main"><div><span>學習者</span><h3>{child.name}</h3></div><ProgressBar value={days} max={90} /><small>{days}/90 天 · {normalized.completedBlocks.length}/180 單元 · {normalized.completedMissions.length}/360 任務</small></div><div className="report-rewards"><strong>{rewards.xp}</strong><span>XP</span><strong>{rewards.coins}</strong><span>可用金幣</span></div></article>; })}</div></section>
+      <ParentCalendar settings={settings} isChildDayDone={isChildDayDone}/>
     </div>
   );
 }
@@ -872,60 +1152,116 @@ function TreasureShopView({ settings, progress, goHome }: { settings: AppSetting
   return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">TREASURE SHOP</span><h1>獎勵寶箱</h1><p>V3.0 延續「累積達標即解鎖」而不是扣除金幣，因此不會破壞由完成紀錄即時計算的獎勵模型。</p></div></div><section className="v22-panel"><div className="v22-shop-wallet"><AnimatedBadge art="treasure" size={66} /><div><span>家庭目前累積</span><strong>{familyCoins} 金幣</strong></div></div><div className="v22-shop-grid">{items.map((item) => { const unlocked = familyCoins >= item.coins; return <article className={unlocked ? 'unlocked' : ''} key={item.title}><AnimatedBadge art={item.art} size={76} /><span>{unlocked ? '已解鎖' : `${item.coins} 金幣`}</span><h3>{item.title}</h3><p>{unlocked ? '已放入家庭收藏展示櫃。' : item.detail}</p></article>; })}</div></section></div>;
 }
 
-function SemesterView({ settings, isDayDone, openDay, goHome }: { settings: AppSettings; isDayDone: (day: CourseDay) => boolean; openDay: (day: CourseDay) => void; goHome: () => void }) {
+function SemesterView({ settings, trustedDate, isDayDone, openDay, goHome }: { settings: AppSettings; trustedDate: TrustedTaipeiDate; isDayDone: (day: CourseDay) => boolean; openDay: (day: CourseDay) => void; goHome: () => void }) {
   return (
-    <div className="page">
-      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">FULL SEMESTER</span><h1>18 週完整學習地圖</h1><p>{semesterStats.days} 天 · {semesterStats.blocks} 節活動單元 · 約 {semesterStats.minutes / 60} 小時家庭共學</p></div></div>
-      <div className="week-list">{weekSummaries.map((week) => {
+    <div className="page v30-semester-page v30-adventure-map-page">
+      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">ADVENTURE MAP</span><h1>我的學期冒險地圖</h1><p>完成 = 綠色星星；今天 = 紫色發光；過去未完成 = 灰色足跡；未來 = 鎖定。</p></div></div>
+      <div className="v30-date-rule-note"><span className={trustedDate.verified ? 'verified' : ''}>{trustedDate.verified ? `Asia/Taipei · ${formatTaipeiCourseDate(trustedDate.ymd)}` : '正在確認台北日期，正式獎勵暫時鎖定'}</span><small>{semesterStats.days} 個關卡 · {semesterStats.blocks} 節學習</small></div>
+      <div className="v30-map-world-strip">{learningWorlds.map((world) => <article key={world.id} className={`world-${world.accent}`}><img src={v30Asset(world.art)} alt=""/><div><strong>{world.name}</strong><small>朋友 {world.npc}</small></div></article>)}</div>
+      <div className="v30-adventure-map">{weekSummaries.map((week) => {
         const days = curriculum.filter((day) => day.week === week.week);
         const doneCount = days.filter(isDayDone).length;
-        return <section className="week-card" key={week.week}><div className="week-head"><div className="week-number">W{String(week.week).padStart(2, '0')}</div><div className="week-copy"><h2>{week.title}</h2><p>{week.bigIdea}</p></div><div className="week-progress"><strong>{doneCount}/5</strong><small>完成</small></div></div><div className="week-vocab">{week.vocab.slice(0, 7).map((word) => <span key={word}>{word}</span>)}</div><div className="week-days">{days.map((day) => { const date = addCourseWeekdays(settings.semesterStart, day.index - 1); const done = isDayDone(day); return <button key={day.id} onClick={() => openDay(day)} className={`week-day-button ${done ? 'done' : ''}`}><div><span>DAY {day.index}</span><strong>{day.title.split('｜')[1]}</strong><small>{formatCourseDate(date)}</small></div>{done ? <CheckCircle2 size={21} /> : <ChevronRight size={20} />}</button>; })}</div></section>;
+        const weekWorld = worldForDay(days[0]);
+        return <section className={`v30-adventure-map-week world-${weekWorld.accent}`} key={week.week}>
+          <div className="v30-map-week-head"><img src={v30Asset(weekWorld.art)} alt=""/><div><span>WEEK {String(week.week).padStart(2,'0')} · {weekWorld.name}</span><h2>{week.title}</h2><p>{week.bigIdea}</p></div><strong>{doneCount}/5</strong></div>
+          <div className="v30-map-path">{days.map((day) => {
+            const dateKey = addCourseWeekdaysYmd(settings.semesterStart, day.index - 1);
+            const access = courseDayAccess(dateKey, trustedDate.ymd);
+            const done = isDayDone(day);
+            const status = done ? 'done' : access === 'today' ? 'today' : access === 'future' ? 'locked' : 'missed';
+            const world = worldForDay(day);
+            const special = easterEggDays.has(day.index);
+            return <button key={day.id} disabled={status === 'locked'} onClick={() => openDay(day)} className={`v30-map-node ${status} world-${world.accent}`} aria-label={`Day ${day.index} ${status}`}>
+              <span className="v30-map-node-orb">{done ? <Check size={23}/> : status === 'today' ? <Star size={23}/> : status === 'locked' ? <Lock size={21}/> : <Footprints size={22}/>}</span>
+              <strong>Day {day.index}</strong><small>{formatTaipeiCourseDate(dateKey)}</small><em>{status === 'today' ? '今日挑戰' : status === 'locked' ? shortUnlockDate(dateKey) : done ? '完成' : '回顧'}</em>{special && <span className="v30-map-treasure" title="Treasure Day"><Gift size={18}/></span>}
+            </button>;
+          })}</div>
+        </section>;
       })}</div>
     </div>
   );
 }
 
-function DayView({ day, date, settings, progress, participants, onBack, onToggleAttendance, onToggleMission, onToggleBlock, reflection, onUpdateReflection, onClaimEgg }: {
+function DayView({ day, date, settings, progress, participants, access, trustedDateVerified, onBack, onToggleAttendance, onToggleMission, onToggleBlock, onCompleteChallengeStep, reflection, onUpdateReflection, onClaimEgg }: {
   day: CourseDay;
   date: Date;
   settings: AppSettings;
   progress: AppProgress;
   participants: string[];
+  access: CourseDayAccess;
+  trustedDateVerified: boolean;
   onBack: () => void;
   onToggleAttendance: (childId: string) => void;
   onToggleMission: (childId: string, mission: LessonBlock['missions'][number]) => void;
   onToggleBlock: (childId: string, block: LessonBlock) => void;
+  onCompleteChallengeStep: (step: 'warmup' | 'learn') => void;
   reflection: DayReflection;
   onUpdateReflection: (patch: Partial<DayReflection>) => void;
   onClaimEgg: (childId: string) => void;
 }) {
+  const dailySteps = reflection.dailyChallenge ?? { warmup: false, learn: false };
+  const formalChallenge = access === 'today' && trustedDateVerified;
+  const reviewMode = access === 'past' || !formalChallenge;
+  const participantChildren = settings.children.filter((child) => participants.includes(child.id));
+  const challengeComplete = participantChildren.length > 0 && participantChildren.every((child) => day.blocks.every((block) => progress[child.id]?.completedBlocks.includes(block.id)));
+  const [stage, setStage] = useState<0 | 1 | 2>(() => dailySteps.learn ? 2 : dailySteps.warmup ? 1 : 0);
+  const canOpenStage = (index: 0 | 1 | 2) => reviewMode || index === 0 || (index === 1 && dailySteps.warmup) || (index === 2 && dailySteps.warmup && dailySteps.learn);
+  const moveAfterStep = (step: 'warmup' | 'learn') => {
+    if (formalChallenge) onCompleteChallengeStep(step);
+    setStage(step === 'warmup' ? 1 : 2);
+  };
+  const dailyStageItems = [
+    { label: 'Warm-up', note: '唱跳暖身', icon: Headphones, done: dailySteps.warmup },
+    { label: 'Learn', note: '影片與單字', icon: BookOpen, done: dailySteps.learn },
+    { label: 'Challenge', note: '任務闖關', icon: Trophy, done: challengeComplete },
+  ] as const;
+
   return (
-    <div className="lesson-page v30-lesson-page">
+    <div className={`lesson-page v30-lesson-page v30-daily-challenge-page mode-${access}`}>
       <header className="v30-lesson-header">
         <button className="icon-button" onClick={onBack}><ArrowLeft size={20} /></button>
         <div className="lesson-header-copy"><span>WEEK {day.week} · {formatCourseDate(date)}</span><h1>{day.title}</h1><p>{day.bigIdea}</p></div>
-        <div className="mission-badge"><Map size={20} /> Day {day.index} / 90</div>
-        {easterEggDays.has(day.index) && <EasterEgg day={day} settings={settings} progress={progress} participants={participants} onClaim={onClaimEgg} />}
+        <div className={`mission-badge v30-challenge-status ${formalChallenge ? 'today' : 'review'}`}>{formalChallenge ? <><Sparkles size={19} /> 今日挑戰</> : <><BookOpen size={19} /> 回顧模式</>}</div>
+        {formalChallenge && easterEggDays.has(day.index) && <EasterEgg day={day} settings={settings} progress={progress} participants={participants} onClaim={onClaimEgg} />}
       </header>
 
       <main className="lesson-content">
+        {!trustedDateVerified && access === 'today' && <div className="v30-trusted-time-warning"><Lock size={18} /><span>正在向伺服器確認 Asia/Taipei 日期。確認前可以複習內容，但不會發放 XP、金幣或徽章。</span></div>}
+        {access === 'past' && <div className="v30-review-banner"><BookOpen size={20} /><div><strong>這是回顧模式</strong><span>可以重播教材、複習單字與句子；過去課程不能重新挑戰，也不會再次取得獎勵。</span></div></div>}
+
         <section className="attendance-panel v30-attendance-panel">
-          <div><span className="v30-overline">TODAY'S LEARNERS</span><h2><PhoneticText text="今天誰一起上課" />？</h2><p>選好今天一起冒險的小朋友。</p></div>
+          <div><span className="v30-overline">LEARNERS</span><h2>{formalChallenge ? '今天誰一起上課？' : '本次回顧的學習者'}</h2><p>{formalChallenge ? '選好今天一起冒險的小朋友。' : '回顧模式不會修改出席或進度。'}</p></div>
           <div className="attendance-chips">{settings.children.filter((child) => !child.disabled).map((child) => {
             const active = participants.includes(child.id); const rewards = calculateRewards(progress[child.id]);
-            return <button key={child.id} className={`attendance-chip ${active ? 'active' : ''}`} onClick={() => onToggleAttendance(child.id)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={42} /><strong>{child.name}</strong>{active ? <Check size={17} /> : <Circle size={17} />}</button>;
+            return <button key={child.id} disabled={!formalChallenge} className={`attendance-chip ${active ? 'active' : ''}`} onClick={() => onToggleAttendance(child.id)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={42} /><strong>{child.name}</strong>{active ? <Check size={17} /> : <Circle size={17} />}</button>;
           })}</div>
         </section>
 
-        <details className="v30-parent-guide-quick">
-          <summary><Users size={20} /> 家長帶課提醒 <ChevronRight size={18} /></summary>
-          <div><h3>你是今天的節奏控制員</h3><p>孩子想說話、指畫面、笑出來或開始分心，就暫停。影片是教材，不是整堂課；4 歲只說單字也算成功，6 歲再往完整句推進。</p></div>
-        </details>
+        <nav className="v30-stage-nav v30-daily-stage-nav" aria-label="Daily Challenge 三階段">{dailyStageItems.map((item, index) => { const Icon = item.icon; const idx = index as 0 | 1 | 2; const enabled = canOpenStage(idx); return <button key={item.label} disabled={!enabled} className={`${stage === idx ? 'active' : ''} ${item.done ? 'done' : ''}`} onClick={() => enabled && setStage(idx)}><span>{item.done ? <Check size={14} /> : index + 1}</span><Icon size={23} /><strong>{item.label}</strong><small>{item.note}</small></button>; })}</nav>
 
-        {day.blocks.map((block, blockIndex) => <LessonBlockView key={block.id} block={block} blockIndex={blockIndex} day={day} settings={settings} progress={progress} participants={participants} onToggleMission={onToggleMission} onToggleBlock={onToggleBlock} />)}
+        {stage === 0 && <section className="v30-stage-panel v30-daily-stage-panel v30-warmup-stage">
+          <div className="v30-stage-intro"><img src={v30Asset(lessonWorldArt(day.blocks[0]))} alt="今日冒險世界" /><div><span className="v30-overline">STEP 1 · WARM-UP</span><h2>先唱、先動，準備開始！</h2><p>兩節課的暖身素材集中在這裡。跟著唱、拍手、做動作即可，不需要一次看完整支影片。</p></div></div>
+          <div className="v30-video-pair">{day.blocks.map((block) => <VideoPlayer key={block.id} clip={block.warmup} compact warmup />)}</div>
+          <button className="v30-primary-cta v30-next-stage" onClick={() => moveAfterStep('warmup')}>{formalChallenge && !dailySteps.warmup ? 'Warm-up 完成' : '前往 Learn'} <ChevronRight size={20} /></button>
+        </section>}
 
-        <section className="bonus-card v30-bonus-card"><div className="bonus-icon rich-bonus-icon"><AnimatedBadge art="treasure" size={58} /></div><div><span className="v30-overline">BONUS</span><h3><PhoneticText text="今天還想再玩一下嗎" />？</h3><p>{day.bonus}</p></div></section>
-        <details className="v30-parent-guide-quick v30-reflection-wrap"><summary><CalendarDays size={20} /> 家長課後紀錄 <ChevronRight size={18} /></summary><ReflectionPanel day={day} reflection={reflection} onUpdate={onUpdateReflection} /></details>
+        {stage === 1 && <section className="v30-stage-panel v30-daily-stage-panel v30-learn-stage">
+          <div className="v30-stage-intro"><img src={v30Asset(lessonWorldArt(day.blocks[0]))} alt="學習世界" /><div><span className="v30-overline">STEP 2 · LEARN</span><h2>看、聽、說，學會今天的英文</h2><p>主影片、Vocabulary 與句型都在這一步。點單字卡即可播放英文發音。</p></div></div>
+          <div className="v30-daily-learn-grid">{day.blocks.map((block, index) => <article className="v30-daily-learn-card" key={block.id}><div className="v30-block-heading"><div><span className="v30-overline">LESSON {index + 1}</span><h3>{block.title}</h3></div><SubjectBadge subject={block.subject} /></div><VideoPlayer clip={block.video} /><div className="v30-vocab-grid">{block.vocabulary.map((word) => <VocabularyCard key={word} word={word} block={block} />)}</div><div className="v30-sentence-practice"><span>Say it</span><strong>{block.sentence}</strong><button onClick={() => speakWord(block.sentence)}><Volume2 size={19} /> Listen</button></div></article>)}</div>
+          <div className="v30-stage-actions"><button className="v30-secondary-cta" onClick={() => setStage(0)}><ArrowLeft size={18} />Warm-up</button><button className="v30-primary-cta" onClick={() => moveAfterStep('learn')}>{formalChallenge && !dailySteps.learn ? 'Learn 完成' : '前往 Challenge'} <ChevronRight size={20} /></button></div>
+        </section>}
+
+        {stage === 2 && <section className="v30-stage-panel v30-daily-stage-panel v30-challenge-stage">
+          <div className="v30-stage-intro"><img src={v30Asset(lessonWorldArt(day.blocks[1]))} alt="挑戰世界" /><div><span className="v30-overline">STEP 3 · CHALLENGE</span><h2>{formalChallenge ? '完成任務，取得今天的獎勵！' : '回顧今天的任務內容'}</h2><p>{formalChallenge ? '完成每節的兩個任務，再完成兩節課，才算今天正式通關。' : '過去日期只顯示內容，不會變更完成紀錄。'}</p></div></div>
+          <div className="v30-daily-challenge-blocks">{day.blocks.map((block, blockIndex) => <article className="v30-challenge-block" key={block.id}><div className="v30-block-heading"><div><span className="v30-overline">MISSION SET {blockIndex + 1}</span><h3>{block.title}</h3></div><SubjectBadge subject={block.subject} /></div><div className="v30-mission-grid">{block.missions.map((mission, missionIndex) => <article className="v30-mission-card" key={mission.id}><div className="v30-mission-number">{missionIndex + 1}</div><div><span>{mission.title}</span><h4>{mission.prompt}</h4><p><strong>完成標準</strong>{mission.criteria}</p></div><div className="v30-mission-players">{participantChildren.map((child) => { const done = progress[child.id]?.completedMissions.includes(mission.id) ?? false; const rewards = calculateRewards(progress[child.id]); return <button key={child.id} disabled={!formalChallenge || done} className={done ? 'done' : ''} onClick={() => onToggleMission(child.id, mission)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={38} /><span>{child.name}</span>{done ? <CheckCircle2 size={20} /> : <span className="v30-reward-chip">+{mission.xp} XP</span>}</button>; })}</div></article>)}</div><div className="v30-complete-buttons">{participantChildren.map((child) => { const childProgress = normalizeProgress(progress[child.id]); const done = childProgress.completedBlocks.includes(block.id); const ready = block.missions.every((mission) => childProgress.completedMissions.includes(mission.id)); const rewards = calculateRewards(childProgress); return <button key={child.id} disabled={!formalChallenge || done || !ready} className={done ? 'done' : ready ? 'ready' : ''} onClick={() => onToggleBlock(child.id, block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={46} /><span><strong>{child.name}</strong><small>{done ? '這一節已完成' : ready ? `完成這節 · +${BLOCK_REWARD.xp} XP` : '先完成兩個任務'}</small></span>{done ? <CheckCircle2 size={23} /> : <Award size={23} />}</button>; })}</div></article>)}</div>
+          {challengeComplete && <div className="v30-day-complete-inline"><Trophy size={26} /><div><strong>Daily Challenge 完成！</strong><span>今天的正式進度已記錄，同一天不會再次發放獎勵。</span></div></div>}
+          <button className="v30-secondary-cta" onClick={() => setStage(1)}><ArrowLeft size={18} />回到 Learn</button>
+        </section>}
+
+        <details className="v30-parent-guide-quick v30-parent-guide-merged"><summary><Users size={20} /> Parent Guide <ChevronRight size={18} /></summary><div>{day.blocks.map((block, blockIndex) => <section key={block.id}><span className="v30-overline">LESSON {blockIndex + 1}</span><h3>{block.title}</h3><p>{block.caregiverTip}</p><div className="timeline">{block.steps.map((step, index) => <div className="timeline-step" key={`${block.id}-${index}`}><div className="time-dot"><span>{step.minute}</span></div><div><h4>{step.title}</h4><p>{step.instruction}</p>{step.cue && <div className="pause-cue">暫停提示：{step.cue}</div>}</div></div>)}</div></section>)}</div></details>
+
+        <section className="bonus-card v30-bonus-card"><div className="bonus-icon rich-bonus-icon"><AnimatedBadge art="treasure" size={58} /></div><div><span className="v30-overline">BONUS</span><h3>今天還想再玩一下嗎？</h3><p>{day.bonus}</p></div></section>
+        {formalChallenge && <details className="v30-parent-guide-quick v30-reflection-wrap"><summary><CalendarDays size={20} /> 家長課後紀錄 <ChevronRight size={18} /></summary><ReflectionPanel day={day} reflection={reflection} onUpdate={onUpdateReflection} /></details>}
       </main>
     </div>
   );
@@ -957,65 +1293,6 @@ function ReflectionPanel({ day, reflection, onUpdate }: { day: CourseDay; reflec
       <div className="viewing-log-grid">{day.blocks.map((block, index) => <div className="viewing-log-row" key={block.id}><strong>第 {index + 1} 節影片看多少？</strong><div className="viewing-options">{(['full', 'partial', 'skip'] as ViewingStatus[]).map((status) => <button key={status} className={reflection.viewing[block.id] === status ? 'active' : ''} onClick={() => setViewing(block.id, status)}>{viewingLabels[status]}</button>)}</div></div>)}</div>
       <div className="engagement-row">{engagementOptions.map((option) => <button key={option.value} className={reflection.engagement === option.value ? 'active' : ''} onClick={() => onUpdate({ engagement: option.value })}>{option.label}</button>)}</div>
       <textarea className="reflection-note" value={reflection.note} onChange={(e) => onUpdate({ note: e.target.value })} placeholder="可選填：今天最喜歡什麼？哪裡卡住？下次要注意什麼？" rows={3} />
-    </section>
-  );
-}
-
-function LessonBlockView({ block, blockIndex, day, settings, progress, participants, onToggleMission, onToggleBlock }: {
-  block: LessonBlock;
-  blockIndex: number;
-  day: CourseDay;
-  settings: AppSettings;
-  progress: AppProgress;
-  participants: string[];
-  onToggleMission: (childId: string, mission: LessonBlock['missions'][number]) => void;
-  onToggleBlock: (childId: string, block: LessonBlock) => void;
-}) {
-  const [stage, setStage] = useState<0 | 1 | 2 | 3>(0);
-  const action = subjectAction(block.subject);
-  const stageItems = [
-    { label: 'Listen', note: '先聽一聽', icon: Headphones },
-    { label: 'Repeat', note: '跟著說一說', icon: MessageCircle },
-    { label: 'Play', note: '動手玩任務', icon: Gamepad2 },
-    { label: 'Complete', note: '完成並領獎', icon: CheckCircle2 },
-  ] as const;
-  const participantChildren = settings.children.filter((child) => participants.includes(child.id));
-
-  return (
-    <section className="v30-lesson-block">
-      <div className="v30-block-heading">
-        <div><span className="v30-overline">LESSON {blockIndex + 1} · {block.duration} MIN</span><h2>{block.title}</h2></div>
-        <SubjectBadge subject={block.subject} />
-      </div>
-
-      <div className="v30-stage-nav" aria-label="學習步驟">{stageItems.map((item, index) => { const Icon = item.icon; const active = stage === index; return <button key={item.label} className={active ? 'active' : ''} onClick={() => setStage(index as 0 | 1 | 2 | 3)}><span>{index + 1}</span><Icon size={22} /><strong>{item.label}</strong><small>{item.note}</small></button>; })}</div>
-
-      {stage === 0 && <div className="v30-stage-panel v30-listen-stage">
-        <div className="v30-stage-intro v30-listen-intro"><img className="v30-world-thumb" src={v30Asset(lessonWorldArt(block))} alt="本節冒險世界" /><div><span className="v30-overline">STEP 1 · LISTEN</span><h3>耳朵準備好了嗎？</h3><p>先走進今天的 Storybook 世界，跟著唱跳暖身，再看主影片。想說話、想指畫面，就可以暫停。</p></div><img className="v30-mascot-mini" src={v23Asset('robot-helper.webp')} alt="小星" /></div>
-        <div className="v30-video-pair"><VideoPlayer clip={block.warmup} compact warmup /><VideoPlayer clip={block.video} /></div>
-        <button className="v30-primary-cta v30-next-stage" onClick={() => setStage(1)}>聽完了，下一步 <ChevronRight size={20} /></button>
-      </div>}
-
-      {stage === 1 && <div className="v30-stage-panel v30-repeat-stage">
-        <div className="v30-stage-intro"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><span className="v30-overline">STEP 2 · REPEAT</span><h3>看看、聽聽、跟著說</h3><p>點一下單字卡可以播放英文發音。每次只看一個字，不用一次全部記住。</p></div></div>
-        <div className="v30-vocab-grid">{block.vocabulary.map((word) => <VocabularyCard key={word} word={word} block={block} />)}</div>
-        <div className="v30-sentence-practice"><span>今天的句子</span><strong>{block.sentence}</strong><button onClick={() => speakWord(block.sentence)}><Volume2 size={19} /> 聽句子</button></div>
-        <div className="v30-stage-actions"><button className="v30-secondary-cta" onClick={() => setStage(0)}><ArrowLeft size={18} />上一步</button><button className="v30-primary-cta" onClick={() => setStage(2)}>我會說了 <ChevronRight size={20} /></button></div>
-      </div>}
-
-      {stage === 2 && <div className="v30-stage-panel v30-play-stage">
-        <div className="v30-stage-intro"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><span className="v30-overline">STEP 3 · PLAY</span><h3>現在來玩任務</h3><p>{action.text}</p></div></div>
-        <div className="v30-mission-grid">{block.missions.map((mission, missionIndex) => <article className="v30-mission-card" key={mission.id}><div className="v30-mission-number">{missionIndex + 1}</div><div><span>{mission.title}</span><h4>{mission.prompt}</h4><p><strong>完成標準</strong>{mission.criteria}</p></div><div className="v30-mission-players">{participantChildren.map((child) => { const done = progress[child.id]?.completedMissions.includes(mission.id) ?? false; const rewards = calculateRewards(progress[child.id]); return <button key={child.id} className={done ? 'done' : ''} onClick={() => onToggleMission(child.id, mission)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={38} /><span>{child.name}</span>{done ? <CheckCircle2 size={20} /> : <span className="v30-reward-chip">+{mission.xp} XP</span>}</button>; })}</div></article>)}</div>
-        <div className="v30-stage-actions"><button className="v30-secondary-cta" onClick={() => setStage(1)}><ArrowLeft size={18} />上一步</button><button className="v30-primary-cta" onClick={() => setStage(3)}>任務完成了 <ChevronRight size={20} /></button></div>
-      </div>}
-
-      {stage === 3 && <div className="v30-stage-panel v30-complete-stage">
-        <div className="v30-success-scene"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><span className="v30-overline">STEP 4 · COMPLETE</span><h3>最後一步，領取今天的成長！</h3><p>兩個任務完成後，就可以正式完成這一節。</p></div></div>
-        <div className="v30-complete-buttons">{participantChildren.map((child) => { const childProgress = normalizeProgress(progress[child.id]); const done = childProgress.completedBlocks.includes(block.id); const ready = block.missions.every((mission) => childProgress.completedMissions.includes(mission.id)); const rewards = calculateRewards(childProgress); return <button key={child.id} disabled={!done && !ready} className={done ? 'done' : ready ? 'ready' : ''} onClick={() => onToggleBlock(child.id, block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={48} /><span><strong>{child.name}</strong><small>{done ? '這一節已完成' : ready ? `完成並獲得 +${BLOCK_REWARD.xp} XP` : '先完成前面的 2 個任務'}</small></span>{done ? <CheckCircle2 size={24} /> : <Award size={24} />}</button>; })}</div>
-        <button className="v30-secondary-cta" onClick={() => setStage(2)}><ArrowLeft size={18} />回到任務</button>
-      </div>}
-
-      <details className="v30-parent-guide"><summary><Users size={19} /> 家長帶課指南 <ChevronRight size={18} /></summary><div className="v30-parent-guide-body"><div><span className="v30-overline">CAREGIVER SCRIPT</span><h3>照著做就能上課</h3><div className="timeline">{block.steps.map((step, index) => <div className="timeline-step" key={`${block.id}-${index}`}><div className="time-dot"><span>{step.minute}</span></div><div><h4>{step.title}</h4><p>{step.instruction}</p>{step.cue && <div className="pause-cue">暫停提示：{step.cue}</div>}</div></div>)}</div></div><aside><div className="tip-card"><strong>帶課提醒</strong><p>{block.caregiverTip}</p></div><div className="level-card"><div><span>初階</span><p>{block.younger}</p></div><div><span>進階</span><p>{block.older}</p></div></div></aside></div></details>
     </section>
   );
 }
@@ -1134,10 +1411,10 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
       <div className="admin-unlocked-banner"><div><strong>管理者 PIN 已解鎖</strong><span>目前為家庭最高管理權限；離開家庭或重新載入後需再次驗證。</span></div><KeyRound size={20} /></div>
       <section className="v22-family-hero v30-family-summary" aria-label="家庭管理中心">
         <div><span className="v30-overline">FAMILY CONTROL</span><h2>全家的學習資料，由管理者守護</h2><p>照顧者帳號、學習者、個人 PIN、雲端同步與冒險世界都集中在這裡管理；兒童首頁不顯示這些系統資訊。</p></div>
-        <div className="v22-family-hero-art" aria-hidden="true"><img src={v23Asset('avatar-father.webp')} alt="" /><img src={v23Asset('avatar-mother.webp')} alt="" /><img className="robot" src={v23Asset('robot-helper.webp')} alt="" /></div>
+        <div className="v22-family-hero-art" aria-hidden="true"><img src={v30Asset('characters/avatar-father.webp')} alt="" /><img src={v30Asset('characters/avatar-mother.webp')} alt="" /><img className="robot" src={v30Asset('characters/mascot-helper.webp')} alt="" /></div>
       </section>
 
-      <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示明暗</h3><p>亮色、暗色或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '暗黑'}</button>)}</div></section>
+      <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示模式</h3><p>明亮、夜間冒險或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '夜間冒險'}</button>)}</div></section>
 
       <section className="settings-card vertical theme-settings-card">
         <div className="setting-label"><span className="setting-icon"><Map size={20} /></span><div><h3>Adventure World</h3><p>世界只改變學習環境與插畫情境；按鈕、導航、卡片、字體與品牌設計保持一致。</p></div></div>
@@ -1179,10 +1456,10 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
           return (
             <div className={`child-setting-card ${child.disabled ? 'is-disabled' : ''}`} key={child.id}>
               <div className="child-setting-head">
-                <AvatarHero avatarId={child.avatar} xp={rewards.xp} size={94} showStage />
+                <AvatarHero avatarId={child.avatar} xp={rewards.xp} size={94} showStage equippedCosmetics={normalizeProgress(progress[child.id]).equippedCosmetics} />
                 <div className="child-name-editor">
                   <input value={child.name} onChange={(e) => updateChild(child.id, { name: e.target.value })} />
-                  <span>學習者 · {avatarName(child.avatar)} · Level {levelFromXp(rewards.xp)} · 進化 {stage}/4</span>
+                  <span>學習者 · {avatarName(child.avatar)} · Level {levelFromXp(rewards.xp)} · 進化 {stage}/5</span>
                   <div className="child-inline-stats"><span><Zap size={15} /> {rewards.xp} XP</span><span><Coins size={15} /> {rewards.coins}</span></div>
                 </div>
                 <button className="icon-button danger" onClick={() => removeChild(child.id)} disabled={settings.children.length <= 1} title="刪除學習者"><Trash2 size={17} /></button>
@@ -1215,50 +1492,11 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
   );
 }
 
-function PinGate({ onEnter }: { onEnter: (pin: string) => void }) {
-  const legacyDetected = hasLegacyLocalData();
-  const [pin, setPin] = useState(legacyDetected ? '1234' : '');
-  const [error, setError] = useState('');
-
-  const submit = () => {
-    const normalized = normalizeFamilyPin(pin);
-    if (!validFamilyPin(normalized)) {
-      setError('請輸入 4–6 位數字 PIN。');
-      return;
-    }
-    setError('');
-    onEnter(normalized);
-  };
-
-  return (
-    <main className="pin-gate-shell">
-      <section className="pin-gate-card">
-        <div className="pin-gate-visual v30-pin-story" aria-hidden="true">
-          <img className="v30-pin-story-image" src={v30Asset('hero-storybook.webp')} alt="" />
-        </div>
-        <div className="pin-gate-copy">
-          <span className="v30-overline">FAMILY PROFILE · V3.0</span>
-          <h1>歡迎回到小小探險隊</h1>
-          <p>新裝置第一次由家庭管理者輸入管理者 PIN 來載入這一家人的資料；進入家庭後，每位成員再用自己的個人 PIN 切換角色。首頁不公開列出其他家庭設定檔。</p>
-          {legacyDetected && <div className="legacy-pin-note"><Sparkles size={17} /><span>偵測到這台裝置有舊版學習資料，已為你預填家庭 PIN <strong>1234</strong>；第一次進入後會自動建立獨立雲端資料。</span></div>}
-          <label className="pin-input-label" htmlFor="family-pin">家庭管理者 PIN</label>
-          <div className="pin-input-row">
-            <KeyRound size={21} />
-            <input id="family-pin" type="password" inputMode="numeric" autoComplete="current-password" maxLength={6} value={pin} onChange={(event) => setPin(normalizeFamilyPin(event.target.value))} onKeyDown={(event) => { if (event.key === 'Enter') submit(); }} placeholder="例如 1234" autoFocus />
-            <button className="primary-button" disabled={!validFamilyPin(pin)} onClick={submit}>進入家庭基地 <ChevronRight size={18} /></button>
-          </div>
-          {error && <div className="pin-error">{error}</div>}
-          <div className="pin-privacy-note"><Cloud size={16} /><span>管理者 PIN 不會寫入 URL、Git 或公開 Blob 路徑；雲端 namespace 會先以伺服器端 FAMILY_PIN_PEPPER 做 HMAC 轉換。</span></div>
-        </div>
-      </section>
-    </main>
-  );
-}
-
 function App() {
   const [familyPin, setFamilyPin] = useState(() => {
     const saved = normalizeFamilyPin(localStorage.getItem(ACTIVE_PIN_KEY) ?? localStorage.getItem(LEGACY_ACTIVE_PIN_KEY) ?? '');
-    return validFamilyPin(saved) ? saved : '';
+    if (validFamilyPin(saved)) return saved;
+    return hasLegacyLocalData() ? '1234' : LOCAL_FAMILY_KEY;
   });
 
   const enterFamily = (pin: string) => {
@@ -1270,10 +1508,9 @@ function App() {
   const switchFamily = () => {
     localStorage.removeItem(ACTIVE_PIN_KEY);
     localStorage.removeItem(LEGACY_ACTIVE_PIN_KEY);
-    setFamilyPin('');
+    setFamilyPin(LOCAL_FAMILY_KEY);
   };
 
-  if (!familyPin) return <PinGate onEnter={enterFamily} />;
   return <FamilyApp key={familyPin} familyPin={familyPin} onSwitchFamily={switchFamily} onOpenFamily={enterFamily} />;
 }
 

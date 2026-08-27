@@ -1,3 +1,4 @@
+import { cosmeticSpend, normalizeEquippedCosmetics } from './cosmetics';
 import { curriculum } from './data/curriculum';
 import type { ChildProgress } from './types';
 
@@ -18,11 +19,16 @@ curriculum.forEach((day) => {
 });
 
 export function normalizeProgress(progress?: Partial<ChildProgress> | null): ChildProgress {
+  const unlockedCosmetics = Array.from(new Set(progress?.unlockedCosmetics ?? []));
   return {
     completedDays: Array.from(new Set(progress?.completedDays ?? [])),
     completedBlocks: Array.from(new Set(progress?.completedBlocks ?? [])),
     completedMissions: Array.from(new Set(progress?.completedMissions ?? [])),
     claimedEggs: Array.from(new Set(progress?.claimedEggs ?? [])),
+    unlockedCosmetics,
+    equippedCosmetics: normalizeEquippedCosmetics(unlockedCosmetics, progress?.equippedCosmetics),
+    badgeUnlocks: { ...(progress?.badgeUnlocks ?? {}) },
+    completionTimestamps: { ...(progress?.completionTimestamps ?? {}) },
   };
 }
 
@@ -50,25 +56,34 @@ export function calculateRewards(progress?: Partial<ChildProgress> | null) {
     coins += EGG_REWARD.coins;
   });
 
-  return { xp, coins };
+  const earnedCoins = coins;
+  const spentCoins = cosmeticSpend(normalized.unlockedCosmetics);
+  coins = Math.max(0, earnedCoins - spentCoins);
+
+  return { xp, coins, earnedCoins, spentCoins };
 }
 
 export function levelFromXp(xp: number) {
   return Math.max(1, Math.floor(xp / 220) + 1);
 }
 
+export const avatarStageNames = ['Little Explorer', 'Adventure Rookie', 'Star Explorer', 'Adventure Master', 'Legendary Explorer'] as const;
+export const avatarStageThresholds = [0, 420, 1000, 1800, 3000] as const;
+
 export function avatarStageFromXp(xp: number) {
-  if (xp >= 1800) return 4;
-  if (xp >= 1000) return 3;
-  if (xp >= 420) return 2;
+  if (xp >= avatarStageThresholds[4]) return 5;
+  if (xp >= avatarStageThresholds[3]) return 4;
+  if (xp >= avatarStageThresholds[2]) return 3;
+  if (xp >= avatarStageThresholds[1]) return 2;
   return 1;
 }
 
 export function nextAvatarStageXp(xp: number) {
-  if (xp < 420) return 420;
-  if (xp < 1000) return 1000;
-  if (xp < 1800) return 1800;
-  return null;
+  return avatarStageThresholds.find((threshold) => threshold > xp) ?? null;
+}
+
+export function avatarStageName(xp: number) {
+  return avatarStageNames[avatarStageFromXp(xp) - 1];
 }
 
 export function rewardForMission(id: string) {

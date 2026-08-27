@@ -103,6 +103,11 @@ export type ChildProgress = {
   completedBlocks: string[];
   completedMissions: string[];
   claimedEggs: string[];
+  /** Additive V3.0 game-loop fields. They store immutable unlock records, never a mutable XP/coin total. */
+  unlockedCosmetics?: string[];
+  equippedCosmetics?: string[];
+  badgeUnlocks?: Record<string, string>;
+  completionTimestamps?: Record<string, string>;
 };
 
 export type CloudSyncSettings = {
@@ -124,10 +129,17 @@ export type AppSettings = {
 export type AppProgress = Record<string, ChildProgress>;
 
 export type ViewingStatus = 'full' | 'partial' | 'skip';
+export type DailyChallengeSteps = {
+  warmup: boolean;
+  learn: boolean;
+};
+
 export type DayReflection = {
   engagement: '' | 'great' | 'ok' | 'tired';
   note: string;
   viewing: Record<string, ViewingStatus>;
+  /** Additive V3.0 field. Old V1–V2.3 snapshots may omit it and remain valid. */
+  dailyChallenge?: DailyChallengeSteps;
 };
 
 export type ReflectionMap = Record<string, DayReflection>;

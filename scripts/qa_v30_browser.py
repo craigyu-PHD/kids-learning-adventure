@@ -23,7 +23,7 @@ def cred(pin, salt):
 father_hash, father_salt = cred('1357', b'father-v30-salt!')
 mother_hash, mother_salt = cred('9753', b'mother-v30-salt!')
 settings = {
-    'theme': 'system', 'visualTheme': 'hero', 'semesterStart': '2026-08-31',
+    'theme': 'light', 'visualTheme': 'hero', 'semesterStart': '2026-08-27',
     'users': [
         {'id': 'user-father', 'name': '爸爸', 'role': 'father', 'disabled': False, 'userPinHash': father_hash, 'userPinSalt': father_salt, 'userPinIterations': 180000},
         {'id': 'user-mother', 'name': '媽媽', 'role': 'mother', 'disabled': False, 'userPinHash': mother_hash, 'userPinSalt': mother_salt, 'userPinIterations': 180000},
@@ -34,6 +34,13 @@ settings = {
         {'id': 'child-2', 'name': '弟弟', 'avatar': 'rex', 'role': 'child', 'disabled': False},
     ],
     'cloudSync': {'enabled': False, 'familyCode': ''},
+}
+progress_seed = {
+    'child-1': {
+        'completedDays': [], 'completedBlocks': [], 'completedMissions': [], 'claimedEggs': [],
+        'unlockedCosmetics': ['sunny-explorer-hat'], 'equippedCosmetics': ['sunny-explorer-hat'],
+        'badgeUnlocks': {}, 'completionTimestamps': {},
+    },
 }
 
 
@@ -114,9 +121,11 @@ def main():
     profile = tempfile.mkdtemp(prefix='v30-chrome-')
     seed_path = ROOT / 'public/__qa_v30_seed.html'
     settings_json = json.dumps(settings, ensure_ascii=False).replace('</', '<\\/')
+    progress_json = json.dumps(progress_seed, ensure_ascii=False).replace('</', '<\\/')
     seed_path.write_text(f'''<!doctype html><meta charset="utf-8"><script>
 localStorage.setItem('star-learning-active-family-pin-v22',{json.dumps(PIN)});
 localStorage.setItem('star-learning-v22:{PIN}:settings',JSON.stringify({settings_json}));
+localStorage.setItem('star-learning-v22:{PIN}:progress',JSON.stringify({progress_json}));
 sessionStorage.setItem('star-learning-v22:{PIN}:active-user','user-father');
 location.replace('/');
 </script>''')
@@ -141,9 +150,10 @@ location.replace('/');
 
         # V3 brand/child home hard gates.
         brand=cdp.eval("(() => {const s=getComputedStyle(document.documentElement); return {brand:s.getPropertyValue('--brand').trim(),purple:s.getPropertyValue('--brand-2').trim(),reward:s.getPropertyValue('--reward').trim(),success:s.getPropertyValue('--success').trim(),speaking:s.getPropertyValue('--speaking').trim(),listening:s.getPropertyValue('--listening').trim()}})()")
-        assert brand == {'brand':'#4F67E8','purple':'#7756D8','reward':'#FFC857','success':'#52C99A','speaking':'#FF7B72','listening':'#55BFE9'}, brand
+        assert brand == {'brand':'#6C63E8','purple':'#63C7F5','reward':'#FFD35A','success':'#58D2A0','speaking':'#FF7E72','listening':'#63C7F5'}, brand
         assert cdp.eval("document.querySelectorAll('.v30-child-nav button').length") == 4
         assert cdp.eval("document.querySelectorAll('.v30-story-hero .v30-primary-cta').length") == 1
+        assert cdp.eval("document.querySelectorAll('.v30-home .avatar-equipped-cosmetic').length") >= 1
         assert not cdp.eval("!!document.querySelector('.adventure-cursor,.cursor-trail-layer,.click-effects,.click-burst')")
         assert 'V3.0' in cdp.eval('document.title')
         hero_assets=cdp.eval("[...document.querySelectorAll('.v30-story-hero img,.v30-world-card img')].map(i=>i.getAttribute('src'))")
@@ -159,24 +169,58 @@ location.replace('/');
         set_input(cdp,'.user-switch-modal input','9753'); click_text(cdp,'.user-switch-modal .primary-button','進入')
         wait_js(cdp,"!document.querySelector('.user-switch-modal') && document.querySelector('.active-user-chip').innerText.includes('媽媽')")
 
-        # Child lesson presentation: Listen → Repeat → Play → Complete.
+        # Child lesson presentation: Warm-up → Learn → Challenge.
         click_text(cdp,'.v30-primary-cta','開始今天的冒險'); wait_js(cdp,"!!document.querySelector('.v30-stage-nav')")
         stages=cdp.eval("[...document.querySelector('.v30-stage-nav').querySelectorAll('button strong')].map(e=>e.textContent)")
-        assert stages==['Listen','Repeat','Play','Complete'], stages
+        assert stages==['Warm-up','Learn','Challenge'], stages
         lesson_assets=cdp.eval("[...document.querySelectorAll('.v30-lesson-page img')].map(i=>i.getAttribute('src')).filter(Boolean)")
-        assert any('/assets/v30/' in x for x in lesson_assets), lesson_assets[:10]
-        click_text(cdp,'.v30-stage-nav button','Repeat'); wait_js(cdp,"document.querySelectorAll('.v30-vocab-card').length>0")
+        assert lesson_assets and all('/assets/v30/' in x for x in lesson_assets), lesson_assets[:10]
+        click_text(cdp,'.v30-next-stage','Warm-up 完成'); wait_js(cdp,"document.querySelectorAll('.v30-vocab-card').length>0")
         assert cdp.eval("[...document.querySelectorAll('.v30-vocab-card')].every(b=>b.getBoundingClientRect().height>=44)")
-        results.append(snapshot(cdp,'desktop-lesson-repeat',True))
+        results.append(snapshot(cdp,'desktop-lesson-learn',True))
+        click_text(cdp,'.v30-stage-actions .v30-primary-cta','Learn 完成'); wait_js(cdp,"!!document.querySelector('.v30-challenge-stage')")
+        assert cdp.eval("document.querySelectorAll('.v30-mission-card').length") == 4
+        assert cdp.eval("(() => {const b=document.querySelector('.v30-mission-players button:not(:disabled)'); if(!b)return false; b.click(); return true})()")
+        wait_js(cdp,"!!document.querySelector('.v30-celebration')")
+        rewardMoment=bool(cdp.eval("document.querySelector('.v30-celebration').innerText.includes('XP') && !!document.querySelector('.v30-celebration-skip')"))
+        assert rewardMoment
+        reward_assets=cdp.eval("[...document.querySelectorAll('.v30-celebration img')].map(i=>i.getAttribute('src')).filter(Boolean)")
+        assert reward_assets and all('/assets/v30/' in x for x in reward_assets), reward_assets
+        click_text(cdp,'.v30-celebration-skip','Skip'); wait_js(cdp,"!document.querySelector('.v30-celebration')")
         cdp.eval("document.querySelector('.v30-lesson-header .icon-button').click()")
         wait_js(cdp,"!!document.querySelector('.v30-story-hero')")
 
-        # Parent Mode + admin PIN gate.
-        click_text(cdp,'.v30-parent-entry','家長專區'); wait_js(cdp,"!!document.querySelector('.v30-parent-page')")
-        assert cdp.eval("document.querySelector('.app-shell').classList.contains('parent-presentation')")
-        click_text(cdp,'.v30-parent-page .v30-secondary-cta','家庭設定'); wait_js(cdp,"!!document.querySelector('.admin-modal')")
+        # Child exploration surfaces: 9 worlds, 24 badges per learner, five growth stages.
+        click_text(cdp,'.v30-child-nav button','冒險世界'); wait_js(cdp,"!!document.querySelector('.v30-adventure-map')")
+        mapWorldCount=cdp.eval("document.querySelectorAll('.v30-map-world-strip article').length")
+        assert mapWorldCount == 9, mapWorldCount
+        assert cdp.eval("document.querySelectorAll('.v30-map-node').length") == 90
+        results.append(snapshot(cdp,'desktop-adventure-map',True))
+        click_text(cdp,'.v30-child-nav button','獎勵'); wait_js(cdp,"!!document.querySelector('.v30-rewards-page')")
+        badgeCount=cdp.eval("document.querySelector('.v30-badge-learner')?.querySelectorAll('.v30-game-badge').length || 0")
+        assert badgeCount == 24, badgeCount
+        assert cdp.eval("[...document.querySelectorAll('.v30-game-badge-art')].every(i=>i.getAttribute('src').includes('/assets/v30/badges/'))")
+        results.append(snapshot(cdp,'desktop-badges',True))
+        click_text(cdp,'.v30-child-nav button','我的角色'); wait_js(cdp,"!!document.querySelector('.v30-character-page')")
+        characterStageCount=cdp.eval("document.querySelector('.v30-stage-road')?.querySelectorAll('span').length || 0")
+        assert characterStageCount == 5, characterStageCount
+        assert cdp.eval("document.querySelectorAll('.v30-cosmetic-grid button').length") >= 5
+        assert cdp.eval("document.querySelectorAll('.v30-character-page .avatar-equipped-cosmetic').length") >= 1
+        results.append(snapshot(cdp,'desktop-character',True))
+        cdp.eval("document.querySelector('.v30-brand').click()"); wait_js(cdp,"!!document.querySelector('.v30-story-hero')")
+
+        # Parent Mode is protected, but the PIN modal must always be escapable.
+        click_text(cdp,'.v30-parent-entry','家長專區'); wait_js(cdp,"!!document.querySelector('.admin-modal')")
+        assert cdp.eval("!!document.querySelector('.admin-modal .v30-modal-x')")
+        click_text(cdp,'.admin-modal .modal-close-link','取消'); wait_js(cdp,"!document.querySelector('.admin-modal') && !!document.querySelector('.v30-story-hero')")
+        click_text(cdp,'.v30-parent-entry','家長專區'); wait_js(cdp,"!!document.querySelector('.admin-modal')")
         set_input(cdp,'.admin-modal input','1111'); click_text(cdp,'.admin-modal .primary-button','解鎖'); wait_js(cdp,"!!document.querySelector('.admin-modal .pin-error')")
-        set_input(cdp,'.admin-modal input',PIN); click_text(cdp,'.admin-modal .primary-button','解鎖'); wait_js(cdp,"!!document.querySelector('.settings-page') && !document.querySelector('.admin-modal')")
+        assert cdp.eval("document.querySelector('.admin-modal input').value") == '1111'
+        cdp.call('Input.dispatchKeyEvent', {'type':'keyDown','key':'Escape','code':'Escape','windowsVirtualKeyCode':27,'nativeVirtualKeyCode':27}); wait_js(cdp,"!document.querySelector('.admin-modal')")
+        click_text(cdp,'.v30-parent-entry','家長專區'); wait_js(cdp,"!!document.querySelector('.admin-modal')")
+        set_input(cdp,'.admin-modal input',PIN); click_text(cdp,'.admin-modal .primary-button','解鎖'); wait_js(cdp,"!!document.querySelector('.v30-parent-page') && !document.querySelector('.admin-modal')")
+        assert cdp.eval("document.querySelector('.app-shell').classList.contains('parent-presentation')")
+        click_text(cdp,'.v30-parent-page .v30-secondary-cta','家庭設定'); wait_js(cdp,"!!document.querySelector('.settings-page')")
         settings_text=cdp.eval("document.querySelector('.settings-page').innerText")
         assert all(x in settings_text for x in ['爸爸','媽媽','哥哥','弟弟','Adventure World'])
 
@@ -192,7 +236,7 @@ location.replace('/');
 
         # Light / dark / system still work.
         for mode in ['light','dark','system']:
-            click_text(cdp,'.segmented-control button', {'light':'明亮','dark':'暗黑','system':'隨系統'}[mode]); time.sleep(.12)
+            click_text(cdp,'.segmented-control button', {'light':'明亮','dark':'夜間冒險','system':'隨系統'}[mode]); time.sleep(.12)
             if mode=='light': assert not cdp.eval("document.documentElement.classList.contains('dark')")
             if mode=='dark': assert cdp.eval("document.documentElement.classList.contains('dark')")
         results.append(snapshot(cdp,'desktop-parent-settings',False))
@@ -218,7 +262,7 @@ location.replace('/');
             assert not r['tiny'], r
             assert not r['undersized'], r
 
-        out={'status':'PASS','brand':brand,'worldIds':ids,'worldUiSignatures':signatures,'caregiverCards':cards,'mobileModal':modal,'results':results}
+        out={'status':'PASS','brand':brand,'worldIds':ids,'worldUiSignatures':signatures,'caregiverCards':cards,'mapWorldCount':mapWorldCount,'badgeCount':badgeCount,'characterStageCount':characterStageCount,'rewardMoment':rewardMoment,'mobileModal':modal,'results':results}
         (QA_DIR/'v30_browser_result.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
         print(json.dumps(out,ensure_ascii=False,indent=2)); cdp.close()
     finally:

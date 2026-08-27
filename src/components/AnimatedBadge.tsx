@@ -10,17 +10,18 @@ const badgeFiles: Record<BadgeArt, string> = {
 };
 
 const fallbackFiles: Record<BadgeArt, string> = {
-  rocket: 'hero-rocket.webp',
-  treasure: 'hero-rocket.webp',
-  star: 'robot-helper.webp',
-  xp: 'robot-helper.webp',
-  crystal: 'avatar-robot.webp',
-  trophy: 'brother-stage-4.webp',
+  rocket: 'star.webp',
+  treasure: 'star.webp',
+  star: 'star.webp',
+  xp: 'star.webp',
+  crystal: 'star.webp',
+  trophy: 'star.webp',
 };
 
 export default function AnimatedBadge({ art, size = 42, label }: { art: BadgeArt; size?: number; label?: string }) {
-  const base = `${import.meta.env.BASE_URL}assets/v23/`;
-  const src = `${base}${badgeFiles[art]}`;
+  const base = `${import.meta.env.BASE_URL}assets/v30/rewards/`;
+  const file = art === 'trophy' ? 'star.webp' : `${art}.webp`;
+  const src = `${base}${file}`;
   const fallback = `${base}${fallbackFiles[art]}`;
   return (
     <img
