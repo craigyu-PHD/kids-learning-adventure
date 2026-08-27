@@ -6,11 +6,11 @@ export const visualThemeOptions: Array<{
   subtitle: string;
   art: string;
 }> = [
-  { id: 'hero', title: 'Hello Town', subtitle: '打招呼與日常對話', art: 'world-hello.webp' },
-  { id: 'mecha', title: 'Color Garden', subtitle: '顏色、形狀與自然觀察', art: 'world-color.webp' },
-  { id: 'tank', title: 'Animal Forest', subtitle: '動物、聲音與動作', art: 'world-animal.webp' },
-  { id: 'racing', title: 'Food Market', subtitle: '水果、食物與喜好問答', art: 'world-food.webp' },
-  { id: 'creature', title: 'Ocean Adventure', subtitle: '海洋、探索與科學', art: 'world-ocean.webp' },
+  { id: 'hero', title: '星際英雄', subtitle: '深藍宇宙 HUD × 英雄探險', art: 'space-hero.webp' },
+  { id: 'mecha', title: '機甲戰士', subtitle: '科技裝甲 × 能量基地', art: 'mecha-warrior.webp' },
+  { id: 'racing', title: '賽車冒險', subtitle: '速度賽道 × 勇氣挑戰', art: 'racing-adventure.webp' },
+  { id: 'tank', title: '奇幻精靈', subtitle: '魔法森林 × 星光夥伴', art: 'fantasy-spirit.webp' },
+  { id: 'creature', title: '海底世界', subtitle: '深海基地 × 海洋探險', art: 'ocean-world.webp' },
 ];
 
 export function subjectAction(subject: Subject) {

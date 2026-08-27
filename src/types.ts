@@ -95,6 +95,28 @@ export type ChildProfile = {
   userPinIterations?: number;
 };
 
+export type RewardTransaction = {
+  id: string;
+  kind: 'stage' | 'lesson' | 'day' | 'treasure' | 'achievement' | 'shop' | 'bonus';
+  sourceId: string;
+  xp: number;
+  coins: number;
+  stars: number;
+  gems: number;
+  createdAt: string;
+};
+
+export type AnswerEvent = {
+  id: string;
+  dayId: string;
+  blockId: string;
+  stage: number;
+  target: string;
+  answer: string;
+  correct: boolean;
+  createdAt: string;
+};
+
 export type ChildProgress = {
   /** Legacy V1 fields are accepted but ignored by V2's derived reward engine. */
   xp?: number;
@@ -108,6 +130,10 @@ export type ChildProgress = {
   equippedCosmetics?: string[];
   badgeUnlocks?: Record<string, string>;
   completionTimestamps?: Record<string, string>;
+  /** V4.0 append-only idempotent reward ledger. Existing V1–V3 snapshots may omit it. */
+  rewardTransactions?: RewardTransaction[];
+  /** V4.0 append-only answer telemetry used for real accuracy and error analytics. */
+  answerEvents?: AnswerEvent[];
 };
 
 export type CloudSyncSettings = {
@@ -140,6 +166,8 @@ export type DayReflection = {
   viewing: Record<string, ViewingStatus>;
   /** Additive V3.0 field. Old V1–V2.3 snapshots may omit it and remain valid. */
   dailyChallenge?: DailyChallengeSteps;
+  /** V4.0 stores idempotent per-lesson stage checkpoints without altering curriculum content. */
+  lessonStages?: Record<string, number[]>;
 };
 
 export type ReflectionMap = Record<string, DayReflection>;

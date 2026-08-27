@@ -1,5 +1,5 @@
 export const TAIPEI_TIME_ZONE = 'Asia/Taipei';
-export const PRODUCTION_TIME_ENDPOINT = 'https://kids-learning-adventure-chi.vercel.app/api/time';
+export const PRODUCTION_TIME_ENDPOINT = 'https://kids-learning-adventure-chi.vercel.app/api/server-time';
 
 export type CourseDayAccess = 'past' | 'today' | 'future';
 export type TrustedTaipeiDate = {
@@ -63,6 +63,21 @@ export function formatTaipeiCourseDate(value: string) {
   }).format(ymdToTaipeiDate(value));
 }
 
+/** Milliseconds from a trusted server instant to the next Asia/Taipei midnight. */
+export function msUntilNextTaipeiMidnight(serverNow: string) {
+  const instant = new Date(serverNow);
+  if (!Number.isFinite(instant.getTime())) return 60_000;
+  // Taipei is UTC+8 year-round. Shift the instant so UTC calendar fields represent Taipei local fields.
+  const shifted = new Date(instant.getTime() + 8 * 60 * 60 * 1000);
+  const nextTaipeiMidnightUtc = Date.UTC(
+    shifted.getUTCFullYear(),
+    shifted.getUTCMonth(),
+    shifted.getUTCDate() + 1,
+    0, 0, 0, 0,
+  ) - 8 * 60 * 60 * 1000;
+  return Math.max(250, nextTaipeiMidnightUtc - instant.getTime() + 250);
+}
+
 async function readTimeEndpoint(url: string) {
   const response = await fetch(url, { cache: 'no-store', headers: { Accept: 'application/json' } });
   if (!response.ok) throw new Error(`time endpoint ${response.status}`);
@@ -72,10 +87,11 @@ async function readTimeEndpoint(url: string) {
 }
 
 export async function fetchTrustedTaipeiDate(): Promise<TrustedTaipeiDate> {
-  const sameOrigin = `${window.location.origin}/api/time`;
+  const sameOrigin = `${window.location.origin}/api/server-time`;
+  const legacySameOrigin = `${window.location.origin}/api/time`;
   const endpoints = window.location.hostname.endsWith('github.io')
     ? [PRODUCTION_TIME_ENDPOINT]
-    : [sameOrigin, PRODUCTION_TIME_ENDPOINT];
+    : [sameOrigin, legacySameOrigin, PRODUCTION_TIME_ENDPOINT];
   for (const endpoint of Array.from(new Set(endpoints))) {
     try {
       const result = await readTimeEndpoint(endpoint);

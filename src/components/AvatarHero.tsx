@@ -47,15 +47,17 @@ export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = fa
     height: size,
   } as CSSProperties;
   const stagedArt = `${id}-stage-${stage}.webp`;
-  const imageSrc = `${import.meta.env.BASE_URL}assets/v30/characters/${stagedArt}`;
+  const imageSrc = `${import.meta.env.BASE_URL}assets/v40/characters/${stagedArt}`;
   const equippedItems = equippedCosmetics.map((cosmeticId) => cosmeticById.get(cosmeticId)).filter(Boolean) as Array<NonNullable<ReturnType<typeof cosmeticById.get>>>;
+  const avatarSlots = new Set(['hairstyle','outfit','hat','glasses','backpack','cape','headphones']);
+  const avatarItems = equippedItems.filter((item) => avatarSlots.has(item.slot));
   const cosmeticNames = equippedItems.map((item) => item.name);
 
   return (
     <div className={`avatar-hero avatar-photo-hero avatar-${id} stage-${stage}`} style={style} title={`${option.name} · Level ${level} · ${avatarStageName(xp)}`} data-stage={stage} data-cosmetics={equippedCosmetics.join(' ')}>
       <span className="avatar-photo-glow" aria-hidden="true" />
       <img src={imageSrc} alt={`${option.name}，${avatarStageName(xp)}`} loading="lazy" decoding="async" />
-      {equippedItems.map((item) => <span key={item.id} className={`avatar-equipped-cosmetic cosmetic-${item.id} slot-${item.slot}`} aria-hidden="true" />)}
+      {avatarItems.map((item) => <span key={item.id} className={`avatar-equipped-cosmetic cosmetic-${item.id} slot-${item.slot}`} aria-hidden="true" />)}
       {showStage && <span className="avatar-stage-label">Stage {stage}/5 · {avatarStageName(xp)}</span>}
       {showStage && cosmeticNames.length > 0 && <span className="avatar-cosmetic-summary" aria-label={`已裝備：${cosmeticNames.join('、')}`}>{cosmeticNames.length} 件裝備</span>}
     </div>

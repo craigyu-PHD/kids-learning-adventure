@@ -1,227 +1,252 @@
-# 小小探險隊｜兒童家庭共學網站 V3.0
+# 小小探險隊 Little Explorers V4.0
 
-給家庭共學使用的 18 週兒童美語學習遊戲。V3.0 現行定位為 **Premium Kids Adventure Learning Game**：保留既有 90 天課程、家庭安全架構與 V1／V2／V2.1／V2.2／V2.3 資料相容，並加入可信日期 Daily Challenge、五階角色成長、Cosmetic、24 枚徽章、全螢幕 Reward、9 世界 Adventure Map 與高解析教材資產。
+家庭兒童美語學習遊戲，正式定位為 **Enterprise Kids Adventure Learning Game**。V4.0 保留既有教材、90 天課程、180 堂教案、360 個互動任務與 360 支零重複 YouTube 影片資料，前端 Presentation Layer 改為企業級三欄遊戲 Dashboard、九關課堂、角色長期成長、四資源經濟、寶箱、徽章、商店與 PIN 家長保護。
 
-## 核心不變條件
+## 不可破壞的資料基線
 
-- 18 週、90 個學習日、180 節課、360 個互動任務。
-- 180 個 warmup YouTube ID 與 180 個 main lesson YouTube ID 全部唯一，兩集合不重疊，合計 360 unique IDs。
-- 180/180 主課影片與課程 topic alignment 必須通過驗證。
-- `settings.users` 是爸爸／媽媽／照顧者等網站操作者；`settings.children` 才是哥哥／弟弟等學習者。
-- XP／金幣由 mission／block／day／egg／cosmetic 完成與解鎖紀錄即時計算，不建立可任意 `+=` 的總額欄位。
-- V2.2 family namespace、cloud snapshot `version: 2`、V1～V2.3 migration 與既有雲端資料相容維持不變。
-- 全站不顯示注音；內部 `Zhuyin` subject type 僅作歷史資料相容，production DOM Bopomofo 必須為 0。
+- 18 週、90 個學習日、180 堂課、360 個互動任務。
+- 180 個 warmup YouTube ID + 180 個 main lesson YouTube ID，兩集合不重疊，共 360 unique IDs。
+- `npm run validate:online` 必須確認 360/360 playable + embeddable。
+- main lesson topic alignment 必須維持 180/180。
+- `settings.users` 是爸爸／媽媽／照顧者；`settings.children` 才是哥哥／弟弟等學習者。
+- V1／V2／V2.1／V2.2／V2.3／V3 資料仍可讀；V2.2 family namespace 與 cloud snapshot `version: 2` 不變。
+- 內部歷史 subject type `Zhuyin` 仍可存在，但 UI 顯示「中文語音」，production DOM 不顯示注音符號。
 
-## Daily Challenge
+## V4 首頁架構
 
-正式挑戰日期以 **Asia/Taipei** 為準。前端透過 `/api/time` 取得 server-confirmed 台北日期；本機 Vite dev server 亦提供同語意 middleware，QA 不依賴可被手動修改的裝置日期。
+Desktop 主要設計寬度 1440–1600px，內容最大寬度約 1560px。首頁固定為三欄：
 
-- 今天：唯一可以正式完成並取得 XP／Coins／Badge 的日期。
-- 未來：鎖定並顯示「XX 月 XX 日解鎖」。
-- 過去：只能進入回顧模式，可重播教材、複習 Vocabulary／句型，不可修改進度或重領獎勵。
-- 同一 mission／block／day／egg 完成紀錄採單向寫入，不能取消後重刷。
-- 每日正式流程固定為：
+- 左欄：哥哥／弟弟 Player Profile、Level、XP、Coins、Stars、Gems、AI 學習夥伴、Theme Skin。
+- 中欄：學期日曆、本週進度、5／10／90 天目標、角色成長、Badge Shelf。
+- 右欄：今日日期、Day、兩堂正式 Lesson Mission Card、YouTube Thumbnail、寶箱。
 
-```text
-Warm-up → Learn → Challenge
-```
+Hero Header 高約 130–165px，使用深藍宇宙 Banner、哥哥／弟弟、AI Robot、火箭、星球與低幅星點動畫，不占掉半個首屏。
 
-三段完成才算當日正式通關。首頁未完成時主要 CTA 為「開始今天的冒險」；完成後切換成「今天完成了！」並提示下一個解鎖日期。
+主要導航固定六項：
 
-## Brand Design System
+1. 首頁
+2. 今日課程
+3. 學期日曆
+4. 成就獎勵
+5. 學習報表
+6. 寶物商店
 
-Adventure World 只改變故事環境與內容識別，不改整套 UI。
+Mobile 改為固定 Bottom Navigation。
 
-```text
-Brand Purple      #6C63E8
-Sky Blue          #63C7F5
-Sun Yellow        #FFD35A
-Coral             #FF7E72
-Mint Green        #58D2A0
-Adventure Orange  #FFA24A
-
-Light BG          #F7F8FF
-Light Surface     #FFFFFF
-Text              #27314A
-Muted             #75809A
-```
-
-Night Adventure Mode：
+## V4 Design System
 
 ```text
-Night BG          #171A32
-Surface 1         #222742
-Surface 2         #2B3150
-Surface 3         #343B5D
-Border            #444C70
-Text              #F8FAFF
-Muted             #B6BFDA
-Purple            #9D91FF
-Sky               #72D6FF
-Yellow            #FFD966
-Mint              #68E0AE
-Coral              #FF8A82
+Deep Navy      #061D57
+Royal Blue     #075BC7
+Sky Blue       #10BCEB
+Gold           #FFD83D
+Orange         #FF7B32
+Success Green  #20C968
+Reward Purple  #A84DF5
+Card White     #F9FBFF
 ```
 
-Typography 使用 Fredoka／Nunito／Noto Sans TC。Child Mode 可見 leaf text 不低於 14px；touch target 不低於 44×44px；兒童主要 CTA 至少 52px。
+卡片分為 Primary Game Card、Mission Card、Reward Card、Status Card。Radius 主要使用 20–26px、2px 淺藍描邊與深藍柔和 shadow；Hover 只上浮 2–4px，Active 使用短縮放回彈。主要功能 icon 統一由共享 `GameIcon` glossy HUD backplate 包裝 Lucide glyph；Reward、Badge、Item、Vocabulary 使用原創 raster illustration，不使用 Emoji 代替正式圖示。
 
-Radius token：12／16／22／28／pill。普通 Card 使用柔和 border 與低幅 shadow；只有 Reward／Rare Badge／成功狀態可以短暫使用較強視覺回饋。
+## 日期鎖定 Engine
 
-## Child Mode
+正式日期一律以 **Asia/Taipei server time** 為準。
 
-兒童主要導航只有四個入口：
+- API：`GET /api/server-time`，並保留 `/api/time` 相容 fallback。
+- 本機 Vite QA 亦由 server middleware 提供可信台北日期，不依賴可被修改的裝置日期。
+- 今天：唯一可正式進入課程與取得獎勵的日期。
+- 過去：只能查看唯讀學習紀錄，不能重新挑戰或領獎。
+- 未來：鎖定，不能提前查看完整任務或用 URL 直闖。
+- `visibilitychange` 重新驗證日期。
+- 以可信 server `now` 精準計算下一個 Asia/Taipei `00:00:00`，午夜後立即重新驗證 active day；每 5 分鐘輪詢只作容錯。
+- URL `?day=...&lesson=...` 有 route guard，只允許 server-confirmed 今日課堂。
 
-- 首頁
-- 冒險世界
-- 獎勵
-- 我的角色
+## 每堂課固定 9 Stage
 
-首頁是 Daily Adventure 入口，只突出今天日期、Adventure、主要角色／世界、今日進度與單一主 CTA。Cloud、PIN、Report、資料同步等管理資訊不進兒童首屏。
+V4 不再把兩堂課壓成一個三段式流程。每堂課直接使用既有 curriculum 的完整內容：
 
-課程內完整 caregiver script、影片回看／暫停、分齡提示、觀看紀錄與課後反思仍保留，但集中於 Parent Guide，不與兒童主要任務搶視覺。
+1. Stage 1｜唱歌暖身 — 原 `warmup`
+2. Stage 2｜單字預覽 — 原 `vocabulary`
+3. Stage 3｜觀看影片 — 原 main `video`
+4. Stage 4｜暫停提問 — 原 `steps`／instruction／pause cue
+5. Stage 5｜複誦練習 — 原 sentence／younger／older／caregiverTip
+6. Stage 6｜互動遊戲 — Mission 1
+7. Stage 7｜分類活動 — Mission 2
+8. Stage 8｜完成任務 — 正式完成本堂
+9. Stage 9｜領取獎勵
 
-## 角色成長與 Cosmetic
+Stage checkpoint 會保存；重新整理不會重置。Stage 6／7 另有 Quick Check，真實保存每次作答的 `AnswerEvent`（target／answer／correct／timestamp），供家長報表計算正確率與最常錯單字；沒有作答資料時不補造統計。任務、課堂與 Reward 都有資料層守門，不只靠 UI disabled。
 
-每個 Avatar 使用五階成長：
+## 四資源 Economy 與 Idempotency
 
-1. Little Explorer
-2. Adventure Rookie
-3. Star Explorer
-4. Adventure Master
-5. Legendary Explorer
+V4 使用四套資源：
 
-XP 決定 Level 與 Stage。Stage 5 有低幅度專屬 Idle Animation，並遵守 `prefers-reduced-motion`。
+- XP：Level／角色成長。
+- Coins：寶物商店。
+- Stars：課程完成與表現紀錄。
+- Gems：特殊成就與寶箱。
 
-Cosmetic 包含帽子、眼鏡、背包、披風、耳機。解鎖使用學習所得金幣；`calculateRewards()` 回傳 earned／spent／available coins，仍不建立 mutable balance。裝備後會直接顯示在首頁與角色 Avatar 上，而不只顯示文字狀態。
-
-## Badge 與 Reward Loop
-
-共有 24 枚原創 Badge，分成 6 類：Streak／Speaking／Listening／Learning／Adventure／Special。每枚 Badge 有名稱、短說明、取得日期、鎖定剪影；Rare Badge 可使用輕微短暫光效。
-
-任務／單元／Daily Challenge 完成後使用全螢幕 Reward Moment，顯示 XP、Coins、必要時顯示 `NEW BADGE!`，並提供 Skip／Continue Adventure。Reward overlay 控制在約 1.6–2.0 秒，不超過 3 秒；同一完成紀錄不會重複發獎。
-
-## Adventure Map
-
-Child Mode 使用 9 個 Learning World 的關卡地圖：
-
-- Hello Town
-- Color Garden
-- Animal Forest
-- Family Village
-- Number Mountain
-- Food Market
-- Ocean Adventure
-- Dino Island
-- Space Station
-
-地圖狀態：完成為綠色／星星、今天為紫色、過去未完成為灰色足跡、未來為鎖頭、特殊日期為 Treasure Day。家長仍可在 Parent Mode 使用課程月曆。
-
-舊 `visualTheme` ID (`hero`／`mecha`／`tank`／`racing`／`creature`) 只為舊資料相容保留；五個 ID 的 UI Design System signature 必須完全一致。
-
-## Parent Mode 與 Family PIN
-
-Parent Mode 集中 Report、Calendar、Cloud、PIN、Settings、Users、家庭成員管理與高風險資料操作。
-
-- Child Mode 不因 Family PIN 被整站鎖住。
-- 只有家長專區／敏感設定要求 Family 管理者 PIN。
-- PIN Modal 固定有右上角 `×`、底部「取消」，支援 `Esc`。
-- 尚未設定 Family PIN 的本機家庭可選「設定 PIN」「稍後再說」「取消」。
-- 錯誤 PIN 保留輸入內容並顯示友善提示，不進入死胡同。
-- 家長／照顧者個人 PIN 使用 PBKDF2-SHA256、random salt、180,000 iterations。
-
-## 正式圖像資產
-
-V3 runtime 只使用：
+`ChildProgress.rewardTransactions` 是 append-only idempotent ledger。每筆 Reward 都有唯一 Transaction ID，例如：
 
 ```text
-public/assets/v30/
+v4-stage:<day>:<lesson>:<stage>:<child>
+v4-day:<day>:<child>
+v4-treasure:<egg>:<child>
 ```
 
-目前資產硬性規格：
+刷新、返回、重進頁面都不能重複領取。Server `/api/state` 亦會對 `rewardTransactions`／`answerEvents` 以事件 ID 去重；相同 ID 若內容不同直接回 `409 Conflict`，並使用 `x-family-base-updated-at` 做 optimistic concurrency，避免舊裝置覆蓋較新的雲端 snapshot。既有 mission／block／day／egg 完成紀錄仍保留並與 V4 ledger 相容。哥哥與弟弟 Progress 完全分離。
 
-- Hero／World：1920×1080。
-- 角色／家長：1024×1024。
-- Badge：512×512。
-- Vocabulary：每個課程 vocabulary term 都有 640×480 專屬教材插畫。
-- runtime `assets/v23` 引用必須為 0。
+## 角色、Level 與商店
 
-`scripts/generate_v30_assets.py` 是可重現的 V3 raster asset build pipeline；`scripts/qa_v30_assets.py` 驗證尺寸、24 Badge ID、Vocabulary coverage 與 runtime v23 dependency。
+- Level 1–15。
+- Lv.1：學習新手。
+- Lv.5：第一次大型進化。
+- Lv.10：第二次大型進化。
+- Lv.13：後期強化。
+- Lv.15：傳奇英雄。
+- 首頁顯示「下一級還差 XX XP」。
 
-Vocabulary Card 使用單一主體插畫、英文文字與 Speech Synthesis 英文發音。功能性 UI icon 統一使用 Lucide；Badge 與教材圖不使用 Lucide 代替。
+目前寶物商店共 52 個商品。角色穿戴包含 6 髮型、6 服裝、5 帽子、5 眼鏡、5 背包、5 披風、5 耳機；另有 3 太空船、3 基地房間、3 AI Robot Skin、3 Card Skin、3互動特效。商品分 common／rare／epic／legendary；Coins 只來自學習紀錄，不使用真實金錢或抽卡付費。購買後立即加入該孩子自己的解鎖／裝備狀態，世界型商品會實際改變首頁對應元素。
 
-## Motion
+## Badge、Treasure 與 Reward
 
-動畫只服務開始、完成、答對、升級、解鎖、提示與必要的角色反應。沒有特殊 Mouse Cursor、Cursor Trail、Click Burst、永久粒子或普通 Card glow。
+- 24 枚原創 Badge。
+- 特殊 Treasure Day 只有完成當日兩堂課後才可開箱。
+- 每位孩子各自只能領一次 Treasure。
+- V4 Full-screen Reward Modal 顯示 XP／Coins／Stars／Gems／Badge／Level Up。
+- Reward Modal 支援 Skip 與 Continue Adventure。
+- Treasure 使用 lazy-loaded `lottie-web` light SVG 開箱動畫，再銜接 Reward Modal；Badge、Level Up 使用較強動畫，普通 Card 不永久 Glow。
 
-- Button：140ms 級。
-- Card：180ms 級。
-- Panel／Modal：220ms 級。
-- Page：280ms 級。
-- Reward／Badge：約 600–1200ms 動畫，overlay 約 1.6–2.0 秒。
-- Character reaction：約 800–1600ms。
-- Legendary Explorer 可以有低幅度 Idle。
-- 全站支援 `prefers-reduced-motion`。
+## Theme Skin
 
-## 家庭 PIN 與雲端同步
+五套原創 Skin：
 
-Vercel production 使用 `/api/state` + private Vercel Blob。
+- 星際英雄
+- 機甲戰士
+- 賽車冒險
+- 奇幻精靈
+- 海底世界
 
-1. 家庭 PIN 為 4–6 位數。
-2. 不同 PIN 對應獨立 localStorage 與雲端 namespace。
-3. PIN 只透過 `x-family-pin` header 傳送，不放 URL query。
-4. Blob pathname 使用 server-side `FAMILY_PIN_PEPPER` HMAC SHA-256，不直接使用 PIN。
-5. `cloudSync.familyCode` 在 server snapshot 會 sanitization。
-6. 雲端讀取失敗時，不使用可能較舊的本機副本自動覆寫遠端資料。
+Theme 可以改 Header accent、背景、Card border、Button 與角色裝備視覺，但不修改教材資料、日期規則、安全規則或課程 UI 結構。
 
-`.env.local`、Vercel token、Blob token、`FAMILY_PIN_PEPPER` 不得進 Git、前端 bundle、公開 log 或 URL。
+## AI Companion、聲音與動畫
 
-## V3.0 QA Gate
+AI 學習夥伴「小光」依今日狀態顯示短提示，可點擊播放語音，並具眨眼、手部微動與狀態式 idle；`prefers-reduced-motion` 會關閉這些動畫，而且 Browser QA 會實際以 media emulation 驗證星星與 Robot hand 的 `animationName` 變成 `none`。全站聲音設定保存在 localStorage，不會在網站開啟時自動播放背景音樂。
+
+Web Audio 提供：click、success、error、fanfare、treasure 五類短音效。
+
+動畫分為背景、UI microinteraction、Reward 三層。大型動態元素使用 IntersectionObserver，離開 viewport 後暫停；Reward Modal 動態 lazy-load；圖片使用 `GameImage` intrinsic Skeleton Loading、lazy decoding（Hero critical 圖可 eager/high-priority）；全站支援 `prefers-reduced-motion`。
+
+## Parent Mode 與 PIN
+
+- Child Mode 不會因 Family PIN 被整站鎖住。
+- 學習報表與敏感設定需 Family 管理者 PIN。
+- PIN Modal 有 `×`、取消、Esc。
+- 使用大型數字 keypad，支援既有 4–6 位 Family PIN。
+- 錯誤 PIN 不清掉整個 Modal，使用友善 shake feedback。
+- 家長／照顧者個人 PIN 仍採 PBKDF2-SHA256、random salt、180,000 iterations。
+- Family 管理者 PIN 只在 `/api/family-session` 驗證瞬間傳送；server 以 `FAMILY_PIN_PEPPER` HMAC 映射既有 family namespace，再簽發 30 天 family session。瀏覽器只持久化 `familyId + signed token`，不持久化明文 PIN；家長／照顧者個人 PIN 仍只保存 PBKDF2 credential。
+
+## V4 正式資產
+
+V4 主要兒童 runtime 使用：
+
+```text
+public/assets/v40/
+```
+
+硬性 Asset Gate：
+
+- Dashboard Hero：至少 1920×600。
+- Character Full：30 張，1024×1024。
+- Character Bust：6 張，512×512。
+- Robot／Father／Mother／Caregiver Full：1024×1024。
+- Robot／Father／Mother／Caregiver Bust：512×512。
+- Shop Item：52 張，512×512。
+- Badge：24 張，512×512。
+- Theme Card：5 張，1024×768。
+- Vocabulary：所有 161 個 unique term 都有至少 640×480 V4 圖像。
+- Reward Icon：XP／Coin／Star／Gem／Treasure 各 512×512。
+- V4 runtime 對 `assets/v30/` 的引用必須為 0。
+- `styles.css`／V2／V2.2／V2.3／V3 CSS 目前只保留 legacy migration、共用 accessibility 與舊資料控制項的 compatibility layer；`v40.css` 必須最後載入並主導正式畫面。實測直接移除 V3 CSS 會讓共用 touch target 退化，因此發布前不得為了縮檔而硬刪相容層；但相容層不得提供任何 V3 可見頁面或 V3 圖片。
+
+生成器：`scripts/generate_v40_assets.py`
+
+Asset QA：`scripts/qa_v40_assets.py`。除尺寸與數量外，會檢查 V4 runtime 與可見 `SettingsView` 不得再引用 `assets/v30/`。
+
+## QA / Release Gate
 
 ```bash
 npm run validate
 npm run validate:online
 npm run qa:assets
+npm run qa:state
+npm run qa:auth
+npm run qa:migration
+npm run qa:date
 npm run qa:browser
+npm run qa:performance
 npm run qa:orbit
-npx tsc --noEmit
+npm run qa:strict
 npm run build
 npx vercel build --prod
 git diff --check
 ```
 
-`scripts/qa_v30_browser.py` 使用 Chrome Headless/CDP 實際操作並驗證：
+Browser QA：`scripts/qa_v40_browser.py`，目前驗證：
 
-- 1440 desktop／820 tablet／390-class mobile。
-- Daily Challenge `Warm-up → Learn → Challenge`。
-- Reward Moment 實際出現。
-- 9 個 Learning World／90 個 Map node。
-- 每位學習者 24 Badge。
-- 5 階 Character growth 與可見 Cosmetic overlay。
-- Parent／Child presentation 分離。
-- 個人 PIN、管理者 PIN、錯誤 PIN、取消、`×`、Esc。
-- 五個 legacy Adventure World ID 的 UI signature 完全一致。
-- light／Night Adventure／system。
-- mobile Bottom Sheet。
-- horizontal overflow = 0、broken images = 0、Bopomofo = 0。
-- Child visible text >= 14px、touch target >= 44px。
-- Adventure Cursor／Trail／Burst DOM = 0。
+- 六項主要導航。
+- 三欄 Dashboard。
+- 今日兩堂 Lesson Mission Card。
+- 九關 sequential flow。
+- 原 YouTube／Vocabulary／Sentence／完整教案 timeline 可見。
+- 過去／未來 URL route guard。
+- 過去日期唯讀歷史紀錄。
+- Reward transaction idempotency。
+- Treasure idempotency。
+- V4 Reward Modal。
+- Skeleton Loading 與 AI Robot motion。
+- 真實 `AnswerEvent`：自動測一錯一對，家長報表顯示 50% 正確率與最常錯單字。
+- PIN keypad／取消／Esc／錯誤狀態，以及 Family PIN → signed session 的實際解鎖；Browser storage 不得留下 active PIN key 或 `:<PIN>:` namespace。
+- 家長設定頁必須留在 V4 Shell，顯示五套 V4 Theme Skin，且可見圖片不得引用 `assets/v30/`。
+- Desktop 1440／Tablet 820／iPhone 390／Android 412。
+- horizontal overflow <= 1、broken image = 0、Bopomofo = 0、undersized touch target = 0；Android 412×915 與 reduced-motion 必須實際通過 Browser Gate。
 
-`scripts/orbit_ux_director_v30.ts` 是最終產品審查，正式門檻為 **98/100**。
+Enterprise evaluator：`scripts/orbit_ux_director_v40.ts`，正式門檻 >= 98/100。
 
-正式部署後仍需驗證 Vercel／GitHub Pages HTTP 200、V3 assets HTTP 200、production API GET／PUT／DELETE、兩組 QA family isolation、`familyCode` sanitization、QA family cleanup、GitHub Pages workflow success 與 `git status clean`。
+目前 V4 audit：**100/100**。`npm run qa:performance` 會拒絕超過 6 小時的 Lighthouse 報告，並硬性驗證 Performance >=90、LCP <2.5s、CLS <0.1、TBT <200ms；`npm run qa:strict` 要求 TypeScript 在 `noUnusedLocals + noUnusedParameters` 下完全無 dead import/helper/parameter。`npm run qa:state` 驗證 Transaction ID 去重、immutable event conflict、stale base version 與 `familyCode` sanitization；`npm run qa:auth` 驗證舊 HMAC namespace 相容、signed session、token 竄改／過期拒絕、Bearer-only state API、前端無 active PIN write，以及同來源大量 Family PIN session request 會被 429 + `Retry-After` 節流；`npm run qa:migration` 會以舊 `active-family-pin-v22 + v22:<PIN>:*` 真實啟動並確認 session 發行、資料保留、含 PIN 的 legacy keys 刪除、active-user 遷移。`npm run qa:date` 會固定模擬 Asia/Taipei `23:59:59.500 → 00:00:00.000`，目前排程延遲實測 750ms，並驗證昨天鎖回 past、新一天切成 today、未來維持 future。Chromium／WebKit engine-level QA 亦已驗證 Desktop／Mobile 首頁、兩堂課與 9 Stage；這是 rendering-engine compatibility evidence，不等同實體 Safari／Edge App 測試。
+
+Lighthouse Desktop production preview 基線：
+
+- Performance：99
+- FCP：約 0.41s
+- LCP：約 0.84s
+- Speed Index：約 0.49s
+- CLS：約 0.00017
+- TBT：0ms
+
+Google Fonts 已從 V3 compatibility CSS 的 render-blocking `@import` 改成 `index.html` 非阻塞 preload/swap；Fredoka／Nunito／Noto Sans TC 視覺仍保留。
 
 TypeScript 固定 5.9.3。
 
-## 部署
+## Cloud / API
 
-- Vercel production：https://kids-learning-adventure-chi.vercel.app/
-- GitHub Pages backup：https://craigyu-phd.github.io/kids-learning-adventure/
+Vercel production 使用 `/api/state` + private Vercel Blob。
+
+- `POST /api/family-session` 接收一次性 Family PIN，使用 server-side `FAMILY_PIN_PEPPER` HMAC SHA-256 產生與 V2.2 相同的 `familyId`，並簽發 30 天 session token。API 另有 application-level 同來源 PIN attempt rate limit（超量回 429 + `Retry-After`）；此 serverless instance 內節流是 defense-in-depth，正式 production 仍應搭配 Vercel Edge／Firewall 等平台級全域 rate limit。
+- `/api/state` 只接受 `Authorization: Bearer <family-session>`；不再接受 `x-family-pin`。GitHub Pages 備援可透過 CORS 使用 Vercel 的 family-session/state API。
+- localStorage 正式 namespace 為 `star-learning-v40:<familyId>:*`；舊 `v21/v22:<PIN>:*` 只在一次性 migration 讀取，成功後刪除。
+- `cloudSync.familyCode` 僅保存不可逆 `familyId`，server snapshot 仍會 sanitization 為空字串。
+- `rewardTransactions`／`answerEvents` 在 server 端以 ID 去重；同 ID 不同內容拒絕寫入。
+- `x-family-base-updated-at` optimistic concurrency 防止 stale client 覆蓋最新 snapshot。
+- V1–V3 snapshot/migration 相容不得破壞。
+
+## 部署位置
+
+- Vercel Production：https://kids-learning-adventure-chi.vercel.app/
+- GitHub Pages：https://craigyu-phd.github.io/kids-learning-adventure/
 - GitHub：https://github.com/craigyu-PHD/kids-learning-adventure
 
 ## 授權
 
-- YouTube：官方嵌入播放器，著作權歸原頻道／權利人所有。
-- Super Simple Songs：https://www.youtube.com/@SuperSimpleSongs
-- 快樂斑比 HAPPY BAMBI：https://www.youtube.com/@happy-bambi
-- Lucide icons：ISC License。
-- 品牌角色、世界、徽章、教材插畫與 UI 為本專案原創方向，不使用受保護兒童品牌 IP、商標或具識別性的角色造型。
+YouTube 使用官方嵌入播放器，內容著作權屬原頻道／權利人。Super Simple Songs、快樂斑比 HAPPY BAMBI 僅作合法嵌入教材來源。Lucide 為 ISC License。V4 品牌角色、徽章、商店 Item、Theme、教材插畫與 UI 採原創視覺方向，不使用 Spider-Man、Iron Man、Pokémon、Apple Memoji 等第三方受保護角色素材。

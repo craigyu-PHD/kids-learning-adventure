@@ -9,7 +9,7 @@ export default function GameBadge({ badge, unlocked = false, earnedDate, size = 
 }) {
   const definition = typeof badge === 'string' ? badgeById.get(badge) : badge;
   if (!definition) return null;
-  const src = `${import.meta.env.BASE_URL}assets/v30/badges/${definition.id}.webp`;
+  const src = `${import.meta.env.BASE_URL}assets/v40/badges/${definition.id}.webp`;
   return (
     <div className={`v30-game-badge ${unlocked ? 'unlocked' : 'locked'} ${definition.rare ? 'rare' : ''}`}>
       <img
