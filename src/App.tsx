@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
 import {
   ArrowLeft,
+  Award,
+  BarChart3,
   BookOpen,
   CalendarDays,
   Check,
@@ -15,8 +17,14 @@ import {
   KeyRound,
   LogOut,
   ExternalLink,
+  Flame,
+  Gamepad2,
   Gift,
   GraduationCap,
+  Headphones,
+  Home,
+  Map,
+  MessageCircle,
   Monitor,
   Moon,
   PlayCircle,
@@ -29,7 +37,9 @@ import {
   Sun,
   Trash2,
   Trophy,
+  UserRound,
   Users,
+  Volume2,
   Zap,
 } from 'lucide-react';
 import { curriculum, semesterStats, weekSummaries } from './data/curriculum';
@@ -109,7 +119,6 @@ const emptyProgress = (): ChildProgress => normalizeProgress();
 
 type CloudStatus = 'local' | 'loading' | 'saving' | 'synced' | 'error';
 type RewardToast = { id: number; title: string; detail: string } | null;
-type ClickBurst = { id: number; x: number; y: number };
 
 const userRoleOptions: Array<{ id: FamilyUserRole; label: string }> = [
   { id: 'father', label: '爸爸' },
@@ -268,18 +277,47 @@ function SubjectBadge({ subject }: { subject: LessonBlock['subject'] }) {
 }
 
 const v23Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v23/${file}`;
+const v30Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v30/${file}`;
 
-function lessonIllustrationFile(block: LessonBlock) {
+const worldArtByTheme: Record<AppSettings['visualTheme'], string> = {
+  hero: 'world-hello.webp',
+  mecha: 'world-color.webp',
+  tank: 'world-animal.webp',
+  racing: 'world-food.webp',
+  creature: 'world-ocean.webp',
+};
+
+function lessonWorldArt(block: LessonBlock) {
   const tags = new Set(block.requiredVideoTopics ?? []);
-  if (tags.has('numbers') || tags.has('counting') || block.subject === 'Math') return 'lesson-numbers-v23.webp';
-  if (tags.has('food') || tags.has('fruit') || tags.has('vegetables') || tags.has('colors')) return 'lesson-food-v23.webp';
-  if (tags.has('space') || tags.has('ocean') || tags.has('dinosaurs') || tags.has('nature')) return 'lesson-space-v23.webp';
-  if (tags.has('listening') || tags.has('speaking') || block.subject === 'Review') return 'lesson-review-v23.webp';
-  return 'lesson-helper-v23.webp';
+  if (tags.has('food') || tags.has('fruit') || tags.has('vegetables') || tags.has('preferences')) return 'world-food.webp';
+  if (tags.has('colors') || tags.has('shapes')) return 'world-color.webp';
+  if (tags.has('animals') || tags.has('pets') || tags.has('farm') || tags.has('zoo') || tags.has('wild-animals')) return 'world-animal.webp';
+  if (tags.has('ocean')) return 'world-ocean.webp';
+  if (tags.has('space') || tags.has('sky')) return 'world-space.webp';
+  return 'world-hello.webp';
+}
+
+function speakWord(word: string) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(word.replace(/[^A-Za-z' -]/g, '').trim() || word);
+  utterance.lang = 'en-US';
+  utterance.rate = 0.82;
+  window.speechSynthesis.speak(utterance);
+}
+
+function VocabularyCard({ word, block }: { word: string; block: LessonBlock }) {
+  return (
+    <button className="v30-vocab-card" onClick={() => speakWord(word)} aria-label={`播放 ${word} 發音`}>
+      <span className="v30-vocab-art"><img src={v30Asset(lessonWorldArt(block))} alt="" aria-hidden="true" /></span>
+      <strong>{word}</strong>
+      <span className="v30-audio-action"><Volume2 size={18} /> 聽發音</span>
+    </button>
+  );
 }
 
 function LessonIllustration({ block }: { block: LessonBlock }) {
-  return <img className="v22-lesson-illustration" src={v23Asset(lessonIllustrationFile(block))} alt="本節原創教學插圖" loading="lazy" decoding="async" />;
+  return <img className="v22-lesson-illustration" src={v30Asset(lessonWorldArt(block))} alt="本節 Storybook Adventure 教學插圖" loading="lazy" decoding="async" />;
 }
 
 function VideoPlayer({ clip, compact = false, warmup = false }: { clip: VideoClip; compact?: boolean; warmup?: boolean }) {
@@ -301,18 +339,6 @@ function VideoPlayer({ clip, compact = false, warmup = false }: { clip: VideoCli
           allowFullScreen
         />
       </div>
-    </div>
-  );
-}
-
-function ClickEffects({ bursts }: { bursts: ClickBurst[] }) {
-  return (
-    <div className="click-effects" aria-hidden="true">
-      {bursts.map((burst) => (
-        <span key={burst.id} className="click-burst" style={{ left: burst.x, top: burst.y }}>
-          {Array.from({ length: 6 }, (_, i) => <i key={i} style={{ '--i': i } as React.CSSProperties} />)}
-        </span>
-      ))}
     </div>
   );
 }
@@ -368,14 +394,13 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
   const [progress, setProgress] = useState<AppProgress>(() => normalizeProgressMap(loadFamilyValue<AppProgress>(familyPin, 'progress', PROGRESS_KEY, {}), initialSettings.children));
   const [attendance, setAttendance] = useState<AttendanceMap>(() => loadFamilyValue<AttendanceMap>(familyPin, 'attendance', ATTENDANCE_KEY, {}));
   const [reflections, setReflections] = useState<ReflectionMap>(() => loadFamilyValue<ReflectionMap>(familyPin, 'reflections', REFLECTION_KEY, {}));
-  const [view, setView] = useState<'home' | 'semester' | 'achievements' | 'report' | 'shop' | 'settings'>('home');
+  const [view, setView] = useState<'home' | 'semester' | 'achievements' | 'character' | 'report' | 'shop' | 'settings'>('home');
   const [selectedDayId, setSelectedDayId] = useState<string | null>(null);
   const [cloudStatus, setCloudStatus] = useState<CloudStatus>('loading');
   const [cloudMessage, setCloudMessage] = useState('正在辨識家庭 PIN…');
   const [cloudReady, setCloudReady] = useState(false);
   const [lastCloudSync, setLastCloudSync] = useState('');
   const [rewardToast, setRewardToast] = useState<RewardToast>(null);
-  const [bursts, setBursts] = useState<ClickBurst[]>([]);
   const [adminUnlocked, setAdminUnlocked] = useState(false);
   const [adminPromptOpen, setAdminPromptOpen] = useState(false);
   const [userPromptOpen, setUserPromptOpen] = useState(() => !sessionStorage.getItem(`star-learning-v22:${familyPin}:active-user`));
@@ -413,53 +438,6 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     media.addEventListener('change', sync);
     return () => media.removeEventListener('change', sync);
   }, [settings.theme, settings.visualTheme]);
-
-  useEffect(() => {
-    const finePointer = window.matchMedia('(pointer: fine)').matches;
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let lastTrail = 0;
-
-    const onMove = (event: PointerEvent) => {
-      if (!finePointer) return;
-      const cursor = document.getElementById('adventure-cursor');
-      if (cursor) {
-        cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
-        cursor.classList.add('is-visible');
-        cursor.classList.toggle('is-hovering', Boolean((event.target as Element | null)?.closest?.('button, a, input, select, textarea, [role="button"]')));
-      }
-      if (reducedMotion || event.timeStamp - lastTrail < 44) return;
-      lastTrail = event.timeStamp;
-      const layer = document.getElementById('cursor-trail-layer');
-      if (!layer) return;
-      const particle = document.createElement('i');
-      particle.className = 'cursor-trail-particle';
-      particle.style.left = `${event.clientX}px`;
-      particle.style.top = `${event.clientY}px`;
-      layer.appendChild(particle);
-      window.setTimeout(() => particle.remove(), 680);
-    };
-
-    const onPointer = (event: PointerEvent) => {
-      const id = Date.now() + Math.random();
-      setBursts((current) => [...current.slice(-8), { id, x: event.clientX, y: event.clientY }]);
-      window.setTimeout(() => setBursts((current) => current.filter((item) => item.id !== id)), 760);
-      const cursor = document.getElementById('adventure-cursor');
-      if (cursor) {
-        cursor.classList.add('is-pressed');
-        window.setTimeout(() => cursor.classList.remove('is-pressed'), 150);
-      }
-    };
-
-    const onLeave = () => document.getElementById('adventure-cursor')?.classList.remove('is-visible');
-    window.addEventListener('pointermove', onMove, { passive: true });
-    window.addEventListener('pointerdown', onPointer, { passive: true });
-    document.documentElement.addEventListener('mouseleave', onLeave);
-    return () => {
-      window.removeEventListener('pointermove', onMove);
-      window.removeEventListener('pointerdown', onPointer);
-      document.documentElement.removeEventListener('mouseleave', onLeave);
-    };
-  }, []);
 
   const showReward = (title: string, detail: string) => {
     const next = { id: Date.now(), title, detail };
@@ -722,47 +700,38 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
           onUpdateReflection={(patch) => setReflections((current) => ({ ...current, [selectedDay.id]: { ...(current[selectedDay.id] ?? emptyReflection()), ...patch } }))}
           onClaimEgg={(childId) => claimEgg(childId, selectedDay)}
         />
-        <div id="cursor-trail-layer" className="cursor-trail-layer" aria-hidden="true" />
-        <div id="adventure-cursor" className="adventure-cursor" aria-hidden="true"><span /></div>
-        <ClickEffects bursts={bursts} />
-        {rewardToast && <div className="reward-toast" key={rewardToast.id}><Sparkles size={22} /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
+        {rewardToast && <div className="reward-toast v30-reward-toast" key={rewardToast.id}><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
       </>
     );
   }
 
   return (
-    <div className="app-shell">
-      <header className="topbar">
-        <button className="brand" onClick={() => setView('home')}>
-          <span className="brand-mark v22-brand-art"><img src={v23Asset('hero-rocket.webp')} alt="" aria-hidden="true" /></span>
-          <span><strong>小小探險隊</strong><small>Family Learning Mission · V2.3</small></span>
+    <div className={`app-shell v30-app-shell ${view === 'report' || view === 'settings' ? 'parent-presentation' : 'child-presentation'}`}>
+      <header className="topbar v30-topbar">
+        <button className="brand v30-brand" onClick={() => setView('home')}>
+          <span className="v30-brand-mark"><Sparkles size={24} aria-hidden="true" /></span>
+          <span><strong>小小探險隊</strong><small>Little Explorers · V3.0</small></span>
         </button>
-        <nav className="game-main-nav" aria-label="主要功能">
-          <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}><Rocket size={15} /> 首頁</button>
-          <button onClick={() => openDay(featuredDay)}><BookOpen size={15} /> 今日課程</button>
-          <button className={view === 'semester' ? 'active' : ''} onClick={() => setView('semester')}><CalendarDays size={15} /> 學期日曆</button>
-          <button className={view === 'achievements' ? 'active' : ''} onClick={() => setView('achievements')}><Trophy size={15} /> 成就獎勵</button>
-          <button className={view === 'report' ? 'active' : ''} onClick={() => setView('report')}><GraduationCap size={15} /> 學習報表</button>
-          <button className={view === 'shop' ? 'active' : ''} onClick={() => setView('shop')}><Gift size={15} /> 寶物商店</button>
-          <button className={view === 'settings' ? 'active' : ''} onClick={requestSettings}><SettingsIcon size={15} /> 家庭管理</button>
+        <nav className="game-main-nav v30-child-nav" aria-label="兒童主要功能">
+          <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}><Home size={20} /><span>首頁</span></button>
+          <button className={view === 'semester' ? 'active' : ''} onClick={() => setView('semester')}><Map size={20} /><span>冒險世界</span></button>
+          <button className={view === 'achievements' || view === 'shop' ? 'active' : ''} onClick={() => setView('achievements')}><Award size={20} /><span>獎勵</span></button>
+          <button className={view === 'character' ? 'active' : ''} onClick={() => setView('character')}><UserRound size={20} /><span>我的角色</span></button>
         </nav>
-        <nav className="top-actions">
-          <CloudPill status={cloudStatus} />
-          <button className="active-user-chip" onClick={() => setUserPromptOpen(true)} title="切換家長／照顧者">{activeUser ? <><CaregiverAvatar user={activeUser} size={30} /><span><strong>{activeUser.name}</strong><small>{roleLabel(activeUser.role)} · 切換使用者</small></span></> : <><Users size={17} /><span><strong>尚未登入</strong><small>選擇家長／照顧者</small></span></>}</button>
-          <button className="nav-button switch-family-button" onClick={onSwitchFamily} title="切換家庭"><LogOut size={17} /><span>切換家庭</span></button>
-          <button className="nav-button" onClick={cycleTheme} title="切換顯示模式">
-            {settings.theme === 'dark' ? <Moon size={18} /> : settings.theme === 'light' ? <Sun size={18} /> : <Monitor size={18} />}
-          </button>
-          <button className={`nav-button ${view === 'settings' ? 'active' : ''}`} onClick={requestSettings}><SettingsIcon size={18} /><span>管理</span></button>
+        <nav className="top-actions v30-utility-nav">
+          <button className="active-user-chip" onClick={() => setUserPromptOpen(true)} title="切換家長／照顧者">{activeUser ? <><CaregiverAvatar user={activeUser} size={32} /><span><strong>{activeUser.name}</strong><small>{roleLabel(activeUser.role)}</small></span></> : <><Users size={18} /><span><strong>選擇照顧者</strong></span></>}</button>
+          <button className={`v30-parent-entry ${view === 'report' || view === 'settings' ? 'active' : ''}`} onClick={() => setView('report')}><BarChart3 size={18} /><span>家長專區</span></button>
+          <button className="nav-button v30-display-toggle" onClick={cycleTheme} title="切換顯示模式">{settings.theme === 'dark' ? <Moon size={18} /> : settings.theme === 'light' ? <Sun size={18} /> : <Monitor size={18} />}</button>
         </nav>
       </header>
 
-      <main>
-        {view === 'home' && <HomeView settings={settings} progress={progress} featuredDay={featuredDay} todayDay={todayDay} completedDays={completedDays} completionPct={completionPct} isDayDone={isDayDone} isChildDayDone={isChildDayDone} openDay={openDay} goSemester={() => setView('semester')} cloudStatus={cloudStatus} />}
+      <main className="v30-main">
+        {view === 'home' && <HomeView settings={settings} progress={progress} featuredDay={featuredDay} todayDay={todayDay} completedDays={completedDays} completionPct={completionPct} isChildDayDone={isChildDayDone} openDay={openDay} goSemester={() => setView('semester')} />}
         {view === 'semester' && <SemesterView settings={settings} isDayDone={isDayDone} openDay={openDay} goHome={() => setView('home')} />}
-        {view === 'achievements' && <AchievementsView settings={settings} progress={progress} completedDays={completedDays} goHome={() => setView('home')} />}
-        {view === 'report' && <LearningReportView settings={settings} progress={progress} isChildDayDone={isChildDayDone} goHome={() => setView('home')} />}
-        {view === 'shop' && <TreasureShopView settings={settings} progress={progress} goHome={() => setView('home')} />}
+        {view === 'achievements' && <AchievementsView settings={settings} progress={progress} completedDays={completedDays} goHome={() => setView('home')} goShop={() => setView('shop')} />}
+        {view === 'character' && <CharacterView settings={settings} progress={progress} goHome={() => setView('home')} />}
+        {view === 'report' && <LearningReportView settings={settings} progress={progress} isChildDayDone={isChildDayDone} goHome={() => setView('home')} goSettings={requestSettings} cloudStatus={cloudStatus} />}
+        {view === 'shop' && <TreasureShopView settings={settings} progress={progress} goHome={() => setView('achievements')} />}
         {view === 'settings' && (
           <SettingsView
             settings={settings}
@@ -786,123 +755,121 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
         )}
       </main>
 
-      <footer className="footer">
+      <footer className="footer v30-footer">
         <div><strong>教材來源</strong>{youtubeChannelLinks.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}</div>
-        <div className="asset-credit">介面、角色、角色進化、主題預覽、火箭、機器人、獎勵與課程插圖採 ChatGPT Image 視覺製作流程，並於 V2.3 重新裁切、去邊、調色、合成與壓縮為 WebP；正式素材位於 <code>public/assets/v23/</code>。功能圖示僅採 <a href="https://lucide.dev/" target="_blank" rel="noreferrer">Lucide（ISC）</a>。YouTube 影片以官方播放器嵌入，著作權歸原權利人所有。</div>
+        <div className="asset-credit">V3.0 採 Premium Storybook Adventure EdTech 視覺系統；品牌場景與 Adventure World 使用 ChatGPT Image 製作並裁切為 WebP，主要場景素材位於 <code>public/assets/v30/</code>，既有角色進化素材保留作可解鎖 Avatar／Costume。功能圖示統一採 <a href="https://lucide.dev/" target="_blank" rel="noreferrer">Lucide（ISC）</a>。</div>
       </footer>
-      <div id="cursor-trail-layer" className="cursor-trail-layer" aria-hidden="true" />
-      <div id="adventure-cursor" className="adventure-cursor" aria-hidden="true"><span /></div>
-      <ClickEffects bursts={bursts} />
-      {rewardToast && <div className="reward-toast" key={rewardToast.id}><Sparkles size={22} /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
+      {rewardToast && <div className="reward-toast v30-reward-toast" key={rewardToast.id}><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
       {adminPromptOpen && <AdminPinDialog familyPin={familyPin} onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
       {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
     </div>
   );
 }
 
-function HomeView({ settings, progress, featuredDay, todayDay, completedDays, completionPct, isDayDone, isChildDayDone, openDay, goSemester, cloudStatus }: {
+function HomeView({ settings, progress, featuredDay, todayDay, completedDays, completionPct, isChildDayDone, openDay, goSemester }: {
   settings: AppSettings;
   progress: AppProgress;
   featuredDay: CourseDay;
   todayDay?: CourseDay;
   completedDays: number;
   completionPct: number;
-  isDayDone: (day: CourseDay) => boolean;
   isChildDayDone: (childId: string, day: CourseDay) => boolean;
   openDay: (day: CourseDay) => void;
   goSemester: () => void;
-  cloudStatus: CloudStatus;
 }) {
-  const level = Math.floor(completedDays / 10) + 1;
-  const nextMilestone = Math.min(90, Math.ceil((completedDays + 1) / 10) * 10);
   const featuredDate = addCourseWeekdays(settings.semesterStart, featuredDay.index - 1);
-  const monthItems = useMemo(() => curriculum
-    .map((day) => ({ day, date: addCourseWeekdays(settings.semesterStart, day.index - 1) }))
-    .filter(({ date }) => date.getFullYear() === featuredDate.getFullYear() && date.getMonth() === featuredDate.getMonth()), [settings.semesterStart, featuredDay.index]);
-  const monthOffset = monthItems.length ? Math.max(0, monthItems[0].date.getDay() - 1) : 0;
-  const activeChildren = settings.children.filter((child) => !child.disabled);
+  const activeChildren = settings.children.filter((child) => !child.disabled).slice(0, 2);
+  const todayWords = featuredDay.blocks[0].vocabulary.slice(0, 3);
+  const worldCards = [
+    ...visualThemeOptions.map((option) => ({ title: option.title, subtitle: option.subtitle, art: worldArtByTheme[option.id] })),
+    { title: 'Space Station', subtitle: '太空與科學探索', art: 'world-space.webp' },
+  ];
 
   return (
-    <div className="page home-page v22-home">
-      <section className="v22-space-hero">
-        <div className="v22-hero-copy">
-          <span className="v22-kicker"><Sparkles size={16} /> LITTLE EXPLORERS · V2.3</span>
-          <h1>小小探險隊</h1>
-          <h2>一起學習，一起長大</h2>
-          <p>180 節家庭共學任務已重新編排。180 首唱跳暖身與 180 支正式課程影片全部零重複，照顧者控制節奏，孩子透過唱、說、找、動、問答與分齡挑戰累積 XP、金幣與角色進化。</p>
-          <div className="hero-actions">
-            <button className="primary-button v22-gold-cta" onClick={() => openDay(featuredDay)}><PlayCircle size={20} /> {todayDay ? '開始今日任務' : `繼續 Day ${featuredDay.index}`}</button>
-            <button className="secondary-button v22-glass-button" onClick={goSemester}><CalendarDays size={19} /> 查看學習星圖</button>
+    <div className="page home-page v30-home">
+      <section className="v30-story-hero">
+        <div className="v30-hero-copy">
+          <span className="v30-overline">TODAY'S ADVENTURE · DAY {featuredDay.index}</span>
+          <h1>今天一起去冒險！</h1>
+          <h2>{featuredDay.title}</h2>
+          <div className="v30-today-learning"><BookOpen size={20} /><span>今天要學</span><strong>{todayWords.join(' · ')}</strong></div>
+          <div className="v30-hero-actions">
+            <button className="v30-primary-cta" onClick={() => openDay(featuredDay)}><PlayCircle size={23} />開始今天的冒險</button>
+            <button className="v30-secondary-cta" onClick={goSemester}><Map size={19} />看看冒險地圖</button>
           </div>
-          <div className="v22-hero-status"><span><Cloud size={15} /> {cloudStatus === 'synced' ? '雲端已同步' : '家庭資料同步中'}</span><span><Trophy size={15} /> 學期完成 {completionPct}%</span><span><Rocket size={15} /> Level {level}</span></div>
+          <small>{todayDay ? formatCourseDate(featuredDate) : `下一個任務 · ${formatCourseDate(featuredDate)}`}</small>
         </div>
-        <div className="v22-hero-art" aria-hidden="true">
-          <img className="v22-hero-crew-image v23-hero-composite" src={v23Asset('hero-v23.webp')} alt="" />
+        <div className="v30-hero-illustration" aria-hidden="true"><img src={v30Asset('hero-storybook.webp')} alt="" /></div>
+      </section>
+
+      <section className="v30-section v30-world-section">
+        <div className="v30-section-heading"><div><span className="v30-overline">ADVENTURE WORLDS</span><h2>選擇你的冒險世界</h2></div><button className="v30-text-link" onClick={goSemester}>查看全部課程 <ChevronRight size={18} /></button></div>
+        <div className="v30-world-grid">{worldCards.map((world) => <button className="v30-world-card" key={world.title} onClick={goSemester}><img src={v30Asset(world.art)} alt="" /><span><strong>{world.title}</strong><small>{world.subtitle}</small></span></button>)}</div>
+      </section>
+
+      <section className="v30-section v30-journey-section">
+        <div className="v30-section-heading"><div><span className="v30-overline">LEARNING JOURNEY</span><h2>今天只要走完四步</h2></div><span className="v30-progress-label">學期進度 {completionPct}%</span></div>
+        <div className="v30-journey-grid">
+          <article><span className="v30-step-number">1</span><Headphones size={28} /><strong>Listen</strong><small>先聽一聽</small></article>
+          <article><span className="v30-step-number">2</span><MessageCircle size={28} /><strong>Repeat</strong><small>跟著說一說</small></article>
+          <article><span className="v30-step-number">3</span><Gamepad2 size={28} /><strong>Play</strong><small>動手玩任務</small></article>
+          <article><span className="v30-step-number">4</span><CheckCircle2 size={28} /><strong>Complete</strong><small>完成就領獎</small></article>
         </div>
       </section>
 
-      <section className="v22-command-grid">
-        <aside className="v22-panel v22-crew-panel">
-          <div className="v22-panel-heading"><div><span className="eyebrow">LEARNING CREW</span><h2>小小探險隊成員</h2></div><Users size={20} /></div>
-          <div className="v22-crew-list">
-            {settings.children.map((child) => {
-              const rewards = calculateRewards(progress[child.id]);
-              const childDays = curriculum.filter((day) => isChildDayDone(child.id, day)).length;
-              return <article className={`v22-crew-card ${child.disabled ? 'is-disabled' : ''}`} key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={66} /><div><span>學習者 · LV.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={childDays} max={90} /><small>{rewards.xp} XP · {rewards.coins} 金幣</small></div></article>;
-            })}
-          </div>
-          <div className="v22-reward-shelf"><div><AnimatedBadge art="xp" size={42} /><span>XP</span></div><div><AnimatedBadge art="treasure" size={42} /><span>寶箱</span></div><div><AnimatedBadge art="trophy" size={42} /><span>成就</span></div></div>
-        </aside>
-
-        <main className="v22-center-stack">
-          <article className="v22-panel v22-calendar-panel">
-            <div className="v22-panel-heading"><div><span className="eyebrow">SEMESTER CALENDAR</span><h2>學期日曆</h2></div><button className="text-button" onClick={goSemester}>完整 18 週 <ChevronRight size={17} /></button></div>
-            <div className="v22-progress-summary"><div><strong>{completionPct}%</strong><span>{completedDays} / 90 學習日</span></div><ProgressBar value={completedDays} max={90} /><small>下一里程碑：{nextMilestone} 天</small></div>
-            {monthItems.length > 0 && <div className="v22-month-card"><div className="month-title"><strong>{formatMonth(monthItems[0].date)}</strong><span>{monthItems.length} 個任務日</span></div><div className="month-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><div className="month-days">{Array.from({ length: monthOffset }, (_, i) => <span className="calendar-spacer" key={`s-${i}`} />)}{monthItems.map(({ day, date }) => { const done = isDayDone(day); const current = day.id === featuredDay.id; return <button key={day.id} className={`mini-calendar-day ${done ? 'done' : ''} ${current ? 'today' : ''}`} onClick={() => openDay(day)}><span className="mini-date">{date.getDate()}</span><span className="mini-emoji">{done ? <Check size={14} /> : <img src={v23Asset('hero-rocket.webp')} alt="" aria-hidden="true" />}</span><small>D{day.index}</small></button>; })}</div></div>}
-          </article>
-
-          <article className="v22-panel v22-growth-panel">
-            <div className="v22-panel-heading"><div><span className="eyebrow">HERO EVOLUTION</span><h2>小小探險隊成長</h2></div><AnimatedBadge art="crystal" size={46} /></div>
-            <div className="v22-growth-grid">{activeChildren.slice(0, 2).map((child) => { const rewards = calculateRewards(progress[child.id]); const stage = avatarStageFromXp(rewards.xp); const nextStage = nextAvatarStageXp(rewards.xp); return <div className="v22-growth-card" key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={88} showStage /><div><span>{child.name} · 進化 {stage}/4</span><strong>{avatarName(child.avatar)}</strong><ProgressBar value={Math.min(4, stage)} max={4} /><small>{nextStage ? `再 ${Math.max(0, nextStage - rewards.xp)} XP 進化` : '已達最高進化'}</small></div></div>; })}</div>
-            <div className="v22-achievements"><div className={completedDays >= 5 ? 'unlocked' : ''}><AnimatedBadge art="star" size={44} /><span>初航 5 天</span></div><div className={completedDays >= 30 ? 'unlocked' : ''}><AnimatedBadge art="xp" size={44} /><span>30 天連續成長</span></div><div className={completedDays >= 60 ? 'unlocked' : ''}><AnimatedBadge art="rocket" size={44} /><span>星際遠征</span></div><div className={completedDays >= 90 ? 'unlocked' : ''}><AnimatedBadge art="trophy" size={44} /><span>學期冠軍</span></div></div>
-          </article>
-        </main>
-
-        <aside className="v22-panel v22-today-panel">
-          <div className="v22-panel-heading"><div><span className="eyebrow">TODAY MISSION</span><h2>今日課程</h2></div><span className="date-chip">{formatCourseDate(featuredDate)}</span></div>
-          <div className="v22-day-title"><span>DAY {featuredDay.index}</span><h3>{featuredDay.title}</h3><p>{featuredDay.bigIdea}</p></div>
-          <div className="v22-lesson-stack">{featuredDay.blocks.map((block, index) => <article key={block.id}><LessonIllustration block={block} /><div><span>第 {index + 1} 節 · 約 {block.duration} 分鐘</span><SubjectBadge subject={block.subject} /></div><strong>{block.title}</strong><small>{block.vocabulary.slice(0, 4).join(' · ')}</small></article>)}</div>
-          <button className="primary-button full v22-gold-cta" onClick={() => openDay(featuredDay)}>開始上課 <ChevronRight size={18} /></button>
-          <div className="v22-secret-preview"><AnimatedBadge art="treasure" size={50} /><div><strong>隱藏彩蛋</strong><span>完成指定學習日會解鎖額外金幣與成就。</span></div></div>
-        </aside>
+      <section className="v30-section v30-growth-section">
+        <div className="v30-section-heading"><div><span className="v30-overline">MY CHARACTERS</span><h2>我們今天也長大了一點</h2></div><span className="v30-streak"><Flame size={18} /> 已完成 {completedDays} 個學習日</span></div>
+        <div className="v30-character-strip">{activeChildren.map((child) => { const rewards = calculateRewards(progress[child.id]); const childDays = curriculum.filter((day) => isChildDayDone(child.id, day)).length; const nextStage = nextAvatarStageXp(rewards.xp); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={104} showStage /><div><span>Lv.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={childDays} max={90} /><small>{nextStage ? `再 ${Math.max(0, nextStage - rewards.xp)} XP 進化` : '已達最高進化'}</small></div></article>; })}</div>
       </section>
     </div>
   );
 }
 
-function AchievementsView({ settings, progress, completedDays, goHome }: { settings: AppSettings; progress: AppProgress; completedDays: number; goHome: () => void }) {
+function AchievementsView({ settings, progress, completedDays, goHome, goShop }: { settings: AppSettings; progress: AppProgress; completedDays: number; goHome: () => void; goShop: () => void }) {
   const milestones = [
-    { days: 5, title: '初航之星', art: 'star' as const },
-    { days: 30, title: '成長核心', art: 'xp' as const },
-    { days: 60, title: '星際遠征', art: 'rocket' as const },
-    { days: 90, title: '學期冠軍', art: 'trophy' as const },
+    { days: 5, title: '第一張冒險地圖', art: 'star' as const },
+    { days: 30, title: '故事好朋友', art: 'xp' as const },
+    { days: 60, title: '遠方探險家', art: 'rocket' as const },
+    { days: 90, title: '學期故事王', art: 'trophy' as const },
   ];
-  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">ACHIEVEMENTS</span><h1>成就獎勵</h1><p>所有 XP、金幣、里程碑與彩蛋都從完成紀錄即時計算，不另外累加總額。</p></div></div><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">SEMESTER MILESTONES</span><h2>家庭里程碑</h2></div><AnimatedBadge art="trophy" size={54} /></div><div className="v22-achievement-page-grid">{milestones.map((item) => <article className={completedDays >= item.days ? 'unlocked' : ''} key={item.days}><AnimatedBadge art={item.art} size={62} /><div><span>{item.days} 學習日</span><strong>{item.title}</strong><small>{completedDays >= item.days ? '已解鎖' : `還差 ${Math.max(0, item.days - completedDays)} 天`}</small></div></article>)}</div></section><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">PLAYER REWARDS</span><h2>個人成就</h2></div><Users size={20} /></div><div className="v22-report-grid">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={72} /><div><span>學習者 · LV.{levelFromXp(rewards.xp)}</span><strong>{child.name}</strong><small>{rewards.xp} XP · {rewards.coins} 金幣 · 彩蛋 {normalized.claimedEggs.length}/{easterEggDays.size}</small></div></article>; })}</div></section></div>;
+  return (
+    <div className="page v30-secondary-page v30-rewards-page">
+      <div className="v30-page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">REWARDS</span><h1>我的獎勵</h1><p>完成學習後，獎勵才出場。角色成長比數字更重要。</p></div><button className="v30-secondary-cta" onClick={goShop}><Gift size={19} />打開寶物櫃</button></div>
+      <section className="v30-section"><div className="v30-section-heading"><div><span className="v30-overline">MILESTONES</span><h2>冒險里程碑</h2></div></div><div className="v30-milestone-grid">{milestones.map((item) => <article className={completedDays >= item.days ? 'unlocked' : ''} key={item.days}><AnimatedBadge art={item.art} size={68} /><div><span>{item.days} 個學習日</span><strong>{item.title}</strong><small>{completedDays >= item.days ? '已解鎖，做得很好！' : `再完成 ${Math.max(0, item.days - completedDays)} 天`}</small></div></article>)}</div></section>
+      <section className="v30-section"><div className="v30-section-heading"><div><span className="v30-overline">LEARNER GROWTH</span><h2>角色成長</h2></div></div><div className="v30-character-strip">{settings.children.filter((child) => !child.disabled).map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={108} showStage /><div><span>Lv.{levelFromXp(rewards.xp)}</span><h3>{child.name}</h3><ProgressBar value={avatarStageFromXp(rewards.xp)} max={4} /><small>{rewards.xp} XP · {rewards.coins} 金幣 · 彩蛋 {normalized.claimedEggs.length}/{easterEggDays.size}</small></div></article>; })}</div></section>
+    </div>
+  );
 }
 
-function LearningReportView({ settings, progress, isChildDayDone, goHome }: { settings: AppSettings; progress: AppProgress; isChildDayDone: (childId: string, day: CourseDay) => boolean; goHome: () => void }) {
-  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">LEARNING REPORT</span><h1>學習報表</h1><p>依實際完成的任務、單元與學習日整理，不用額外維護第二套統計資料。</p></div></div><section className="v22-report-summary"><article><strong>18</strong><span>學習週</span></article><article><strong>90</strong><span>學習日</span></article><article><strong>180</strong><span>課程單元</span></article><article><strong>360</strong><span>互動任務</span></article></section><section className="v22-panel"><div className="v22-panel-heading"><div><span className="eyebrow">LEARNER PROGRESS</span><h2>學習者進度</h2></div><GraduationCap size={22} /></div><div className="v22-learning-report-list">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const days = curriculum.filter((day) => isChildDayDone(child.id, day)).length; return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={78} /><div className="report-main"><div><span>學習者</span><h3>{child.name}</h3></div><ProgressBar value={days} max={90} /><small>{days}/90 天 · {normalized.completedBlocks.length}/180 單元 · {normalized.completedMissions.length}/360 任務</small></div><div className="report-rewards"><strong>{rewards.xp}</strong><span>XP</span><strong>{rewards.coins}</strong><span>金幣</span></div></article>; })}</div></section></div>;
+function CharacterView({ settings, progress, goHome }: { settings: AppSettings; progress: AppProgress; goHome: () => void }) {
+  return (
+    <div className="page v30-secondary-page v30-character-page">
+      <div className="v30-page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">MY CHARACTER</span><h1>我的角色</h1><p>每完成一次真實學習，角色就離下一階進化更近一步。</p></div></div>
+      <div className="v30-character-gallery">{settings.children.filter((child) => !child.disabled).map((child) => { const rewards = calculateRewards(progress[child.id]); const stage = avatarStageFromXp(rewards.xp); const nextStage = nextAvatarStageXp(rewards.xp); return <article key={child.id}><div className="v30-character-stage"><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={190} showStage /></div><div><span className="v30-overline">{child.name} · LEVEL {levelFromXp(rewards.xp)}</span><h2>{avatarName(child.avatar)}</h2><p>{stage === 4 ? '已完成目前最高進化。' : `再累積 ${Math.max(0, (nextStage ?? rewards.xp) - rewards.xp)} XP，就會解鎖下一個造型。`}</p><ProgressBar value={stage} max={4} /><div className="v30-character-reward"><AnimatedBadge art="xp" size={42} /><strong>{rewards.xp} XP</strong><span>進化 {stage}/4</span></div></div></article>; })}</div>
+      <div className="v30-mascot-note"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><strong>小星提醒</strong><p>角色造型是冒險獎勵，不會改變學習資料。每一點 XP 都來自你真正完成的任務。</p></div></div>
+    </div>
+  );
+}
+
+function LearningReportView({ settings, progress, isChildDayDone, goHome, goSettings, cloudStatus }: { settings: AppSettings; progress: AppProgress; isChildDayDone: (childId: string, day: CourseDay) => boolean; goHome: () => void; goSettings: () => void; cloudStatus: CloudStatus }) {
+  return (
+    <div className="page v30-parent-page">
+      <div className="v30-parent-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT MODE</span><h1>家長學習中心</h1><p>學習報表、家庭設定、PIN 與雲端資訊集中在這裡，不干擾兒童首頁。</p></div></div><div className="v30-parent-actions"><CloudPill status={cloudStatus} /><button className="v30-secondary-cta" onClick={goSettings}><SettingsIcon size={18} />家庭設定</button></div></div>
+      <section className="v30-report-summary"><article><strong>18</strong><span>學習週</span></article><article><strong>90</strong><span>學習日</span></article><article><strong>180</strong><span>課程單元</span></article><article><strong>360</strong><span>互動任務</span></article></section>
+      <section className="v30-parent-panel"><div className="v30-section-heading"><div><span className="v30-overline">LEARNER PROGRESS</span><h2>學習者進度</h2></div><GraduationCap size={24} /></div><div className="v30-report-list">{settings.children.map((child) => { const normalized = normalizeProgress(progress[child.id]); const rewards = calculateRewards(normalized); const days = curriculum.filter((day) => isChildDayDone(child.id, day)).length; return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={74} /><div className="report-main"><div><span>學習者</span><h3>{child.name}</h3></div><ProgressBar value={days} max={90} /><small>{days}/90 天 · {normalized.completedBlocks.length}/180 單元 · {normalized.completedMissions.length}/360 任務</small></div><div className="report-rewards"><strong>{rewards.xp}</strong><span>XP</span><strong>{rewards.coins}</strong><span>金幣</span></div></article>; })}</div></section>
+    </div>
+  );
 }
 
 function TreasureShopView({ settings, progress, goHome }: { settings: AppSettings; progress: AppProgress; goHome: () => void }) {
   const familyCoins = settings.children.reduce((sum, child) => sum + calculateRewards(progress[child.id]).coins, 0);
   const items = [
-    { coins: 80, title: '星光補給箱', detail: '家庭累積 80 金幣解鎖', art: 'treasure' as const },
-    { coins: 180, title: '能量水晶', detail: '家庭累積 180 金幣解鎖', art: 'crystal' as const },
-    { coins: 320, title: '火箭通行證', detail: '家庭累積 320 金幣解鎖', art: 'rocket' as const },
-    { coins: 520, title: '冠軍展示座', detail: '家庭累積 520 金幣解鎖', art: 'trophy' as const },
+    { coins: 80, title: '故事貼紙包', detail: '家庭累積 80 金幣解鎖', art: 'treasure' as const },
+    { coins: 180, title: '彩虹收藏石', detail: '家庭累積 180 金幣解鎖', art: 'crystal' as const },
+    { coins: 320, title: '冒險旅行票', detail: '家庭累積 320 金幣解鎖', art: 'rocket' as const },
+    { coins: 520, title: '故事皇冠展示座', detail: '家庭累積 520 金幣解鎖', art: 'trophy' as const },
   ];
-  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">TREASURE SHOP</span><h1>寶物商店</h1><p>V2.3 採「累積達標即解鎖」而不是扣除金幣，因此不會破壞由完成紀錄即時計算的獎勵模型。</p></div></div><section className="v22-panel"><div className="v22-shop-wallet"><AnimatedBadge art="treasure" size={66} /><div><span>家庭目前累積</span><strong>{familyCoins} 金幣</strong></div></div><div className="v22-shop-grid">{items.map((item) => { const unlocked = familyCoins >= item.coins; return <article className={unlocked ? 'unlocked' : ''} key={item.title}><AnimatedBadge art={item.art} size={76} /><span>{unlocked ? '已解鎖' : `${item.coins} 金幣`}</span><h3>{item.title}</h3><p>{unlocked ? '已放入家庭收藏展示櫃。' : item.detail}</p></article>; })}</div></section></div>;
+  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">TREASURE SHOP</span><h1>獎勵寶箱</h1><p>V3.0 延續「累積達標即解鎖」而不是扣除金幣，因此不會破壞由完成紀錄即時計算的獎勵模型。</p></div></div><section className="v22-panel"><div className="v22-shop-wallet"><AnimatedBadge art="treasure" size={66} /><div><span>家庭目前累積</span><strong>{familyCoins} 金幣</strong></div></div><div className="v22-shop-grid">{items.map((item) => { const unlocked = familyCoins >= item.coins; return <article className={unlocked ? 'unlocked' : ''} key={item.title}><AnimatedBadge art={item.art} size={76} /><span>{unlocked ? '已解鎖' : `${item.coins} 金幣`}</span><h3>{item.title}</h3><p>{unlocked ? '已放入家庭收藏展示櫃。' : item.detail}</p></article>; })}</div></section></div>;
 }
 
 function SemesterView({ settings, isDayDone, openDay, goHome }: { settings: AppSettings; isDayDone: (day: CourseDay) => boolean; openDay: (day: CourseDay) => void; goHome: () => void }) {
@@ -933,32 +900,32 @@ function DayView({ day, date, settings, progress, participants, onBack, onToggle
   onClaimEgg: (childId: string) => void;
 }) {
   return (
-    <div className="lesson-page">
-      <header className="lesson-header v2-lesson-header">
-        <button className="icon-button glass" onClick={onBack}><ArrowLeft size={20} /></button>
-        <div className="lesson-header-copy"><span>WEEK {day.week} · DAY {day.index} · {formatCourseDate(date)}</span><h1>{day.title}</h1><p>{day.bigIdea}</p></div>
-        <div className="mission-badge"><Rocket size={20} /> Mission {day.index}/90</div>
+    <div className="lesson-page v30-lesson-page">
+      <header className="v30-lesson-header">
+        <button className="icon-button" onClick={onBack}><ArrowLeft size={20} /></button>
+        <div className="lesson-header-copy"><span>WEEK {day.week} · {formatCourseDate(date)}</span><h1>{day.title}</h1><p>{day.bigIdea}</p></div>
+        <div className="mission-badge"><Map size={20} /> Day {day.index} / 90</div>
         {easterEggDays.has(day.index) && <EasterEgg day={day} settings={settings} progress={progress} participants={participants} onClaim={onClaimEgg} />}
       </header>
 
       <main className="lesson-content">
-        <section className="attendance-panel">
-          <div><span className="eyebrow">TODAY'S CREW</span><h2><PhoneticText text="今天誰一起上課" />？</h2><p>每天都能重新選擇參與的學習者；哥哥、弟弟等孩子分開記錄任務、XP、金幣與角色進化。</p></div>
+        <section className="attendance-panel v30-attendance-panel">
+          <div><span className="v30-overline">TODAY'S LEARNERS</span><h2><PhoneticText text="今天誰一起上課" />？</h2><p>選好今天一起冒險的小朋友。</p></div>
           <div className="attendance-chips">{settings.children.filter((child) => !child.disabled).map((child) => {
             const active = participants.includes(child.id); const rewards = calculateRewards(progress[child.id]);
             return <button key={child.id} className={`attendance-chip ${active ? 'active' : ''}`} onClick={() => onToggleAttendance(child.id)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={42} /><strong>{child.name}</strong>{active ? <Check size={17} /> : <Circle size={17} />}</button>;
           })}</div>
         </section>
 
-        <section className="caregiver-brief enlarged-caregiver-brief">
-          <div className="brief-icon"><Users size={24} /></div>
-          <div><span className="eyebrow">給第一次帶課的大人</span><h3>你是今天的「節奏控制員」：孩子想說話、指畫面、笑出來或開始分心，就停。</h3><p>不用追著分鐘數跑。影片是教材，不是整堂課；請依畫面教案做「播放 → 暫停 → 複誦 → 回看 → 找東西／做動作」。4 歲只說單字也算成功，6 歲再往完整句推進。</p></div>
-        </section>
+        <details className="v30-parent-guide-quick">
+          <summary><Users size={20} /> 家長帶課提醒 <ChevronRight size={18} /></summary>
+          <div><h3>你是今天的節奏控制員</h3><p>孩子想說話、指畫面、笑出來或開始分心，就暫停。影片是教材，不是整堂課；4 歲只說單字也算成功，6 歲再往完整句推進。</p></div>
+        </details>
 
         {day.blocks.map((block, blockIndex) => <LessonBlockView key={block.id} block={block} blockIndex={blockIndex} day={day} settings={settings} progress={progress} participants={participants} onToggleMission={onToggleMission} onToggleBlock={onToggleBlock} />)}
 
-        <section className="bonus-card"><div className="bonus-icon rich-bonus-icon"><AnimatedBadge art="treasure" size={58} /></div><div><span className="eyebrow">BONUS QUEST</span><h3><PhoneticText text="今日加碼任務" /></h3><p>{day.bonus}</p></div></section>
-        <ReflectionPanel day={day} reflection={reflection} onUpdate={onUpdateReflection} />
+        <section className="bonus-card v30-bonus-card"><div className="bonus-icon rich-bonus-icon"><AnimatedBadge art="treasure" size={58} /></div><div><span className="v30-overline">BONUS</span><h3><PhoneticText text="今天還想再玩一下嗎" />？</h3><p>{day.bonus}</p></div></section>
+        <details className="v30-parent-guide-quick v30-reflection-wrap"><summary><CalendarDays size={20} /> 家長課後紀錄 <ChevronRight size={18} /></summary><ReflectionPanel day={day} reflection={reflection} onUpdate={onUpdateReflection} /></details>
       </main>
     </div>
   );
@@ -1004,55 +971,51 @@ function LessonBlockView({ block, blockIndex, day, settings, progress, participa
   onToggleMission: (childId: string, mission: LessonBlock['missions'][number]) => void;
   onToggleBlock: (childId: string, block: LessonBlock) => void;
 }) {
+  const [stage, setStage] = useState<0 | 1 | 2 | 3>(0);
   const action = subjectAction(block.subject);
+  const stageItems = [
+    { label: 'Listen', note: '先聽一聽', icon: Headphones },
+    { label: 'Repeat', note: '跟著說一說', icon: MessageCircle },
+    { label: 'Play', note: '動手玩任務', icon: Gamepad2 },
+    { label: 'Complete', note: '完成並領獎', icon: CheckCircle2 },
+  ] as const;
+  const participantChildren = settings.children.filter((child) => participants.includes(child.id));
+
   return (
-    <section className="lesson-block-card v2-lesson-block">
-      <div className="block-heading"><div className="block-index">{blockIndex + 1}</div><div className="block-title-copy"><span className="eyebrow">第 {blockIndex + 1} 節 · 約 {block.duration} 分鐘</span><h2>{block.title}</h2></div><SubjectBadge subject={block.subject} /></div>
-
-      <div className="lesson-media-grid"><VideoPlayer clip={block.warmup} compact warmup /><VideoPlayer clip={block.video} /></div>
-
-      <div className="video-alignment-card" aria-label="影片對應檢查">
-        <div className="video-alignment-title"><CheckCircle2 size={21} /><div><span className="eyebrow">VIDEO MATCH CHECK</span><strong>影片與本節內容已對應</strong></div></div>
-        <div className="video-alignment-grid">
-          <span><small>暖身歌曲</small><b>{block.warmup.title}</b><CheckCircle2 size={17} /></span>
-          <span><small>主影片</small><b>{block.video.title}</b><CheckCircle2 size={17} /></span>
-          <span><small>本節焦點</small><b>{block.videoFocus}</b><CheckCircle2 size={17} /></span>
-        </div>
+    <section className="v30-lesson-block">
+      <div className="v30-block-heading">
+        <div><span className="v30-overline">LESSON {blockIndex + 1} · {block.duration} MIN</span><h2>{block.title}</h2></div>
+        <SubjectBadge subject={block.subject} />
       </div>
 
-      <div className="focus-deck">
-        <div className="focus-heading"><div><span className="eyebrow">TODAY'S FOCUS</span><h3><PhoneticText text="今日重點" /></h3></div><span className="focus-hint">看得到 · 說得出 · 做得到</span></div>
-        <div className="focus-grid">
-          <div className="focus-card focus-words"><LessonIllustration block={block} /><strong>今天要認得</strong><div className="picture-word-grid v22-word-grid">{block.vocabulary.map((word) => <span key={word}><em>{word}</em></span>)}</div></div>
-          <div className="focus-card focus-sentence"><strong><PhoneticText text="句型" /></strong><p>{block.sentence}</p><small>4 歲：能補最後一個字就很棒。<br />6 歲：試著自己說完整句。</small></div>
-          <div className="focus-card focus-action"><strong>{action.label}</strong><p>{action.text}</p><small>把眼睛、嘴巴、手和身體都加入，記憶會比只看影片更牢。</small></div>
-        </div>
-      </div>
+      <div className="v30-stage-nav" aria-label="學習步驟">{stageItems.map((item, index) => { const Icon = item.icon; const active = stage === index; return <button key={item.label} className={active ? 'active' : ''} onClick={() => setStage(index as 0 | 1 | 2 | 3)}><span>{index + 1}</span><Icon size={22} /><strong>{item.label}</strong><small>{item.note}</small></button>; })}</div>
 
-      <div className="guide-grid">
-        <div className="timeline-panel enlarged-script">
-          <div className="panel-heading"><BookOpen size={21} /><div><span className="eyebrow">CAREGIVER SCRIPT</span><h3><PhoneticText text="照著做就能上課" /></h3></div></div>
-          <div className="timeline">{block.steps.map((step, index) => <div className="timeline-step" key={`${block.id}-${index}`}><div className="time-dot"><span>{step.minute}</span></div><div><h4>{step.title}</h4><p>{step.instruction}</p>{step.cue && <div className="pause-cue">⏸ 暫停提示：{step.cue}</div>}</div></div>)}</div>
-        </div>
-        <aside className="side-guide"><div className="tip-card"><span className="eyebrow">帶課提醒</span><p>{block.caregiverTip}</p></div><div className="level-card"><div><span>4 歲／初階</span><p>{block.younger}</p></div><div><span>6 歲／進階</span><p>{block.older}</p></div></div></aside>
-      </div>
+      {stage === 0 && <div className="v30-stage-panel v30-listen-stage">
+        <div className="v30-stage-intro v30-listen-intro"><img className="v30-world-thumb" src={v30Asset(lessonWorldArt(block))} alt="本節冒險世界" /><div><span className="v30-overline">STEP 1 · LISTEN</span><h3>耳朵準備好了嗎？</h3><p>先走進今天的 Storybook 世界，跟著唱跳暖身，再看主影片。想說話、想指畫面，就可以暫停。</p></div><img className="v30-mascot-mini" src={v23Asset('robot-helper.webp')} alt="小星" /></div>
+        <div className="v30-video-pair"><VideoPlayer clip={block.warmup} compact warmup /><VideoPlayer clip={block.video} /></div>
+        <button className="v30-primary-cta v30-next-stage" onClick={() => setStage(1)}>聽完了，下一步 <ChevronRight size={20} /></button>
+      </div>}
 
-      <div className="interactive-section v2-missions">
-        <div className="panel-heading"><Zap size={22} /><div><span className="eyebrow">INTERACTIVE MISSIONS</span><h3><PhoneticText text="互動任務" />｜做到標準再領獎</h3></div></div>
-        <div className="mission-rule-banner"><strong>家長怎麼判斷？</strong><span>先讓孩子實際做 → 對照「完成標準」→ 達標才按孩子的領獎按鈕。答錯後經提示完成也算，不需要一次就答對。</span></div>
-        <div className="mission-grid">{block.missions.map((mission, missionIndex) => <article className="mini-mission v2-mini-mission" key={mission.id}><div className="mission-top"><span className={`mission-kind kind-${mission.kind}`}>任務 {missionIndex + 1}｜{mission.title}</span><span className="reward">+{mission.xp} XP · +{mission.coins} 金幣</span></div><p className="mission-prompt">{mission.prompt}</p><div className="mission-criteria"><strong>✓ 完成標準</strong><span>{mission.criteria}</span></div><div className="mission-players">{settings.children.filter((child) => participants.includes(child.id)).map((child) => { const done = progress[child.id]?.completedMissions.includes(mission.id) ?? false; const rewards = calculateRewards(progress[child.id]); return <button key={child.id} className={`player-score reward-button ${done ? 'done' : ''}`} onClick={() => onToggleMission(child.id, mission)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={34} /><span><strong>{child.name}</strong><small>{done ? '已領獎 · 再按可撤銷' : `完成了！領 +${mission.xp} XP`}</small></span>{done ? <CheckCircle2 size={18} /> : <Gift size={18} />}</button>; })}</div></article>)}</div>
-      </div>
+      {stage === 1 && <div className="v30-stage-panel v30-repeat-stage">
+        <div className="v30-stage-intro"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><span className="v30-overline">STEP 2 · REPEAT</span><h3>看看、聽聽、跟著說</h3><p>點一下單字卡可以播放英文發音。每次只看一個字，不用一次全部記住。</p></div></div>
+        <div className="v30-vocab-grid">{block.vocabulary.map((word) => <VocabularyCard key={word} word={word} block={block} />)}</div>
+        <div className="v30-sentence-practice"><span>今天的句子</span><strong>{block.sentence}</strong><button onClick={() => speakWord(block.sentence)}><Volume2 size={19} /> 聽句子</button></div>
+        <div className="v30-stage-actions"><button className="v30-secondary-cta" onClick={() => setStage(0)}><ArrowLeft size={18} />上一步</button><button className="v30-primary-cta" onClick={() => setStage(2)}>我會說了 <ChevronRight size={20} /></button></div>
+      </div>}
 
-      <div className="complete-row v2-complete-row">
-        <div><span className="eyebrow">FINISH THIS BLOCK</span><h3><PhoneticText text="完成本節" /></h3><p>兩個互動任務都完成後，「完成本節」才會亮起；這樣上課紀錄與獎勵邏輯會保持一致。</p></div>
-        <div className="complete-buttons">{settings.children.filter((child) => participants.includes(child.id)).map((child) => {
-          const childProgress = normalizeProgress(progress[child.id]);
-          const done = childProgress.completedBlocks.includes(block.id);
-          const ready = block.missions.every((mission) => childProgress.completedMissions.includes(mission.id));
-          const rewards = calculateRewards(childProgress);
-          return <button key={child.id} disabled={!done && !ready} className={`complete-button ${done ? 'done' : ''} ${ready ? 'ready' : ''}`} onClick={() => onToggleBlock(child.id, block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={31} /> {child.name} {done ? <><CheckCircle2 size={18} /> 已完成</> : ready ? <>通關 +{BLOCK_REWARD.xp} XP</> : <>先完成 2 個任務</>}</button>;
-        })}</div>
-      </div>
+      {stage === 2 && <div className="v30-stage-panel v30-play-stage">
+        <div className="v30-stage-intro"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><span className="v30-overline">STEP 3 · PLAY</span><h3>現在來玩任務</h3><p>{action.text}</p></div></div>
+        <div className="v30-mission-grid">{block.missions.map((mission, missionIndex) => <article className="v30-mission-card" key={mission.id}><div className="v30-mission-number">{missionIndex + 1}</div><div><span>{mission.title}</span><h4>{mission.prompt}</h4><p><strong>完成標準</strong>{mission.criteria}</p></div><div className="v30-mission-players">{participantChildren.map((child) => { const done = progress[child.id]?.completedMissions.includes(mission.id) ?? false; const rewards = calculateRewards(progress[child.id]); return <button key={child.id} className={done ? 'done' : ''} onClick={() => onToggleMission(child.id, mission)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={38} /><span>{child.name}</span>{done ? <CheckCircle2 size={20} /> : <span className="v30-reward-chip">+{mission.xp} XP</span>}</button>; })}</div></article>)}</div>
+        <div className="v30-stage-actions"><button className="v30-secondary-cta" onClick={() => setStage(1)}><ArrowLeft size={18} />上一步</button><button className="v30-primary-cta" onClick={() => setStage(3)}>任務完成了 <ChevronRight size={20} /></button></div>
+      </div>}
+
+      {stage === 3 && <div className="v30-stage-panel v30-complete-stage">
+        <div className="v30-success-scene"><img src={v23Asset('robot-helper.webp')} alt="小星" /><div><span className="v30-overline">STEP 4 · COMPLETE</span><h3>最後一步，領取今天的成長！</h3><p>兩個任務完成後，就可以正式完成這一節。</p></div></div>
+        <div className="v30-complete-buttons">{participantChildren.map((child) => { const childProgress = normalizeProgress(progress[child.id]); const done = childProgress.completedBlocks.includes(block.id); const ready = block.missions.every((mission) => childProgress.completedMissions.includes(mission.id)); const rewards = calculateRewards(childProgress); return <button key={child.id} disabled={!done && !ready} className={done ? 'done' : ready ? 'ready' : ''} onClick={() => onToggleBlock(child.id, block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={48} /><span><strong>{child.name}</strong><small>{done ? '這一節已完成' : ready ? `完成並獲得 +${BLOCK_REWARD.xp} XP` : '先完成前面的 2 個任務'}</small></span>{done ? <CheckCircle2 size={24} /> : <Award size={24} />}</button>; })}</div>
+        <button className="v30-secondary-cta" onClick={() => setStage(2)}><ArrowLeft size={18} />回到任務</button>
+      </div>}
+
+      <details className="v30-parent-guide"><summary><Users size={19} /> 家長帶課指南 <ChevronRight size={18} /></summary><div className="v30-parent-guide-body"><div><span className="v30-overline">CAREGIVER SCRIPT</span><h3>照著做就能上課</h3><div className="timeline">{block.steps.map((step, index) => <div className="timeline-step" key={`${block.id}-${index}`}><div className="time-dot"><span>{step.minute}</span></div><div><h4>{step.title}</h4><p>{step.instruction}</p>{step.cue && <div className="pause-cue">暫停提示：{step.cue}</div>}</div></div>)}</div></div><aside><div className="tip-card"><strong>帶課提醒</strong><p>{block.caregiverTip}</p></div><div className="level-card"><div><span>初階</span><p>{block.younger}</p></div><div><span>進階</span><p>{block.older}</p></div></div></aside></div></details>
     </section>
   );
 }
@@ -1138,7 +1101,7 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
 
   const exportData = () => {
     const blob = new Blob([JSON.stringify({ version: 2, settings, progress, attendance, reflections }, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `小小探險隊-V2.3-學習紀錄-${ymd(new Date())}.json`; a.click(); URL.revokeObjectURL(url);
+    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `小小探險隊-V3.0-學習紀錄-${ymd(new Date())}.json`; a.click(); URL.revokeObjectURL(url);
   };
 
   const resetProgress = () => {
@@ -1166,19 +1129,19 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
   };
 
   return (
-    <div className="page settings-page v2-settings">
-      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">FAMILY CONTROL CENTER · V2.3</span><h1>星際家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、視覺主題、雲端同步與高風險資料操作。一般使用者無法直接進入此頁。</p></div></div>
+    <div className="page settings-page v2-settings v30-parent-page">
+      <div className="v30-parent-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT MODE · V3.0</span><h1>家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、Adventure World、雲端同步與高風險資料操作。</p></div></div></div>
       <div className="admin-unlocked-banner"><div><strong>管理者 PIN 已解鎖</strong><span>目前為家庭最高管理權限；離開家庭或重新載入後需再次驗證。</span></div><KeyRound size={20} /></div>
-      <section className="v22-family-hero" aria-label="星際家庭管理中心">
-        <div><span className="eyebrow">FAMILY COMMAND DECK</span><h2>全家的學習基地，由管理者守護</h2><p>家長／照顧者登入帳號、學習者、個人 PIN、雲端同步與主題都集中在這裡管理；一般使用者不會看到這些高權限操作。</p></div>
+      <section className="v22-family-hero v30-family-summary" aria-label="家庭管理中心">
+        <div><span className="v30-overline">FAMILY CONTROL</span><h2>全家的學習資料，由管理者守護</h2><p>照顧者帳號、學習者、個人 PIN、雲端同步與冒險世界都集中在這裡管理；兒童首頁不顯示這些系統資訊。</p></div>
         <div className="v22-family-hero-art" aria-hidden="true"><img src={v23Asset('avatar-father.webp')} alt="" /><img src={v23Asset('avatar-mother.webp')} alt="" /><img className="robot" src={v23Asset('robot-helper.webp')} alt="" /></div>
       </section>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示明暗</h3><p>亮色、暗色或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '暗黑'}</button>)}</div></section>
 
       <section className="settings-card vertical theme-settings-card">
-        <div className="setting-label"><span className="setting-icon"><Sparkles size={20} /></span><div><h3>冒險主題風格</h3><p>五套主題全部使用 ChatGPT Image 產製素材作為預覽；套用後同步調整背景、面板、按鈕與點擊特效。</p></div></div>
-        <div className="visual-theme-grid">{visualThemeOptions.map((option) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><img className="visual-theme-art" src={v23Asset(option.art)} alt="" aria-hidden="true" /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
+        <div className="setting-label"><span className="setting-icon"><Map size={20} /></span><div><h3>Adventure World</h3><p>世界只改變學習環境與插畫情境；按鈕、導航、卡片、字體與品牌設計保持一致。</p></div></div>
+        <div className="visual-theme-grid">{visualThemeOptions.map((option) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><img className="visual-theme-art" src={v30Asset(option.art)} alt="" aria-hidden="true" /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
       </section>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><CalendarDays size={20} /></span><div><h3>學期起始日</h3><p>改日期後，90 個平日課程會自動重新排程，首頁月份日曆也一起更新。</p></div></div><input className="date-input" type="date" value={settings.semesterStart} onChange={(e) => setSettings((current) => ({ ...current, semesterStart: e.target.value }))} /></section>
@@ -1243,11 +1206,11 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
           </div>
           <div className={`cloud-status-box cloud-${cloudStatus}`}><CloudPill status={cloudStatus} /><p>{cloudMessage || '進度變更後會自動同步到這個家庭。'}</p>{lastCloudSync && <small>最近同步：{new Date(lastCloudSync).toLocaleString('zh-TW')}</small>}</div>
           <div className="cloud-actions"><button className="secondary-button" onClick={() => void onSyncNow()}><Cloud size={17} /> 立即儲存</button><button className="secondary-button" onClick={() => void onPullCloud()}><RefreshCw size={17} /> 重新讀取雲端</button><button className="secondary-button danger-outline" onClick={onSwitchFamily}><LogOut size={17} /> 切換家庭</button></div>
-          <p className="cloud-security-note">管理者 PIN 同時作為目前 V2.3 介面所沿用的 V2.2 相容家庭 namespace 管理憑證。請使用不易猜測的 4–6 位數字，不要分享給一般使用者；一般成員應使用自己的個人 PIN。</p>
+          <p className="cloud-security-note">管理者 PIN 同時作為V3.0 介面所沿用的 V2.2 相容家庭 namespace 管理憑證。請使用不易猜測的 4–6 位數字，不要分享給一般使用者；一般成員應使用自己的個人 PIN。</p>
         </div>
       </section>
 
-      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V2.3 JSON（保留 V1／V2／V2.1／V2.2 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
+      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V3.0 JSON（保留 V1／V2／V2.1／V2.2 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
     </div>
   );
 }
@@ -1270,13 +1233,11 @@ function PinGate({ onEnter }: { onEnter: (pin: string) => void }) {
   return (
     <main className="pin-gate-shell">
       <section className="pin-gate-card">
-        <div className="pin-gate-visual" aria-hidden="true">
-          <img className="pin-gate-crew" src={v23Asset('hero-crew.webp')} alt="" />
-          <img className="pin-gate-robot" src={v23Asset('robot-helper.webp')} alt="" />
-          <img className="pin-gate-rocket" src={v23Asset('hero-rocket.webp')} alt="" />
+        <div className="pin-gate-visual v30-pin-story" aria-hidden="true">
+          <img className="v30-pin-story-image" src={v30Asset('hero-storybook.webp')} alt="" />
         </div>
         <div className="pin-gate-copy">
-          <span className="eyebrow">FAMILY PROFILE · V2.3</span>
+          <span className="v30-overline">FAMILY PROFILE · V3.0</span>
           <h1>歡迎回到小小探險隊</h1>
           <p>新裝置第一次由家庭管理者輸入管理者 PIN 來載入這一家人的資料；進入家庭後，每位成員再用自己的個人 PIN 切換角色。首頁不公開列出其他家庭設定檔。</p>
           {legacyDetected && <div className="legacy-pin-note"><Sparkles size={17} /><span>偵測到這台裝置有舊版學習資料，已為你預填家庭 PIN <strong>1234</strong>；第一次進入後會自動建立獨立雲端資料。</span></div>}

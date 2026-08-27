@@ -1,44 +1,94 @@
-# 小小探險隊｜兒童家庭共學網站 V2.3
+# 小小探險隊｜兒童家庭共學網站 V3.0
 
-給家庭共學使用的 18 週幼兒學習網站。主要操作者是爸爸、媽媽或其他照顧者，學習者則是哥哥、弟弟等兒童。大人控制影片節奏，孩子透過唱跳、暫停模仿、複誦、回看、找東西、動作、問答與分齡任務完成每天兩節課。
+給家庭共學使用的 18 週兒童美語學習網站。V3.0 是 **Presentation Layer 重構**：保留 V2.3 的家庭資料、課程、PIN、XP／金幣、角色進化、報表與雲端同步架構，將產品重新定位為 **Premium Storybook Adventure EdTech**。
 
-## V2.3 核心更新
+## V3.0 核心原則
 
-- 18 週、90 個學習日、180 節課、360 個互動任務的架構維持不變。
-- 課程影片全面重新配置：180 個唱跳暖身 YouTube ID 全部不同，180 個正式課程 YouTube ID 全部不同，兩個集合也完全不重疊，因此整學期合計 360 個 unique YouTube IDs。
-- `npm run validate` 對影片零重複、180 個 lesson title 唯一、360 個 mission prompt 唯一與 180/180 主課 topic alignment 採硬性 Gate；任一條件失敗即停止發布。
-- 每節約 30 分鐘：前 15 分鐘為唱跳／節奏／動作模仿，後 15 分鐘為正式素材、暫停、回看、複誦、跨域實作、問答與分齡合作。
-- 全站維持「不顯示注音」規則，production DOM 不得出現 Bopomofo。舊 `Zhuyin` subject type 僅為資料相容，UI 顯示為「中文語音」。
-- V2.3 主視覺素材集中在 `public/assets/v23/`，角色、四階進化、火箭、機器人、獎勵、主題預覽與課程插圖均走 raster WebP production pipeline。
-- 五套主題不再只是換色：星能英雄、機甲出擊、迷你戰車、極速賽道、奇獸夥伴各自具有不同面板幾何、背景紋理、按鈕動態、光效，以及桌面自訂游標、軌跡與點擊爆發。
-- 小字全面提升可讀性，重要輔助標籤以約 11px 以上、內文約 13px 以上為目標，同時維持手機／平板／桌機無水平溢出。
-- `prefers-reduced-motion`、觸控與粗指標裝置會自動停用自訂游標與高動態效果。
+- 18 週、90 個學習日、180 節課、360 個互動任務完全保留。
+- 180 個唱跳暖身與 180 個主課 YouTube ID 維持全部唯一，合計 360 unique IDs；180/180 主課 topic alignment 仍是硬性 Gate。
+- V1／V2／V2.1／V2.2／V2.3 本機資料與 V2.2 family namespace 繼續相容，cloud snapshot 仍使用 `version: 2`。
+- `settings.users` 是爸爸／媽媽／照顧者登入帳號；`settings.children` 才是哥哥／弟弟等學習者。
+- XP／金幣只由完成紀錄即時計算，不建立 mutable total balance。
+- 全站不顯示注音；`Zhuyin` 只作資料相容 subject type，production DOM Bopomofo 必須為 0。
 
-## 使用者、學習者與家庭權限
+## Brand Design System
 
-網站操作者與學習者完全分開。
+V3.0 使用單一品牌語言，Adventure World 不再改變整套 UI。
 
-- `settings.users`：爸爸、媽媽、其他照顧者等登入使用者，可各自設定個人 PIN。
-- `settings.children`：哥哥、弟弟等學習者，分別擁有出席、課程進度、任務、XP、金幣、彩蛋、Level 與四階角色進化。
-- 頂部「切換使用者」只能列出家長／照顧者，不會列出哥哥、弟弟。
-- 一般家長登入後不能直接進入家庭管理中心；高權限操作必須再次通過家庭管理者 PIN。
-- 個人 PIN 使用 PBKDF2-SHA256、random salt、180,000 iterations。
+```text
+Brand Blue       #4F67E8
+Secondary Purple #7756D8
+Reward Yellow    #FFC857
+Success Green    #52C99A
+Speaking Coral   #FF7B72
+Listening Sky    #55BFE9
+Background       #F7F8FC
+Card             #FFFFFF
+Primary Text     #26324A
+Secondary Text   #68738A
+```
 
-XP 與金幣不儲存可持續 `+=` 的總額欄位。系統只保存完成任務、完成單元、完成學習日與已領彩蛋 ID，畫面上的 XP／金幣每次由完成紀錄重新計算。
+Typography：Fredoka（Display）／Nunito（一般 UI）／Noto Sans TC（中文）。Child Mode 可見文字原則不低於 14px，主要 CTA 至少 52px。
 
-## 課程規格
+Radius 只使用 12／16／24／32／pill；Shadow 只使用 Soft、Card、Floating 三階。普通 Card、Button、Avatar 不使用持續 glow。
 
-- 18 週 × 每週一至週五，共 90 個學習日。
-- 每天 2 節，每節約 30 分鐘，家庭實際完成時間約 45–60 分鐘。
-- 180 節課程、360 個互動任務。
-- 英文為主軸，穿插數學、中文語音、生活、自然探索與總複習。
-- YouTube 教材以 Super Simple Songs、快樂斑比 HAPPY BAMBI 為主。
-- 影片是家長帶課素材，不是被動連續播放。
-- 每節教案包含暖身、播放、暫停、複誦、回看、找東西、動作、問答、分齡任務、收尾、完成標準、XP／金幣、完成本節與課後紀錄。
+## Child Mode
 
-### V2.3 影片唯一性
+兒童主要導航只有四個入口：
 
-`src/data/videos.ts` 保存 180 個 block 的 explicit assignment。每個 block 都有一支唯一暖身與一支唯一主課。
+- 首頁
+- 冒險世界
+- 獎勵
+- 我的角色
+
+首頁 Hero 改為明亮 Storybook Adventure 場景，只告訴孩子今天要去哪裡、學什麼、如何開始。Primary CTA 為「開始今天的冒險」，Cloud、PIN、Report 等系統資訊不出現在兒童 Hero。
+
+每節課使用四階段 Presentation：
+
+```text
+Listen → Repeat → Play → Complete
+```
+
+- Listen：唱跳暖身＋正式影片。
+- Repeat：Vocabulary Cards、英文發音與句型。
+- Play：兩個既有互動任務與完成標準。
+- Complete：完成本節並觸發既有 XP／金幣／角色成長。
+- 完整 caregiver script、分齡提示、觀看紀錄與課後反思仍保留，但收進可展開 Parent Guide，不與孩子主要任務搶視線。
+
+## Parent Mode
+
+Parent Mode 與 Child Mode 使用不同 Presentation Layer。Report、Cloud、PIN、Settings、Users 與高權限操作集中於家長學習中心；Parent Mode 使用較高資訊密度、白／灰／品牌藍語言，且不使用持續動畫。
+
+家庭管理者 PIN 仍是最高權限。照顧者個人 PIN 使用 PBKDF2-SHA256、random salt、180,000 iterations；一般照顧者仍須再次通過管理者 PIN 才能進家庭管理中心。
+
+## Adventure Worlds
+
+V3.0 保留舊 `visualTheme` ID 以確保資料相容，但語意改為 Adventure World：
+
+- `hero` → Hello Town
+- `mecha` → Color Garden
+- `tank` → Animal Forest
+- `racing` → Food Market
+- `creature` → Ocean Adventure
+- 額外展示 Space Station
+
+World 只控制故事環境、插畫與情境色；導航、按鈕、卡片、Typography、Radius、Shadow 與品牌 token 不隨 World 改變。
+
+## 圖像與角色
+
+V3.0 Storybook 場景素材：
+
+```text
+public/assets/v30/
+```
+
+目前包含 Storybook Hero，以及 Hello Town、Color Garden、Animal Forest、Food Market、Ocean Adventure、Space Station 六個世界插畫。核心 Art Direction 為 Soft 3D Storybook Illustration。
+
+既有 `public/assets/v23/` 的哥哥／弟弟四階進化與 Mascot／Avatar 圖保留作角色進化與 Costume 相容資產，不再控制 V3.0 的世界 UI 或 Hero 場景。
+
+功能性 icon 統一使用 Lucide。V3.0 移除自訂 Adventure Cursor、Cursor Trail 與無意義 Click Burst；只保留 Button／Card／Modal／Reward／Character 等有明確提示或回饋目的的動畫，並支援 `prefers-reduced-motion`。
+
+## 課程規格與零重複 Gate
 
 ```text
 90 days
@@ -50,60 +100,26 @@ XP 與金幣不儲存可持續 `+=` 的總額欄位。系統只保存完成任�
 180/180 main lesson topic alignment
 ```
 
-只要 curriculum、影片 ID、topics 或 assignment 有任何修改，都必須重新執行本機與線上 validator。
+每節約 30 分鐘，前半段以唱跳、節奏與動作模仿暖身，後半段進入正式影片、暫停、回看、複誦、實作、問答與分齡任務。影片是家長帶課素材，不是被動連播。
+
+只要 curriculum、影片 ID、topics 或 assignment 有修改，都必須重新執行 `npm run validate` 與 `npm run validate:online`。
 
 ## 家庭 PIN 與雲端同步
 
-Vercel 正式站使用 Vercel Function `/api/state` 搭配 private Vercel Blob。
+Vercel production 使用 `/api/state` + private Vercel Blob。
 
-1. 第一次進站輸入 4–6 位數家庭 PIN。
-2. 不同 PIN 對應完全獨立的 localStorage 與雲端 namespace。
-3. PIN 透過 `x-family-pin` request header 傳送，不放 URL query。
+1. 家庭 PIN 為 4–6 位數。
+2. 不同 PIN 對應獨立 localStorage 與雲端 namespace。
+3. PIN 只透過 `x-family-pin` header 傳送，不放 URL query。
 4. Blob pathname 使用伺服器端 `FAMILY_PIN_PEPPER` 做 HMAC，不直接使用 PIN。
-5. V2.3 沿用 V2.2 family schema／namespace 以保持既有家庭資料相容；V1／V2／V2.1／V2.2 本機資料遷移流程仍保留。
-6. 雲端讀取失敗時，不會以可能較舊的本機資料自動覆寫遠端狀態。
+5. `cloudSync.familyCode` 在 server snapshot 會 sanitization。
+6. 雲端讀取失敗時，不會用可能較舊的本機副本覆寫遠端資料。
 
-`.env.local`、Vercel token、Blob token 與 `FAMILY_PIN_PEPPER` 不得進入 Git、前端 bundle、公開 log 或 URL。
+`.env.local`、Vercel token、Blob token、`FAMILY_PIN_PEPPER` 不得進 Git、前端 bundle、公開 log 或 URL。
 
-## V2.3 視覺系統
-
-正式 raster assets：
-
-```text
-public/assets/v23/
-```
-
-包括：
-
-- 爸爸、媽媽、哥哥、弟弟、機器人
-- 哥哥 Lv.1／Lv.5／Lv.10／Lv.15 四階進化
-- 弟弟 Lv.1／Lv.5／Lv.10／Lv.15 四階進化
-- Hero 小隊、火箭、星星、XP、水晶、金幣、寶箱等獎勵
-- 五套冒險主題預覽
-- 食物、數字、探索、複習等課程插圖
-
-V2.3 visual layer 位於 `src/v23.css`，在 `v2.css`、`v22.css` 之後載入，專門處理五主題差異化、字級可讀性、游標／軌跡／點擊特效，以及新版 hero composition。
-
-## 專業 QA Gate
-
-V2.3 的最終視覺審查角色稱為 **Orbit UX Director**。正式發布分數需達 98/100 以上，至少檢查：
-
-- 視覺一致性與兒童吸引力
-- 家長閱讀與操作清晰度
-- 五套主題差異化
-- 游標、軌跡、點擊與 reward feedback
-- 桌機／平板／手機響應式
-- light／dark／system
-- reduced-motion 與觸控裝置處理
-- Image assets 完整載入
-- DOM Bopomofo = 0
-- 家長／學習者分離、個人 PIN、管理者 PIN
-- 家庭資料隔離與 API GET／PUT／DELETE
-
-## 開發與正式發布 Gate
+## V3.0 QA Gate
 
 ```bash
-npm install
 npm run validate
 npm run validate:online
 npm run qa:browser
@@ -114,34 +130,37 @@ npx vercel build --prod
 git diff --check
 ```
 
-正式部署後還必須驗證：
+`scripts/qa_v30_browser.py` 使用 Chrome Headless/CDP 實測：
 
-- Vercel HTTP 200
-- GitHub Pages HTTP 200
-- V2.3 Image assets HTTP 200 / image/webp
-- 手機／平板／桌機無 horizontal overflow
+- 1440 desktop／820 tablet／390-class mobile
+- Child Mode 文字與 44px touch target
+- Storybook Hero 與 V3 assets
+- Listen → Repeat → Play → Complete
+- Parent Mode／個人 PIN／管理者 PIN
+- 五個 Adventure World 的 UI signature 必須完全一致
 - light／dark／system
-- 五個 adventure themes
-- 爸爸／媽媽／照顧者登入流程
-- 哥哥／弟弟只存在學習者區
-- 家庭管理者 PIN Gate
-- API GET／PUT／DELETE 與兩個 QA family 隔離
-- QA family 測試資料清除
-- GitHub Pages workflow success
-- `git status` clean
+- mobile Bottom Sheet
+- horizontal overflow = 0
+- broken images = 0
+- production DOM Bopomofo = 0
+- Adventure Cursor／Trail／Burst DOM = 0
 
-TypeScript 固定為 5.9.3，以維持 Vercel Functions builder 相容性。
+`scripts/orbit_ux_director_v30.ts` 是 V3.0 最終產品審查角色，正式發布門檻為 **98/100**。
 
-## 素材與授權
+正式部署後仍必須驗證 Vercel／GitHub Pages HTTP 200、V3 WebP HTTP 200、production API GET／PUT／DELETE、兩組 QA family 隔離、`familyCode` sanitization、QA family 清除、GitHub Pages workflow success 與 `git status clean`。
 
-- YouTube：使用官方嵌入播放器與原影片連結，著作權歸原頻道／權利人所有。
-- Super Simple Songs：https://www.youtube.com/@SuperSimpleSongs
-- 快樂斑比 HAPPY BAMBI：https://www.youtube.com/@happy-bambi
-- Lucide icons：ISC License，只作功能型圖示。
-- 角色、進化、主題與遊戲化介面不使用蜘蛛人、鋼鐵人、寶可夢等受保護角色名稱或具識別性的造型。
+TypeScript 固定為 5.9.3。
 
 ## 部署
 
 - Vercel production：https://kids-learning-adventure-chi.vercel.app/
 - GitHub Pages backup：https://craigyu-phd.github.io/kids-learning-adventure/
 - GitHub：https://github.com/craigyu-PHD/kids-learning-adventure
+
+## 授權
+
+- YouTube：官方嵌入播放器，著作權歸原頻道／權利人所有。
+- Super Simple Songs：https://www.youtube.com/@SuperSimpleSongs
+- 快樂斑比 HAPPY BAMBI：https://www.youtube.com/@happy-bambi
+- Lucide icons：ISC License。
+- 品牌角色、世界與 UI 為本專案原創方向，不使用受保護兒童品牌 IP、商標或具識別性的角色造型。
