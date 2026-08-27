@@ -157,7 +157,7 @@ sessionStorage.setItem('star-learning-v40:{FAMILY_ID}:active-user','user-father'
         assert cdp.eval("document.querySelectorAll('.v4-lesson-card').length")==2
         assert cdp.eval("[...document.querySelectorAll('.v4-lesson-card img')].every(i=>i.src.includes('i.ytimg.com/vi/'))")
         assert cdp.eval("document.querySelector('.v4-daily-panel').innerText.includes('Day 2')")
-        assert cdp.eval("document.querySelectorAll('.v4-theme-grid button').length")==5
+        assert cdp.eval("document.querySelectorAll('.v5-header-theme button').length")==5 or cdp.eval("document.querySelectorAll('.v4-theme-grid button').length")==5
         assert cdp.eval("document.querySelectorAll('.v4-smart-image .v4-image-skeleton').length")>=8
         assert cdp.eval("getComputedStyle(document.querySelector('.v4-image-skeleton')).animationName.includes('v4Skeleton')")
         assert cdp.eval("!!document.querySelector('.v4-robot-face') && !!document.querySelector('.v4-robot-hand')")
