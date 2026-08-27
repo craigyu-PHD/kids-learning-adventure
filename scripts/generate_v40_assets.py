@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""Generate V4.0 production art from deterministic original vector/raster primitives.
-No legacy low-resolution asset is upscaled. V4 outputs live under public/assets/v40.
+"""FROZEN - V4.0 asset generator retired as formal art pipeline (V4.1 P1).
+Formal characters/props must NOT be generated via Pillow primitives anymore.
+Allowed uses: resize, crop, WebP/AVIF conversion, sprite packing, QA only.
+Blocked: ellipse(), rounded_rectangle(), polygon(), arc() for formal art.
+See docs/art-bible-v5.md and public/assets/v5/ for V5 pipeline.
+This script is kept only for legacy QA; it will refuse to generate formal art.
 """
 from __future__ import annotations
 import importlib.util, json, math, re, subprocess
@@ -158,7 +162,10 @@ def reward_icons():
         save_webp(im,REWARD/f'{name}.webp')
 
 def main():
-    space_banner(); character_assets(); items(); badges(); themes(); vocabulary(); reward_icons()
-    print(f'V4 assets generated: characters={len(list(CHAR.glob("*-stage-*.webp")))} busts={len(list(BUST.glob("*.webp")))} items={len(list(ITEM.glob("*.webp")))} badges={len(list(BADGE.glob("*.webp")))} vocab={len(list(VOCAB.glob("*.webp")))} themes={len(list(THEME.glob("*.webp")))}')
+    raise SystemExit(
+        "FROZEN: generate_v40_assets.py is retired as formal art generator (V4.1 P1). "
+        "Formal art must be produced via Art Bible / 3D pipeline into public/assets/v5/. "
+        "Pillow is allowed only for resize/crop/WebP conversion/QA."
+    )
 
 if __name__=='__main__': main()
