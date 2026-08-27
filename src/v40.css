@@ -128,3 +128,35 @@ button { -webkit-tap-highlight-color:transparent; }
   .v4-daily-panel{width:392px;min-height:640px;border-radius:28px}
   .v4-lesson-card{width:356px;min-height:208px}
 }
+
+/* ===== 範例圖 1:1 像素對齊 - 企業級兒童遊戲平台最高標準 ===== */
+body{background:linear-gradient(180deg,#2B4ED6 0%,#5B6EF5 18%,#A8C4FF 45%,#F7FBFF 100%)}
+/* Header 精緻星空：增加 24 顆星 + 2 顆行星 + 火箭光暈 */
+.v4-adventure-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 12%,rgba(255,255,255,.95) 1px,transparent 1.5px),radial-gradient(ellipse at 42% 8%,rgba(255,215,0,.9) 1.2px,transparent 1.8px),radial-gradient(ellipse at 78% 14%,rgba(255,255,255,.9) 1px,transparent 1.4px);opacity:.85;pointer-events:none}
+.v4-adventure-header::after{content:"";position:absolute;left: -40px;top:-18px;width:160px;height:80px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 80'%3E%3Cpath fill='%23FF3B2E' d='M12 40 L58 18 L68 28 L28 48 Z'/%3E%3C/svg%3E") no-repeat;opacity:.9;pointer-events:none}
+.v4-brand-lockup strong{font-family:'Fredoka','Baloo 2','Noto Sans TC',sans-serif;color:#FFD83D;text-shadow:0 3px 0 #9A4A00,0 6px 12px rgba(0,0,0,.45),0 0 18px rgba(255,216,61,.55);letter-spacing:.02em}
+.v4-brand-lockup span{background:linear-gradient(180deg,#FFE55A,#FFD83D);color:#6B4200;padding:4px 14px;border-radius:999px;font-size:14px;font-weight:800;letter-spacing:.08em;box-shadow:0 4px 10px rgba(107,66,0,.25)}
+/* 左欄外框深藍 */
+.v4-left-column > section:first-child{background:linear-gradient(180deg,#0A1F63 0%,#1347C6 100%);border:2px solid rgba(112,201,255,.9);box-shadow:0 20px 40px rgba(10,31,99,.35)}
+.v4-left-column .v4-panel-title span{color:#7EC8FF}
+.v4-left-column .v4-panel-title h2{color:#fff}
+.v4-player-profile .v4-player-card{background:linear-gradient(180deg,#FFFDF2 0%,#FFF2B8 100%);border:2px solid #FFD83D;box-shadow:0 8px 18px rgba(107,66,0,.18)}
+/* 冒險等級卡黃金 */
+.v4-left-column .v4-player-profile > .v4-player-stack > article:first-child{border-color:#FFD83D}
+/* 日曆精修：已完成綠、進行中藍、未開始灰、彩蛋紫 */
+.v4-calendar-day.done{background:#DDF8D8;border-color:#7EDAA0}
+.v4-calendar-day.done i{background:#1FCB64;color:#fff}
+.v4-calendar-day.today{background:#2E89FF;border-color:#1A5ED6;color:#fff}
+.v4-calendar-day.today span,.v4-calendar-day.today strong{color:#fff}
+.v4-calendar-day.today i{background:#fff;color:#2E89FF}
+.v4-calendar-day.special{background:#B05CFF;color:#fff;border-color:#8A3BD6}
+.v4-calendar-day.special span,.v4-calendar-day.special strong{color:#fff}
+/* 週進度環形加深 */
+.v4-progress-ring{background:conic-gradient(#20C968 var(--progress),#E5EAF4 0)}
+/* 右欄今日課程卡藍頭 */
+.v4-lesson-card{border:2px solid #DCE7F8;overflow:hidden}
+.v4-lesson-card .v4-lesson-meta span{background:#2E89FF;color:#fff;padding:2px 8px;border-radius:999px;font-size:11px}
+.v4-lesson-card button:not(:disabled){background:linear-gradient(180deg,#2E89FF,#1A5ED6);box-shadow:0 8px 18px rgba(46,137,255,.35)}
+/* 徽章列加深 */
+.v4-badge-shelf{gap:12px}
+.v4-badge-shelf .v30-game-badge{border-radius:18px;box-shadow:0 6px 14px rgba(10,31,99,.12)}
