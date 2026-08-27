@@ -172,3 +172,16 @@ body{background:linear-gradient(180deg,#2B4ED6 0%,#5B6EF5 18%,#A8C4FF 45%,#F7FBF
   .v4-center-column{width:auto !important;height:auto !important}
   .v4-right-column{grid-column:1/-1 !important;width:auto !important;height:auto !important}
 }
+
+/* V5 P15-18 左欄精準：236×92 冒險等級 / 236×156 Player / 140-150 Robot */
+.v4-player-profile{padding:10px}
+.v4-player-profile .v4-panel-title{height:42px;margin-bottom:12px}
+.v4-player-profile .v4-panel-title h2{font-size:22px;font-weight:800}
+.v4-player-card{width:236px;min-height:156px;border-radius:18px;padding:10px}
+.v4-player-card .v4-player-avatar{width:98px;height:118px}
+.v4-player-copy h3{font-size:22px;font-weight:900}
+.v4-player-copy p{font-size:16px;font-weight:800}
+.v4-ai-companion{width:236px;min-height:218px;padding:12px;gap:12px}
+.v4-ai-bot{width:140px;height:150px;border-radius:18px}
+.v4-ai-companion p{font-size:14px;line-height:1.45;max-height:40px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.v4-ai-actions{display:none}
