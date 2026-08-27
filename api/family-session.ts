@@ -1,4 +1,4 @@
-import { issueFamilySession } from './family-auth';
+import { issueFamilySession } from './family-auth.js';
 
 const MAX_BODY_BYTES = 2_048;
 const AUTH_WINDOW_MS = 10 * 60 * 1000;

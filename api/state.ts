@@ -1,12 +1,12 @@
 import { del, get, list, put } from '@vercel/blob';
-import { verifyFamilySessionToken } from './family-auth';
+import { verifyFamilySessionToken } from './family-auth.js';
 import {
   SnapshotConflictError as GuardConflictError,
   SnapshotValidationError as GuardValidationError,
   assertBaseVersion as guardBaseVersion,
   assertImmutableEventsCompatible as guardImmutableEvents,
   sanitizeSnapshot as guardSanitizeSnapshot,
-} from './state-guards';
+} from './state-guards.js';
 
 const MAX_BODY_BYTES = 700_000;
 const KEEP_SNAPSHOTS = 12;
