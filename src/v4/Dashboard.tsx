@@ -61,14 +61,21 @@ type DashboardProps = {
   onClaimTreasure: (childId: string, day: CourseDay) => void;
 };
 
-export function AdventureHeader({ settings, progress }: { settings: AppSettings; progress?: AppProgress }) {
+export function AdventureHeader({ settings, progress, onThemeChange }: { settings: AppSettings; progress?: AppProgress; onThemeChange?: (t: AppSettings['visualTheme'])=>void }) {
   const children = settings.children.filter((child) => !child.disabled).slice(0, 2);
-  const banner = `${import.meta.env.BASE_URL}assets/v40/hero-space-dashboard.webp`;
-  return <header className="v4-adventure-header" style={{backgroundImage:`linear-gradient(90deg,rgba(6,29,87,.9),rgba(6,29,87,.28)),url(${banner})`}}>
-    <div className="v4-stars" aria-hidden="true"><i/><i/><i/><i/><i/><i/><i/></div>
+  const keyart = `${import.meta.env.BASE_URL}assets/v5/keyart/hero-keyart-desktop.webp`;
+  const logo = `${import.meta.env.BASE_URL}assets/v5/keyart/little-explorers-logo.webp`;
+  const fallbackBanner = `${import.meta.env.BASE_URL}assets/v40/hero-space-dashboard.webp`;
+  const themes: Array<{id:AppSettings['visualTheme'];name:string}> = [
+    {id:'hero',name:'星際英雄'},{id:'mecha',name:'機甲戰士'},{id:'racing',name:'賽車冒險'},{id:'tank',name:'奇幻精靈'},{id:'creature',name:'海底世界'},
+  ];
+  const art:Record<string,string>={hero:'space-hero',mecha:'mecha-warrior',racing:'racing-adventure',tank:'fantasy-spirit',creature:'ocean-world'};
+  return <header className="v4-adventure-header" style={{backgroundImage:`linear-gradient(90deg,rgba(6,29,87,.85),rgba(6,29,87,.2)),url(${keyart}),url(${fallbackBanner})`}}>
+    <div className="v4-stars" aria-hidden="true"><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/></div>
     <div className="v4-brand-lockup">
-      <div className="v4-logo-orb"><Rocket size={32}/></div>
-      <div><strong>小小探險隊</strong><span>一起學習・一起長大</span></div>
+      <img src={logo} alt="小小探險隊" style={{width:360,height:76,objectFit:'contain'}} onError={(e)=>{ (e.target as HTMLImageElement).style.display='none'; }} />
+      <div style={{display:'none'}}><strong>小小探險隊</strong><span>一起學習・一起長大</span></div>
+      <span className="v4-brand-subtitle">一起學習・一起長大</span>
     </div>
     <div className="v4-hero-cast" aria-label="小小探險隊夥伴">
       {children.map((child) => {
@@ -79,19 +86,20 @@ export function AdventureHeader({ settings, progress }: { settings: AppSettings;
       <Rocket className="v4-floating-rocket" size={54}/>
       <span className="v4-planet planet-one"/><span className="v4-planet planet-two"/>
     </div>
+    {onThemeChange && <div className="v5-header-theme" style={{width:350,height:82,display:'flex',gap:8,alignItems:'center',justifyContent:'flex-end'}}>{themes.map(t=> <button key={t.id} onClick={()=>onThemeChange(t.id)} title={t.name} style={{width:52,height:52,borderRadius:16,border: settings.visualTheme===t.id?'3px solid #FFD83D':'2px solid rgba(255,255,255,.35)',transform: settings.visualTheme===t.id?'scale(1.08)':'none',overflow:'hidden',padding:0,background:'#0A1F63'}}><GameImage src={`${import.meta.env.BASE_URL}assets/v40/themes/${art[t.id]}.webp`} alt={t.name} /></button>)}</div>}
   </header>;
 }
 
 export function MainNavigation({ active, onNavigate, onParentArea }: { active: ViewKey; onNavigate: (view: ViewKey) => void; onParentArea: () => void }) {
-  const items: Array<{ id: ViewKey; label: string; icon: React.ReactNode; action?: () => void }> = [
-    { id: 'home', label: '首頁', icon: <Home/> },
-    { id: 'today', label: '今日課程', icon: <Gamepad2/> },
-    { id: 'semester', label: '學期日曆', icon: <CalendarDays/> },
-    { id: 'achievements', label: '成就獎勵', icon: <Award/> },
-    { id: 'report', label: '學習報表', icon: <BarChart3/>, action: onParentArea },
-    { id: 'shop', label: '寶物商店', icon: <ShoppingBag/> },
+  const items: Array<{ id: ViewKey; label: string; icon: React.ReactNode; nav3d: string; action?: () => void }> = [
+    { id: 'home', label: '首頁', icon: <Home/>, nav3d: 'home-3d' },
+    { id: 'today', label: '今日課程', icon: <Gamepad2/>, nav3d: 'book-3d' },
+    { id: 'semester', label: '學期日曆', icon: <CalendarDays/>, nav3d: 'calendar-3d' },
+    { id: 'achievements', label: '成就獎勵', icon: <Award/>, nav3d: 'star-3d' },
+    { id: 'report', label: '學習報表', icon: <BarChart3/>, nav3d: 'chart-3d', action: onParentArea },
+    { id: 'shop', label: '寶物商店', icon: <ShoppingBag/>, nav3d: 'chest-3d' },
   ];
-  return <nav className="v4-main-navigation" aria-label="主要功能">{items.map((item, index) => <button key={`${item.label}-${index}`} className={active === item.id ? 'active' : ''} aria-current={active === item.id ? 'page' : undefined} onClick={item.action ?? (() => onNavigate(item.id))}><GameIcon tone={index === 3 ? 'purple' : index === 5 ? 'gold' : 'blue'}>{item.icon}</GameIcon><span>{item.label}</span></button>)}</nav>;
+  return <nav className="v4-main-navigation" aria-label="主要功能">{items.map((item, index) => <button key={`${item.label}-${index}`} className={active === item.id ? 'active' : ''} aria-current={active === item.id ? 'page' : undefined} onClick={item.action ?? (() => onNavigate(item.id))}><span style={{width:40,height:40,display:'grid',placeItems:'center'}}><img src={`${import.meta.env.BASE_URL}assets/v5/nav-icons/${item.nav3d}.webp`} alt="" width={40} height={40} style={{width:40,height:40,objectFit:'contain'}} onError={(e)=>{ (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden'); }} /><span className="hidden" style={{display:'none'}}><GameIcon tone={index === 3 ? 'purple' : index === 5 ? 'gold' : 'blue'}>{item.icon}</GameIcon></span></span><span>{item.label}</span></button>)}</nav>;
 }
 
 function PlayerProfile({ settings, progress }: { settings: AppSettings; progress: AppProgress }) {
@@ -116,30 +124,18 @@ function AICompanion({ todayDay, isDayDone, soundEnabled, onToggleSound }: { tod
   return <section className={`v4-panel v4-ai-companion mood-${mood}`}><div className="v4-ai-bot"><GameImage src={`${import.meta.env.BASE_URL}assets/v40/characters/avatar-robot.webp`} alt="AI 學習夥伴"/><span className="v4-robot-face" aria-hidden="true"><i/><i/></span><span className="v4-robot-hand" aria-hidden="true"/></div><div><span>AI LEARNING BUDDY</span><h3>小光</h3><p>{text}</p><div className="v4-ai-actions"><button onClick={speak}><Volume2/>聽我說</button><button onClick={onToggleSound}>{soundEnabled ? <Volume2/> : <VolumeX/>}{soundEnabled ? '音效開' : '音效關'}</button></div></div></section>;
 }
 
-function ThemeSelector({ settings, onThemeChange }: Pick<DashboardProps,'settings'|'onThemeChange'>) {
-  const themes: Array<{id:AppSettings['visualTheme'];name:string;className:string}> = [
-    {id:'hero',name:'星際英雄',className:'space'},
-    {id:'mecha',name:'機甲戰士',className:'mecha'},
-    {id:'racing',name:'賽車冒險',className:'racing'},
-    {id:'tank',name:'奇幻精靈',className:'fantasy'},
-    {id:'creature',name:'海底世界',className:'ocean'},
-  ];
-  const art:Record<string,string>={space:'space-hero',mecha:'mecha-warrior',racing:'racing-adventure',fantasy:'fantasy-spirit',ocean:'ocean-world'};
-  return <section className="v4-panel v4-theme-selector"><div className="v4-panel-title"><div><span>THEME SKIN</span><h2>冒險世界</h2></div><GameIcon tone="purple"><Sparkles/></GameIcon></div><div className="v4-theme-grid">{themes.map((theme)=><button key={theme.id} className={`${theme.className} ${settings.visualTheme===theme.id?'active':''}`} onClick={()=>onThemeChange(theme.id)}><GameImage src={`${import.meta.env.BASE_URL}assets/v40/themes/${art[theme.className]}.webp`} alt={`${theme.name}主題預覽`}/><span>{theme.name}</span></button>)}</div></section>;
-}
-
 function SemesterCalendar({ trustedDate, courseDateKey, accessForDay, isDayDone }: Pick<DashboardProps,'trustedDate'|'courseDateKey'|'accessForDay'|'isDayDone'>) {
   const todayIndex = Math.max(0, curriculum.findIndex((day) => courseDateKey(day) === trustedDate.ymd));
-  const start = Math.max(0, Math.min(curriculum.length - 25, todayIndex >= 0 ? todayIndex - (todayIndex % 5) - 5 : 0));
-  const visible = curriculum.slice(start, start + 25);
-  return <section className="v4-panel v4-calendar-panel"><div className="v4-panel-title"><div><span>SEMESTER MAP</span><h2>學期日曆</h2></div><div className="v4-calendar-legend"><i className="done"/>完成<i className="today"/>今天<i className="lock"/>鎖定</div></div>
+  const start = Math.max(0, Math.min(curriculum.length - 15, todayIndex >= 0 ? todayIndex - (todayIndex % 5) - 5 : 0));
+  const visible = curriculum.slice(start, start + 15);
+  return <div className="v4-calendar-inner"><div className="v4-panel-title"><div><span>SEMESTER MAP</span><h2>學期日曆</h2></div><div className="v4-calendar-legend"><i className="done"/>完成<i className="today"/>今天<i className="lock"/>鎖定</div></div>
     <div className="v4-calendar-weekdays"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span></div>
-    <div className="v4-calendar-grid">{visible.map((day) => {
+    <div className="v4-calendar-grid v5-grid-15">{visible.map((day) => {
       const access = accessForDay(day); const done = isDayDone(day); const special = easterEggDays.has(day.index); const date = courseDateKey(day);
       const status = done ? 'done' : access === 'today' ? 'today' : access === 'future' ? 'locked' : 'missed';
       return <div key={day.id} className={`v4-calendar-day ${status} ${special ? 'special' : ''}`} title={`Day ${day.index} · ${formatTaipeiCourseDate(date)}`}><span>{date.slice(5).replace('-','/')}</span><strong>Day {day.index}</strong><i>{done ? <Check/> : access === 'today' ? <Rocket/> : access === 'future' ? <Lock/> : <Star/>}</i>{special && <b><Gift/></b>}</div>;
     })}</div>
-  </section>;
+  </div>;
 }
 
 function WeeklyProgress({ todayDay, isDayDone }: { todayDay?: CourseDay; isDayDone: (day: CourseDay) => boolean }) {
@@ -148,9 +144,13 @@ function WeeklyProgress({ todayDay, isDayDone }: { todayDay?: CourseDay; isDayDo
   const completed = days.filter(isDayDone).length;
   const pct = completed / 5 * 100;
   const semesterDone = curriculum.filter(isDayDone).length;
-  return <section className="v4-panel v4-progress-panel"><div className="v4-panel-title"><div><span>WEEK {String(week).padStart(2,'0')}</span><h2>本週進度</h2></div><GameIcon tone="green"><Zap/></GameIcon></div>
-    <div className="v4-progress-body"><div className="v4-progress-ring" style={{'--progress':`${pct * 3.6}deg`} as React.CSSProperties}><div><strong>{completed} / 5</strong><span>完成</span></div></div><div className="v4-goals"><div className={semesterDone >= 5 ? 'done' : ''}><Trophy/><span>小目標</span><strong>5 天</strong></div><div className={semesterDone >= 10 ? 'done' : ''}><Trophy/><span>中目標</span><strong>10 天</strong></div><div className={semesterDone >= 90 ? 'done' : ''}><Trophy/><span>大目標</span><strong>90 天</strong></div></div></div>
-  </section>;
+  return <div className="v4-progress-inner"><div className="v4-panel-title"><div><span>WEEK {String(week).padStart(2,'0')}</span><h2>本週進度</h2></div><GameIcon tone="green"><Zap/></GameIcon></div>
+    <div className="v4-progress-body v5-weekly-body"><div className="v4-progress-ring" style={{'--progress':`${pct * 3.6}deg`,width:118,height:118} as React.CSSProperties}><div><strong style={{fontSize:30}}>{completed} / 5</strong><span>完成</span></div></div><div className="v4-goals v5-goals"><div className={semesterDone >= 5 ? 'done' : ''}><Trophy size={26}/><span>小目標</span><strong>5 天</strong></div><div className={semesterDone >= 10 ? 'done' : ''}><Trophy size={26}/><span>中目標</span><strong>10 天</strong></div><div className={semesterDone >= 90 ? 'done' : ''}><Trophy size={26}/><span>大目標</span><strong>90 天</strong></div></div></div>
+  </div>;
+}
+
+function SemesterOverviewPanel({ trustedDate, courseDateKey, accessForDay, isDayDone, todayDay }: Pick<DashboardProps,'trustedDate'|'courseDateKey'|'accessForDay'|'isDayDone'> & { todayDay?: CourseDay }) {
+  return <section className="v4-panel v5-semester-overview" style={{width:880,height:368,display:'grid',gridTemplateColumns:'536px 310px',gap:12,padding:16,borderRadius:16,background:'#F9FBFF'}}><div style={{width:536,height:296}}><SemesterCalendar trustedDate={trustedDate} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} /></div><div style={{width:310,height:296,background:'#FFFDF3',borderRadius:16,padding:12,border:'1.5px solid #F0E6C8'}}><WeeklyProgress todayDay={todayDay} isDayDone={isDayDone} /></div></section>;
 }
 
 function CharacterEvolution({ settings, progress }: { settings: AppSettings; progress: AppProgress }) {
@@ -216,11 +216,11 @@ export default function V4Dashboard(props: DashboardProps) {
     .map((id) => `has-${id}`)
     .join(' ');
   return <div className={`v4-shell ${worldItemClasses}`} data-world-items={worldItemClasses}>
-    <AdventureHeader settings={props.settings} progress={props.progress}/>
+    <AdventureHeader settings={props.settings} progress={props.progress} onThemeChange={props.onThemeChange}/>
     <MainNavigation active={props.activeView} onNavigate={props.onNavigate} onParentArea={props.onParentArea}/>
     <main className="v4-dashboard-grid">
-      <aside className="v4-left-column"><PlayerProfile settings={props.settings} progress={props.progress}/><AICompanion todayDay={props.todayDay} isDayDone={props.isDayDone} soundEnabled={props.soundEnabled} onToggleSound={props.onToggleSound}/><ThemeSelector settings={props.settings} onThemeChange={props.onThemeChange}/></aside>
-      <section className="v4-center-column"><SemesterCalendar trustedDate={props.trustedDate} courseDateKey={props.courseDateKey} accessForDay={props.accessForDay} isDayDone={props.isDayDone}/><WeeklyProgress todayDay={props.todayDay} isDayDone={props.isDayDone}/><CharacterEvolution settings={props.settings} progress={props.progress}/><BadgeShelf settings={props.settings} progress={props.progress} onNavigate={props.onNavigate}/></section>
+      <aside className="v4-left-column"><PlayerProfile settings={props.settings} progress={props.progress}/><AICompanion todayDay={props.todayDay} isDayDone={props.isDayDone} soundEnabled={props.soundEnabled} onToggleSound={props.onToggleSound}/></aside>
+      <section className="v4-center-column"><SemesterOverviewPanel trustedDate={props.trustedDate} courseDateKey={props.courseDateKey} accessForDay={props.accessForDay} isDayDone={props.isDayDone} todayDay={props.todayDay} /><CharacterEvolution settings={props.settings} progress={props.progress}/><BadgeShelf settings={props.settings} progress={props.progress} onNavigate={props.onNavigate}/></section>
       <aside className="v4-right-column"><DailyMissionPanel settings={props.settings} progress={props.progress} trustedDate={props.trustedDate} todayDay={props.todayDay} featuredDay={props.featuredDay} accessForDay={props.accessForDay} isChildDayDone={props.isChildDayDone} onOpenLesson={props.onOpenLesson} onClaimTreasure={props.onClaimTreasure}/></aside>
     </main>
     <BottomStatusBar cloudStatus={props.cloudStatus} trustedDate={props.trustedDate}/>

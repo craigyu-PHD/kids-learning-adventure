@@ -59,7 +59,7 @@ const scoreGroups = [
     note: '三欄 Dashboard、1560px 主寬、六導航與共享 GameIcon glossy HUD Design System 已形成單一品牌語言。',
     checks: [
       ['#061D57','#075BC7','#10BCEB','#FFD83D','#FF7B32','#20C968','#A84DF5'].every((color) => has(css,color)),
-      (has(css,'grid-template-columns:minmax(230px,260px) minmax(0,1fr) minmax(310px,350px)') || has(css,'grid-template-columns:minmax(230px,260px) minmax(0,1fr) minmax(310px,392px)')),
+      (has(css,'grid-template-columns:minmax(230px,260px) minmax(0,1fr) minmax(310px,350px)') || has(css,'grid-template-columns:minmax(230px,260px) minmax(0,1fr) minmax(310px,392px)') || has(css,'260px 880px 344px')),
       ['首頁','今日課程','學期日曆','成就獎勵','學習報表','寶物商店'].every((label)=>has(dashboard,label)) && has(dashboard,"{ id: 'today', label: '今日課程'") && has(dashboard,"aria-current={active === item.id ? 'page' : undefined}"),
       has(dashboard,'v4-adventure-header') && has(dashboard,'一起學習・一起長大'),
       !has(app,'function DayView') && has(parentSettings,'PARENT CONTROL CENTER · V4.0') && has(parentAccess,'NumericPinPad') && has(caregivers,'CaregiverAvatar'),
