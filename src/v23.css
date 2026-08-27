@@ -1,0 +1,437 @@
+/* V2.3 — high-readability five-world visual system.
+   This layer intentionally overrides V2/V2.2 without changing data architecture. */
+
+:root {
+  --v23-panel-radius: 24px;
+  --v23-panel-border: color-mix(in srgb, var(--cyan) 34%, var(--border));
+  --v23-glow: color-mix(in srgb, var(--cyan) 28%, transparent);
+  --v23-soft: color-mix(in srgb, var(--brand) 7%, var(--surface));
+  --v23-cursor-core: var(--accent);
+  --v23-cursor-ring: var(--cyan);
+}
+
+/* --------------------------------------------------------------------------
+   1. Theme identities: geometry + texture + motion, not just palette changes
+   -------------------------------------------------------------------------- */
+:root[data-adventure-theme='hero'] {
+  --brand: #2755e8;
+  --brand-2: #6d4df7;
+  --accent: #ffd23f;
+  --cyan: #3de7ff;
+  --v23-panel-radius: 26px;
+  --v23-hero-bg:
+    radial-gradient(circle at 76% 18%, rgba(61,231,255,.28), transparent 22rem),
+    radial-gradient(circle at 22% 88%, rgba(123,81,255,.38), transparent 24rem),
+    linear-gradient(132deg, #061538 0%, #123ca1 49%, #1b70df 100%);
+  --v23-page-pattern:
+    radial-gradient(circle at 14px 14px, rgba(255,255,255,.13) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 46px 40px, rgba(255,213,71,.13) 0 1.5px, transparent 2px);
+  --v23-cursor-core: #ffd83d;
+  --v23-cursor-ring: #55eaff;
+}
+
+:root[data-adventure-theme='mecha'] {
+  --brand: #087c98;
+  --brand-2: #183a55;
+  --accent: #74fbff;
+  --cyan: #2ee6d6;
+  --v23-panel-radius: 12px;
+  --v23-hero-bg:
+    linear-gradient(115deg, rgba(61,245,255,.07) 1px, transparent 1px) 0 0 / 26px 26px,
+    linear-gradient(25deg, rgba(61,245,255,.04) 1px, transparent 1px) 0 0 / 26px 26px,
+    linear-gradient(132deg, #07161d, #0d3340 50%, #164f61);
+  --v23-page-pattern:
+    linear-gradient(90deg, rgba(90,244,255,.08) 1px, transparent 1px),
+    linear-gradient(rgba(90,244,255,.08) 1px, transparent 1px);
+  --v23-cursor-core: #75fbff;
+  --v23-cursor-ring: #20d7c8;
+}
+
+:root[data-adventure-theme='tank'] {
+  --brand: #647a3b;
+  --brand-2: #38442b;
+  --accent: #e6b94d;
+  --cyan: #9fc788;
+  --v23-panel-radius: 16px;
+  --v23-hero-bg:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 10px, transparent 10px 24px),
+    radial-gradient(circle at 78% 18%, rgba(230,185,77,.18), transparent 20rem),
+    linear-gradient(132deg, #182216, #3b4d2b 54%, #716336);
+  --v23-page-pattern:
+    repeating-linear-gradient(135deg, rgba(70,83,49,.08) 0 8px, transparent 8px 20px);
+  --v23-cursor-core: #e4b84b;
+  --v23-cursor-ring: #8dbb76;
+}
+
+:root[data-adventure-theme='racing'] {
+  --brand: #e6383c;
+  --brand-2: #2a3044;
+  --accent: #ffd432;
+  --cyan: #49cfff;
+  --v23-panel-radius: 18px;
+  --v23-hero-bg:
+    linear-gradient(115deg, transparent 0 62%, rgba(255,212,50,.10) 62% 65%, transparent 65% 70%, rgba(255,255,255,.06) 70% 73%, transparent 73%),
+    linear-gradient(132deg, #17171f, #571d2a 52%, #c82c38);
+  --v23-page-pattern:
+    linear-gradient(45deg, rgba(31,36,49,.08) 25%, transparent 25% 75%, rgba(31,36,49,.08) 75%) 0 0 / 22px 22px;
+  --v23-cursor-core: #ffd432;
+  --v23-cursor-ring: #ff4d52;
+}
+
+:root[data-adventure-theme='creature'] {
+  --brand: #7c3ce8;
+  --brand-2: #178d62;
+  --accent: #ffbc35;
+  --cyan: #40e3cf;
+  --v23-panel-radius: 32px;
+  --v23-hero-bg:
+    radial-gradient(circle at 82% 20%, rgba(68,234,200,.25), transparent 20rem),
+    radial-gradient(circle at 17% 80%, rgba(255,187,53,.15), transparent 18rem),
+    linear-gradient(132deg, #29124b, #6135aa 52%, #177250);
+  --v23-page-pattern:
+    radial-gradient(ellipse at center, rgba(124,60,232,.08) 0 30%, transparent 32%) 0 0 / 60px 42px,
+    radial-gradient(circle at center, rgba(61,220,196,.07) 0 20%, transparent 22%) 30px 18px / 66px 54px;
+  --v23-cursor-core: #ffbf38;
+  --v23-cursor-ring: #4ae4c7;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 6%, color-mix(in srgb, var(--brand) 12%, transparent), transparent 28rem),
+    radial-gradient(circle at 92% 13%, color-mix(in srgb, var(--cyan) 11%, transparent), transparent 24rem),
+    var(--v23-page-pattern),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+.v22-space-hero,
+.v2-lesson-header {
+  background: var(--v23-hero-bg) !important;
+  border-radius: calc(var(--v23-panel-radius) + 7px);
+  border-color: color-mix(in srgb, var(--cyan) 44%, rgba(255,255,255,.12));
+  box-shadow: 0 24px 72px color-mix(in srgb, var(--brand) 28%, transparent), inset 0 1px 0 rgba(255,255,255,.12);
+}
+
+.v22-panel,
+.settings-card,
+.month-card,
+.card,
+.lesson-panel,
+.child-setting-card {
+  border-radius: var(--v23-panel-radius);
+  transition: transform .22s cubic-bezier(.2,.8,.2,1), border-color .22s ease, box-shadow .22s ease, background .28s ease;
+}
+
+.v22-panel:hover,
+.settings-card:hover,
+.month-card:hover {
+  border-color: color-mix(in srgb, var(--cyan) 48%, var(--border));
+  box-shadow: 0 18px 44px color-mix(in srgb, var(--brand) 13%, transparent), inset 0 1px 0 rgba(255,255,255,.28);
+}
+
+:root[data-adventure-theme='mecha'] .v22-panel,
+:root[data-adventure-theme='mecha'] .settings-card,
+:root[data-adventure-theme='mecha'] .visual-theme-option {
+  clip-path: polygon(0 10px, 10px 0, calc(100% - 16px) 0, 100% 16px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 12px 100%, 0 calc(100% - 12px));
+  border-width: 1px;
+  background-image: linear-gradient(120deg, color-mix(in srgb, var(--cyan) 5%, transparent), transparent 42%);
+}
+
+:root[data-adventure-theme='tank'] .v22-panel,
+:root[data-adventure-theme='tank'] .settings-card {
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--accent) 7%, transparent), 0 13px 30px rgba(42,50,28,.13);
+}
+
+:root[data-adventure-theme='racing'] .v22-panel-heading,
+:root[data-adventure-theme='racing'] .page-heading {
+  position: relative;
+}
+:root[data-adventure-theme='racing'] .v22-panel-heading::after,
+:root[data-adventure-theme='racing'] .page-heading::after {
+  content: '';
+  width: 54px;
+  height: 5px;
+  flex: 0 0 auto;
+  transform: skewX(-30deg);
+  background: repeating-linear-gradient(90deg, var(--accent) 0 10px, transparent 10px 14px);
+  opacity: .72;
+}
+
+:root[data-adventure-theme='creature'] .v22-panel,
+:root[data-adventure-theme='creature'] .settings-card {
+  box-shadow: 0 16px 38px color-mix(in srgb, #6337ad 13%, transparent), inset 0 0 32px color-mix(in srgb, #3de1c6 5%, transparent);
+}
+
+/* Theme-specific action motion */
+:root[data-adventure-theme='hero'] button:hover { transform: translateY(-2px) scale(1.015); }
+:root[data-adventure-theme='mecha'] button:hover { transform: translateY(-1px); filter: brightness(1.08) contrast(1.04); }
+:root[data-adventure-theme='tank'] button:hover { transform: translateY(-1px); box-shadow: 0 5px 0 color-mix(in srgb, var(--brand) 24%, transparent); }
+:root[data-adventure-theme='racing'] button:hover { transform: translateX(2px) skewX(-1deg); }
+:root[data-adventure-theme='creature'] button:hover { transform: translateY(-2px) rotate(-.35deg) scale(1.015); }
+
+/* Hero composite from V2.3 raster production art. */
+.v23-hero-composite {
+  width: min(100%, 620px) !important;
+  max-height: 330px;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 22px 28px rgba(0,0,0,.34)) saturate(1.06);
+  animation: v23HeroFloat 4.6s ease-in-out infinite;
+}
+@keyframes v23HeroFloat { 50% { transform: translateY(-9px) rotate(.35deg); } }
+
+:root[data-adventure-theme='mecha'] .v23-hero-composite { filter: drop-shadow(0 22px 26px rgba(0,0,0,.45)) saturate(.92) contrast(1.10); }
+:root[data-adventure-theme='tank'] .v23-hero-composite { filter: drop-shadow(0 18px 22px rgba(0,0,0,.38)) saturate(.86) sepia(.08); }
+:root[data-adventure-theme='racing'] .v23-hero-composite { animation: v23RacingFloat 2.8s ease-in-out infinite; filter: drop-shadow(12px 15px 18px rgba(0,0,0,.34)) saturate(1.14); }
+:root[data-adventure-theme='creature'] .v23-hero-composite { filter: drop-shadow(0 20px 30px rgba(63,21,105,.48)) saturate(1.18); }
+@keyframes v23RacingFloat { 50% { transform: translate(6px,-5px) rotate(.5deg); } }
+
+/* --------------------------------------------------------------------------
+   2. Readability floor — lift the tiny V2.2 labels without breaking density
+   -------------------------------------------------------------------------- */
+body { font-size: 15px; text-rendering: optimizeLegibility; }
+/* V2.3 removes the 7–9px legacy microtype. Small auxiliary copy is still
+   visually subordinate, but never microscopic on family laptops/tablets. */
+small { font-size: 11px !important; line-height: 1.45; }
+.eyebrow,
+.v22-kicker,
+.v2-kicker,
+.v22-crew-card > div > span,
+.v22-reward-shelf span,
+.v22-growth-card > div > span,
+.v22-achievement-page-grid span,
+.report-main > div span,
+.report-rewards span,
+.child-main > span,
+.calendar-weekdays span,
+.calendar-day .day-index,
+.week-day-button span,
+.sentence-chip span,
+.child-inline-stats span,
+.v22-growth-card > div > span,
+.v22-day-title > span,
+.v22-lesson-stack article span,
+.v22-achievements span,
+.v22-progress-summary span,
+.v22-progress-summary small,
+.v22-lesson-stack article small,
+.v22-secret-preview span,
+.visual-theme-option small,
+.visual-theme-option strong,
+.active-user-chip strong,
+.active-user-chip small,
+.user-select-card small,
+.user-select-card > span,
+.modal-family-hint,
+.user-admin-row label,
+.user-pin-editor small,
+.user-pin-message,
+.v22-report-grid article > div > span,
+.v22-report-grid small,
+.v22-report-summary span,
+.report-main > div span,
+.report-main small,
+.report-rewards span,
+.v22-shop-wallet span,
+.v22-shop-grid article > span,
+.v22-shop-grid p,
+.video-alignment-grid small,
+.month-title span,
+.month-weekdays span,
+.mini-calendar-day small,
+.cloud-pill,
+.cloud-code-box > span,
+.cloud-status-box small,
+.cloud-security-note,
+.player-meta,
+.player-progress-head,
+.mission-stat > span,
+.mission-stat small,
+.rich-milestones small,
+.rich-milestones strong,
+.avatar-stage-label,
+.avatar-choice-grid button {
+  font-size: 11px !important;
+  line-height: 1.45;
+}
+
+.v22-crew-card h3,
+.v22-growth-card strong,
+.v22-lesson-stack article strong,
+.v22-secret-preview strong,
+.visual-theme-option strong,
+.user-select-card strong,
+.report-main h3,
+.v22-shop-grid h3,
+.setting-label h3 {
+  font-size: 15px;
+}
+
+.v22-day-title p,
+.setting-label p,
+.dialog-intro,
+.game-modal > p,
+.cloud-option-card p,
+.cloud-status-box p,
+.v2-complete-row p,
+.side-guide p,
+.video-phase-card p {
+  font-size: 13px !important;
+  line-height: 1.72;
+}
+
+.game-main-nav button { font-size: 12px; min-height: 42px; }
+.nav-button { font-size: 12px; }
+.v22-panel-heading h2 { font-size: 22px; }
+.v22-day-title h3 { font-size: 19px; }
+.v22-progress-summary strong { font-size: 29px; }
+.mini-date { font-size: 15px; }
+.v22-hero-copy p { font-size: 15px; line-height: 1.85; }
+.v22-hero-status span { font-size: 11.5px; min-height: 34px; }
+.v22-lesson-stack article { min-height: 148px; }
+.v22-lesson-stack article small { display: block; margin-top: 5px; }
+
+/* Lesson warm-up terminology is no longer food-specific. */
+.food-warmup-card {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--border));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--surface)), color-mix(in srgb, var(--cyan) 6%, var(--surface-2)));
+}
+.food-warmup-card .eyebrow { color: color-mix(in srgb, var(--brand) 62%, var(--text)); }
+
+/* Theme picker: each preview now has its own raster image and stronger state. */
+.visual-theme-option {
+  min-height: 160px;
+  padding: 9px;
+  overflow: hidden;
+}
+.visual-theme-art {
+  height: 92px;
+  object-fit: cover;
+  filter: saturate(1.08) contrast(1.04);
+}
+.visual-theme-option.active { transform: translateY(-3px); box-shadow: 0 9px 24px color-mix(in srgb, var(--brand) 18%, transparent); }
+
+/* --------------------------------------------------------------------------
+   3. Custom pointer: five silhouettes + trail + click signatures
+   -------------------------------------------------------------------------- */
+@media (pointer: fine) {
+  html, body, button, a, input, select, textarea, [role='button'] { cursor: none !important; }
+}
+
+.adventure-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10020;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(-100px,-100px,0);
+  transition: opacity .12s ease;
+  will-change: transform;
+}
+.adventure-cursor.is-visible { opacity: 1; }
+.adventure-cursor > span,
+.adventure-cursor::before,
+.adventure-cursor::after { content: ''; position: absolute; display: block; }
+.adventure-cursor > span { inset: 7px; background: var(--v23-cursor-core); box-shadow: 0 0 14px var(--v23-cursor-core); }
+.adventure-cursor::before { inset: 1px; border: 2px solid var(--v23-cursor-ring); box-shadow: 0 0 15px color-mix(in srgb, var(--v23-cursor-ring) 75%, transparent); }
+.adventure-cursor::after { width: 6px; height: 6px; left: 11px; top: 11px; background: white; border-radius: 50%; }
+.adventure-cursor.is-hovering { scale: 1.26; }
+.adventure-cursor.is-pressed { scale: .72; filter: brightness(1.45); }
+
+/* hero = radiant diamond */
+:root[data-adventure-theme='hero'] .adventure-cursor { margin: -14px 0 0 -14px; rotate: 45deg; }
+:root[data-adventure-theme='hero'] .adventure-cursor > span { border-radius: 3px; }
+:root[data-adventure-theme='hero'] .adventure-cursor::before { border-radius: 6px; }
+
+/* mecha = crosshair */
+:root[data-adventure-theme='mecha'] .adventure-cursor { margin: -14px 0 0 -14px; }
+:root[data-adventure-theme='mecha'] .adventure-cursor > span { inset: 10px; border-radius: 50%; }
+:root[data-adventure-theme='mecha'] .adventure-cursor::before { border-radius: 50%; }
+:root[data-adventure-theme='mecha'] .adventure-cursor::after { left: 13px; top: -4px; width: 2px; height: 36px; border-radius: 0; background: linear-gradient(var(--v23-cursor-ring) 0 8px, transparent 8px 28px, var(--v23-cursor-ring) 28px); }
+
+/* tank = hexagonal targeting puck */
+:root[data-adventure-theme='tank'] .adventure-cursor { margin: -14px 0 0 -14px; }
+:root[data-adventure-theme='tank'] .adventure-cursor > span { inset: 8px; clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); }
+:root[data-adventure-theme='tank'] .adventure-cursor::before { clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); border-radius: 0; }
+
+/* racing = forward chevron */
+:root[data-adventure-theme='racing'] .adventure-cursor { margin: -13px 0 0 -7px; width: 32px; }
+:root[data-adventure-theme='racing'] .adventure-cursor > span { inset: 5px 3px; clip-path: polygon(0 0,100% 50%,0 100%,28% 50%); border-radius: 0; }
+:root[data-adventure-theme='racing'] .adventure-cursor::before { inset: 1px 4px; clip-path: polygon(0 0,100% 50%,0 100%,28% 50%); background: color-mix(in srgb, var(--v23-cursor-ring) 46%, transparent); border: 0; }
+
+/* creature = soft orb + ears */
+:root[data-adventure-theme='creature'] .adventure-cursor { margin: -14px 0 0 -14px; }
+:root[data-adventure-theme='creature'] .adventure-cursor > span { inset: 7px; border-radius: 45% 55% 50% 50%; }
+:root[data-adventure-theme='creature'] .adventure-cursor::before { border-radius: 44% 56% 48% 52%; }
+:root[data-adventure-theme='creature'] .adventure-cursor::after { width: 8px; height: 8px; left: 10px; top: 10px; }
+
+.cursor-trail-layer { position: fixed; inset: 0; z-index: 10010; pointer-events: none; overflow: hidden; }
+.cursor-trail-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  border-radius: 50%;
+  background: var(--v23-cursor-core);
+  box-shadow: 0 0 10px var(--v23-cursor-ring);
+  animation: v23Trail .68s ease-out forwards;
+}
+@keyframes v23Trail { to { opacity: 0; transform: translateY(13px) scale(.15) rotate(100deg); } }
+:root[data-adventure-theme='hero'] .cursor-trail-particle { border-radius: 1px; rotate: 45deg; }
+:root[data-adventure-theme='mecha'] .cursor-trail-particle { width: 10px; height: 2px; margin: -1px -5px; border-radius: 0; }
+:root[data-adventure-theme='tank'] .cursor-trail-particle { border-radius: 2px; background: #cba64d; }
+:root[data-adventure-theme='racing'] .cursor-trail-particle { width: 18px; height: 3px; margin: -1px -18px; border-radius: 999px; transform-origin: right center; }
+:root[data-adventure-theme='creature'] .cursor-trail-particle { width: 10px; height: 10px; background: transparent; border: 2px solid var(--v23-cursor-ring); }
+
+/* Click bursts inherit the theme but have different silhouettes. */
+.click-burst i { width: 8px; height: 8px; animation-duration: .72s; }
+:root[data-adventure-theme='hero'] .click-burst i { border-radius: 1px; rotate: 45deg; }
+:root[data-adventure-theme='mecha'] .click-burst i { width: 11px; height: 3px; border-radius: 0; }
+:root[data-adventure-theme='tank'] .click-burst i { width: 9px; height: 9px; border-radius: 2px; }
+:root[data-adventure-theme='racing'] .click-burst i { width: 20px; height: 3px; border-radius: 999px; }
+:root[data-adventure-theme='creature'] .click-burst i { width: 10px; height: 10px; background: transparent; border: 2px solid var(--accent); }
+@keyframes burstOut { from { opacity: 1; transform: rotate(var(--angle)) translateX(3px) scale(1.35); } to { opacity: 0; transform: rotate(var(--angle)) translateX(52px) scale(.15); } }
+
+/* --------------------------------------------------------------------------
+   4. Responsive tuning after typography increase
+   -------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .v22-space-hero { min-height: 330px; }
+  .game-main-nav button { font-size: 11.5px; }
+  .visual-theme-option { min-height: 150px; }
+}
+
+@media (max-width: 860px) {
+  .v22-hero-copy p { font-size: 14px; }
+  .v22-panel-heading h2 { font-size: 20px; }
+  .v23-hero-composite { max-height: 270px; }
+  .visual-theme-art { height: 82px; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+  .v22-hero-copy p { font-size: 13.5px; line-height: 1.72; }
+  .game-main-nav button { font-size: 11px; }
+  .v22-panel-heading h2 { font-size: 19px; }
+  .v22-day-title h3 { font-size: 18px; }
+  .v22-panel,
+  .settings-card { border-radius: min(var(--v23-panel-radius), 20px); }
+  .visual-theme-option { min-height: 145px; }
+  .visual-theme-option strong { font-size: 14px !important; }
+  .visual-theme-option small { font-size: 11px !important; }
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .adventure-cursor, .cursor-trail-layer { display: none !important; }
+  html, body, button, a, input, select, textarea, [role='button'] { cursor: auto !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}

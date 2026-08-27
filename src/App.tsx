@@ -138,7 +138,7 @@ function caregiverArt(role: FamilyUserRole) {
 }
 
 function CaregiverAvatar({ user, size = 64 }: { user: FamilyUserProfile; size?: number }) {
-  return <img className="caregiver-avatar" src={v22Asset(caregiverArt(user.role))} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
+  return <img className="caregiver-avatar" src={v23Asset(caregiverArt(user.role))} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
 }
 
 function safeLoad<T>(key: string, fallback: T): T {
@@ -267,17 +267,19 @@ function SubjectBadge({ subject }: { subject: LessonBlock['subject'] }) {
   return <span className={`subject-badge subject-${subject.toLowerCase()}`}>{labels[subject]}</span>;
 }
 
-const v22Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v22/${file}`;
+const v23Asset = (file: string) => `${import.meta.env.BASE_URL}assets/v23/${file}`;
 
 function lessonIllustrationFile(block: LessonBlock) {
   const tags = new Set(block.requiredVideoTopics ?? []);
-  if (tags.has('numbers') || tags.has('counting') || block.subject === 'Math') return 'lesson-numbers.webp';
-  if (tags.has('food') || tags.has('fruit') || tags.has('vegetables') || tags.has('colors')) return 'lesson-food.webp';
-  return 'robot-helper.webp';
+  if (tags.has('numbers') || tags.has('counting') || block.subject === 'Math') return 'lesson-numbers-v23.webp';
+  if (tags.has('food') || tags.has('fruit') || tags.has('vegetables') || tags.has('colors')) return 'lesson-food-v23.webp';
+  if (tags.has('space') || tags.has('ocean') || tags.has('dinosaurs') || tags.has('nature')) return 'lesson-space-v23.webp';
+  if (tags.has('listening') || tags.has('speaking') || block.subject === 'Review') return 'lesson-review-v23.webp';
+  return 'lesson-helper-v23.webp';
 }
 
 function LessonIllustration({ block }: { block: LessonBlock }) {
-  return <img className="v22-lesson-illustration" src={v22Asset(lessonIllustrationFile(block))} alt="本節原創教學插圖" loading="lazy" decoding="async" />;
+  return <img className="v22-lesson-illustration" src={v23Asset(lessonIllustrationFile(block))} alt="本節原創教學插圖" loading="lazy" decoding="async" />;
 }
 
 function VideoPlayer({ clip, compact = false, warmup = false }: { clip: VideoClip; compact?: boolean; warmup?: boolean }) {
@@ -285,7 +287,7 @@ function VideoPlayer({ clip, compact = false, warmup = false }: { clip: VideoCli
     <div className={`video-card ${compact ? 'compact' : ''} ${warmup ? 'food-warmup-card' : ''}`}>
       <div className="video-title-row">
         <div>
-          <span className="eyebrow">{warmup ? '🍎 美食暖身歌' : clip.channel}</span>
+          <span className="eyebrow">{warmup ? '唱跳暖身 · 每節唯一' : clip.channel}</span>
           <h4>{clip.title}</h4>
         </div>
         {clip.sourceUrl && <a className="icon-button" href={clip.sourceUrl} target="_blank" rel="noreferrer" title="在 YouTube 開啟"><ExternalLink size={17} /></a>}
@@ -413,13 +415,50 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
   }, [settings.theme, settings.visualTheme]);
 
   useEffect(() => {
+    const finePointer = window.matchMedia('(pointer: fine)').matches;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let lastTrail = 0;
+
+    const onMove = (event: PointerEvent) => {
+      if (!finePointer) return;
+      const cursor = document.getElementById('adventure-cursor');
+      if (cursor) {
+        cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
+        cursor.classList.add('is-visible');
+        cursor.classList.toggle('is-hovering', Boolean((event.target as Element | null)?.closest?.('button, a, input, select, textarea, [role="button"]')));
+      }
+      if (reducedMotion || event.timeStamp - lastTrail < 44) return;
+      lastTrail = event.timeStamp;
+      const layer = document.getElementById('cursor-trail-layer');
+      if (!layer) return;
+      const particle = document.createElement('i');
+      particle.className = 'cursor-trail-particle';
+      particle.style.left = `${event.clientX}px`;
+      particle.style.top = `${event.clientY}px`;
+      layer.appendChild(particle);
+      window.setTimeout(() => particle.remove(), 680);
+    };
+
     const onPointer = (event: PointerEvent) => {
       const id = Date.now() + Math.random();
-      setBursts((current) => [...current.slice(-5), { id, x: event.clientX, y: event.clientY }]);
-      window.setTimeout(() => setBursts((current) => current.filter((item) => item.id !== id)), 700);
+      setBursts((current) => [...current.slice(-8), { id, x: event.clientX, y: event.clientY }]);
+      window.setTimeout(() => setBursts((current) => current.filter((item) => item.id !== id)), 760);
+      const cursor = document.getElementById('adventure-cursor');
+      if (cursor) {
+        cursor.classList.add('is-pressed');
+        window.setTimeout(() => cursor.classList.remove('is-pressed'), 150);
+      }
     };
-    window.addEventListener('pointerdown', onPointer);
-    return () => window.removeEventListener('pointerdown', onPointer);
+
+    const onLeave = () => document.getElementById('adventure-cursor')?.classList.remove('is-visible');
+    window.addEventListener('pointermove', onMove, { passive: true });
+    window.addEventListener('pointerdown', onPointer, { passive: true });
+    document.documentElement.addEventListener('mouseleave', onLeave);
+    return () => {
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerdown', onPointer);
+      document.documentElement.removeEventListener('mouseleave', onLeave);
+    };
   }, []);
 
   const showReward = (title: string, detail: string) => {
@@ -683,6 +722,8 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
           onUpdateReflection={(patch) => setReflections((current) => ({ ...current, [selectedDay.id]: { ...(current[selectedDay.id] ?? emptyReflection()), ...patch } }))}
           onClaimEgg={(childId) => claimEgg(childId, selectedDay)}
         />
+        <div id="cursor-trail-layer" className="cursor-trail-layer" aria-hidden="true" />
+        <div id="adventure-cursor" className="adventure-cursor" aria-hidden="true"><span /></div>
         <ClickEffects bursts={bursts} />
         {rewardToast && <div className="reward-toast" key={rewardToast.id}><Sparkles size={22} /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
       </>
@@ -693,8 +734,8 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
     <div className="app-shell">
       <header className="topbar">
         <button className="brand" onClick={() => setView('home')}>
-          <span className="brand-mark v22-brand-art"><img src={v22Asset('hero-rocket.webp')} alt="" aria-hidden="true" /></span>
-          <span><strong>小小探險隊</strong><small>Family Learning Mission · V2.2</small></span>
+          <span className="brand-mark v22-brand-art"><img src={v23Asset('hero-rocket.webp')} alt="" aria-hidden="true" /></span>
+          <span><strong>小小探險隊</strong><small>Family Learning Mission · V2.3</small></span>
         </button>
         <nav className="game-main-nav" aria-label="主要功能">
           <button className={view === 'home' ? 'active' : ''} onClick={() => setView('home')}><Rocket size={15} /> 首頁</button>
@@ -747,8 +788,10 @@ function FamilyApp({ familyPin, onSwitchFamily, onOpenFamily }: { familyPin: str
 
       <footer className="footer">
         <div><strong>教材來源</strong>{youtubeChannelLinks.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}</div>
-        <div className="asset-credit">介面、角色與主題為本專案原創設計；功能圖示採 <a href="https://lucide.dev/" target="_blank" rel="noreferrer">Lucide（ISC）</a>。YouTube 影片以官方播放器嵌入，著作權歸原權利人所有。</div>
+        <div className="asset-credit">介面、角色、角色進化、主題預覽、火箭、機器人、獎勵與課程插圖採 ChatGPT Image 視覺製作流程，並於 V2.3 重新裁切、去邊、調色、合成與壓縮為 WebP；正式素材位於 <code>public/assets/v23/</code>。功能圖示僅採 <a href="https://lucide.dev/" target="_blank" rel="noreferrer">Lucide（ISC）</a>。YouTube 影片以官方播放器嵌入，著作權歸原權利人所有。</div>
       </footer>
+      <div id="cursor-trail-layer" className="cursor-trail-layer" aria-hidden="true" />
+      <div id="adventure-cursor" className="adventure-cursor" aria-hidden="true"><span /></div>
       <ClickEffects bursts={bursts} />
       {rewardToast && <div className="reward-toast" key={rewardToast.id}><Sparkles size={22} /><div><strong>{rewardToast.title}</strong><span>{rewardToast.detail}</span></div></div>}
       {adminPromptOpen && <AdminPinDialog familyPin={familyPin} onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
@@ -783,10 +826,10 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
     <div className="page home-page v22-home">
       <section className="v22-space-hero">
         <div className="v22-hero-copy">
-          <span className="v22-kicker"><Sparkles size={16} /> LITTLE EXPLORERS · V2.2</span>
+          <span className="v22-kicker"><Sparkles size={16} /> LITTLE EXPLORERS · V2.3</span>
           <h1>小小探險隊</h1>
           <h2>一起學習，一起長大</h2>
-          <p>180 節家庭共學任務已整理好。照顧者控制影片節奏，孩子透過唱、說、找、動、問答與分齡挑戰累積 XP、金幣與角色進化。</p>
+          <p>180 節家庭共學任務已重新編排。180 首唱跳暖身與 180 支正式課程影片全部零重複，照顧者控制節奏，孩子透過唱、說、找、動、問答與分齡挑戰累積 XP、金幣與角色進化。</p>
           <div className="hero-actions">
             <button className="primary-button v22-gold-cta" onClick={() => openDay(featuredDay)}><PlayCircle size={20} /> {todayDay ? '開始今日任務' : `繼續 Day ${featuredDay.index}`}</button>
             <button className="secondary-button v22-glass-button" onClick={goSemester}><CalendarDays size={19} /> 查看學習星圖</button>
@@ -794,9 +837,7 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
           <div className="v22-hero-status"><span><Cloud size={15} /> {cloudStatus === 'synced' ? '雲端已同步' : '家庭資料同步中'}</span><span><Trophy size={15} /> 學期完成 {completionPct}%</span><span><Rocket size={15} /> Level {level}</span></div>
         </div>
         <div className="v22-hero-art" aria-hidden="true">
-          <img className="v22-hero-crew-image" src={v22Asset('hero-crew.webp')} alt="" />
-          <img className="v22-hero-rocket-image" src={v22Asset('hero-rocket.webp')} alt="" />
-          <img className="v22-hero-robot-image" src={v22Asset('robot-helper.webp')} alt="" />
+          <img className="v22-hero-crew-image v23-hero-composite" src={v23Asset('hero-v23.webp')} alt="" />
         </div>
       </section>
 
@@ -817,7 +858,7 @@ function HomeView({ settings, progress, featuredDay, todayDay, completedDays, co
           <article className="v22-panel v22-calendar-panel">
             <div className="v22-panel-heading"><div><span className="eyebrow">SEMESTER CALENDAR</span><h2>學期日曆</h2></div><button className="text-button" onClick={goSemester}>完整 18 週 <ChevronRight size={17} /></button></div>
             <div className="v22-progress-summary"><div><strong>{completionPct}%</strong><span>{completedDays} / 90 學習日</span></div><ProgressBar value={completedDays} max={90} /><small>下一里程碑：{nextMilestone} 天</small></div>
-            {monthItems.length > 0 && <div className="v22-month-card"><div className="month-title"><strong>{formatMonth(monthItems[0].date)}</strong><span>{monthItems.length} 個任務日</span></div><div className="month-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><div className="month-days">{Array.from({ length: monthOffset }, (_, i) => <span className="calendar-spacer" key={`s-${i}`} />)}{monthItems.map(({ day, date }) => { const done = isDayDone(day); const current = day.id === featuredDay.id; return <button key={day.id} className={`mini-calendar-day ${done ? 'done' : ''} ${current ? 'today' : ''}`} onClick={() => openDay(day)}><span className="mini-date">{date.getDate()}</span><span className="mini-emoji">{done ? <Check size={14} /> : <img src={v22Asset('hero-rocket.webp')} alt="" aria-hidden="true" />}</span><small>D{day.index}</small></button>; })}</div></div>}
+            {monthItems.length > 0 && <div className="v22-month-card"><div className="month-title"><strong>{formatMonth(monthItems[0].date)}</strong><span>{monthItems.length} 個任務日</span></div><div className="month-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><div className="month-days">{Array.from({ length: monthOffset }, (_, i) => <span className="calendar-spacer" key={`s-${i}`} />)}{monthItems.map(({ day, date }) => { const done = isDayDone(day); const current = day.id === featuredDay.id; return <button key={day.id} className={`mini-calendar-day ${done ? 'done' : ''} ${current ? 'today' : ''}`} onClick={() => openDay(day)}><span className="mini-date">{date.getDate()}</span><span className="mini-emoji">{done ? <Check size={14} /> : <img src={v23Asset('hero-rocket.webp')} alt="" aria-hidden="true" />}</span><small>D{day.index}</small></button>; })}</div></div>}
           </article>
 
           <article className="v22-panel v22-growth-panel">
@@ -861,7 +902,7 @@ function TreasureShopView({ settings, progress, goHome }: { settings: AppSetting
     { coins: 320, title: '火箭通行證', detail: '家庭累積 320 金幣解鎖', art: 'rocket' as const },
     { coins: 520, title: '冠軍展示座', detail: '家庭累積 520 金幣解鎖', art: 'trophy' as const },
   ];
-  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">TREASURE SHOP</span><h1>寶物商店</h1><p>V2.2 採「累積達標即解鎖」而不是扣除金幣，因此不會破壞由完成紀錄即時計算的獎勵模型。</p></div></div><section className="v22-panel"><div className="v22-shop-wallet"><AnimatedBadge art="treasure" size={66} /><div><span>家庭目前累積</span><strong>{familyCoins} 金幣</strong></div></div><div className="v22-shop-grid">{items.map((item) => { const unlocked = familyCoins >= item.coins; return <article className={unlocked ? 'unlocked' : ''} key={item.title}><AnimatedBadge art={item.art} size={76} /><span>{unlocked ? '已解鎖' : `${item.coins} 金幣`}</span><h3>{item.title}</h3><p>{unlocked ? '已放入家庭收藏展示櫃。' : item.detail}</p></article>; })}</div></section></div>;
+  return <div className="page v22-secondary-page"><div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">TREASURE SHOP</span><h1>寶物商店</h1><p>V2.3 採「累積達標即解鎖」而不是扣除金幣，因此不會破壞由完成紀錄即時計算的獎勵模型。</p></div></div><section className="v22-panel"><div className="v22-shop-wallet"><AnimatedBadge art="treasure" size={66} /><div><span>家庭目前累積</span><strong>{familyCoins} 金幣</strong></div></div><div className="v22-shop-grid">{items.map((item) => { const unlocked = familyCoins >= item.coins; return <article className={unlocked ? 'unlocked' : ''} key={item.title}><AnimatedBadge art={item.art} size={76} /><span>{unlocked ? '已解鎖' : `${item.coins} 金幣`}</span><h3>{item.title}</h3><p>{unlocked ? '已放入家庭收藏展示櫃。' : item.detail}</p></article>; })}</div></section></div>;
 }
 
 function SemesterView({ settings, isDayDone, openDay, goHome }: { settings: AppSettings; isDayDone: (day: CourseDay) => boolean; openDay: (day: CourseDay) => void; goHome: () => void }) {
@@ -1097,7 +1138,7 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
 
   const exportData = () => {
     const blob = new Blob([JSON.stringify({ version: 2, settings, progress, attendance, reflections }, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `小小探險隊-V2.2-學習紀錄-${ymd(new Date())}.json`; a.click(); URL.revokeObjectURL(url);
+    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `小小探險隊-V2.3-學習紀錄-${ymd(new Date())}.json`; a.click(); URL.revokeObjectURL(url);
   };
 
   const resetProgress = () => {
@@ -1126,18 +1167,18 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
 
   return (
     <div className="page settings-page v2-settings">
-      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">FAMILY CONTROL CENTER · V2.2</span><h1>星際家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、視覺主題、雲端同步與高風險資料操作。一般使用者無法直接進入此頁。</p></div></div>
+      <div className="page-heading"><button className="icon-button" onClick={goHome}><ArrowLeft size={19} /></button><div><span className="eyebrow">FAMILY CONTROL CENTER · V2.3</span><h1>星際家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、視覺主題、雲端同步與高風險資料操作。一般使用者無法直接進入此頁。</p></div></div>
       <div className="admin-unlocked-banner"><div><strong>管理者 PIN 已解鎖</strong><span>目前為家庭最高管理權限；離開家庭或重新載入後需再次驗證。</span></div><KeyRound size={20} /></div>
       <section className="v22-family-hero" aria-label="星際家庭管理中心">
         <div><span className="eyebrow">FAMILY COMMAND DECK</span><h2>全家的學習基地，由管理者守護</h2><p>家長／照顧者登入帳號、學習者、個人 PIN、雲端同步與主題都集中在這裡管理；一般使用者不會看到這些高權限操作。</p></div>
-        <div className="v22-family-hero-art" aria-hidden="true"><img src={v22Asset('avatar-father.webp')} alt="" /><img src={v22Asset('avatar-mother.webp')} alt="" /><img className="robot" src={v22Asset('robot-helper.webp')} alt="" /></div>
+        <div className="v22-family-hero-art" aria-hidden="true"><img src={v23Asset('avatar-father.webp')} alt="" /><img src={v23Asset('avatar-mother.webp')} alt="" /><img className="robot" src={v23Asset('robot-helper.webp')} alt="" /></div>
       </section>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示明暗</h3><p>亮色、暗色或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '暗黑'}</button>)}</div></section>
 
       <section className="settings-card vertical theme-settings-card">
         <div className="setting-label"><span className="setting-icon"><Sparkles size={20} /></span><div><h3>冒險主題風格</h3><p>五套主題全部使用 ChatGPT Image 產製素材作為預覽；套用後同步調整背景、面板、按鈕與點擊特效。</p></div></div>
-        <div className="visual-theme-grid">{visualThemeOptions.map((option) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><img className="visual-theme-art" src={v22Asset(option.art)} alt="" aria-hidden="true" /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
+        <div className="visual-theme-grid">{visualThemeOptions.map((option) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><img className="visual-theme-art" src={v23Asset(option.art)} alt="" aria-hidden="true" /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
       </section>
 
       <section className="settings-card"><div className="setting-label"><span className="setting-icon"><CalendarDays size={20} /></span><div><h3>學期起始日</h3><p>改日期後，90 個平日課程會自動重新排程，首頁月份日曆也一起更新。</p></div></div><input className="date-input" type="date" value={settings.semesterStart} onChange={(e) => setSettings((current) => ({ ...current, semesterStart: e.target.value }))} /></section>
@@ -1202,11 +1243,11 @@ function SettingsView({ settings, setSettings, progress, attendance, reflections
           </div>
           <div className={`cloud-status-box cloud-${cloudStatus}`}><CloudPill status={cloudStatus} /><p>{cloudMessage || '進度變更後會自動同步到這個家庭。'}</p>{lastCloudSync && <small>最近同步：{new Date(lastCloudSync).toLocaleString('zh-TW')}</small>}</div>
           <div className="cloud-actions"><button className="secondary-button" onClick={() => void onSyncNow()}><Cloud size={17} /> 立即儲存</button><button className="secondary-button" onClick={() => void onPullCloud()}><RefreshCw size={17} /> 重新讀取雲端</button><button className="secondary-button danger-outline" onClick={onSwitchFamily}><LogOut size={17} /> 切換家庭</button></div>
-          <p className="cloud-security-note">管理者 PIN 同時作為目前 V2.2 家庭 namespace 的管理憑證。請使用不易猜測的 4–6 位數字，不要分享給一般使用者；一般成員應使用自己的個人 PIN。</p>
+          <p className="cloud-security-note">管理者 PIN 同時作為目前 V2.3 介面所沿用的 V2.2 相容家庭 namespace 管理憑證。請使用不易猜測的 4–6 位數字，不要分享給一般使用者；一般成員應使用自己的個人 PIN。</p>
         </div>
       </section>
 
-      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V2.2 JSON。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
+      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V2.3 JSON（保留 V1／V2／V2.1／V2.2 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
     </div>
   );
 }
@@ -1230,12 +1271,12 @@ function PinGate({ onEnter }: { onEnter: (pin: string) => void }) {
     <main className="pin-gate-shell">
       <section className="pin-gate-card">
         <div className="pin-gate-visual" aria-hidden="true">
-          <img className="pin-gate-crew" src={v22Asset('hero-crew.webp')} alt="" />
-          <img className="pin-gate-robot" src={v22Asset('robot-helper.webp')} alt="" />
-          <img className="pin-gate-rocket" src={v22Asset('hero-rocket.webp')} alt="" />
+          <img className="pin-gate-crew" src={v23Asset('hero-crew.webp')} alt="" />
+          <img className="pin-gate-robot" src={v23Asset('robot-helper.webp')} alt="" />
+          <img className="pin-gate-rocket" src={v23Asset('hero-rocket.webp')} alt="" />
         </div>
         <div className="pin-gate-copy">
-          <span className="eyebrow">FAMILY PROFILE · V2.2</span>
+          <span className="eyebrow">FAMILY PROFILE · V2.3</span>
           <h1>歡迎回到小小探險隊</h1>
           <p>新裝置第一次由家庭管理者輸入管理者 PIN 來載入這一家人的資料；進入家庭後，每位成員再用自己的個人 PIN 切換角色。首頁不公開列出其他家庭設定檔。</p>
           {legacyDetected && <div className="legacy-pin-note"><Sparkles size={17} /><span>偵測到這台裝置有舊版學習資料，已為你預填家庭 PIN <strong>1234</strong>；第一次進入後會自動建立獨立雲端資料。</span></div>}

@@ -57,7 +57,7 @@ export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = fa
     : id === 'rex'
       ? `younger-stage-${stage}.webp`
       : v22BaseArt[id];
-  const imageSrc = `${import.meta.env.BASE_URL}assets/v22/${showStage ? stagedArt : v22BaseArt[id]}`;
+  const imageSrc = `${import.meta.env.BASE_URL}assets/v23/${showStage ? stagedArt : v22BaseArt[id]}`;
 
   return (
     <div className={`avatar-hero avatar-photo-hero avatar-${id} stage-${stage}`} style={style} title={`${option.name} · Level ${level}`}>

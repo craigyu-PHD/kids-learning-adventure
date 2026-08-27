@@ -19,7 +19,7 @@ const fallbackFiles: Record<BadgeArt, string> = {
 };
 
 export default function AnimatedBadge({ art, size = 42, label }: { art: BadgeArt; size?: number; label?: string }) {
-  const base = `${import.meta.env.BASE_URL}assets/v22/`;
+  const base = `${import.meta.env.BASE_URL}assets/v23/`;
   const src = `${base}${badgeFiles[art]}`;
   const fallback = `${base}${fallbackFiles[art]}`;
   return (

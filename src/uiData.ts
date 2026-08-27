@@ -6,11 +6,11 @@ export const visualThemeOptions: Array<{
   subtitle: string;
   art: string;
 }> = [
-  { id: 'hero', title: '星能英雄', subtitle: '小英雄、能量光束、星際基地', art: 'hero-crew.webp' },
-  { id: 'mecha', title: '機甲出擊', subtitle: '鋼鐵裝甲、雷達、科技面板', art: 'avatar-robot.webp' },
-  { id: 'tank', title: '裝甲任務', subtitle: '厚重裝甲、任務地圖、戰術基地', art: 'brother-stage-4.webp' },
-  { id: 'racing', title: '極速航道', subtitle: '火箭、終點光軌、速度挑戰', art: 'hero-rocket.webp' },
-  { id: 'creature', title: '奇獸夥伴', subtitle: '探險角色、元素徽章、冒險圖鑑', art: 'younger-stage-4.webp' },
+  { id: 'hero', title: '星能英雄', subtitle: '皇家藍星際基地、金色能量與英雄光暈', art: 'theme-hero.webp' },
+  { id: 'mecha', title: '機甲出擊', subtitle: '深色科技格網、青色雷達與切角裝甲面板', art: 'theme-mecha.webp' },
+  { id: 'tank', title: '迷你戰車', subtitle: '橄欖任務地圖、厚重裝甲與戰術標記', art: 'theme-tank.webp' },
+  { id: 'racing', title: '極速賽道', subtitle: '紅黑賽道、黃色速度條與前衝動態', art: 'theme-racing.webp' },
+  { id: 'creature', title: '奇獸夥伴', subtitle: '紫綠元素世界、柔軟圓角與靈獸光球', art: 'theme-creature.webp' },
 ];
 
 export function subjectAction(subject: Subject) {

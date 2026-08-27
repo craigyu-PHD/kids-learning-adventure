@@ -1,5 +1,5 @@
 import type { CourseDay, LessonBlock, Subject } from '../types';
-import { videos } from './videos';
+import { lessonVideoAssignments } from './videos';
 
 type WeekPlan = {
   title: string;
@@ -189,98 +189,6 @@ const dayModes = [
   { name: '任務日', verb: '複習', mission: '本週闖關', kind: 'race' as const },
 ];
 
-const warmupKeys = ['fruitYummy', 'applesBananas', 'food', 'vegetables', 'countingBananas'];
-
-type VideoAssignment = readonly [videoKey: string, requiredTopic: string];
-type WeekVideoAssignment = readonly [
-  readonly VideoAssignment[],
-  readonly VideoAssignment[],
-];
-
-/**
- * V2.2 explicit main-video map.
- *
- * The old implementation rotated a week-level video pool independently from
- * `crossTopics`, which could pair a perfectly playable YouTube clip with the
- * wrong lesson. Every day/block is now assigned intentionally. The second
- * tuple member is the semantic tag that the validator requires the clip to
- * declare in `videos.ts`.
- */
-const weeklyVideoAssignments: WeekVideoAssignment[] = [
-  [
-    [['hello', 'greetings'], ['hello', 'greetings'], ['familyPeople', 'family'], ['hello', 'greetings'], ['familyTree', 'family']],
-    [['hello', 'greetings'], ['familyPeople', 'family'], ['happyBambiWild', 'bilingual'], ['alphabet', 'alphabet'], ['hello', 'greetings']],
-  ],
-  [
-    [['colors', 'colors'], ['shapes', 'shapes'], ['seeBlue', 'colors'], ['colors', 'colors'], ['happyBambiColors', 'colors']],
-    [['shapes', 'shapes'], ['seeBlue', 'find'], ['happyBambiColors', 'bilingual'], ['colors', 'colors'], ['colors', 'colors']],
-  ],
-  [
-    [['body', 'body'], ['body', 'body'], ['follow', 'actions'], ['bathBody', 'body'], ['follow', 'actions']],
-    [['body', 'body'], ['sevenSteps', 'numbers'], ['follow', 'actions'], ['body', 'body'], ['follow', 'actions']],
-  ],
-  [
-    [['happyFace', 'feelings'], ['familyPeople', 'family'], ['familyPeople', 'family'], ['happyFace', 'feelings'], ['familyTree', 'family']],
-    [['happyFace', 'feelings'], ['familyPeople', 'family'], ['familyPeople', 'family'], ['happyFace', 'feelings'], ['familyTree', 'family']],
-  ],
-  [
-    [['pets', 'pets'], ['farm', 'farm'], ['animalSounds', 'animals'], ['zoo', 'zoo'], ['happyBambiWild', 'wild-animals']],
-    [['zoo', 'zoo'], ['happyBambiCounting', 'numbers'], ['animalSounds', 'sounds'], ['animalSounds', 'sounds'], ['zoo', 'zoo']],
-  ],
-  [
-    [['count20', 'numbers'], ['sevenSteps', 'numbers'], ['add10', 'addition'], ['countingBananas', 'counting'], ['happyBambiCounting', 'numbers']],
-    [['sevenSteps', 'numbers'], ['count20', 'numbers'], ['add10', 'addition'], ['count20', 'numbers'], ['sevenSteps', 'numbers']],
-  ],
-  [
-    [['fruitYummy', 'fruit'], ['applesBananas', 'fruit'], ['vegetables', 'vegetables'], ['food', 'preferences'], ['fruitYummy', 'food']],
-    [['vegetables', 'healthy-food'], ['countingBananas', 'numbers'], ['fruitYummy', 'fruit'], ['food', 'preferences'], ['fruitYummy', 'food']],
-  ],
-  [
-    [['weather', 'weather'], ['clothes', 'clothes'], ['days', 'days'], ['weather', 'weather'], ['clothes', 'clothes']],
-    [['weather', 'weather'], ['clothes', 'clothes'], ['days', 'days'], ['weather', 'weather'], ['clothes', 'clothes']],
-  ],
-  [
-    [['houseKitchen', 'home'], ['houseHide', 'home'], ['cleanupDirect', 'cleaning'], ['houseKitchen', 'rooms'], ['cleanupDirect', 'habits']],
-    [['cleanupDirect', 'cleaning'], ['shapes', 'shapes'], ['houseKitchen', 'home'], ['houseHide', 'find'], ['cleanupDirect', 'habits']],
-  ],
-  [
-    [['wheelsBus', 'transport'], ['car', 'car'], ['follow', 'actions'], ['car', 'transport'], ['wheelsBus', 'transport']],
-    [['wheelsBus', 'transport'], ['wheelsBus', 'transport'], ['follow', 'actions'], ['car', 'car'], ['wheelsBus', 'transport']],
-  ],
-  [
-    [['mountains', 'nature'], ['weather', 'nature'], ['seeBlue', 'colors'], ['twinkle', 'sky'], ['mountains', 'outdoors']],
-    [['mountains', 'nature'], ['mountains', 'nature'], ['animalSounds', 'sounds'], ['seeBlue', 'i-see'], ['mountains', 'outdoors']],
-  ],
-  [
-    [['alphabet', 'alphabet'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'letters'], ['phonics', 'phonics']],
-    [['alphabet', 'letters'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'letters'], ['alphabet', 'alphabet']],
-  ],
-  [
-    [['phonics', 'phonics'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'alphabet'], ['phonics', 'letters']],
-    [['alphabet', 'letters'], ['alphabet', 'letters'], ['phonics', 'phonics'], ['alphabet', 'alphabet'], ['phonics', 'phonics']],
-  ],
-  [
-    [['happyBambiWild', 'bilingual'], ['animalSounds', 'sounds'], ['phonics', 'phonics'], ['happyBambiSea', 'bilingual'], ['happyBambiWild', 'bilingual']],
-    [['happyBambiWild', 'bilingual'], ['phonics', 'phonics'], ['animalSounds', 'listening'], ['animalSounds', 'sounds'], ['happyBambiWild', 'bilingual']],
-  ],
-  [
-    [['happyBambiSea', 'ocean'], ['dinosaur10', 'dinosaurs'], ['dinosaur10', 'dinosaurs'], ['animalSounds', 'sounds'], ['twinkle', 'space']],
-    [['happyBambiSea', 'ocean'], ['dinosaur10', 'numbers'], ['dinosaur10', 'dinosaurs'], ['animalSounds', 'sounds'], ['twinkle', 'space']],
-  ],
-  [
-    [['seeBlue', 'colors'], ['count20', 'numbers'], ['alphabet', 'alphabet'], ['pets', 'i-have'], ['food', 'preferences']],
-    [['seeBlue', 'find'], ['count20', 'numbers'], ['alphabet', 'alphabet'], ['pets', 'i-have'], ['food', 'preferences']],
-  ],
-  [
-    [['food', 'preferences'], ['pets', 'i-have'], ['seeBlue', 'i-see'], ['follow', 'speaking'], ['familyPeople', 'speaking']],
-    [['food', 'preferences'], ['pets', 'i-have'], ['hello', 'speaking'], ['follow', 'speaking'], ['familyPeople', 'family']],
-  ],
-  [
-    [['seeBlue', 'colors'], ['count20', 'numbers'], ['hello', 'speaking'], ['alphabet', 'alphabet'], ['happy', 'feelings']],
-    [['seeBlue', 'colors'], ['count20', 'numbers'], ['hello', 'speaking'], ['alphabet', 'alphabet'], ['happy', 'feelings']],
-  ],
-];
-
 const videoFocusLabels: Record<string, string> = {
   greetings: '打招呼與開口說', family: '家庭成員', bilingual: '中英雙語詞彙', alphabet: '英文字母', letters: '字母辨識', phonics: '字母與發音',
   colors: '顏色辨識', shapes: '形狀辨識', find: '看畫面找東西', body: '身體部位', actions: '動作與指令', numbers: '數字與數量',
@@ -296,61 +204,69 @@ function pickWords(words: string[], day: number) {
   return Array.from({ length: Math.min(5, words.length) }, (_, i) => words[(start + i) % words.length]);
 }
 
-function makeSteps(plan: WeekPlan, day: number, blockNo: 1 | 2, words: string[], crossTopic?: string) {
+function makeSteps(
+  plan: WeekPlan,
+  day: number,
+  blockNo: 1 | 2,
+  words: string[],
+  crossTopic: string,
+  warmupTitle: string,
+  mainTitle: string,
+  focusLabel: string,
+) {
+  const mode = dayModes[day];
+  const wordLine = words.join('、');
   if (blockNo === 1) {
     return [
-      { minute: '0–3', title: '美食唱跳開機', instruction: '先播放食物／水果主題暖身歌。大人一起唱、一起做「吃、咬、好吃」等誇張動作；孩子只動不唱也算參與。', cue: '看到喜歡的食物就暫停一下，讓孩子指畫面、說中文也可以，再由大人補上英文。' },
-      { minute: '3–6', title: '今天先看這幾個字', instruction: `大人先快速示範：${words.join('、')}。每個字只說 1–2 次，不考試。` },
-      { minute: '6–12', title: '影片第一輪', instruction: '播放主題影片。第一次以理解與興趣為主，不需要每句都暫停。', cue: `看到今天的核心字時可暫停 1 次，指著畫面問：「What is it?」` },
-      { minute: '12–16', title: '停下來複誦', instruction: `挑 3 個字做「大人說 → 一起說 → 孩子自己說」。如果卡住就回看片段。`, cue: '4 歲可只說單字；6 歲嘗試接上今天的句型。' },
-      { minute: '16–21', title: '影片第二輪／回看', instruction: '重播最有反應的 1–2 分鐘。這次大人可以把音量稍微調小，鼓勵孩子補關鍵字。' },
-      { minute: '21–27', title: dayModes[day].mission, instruction: `用家裡物品或身體動作完成「${dayModes[day].verb}」任務。兄弟輪流，不淘汰。` },
-      { minute: '27–30', title: '收尾三問', instruction: `問：① 今天最記得哪個字？② 再說一次 ${plan.sentence} ③ 最喜歡哪一段？` },
+      { minute: '0–4', title: `唱跳開機｜${mode.name}`, instruction: `播放本節唯一暖身〈${warmupTitle}〉。大人先做兩個誇張動作，孩子自由模仿；今天的節奏口令是「${mode.verb}、換邊、再一次」。`, cue: '暖身的目標是喚醒身體與注意力，不要求唱準或一次跟完。' },
+      { minute: '4–8', title: '第二輪跟唱', instruction: `再播暖身歌一輪，這次每聽到重複句就加入拍手、踏步或轉身；大人刻意把 ${words[0]} 放進動作口令。` },
+      { minute: '8–12', title: '暫停模仿挑戰', instruction: `在暖身歌中選 2 個節點暫停，讓孩子自己示範一個動作。哥哥、弟弟或其他學習者輪流帶隊，不淘汰、不搶答。` },
+      { minute: '12–15', title: '暖身收束', instruction: `最後 3 分鐘把動作縮小，快速帶過 ${wordLine}；只要求看、指、跟說，為正式課程〈${mainTitle}〉做準備。` },
+      { minute: '15–20', title: `正式課程｜${focusLabel}`, instruction: `播放〈${mainTitle}〉第一輪。先完整看一小段，看到 ${words.slice(0, 2).join('、')} 時各暫停一次，讓孩子指出畫面或實物。` },
+      { minute: '20–25', title: '回看＋開口', instruction: `回看最有反應的片段，做「大人說 → 一起說 → 孩子補最後一字」。句型使用「${plan.sentence}」，4 歲可只補關鍵字，6 歲鼓勵完整說。` },
+      { minute: '25–30', title: mode.mission, instruction: `完成今天的「${mode.verb}」任務：從 ${words.slice(0, 3).join(' / ')} 選 3 題操作或回答。最後問孩子最喜歡哪一題，再勾選實際完成紀錄。` },
     ];
   }
 
   return [
-    { minute: '0–3', title: '第二節美食重開機', instruction: '換另一首水果、蔬菜或食物短歌。讓孩子喝水、站起來，邊唱邊用手比出「大口吃、好吃、不要」重新集中。' },
-    { minute: '3–7', title: `跨域任務：${crossTopic}`, instruction: '大人先用中文說明玩法，再把關鍵英文字／注音／數字帶進去。' },
-    { minute: '7–13', title: '素材觀看', instruction: '播放第二段影片，請大人控制節奏；孩子出現想說話、指畫面時就停下來讓他說。' },
-    { minute: '13–18', title: '回頭找舊知識', instruction: `刻意混入前幾週學過的 2 個字，問「你還記得嗎？」記不得就直接提示，不扣分。` },
-    { minute: '18–24', title: '兄弟合作遊戲', instruction: '一人找／做／回答，另一人當檢查員；下一題交換角色。每位孩子都能拿自己的 XP 與金幣。' },
-    { minute: '24–28', title: '難度分流', instruction: `${plan.younger}；進階：${plan.older}` },
-    { minute: '28–30', title: '領取今日能量', instruction: '大人勾選每位孩子完成的任務，再按「完成本節」。不要求兩人得分相同。' },
-  ];
+    { minute: '0–4', title: `跨域唱跳開機｜${crossTopic}`, instruction: `播放本節另一首唯一暖身〈${warmupTitle}〉。先站起來做大動作，再把「${crossTopic}」想成一個動作暗號。` },
+    { minute: '4–8', title: '節奏接龍', instruction: `跟著暖身節拍做「大人一動、孩子一動」接龍；每完成一輪就帶入 ${words[0]} 或 ${words[1]}，讓聲音和動作綁在一起。` },
+    { minute: '8–12', title: '孩子當領隊', instruction: `讓其中一位孩子決定下一個拍手、踏步或手勢，其他人跟做；換人前要說出或指出 ${words.slice(0, 2).join(' / ')} 其中一個。` },
+    { minute: '12–15', title: '喝水＋任務預告', instruction: `暖身結束後喝水，家長用中文說明今天的「${crossTopic}」玩法，再把關鍵英文、中文聲音或數量概念帶入，不顯示注音符號。` },
+    { minute: '15–20', title: `正式素材｜${focusLabel}`, instruction: `播放〈${mainTitle}〉。孩子一指畫面、想回答或出現疑問就暫停，家長不追求看完整支影片。` },
+    { minute: '20–25', title: '跨域實作', instruction: `把影片內容移到真實任務：${crossTopic}。使用 ${wordLine} 做找物、配對、數數、動作或問答，依今天主題選最自然的方式。` },
+    { minute: '25–30', title: '分齡合作＋收尾', instruction: `${plan.younger}；進階：${plan.older}。最後兩人輪流完成一題「${crossTopic}」，大人只勾實際完成者，再按「完成本節」。` },
+    ];
 }
 
 function makeBlock(plan: WeekPlan, weekIndex: number, day: number, blockNo: 1 | 2): LessonBlock {
   const words = pickWords(plan.vocab, day + (blockNo === 2 ? 1 : 0));
-  const weekAssignment = weeklyVideoAssignments[weekIndex];
-  if (!weekAssignment) throw new Error(`Missing video assignment for week ${weekIndex + 1}`);
-  const assignment = weekAssignment[blockNo - 1][day];
-  if (!assignment) throw new Error(`Missing video assignment for week ${weekIndex + 1}, day ${day + 1}, block ${blockNo}`);
-  const [videoKey, requiredTopic] = assignment;
-  const mainVideo = videos[videoKey];
-  if (!mainVideo) throw new Error(`Unknown assigned video key: ${videoKey}`);
-  const warmupKey = warmupKeys[(weekIndex + day + blockNo) % warmupKeys.length];
   const subject = blockNo === 1 ? 'English' : plan.crossSubjects[day];
   const crossTopic = plan.crossTopics[day];
   const baseId = `w${weekIndex + 1}d${day + 1}b${blockNo}`;
+  const assignment = lessonVideoAssignments[baseId];
+  if (!assignment) throw new Error(`Missing V2.3 video assignment for ${baseId}`);
+  const mainVideo = assignment.main;
+  const requiredTopic = assignment.requiredTopic;
+  const focusLabel = videoFocusLabels[requiredTopic] ?? plan.title;
 
   return {
     id: baseId,
-    title: blockNo === 1 ? `${dayModes[day].name}｜${plan.title}` : `${crossTopic}｜跨域任務`,
+    title: blockNo === 1 ? `${dayModes[day].name}｜${plan.title}・英語任務` : `${dayModes[day].name}｜${plan.title}・${crossTopic}`,
     subject,
     duration: 30,
-    warmup: videos[warmupKey],
+    warmup: assignment.warmup,
     video: mainVideo,
-    videoFocus: blockNo === 1 ? (videoFocusLabels[requiredTopic] ?? plan.title) : `${crossTopic}（${videoFocusLabels[requiredTopic] ?? requiredTopic}）`,
+    videoFocus: blockNo === 1 ? focusLabel : `${crossTopic}（${focusLabel}）`,
     requiredVideoTopics: [requiredTopic],
     vocabulary: words,
     sentence: plan.sentence,
-    steps: makeSteps(plan, day, blockNo, words, crossTopic),
+    steps: makeSteps(plan, day, blockNo, words, crossTopic, assignment.warmup.title, mainVideo.title, focusLabel),
     missions: [
       {
         id: `${baseId}-m1`,
         title: dayModes[day].mission,
-        prompt: `完成 3 次「${dayModes[day].verb}」：${words.slice(0, 3).join(' / ')}`,
+        prompt: `【${plan.title}・${dayModes[day].name}】完成 3 次「${dayModes[day].verb}」：${words.slice(0, 3).join(' / ')}`,
         criteria: `只有孩子真的完成 3 次指定的「${dayModes[day].verb}」才按完成；大人示範不算，答錯後提示再完成可以算。`,
         kind: dayModes[day].kind,
         xp: 10 + day * 2,
@@ -359,7 +275,7 @@ function makeBlock(plan: WeekPlan, weekIndex: number, day: number, blockNo: 1 | 
       {
         id: `${baseId}-m2`,
         title: blockNo === 1 ? '開口任務' : '合作任務',
-        prompt: blockNo === 1 ? `至少開口一次：${plan.sentence}` : `和兄弟／家人輪流完成「${crossTopic}」一題。`,
+        prompt: blockNo === 1 ? `【${plan.title}・${dayModes[day].name}】至少開口一次：${plan.sentence}` : `【${plan.title}・${dayModes[day].name}】和兄弟／家人輪流完成「${crossTopic}」一題。`,
         criteria: blockNo === 1 ? '孩子有主動發出目標單字或句型即可；4 歲只說最後一個關鍵字也算，6 歲鼓勵完整句。' : '孩子有實際輪到一次「回答／操作」才算；只在旁邊看不勾，完成後再按領獎。',
         kind: blockNo === 1 ? 'repeat' : 'roleplay',
         xp: 12 + day * 2,

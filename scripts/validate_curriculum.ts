@@ -9,9 +9,27 @@ function assert(condition: unknown, message: string): asserts condition {
 const days = curriculum;
 const blocks = days.flatMap((day) => day.blocks);
 const missions = blocks.flatMap((block) => block.missions);
+const warmupClips: VideoClip[] = blocks.map((block) => block.warmup);
+const mainClips: VideoClip[] = blocks.map((block) => block.video);
 const allClips: VideoClip[] = blocks.flatMap((block) => [block.warmup, block.video]);
 const videoMap = new Map(Object.values(videos).map((video) => [video.videoId, video]));
 let alignedBlocks = 0;
+
+function canonicalContentTitle(title: string) {
+  const raw = title.replace(/[’]/g, "'").trim().toLowerCase();
+  let base = raw.split(' | ')[0].replace(/\s+/g, ' ').trim();
+  if (base.startsWith('super simple abcs phonics song')) {
+    const review = raw.match(/review letters ([a-z]+ through [a-z]+)/)?.[1];
+    return review ? `super simple abcs phonics ${review}` : base;
+  }
+  base = base.replace(/\bfeaturing\b.*$/, '').trim();
+  base = base.replace(/\bwith puppets!?\b.*$/, '').trim();
+  base = base.replace(/#\s*\d+\b/g, '').trim();
+  base = base.replace(/[^a-z0-9\u4e00-\u9fff']+/g, ' ');
+  base = base.replace(/\bspin around\b$/, '').trim();
+  base = base.replace(/\bshout hoo ray\b$/, '').trim();
+  return base.replace(/\s+/g, ' ').trim();
+}
 
 assert(days.length === 90, `Expected 90 course days, got ${days.length}`);
 assert(new Set(days.map((day) => day.id)).size === 90, 'Course day IDs must be unique');
@@ -25,7 +43,16 @@ for (let week = 1; week <= 18; week += 1) {
 
 assert(blocks.length === 180, `Expected 180 lesson blocks, got ${blocks.length}`);
 assert(new Set(blocks.map((block) => block.id)).size === blocks.length, 'Lesson block IDs must be unique');
+assert(new Set(blocks.map((block) => block.title)).size === blocks.length, 'All 180 lesson titles must be unique');
 assert(new Set(missions.map((mission) => mission.id)).size === missions.length, 'Mission IDs must be unique');
+assert(new Set(missions.map((mission) => mission.prompt)).size === missions.length, 'All 360 mission prompts must be unique');
+assert(new Set(warmupClips.map((clip) => clip.videoId)).size === 180, 'All 180 sing-and-move warmups must use unique YouTube IDs');
+assert(new Set(mainClips.map((clip) => clip.videoId)).size === 180, 'All 180 main lessons must use unique YouTube IDs');
+assert(new Set(allClips.map((clip) => clip.videoId)).size === 360, 'Warmups and main lessons must be fully disjoint: 360 unique YouTube IDs required');
+assert(new Set(allClips.map((clip) => clip.id)).size === 360, 'All 360 clip IDs must be unique');
+assert(new Set(warmupClips.map((clip) => canonicalContentTitle(clip.title))).size === 180, 'All 180 warmups must use different song/content families, not just different YouTube IDs');
+assert(new Set(mainClips.map((clip) => canonicalContentTitle(clip.title))).size === 180, 'All 180 main lessons must use different content families, not just different YouTube IDs');
+assert(new Set(allClips.map((clip) => canonicalContentTitle(clip.title))).size === 360, 'Warmups and main lessons must be content-family disjoint across all 360 clips');
 
 for (const day of days) {
   assert(day.blocks.length === 2, `Day ${day.index} must contain exactly 2 blocks`);
@@ -53,8 +80,12 @@ for (const day of days) {
       assert(mission.xp > 0 && mission.coins > 0, `${mission.id}: rewards must be positive`);
     }
 
+    assert(block.warmup.topics.includes('warmup'), `${block.id}: warmup must carry the warmup audit tag`);
+    assert(block.warmup.topics.includes('singalong'), `${block.id}: warmup must carry the singalong audit tag`);
+
     for (const clip of [block.warmup, block.video]) {
       assert(Boolean(clip.videoId && clip.channel && clip.title), `${block.id}: video metadata incomplete`);
+      assert(!/[\u3100-\u312f\u31a0-\u31bf]/u.test(clip.title), `${clip.id}: Bopomofo must never appear in rendered video titles`);
       assert(Array.isArray(clip.topics) && clip.topics.length > 0, `${clip.id}: audited topic metadata missing`);
       assert(typeof clip.sourceUrl === 'string' && clip.sourceUrl.length > 0, `${block.id}: sourceUrl missing`);
       assert(videoMap.has(clip.videoId), `${block.id}: unknown video ID ${clip.videoId}`);
@@ -65,10 +96,6 @@ for (const day of days) {
   }
 }
 
-const foodWarmupIds = new Set(['fruit-yummy', 'apples-bananas', 'vegetables', 'counting-bananas', 'food']);
-const nonFoodWarmups = blocks.filter((block) => !foodWarmupIds.has(block.warmup.id));
-assert(nonFoodWarmups.length === 0, `${nonFoodWarmups.length} blocks do not use a food-oriented warmup`);
-
 const subjects = new Map<string, number>();
 for (const block of blocks) subjects.set(block.subject, (subjects.get(block.subject) ?? 0) + 1);
 assert((subjects.get('English') ?? 0) > 0, 'Semester must include English blocks');
@@ -77,7 +104,7 @@ assert((subjects.get('Zhuyin') ?? 0) > 0, 'Semester must include Zhuyin blocks')
 
 async function fetchText(url: string) {
   const response = await fetch(url, {
-    headers: { 'User-Agent': 'Mozilla/5.0 curriculum-validator/2.1' },
+    headers: { 'User-Agent': 'Mozilla/5.0 curriculum-validator/2.3' },
     signal: AbortSignal.timeout(25_000),
   });
   return { response, text: await response.text() };
@@ -123,7 +150,7 @@ async function validateYouTubeOnline() {
 
 console.log(`STRUCTURE OK  ${days.length} days / ${blocks.length} blocks / ${missions.length} missions`);
 console.log(`SUBJECTS      ${[...subjects.entries()].map(([key, value]) => `${key}:${value}`).join('  ')}`);
-console.log(`VIDEOS        ${new Set(allClips.map((clip) => clip.videoId)).size} unique YouTube IDs`);
+console.log(`VIDEOS        ${new Set(allClips.map((clip) => clip.videoId)).size} unique YouTube IDs (180 warmups + 180 main, zero repeats)`);
 console.log(`ALIGNMENT     ${alignedBlocks}/${blocks.length} main lesson videos match audited lesson-topic tags`);
 
 if (process.argv.includes('--online')) {

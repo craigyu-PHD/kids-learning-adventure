@@ -3,6 +3,8 @@ dist/
 .vercel/
 .DS_Store
 *.log
+.qa/
+.catdesk-tools/
 .env*
 !.env.example
 AGENTS.md
