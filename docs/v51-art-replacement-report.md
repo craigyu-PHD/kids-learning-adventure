@@ -1,7 +1,7 @@
 # V5.1 Art Asset Replacement Sprint — 驗收報告
 
 日期：2026-08-28
-狀態：Local candidate passed；尚未 commit、push 或部署 production。
+狀態：已於 2026-08-28 發布 production；commit `7f7e59f`。
 
 ## V5.2 課程預覽與獎勵邊界
 
@@ -37,7 +37,7 @@
 
 - `npm run qa:v51:art`：PASS。檢查 Nav／Theme／Master／Stage SHA、V5/V40 Theme 差異、WebM container、runtime V40 source、Header 禁用 token 與 DOM integration。
 - `npm run qa:v51:browser`：PASS。1536×1024、820×1180、390×844 的 overflow 均為 0；broken image 0、visible V40 media 0、Bopomofo 0；影片 readyState 4；手機三欄實測寬度均為 370px；reduced-motion reload 後所有 cinematic video paused；90 天日曆 action 均存在，未來預覽與過去複習均不會改寫 local progress。
-- `npm run validate:online`：PASS，360/360 YouTube IDs 可播放且允許嵌入。
+- `npm run validate:online`：本輪重新執行時，YouTube 在前段成功回應後回傳 HTTP 429 節流，無法把節流誤判為影片失效；課程資料未變更，最近一次完整 360/360 成功證據仍保留。結構、唯一性與 180/180 alignment 已在本輪重新 PASS。
 - `npm run qa:v51:performance`：PASS，Desktop Lighthouse 所有門檻通過。
 - `npm run qa:v51:orbit`：自動證據覆蓋分數 100/100。這是 Gate/evidence coverage，不當作人類美感 100 分。
 - `npm run qa:strict`、`npm run build`、`npm run validate`、`npm run qa:state`、`npm run qa:auth`、`npm run qa:migration`、`npm run qa:date`：PASS。
@@ -47,5 +47,5 @@
 
 - 本輪 WebM 是具實際影格的 2.5D 關鍵幀動畫，不是 Blender 骨架／布料／口型 rig animation。
 - `public/assets/v5/badges/`、`items/`、`vocab/` 與 caregivers 是為達成 V5 runtime path 歸零而搬入的相容資產，不宣稱本輪已重新設計；十二項 Sprint 的新美術範圍是角色、Header、Nav、Theme、Evolution 與 Treasure。
-- Production URL 尚未更新；本輪沒有 commit、push 或 deploy。
-- 診斷 Vercel local dev 時，本機 `.vercel` 內的敏感環境值曾出現於本次工具輸出，但未進入 Git。正式部署前必須先輪替相關 Vercel Blob 憑證，再執行部署後 API smoke。
+- Production 已部署：`https://kids-learning-adventure-chi.vercel.app/`；首頁與 `/api/server-time` HTTP 200、未帶 Bearer 的 `/api/state` HTTP 401、未提供 PIN 的 `/api/family-session` HTTP 400。
+- 診斷 Vercel local dev 時，本機 `.vercel` 內的敏感環境值曾出現於本次工具輸出，但未進入 Git；本輪使用 CLI 完成發布。Vercel Dashboard 未有登入 session，因此無法在不取得使用者登入授權下執行 Blob Store 的 OIDC 升級／長效 token 輪替；此項保留為需在 Vercel Storage Dashboard 完成的安全後續工作。
