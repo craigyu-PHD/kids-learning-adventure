@@ -27,5 +27,5 @@ function caregiverArt(role: FamilyUserRole) {
 }
 
 export function CaregiverAvatar({ user, size = 64 }: { user: FamilyUserProfile; size?: number }) {
-  return <img className="caregiver-avatar" src={`${import.meta.env.BASE_URL}assets/v40/characters/${caregiverArt(user.role)}`} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
+  return <img className="caregiver-avatar" src={`${import.meta.env.BASE_URL}assets/v5/characters/caregivers/${caregiverArt(user.role)}`} alt={`${user.name}頭像`} width={size} height={size} loading="lazy" decoding="async" />;
 }

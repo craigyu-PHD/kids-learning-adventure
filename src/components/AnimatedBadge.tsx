@@ -1,7 +1,7 @@
 export type BadgeArt = 'rocket' | 'treasure' | 'star' | 'xp' | 'crystal' | 'trophy';
 
 export default function AnimatedBadge({ art, size = 42, label }: { art: BadgeArt; size?: number; label?: string }) {
-  const base = `${import.meta.env.BASE_URL}assets/v40/rewards/`;
+  const base = `${import.meta.env.BASE_URL}assets/v5/rewards/`;
   const fileMap: Record<BadgeArt, string> = { rocket:'xp.webp', treasure:'treasure.webp', star:'star.webp', xp:'xp.webp', crystal:'gem.webp', trophy:'star.webp' };
   const src = `${base}${fileMap[art]}`;
   const fallback = `${base}star.webp`;

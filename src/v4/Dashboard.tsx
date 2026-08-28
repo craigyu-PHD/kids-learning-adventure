@@ -1,7 +1,8 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Award,
   BarChart3,
+  BookOpen,
   CalendarDays,
   Check,
   ChevronRight,
@@ -35,8 +36,7 @@ import { formatTaipeiCourseDate } from '../dailyChallenge';
 import { levelTitle, playerResources, subjectLabel, xpToNextLevel, youtubeThumb } from './model';
 import GameImage from './GameImage';
 import GameIcon from './GameIcon';
-
-const TreasureLottie = lazy(() => import('./TreasureLottie'));
+import AnimatedMedia from '../v5/AnimatedMedia';
 
 export type ViewKey = 'home' | 'today' | 'semester' | 'achievements' | 'report' | 'shop';
 
@@ -61,43 +61,40 @@ type DashboardProps = {
   onClaimTreasure: (childId: string, day: CourseDay) => void;
 };
 
-export function AdventureHeader({ settings, progress, onThemeChange }: { settings: AppSettings; progress?: AppProgress; onThemeChange?: (t: AppSettings['visualTheme'])=>void }) {
-  const children = settings.children.filter((child) => !child.disabled).slice(0, 2);
-  const keyart = `${import.meta.env.BASE_URL}assets/v5/keyart/hero-keyart-desktop.webp`;
-  const logo = `${import.meta.env.BASE_URL}assets/v5/keyart/little-explorers-logo.webp`;
-  const fallbackBanner = `${import.meta.env.BASE_URL}assets/v40/hero-space-dashboard.webp`;
+export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggleSound }: { settings: AppSettings; progress?: AppProgress; onThemeChange?: (t: AppSettings['visualTheme'])=>void; soundEnabled?: boolean; onToggleSound?: () => void }) {
+  const base = `${import.meta.env.BASE_URL}assets/v5/`;
+  const keyart = `${base}keyart/hero-bg.webp`;
   const themes: Array<{id:AppSettings['visualTheme'];name:string}> = [
     {id:'hero',name:'星際英雄'},{id:'mecha',name:'機甲戰士'},{id:'racing',name:'賽車冒險'},{id:'tank',name:'奇幻精靈'},{id:'creature',name:'海底世界'},
   ];
-  const art:Record<string,string>={hero:'space-hero',mecha:'mecha-warrior',racing:'racing-adventure',tank:'fantasy-spirit',creature:'ocean-world'};
-  return <header className="v4-adventure-header" style={{backgroundImage:`linear-gradient(90deg,rgba(6,29,87,.85),rgba(6,29,87,.2)),url(${keyart}),url(${fallbackBanner})`}}>
-    <div className="v4-stars" aria-hidden="true"><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/></div>
+  const art:Record<string,string>={hero:'space-hero-v2',mecha:'mecha-warrior-v2',racing:'racing-adventure-v2',tank:'fantasy-spirit-v2',creature:'ocean-world-v2'};
+  return <header className="v4-adventure-header v5-cinematic-header">
+    <img className="v5-hero-bg" src={keyart} alt="" width={3072} height={300} loading="eager" decoding="async" fetchPriority="high" />
     <div className="v4-brand-lockup">
-      <img src={logo} alt="小小探險隊" style={{width:360,height:76,objectFit:'contain'}} onError={(e)=>{ (e.target as HTMLImageElement).style.display='none'; }} />
-      <div style={{display:'none'}}><strong>小小探險隊</strong><span>一起學習・一起長大</span></div>
+      <strong>小小探險隊</strong>
       <span className="v4-brand-subtitle">一起學習・一起長大</span>
     </div>
-    <div className="v4-hero-cast" aria-label="小小探險隊夥伴">
-      {children.map((child) => {
-        const reward = calculateRewards(progress?.[child.id]);
-        return <AvatarHero key={child.id} avatarId={child.avatar} xp={reward.xp} equippedCosmetics={progress?.[child.id]?.equippedCosmetics} size={86}/>;
-      })}
-      <div className="v4-robot-avatar"><GameImage src={`${import.meta.env.BASE_URL}assets/v40/characters/avatar-robot.webp`} alt="AI 學習夥伴" eager /><span className="v4-robot-face" aria-hidden="true"><i/><i/></span><span className="v4-robot-hand" aria-hidden="true"/></div>
-      <Rocket className="v4-floating-rocket" size={54}/>
-      <span className="v4-planet planet-one"/><span className="v4-planet planet-two"/>
+    <div className="v4-hero-cast v5-hero-layers" aria-label="小小探險隊夥伴">
+      <AnimatedMedia className="v5-hero-character brother" webm={`${base}animations/brother-idle.webm`} poster={`${base}animations/brother-idle-poster.webp`} alt="哥哥揮手眨眼" size={512}/>
+      <AnimatedMedia className="v5-hero-character younger" webm={`${base}animations/younger-idle.webm`} poster={`${base}animations/younger-idle-poster.webp`} alt="弟弟揮手眨眼" size={512}/>
+      <AnimatedMedia className="v5-hero-character robot" webm={`${base}animations/robot-idle.webm`} poster={`${base}animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光揮手" size={512}/>
     </div>
-    {onThemeChange && <div className="v5-header-theme" style={{width:350,height:82,display:'flex',gap:8,alignItems:'center',justifyContent:'flex-end'}}>{themes.map(t=> <button key={t.id} onClick={()=>onThemeChange(t.id)} title={t.name} style={{width:52,height:52,borderRadius:16,border: settings.visualTheme===t.id?'3px solid #FFD83D':'2px solid rgba(255,255,255,.35)',transform: settings.visualTheme===t.id?'scale(1.08)':'none',overflow:'hidden',padding:0,background:'#0A1F63'}}><GameImage src={`${import.meta.env.BASE_URL}assets/v40/themes/${art[t.id]}.webp`} alt={t.name} /></button>)}</div>}
+    <AnimatedMedia className="v5-rocket-flyby" webm={`${base}animations/rocket-flyby.webm`} poster={`${base}animations/rocket-flyby-poster.webp`} alt="探險火箭飛越基地" size={1536}/>
+    <div className="v5-header-controls">
+      {onThemeChange && <div className="v5-header-theme">{themes.map(t=> <button key={t.id} onClick={()=>onThemeChange(t.id)} title={t.name} className={settings.visualTheme===t.id?'active':''}><GameImage src={`${base}themes/${art[t.id]}-thumb.webp`} alt={t.name} /></button>)}</div>}
+      {onToggleSound && <button className="v5-sound-toggle" type="button" onClick={onToggleSound} aria-label={soundEnabled ? '關閉音效' : '開啟音效'} title={soundEnabled ? '關閉音效' : '開啟音效'}>{soundEnabled ? <Volume2/> : <VolumeX/>}</button>}
+    </div>
   </header>;
 }
 
 export function MainNavigation({ active, onNavigate, onParentArea }: { active: ViewKey; onNavigate: (view: ViewKey) => void; onParentArea: () => void }) {
   const items: Array<{ id: ViewKey; label: string; icon: React.ReactNode; nav3d: string; action?: () => void }> = [
-    { id: 'home', label: '首頁', icon: <Home/>, nav3d: 'home-3d' },
-    { id: 'today', label: '今日課程', icon: <Gamepad2/>, nav3d: 'book-3d' },
-    { id: 'semester', label: '學期日曆', icon: <CalendarDays/>, nav3d: 'calendar-3d' },
-    { id: 'achievements', label: '成就獎勵', icon: <Award/>, nav3d: 'star-3d' },
-    { id: 'report', label: '學習報表', icon: <BarChart3/>, nav3d: 'chart-3d', action: onParentArea },
-    { id: 'shop', label: '寶物商店', icon: <ShoppingBag/>, nav3d: 'chest-3d' },
+    { id: 'home', label: '首頁', icon: <Home/>, nav3d: 'home-3d-96' },
+    { id: 'today', label: '今日課程', icon: <Gamepad2/>, nav3d: 'book-3d-96' },
+    { id: 'semester', label: '學期日曆', icon: <CalendarDays/>, nav3d: 'calendar-3d-96' },
+    { id: 'achievements', label: '成就獎勵', icon: <Award/>, nav3d: 'star-3d-96' },
+    { id: 'report', label: '學習報表', icon: <BarChart3/>, nav3d: 'chart-3d-96', action: onParentArea },
+    { id: 'shop', label: '寶物商店', icon: <ShoppingBag/>, nav3d: 'chest-3d-96' },
   ];
   return <nav className="v4-main-navigation" aria-label="主要功能">{items.map((item, index) => <button key={`${item.label}-${index}`} className={active === item.id ? 'active' : ''} aria-current={active === item.id ? 'page' : undefined} onClick={item.action ?? (() => onNavigate(item.id))}><span style={{width:40,height:40,display:'grid',placeItems:'center'}}><img src={`${import.meta.env.BASE_URL}assets/v5/nav-icons/${item.nav3d}.webp`} alt="" width={40} height={40} style={{width:40,height:40,objectFit:'contain'}} onError={(e)=>{ (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden'); }} /><span className="hidden" style={{display:'none'}}><GameIcon tone={index === 3 ? 'purple' : index === 5 ? 'gold' : 'blue'}>{item.icon}</GameIcon></span></span><span>{item.label}</span></button>)}</nav>;
 }
@@ -117,11 +114,11 @@ function PlayerProfile({ settings, progress }: { settings: AppSettings; progress
   </section>;
 }
 
-function AICompanion({ todayDay, isDayDone, soundEnabled, onToggleSound }: { todayDay?: CourseDay; isDayDone: (day: CourseDay) => boolean; soundEnabled: boolean; onToggleSound: () => void }) {
+function AICompanion({ todayDay, isDayDone }: { todayDay?: CourseDay; isDayDone: (day: CourseDay) => boolean }) {
   const text = !todayDay ? '下一個冒險日還沒到，我會幫你守住基地！' : isDayDone(todayDay) ? '今天任務全部完成！明天再一起出發。' : '今天有新的冒險喔！兩堂課都在右邊等你。';
   const speak = () => { if (!('speechSynthesis' in window)) return; window.speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'zh-TW'; window.speechSynthesis.speak(u); };
   const mood = !todayDay ? 'guard' : isDayDone(todayDay) ? 'celebrate' : 'ready';
-  return <section className={`v4-panel v4-ai-companion mood-${mood}`}><div className="v4-ai-bot"><GameImage src={`${import.meta.env.BASE_URL}assets/v40/characters/avatar-robot.webp`} alt="AI 學習夥伴"/><span className="v4-robot-face" aria-hidden="true"><i/><i/></span><span className="v4-robot-hand" aria-hidden="true"/></div><div><span>AI LEARNING BUDDY</span><h3>小光</h3><p>{text}</p><div className="v4-ai-actions"><button onClick={speak}><Volume2/>聽我說</button><button onClick={onToggleSound}>{soundEnabled ? <Volume2/> : <VolumeX/>}{soundEnabled ? '音效開' : '音效關'}</button></div></div></section>;
+  return <section className={`v4-panel v4-ai-companion mood-${mood}`}><button type="button" className="v4-ai-bot v5-ai-bot" onClick={speak} aria-label="請小光說出今天的提示"><AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光" size={512}/></button><div><span>AI LEARNING BUDDY</span><h3>小光</h3><p>{text}</p><small className="v5-ai-hint">點小光聽提示</small></div></section>;
 }
 
 function SemesterCalendar({ trustedDate, courseDateKey, accessForDay, isDayDone }: Pick<DashboardProps,'trustedDate'|'courseDateKey'|'accessForDay'|'isDayDone'>) {
@@ -154,7 +151,13 @@ function SemesterOverviewPanel({ trustedDate, courseDateKey, accessForDay, isDay
 }
 
 function CharacterEvolution({ settings, progress }: { settings: AppSettings; progress: AppProgress }) {
-  return <section className="v4-panel v4-evolution-panel"><div className="v4-panel-title"><div><span>EVOLUTION</span><h2>角色成長</h2></div><GameIcon tone="purple"><Sparkles/></GameIcon></div><div className="v4-evolution-row">{settings.children.filter((c)=>!c.disabled).map((child)=>{ const r=playerResources(progress[child.id]); return <article key={child.id}><AvatarHero avatarId={child.avatar} xp={r.xp} size={94}/><div><strong>{child.name} · Lv.{r.level}</strong><span>{levelTitle(r.level)}</span><small>{r.level < 15 ? `Lv.${r.level + 1} 解鎖下一段成長` : '傳奇英雄已完成'}</small></div></article>; })}</div></section>;
+  const stages = [
+    { level: 1, label: '學習新手' },
+    { level: 5, label: '冒險勇者' },
+    { level: 10, label: '星際英雄' },
+    { level: 15, label: '傳奇英雄' },
+  ];
+  return <section className="v4-panel v4-evolution-panel"><div className="v4-panel-title"><div><span>EVOLUTION</span><h2>角色成長</h2></div><GameIcon tone="purple"><Sparkles/></GameIcon></div><div className="v4-evolution-row">{settings.children.filter((c)=>!c.disabled).map((child,index)=>{ const r=playerResources(progress[child.id]); const role=index===1||child.avatar==='rex'||child.avatar==='aqua'?'younger':'brother'; const current=r.level>=15?3:r.level>=10?2:r.level>=5?1:0; return <article className="v5-evolution-lane" key={child.id}><header><strong>{child.name}的進化</strong><span>Lv.{r.level} · {levelTitle(r.level)}</span></header><div className="v5-evolution-stages">{stages.map((stage,stageIndex)=><div className={`v5-evolution-stage ${stageIndex<current?'done':stageIndex===current?'current':'locked'}`} key={stage.level}>{stageIndex>0&&<ChevronRight className="v5-evolution-arrow"/>}<div><GameImage src={`${import.meta.env.BASE_URL}assets/v5/characters/${role}/stage-${stageIndex+1}-thumb.webp`} alt={`${child.name} Lv.${stage.level} ${stage.label}`}/>{stageIndex<current&&<Check className="v5-stage-check"/>}</div><small>Lv.{stage.level}</small><span>{stage.label}</span></div>)}</div></article>; })}</div></section>;
 }
 
 function BadgeShelf({ settings, progress, onNavigate }: { settings: AppSettings; progress: AppProgress; onNavigate: (view: ViewKey) => void }) {
@@ -163,10 +166,14 @@ function BadgeShelf({ settings, progress, onNavigate }: { settings: AppSettings;
 }
 
 function LessonMissionCard({ day, lessonIndex, access, verified, done, onOpen }: { day: CourseDay; lessonIndex: 0|1; access: CourseDayAccess; verified: boolean; done: boolean; onOpen: () => void }) {
-  const block = day.blocks[lessonIndex]; const locked = access !== 'today' || !verified;
-  return <article className={`v4-lesson-card ${done ? 'done' : ''} ${locked ? 'locked' : ''}`}>
-    <div className="v4-lesson-thumb"><GameImage src={youtubeThumb(block.video.videoId)} alt={`${block.title} YouTube 預覽`}/><span>{lessonIndex + 1}</span>{locked && <i><Lock/></i>}</div>
-    <div className="v4-lesson-content"><div className="v4-lesson-meta"><span>{subjectLabel(block.subject)}</span><small>{block.duration} min</small></div><h3>{block.title}</h3><p>課前歌曲：{block.warmup.title}</p><button disabled={locked || done} onClick={onOpen}>{done ? <><Check/> 已完成</> : locked ? <><Lock/> 尚未開放</> : <><Play/> 開始挑戰 <ChevronRight/></>}</button></div>
+  const block = day.blocks[lessonIndex]; const formal = access === 'today' && verified;
+  const action = done ? '查看內容' : formal ? '開始挑戰' : access === 'future' ? '課前預覽' : access === 'past' ? '複習內容' : '安全預覽';
+  const status = done ? '已完成' : formal ? '今日挑戰' : access === 'future' ? '可先準備' : access === 'past' ? '唯讀複習' : '不計獎勵';
+  return <article className={`v4-lesson-card ${done ? 'done' : ''} ${formal ? '' : 'preview'}`}>
+    <header className="v5-lesson-card-header"><strong>LESSON {lessonIndex + 1}</strong><span>{block.duration} min</span></header>
+    <div className="v5-lesson-card-body"><div className="v4-lesson-thumb"><GameImage src={youtubeThumb(block.video.videoId)} alt={`${block.title} YouTube 預覽`}/><span>{lessonIndex + 1}</span>{!formal && <i><BookOpen/></i>}</div>
+      <div className="v4-lesson-content"><div className="v4-lesson-meta"><span>{subjectLabel(block.subject)}</span><small>{status}</small></div><h3>{block.title}</h3><p>課前歌曲：{block.warmup.title}</p><button onClick={onOpen}>{done ? <><Check/> {action}</> : formal ? <><Play/> {action} <ChevronRight/></> : <><BookOpen/> {action} <ChevronRight/></>}</button></div>
+    </div>
   </article>;
 }
 
@@ -184,7 +191,7 @@ function TreasureChest({ day, settings, progress, isChildDayDone, access, verifi
     }, reduceMotion ? 120 : 1150);
   };
   return <section className={`v4-treasure-chest ${openingChildId ? 'is-opening' : ''}`}>
-    <div className={`v4-chest-visual ${openingChildId ? 'is-opening' : ''}`} aria-hidden="true">{openingChildId ? <Suspense fallback={<Gift/>}><TreasureLottie/></Suspense> : <><Gift/><span/><i/></>}</div>
+    <div className={`v4-chest-visual ${openingChildId ? 'is-opening' : ''}`} aria-hidden="true">{openingChildId ? <AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/rewards/treasure-open.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/rewards/treasure-open-poster.webp`} alt="寶箱打開" size={512} loop={false}/> : <GameImage src={`${import.meta.env.BASE_URL}assets/v5/nav-icons/chest-3d.webp`} alt="冒險寶箱"/>}</div>
     <div className="v4-chest-copy"><span>TREASURE DAY</span><h3>完成兩堂課，打開冒險寶箱</h3><p>寶箱獎勵每個孩子各自只能領一次。</p></div>
     <div className="v4-chest-learners">{learners.map((child)=>{ const done=isChildDayDone(child.id,day); const claimed=progress[child.id]?.claimedEggs?.includes(`egg-day-${day.index}`)??false; const canOpen=verified&&access==='today'&&done&&!claimed; const opening=openingChildId===child.id; return <button key={child.id} disabled={!canOpen||Boolean(openingChildId)} className={claimed?'claimed':opening?'opening':canOpen?'ready':'locked'} onClick={()=>beginOpen(child.id)}><AvatarHero avatarId={child.avatar} xp={calculateRewards(progress[child.id]).xp} size={42}/><span>{child.name}</span><strong>{claimed?'已開啟':opening?'開箱中…':done?'開寶箱':'完成兩堂後解鎖'}</strong>{claimed?<Check/>:opening?<Sparkles/>:canOpen?<Sparkles/>:<Lock/>}</button>; })}</div>
   </section>;
@@ -196,7 +203,7 @@ function DailyMissionPanel({ settings, progress, trustedDate, todayDay, featured
     <div className="v4-daily-progress"><div><span>今日完成</span><strong>{day.blocks.filter((block)=>settings.children.filter((c)=>!c.disabled).every((c)=>progress[c.id]?.completedBlocks.includes(block.id))).length} / 2</strong></div><div className="v4-mini-track"><i style={{width:`${day.blocks.filter((block)=>settings.children.filter((c)=>!c.disabled).every((c)=>progress[c.id]?.completedBlocks.includes(block.id))).length * 50}%`}}/></div></div>
     <div className="v4-lesson-list">{([0,1] as const).map((index)=> <LessonMissionCard key={day.blocks[index].id} day={day} lessonIndex={index} access={access} verified={trustedDate.verified} done={settings.children.filter((c)=>!c.disabled).every((child)=>progress[child.id]?.completedBlocks.includes(day.blocks[index].id))} onOpen={()=>onOpenLesson(day,index)}/>)}</div>
     <TreasureChest day={day} settings={settings} progress={progress} isChildDayDone={isChildDayDone} access={access} verified={trustedDate.verified} onClaimTreasure={onClaimTreasure}/>
-    {(!trustedDate.verified || access !== 'today') && <div className="v4-lock-note"><Lock/> {!trustedDate.verified ? '正在向伺服器確認 Asia/Taipei 日期；確認前不會開放課程或獎勵。' : '今天沒有可挑戰課程；未來課程會在台北時間 00:00 自動開放。'}</div>}
+    {(!trustedDate.verified || access !== 'today') && <div className="v4-lock-note"><BookOpen/> {!trustedDate.verified ? '正在向伺服器確認 Asia/Taipei 日期；現在可安全預覽內容，確認後才能正式計算獎勵。' : '此日課程可預覽／複習；只有台北時間當天完成學習才會寫入紀錄與獎勵。'}</div>}
   </section>;
 }
 
@@ -216,11 +223,11 @@ export default function V4Dashboard(props: DashboardProps) {
     .map((id) => `has-${id}`)
     .join(' ');
   return <div className={`v4-shell ${worldItemClasses}`} data-world-items={worldItemClasses}>
-    <AdventureHeader settings={props.settings} progress={props.progress} onThemeChange={props.onThemeChange}/>
+    <AdventureHeader settings={props.settings} progress={props.progress} onThemeChange={props.onThemeChange} soundEnabled={props.soundEnabled} onToggleSound={props.onToggleSound}/>
     <MainNavigation active={props.activeView} onNavigate={props.onNavigate} onParentArea={props.onParentArea}/>
     <main className="v4-dashboard-grid">
-      <aside className="v4-left-column"><PlayerProfile settings={props.settings} progress={props.progress}/><AICompanion todayDay={props.todayDay} isDayDone={props.isDayDone} soundEnabled={props.soundEnabled} onToggleSound={props.onToggleSound}/></aside>
-      <section className="v4-center-column"><SemesterOverviewPanel trustedDate={props.trustedDate} courseDateKey={props.courseDateKey} accessForDay={props.accessForDay} isDayDone={props.isDayDone} todayDay={props.todayDay} /><CharacterEvolution settings={props.settings} progress={props.progress}/><BadgeShelf settings={props.settings} progress={props.progress} onNavigate={props.onNavigate}/></section>
+      <aside className="v4-left-column"><PlayerProfile settings={props.settings} progress={props.progress}/><AICompanion todayDay={props.todayDay} isDayDone={props.isDayDone}/></aside>
+      <section className="v4-center-column"><SemesterOverviewPanel trustedDate={props.trustedDate} courseDateKey={props.courseDateKey} accessForDay={props.accessForDay} isDayDone={props.isDayDone} todayDay={props.todayDay}/><CharacterEvolution settings={props.settings} progress={props.progress}/><BadgeShelf settings={props.settings} progress={props.progress} onNavigate={props.onNavigate}/></section>
       <aside className="v4-right-column"><DailyMissionPanel settings={props.settings} progress={props.progress} trustedDate={props.trustedDate} todayDay={props.todayDay} featuredDay={props.featuredDay} accessForDay={props.accessForDay} isChildDayDone={props.isChildDayDone} onOpenLesson={props.onOpenLesson} onClaimTreasure={props.onClaimTreasure}/></aside>
     </main>
     <BottomStatusBar cloudStatus={props.cloudStatus} trustedDate={props.trustedDate}/>

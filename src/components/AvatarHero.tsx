@@ -46,8 +46,9 @@ export default function AvatarHero({ avatarId, xp = 0, size = 82, showStage = fa
     width: size,
     height: size,
   } as CSSProperties;
-  const stagedArt = `${id}-stage-${stage}.webp`;
-  const imageSrc = `${import.meta.env.BASE_URL}assets/v40/characters/${stagedArt}`;
+  const v5Role = id === 'rex' || id === 'aqua' ? 'younger' : 'brother';
+  const v5Stage = Math.min(4, stage);
+  const imageSrc = `${import.meta.env.BASE_URL}assets/v5/characters/${v5Role}/stage-${v5Stage}-thumb.webp`;
   const equippedItems = equippedCosmetics.map((cosmeticId) => cosmeticById.get(cosmeticId)).filter(Boolean) as Array<NonNullable<ReturnType<typeof cosmeticById.get>>>;
   const avatarSlots = new Set(['hairstyle','outfit','hat','glasses','backpack','cape','headphones']);
   const avatarItems = equippedItems.filter((item) => avatarSlots.has(item.slot));

@@ -10,12 +10,14 @@ export default function AnimatedMedia({
   alt,
   size = 512,
   loop = true,
+  className,
 }: {
   webm?: string;
   poster: string;
   alt: string;
   size?: number;
   loop?: boolean;
+  className?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   useEffect(() => {
@@ -33,11 +35,12 @@ export default function AnimatedMedia({
     return () => io.disconnect();
   }, []);
   if (!webm) {
-    return <img src={poster} alt={alt} width={size} height={size} loading="lazy" style={{ width: size, height: size, objectFit: 'contain' }} />;
+    return <img className={className} src={poster} alt={alt} width={size} height={size} loading="lazy" style={{ width: size, height: size, objectFit: 'contain' }} />;
   }
   return (
     <video
       ref={ref}
+      className={className}
       autoPlay
       muted
       loop={loop}

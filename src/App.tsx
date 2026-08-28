@@ -324,7 +324,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
       entries.forEach((entry) => entry.target.classList.toggle('v4-offscreen', !entry.isIntersecting));
     }, { rootMargin: '120px 0px' });
     const timer = window.setTimeout(() => {
-      document.querySelectorAll('.v4-ai-bot,.v4-floating-rocket,.v4-stars,.v4-chest-visual,.v4-reward-orbit').forEach((element) => observer.observe(element));
+      document.querySelectorAll('.v5-ai-bot,.v5-hero-character,.v5-rocket-flyby,.v4-chest-visual,.v4-reward-orbit').forEach((element) => observer.observe(element));
     }, 0);
     return () => { window.clearTimeout(timer); observer.disconnect(); };
   }, [view, selectedDayId, selectedLessonIndex]);
@@ -488,14 +488,13 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   const featuredDay = todayDay ?? nextDay;
 
   useEffect(() => {
-    if (!trustedDate.verified) return;
     const params = new URLSearchParams(window.location.search);
     const routeDayId = params.get('day');
     const routeLesson = Number(params.get('lesson'));
     if (!routeDayId) {
       if (selectedDayId && selectedLessonIndex !== null) {
         const selected = curriculum.find((day) => day.id === selectedDayId);
-        if (!selected || accessForDay(selected) !== 'today') {
+        if (!selected) {
           setSelectedDayId(null);
           setSelectedLessonIndex(null);
         }
@@ -504,52 +503,26 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     }
     const routeDay = curriculum.find((day) => day.id === routeDayId);
     const validLesson = routeLesson === 1 || routeLesson === 2;
-    if (!routeDay || !validLesson || accessForDay(routeDay) !== 'today') {
+    if (!routeDay || !validLesson) {
       window.history.replaceState({}, '', window.location.pathname);
       setSelectedDayId(null);
       setSelectedLessonIndex(null);
       return;
     }
-    setAttendance((current) => current[routeDay.id] ? current : { ...current, [routeDay.id]: enabledLearnerIds });
+    if (accessForDay(routeDay) === 'today') {
+      setAttendance((current) => current[routeDay.id] ? current : { ...current, [routeDay.id]: enabledLearnerIds });
+    }
     setSelectedDayId(routeDay.id);
     setSelectedLessonIndex((routeLesson - 1) as 0 | 1);
   }, [trustedDate.verified, trustedDate.ymd, settings.semesterStart]);
 
   const openLesson = (day: CourseDay, lessonIndex: 0 | 1) => {
-    if (!trustedDate.verified || accessForDay(day) !== 'today') return;
-    setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
+    if (accessForDay(day) === 'today') {
+      setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
+    }
     window.history.pushState({}, '', `${window.location.pathname}?day=${encodeURIComponent(day.id)}&lesson=${lessonIndex + 1}`);
     setSelectedLessonIndex(lessonIndex);
     setSelectedDayId(day.id);
-  };
-
-  const completeLessonStage = (day: CourseDay, block: LessonBlock, stage: number) => {
-    if (!canEarnToday(day) || stage < 0 || stage > 7) return;
-    const createdAt = new Date().toISOString();
-    setProgress((current) => {
-      let changed = false;
-      const next = { ...current };
-      participantIds(day).forEach((childId) => {
-        const child = normalizeProgress(current[childId]);
-        const transactionId = `v4-stage:${day.id}:${block.id}:${stage}:${childId}`;
-        if (child.rewardTransactions?.some((transaction) => transaction.id === transactionId)) return;
-        changed = true;
-        next[childId] = {
-          ...child,
-          rewardTransactions: [...(child.rewardTransactions ?? []), {
-            id: transactionId,
-            kind: 'stage',
-            sourceId: `${block.id}:stage-${stage + 1}`,
-            xp: 2,
-            coins: 0,
-            stars: 0,
-            gems: 0,
-            createdAt,
-          }],
-        };
-      });
-      return changed ? next : current;
-    });
   };
 
   const recordAnswer = (childId: string, day: CourseDay, block: LessonBlock, stage: number, target: string, answer: string, correct: boolean) => {
@@ -825,7 +798,6 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
           onAnswer={(childId, target, answer, correct, stage) => recordAnswer(childId, selectedDay, selectedDay.blocks[selectedLessonIndex], stage, target, answer, correct)}
           onToggleBlock={(childId, block) => toggleBlock(childId, selectedDay, block)}
           onClaimSpecialBonus={claimSpecialBonus}
-          onCompleteStage={(stage) => completeLessonStage(selectedDay, selectedDay.blocks[selectedLessonIndex], stage)}
           onBack={() => { window.history.replaceState({}, '', window.location.pathname); setSelectedLessonIndex(null); setSelectedDayId(null); }}
         />
         {v4Reward && <Suspense fallback={null}><RewardModal moment={v4Reward} onClose={() => setV4Reward(null)} /></Suspense>}

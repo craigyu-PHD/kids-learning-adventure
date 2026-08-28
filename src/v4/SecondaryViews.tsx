@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  Award, CalendarDays, Check, ChevronRight, Cloud, Coins, Gem, Gift, History, Lock,
+  Award, CalendarDays, Check, ChevronRight, Cloud, Coins, Gem, Gift, History,
   Rocket, ShieldCheck, ShoppingBag, Star, Trophy, Video, X, Zap,
 } from 'lucide-react';
 import { curriculum } from '../data/curriculum';
@@ -71,16 +71,19 @@ export function V4SemesterPage({ settings, progress, trustedDate, cloudStatus, c
 }) {
   const [historyDay,setHistoryDay]=useState<CourseDay|null>(null);
   return <V4PageShell settings={settings} progress={progress} active="semester" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea}>
-    <section className="v4-page-heading"><div><span>18 WEEKS · 90 DAYS</span><h1>學期日曆</h1><p>完成、今天、未來鎖定與歷史紀錄分流。只有 server verified 的今天能進入正式課程。</p></div><div className="v4-page-kpi"><GameIcon size="lg"><CalendarDays/></GameIcon><strong>{curriculum.filter(isDayDone).length}</strong><span>/ 90 完成</span></div></section>
+    <section className="v4-page-heading"><div><span>18 WEEKS · 90 DAYS</span><h1>學期日曆</h1><p>每一天都可以預覽兩堂課、讀取舊紀錄。只有 server verified 的今天完成任務與課程才會結算獎勵。</p></div><div className="v4-page-kpi"><GameIcon size="lg"><CalendarDays/></GameIcon><strong>{curriculum.filter(isDayDone).length}</strong><span>/ 90 完成</span></div></section>
     <div className="v4-semester-weeks">{Array.from({length:18},(_,weekIndex)=>{
       const days=curriculum.filter((day)=>day.week===weekIndex+1); const done=days.filter(isDayDone).length;
       return <section className="v4-week-strip" key={weekIndex}><header><span>WEEK {String(weekIndex+1).padStart(2,'0')}</span><h2>{days[0]?.theme}</h2><strong>{done}/5</strong></header><div>{days.map((day)=>{
         const access=accessForDay(day); const completed=isDayDone(day); const special=easterEggDays.has(day.index); const date=courseDateKey(day);
         return <article className={`v4-semester-day ${completed?'done':access} ${special?'special':''}`} key={day.id}>
-          <div className="v4-semester-orb">{completed?<Check/>:access==='today'?<Rocket/>:access==='future'?<Lock/>:<History/>}</div>
+          <div className="v4-semester-orb">{completed?<Check/>:access==='today'?<Rocket/>:access==='future'?<Video/>:<History/>}</div>
           <strong>Day {day.index}</strong><span>{formatTaipeiCourseDate(date)}</span><small>{completed?'已完成':access==='today'?'今日課程':access==='future'?'尚未開放':'歷史紀錄'}</small>{special&&<b><Gift/></b>}
-          {access==='today'&&trustedDate.verified&&<button onClick={()=>onOpenLesson(day,0)}>開始第一節 <ChevronRight/></button>}
-          {access==='past'&&<button className="history" onClick={()=>setHistoryDay(day)}>查看紀錄 <History/></button>}
+          <div className="v4-semester-actions">
+            <button onClick={()=>onOpenLesson(day,0)}>{access==='today'&&trustedDate.verified?'開始第 1 節':'預覽第 1 節'} <ChevronRight/></button>
+            <button className="secondary" onClick={()=>onOpenLesson(day,1)}>{access==='today'&&trustedDate.verified?'開始第 2 節':'預覽第 2 節'} <ChevronRight/></button>
+            {access==='past'&&<button className="history" onClick={()=>setHistoryDay(day)}>學習紀錄 <History/></button>}
+          </div>
         </article>;
       })}</div></section>;
     })}</div>
@@ -102,7 +105,7 @@ export function V4ShopPage({ settings, progress, trustedDate, cloudStatus, onNav
       const p=progress[child.id]; const reward=calculateRewards(p); const owned=new Set(p?.unlockedCosmetics??[]); const equipped=new Set(p?.equippedCosmetics??[]); const level=Math.min(15,levelFromXp(reward.xp));
       return <section className="v4-shop-card" key={child.id}><header><AvatarHero avatarId={child.avatar} xp={reward.xp} equippedCosmetics={p?.equippedCosmetics} size={120}/><div><span>SHOPPING FOR</span><h2>{child.name}</h2><p>Lv.{level} · {levelTitle(level)}</p></div><div className="v4-wallet"><Coins/><strong>{reward.coins}</strong><span>Coins</span></div></header><div className="v4-shop-grid">{cosmetics.map((item)=>{
         const has=owned.has(item.id); const using=equipped.has(item.id); const canBuy=reward.coins>=item.cost&&level>=item.unlockLevel;
-        return <article key={item.id} className={`${has?'owned':''} ${using?'equipped':''} rarity-${item.rarity??'common'}`}><div className={`v4-item-art slot-${item.slot}`}><GameImage src={`${import.meta.env.BASE_URL}assets/v40/items/${item.id}.webp`} alt={item.name}/></div><span>{item.rarity??'common'}</span><h3>{item.name}</h3><p>{item.description}</p><small>Lv.{item.unlockLevel} · {shopSlotLabels[item.slot] ?? item.slot}</small>{has?<button onClick={()=>onToggle(child.id,item.id)}>{using?'卸下':'立即裝備'}</button>:<button disabled={!canBuy} onClick={()=>onUnlock(child.id,item.id)}><Coins/>{item.cost} {canBuy?'購買':'尚未解鎖'}</button>}</article>;
+        return <article key={item.id} className={`${has?'owned':''} ${using?'equipped':''} rarity-${item.rarity??'common'}`}><div className={`v4-item-art slot-${item.slot}`}><GameImage src={`${import.meta.env.BASE_URL}assets/v5/items/${item.id}.webp`} alt={item.name}/></div><span>{item.rarity??'common'}</span><h3>{item.name}</h3><p>{item.description}</p><small>Lv.{item.unlockLevel} · {shopSlotLabels[item.slot] ?? item.slot}</small>{has?<button onClick={()=>onToggle(child.id,item.id)}>{using?'卸下':'立即裝備'}</button>:<button disabled={!canBuy} onClick={()=>onUnlock(child.id,item.id)}><Coins/>{item.cost} {canBuy?'購買':'尚未解鎖'}</button>}</article>;
       })}</div></section>;
     })}</div>
   </V4PageShell>;

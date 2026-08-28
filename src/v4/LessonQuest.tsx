@@ -59,7 +59,6 @@ type Props = {
   onAnswer: (childId: string, target: string, answer: string, correct: boolean, stage: number) => void;
   onToggleBlock: (childId: string, block: LessonBlock) => void;
   onClaimSpecialBonus: (childId: string, day: CourseDay) => void;
-  onCompleteStage: (stage: number) => void;
   onBack: () => void;
 };
 
@@ -100,7 +99,7 @@ export default function LessonQuest(props: Props) {
     props.onUpdateReflection({ lessonStages });
   };
   const stageReady = (index: number) => {
-    if (!formal) return props.access === 'past';
+    if (!formal) return true;
     if (index === 5 && missionOne) return learnerList.every((child) => props.progress[child.id]?.completedMissions.includes(missionOne.id));
     if (index === 6 && missionTwo) return learnerList.every((child) => props.progress[child.id]?.completedMissions.includes(missionTwo.id));
     if (index === 7) return allLearnersBlockDone;
@@ -109,7 +108,6 @@ export default function LessonQuest(props: Props) {
   const next = () => {
     if (!stageReady(stage)) return;
     persistStage(stage);
-    props.onCompleteStage(stage);
     setStage((current) => {
       const nextStage = Math.min(8, current + 1);
       setHighestStage((highest) => Math.max(highest, nextStage));
@@ -122,21 +120,21 @@ export default function LessonQuest(props: Props) {
 
   return <div className="v4-quest-shell">
     <header className="v4-quest-header">
-      <button className="v4-quest-back" onClick={props.onBack}><ArrowLeft/> 返回今日課程</button>
+      <button className="v4-quest-back" onClick={props.onBack}><ArrowLeft/> 返回課程總覽</button>
       <div className="v4-quest-title"><span>DAY {props.day.index} · LESSON {props.lessonIndex + 1} · {subjectLabel(block.subject)}</span><h1>{block.title}</h1><p>{props.day.bigIdea}</p></div>
-      <div className={`v4-quest-mode ${formal ? 'today' : 'locked'}`}>{formal ? <><Rocket/> 今日挑戰</> : <><Lock/> {props.access === 'past' ? '歷史紀錄' : '尚未開放'}</>}</div>
+      <div className={`v4-quest-mode ${formal ? 'today' : 'preview'}`}>{formal ? <><Rocket/> 今日挑戰</> : <><BookOpen/> {props.access === 'past' ? '歷史複習' : props.access === 'future' ? '課前預覽' : '安全預覽'}</>}</div>
     </header>
 
     <div className="v4-quest-progress"><div><span>關卡 {stage + 1} / 9</span><strong>{STAGES[stage].title}</strong></div><div className="v4-quest-track"><i style={{width:`${stagePct}%`}}/></div><b>{stagePct}%</b></div>
 
     <nav className="v4-stage-map" aria-label="課程九關">{STAGES.map((item,index)=>{ const Icon=item.icon; const done=stageComplete(index); const locked=formal && index>highestStage; return <button key={item.short} disabled={locked} className={`${stage===index?'active':''} ${done?'done':''} ${locked?'locked':''}`} onClick={()=>!locked&&setStage(index)}><span>{done?<Check/>:locked?<Lock/>:index+1}</span><Icon/><small>{item.short}</small></button>; })}</nav>
 
-    {!formal && <div className="v4-quest-lock-banner"><Lock/><div><strong>{props.access === 'past' ? '這堂課已結束，不能重新挑戰。' : '這堂課尚未開放。'}</strong><span>{props.access === 'past' ? '可查看既有得分、星星、徽章與學習紀錄；不會再次發放獎勵。' : `只有 ${props.dateKey} 台北時間 00:00–23:59:59 可以正式進入。`}</span></div></div>}
+    {!formal && <div className="v4-quest-lock-banner"><BookOpen/><div><strong>{props.access === 'past' ? '這是歷史複習：可完整查看內容與既有紀錄。' : props.access === 'future' ? '這是課前預覽：可先準備影片、單字與帶課提示。' : '日期尚在確認中：目前僅提供安全預覽。'}</strong><span>預覽與複習不會寫入任務、作答、完成紀錄或任何 XP／Coins；只有台北時間當天完成兩個任務及整堂課才會結算。</span></div></div>}
 
     <main className="v4-quest-stage-card">
       {stage === 0 && <section className="v4-stage-content"><StageHeading icon={<Headphones/>} eyebrow="STAGE 1" title="唱歌暖身" text="原課前歌曲完整保留。先用動作與節奏把孩子帶進狀態。"/><div className="v4-video-frame"><iframe src={videoSrc(block.warmup.videoId, block.warmup.start, block.warmup.end)} title={block.warmup.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen/><div><strong>{block.warmup.title}</strong><span>{block.warmup.channel}</span></div></div><CaregiverCallout block={block}/></section>}
 
-      {stage === 1 && <section className="v4-stage-content"><StageHeading icon={<BookOpen/>} eyebrow="STAGE 2" title="單字預覽" text="每個單字都能直接播放英文發音。"/><div className="v4-word-grid">{block.vocabulary.map((word)=><button key={word} onClick={()=>speak(word)}><GameImage src={`${import.meta.env.BASE_URL}assets/v40/vocab/${slug(word)}.webp`} alt={word} className="v4-vocab-image"/><strong>{word}</strong><span><Volume2/> Listen</span></button>)}</div></section>}
+      {stage === 1 && <section className="v4-stage-content"><StageHeading icon={<BookOpen/>} eyebrow="STAGE 2" title="單字預覽" text="每個單字都能直接播放英文發音。"/><div className="v4-word-grid">{block.vocabulary.map((word)=><button key={word} onClick={()=>speak(word)}><GameImage src={`${import.meta.env.BASE_URL}assets/v5/vocab/${slug(word)}.webp`} alt={word} className="v4-vocab-image"/><strong>{word}</strong><span><Volume2/> Listen</span></button>)}</div></section>}
 
       {stage === 2 && <section className="v4-stage-content"><StageHeading icon={<Play/>} eyebrow="STAGE 3" title="觀看主課影片" text={`教學焦點：${block.videoFocus}`}/><div className="v4-video-frame main"><iframe src={videoSrc(block.video.videoId, block.video.start, block.video.end)} title={block.video.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen/><div><strong>{block.video.title}</strong><span>{block.video.channel}</span></div></div></section>}
 
@@ -147,12 +145,12 @@ export default function LessonQuest(props: Props) {
       {stage === 5 && <MissionStage mission={missionOne} number={1} stage={5} vocabulary={block.vocabulary} blockId={block.id} learners={learnerList} progress={props.progress} formal={formal} onToggle={props.onToggleMission} onAnswer={props.onAnswer}/>}
       {stage === 6 && <MissionStage mission={missionTwo} number={2} stage={6} vocabulary={block.vocabulary} blockId={block.id} learners={learnerList} progress={props.progress} formal={formal} onToggle={props.onToggleMission} onAnswer={props.onAnswer}/>}
 
-      {stage === 7 && <section className="v4-stage-content"><StageHeading icon={<CheckCircle2/>} eyebrow="STAGE 8" title="完成任務" text="兩個互動任務都完成後，才可以正式完成本堂課。"/><div className="v4-finish-grid">{learnerList.map((child)=>{ const p=normalizeProgress(props.progress[child.id]); const ready=block.missions.every((mission)=>p.completedMissions.includes(mission.id)); const done=p.completedBlocks.includes(block.id); const rewards=calculateRewards(p); return <button key={child.id} className={done?'done':''} disabled={!formal||!ready||done} onClick={()=>props.onToggleBlock(child.id,block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={72}/><div><strong>{child.name}</strong><span>{done?'本堂課已完成':ready?'可以完成並領獎':'還有任務未完成'}</span></div>{done?<CheckCircle2/>:<Trophy/>}</button>; })}</div><CaregiverCallout block={block}/></section>}
+      {stage === 7 && <section className="v4-stage-content"><StageHeading icon={<CheckCircle2/>} eyebrow="STAGE 8" title="完成任務" text={formal ? '兩個互動任務都完成後，才可以正式完成本堂課並結算 XP／Coins。' : '預覽模式可先閱讀完成標準；今天正式完成後才會結算 XP／Coins。'}/><div className="v4-finish-grid">{learnerList.map((child)=>{ const p=normalizeProgress(props.progress[child.id]); const ready=block.missions.every((mission)=>p.completedMissions.includes(mission.id)); const done=p.completedBlocks.includes(block.id); const rewards=calculateRewards(p); return <button key={child.id} className={done?'done':''} disabled={!formal||!ready||done} onClick={()=>props.onToggleBlock(child.id,block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={72}/><div><strong>{child.name}</strong><span>{done?'本堂課已完成':formal&&ready?'完成後結算獎勵':formal?'還有任務未完成':'今天完成後可結算'}</span></div>{done?<CheckCircle2/>:<Trophy/>}</button>; })}</div><CaregiverCallout block={block}/></section>}
 
-      {stage === 8 && <section className="v4-stage-content v4-reward-stage"><StageHeading icon={<Gift/>} eyebrow="STAGE 9" title="領取獎勵" text="完成紀錄是唯一發獎依據；重新整理或重進本頁不會再次領取。"/><div className="v4-reward-podium"><div className="v4-reward-orbit"><Star/><Sparkles/><Trophy/></div><h2>{allLearnersBlockDone ? 'Mission Complete!' : '完成上一關後就能領獎'}</h2><div className="v4-reward-values"><span><Zap/> +{totalMissionReward.xp} XP</span><span><Coins/> +{totalMissionReward.coins} Coins</span><span><Star/> Stars</span></div><p>{allLearnersBlockDone ? '這堂課的完成紀錄已安全保存；正確率 Bonus 會在完成本堂時自動結算。' : '獎勵按每位孩子自己的完成紀錄獨立計算。'}</p></div><div className="v4-special-task"><div><span>SPECIAL BONUS</span><h3>{props.day.bonus}</h3><p>完成今天兩堂課後即可領取一次特殊任務獎勵。</p><strong>+{SPECIAL_TASK_BONUS.xp} XP · +{SPECIAL_TASK_BONUS.coins} Coins · +{SPECIAL_TASK_BONUS.stars} Star · +{SPECIAL_TASK_BONUS.gems} Gem</strong></div><div>{learnerList.map((child)=>{ const p=normalizeProgress(props.progress[child.id]); const dayDone=props.day.blocks.every((item)=>p.completedBlocks.includes(item.id)); const claimed=p.rewardTransactions?.some((transaction)=>transaction.id===`v4-special:${props.day.id}:${child.id}`)??false; return <button key={child.id} type="button" disabled={!formal||!dayDone||claimed} className={claimed?'done':''} onClick={()=>props.onClaimSpecialBonus(child.id,props.day)}><AvatarHero avatarId={child.avatar} xp={calculateRewards(p).xp} size={48}/><span>{child.name}</span><strong>{claimed?'已領取':dayDone?'完成加碼任務':'完成兩堂後解鎖'}</strong>{claimed?<Check/>:<Gift/>}</button>; })}</div></div></section>}
+      {stage === 8 && <section className="v4-stage-content v4-reward-stage"><StageHeading icon={<Gift/>} eyebrow="STAGE 9" title="領取獎勵" text="完成紀錄是唯一發獎依據；重新整理或重進本頁不會再次領取。"/><div className="v4-reward-podium"><div className="v4-reward-orbit"><Star/><Sparkles/><Trophy/></div><h2>{!formal ? 'Preview Only' : allLearnersBlockDone ? 'Mission Complete!' : '完成上一關後就能領獎'}</h2><div className="v4-reward-values"><span><Zap/> +{totalMissionReward.xp} XP</span><span><Coins/> +{totalMissionReward.coins} Coins</span><span><Star/> Stars</span></div><p>{!formal ? '這裡只展示今天正式完成後可取得的獎勵；目前不會寫入任何紀錄。' : allLearnersBlockDone ? '這堂課的完成紀錄已安全保存；正確率 Bonus 會在完成本堂時自動結算。' : '獎勵按每位孩子自己的完成紀錄獨立計算。'}</p></div><div className="v4-special-task"><div><span>SPECIAL BONUS</span><h3>{props.day.bonus}</h3><p>完成今天兩堂課後即可領取一次特殊任務獎勵。</p><strong>+{SPECIAL_TASK_BONUS.xp} XP · +{SPECIAL_TASK_BONUS.coins} Coins · +{SPECIAL_TASK_BONUS.stars} Star · +{SPECIAL_TASK_BONUS.gems} Gem</strong></div><div>{learnerList.map((child)=>{ const p=normalizeProgress(props.progress[child.id]); const dayDone=props.day.blocks.every((item)=>p.completedBlocks.includes(item.id)); const claimed=p.rewardTransactions?.some((transaction)=>transaction.id===`v4-special:${props.day.id}:${child.id}`)??false; return <button key={child.id} type="button" disabled={!formal||!dayDone||claimed} className={claimed?'done':''} onClick={()=>props.onClaimSpecialBonus(child.id,props.day)}><AvatarHero avatarId={child.avatar} xp={calculateRewards(p).xp} size={48}/><span>{child.name}</span><strong>{claimed?'已領取':dayDone&&formal?'完成加碼任務':formal?'完成兩堂後解鎖':'今天完成兩堂後解鎖'}</strong>{claimed?<Check/>:<Gift/>}</button>; })}</div></div></section>}
     </main>
 
-    <div className="v4-quest-controls"><button onClick={prev} disabled={stage===0}><ChevronLeft/> 上一關</button><div><span>{STAGES[stage].short}</span><strong>{STAGES[stage].title}</strong></div>{stage<8?<button className="primary" onClick={next} disabled={(!formal && props.access !== 'past') || !stageReady(stage)}>{stageReady(stage) ? '完成這關' : '先完成本關任務'} <ChevronRight/></button>:<button className="primary" onClick={props.onBack}>回今日課程 <Rocket/></button>}</div>
+    <div className="v4-quest-controls"><button onClick={prev} disabled={stage===0}><ChevronLeft/> 上一關</button><div><span>{STAGES[stage].short}</span><strong>{STAGES[stage].title}</strong></div>{stage<8?<button className="primary" onClick={next} disabled={!stageReady(stage)}>{formal ? (stageReady(stage) ? '完成這關' : '先完成本關任務') : '下一關'} <ChevronRight/></button>:<button className="primary" onClick={props.onBack}>回課程總覽 <Rocket/></button>}</div>
   </div>;
 }
 

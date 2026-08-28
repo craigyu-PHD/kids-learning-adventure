@@ -18,14 +18,15 @@
 - 弟弟: Lv.1 小探险家 → Lv.5 小勇士 → Lv.10 星际骑士 → Lv.15 宇宙英雄
 - 每阶段改 服装/肩甲/鞋子/背包/胸徽/特效/姿势，脸不变
 
-## 占位策略（过渡期）
-- V5 未完成前，V4 `public/assets/v40/characters/{nova,rex}-stage-*.webp` 暂作 Master Reference，不再用 Pillow 重绘
-- 已建立 `public/assets/v5/characters/{brother,younger,robot}/` 并复制 V40 Master 作占位，后续以 AI/Blender 替换
-- 正式验收需满足：相同 Render Style/Camera/Light/Shadow/Saturation/比例，无白边裁切乱字
+## V5.1 實作狀態
+- 正式 Master Sheet 已由 ChatGPT Image 參考角色正面重製，另以 macOS Vision 做前景遮罩；不再以 V40 角色檔冒充 V5 Master。
+- 每個角色保留 2048×2048 transparent WebP 與 lossless PNG，並拆出 1024×1024 角度／表情檔。
+- Idle 是實際 VP9 WebM 影格與透明通道，但屬 2.5D 關鍵幀動畫，不宣稱為 Blender 骨架動畫。
+- 正式驗收仍需滿足：相同 Render Style/Camera/Light/Shadow/Saturation/比例，無白邊、裁切、亂字。
 
 ## 任务清单
-- [ ] Brother Master Sheet 5角度×5表情
-- [ ] Younger Master Sheet 5角度×5表情
-- [ ] Robot Master Sheet 5角度×3表情
-- [ ] WebM Idle (512/24fps/4-5s) 呼吸眨眼挥手漂浮
-- [ ] 迁移后删除 V40 依赖，仅保留 V5
+- [x] Brother Master Sheet 5角度×5表情
+- [x] Younger Master Sheet 5角度×5表情
+- [x] Robot Master Sheet 5角度×3表情
+- [x] WebM Idle (512/24fps/4s) 2.5D 呼吸／眨眼／揮手／漂浮
+- [x] V5 可見 runtime source 的 V40 依賴歸零
