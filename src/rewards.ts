@@ -88,13 +88,11 @@ export function levelFromXp(xp: number) {
   return Math.max(1, Math.floor(xp / 220) + 1);
 }
 
-export const avatarStageNames = ['Little Explorer', 'Adventure Rookie', 'Star Explorer', 'Adventure Master', 'Legendary Explorer'] as const;
-// V4 visual evolution aligns major transformations with Lv.1 / Lv.5 / Lv.10 / Lv.15.
-// Stage 4 is an additional late-game upgrade before the Lv.15 Legendary form.
-export const avatarStageThresholds = [0, 880, 1980, 2640, 3080] as const;
+export const avatarStageNames: readonly string[] = ['Little Explorer', 'Adventure Rookie', 'Star Explorer', 'Legendary Explorer'];
+// V5.3 uses the four images that actually exist: Lv.1 / Lv.5 / Lv.10 / Lv.15.
+export const avatarStageThresholds: readonly number[] = [0, 880, 1980, 3080];
 
 export function avatarStageFromXp(xp: number) {
-  if (xp >= avatarStageThresholds[4]) return 5;
   if (xp >= avatarStageThresholds[3]) return 4;
   if (xp >= avatarStageThresholds[2]) return 3;
   if (xp >= avatarStageThresholds[1]) return 2;

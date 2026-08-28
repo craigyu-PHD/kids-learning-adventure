@@ -61,7 +61,7 @@ def require_unique(label: str, paths: list[Path]) -> None:
         passed(f"{label} SHA uniqueness {len(paths)}/{len(paths)}")
 
 
-print("V5.1 Art Asset Replacement QA")
+print("V5.3 Visual Finish QA")
 print("=" * 36)
 
 nav_names = ["home", "book", "calendar", "star", "chart", "chest"]
@@ -89,6 +89,20 @@ for name, path in zip(theme_names, theme_paths, strict=True):
         fail(f"{path.name} duplicates V40")
 if not any("duplicates V40" in item for item in FAILURES):
     passed("V5 theme SHA differs from V40 5/5")
+
+logo = V5 / "brand" / "little-explorers-logo-v2.webp"
+weekly_robot = V5 / "brand" / "weekly-rocket-robot.webp"
+if require_file(logo, 20_000) and require_file(weekly_robot, 20_000):
+    with Image.open(logo) as image:
+        if image.width < 1200 or image.height < 300 or image.convert("RGBA").getchannel("A").getextrema()[0] != 0:
+            fail("V5 brand logo must be a large transparent production asset")
+        else:
+            passed("V5 3D brand logo is large and transparent")
+    with Image.open(weekly_robot) as image:
+        if image.width < 800 or image.height < 800 or image.convert("RGBA").getchannel("A").getextrema()[0] != 0:
+            fail("V5 weekly rocket robot must be a large transparent production asset")
+        else:
+            passed("V5 weekly rocket robot is large and transparent")
 
 legacy_character_hashes = {digest(path) for path in (V40 / "characters").glob("*.webp")}
 for role in ("brother", "younger", "robot"):
@@ -139,6 +153,7 @@ webm_specs = {
     "animations/robot-idle.webm": 100_000,
     "animations/rocket-flyby.webm": 30_000,
     "rewards/treasure-open.webm": 100_000,
+    "animations/weekly-rocket-robot.webm": 100_000,
 }
 webm_paths: list[Path] = []
 for relative, minimum in webm_specs.items():
@@ -174,6 +189,11 @@ required_dom_tokens = [
     "treasure-open.webm",
     "themes/${art[t.id]}-thumb.webp",
     "-3d-96",
+    "little-explorers-logo-v2.webp",
+    "weekly-rocket-robot.webp",
+    "weekly-rocket-robot.webm",
+    "v53-date-strip",
+    "v53-parent-status",
 ]
 for token in required_dom_tokens:
     if token not in dashboard:
@@ -193,21 +213,23 @@ else:
 
 preview_tokens = [
     "const openLesson = (day: CourseDay, lessonIndex: 0 | 1) => {",
-    "props.access === 'future' ? '課前預覽'",
-    "課前預覽：可先準備影片、單字與帶課提示。",
-    "預覽與複習不會寫入任務、作答、完成紀錄或任何 XP／Coins",
+    "access !== 'today' && !adminUnlocked",
+    "parentPreviewUnlocked",
+    "ChildTeaserPanel",
+    "showLessonDetails={parentPreviewUnlocked}",
+    "完整教材由家長 PIN 模式保護",
     "v4-semester-actions",
 ]
 preview_source = "\n".join([app, dashboard, lesson_quest, semester])
 if all(token in preview_source for token in preview_tokens):
-    passed("future preview and past review are explicit no-write flows")
+    passed("parent preview and child teaser/review access boundary is explicit")
 else:
-    fail("content preview/review source contract is incomplete")
+    fail("parent preview / child teaser source contract is incomplete")
 
 print("=" * 36)
 if FAILURES:
-    print(f"V5.1 ART QA FAIL ({len(FAILURES)} failures)")
+    print(f"V5.3 VISUAL QA FAIL ({len(FAILURES)} failures)")
     for item in FAILURES:
         print(f" - {item}")
     sys.exit(1)
-print("V5.1 ART QA PASS")
+print("V5.3 VISUAL QA PASS")

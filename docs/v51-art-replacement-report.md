@@ -11,6 +11,22 @@
 - 移除了「切換課程關卡即送 XP」的舊行為，避免只瀏覽內容就獲得獎勵。
 - 課程卡改為語意清楚的 header + two-column body；縮圖、文字、狀態與操作各有固定欄位。玩家卡、AI 區與角色成長區亦補上圖片安全欄位及小尺寸文字截斷，避免圖片覆蓋文字。
 
+## V5.3 Visual Finish（2026-08-28，本機驗收）
+
+- 家長與孩子的瀏覽權限已重新切開：孩子的未來日只可看到主題、學科與開放日期提示；過去日只看自己的完成成果。家長以 PIN 解鎖後，才可完整預覽未來 90 天教材，以及回看過去教案。`App.tsx` 也會拒絕未解鎖家長直接輸入未來／過去課程 URL。
+- 今天仍是唯一可建立出席、作答、任務完成與 XP／Coins／徽章獎勵的日期；家長預覽路徑沒有任何寫入入口。
+- Header 改用新產製的透明 3D「小小探險隊」品牌 Logo，右上新增照顧者姓名、PIN 狀態與設定入口，所有 secondary pages 亦顯示同一狀態並可開啟 PIN 對話框。Logo 為 production WebP；Weekly Robot Rocket 另有可播放、reduced-motion 可停用的 VP9 WebM 與 WebP poster。
+- Avatar 資料模型不再保留「六個 ID、兩張臉」的假選擇：正式角色為哥哥／弟弟兩種；舊 ID 在讀取時會相容映射。角色成長、圖片與門檻統一為 Lv.1／5／10／15 的四階，移除不存在圖片的 Stage 5 語意。
+- 首頁新增家庭冒險等級卡；個人 Player Card 僅保留 XP 與 Coins。Weekly Progress 加入原創 Robot Rocket 圖，課程卡加上 18:30–19:00／19:05–19:35 時段，日期條改為日期／星期／Day，Hidden Reward 每天都可見。
+- 文字安全欄位再次加強：Evolution、Lesson source／status 與 lock note 最低為 11px；Lesson Card 維持真正 header + two-column body，圖片和文字不共用格位。
+
+### V5.3 QA 證據
+
+- `npm run qa:strict`、`npm run build`：PASS。
+- `npm run qa:v51:art`：PASS；新增驗證品牌 Logo、Weekly Rocket Robot、四階角色與家長／孩子內容邊界來源契約。
+- `npm run qa:v51:browser`：PASS；1536×1024、820×1180、390×844 均無 broken images、Bopomofo 或 horizontal overflow。Child mode 實測未來只開啟 teaser、過去只開啟成果；家長以 PIN 解鎖後實測可打開未來與過去完整九關內容；上述唯讀路徑均未改寫 progress。Weekly Robot Rocket WebM 亦實測解碼、reduced-motion 暫停。
+- 本輪畫面由 `qa/screenshots/v51/` 重新輸出並人工檢視；自動 QA 的 PASS 是行為與回歸證據，不將它等同於人類美術滿分。
+
 ## 十二項結果
 
 1. 六枚 Nav Icon 已重製為不同的 512×512 transparent WebP；SHA 6/6 unique。

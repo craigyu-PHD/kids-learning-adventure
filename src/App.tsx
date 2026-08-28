@@ -503,7 +503,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     }
     const routeDay = curriculum.find((day) => day.id === routeDayId);
     const validLesson = routeLesson === 1 || routeLesson === 2;
-    if (!routeDay || !validLesson) {
+    if (!routeDay || !validLesson || (accessForDay(routeDay) !== 'today' && !adminUnlocked)) {
       window.history.replaceState({}, '', window.location.pathname);
       setSelectedDayId(null);
       setSelectedLessonIndex(null);
@@ -514,10 +514,12 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     }
     setSelectedDayId(routeDay.id);
     setSelectedLessonIndex((routeLesson - 1) as 0 | 1);
-  }, [trustedDate.verified, trustedDate.ymd, settings.semesterStart]);
+  }, [trustedDate.verified, trustedDate.ymd, settings.semesterStart, adminUnlocked]);
 
   const openLesson = (day: CourseDay, lessonIndex: 0 | 1) => {
-    if (accessForDay(day) === 'today') {
+    const access = accessForDay(day);
+    if (access !== 'today' && !adminUnlocked) return;
+    if (access === 'today') {
       setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
     }
     window.history.pushState({}, '', `${window.location.pathname}?day=${encodeURIComponent(day.id)}&lesson=${lessonIndex + 1}`);
@@ -775,6 +777,13 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     setUserPromptOpen(false);
   };
 
+  const activeUser = activeUserId ? settings.users.find((user) => user.id === activeUserId) : undefined;
+  const accessDialogs = <>
+    {adminPromptOpen && !isLocalFamily && <AdminPinDialog onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
+    {familySetupOpen && isLocalFamily && <FamilySetupDialog onSetPin={promoteLocalFamily} onClose={() => setFamilySetupOpen(false)} />}
+    {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
+  </>;
+
   const navigateV4 = (nextView: V4ViewKey) => {
     if (nextView === 'report') requestParentArea();
     else setView(nextView);
@@ -834,22 +843,22 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
           })}
           onThemeChange={(visualTheme) => setSettings((current) => ({ ...current, visualTheme }))}
           onClaimTreasure={claimEgg}
+          activeUser={activeUser}
+          parentPreviewUnlocked={adminUnlocked}
         />
         {v4Reward && <Suspense fallback={null}><RewardModal moment={v4Reward} onClose={() => setV4Reward(null)} /></Suspense>}
-        {adminPromptOpen && !isLocalFamily && <AdminPinDialog onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
-        {familySetupOpen && isLocalFamily && <FamilySetupDialog onSetPin={promoteLocalFamily} onClose={() => setFamilySetupOpen(false)} />}
-        {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
+        {accessDialogs}
       </>
     );
   }
 
-  if (view === 'semester') return <V4SemesterPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} onOpenLesson={openLesson} onNavigate={navigateV4} onParentArea={requestParentArea} />;
-  if (view === 'achievements') return <V4AchievementsPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} />;
-  if (view === 'shop') return <V4ShopPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} onUnlock={unlockCosmetic} onToggle={toggleCosmetic} />;
-  if (view === 'report') return <V4ReportPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} isChildDayDone={isChildDayDone} onNavigate={navigateV4} onParentArea={requestParentArea} onSettings={requestSettings} />;
+  if (view === 'semester') return <><V4SemesterPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} onOpenLesson={openLesson} onNavigate={navigateV4} onParentArea={requestParentArea} parentPreviewUnlocked={adminUnlocked} activeUser={activeUser} />{accessDialogs}</>;
+  if (view === 'achievements') return <><V4AchievementsPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
+  if (view === 'shop') return <><V4ShopPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} onUnlock={unlockCosmetic} onToggle={toggleCosmetic} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
+  if (view === 'report') return <><V4ReportPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} isChildDayDone={isChildDayDone} onNavigate={navigateV4} onParentArea={requestParentArea} onSettings={requestSettings} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
 
   return (
-    <V4PageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea}>
+    <V4PageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked}>
       <ParentSettings
         settings={settings}
         setSettings={setSettings}
@@ -869,7 +878,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
         onOpenFamily={onOpenFamily}
         goHome={() => setView('home')}
       />
-      {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
+      {accessDialogs}
     </V4PageShell>
   );
 }

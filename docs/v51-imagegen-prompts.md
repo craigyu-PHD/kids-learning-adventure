@@ -25,3 +25,8 @@ Premium polished original 3D animated-family-adventure game art; child-safe chib
 ## Header、Rocket、Treasure 與 WebM Keyframes
 
 Header 背景為 3072×300 cinematic space-adventure panorama，人物與文字分層。哥哥、弟弟、Robot 各以一致角色生成透明 idle keyframes；Rocket 使用透明橫幅 keyframes；Treasure 使用 closed-to-open 的藍金寶箱 keyframes。正式檔以 24fps VP9 WebM 編碼；Idle 4 秒、Rocket 15 秒循環、Treasure 2 秒一次性播放。這些是 2.5D 關鍵幀動畫，不標示為 Blender rig animation。
+
+## V5.3 Brand Logo 與 Weekly Robot Rocket
+
+- `little-explorers-logo-v2.webp`：透明背景、黃至金橘的中文「小小探險隊」3D 字、深橘厚描邊、深藍 extrusion、上緣亮部、柔和陰影；旁置小火箭與星星裝飾。母檔輸出至少 1600×450，前端以約 370px 寬顯示。
+- `weekly-rocket-robot.webp`：透明背景、原創圓角藍色學習 Robot 站在橘白小火箭上、三顆微小星星、同一左上主光／冷色 rim light／PBR 3D renderer；不用文字、品牌 Logo、emoji 或受版權角色。母檔輸出至少 1024×1024；由 `scripts/generate_weekly_robot_webm.py` 以 Canvas/MediaRecorder 產出 3 秒透明 VP9 `weekly-rocket-robot.webm`，作小幅漂浮 motion，WebP 作 poster／reduced-motion fallback。

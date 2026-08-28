@@ -40,6 +40,7 @@ const groups = [
     name: '02 Cinematic Header',
     checks: [
       dashboard.includes('v5-hero-bg') && dashboard.includes('fetchPriority="high"'),
+      dashboard.includes('little-explorers-logo-v2.webp') && dashboard.includes('v53-parent-status') && dashboard.includes('weekly-rocket-robot.webm'),
       dashboard.includes('brother-idle.webm') && dashboard.includes('younger-idle.webm') && dashboard.includes('robot-idle.webm'),
       dashboard.includes('rocket-flyby.webm'),
       !dashboard.includes('v4-floating-rocket') && !dashboard.includes('v4-planet') && !dashboard.includes('assets/v40'),
@@ -50,6 +51,7 @@ const groups = [
     name: '03 Real Media & Motion',
     checks: [
       ['brother-idle','younger-idle','robot-idle','rocket-flyby'].every((name) => exists(`public/assets/v5/animations/${name}.webm`)),
+      exists('public/assets/v5/animations/weekly-rocket-robot.webm'),
       exists('public/assets/v5/rewards/treasure-open.webm'),
       animated.includes('IntersectionObserver') && animated.includes('prefers-reduced-motion'),
       animated.includes('autoPlay') && animated.includes('muted') && animated.includes('playsInline'),
@@ -117,14 +119,16 @@ const groups = [
     ],
   },
   {
-    name: '10 Preview & Reward Boundary',
+    name: '10 Parent Preview & Reward Boundary',
     checks: [
       browser.contentPreview?.semesterDaysWithActions === 90,
-      browser.contentPreview?.futurePreview === true,
-      browser.contentPreview?.pastReview === true,
+      browser.contentPreview?.futureTeaser === true,
+      browser.contentPreview?.pastResultOnly === true,
+      browser.contentPreview?.parentFullPreview === true,
       browser.contentPreview?.noProgressWrites === true,
+      browser.parentDialog?.open === true && browser.parentDialog?.hasCancel === true,
       !read('src/App.tsx').includes('v4-stage:'),
-      read('src/v4/LessonQuest.tsx').includes('預覽與複習不會寫入任務、作答、完成紀錄或任何 XP／Coins'),
+      read('src/App.tsx').includes("access !== 'today' && !adminUnlocked") && read('src/v4/SecondaryViews.tsx').includes('ChildTeaserPanel'),
     ],
   },
   {

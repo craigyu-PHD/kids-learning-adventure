@@ -9,7 +9,6 @@ import {
   Cloud,
   Coins,
   Gamepad2,
-  Gem,
   Gift,
   Home,
   Lock,
@@ -19,6 +18,7 @@ import {
   ShoppingBag,
   Sparkles,
   Star,
+  Settings,
   Trophy,
   Video,
   Volume2,
@@ -26,17 +26,18 @@ import {
   Zap,
 } from 'lucide-react';
 import { curriculum } from '../data/curriculum';
-import AvatarHero from '../components/AvatarHero';
+import AvatarHero, { normalizeAvatarId } from '../components/AvatarHero';
 import GameBadge from '../components/GameBadge';
 import { badges } from '../badges';
 import { calculateRewards, easterEggDays } from '../rewards';
-import type { AppProgress, AppSettings, CourseDay } from '../types';
+import type { AppProgress, AppSettings, CourseDay, FamilyUserProfile } from '../types';
 import type { CourseDayAccess, TrustedTaipeiDate } from '../dailyChallenge';
 import { formatTaipeiCourseDate } from '../dailyChallenge';
 import { levelTitle, playerResources, subjectLabel, xpToNextLevel, youtubeThumb } from './model';
 import GameImage from './GameImage';
 import GameIcon from './GameIcon';
 import AnimatedMedia from '../v5/AnimatedMedia';
+import { CaregiverAvatar } from './caregivers';
 
 export type ViewKey = 'home' | 'today' | 'semester' | 'achievements' | 'report' | 'shop';
 
@@ -59,9 +60,11 @@ type DashboardProps = {
   onToggleSound: () => void;
   onThemeChange: (theme: AppSettings['visualTheme']) => void;
   onClaimTreasure: (childId: string, day: CourseDay) => void;
+  activeUser?: FamilyUserProfile;
+  parentPreviewUnlocked: boolean;
 };
 
-export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggleSound }: { settings: AppSettings; progress?: AppProgress; onThemeChange?: (t: AppSettings['visualTheme'])=>void; soundEnabled?: boolean; onToggleSound?: () => void }) {
+export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggleSound, activeUser, parentPreviewUnlocked, onParentArea }: { settings: AppSettings; progress?: AppProgress; onThemeChange?: (t: AppSettings['visualTheme'])=>void; soundEnabled?: boolean; onToggleSound?: () => void; activeUser?: FamilyUserProfile; parentPreviewUnlocked?: boolean; onParentArea?: () => void }) {
   const base = `${import.meta.env.BASE_URL}assets/v5/`;
   const keyart = `${base}keyart/hero-bg.webp`;
   const themes: Array<{id:AppSettings['visualTheme'];name:string}> = [
@@ -71,7 +74,7 @@ export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggl
   return <header className="v4-adventure-header v5-cinematic-header">
     <img className="v5-hero-bg" src={keyart} alt="" width={3072} height={300} loading="eager" decoding="async" fetchPriority="high" />
     <div className="v4-brand-lockup">
-      <strong>小小探險隊</strong>
+      <img className="v53-brand-logo" src={`${base}brand/little-explorers-logo-v2.webp`} alt="小小探險隊" width={1997} height={787} loading="eager" decoding="async" fetchPriority="high" />
       <span className="v4-brand-subtitle">一起學習・一起長大</span>
     </div>
     <div className="v4-hero-cast v5-hero-layers" aria-label="小小探險隊夥伴">
@@ -81,6 +84,7 @@ export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggl
     </div>
     <AnimatedMedia className="v5-rocket-flyby" webm={`${base}animations/rocket-flyby.webm`} poster={`${base}animations/rocket-flyby-poster.webp`} alt="探險火箭飛越基地" size={1536}/>
     <div className="v5-header-controls">
+      {activeUser && <button type="button" className="v53-parent-status" onClick={onParentArea} aria-label="開啟家長模式"><CaregiverAvatar user={activeUser} size={40}/><span><strong>歡迎回來，{activeUser.name}</strong><small>{parentPreviewUnlocked ? 'PIN 已解鎖 · 可完整備課' : '家長模式 · 點此解鎖備課'}</small></span><Settings/></button>}
       {onThemeChange && <div className="v5-header-theme">{themes.map(t=> <button key={t.id} onClick={()=>onThemeChange(t.id)} title={t.name} className={settings.visualTheme===t.id?'active':''}><GameImage src={`${base}themes/${art[t.id]}-thumb.webp`} alt={t.name} /></button>)}</div>}
       {onToggleSound && <button className="v5-sound-toggle" type="button" onClick={onToggleSound} aria-label={soundEnabled ? '關閉音效' : '開啟音效'} title={soundEnabled ? '關閉音效' : '開啟音效'}>{soundEnabled ? <Volume2/> : <VolumeX/>}</button>}
     </div>
@@ -100,15 +104,21 @@ export function MainNavigation({ active, onNavigate, onParentArea }: { active: V
 }
 
 function PlayerProfile({ settings, progress }: { settings: AppSettings; progress: AppProgress }) {
+  const learners = settings.children.filter((child) => !child.disabled);
+  const familyXp = learners.reduce((total, child) => total + playerResources(progress[child.id]).xp, 0);
+  const familyLevel = Math.max(1, Math.floor(familyXp / 440) + 1);
+  const nextFamilyXp = familyLevel * 440;
+  const familyPct = Math.min(100, Math.round((familyXp % 440) / 440 * 100));
   return <section className="v4-panel v4-player-profile"><div className="v4-panel-title"><div><span>PLAYER TEAM</span><h2>冒險隊伍</h2></div><GameIcon tone="gold"><Trophy/></GameIcon></div>
-    <div className="v4-player-stack">{settings.children.filter((child) => !child.disabled).map((child) => {
+    <section className="v53-family-level"><Trophy/><div><span>家庭冒險等級</span><strong>Lv.{familyLevel}</strong><small>{familyXp.toLocaleString()} / {nextFamilyXp.toLocaleString()} XP</small><i><b style={{width:`${familyPct}%`}}/></i></div></section>
+    <div className="v4-player-stack">{learners.map((child) => {
       const resources = playerResources(progress[child.id]);
       const next = xpToNextLevel(resources.xp);
       const pct = resources.level >= 15 ? 100 : Math.min(100, Math.round(((resources.xp % 220) / 220) * 100));
       return <article className="v4-player-card" key={child.id}>
         <div className="v4-player-avatar"><AvatarHero avatarId={child.avatar} xp={resources.xp} size={104}/><span>Lv.{resources.level}</span></div>
         <div className="v4-player-copy"><h3>{child.name}</h3><p>{levelTitle(resources.level)}</p><div className="v4-xp-track"><i style={{width:`${pct}%`}}/></div><small>{next ? `下一級還差 ${next} XP` : '已達 Lv.15 傳奇英雄'}</small></div>
-        <div className="v4-resource-row"><span><Zap/> {resources.xp}</span><span><Coins/> {resources.coins}</span><span><Star/> {resources.stars}</span><span><Gem/> {resources.gems}</span></div>
+        <div className="v4-resource-row"><span><Zap/> {resources.xp}</span><span><Coins/> {resources.coins}</span></div>
       </article>;
     })}</div>
   </section>;
@@ -141,7 +151,7 @@ function WeeklyProgress({ todayDay, isDayDone }: { todayDay?: CourseDay; isDayDo
   const completed = days.filter(isDayDone).length;
   const pct = completed / 5 * 100;
   const semesterDone = curriculum.filter(isDayDone).length;
-  return <div className="v4-progress-inner"><div className="v4-panel-title"><div><span>WEEK {String(week).padStart(2,'0')}</span><h2>本週進度</h2></div><GameIcon tone="green"><Zap/></GameIcon></div>
+  return <div className="v4-progress-inner"><div className="v4-panel-title"><div><span>WEEK {String(week).padStart(2,'0')}</span><h2>本週進度</h2></div><GameIcon tone="green"><Zap/></GameIcon></div><AnimatedMedia className="v53-weekly-rocket" webm={`${import.meta.env.BASE_URL}assets/v5/animations/weekly-rocket-robot.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/brand/weekly-rocket-robot.webp`} alt="小光搭著火箭陪伴本週學習" size={512}/>
     <div className="v4-progress-body v5-weekly-body"><div className="v4-progress-ring" style={{'--progress':`${pct * 3.6}deg`,width:118,height:118} as React.CSSProperties}><div><strong style={{fontSize:30}}>{completed} / 5</strong><span>完成</span></div></div><div className="v4-goals v5-goals"><div className={semesterDone >= 5 ? 'done' : ''}><Trophy size={26}/><span>小目標</span><strong>5 天</strong></div><div className={semesterDone >= 10 ? 'done' : ''}><Trophy size={26}/><span>中目標</span><strong>10 天</strong></div><div className={semesterDone >= 90 ? 'done' : ''}><Trophy size={26}/><span>大目標</span><strong>90 天</strong></div></div></div>
   </div>;
 }
@@ -157,7 +167,7 @@ function CharacterEvolution({ settings, progress }: { settings: AppSettings; pro
     { level: 10, label: '星際英雄' },
     { level: 15, label: '傳奇英雄' },
   ];
-  return <section className="v4-panel v4-evolution-panel"><div className="v4-panel-title"><div><span>EVOLUTION</span><h2>角色成長</h2></div><GameIcon tone="purple"><Sparkles/></GameIcon></div><div className="v4-evolution-row">{settings.children.filter((c)=>!c.disabled).map((child,index)=>{ const r=playerResources(progress[child.id]); const role=index===1||child.avatar==='rex'||child.avatar==='aqua'?'younger':'brother'; const current=r.level>=15?3:r.level>=10?2:r.level>=5?1:0; return <article className="v5-evolution-lane" key={child.id}><header><strong>{child.name}的進化</strong><span>Lv.{r.level} · {levelTitle(r.level)}</span></header><div className="v5-evolution-stages">{stages.map((stage,stageIndex)=><div className={`v5-evolution-stage ${stageIndex<current?'done':stageIndex===current?'current':'locked'}`} key={stage.level}>{stageIndex>0&&<ChevronRight className="v5-evolution-arrow"/>}<div><GameImage src={`${import.meta.env.BASE_URL}assets/v5/characters/${role}/stage-${stageIndex+1}-thumb.webp`} alt={`${child.name} Lv.${stage.level} ${stage.label}`}/>{stageIndex<current&&<Check className="v5-stage-check"/>}</div><small>Lv.{stage.level}</small><span>{stage.label}</span></div>)}</div></article>; })}</div></section>;
+  return <section className="v4-panel v4-evolution-panel"><div className="v4-panel-title"><div><span>EVOLUTION</span><h2>角色成長</h2></div><GameIcon tone="purple"><Sparkles/></GameIcon></div><div className="v4-evolution-row">{settings.children.filter((c)=>!c.disabled).map((child)=>{ const r=playerResources(progress[child.id]); const role=normalizeAvatarId(child.avatar); const current=r.level>=15?3:r.level>=10?2:r.level>=5?1:0; return <article className="v5-evolution-lane" key={child.id}><header><strong>{child.name}的進化</strong><span>Lv.{r.level} · {levelTitle(r.level)}</span></header><div className="v5-evolution-stages">{stages.map((stage,stageIndex)=><div className={`v5-evolution-stage ${stageIndex<current?'done':stageIndex===current?'current':'locked'}`} key={stage.level}>{stageIndex>0&&<ChevronRight className="v5-evolution-arrow"/>}<div><GameImage src={`${import.meta.env.BASE_URL}assets/v5/characters/${role}/stage-${stageIndex+1}-thumb.webp`} alt={`${child.name} Lv.${stage.level} ${stage.label}`}/>{stageIndex<current&&<Check className="v5-stage-check"/>}</div><small>Lv.{stage.level}</small><span>{stage.label}</span></div>)}</div></article>; })}</div></section>;
 }
 
 function BadgeShelf({ settings, progress, onNavigate }: { settings: AppSettings; progress: AppProgress; onNavigate: (view: ViewKey) => void }) {
@@ -165,21 +175,27 @@ function BadgeShelf({ settings, progress, onNavigate }: { settings: AppSettings;
   return <section className="v4-panel v4-badge-panel"><div className="v4-panel-title"><div><span>ACHIEVEMENTS</span><h2>成就徽章</h2></div><button className="v4-text-action" onClick={()=>onNavigate('achievements')}>全部查看 <ChevronRight/></button></div><div className="v4-badge-shelf">{badges.slice(0,8).map((badge)=><GameBadge key={badge.id} badge={badge} unlocked={Boolean(unlocks[badge.id])} earnedDate={unlocks[badge.id]} size={52}/>)}</div></section>;
 }
 
-function LessonMissionCard({ day, lessonIndex, access, verified, done, onOpen }: { day: CourseDay; lessonIndex: 0|1; access: CourseDayAccess; verified: boolean; done: boolean; onOpen: () => void }) {
+function LessonMissionCard({ day, lessonIndex, access, verified, done, parentPreviewUnlocked, onOpen, onRequestParent }: { day: CourseDay; lessonIndex: 0|1; access: CourseDayAccess; verified: boolean; done: boolean; parentPreviewUnlocked: boolean; onOpen: () => void; onRequestParent: () => void }) {
   const block = day.blocks[lessonIndex]; const formal = access === 'today' && verified;
-  const action = done ? '查看內容' : formal ? '開始挑戰' : access === 'future' ? '課前預覽' : access === 'past' ? '複習內容' : '安全預覽';
-  const status = done ? '已完成' : formal ? '今日挑戰' : access === 'future' ? '可先準備' : access === 'past' ? '唯讀複習' : '不計獎勵';
+  const fullPreview = parentPreviewUnlocked && !formal;
+  const childTeaser = !formal && !fullPreview;
+  const canOpenLesson = formal || fullPreview;
+  const action = done ? (canOpenLesson ? '查看內容' : '查看成果') : formal ? '開始挑戰' : fullPreview ? '完整備課' : '查看主題';
+  const status = done ? '已完成' : formal ? '今日挑戰' : fullPreview ? '家長備課' : '明日驚喜';
+  const clock = lessonIndex === 0 ? '18:30–19:00' : '19:05–19:35';
+  const click = canOpenLesson ? onOpen : onRequestParent;
   return <article className={`v4-lesson-card ${done ? 'done' : ''} ${formal ? '' : 'preview'}`}>
-    <header className="v5-lesson-card-header"><strong>LESSON {lessonIndex + 1}</strong><span>{block.duration} min</span></header>
-    <div className="v5-lesson-card-body"><div className="v4-lesson-thumb"><GameImage src={youtubeThumb(block.video.videoId)} alt={`${block.title} YouTube 預覽`}/><span>{lessonIndex + 1}</span>{!formal && <i><BookOpen/></i>}</div>
-      <div className="v4-lesson-content"><div className="v4-lesson-meta"><span>{subjectLabel(block.subject)}</span><small>{status}</small></div><h3>{block.title}</h3><p>課前歌曲：{block.warmup.title}</p><button onClick={onOpen}>{done ? <><Check/> {action}</> : formal ? <><Play/> {action} <ChevronRight/></> : <><BookOpen/> {action} <ChevronRight/></>}</button></div>
+    <header className="v5-lesson-card-header"><strong><Star/> 第 {lessonIndex + 1} 節</strong><span>{clock}</span></header>
+    <div className="v5-lesson-card-body"><div className="v4-lesson-thumb"><GameImage src={childTeaser ? `${import.meta.env.BASE_URL}assets/v5/themes/space-hero-v2-thumb.webp` : youtubeThumb(block.video.videoId)} alt={childTeaser ? `${day.theme} 主題預告` : `${block.title} YouTube 預覽`}/><span>{lessonIndex + 1}</span>{!formal && <i><BookOpen/></i>}</div>
+      <div className="v4-lesson-content"><div className="v4-lesson-meta"><span>{childTeaser ? 'Adventure' : subjectLabel(block.subject)}</span><small>{status}</small></div><h3>{childTeaser ? `${day.theme} 冒險預告` : block.title}</h3><p>{formal || fullPreview ? `課前歌曲：${block.warmup.title}` : `明日主題：${day.theme}`}</p><button onClick={click}>{done ? <><Check/> {action}</> : formal ? <><Play/> {action} <ChevronRight/></> : <><BookOpen/> {action} <ChevronRight/></>}</button></div>
     </div>
   </article>;
 }
 
 function TreasureChest({ day, settings, progress, isChildDayDone, access, verified, onClaimTreasure }: { day: CourseDay; settings: AppSettings; progress: AppProgress; isChildDayDone: (childId: string, day: CourseDay) => boolean; access: CourseDayAccess; verified: boolean; onClaimTreasure: (childId: string, day: CourseDay) => void }) {
   const [openingChildId, setOpeningChildId] = useState<string | null>(null);
-  if (!easterEggDays.has(day.index)) return null;
+  const treasureDay = easterEggDays.has(day.index);
+  const nextTreasure = [...easterEggDays].find((index) => index >= day.index) ?? 90;
   const learners = settings.children.filter((child)=>!child.disabled);
   const beginOpen = (childId: string) => {
     if (openingChildId) return;
@@ -190,20 +206,21 @@ function TreasureChest({ day, settings, progress, isChildDayDone, access, verifi
       setOpeningChildId(null);
     }, reduceMotion ? 120 : 1150);
   };
-  return <section className={`v4-treasure-chest ${openingChildId ? 'is-opening' : ''}`}>
+  return <section className={`v4-treasure-chest ${openingChildId ? 'is-opening' : ''} ${treasureDay ? 'treasure-day' : 'teaser'}`}>
     <div className={`v4-chest-visual ${openingChildId ? 'is-opening' : ''}`} aria-hidden="true">{openingChildId ? <AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/rewards/treasure-open.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/rewards/treasure-open-poster.webp`} alt="寶箱打開" size={512} loop={false}/> : <GameImage src={`${import.meta.env.BASE_URL}assets/v5/nav-icons/chest-3d.webp`} alt="冒險寶箱"/>}</div>
-    <div className="v4-chest-copy"><span>TREASURE DAY</span><h3>完成兩堂課，打開冒險寶箱</h3><p>寶箱獎勵每個孩子各自只能領一次。</p></div>
-    <div className="v4-chest-learners">{learners.map((child)=>{ const done=isChildDayDone(child.id,day); const claimed=progress[child.id]?.claimedEggs?.includes(`egg-day-${day.index}`)??false; const canOpen=verified&&access==='today'&&done&&!claimed; const opening=openingChildId===child.id; return <button key={child.id} disabled={!canOpen||Boolean(openingChildId)} className={claimed?'claimed':opening?'opening':canOpen?'ready':'locked'} onClick={()=>beginOpen(child.id)}><AvatarHero avatarId={child.avatar} xp={calculateRewards(progress[child.id]).xp} size={42}/><span>{child.name}</span><strong>{claimed?'已開啟':opening?'開箱中…':done?'開寶箱':'完成兩堂後解鎖'}</strong>{claimed?<Check/>:opening?<Sparkles/>:canOpen?<Sparkles/>:<Lock/>}</button>; })}</div>
+    <div className="v4-chest-copy"><span>HIDDEN REWARD</span><h3>{treasureDay ? '完成兩堂課，打開冒險寶箱' : `神秘獎勵藏在 Day ${nextTreasure}`}</h3><p>{treasureDay ? '寶箱獎勵每個孩子各自只能領一次。' : '探索更多天，發現神秘獎勵！'}</p></div>
+    {treasureDay && <div className="v4-chest-learners">{learners.map((child)=>{ const done=isChildDayDone(child.id,day); const claimed=progress[child.id]?.claimedEggs?.includes(`egg-day-${day.index}`)??false; const canOpen=verified&&access==='today'&&done&&!claimed; const opening=openingChildId===child.id; return <button key={child.id} disabled={!canOpen||Boolean(openingChildId)} className={claimed?'claimed':opening?'opening':canOpen?'ready':'locked'} onClick={()=>beginOpen(child.id)}><AvatarHero avatarId={child.avatar} xp={calculateRewards(progress[child.id]).xp} size={42}/><span>{child.name}</span><strong>{claimed?'已開啟':opening?'開箱中…':done?'開寶箱':'完成兩堂後解鎖'}</strong>{claimed?<Check/>:opening?<Sparkles/>:canOpen?<Sparkles/>:<Lock/>}</button>; })}</div>}
   </section>;
 }
 
-function DailyMissionPanel({ settings, progress, trustedDate, todayDay, featuredDay, accessForDay, isChildDayDone, onOpenLesson, onClaimTreasure }: Pick<DashboardProps,'settings'|'progress'|'trustedDate'|'todayDay'|'featuredDay'|'accessForDay'|'isChildDayDone'|'onOpenLesson'|'onClaimTreasure'>) {
+function DailyMissionPanel({ settings, progress, trustedDate, todayDay, featuredDay, accessForDay, isChildDayDone, onOpenLesson, onClaimTreasure, parentPreviewUnlocked, onParentArea }: Pick<DashboardProps,'settings'|'progress'|'trustedDate'|'todayDay'|'featuredDay'|'accessForDay'|'isChildDayDone'|'onOpenLesson'|'onClaimTreasure'|'parentPreviewUnlocked'|'onParentArea'>) {
   const day = todayDay ?? featuredDay; const access = accessForDay(day); const date = trustedDate.ymd;
-  return <section className="v4-panel v4-daily-panel"><div className="v4-daily-head"><div><span>{todayDay ? 'TODAY MISSION' : 'NEXT MISSION'}</span><h2>{todayDay ? `${date.slice(5).replace('-','/')} · Day ${day.index}` : `Day ${day.index}`}</h2><p>{day.bigIdea}</p></div><GameIcon tone="orange"><Rocket/></GameIcon></div>
+  const weekday = new Intl.DateTimeFormat('zh-TW',{timeZone:'Asia/Taipei',weekday:'short'}).format(new Date(`${date}T12:00:00+08:00`));
+  return <section className="v4-panel v4-daily-panel"><div className="v53-date-strip"><span>{Number(date.slice(5,7))}月{Number(date.slice(8,10))}日</span><i>{weekday}</i><strong>Day {day.index}</strong></div><div className="v4-daily-head"><div><span>{todayDay ? 'TODAY MISSION' : 'NEXT MISSION'}</span><h2>{day.title}</h2><p>{day.bigIdea}</p></div><GameIcon tone="orange"><Rocket/></GameIcon></div>
     <div className="v4-daily-progress"><div><span>今日完成</span><strong>{day.blocks.filter((block)=>settings.children.filter((c)=>!c.disabled).every((c)=>progress[c.id]?.completedBlocks.includes(block.id))).length} / 2</strong></div><div className="v4-mini-track"><i style={{width:`${day.blocks.filter((block)=>settings.children.filter((c)=>!c.disabled).every((c)=>progress[c.id]?.completedBlocks.includes(block.id))).length * 50}%`}}/></div></div>
-    <div className="v4-lesson-list">{([0,1] as const).map((index)=> <LessonMissionCard key={day.blocks[index].id} day={day} lessonIndex={index} access={access} verified={trustedDate.verified} done={settings.children.filter((c)=>!c.disabled).every((child)=>progress[child.id]?.completedBlocks.includes(day.blocks[index].id))} onOpen={()=>onOpenLesson(day,index)}/>)}</div>
+    <div className="v4-lesson-list">{([0,1] as const).map((index)=> <LessonMissionCard key={day.blocks[index].id} day={day} lessonIndex={index} access={access} verified={trustedDate.verified} done={settings.children.filter((c)=>!c.disabled).every((child)=>progress[child.id]?.completedBlocks.includes(day.blocks[index].id))} parentPreviewUnlocked={parentPreviewUnlocked} onOpen={()=>onOpenLesson(day,index)} onRequestParent={onParentArea}/>)}</div>
     <TreasureChest day={day} settings={settings} progress={progress} isChildDayDone={isChildDayDone} access={access} verified={trustedDate.verified} onClaimTreasure={onClaimTreasure}/>
-    {(!trustedDate.verified || access !== 'today') && <div className="v4-lock-note"><BookOpen/> {!trustedDate.verified ? '正在向伺服器確認 Asia/Taipei 日期；現在可安全預覽內容，確認後才能正式計算獎勵。' : '此日課程可預覽／複習；只有台北時間當天完成學習才會寫入紀錄與獎勵。'}</div>}
+    {(!trustedDate.verified || access !== 'today') && <div className="v4-lock-note"><BookOpen/> {parentPreviewUnlocked ? '家長備課已解鎖：可完整查看，但仍不會寫入獎勵。' : '孩子先看明日主題；完整備課內容需由家長 PIN 解鎖。'}</div>}
   </section>;
 }
 
@@ -223,12 +240,12 @@ export default function V4Dashboard(props: DashboardProps) {
     .map((id) => `has-${id}`)
     .join(' ');
   return <div className={`v4-shell ${worldItemClasses}`} data-world-items={worldItemClasses}>
-    <AdventureHeader settings={props.settings} progress={props.progress} onThemeChange={props.onThemeChange} soundEnabled={props.soundEnabled} onToggleSound={props.onToggleSound}/>
+    <AdventureHeader settings={props.settings} progress={props.progress} onThemeChange={props.onThemeChange} soundEnabled={props.soundEnabled} onToggleSound={props.onToggleSound} activeUser={props.activeUser} parentPreviewUnlocked={props.parentPreviewUnlocked} onParentArea={props.onParentArea}/>
     <MainNavigation active={props.activeView} onNavigate={props.onNavigate} onParentArea={props.onParentArea}/>
     <main className="v4-dashboard-grid">
       <aside className="v4-left-column"><PlayerProfile settings={props.settings} progress={props.progress}/><AICompanion todayDay={props.todayDay} isDayDone={props.isDayDone}/></aside>
       <section className="v4-center-column"><SemesterOverviewPanel trustedDate={props.trustedDate} courseDateKey={props.courseDateKey} accessForDay={props.accessForDay} isDayDone={props.isDayDone} todayDay={props.todayDay}/><CharacterEvolution settings={props.settings} progress={props.progress}/><BadgeShelf settings={props.settings} progress={props.progress} onNavigate={props.onNavigate}/></section>
-      <aside className="v4-right-column"><DailyMissionPanel settings={props.settings} progress={props.progress} trustedDate={props.trustedDate} todayDay={props.todayDay} featuredDay={props.featuredDay} accessForDay={props.accessForDay} isChildDayDone={props.isChildDayDone} onOpenLesson={props.onOpenLesson} onClaimTreasure={props.onClaimTreasure}/></aside>
+      <aside className="v4-right-column"><DailyMissionPanel settings={props.settings} progress={props.progress} trustedDate={props.trustedDate} todayDay={props.todayDay} featuredDay={props.featuredDay} accessForDay={props.accessForDay} isChildDayDone={props.isChildDayDone} onOpenLesson={props.onOpenLesson} onClaimTreasure={props.onClaimTreasure} parentPreviewUnlocked={props.parentPreviewUnlocked} onParentArea={props.onParentArea}/></aside>
     </main>
     <BottomStatusBar cloudStatus={props.cloudStatus} trustedDate={props.trustedDate}/>
   </div>;

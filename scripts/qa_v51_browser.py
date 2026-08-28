@@ -188,6 +188,7 @@ def js_snapshot() -> str:
     navigationIcons: [...document.querySelectorAll('.v4-main-navigation img')].map(source),
     themeImages: [...document.querySelectorAll('.v5-header-theme img')].map(source),
     videos,
+    weeklyRobot: (() => { const video = document.querySelector('.v53-weekly-rocket'); return video ? {src: source(video), readyState: video.readyState, paused: video.paused} : null; })(),
     evolution,
     lessonLayouts,
     aiLegacyActions: document.querySelectorAll('.v4-ai-actions').length,
@@ -228,6 +229,8 @@ def check_snapshot(snapshot: dict, width: int) -> list[str]:
         failures.append("five V5 theme v2 images were not rendered")
     if any(video["readyState"] < 2 for video in snapshot["videos"]):
         failures.append("one or more V5 videos failed to decode")
+    if not snapshot["weeklyRobot"] or "/assets/v5/animations/weekly-rocket-robot.webm" not in snapshot["weeklyRobot"]["src"] or snapshot["weeklyRobot"]["readyState"] < 2:
+        failures.append("weekly Robot Rocket WebM failed to render")
     if snapshot["evolution"] != [4, 4]:
         failures.append("each learner must render four evolution stages")
     if len(snapshot["lessonLayouts"]) != 2 or any(not item.get("valid") or not item.get("separated") for item in snapshot["lessonLayouts"]):
@@ -319,7 +322,7 @@ def main() -> int:
         wait_js(cdp, "!!document.querySelector('.v4-dashboard-grid')", 30)
         wait_js(cdp, "[...document.querySelectorAll('.v5-cinematic-header video')].every(v => v.readyState >= 2)", 30)
 
-        # Every day is readable: future is a no-write preview and past is a no-write review.
+        # Children get only a future-theme teaser and read-only past outcomes. Full lesson routes are parent-PIN only.
         preview_failures: list[str] = []
         click(cdp, '.v4-main-navigation button', 2)
         wait_js(cdp, "!!document.querySelector('.v4-semester-weeks')")
@@ -329,28 +332,59 @@ def main() -> int:
         progress_key = f"star-learning-v40:{FAMILY_ID}:progress"
         progress_before = cdp.eval(f"localStorage.getItem('{progress_key}')")
         click(cdp, '.v4-semester-day.future .v4-semester-actions button', 0)
-        wait_js(cdp, "!!document.querySelector('.v4-quest-shell') && document.querySelector('.v4-quest-mode.preview')?.innerText.includes('課前預覽')")
-        click(cdp, '.v4-quest-controls button.primary')
-        wait_js(cdp, "document.querySelectorAll('.v4-word-grid button').length > 0")
+        wait_js(cdp, "!!document.querySelector('.v53-teaser-panel')")
+        if cdp.eval("document.querySelectorAll('.v53-teaser-panel iframe, .v53-teaser-panel .v4-word-grid').length"):
+            preview_failures.append("future teaser exposed lesson material")
         if cdp.eval(f"localStorage.getItem('{progress_key}')") != progress_before:
-            preview_failures.append("future preview wrote progress")
+            preview_failures.append("future teaser wrote progress")
+        click(cdp, '.v4-history-close')
+        wait_js(cdp, "!!document.querySelector('.v4-semester-weeks') && !document.querySelector('.v53-teaser-panel')")
+        click(cdp, '.v4-semester-day.past .v4-semester-actions button', 0)
+        wait_js(cdp, "!!document.querySelector('.v4-history-panel')")
+        if cdp.eval("document.querySelectorAll('.v4-history-panel .v4-history-lessons').length"):
+            preview_failures.append("past child review exposed lesson material")
+        if cdp.eval(f"localStorage.getItem('{progress_key}')") != progress_before:
+            preview_failures.append("past child review wrote progress")
+        click(cdp, '.v4-history-close')
+        wait_js(cdp, "!!document.querySelector('.v4-semester-weeks') && !document.querySelector('.v4-history-panel')")
+        result["contentPreview"] = {
+            "semesterDaysWithActions": all_day_actions,
+            "futureTeaser": not any("future" in failure for failure in preview_failures),
+            "pastResultOnly": not any("past" in failure for failure in preview_failures),
+            "noProgressWrites": not any("wrote progress" in failure for failure in preview_failures),
+        }
+        all_failures = list(preview_failures)
+        click(cdp, '.v4-main-navigation button', 0)
+        wait_js(cdp, "!!document.querySelector('.v4-dashboard-grid')")
+
+        # The parent entry point remains available after leaving the dashboard, and the PIN dialog is actually mounted.
+        click(cdp, '.v4-main-navigation button', 2)
+        wait_js(cdp, "!!document.querySelector('.v4-semester-weeks')")
+        click(cdp, '.v4-main-navigation button', 4)
+        wait_js(cdp, "!!document.querySelector('.v4-pin-modal')")
+        result["parentDialog"] = cdp.eval("({open:!!document.querySelector('.v4-pin-modal'), hasCancel:!![...document.querySelectorAll('button')].find(b=>b.textContent?.includes('取消'))})")
+        if not result["parentDialog"]["open"] or not result["parentDialog"]["hasCancel"]:
+            all_failures.append("parent PIN dialog is unavailable from a secondary page")
+        for digit in PIN:
+            cdp.eval(f"(() => {{ const button = [...document.querySelectorAll('.v4-pin-grid button')].find(b => b.textContent === '{digit}'); if (!button) throw new Error('missing PIN digit'); button.click(); return true; }})()")
+        click(cdp, '.v4-pin-submit')
+        wait_js(cdp, "!document.querySelector('.v4-pin-modal') && !!document.querySelector('.v4-report-grid')", 30)
+        click(cdp, '.v4-main-navigation button', 2)
+        wait_js(cdp, "!!document.querySelector('.v4-semester-weeks')")
+        parent_progress_before = cdp.eval(f"localStorage.getItem('{progress_key}')")
+        click(cdp, '.v4-semester-day.future .v4-semester-actions button', 0)
+        wait_js(cdp, "!!document.querySelector('.v4-quest-shell') && document.querySelector('.v4-quest-mode.preview')?.innerText.includes('課前預覽')")
+        if cdp.eval(f"localStorage.getItem('{progress_key}')") != parent_progress_before:
+            preview_failures.append("parent future preview wrote progress")
         click(cdp, '.v4-quest-back')
         wait_js(cdp, "!!document.querySelector('.v4-semester-weeks') && !document.querySelector('.v4-quest-shell')")
         click(cdp, '.v4-semester-day.past .v4-semester-actions button', 0)
         wait_js(cdp, "!!document.querySelector('.v4-quest-shell') && document.querySelector('.v4-quest-mode.preview')?.innerText.includes('歷史複習')")
-        click(cdp, '.v4-quest-controls button.primary')
-        wait_js(cdp, "document.querySelectorAll('.v4-word-grid button').length > 0")
-        if cdp.eval(f"localStorage.getItem('{progress_key}')") != progress_before:
-            preview_failures.append("past review wrote progress")
+        if cdp.eval(f"localStorage.getItem('{progress_key}')") != parent_progress_before:
+            preview_failures.append("parent past review wrote progress")
         click(cdp, '.v4-quest-back')
         wait_js(cdp, "!!document.querySelector('.v4-semester-weeks') && !document.querySelector('.v4-quest-shell')")
-        result["contentPreview"] = {
-            "semesterDaysWithActions": all_day_actions,
-            "futurePreview": not any("future" in failure for failure in preview_failures),
-            "pastReview": not any("past" in failure for failure in preview_failures),
-            "noProgressWrites": not any("wrote progress" in failure for failure in preview_failures),
-        }
-        all_failures = list(preview_failures)
+        result["contentPreview"]["parentFullPreview"] = not any("parent future" in failure or "parent past" in failure for failure in preview_failures)
         click(cdp, '.v4-main-navigation button', 0)
         wait_js(cdp, "!!document.querySelector('.v4-dashboard-grid')")
 
@@ -377,7 +411,7 @@ def main() -> int:
         time.sleep(1)
         reduced_motion = cdp.eval(
             "({matches:matchMedia('(prefers-reduced-motion: reduce)').matches, "
-            "paused:[...document.querySelectorAll('.v5-cinematic-header video')].every(v=>v.paused)})"
+            "paused:[...document.querySelectorAll('.v5-cinematic-header video, .v53-weekly-rocket')].every(v=>v.paused)})"
         )
         result["reducedMotion"] = reduced_motion
         if not reduced_motion["matches"] or not reduced_motion["paused"]:
