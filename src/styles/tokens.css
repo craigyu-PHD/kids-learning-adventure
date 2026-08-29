@@ -1,0 +1,8 @@
+/* V6 design-token ownership starts here. Existing production tokens remain
+ * available through legacy-compat.css until their consumers are migrated. */
+:root {
+  --motion-fast: 120ms;
+  --motion-standard: 180ms;
+  --motion-page: 220ms;
+  --focus-ring: #075BC7;
+}

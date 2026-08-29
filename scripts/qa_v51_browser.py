@@ -179,6 +179,14 @@ def js_snapshot() -> str:
       const rect = node.getBoundingClientRect();
       return style.display !== 'none' && style.visibility !== 'hidden' && rect.width > 0 && rect.height > 0;
     });
+  const focusTarget = interactive[0];
+  if (focusTarget) focusTarget.focus();
+  const focusStyle = focusTarget ? getComputedStyle(focusTarget) : null;
+  const unlabeledControls = interactive.filter((node) => {
+    const text = String(node.textContent || '').trim();
+    const label = node.getAttribute('aria-label') || node.getAttribute('title') || node.getAttribute('name') || '';
+    return !text && !label;
+  }).map((node) => ({tag: node.tagName, className: String(node.className || '')}));
   return {
     viewport: {width: innerWidth, height: innerHeight},
     overflow: Math.max(0, document.documentElement.scrollWidth - innerWidth),
@@ -208,6 +216,8 @@ def js_snapshot() -> str:
         height: Math.round(rect.height),
       };
     }),
+    focusVisible: focusStyle ? {style: focusStyle.outlineStyle, width: focusStyle.outlineWidth, color: focusStyle.outlineColor} : null,
+    unlabeledControls,
     dashboardColumnWidths: [...document.querySelectorAll('.v4-left-column, .v4-center-column, .v4-right-column')]
       .map((node) => Math.round(node.getBoundingClientRect().width)),
   };
@@ -247,9 +257,12 @@ def check_snapshot(snapshot: dict, width: int) -> list[str]:
         failures.append(f"horizontal overflow is {snapshot['overflow']}px")
     if width < 600 and any(column < width - 30 for column in snapshot["dashboardColumnWidths"]):
         failures.append(f"mobile dashboard columns do not fill viewport: {snapshot['dashboardColumnWidths']}")
-    # The compact mobile bottom navigation intentionally presents icon and label in a 44px parent button.
-    if width >= 820 and snapshot["undersizedTargets"]:
+    if snapshot["undersizedTargets"]:
         failures.append(f"{len(snapshot['undersizedTargets'])} interactive targets are under 44px: {snapshot['undersizedTargets']}")
+    if snapshot["unlabeledControls"]:
+        failures.append(f"{len(snapshot['unlabeledControls'])} interactive controls have no accessible name: {snapshot['unlabeledControls']}")
+    if not snapshot["focusVisible"] or snapshot["focusVisible"]["style"] == "none" or snapshot["focusVisible"]["width"] in ("0px", ""):
+        failures.append("keyboard focus indicator is not visible")
     return failures
 
 
@@ -369,6 +382,16 @@ def main() -> int:
             cdp.eval(f"(() => {{ const button = [...document.querySelectorAll('.v4-pin-grid button')].find(b => b.textContent === '{digit}'); if (!button) throw new Error('missing PIN digit'); button.click(); return true; }})()")
         click(cdp, '.v4-pin-submit')
         wait_js(cdp, "!document.querySelector('.v4-pin-modal') && !!document.querySelector('.v4-report-grid')", 30)
+        mastery_panel = cdp.eval("({present:!!document.querySelector('.learning-mastery-panel'), copy:document.querySelector('.learning-mastery-panel')?.innerText || ''})")
+        result["learningMastery"] = mastery_panel
+        if not mastery_panel["present"] or "僅依真實互動與口說作答計算" not in mastery_panel["copy"]:
+            all_failures.append("parent report is missing the derived learning-mastery panel")
+        click(cdp, '.v4-settings-link')
+        wait_js(cdp, "!!document.querySelector('.content-health-grid')", 30)
+        content_health = cdp.eval("({count:document.querySelectorAll('.content-health-grid article').length, failed:document.querySelectorAll('.content-health-grid article.fail').length})")
+        result["contentHealth"] = content_health
+        if content_health["count"] != 8 or content_health["failed"]:
+            all_failures.append(f"content health dashboard is incomplete: {content_health}")
         click(cdp, '.v4-main-navigation button', 2)
         wait_js(cdp, "!!document.querySelector('.v4-semester-weeks')")
         parent_progress_before = cdp.eval(f"localStorage.getItem('{progress_key}')")
@@ -388,7 +411,15 @@ def main() -> int:
         click(cdp, '.v4-main-navigation button', 0)
         wait_js(cdp, "!!document.querySelector('.v4-dashboard-grid')")
 
-        viewports = [(1536, 1024), (820, 1180), (390, 844)]
+        # Device coverage mirrors the supported desktop, tablet and phone
+        # breakpoints. Only the representative three are persisted as visual
+        # baselines; every size runs the same overflow, media and a11y checks.
+        viewports = [
+            (1920, 1080), (1536, 1024), (1440, 900), (1366, 768), (1280, 800),
+            (1024, 768), (820, 1180), (768, 1024), (430, 932), (412, 915),
+            (393, 852), (390, 844), (360, 800),
+        ]
+        baseline_screenshots = {(1536, 1024), (820, 1180), (390, 844)}
         for width, height in viewports:
             cdp.call(
                 "Emulation.setDeviceMetricsOverride",
@@ -402,10 +433,11 @@ def main() -> int:
             failures = check_snapshot(snapshot, width)
             all_failures.extend(f"{width}x{height}: {failure}" for failure in failures)
             result["checks"].append({"viewport": f"{width}x{height}", "snapshot": snapshot, "failures": failures})
-            image = cdp.call("Page.captureScreenshot", {"format": "png", "captureBeyondViewport": True})
-            path = SCREENSHOTS / f"v51-{width}x{height}.png"
-            path.write_bytes(base64.b64decode(image["data"]))
-            result["screenshots"].append(str(path.relative_to(ROOT)))
+            if (width, height) in baseline_screenshots:
+                image = cdp.call("Page.captureScreenshot", {"format": "png", "captureBeyondViewport": True})
+                path = SCREENSHOTS / f"v51-{width}x{height}.png"
+                path.write_bytes(base64.b64decode(image["data"]))
+                result["screenshots"].append(str(path.relative_to(ROOT)))
 
         # Media-emulated reduced-motion is checked after reload so AnimatedMedia mounts in reduced mode.
         cdp.call("Emulation.setEmulatedMedia", {"features": [{"name": "prefers-reduced-motion", "value": "reduce"}]})

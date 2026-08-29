@@ -3,7 +3,7 @@ import { Award, Check, Coins, Gem, Gift, Rocket, Sparkles, Star, Trophy, X, Zap 
 import GameBadge from '../components/GameBadge';
 import { badgeById } from '../badges';
 
-export type V4RewardMoment = {
+export type RewardMoment = {
   id: number;
   childName: string;
   kind: 'mission' | 'lesson' | 'day' | 'treasure' | 'bonus' | 'level';
@@ -15,7 +15,7 @@ export type V4RewardMoment = {
   levelUp?: number;
 };
 
-export default function RewardModal({ moment, onClose }: { moment: V4RewardMoment; onClose: () => void }) {
+export default function RewardModal({ moment, onClose }: { moment: RewardMoment; onClose: () => void }) {
   useEffect(() => {
     const timer = window.setTimeout(onClose, moment.kind === 'treasure' || moment.levelUp ? 2600 : 1900);
     const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') onClose(); };

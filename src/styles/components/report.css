@@ -1,0 +1,27 @@
+.learning-mastery-panel {
+  margin-top: 14px;
+  padding: 16px;
+  border: 1.5px solid #D7E9F3;
+  border-radius: 18px;
+  background: #F7FBFF;
+}
+
+.learning-mastery-panel > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.learning-mastery-panel > header h3 { margin: 0; color: #0D2A62; font-size: 17px; }
+.learning-mastery-panel > header span { color: #5D718F; font-size: 12px; font-weight: 800; }
+.learning-mastery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin-top: 12px; }
+.learning-mastery-skill { min-height: 92px; padding: 10px; border-radius: 14px; background: #fff; border: 1px solid #DCEAF8; }
+.learning-mastery-skill > span { display: block; color: #28466F; font-size: 13px; font-weight: 900; }
+.learning-mastery-skill strong { display: block; margin-top: 4px; color: #0D2A62; font-size: 21px; line-height: 1; }
+.learning-mastery-skill small { display: block; margin-top: 7px; color: #637692; font-size: 12px; line-height: 1.3; }
+.learning-mastery-skill.needs-review { border-color: #FFB8AE; background: #FFF7F5; }
+.learning-mastery-skill.learning { border-color: #FFE2A4; background: #FFFCF4; }
+.learning-mastery-skill.developing { border-color: #A9D9F7; }
+.learning-mastery-skill.mastered { border-color: #A9E5C9; background: #F5FFF9; }
+.learning-review-summary { margin: 13px 0 0; padding: 10px 12px; color: #294A76; font-size: 13px; font-weight: 700; line-height: 1.5; border-radius: 12px; background: #EAF4FF; }
+.learning-review-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 0; padding: 0; list-style: none; }
+.learning-review-list li { padding: 6px 9px; color: #6B3F13; font-size: 12px; font-weight: 850; border-radius: 999px; background: #FFF1CA; }
+
+@media (max-width: 700px) {
+  .learning-mastery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

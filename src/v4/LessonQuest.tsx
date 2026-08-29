@@ -13,6 +13,7 @@ import {
   Headphones,
   Lock,
   MessageCircleQuestion,
+  Mic,
   Play,
   Repeat2,
   Rocket,
@@ -28,6 +29,7 @@ import AvatarHero from '../components/AvatarHero';
 import { BLOCK_REWARD, calculateRewards, normalizeProgress, SPECIAL_TASK_BONUS } from '../rewards';
 import type { AppProgress, AppSettings, CourseDay, DayReflection, LessonBlock } from '../types';
 import type { CourseDayAccess } from '../dailyChallenge';
+import { adaptiveChoiceCount, adaptivePrompt, buildLearningProfile } from '../learningAnalytics';
 import { subjectLabel } from './model';
 import GameImage from './GameImage';
 import { playV4Sound } from './sound';
@@ -56,7 +58,7 @@ type Props = {
   reflection: DayReflection;
   onUpdateReflection: (patch: Partial<DayReflection>) => void;
   onToggleMission: (childId: string, mission: LessonBlock['missions'][number]) => void;
-  onAnswer: (childId: string, target: string, answer: string, correct: boolean, stage: number) => void;
+  onAnswer: (childId: string, target: string, answer: string, correct: boolean, stage: number, confidence?: number) => void;
   onToggleBlock: (childId: string, block: LessonBlock) => void;
   onClaimSpecialBonus: (childId: string, day: CourseDay) => void;
   onBack: () => void;
@@ -132,7 +134,7 @@ export default function LessonQuest(props: Props) {
     {!formal && <div className="v4-quest-lock-banner"><BookOpen/><div><strong>{props.access === 'past' ? '這是歷史複習：可完整查看內容與既有紀錄。' : props.access === 'future' ? '這是課前預覽：可先準備影片、單字與帶課提示。' : '日期尚在確認中：目前僅提供安全預覽。'}</strong><span>預覽與複習不會寫入任務、作答、完成紀錄或任何 XP／Coins；只有台北時間當天完成兩個任務及整堂課才會結算。</span></div></div>}
 
     <main className="v4-quest-stage-card">
-      {stage === 0 && <section className="v4-stage-content"><StageHeading icon={<Headphones/>} eyebrow="STAGE 1" title="唱歌暖身" text="原課前歌曲完整保留。先用動作與節奏把孩子帶進狀態。"/><div className="v4-video-frame"><iframe src={videoSrc(block.warmup.videoId, block.warmup.start, block.warmup.end)} title={block.warmup.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen/><div><strong>{block.warmup.title}</strong><span>{block.warmup.channel}</span></div></div><CaregiverCallout block={block}/></section>}
+      {stage === 0 && <section className="v4-stage-content"><StageHeading icon={<Headphones/>} eyebrow="STAGE 1" title="唱歌暖身" text="原課前歌曲完整保留。先用動作與節奏把孩子帶進狀態。"/><DailyReviewPanel block={block} learners={learnerList} progress={props.progress} todayYmd={props.dateKey} formal={formal} onAnswer={props.onAnswer}/><div className="v4-video-frame"><iframe src={videoSrc(block.warmup.videoId, block.warmup.start, block.warmup.end)} title={block.warmup.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen/><div><strong>{block.warmup.title}</strong><span>{block.warmup.channel}</span></div></div><CaregiverCallout block={block}/></section>}
 
       {stage === 1 && <section className="v4-stage-content"><StageHeading icon={<BookOpen/>} eyebrow="STAGE 2" title="單字預覽" text="每個單字都能直接播放英文發音。"/><div className="v4-word-grid">{block.vocabulary.map((word)=><button key={word} onClick={()=>speak(word)}><GameImage src={`${import.meta.env.BASE_URL}assets/v5/vocab/${slug(word)}.webp`} alt={word} className="v4-vocab-image"/><strong>{word}</strong><span><Volume2/> Listen</span></button>)}</div></section>}
 
@@ -140,10 +142,10 @@ export default function LessonQuest(props: Props) {
 
       {stage === 3 && <section className="v4-stage-content"><StageHeading icon={<CircleHelp/>} eyebrow="STAGE 4" title="暫停提問" text="把原教案的時間點、操作方式與暫停提示完整攤開，不再藏在底部。"/><div className="v4-teaching-timeline">{block.steps.map((step,index)=><article key={`${step.minute}-${index}`}><b>{step.minute}</b><div><strong>{step.title}</strong><p>{step.instruction}</p>{step.cue&&<span><MessageCircleQuestion/> 暫停提示：{step.cue}</span>}</div></article>)}</div></section>}
 
-      {stage === 4 && <section className="v4-stage-content"><StageHeading icon={<Repeat2/>} eyebrow="STAGE 5" title="複誦練習" text="先說單字，再把單字放回完整句型。"/><div className="v4-repeat-hero"><div><span>SENTENCE PATTERN</span><strong>{block.sentence}</strong><button onClick={()=>speak(block.sentence)}><Volume2/> 播放句型</button></div><div className="v4-age-tips"><article><span>YOUNGER</span><p>{block.younger}</p></article><article><span>OLDER</span><p>{block.older}</p></article></div></div></section>}
+      {stage === 4 && <section className="v4-stage-content"><StageHeading icon={<Repeat2/>} eyebrow="STAGE 5" title="複誦練習" text="先說單字，再把單字放回完整句型。"/><div className="v4-repeat-hero"><div><span>SENTENCE PATTERN</span><strong>{block.sentence}</strong><button onClick={()=>speak(block.sentence)}><Volume2/> 播放句型</button></div><div className="v4-age-tips"><article><span>YOUNGER</span><p>{block.younger}</p></article><article><span>OLDER</span><p>{block.older}</p></article></div></div><SpeakingPractice target={block.vocabulary[0] ?? block.sentence} learners={learnerList} formal={formal} onAnswer={props.onAnswer}/></section>}
 
-      {stage === 5 && <MissionStage mission={missionOne} number={1} stage={5} vocabulary={block.vocabulary} blockId={block.id} learners={learnerList} progress={props.progress} formal={formal} onToggle={props.onToggleMission} onAnswer={props.onAnswer}/>}
-      {stage === 6 && <MissionStage mission={missionTwo} number={2} stage={6} vocabulary={block.vocabulary} blockId={block.id} learners={learnerList} progress={props.progress} formal={formal} onToggle={props.onToggleMission} onAnswer={props.onAnswer}/>}
+      {stage === 5 && <MissionStage mission={missionOne} number={1} stage={5} vocabulary={block.vocabulary} blockId={block.id} learners={learnerList} progress={props.progress} todayYmd={props.dateKey} formal={formal} onToggle={props.onToggleMission} onAnswer={props.onAnswer}/>}
+      {stage === 6 && <MissionStage mission={missionTwo} number={2} stage={6} vocabulary={block.vocabulary} blockId={block.id} learners={learnerList} progress={props.progress} todayYmd={props.dateKey} formal={formal} onToggle={props.onToggleMission} onAnswer={props.onAnswer}/>}
 
       {stage === 7 && <section className="v4-stage-content"><StageHeading icon={<CheckCircle2/>} eyebrow="STAGE 8" title="完成任務" text={formal ? '兩個互動任務都完成後，才可以正式完成本堂課並結算 XP／Coins。' : '預覽模式可先閱讀完成標準；今天正式完成後才會結算 XP／Coins。'}/><div className="v4-finish-grid">{learnerList.map((child)=>{ const p=normalizeProgress(props.progress[child.id]); const ready=block.missions.every((mission)=>p.completedMissions.includes(mission.id)); const done=p.completedBlocks.includes(block.id); const rewards=calculateRewards(p); return <button key={child.id} className={done?'done':''} disabled={!formal||!ready||done} onClick={()=>props.onToggleBlock(child.id,block)}><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={72}/><div><strong>{child.name}</strong><span>{done?'本堂課已完成':formal&&ready?'完成後結算獎勵':formal?'還有任務未完成':'今天完成後可結算'}</span></div>{done?<CheckCircle2/>:<Trophy/>}</button>; })}</div><CaregiverCallout block={block}/></section>}
 
@@ -158,13 +160,93 @@ function StageHeading({icon,eyebrow,title,text}:{icon:React.ReactNode;eyebrow:st
 
 function CaregiverCallout({block}:{block:LessonBlock}) { return <aside className="v4-caregiver-callout"><Users/><div><strong>家長帶課提示</strong><p>{block.caregiverTip}</p></div></aside>; }
 
-function MissionStage({mission,number,stage,vocabulary,blockId,learners,progress,formal,onToggle,onAnswer}:{mission:LessonBlock['missions'][number];number:number;stage:number;vocabulary:string[];blockId:string;learners:AppSettings['children'];progress:AppProgress;formal:boolean;onToggle:(childId:string,mission:LessonBlock['missions'][number])=>void;onAnswer:(childId:string,target:string,answer:string,correct:boolean,stage:number)=>void}) {
+type SpeechAlternative = { transcript: string; confidence: number };
+type SpeechResult = { 0: SpeechAlternative };
+type SpeechRecognitionEventLike = { results: { 0: SpeechResult } };
+type SpeechRecognitionLike = {
+  lang: string;
+  interimResults: boolean;
+  maxAlternatives: number;
+  start: () => void;
+  onresult: ((event: SpeechRecognitionEventLike) => void) | null;
+  onerror: (() => void) | null;
+  onend: (() => void) | null;
+};
+type SpeechRecognitionConstructor = new () => SpeechRecognitionLike;
+type SpeechRecognitionWindow = Window & {
+  SpeechRecognition?: SpeechRecognitionConstructor;
+  webkitSpeechRecognition?: SpeechRecognitionConstructor;
+};
+
+const normalizeSpeech = (value: string) => value.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+
+function SpeakingPractice({ target, learners, formal, onAnswer }: { target: string; learners: AppSettings['children']; formal: boolean; onAnswer: (childId: string, target: string, answer: string, correct: boolean, stage: number, confidence?: number) => void }) {
+  const [listeningChildId, setListeningChildId] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState<Record<string, { correct: boolean; transcript: string }>>({});
+  const recognitionConstructor = typeof window === 'undefined'
+    ? undefined
+    : (window as SpeechRecognitionWindow).SpeechRecognition ?? (window as SpeechRecognitionWindow).webkitSpeechRecognition;
+  if (!formal) return null;
+  const startListening = (childId: string) => {
+    if (!recognitionConstructor) return;
+    const recognition = new recognitionConstructor();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+    setListeningChildId(childId);
+    recognition.onresult = (event) => {
+      const alternative = event.results[0][0];
+      const transcript = alternative.transcript.trim();
+      const correct = normalizeSpeech(transcript) === normalizeSpeech(target);
+      playV4Sound(correct ? 'success' : 'error');
+      onAnswer(childId, target, transcript, correct, -2, alternative.confidence);
+      setFeedback((current) => ({ ...current, [childId]: { correct, transcript } }));
+      if (correct) speak(target);
+    };
+    recognition.onerror = () => {
+      setFeedback((current) => ({ ...current, [childId]: { correct: false, transcript: '沒有聽清楚，請再試一次。' } }));
+    };
+    recognition.onend = () => setListeningChildId(null);
+    recognition.start();
+  };
+  return <section className="speaking-practice" aria-label="英文口說練習">
+    <header><div><span>SPEAKING PRACTICE</span><h3>換你說：{target}</h3></div><small>不影響課堂獎勵</small></header>
+    <p>先播放一次，再按每位孩子的麥克風，說出上面的英文單字。</p>
+    <div className="speaking-practice-controls"><button type="button" onClick={() => speak(target)}><Volume2/> 再聽一次</button>{!recognitionConstructor && <span>這台裝置暫不支援語音辨識，請跟著照顧者說一次。</span>}</div>
+    <div className="speaking-practice-learners">{learners.map((child) => {
+      const result = feedback[child.id];
+      const listening = listeningChildId === child.id;
+      return <article key={child.id} className={result ? (result.correct ? 'correct' : 'wrong') : ''}><span>{child.name}</span><button type="button" disabled={!recognitionConstructor || listeningChildId !== null} onClick={() => startListening(child.id)}><Mic/> {listening ? '正在聽…' : '換我說'}</button><small>{result ? (result.correct ? `很棒！辨識到「${result.transcript}」` : `再試一次：${result.transcript}`) : '點麥克風後再說'}</small></article>;
+    })}</div>
+    <footer>麥克風只會在你按下按鈕後啟用；本站不保存聲音檔，只記錄辨識文字、信心值與正誤結果。</footer>
+  </section>;
+}
+
+function DailyReviewPanel({ block, learners, progress, todayYmd, formal, onAnswer }: { block: LessonBlock; learners: AppSettings['children']; progress: AppProgress; todayYmd: string; formal: boolean; onAnswer: (childId: string, target: string, answer: string, correct: boolean, stage: number, confidence?: number) => void }) {
+  const [feedback, setFeedback] = useState<Record<string, 'correct' | 'wrong'>>({});
+  const reviewTargets = Array.from(new Set(learners.flatMap((child) => buildLearningProfile(progress[child.id]?.answerEvents, todayYmd).reviewTargets.filter((item) => item.nextReview <= todayYmd).map((item) => item.target)))).slice(0, 3);
+  if (!formal || !reviewTargets.length) return null;
+  const choicesFor = (target: string) => Array.from(new Set([target, ...reviewTargets.filter((word) => word !== target), ...block.vocabulary.filter((word) => word !== target)])).slice(0, 3);
+  const choose = (childId: string, target: string, answer: string) => {
+    const correct = target === answer;
+    playV4Sound(correct ? 'success' : 'error');
+    onAnswer(childId, target, answer, correct, -1);
+    setFeedback((current) => ({ ...current, [`${childId}:${target}`]: correct ? 'correct' : 'wrong' }));
+    if (correct) speak(answer);
+  };
+  return <section className="daily-review-panel" aria-label="今日複習">
+    <header><div><span>DAILY REVIEW</span><h3>先複習 3 個需要加強的單字</h3></div><small>不影響課堂獎勵</small></header>
+    {reviewTargets.map((target) => <article key={target}><button type="button" className="daily-review-listen" onClick={() => speak(target)}><Volume2/> 聽題目</button><div><strong>{target}</strong>{learners.map((child) => { const p = normalizeProgress(progress[child.id]); const alreadyCorrect = (p.answerEvents ?? []).some((event) => event.stage === -1 && event.target === target && event.correct); const state = alreadyCorrect ? 'correct' : feedback[`${child.id}:${target}`]; return <div className="daily-review-learner" key={child.id}><span>{child.name}</span>{choicesFor(target).map((choice) => <button key={choice} type="button" disabled={alreadyCorrect} onClick={() => choose(child.id, target, choice)}>{choice}</button>)}<small>{alreadyCorrect || state === 'correct' ? '答對了！' : state === 'wrong' ? '再聽一次看看' : '聽完再選'}</small></div>; })}</div></article>)}
+  </section>;
+}
+
+function MissionStage({mission,number,stage,vocabulary,blockId,learners,progress,todayYmd,formal,onToggle,onAnswer}:{mission:LessonBlock['missions'][number];number:number;stage:number;vocabulary:string[];blockId:string;learners:AppSettings['children'];progress:AppProgress;todayYmd:string;formal:boolean;onToggle:(childId:string,mission:LessonBlock['missions'][number])=>void;onAnswer:(childId:string,target:string,answer:string,correct:boolean,stage:number,confidence?:number)=>void}) {
   const target = vocabulary[(number - 1) % Math.max(1, vocabulary.length)] ?? mission.title;
   const alternatives = vocabulary.filter((word) => word !== target);
-  const choices = Array.from(new Set([alternatives[number % Math.max(1, alternatives.length)] ?? alternatives[0], target, alternatives[(number + 1) % Math.max(1, alternatives.length)] ?? alternatives[1]])).filter(Boolean).slice(0,3);
+  const choicePool = Array.from(new Set([alternatives[number % Math.max(1, alternatives.length)] ?? alternatives[0], target, alternatives[(number + 1) % Math.max(1, alternatives.length)] ?? alternatives[1], ...alternatives])).filter(Boolean);
   const [feedback,setFeedback]=useState<Record<string,'correct'|'wrong'>>({});
   const choose=(childId:string,answer:string)=>{ if(!formal) return; const correct=answer===target; playV4Sound(correct ? 'success' : 'error'); onAnswer(childId,target,answer,correct,stage); setFeedback((current)=>({...current,[childId]:correct?'correct':'wrong'})); if(correct) speak(answer); };
-  return <section className="v4-stage-content"><StageHeading icon={<Gamepad2/>} eyebrow={`STAGE ${number+5}`} title={number===1?'互動遊戲':'分類活動'} text={mission.prompt}/><div className="v4-mission-focus"><div className="v4-mission-number">{number}</div><div><span>{mission.title}</span><h3>{mission.prompt}</h3><p><strong>完成標準</strong>{mission.criteria}</p></div></div><section className="v4-quick-check"><header><div><span>QUICK CHECK</span><h3>聽聲音，選出正確單字</h3></div><button type="button" onClick={()=>speak(target)}><Volume2/> 播放題目</button></header><div>{learners.map((child)=>{ const p=normalizeProgress(progress[child.id]); const alreadyCorrect=(p.answerEvents??[]).some((event)=>event.blockId===blockId&&event.stage===stage&&event.target===target&&event.correct); const state=alreadyCorrect?'correct':feedback[child.id]; return <article key={child.id} className={state??''}><AvatarHero avatarId={child.avatar} xp={calculateRewards(p).xp} size={48}/><strong>{child.name}</strong><div>{choices.map((choice)=><button key={choice} type="button" disabled={!formal||alreadyCorrect} onClick={()=>choose(child.id,choice)}>{choice}</button>)}</div><small>{alreadyCorrect||state==='correct'?'答對了！':state==='wrong'?'再聽一次看看':'先聽題目再作答'}</small></article>; })}</div></section><div className="v4-mission-learners">{learners.map((child)=>{ const p=normalizeProgress(progress[child.id]); const done=p.completedMissions.includes(mission.id); const r=calculateRewards(p); return <button key={child.id} disabled={!formal||done} className={done?'done':''} onClick={()=>onToggle(child.id,mission)}><AvatarHero avatarId={child.avatar} xp={r.xp} size={62}/><span><strong>{child.name}</strong><small>{done?'完成':'完成任務'}</small></span>{done?<Check/>:<><Zap/>+{mission.xp}</>}</button>; })}</div></section>;
+  return <section className="v4-stage-content"><StageHeading icon={<Gamepad2/>} eyebrow={`STAGE ${number+5}`} title={number===1?'互動遊戲':'分類活動'} text={mission.prompt}/><div className="v4-mission-focus"><div className="v4-mission-number">{number}</div><div><span>{mission.title}</span><h3>{mission.prompt}</h3><p><strong>完成標準</strong>{mission.criteria}</p></div></div><section className="v4-quick-check"><header><div><span>QUICK CHECK</span><h3>聽聲音，選出正確單字</h3></div><button type="button" onClick={()=>speak(target)}><Volume2/> 播放題目</button></header><div>{learners.map((child)=>{ const p=normalizeProgress(progress[child.id]); const vocabularyScore=buildLearningProfile(p.answerEvents,todayYmd).skills.find((skill)=>skill.id==='vocabulary')?.score??null; const choices=choicePool.slice(0,Math.min(adaptiveChoiceCount(vocabularyScore),choicePool.length)); const alreadyCorrect=(p.answerEvents??[]).some((event)=>event.blockId===blockId&&event.stage===stage&&event.target===target&&event.correct); const state=alreadyCorrect?'correct':feedback[child.id]; return <article key={child.id} className={state??''}><AvatarHero avatarId={child.avatar} xp={calculateRewards(p).xp} size={48}/><strong>{child.name}</strong><div>{choices.map((choice)=><button key={choice} type="button" disabled={!formal||alreadyCorrect} onClick={()=>choose(child.id,choice)}>{choice}</button>)}</div><small className="adaptive-learning-hint">{adaptivePrompt(vocabularyScore)}</small><small>{alreadyCorrect||state==='correct'?'答對了！':state==='wrong'?'再聽一次看看':'先聽題目再作答'}</small></article>; })}</div></section><div className="v4-mission-learners">{learners.map((child)=>{ const p=normalizeProgress(progress[child.id]); const done=p.completedMissions.includes(mission.id); const r=calculateRewards(p); return <button key={child.id} disabled={!formal||done} className={done?'done':''} onClick={()=>onToggle(child.id,mission)}><AvatarHero avatarId={child.avatar} xp={r.xp} size={62}/><span><strong>{child.name}</strong><small>{done?'完成':'完成任務'}</small></span>{done?<Check/>:<><Zap/>+{mission.xp}</>}</button>; })}</div></section>;
 }
 
 function slug(word:string) { const value=word.toLowerCase().trim().replace(/[?!]/g,'').replace(/\s+[\u4e00-\u9fff]+$/,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); return value||'zh-audio'; }

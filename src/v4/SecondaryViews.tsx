@@ -12,7 +12,9 @@ import { calculateRewards, easterEggDays, levelFromXp, normalizeProgress } from 
 import type { AppProgress, AppSettings, CourseDay, FamilyUserProfile } from '../types';
 import type { CourseDayAccess, TrustedTaipeiDate } from '../dailyChallenge';
 import { addCourseWeekdaysYmd, formatTaipeiCourseDate } from '../dailyChallenge';
-import { AdventureHeader, BottomStatusBar, MainNavigation, type ViewKey } from './Dashboard';
+import { buildLearningProfile } from '../learningAnalytics';
+import type { AnswerEvent } from '../types';
+import { AdventureHeader, BottomStatusBar, MainNavigation, type DashboardViewKey } from './Dashboard';
 import { levelTitle, playerResources, subjectLabel } from './model';
 import GameImage from './GameImage';
 import GameIcon from './GameIcon';
@@ -25,17 +27,17 @@ const shopSlotLabels: Record<string,string> = {
 type ShellProps = {
   settings: AppSettings;
   progress?: AppProgress;
-  active: ViewKey;
+  active: DashboardViewKey;
   trustedDate: TrustedTaipeiDate;
   cloudStatus: string;
-  onNavigate: (view: ViewKey) => void;
+  onNavigate: (view: DashboardViewKey) => void;
   onParentArea: () => void;
   activeUser?: FamilyUserProfile;
   parentPreviewUnlocked?: boolean;
   children: React.ReactNode;
 };
 
-export function V4PageShell(props: ShellProps) {
+export function SecondaryPageShell(props: ShellProps) {
   return <div className="v4-shell v4-secondary-shell">
     <AdventureHeader settings={props.settings} progress={props.progress} activeUser={props.activeUser} parentPreviewUnlocked={props.parentPreviewUnlocked} onParentArea={props.onParentArea}/>
     <MainNavigation active={props.active} onNavigate={props.onNavigate} onParentArea={props.onParentArea}/>
@@ -80,12 +82,12 @@ function ChildTeaserPanel({ day, date, onClose }: { day: CourseDay; date: string
   </div>;
 }
 
-export function V4SemesterPage({ settings, progress, trustedDate, cloudStatus, courseDateKey, accessForDay, isDayDone, onOpenLesson, onNavigate, onParentArea, parentPreviewUnlocked, activeUser }:{
-  settings:AppSettings; progress:AppProgress; trustedDate:TrustedTaipeiDate; cloudStatus:string; courseDateKey:(day:CourseDay)=>string; accessForDay:(day:CourseDay)=>CourseDayAccess; isDayDone:(day:CourseDay)=>boolean; onOpenLesson:(day:CourseDay,index:0|1)=>void; onNavigate:(view:ViewKey)=>void; onParentArea:()=>void; parentPreviewUnlocked:boolean; activeUser?:FamilyUserProfile;
+export function SemesterPage({ settings, progress, trustedDate, cloudStatus, courseDateKey, accessForDay, isDayDone, onOpenLesson, onNavigate, onParentArea, parentPreviewUnlocked, activeUser }:{
+  settings:AppSettings; progress:AppProgress; trustedDate:TrustedTaipeiDate; cloudStatus:string; courseDateKey:(day:CourseDay)=>string; accessForDay:(day:CourseDay)=>CourseDayAccess; isDayDone:(day:CourseDay)=>boolean; onOpenLesson:(day:CourseDay,index:0|1)=>void; onNavigate:(view:DashboardViewKey)=>void; onParentArea:()=>void; parentPreviewUnlocked:boolean; activeUser?:FamilyUserProfile;
 }) {
   const [historyDay,setHistoryDay]=useState<CourseDay|null>(null);
   const [teaserDay,setTeaserDay]=useState<CourseDay|null>(null);
-  return <V4PageShell settings={settings} progress={progress} active="semester" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
+  return <SecondaryPageShell settings={settings} progress={progress} active="semester" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
     <section className="v4-page-heading"><div><span>18 WEEKS · 90 DAYS</span><h1>學期日曆</h1><p>{parentPreviewUnlocked ? '家長備課已解鎖：可完整預覽未來教材與回看過去教案；只有 server verified 的今天才會結算獎勵。' : '孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 模式保護。'}</p></div><div className="v4-page-kpi"><GameIcon size="lg"><CalendarDays/></GameIcon><strong>{curriculum.filter(isDayDone).length}</strong><span>/ 90 完成</span></div></section>
     <div className="v4-semester-weeks">{Array.from({length:18},(_,weekIndex)=>{
       const days=curriculum.filter((day)=>day.week===weekIndex+1); const done=days.filter(isDayDone).length;
@@ -103,18 +105,18 @@ export function V4SemesterPage({ settings, progress, trustedDate, cloudStatus, c
     })}</div>
     {historyDay&&<HistoryDayPanel day={historyDay} date={courseDateKey(historyDay)} settings={settings} progress={progress} showLessonDetails={parentPreviewUnlocked} onClose={()=>setHistoryDay(null)}/>}
     {teaserDay&&<ChildTeaserPanel day={teaserDay} date={courseDateKey(teaserDay)} onClose={()=>setTeaserDay(null)}/>}
-  </V4PageShell>;
+  </SecondaryPageShell>;
 }
 
-export function V4AchievementsPage({ settings, progress, trustedDate, cloudStatus, onNavigate, onParentArea, activeUser, parentPreviewUnlocked }:{settings:AppSettings;progress:AppProgress;trustedDate:TrustedTaipeiDate;cloudStatus:string;onNavigate:(view:ViewKey)=>void;onParentArea:()=>void;activeUser?:FamilyUserProfile;parentPreviewUnlocked?:boolean}) {
-  return <V4PageShell settings={settings} progress={progress} active="achievements" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
+export function AchievementsPage({ settings, progress, trustedDate, cloudStatus, onNavigate, onParentArea, activeUser, parentPreviewUnlocked }:{settings:AppSettings;progress:AppProgress;trustedDate:TrustedTaipeiDate;cloudStatus:string;onNavigate:(view:DashboardViewKey)=>void;onParentArea:()=>void;activeUser?:FamilyUserProfile;parentPreviewUnlocked?:boolean}) {
+  return <SecondaryPageShell settings={settings} progress={progress} active="achievements" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
     <section className="v4-page-heading"><div><span>BADGE COLLECTION</span><h1>成就獎勵</h1><p>每個孩子的徽章、Stars 與 Gems 都獨立保存。</p></div><div className="v4-page-kpi purple"><GameIcon tone="purple" size="lg"><Award/></GameIcon><strong>24</strong><span>原創徽章</span></div></section>
     <div className="v4-achievement-learners">{settings.children.filter((child)=>!child.disabled).map((child)=>{ const p=progress[child.id]; const r=playerResources(p); const unlocks=p?.badgeUnlocks??{}; return <section className="v4-achievement-card" key={child.id}><header><AvatarHero avatarId={child.avatar} xp={r.xp} equippedCosmetics={p?.equippedCosmetics} size={104}/><div><span>PLAYER</span><h2>{child.name}</h2><p>Lv.{r.level} · {levelTitle(r.level)}</p></div><div className="v4-achievement-resources"><span><Star/>{r.stars}</span><span><Gem/>{r.gems}</span></div></header><div className="v4-full-badge-grid">{badges.map((badge)=><GameBadge key={badge.id} badge={badge} unlocked={Boolean(unlocks[badge.id])} earnedDate={unlocks[badge.id]}/>)}</div></section>; })}</div>
-  </V4PageShell>;
+  </SecondaryPageShell>;
 }
 
-export function V4ShopPage({ settings, progress, trustedDate, cloudStatus, onNavigate, onParentArea, onUnlock, onToggle, activeUser, parentPreviewUnlocked }:{settings:AppSettings;progress:AppProgress;trustedDate:TrustedTaipeiDate;cloudStatus:string;onNavigate:(view:ViewKey)=>void;onParentArea:()=>void;onUnlock:(childId:string,itemId:string)=>void;onToggle:(childId:string,itemId:string)=>void;activeUser?:FamilyUserProfile;parentPreviewUnlocked?:boolean}) {
-  return <V4PageShell settings={settings} progress={progress} active="shop" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
+export function ShopPage({ settings, progress, trustedDate, cloudStatus, onNavigate, onParentArea, onUnlock, onToggle, activeUser, parentPreviewUnlocked }:{settings:AppSettings;progress:AppProgress;trustedDate:TrustedTaipeiDate;cloudStatus:string;onNavigate:(view:DashboardViewKey)=>void;onParentArea:()=>void;onUnlock:(childId:string,itemId:string)=>void;onToggle:(childId:string,itemId:string)=>void;activeUser?:FamilyUserProfile;parentPreviewUnlocked?:boolean}) {
+  return <SecondaryPageShell settings={settings} progress={progress} active="shop" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
     <section className="v4-page-heading"><div><span>COIN SHOP · NO REAL MONEY</span><h1>寶物商店</h1><p>Coins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。</p></div><div className="v4-page-kpi gold"><GameIcon tone="gold" size="lg"><ShoppingBag/></GameIcon><strong>{cosmetics.length}</strong><span>冒險商品</span></div></section>
     <div className="v4-shop-learners">{settings.children.filter((child)=>!child.disabled).map((child)=>{
       const p=progress[child.id]; const reward=calculateRewards(p); const owned=new Set(p?.unlockedCosmetics??[]); const equipped=new Set(p?.equippedCosmetics??[]); const level=Math.min(15,levelFromXp(reward.xp));
@@ -123,15 +125,26 @@ export function V4ShopPage({ settings, progress, trustedDate, cloudStatus, onNav
         return <article key={item.id} className={`${has?'owned':''} ${using?'equipped':''} rarity-${item.rarity??'common'}`}><div className={`v4-item-art slot-${item.slot}`}><GameImage src={`${import.meta.env.BASE_URL}assets/v5/items/${item.id}.webp`} alt={item.name}/></div><span>{item.rarity??'common'}</span><h3>{item.name}</h3><p>{item.description}</p><small>Lv.{item.unlockLevel} · {shopSlotLabels[item.slot] ?? item.slot}</small>{has?<button onClick={()=>onToggle(child.id,item.id)}>{using?'卸下':'立即裝備'}</button>:<button disabled={!canBuy} onClick={()=>onUnlock(child.id,item.id)}><Coins/>{item.cost} {canBuy?'購買':'尚未解鎖'}</button>}</article>;
       })}</div></section>;
     })}</div>
-  </V4PageShell>;
+  </SecondaryPageShell>;
 }
 
-export function V4ReportPage({ settings, progress, trustedDate, cloudStatus, isChildDayDone, onNavigate, onParentArea, onSettings, activeUser, parentPreviewUnlocked }:{settings:AppSettings;progress:AppProgress;trustedDate:TrustedTaipeiDate;cloudStatus:string;isChildDayDone:(childId:string,day:CourseDay)=>boolean;onNavigate:(view:ViewKey)=>void;onParentArea:()=>void;onSettings:()=>void;activeUser?:FamilyUserProfile;parentPreviewUnlocked?:boolean}) {
-  return <V4PageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
+function LearningMasteryPanel({ events, todayYmd }: { events: AnswerEvent[]; todayYmd: string }) {
+  const profile = buildLearningProfile(events, todayYmd);
+  const bandLabel = { 'not-assessed': '尚未評量', 'needs-review': '優先複習', learning: '學習中', developing: '逐步建立', mastered: '已掌握' } as const;
+  return <section className="learning-mastery-panel" aria-label="學習能力掌握度">
+    <header><h3>能力掌握度</h3><span>僅依真實互動與口說作答計算</span></header>
+    <div className="learning-mastery-grid">{profile.skills.map((skill) => <article className={`learning-mastery-skill ${skill.band}`} key={skill.id}><span>{skill.label}</span><strong>{skill.score === null ? '—' : `${Math.round(skill.score)}%`}</strong><small>{skill.score === null ? '完成題目後開始評量' : `${bandLabel[skill.band]} · ${skill.correct}/${skill.attempts} 答對`}</small></article>)}</div>
+    <p className="learning-review-summary">{profile.suggestion}</p>
+    {profile.reviewTargets.length > 0 && <ul className="learning-review-list" aria-label="優先複習內容">{profile.reviewTargets.slice(0, 3).map((target) => <li key={target.target}>{target.target} · {target.incorrect ? `${target.incorrect} 次答錯` : '鞏固複習'}</li>)}</ul>}
+  </section>;
+}
+
+export function ReportPage({ settings, progress, trustedDate, cloudStatus, isChildDayDone, onNavigate, onParentArea, onSettings, activeUser, parentPreviewUnlocked }:{settings:AppSettings;progress:AppProgress;trustedDate:TrustedTaipeiDate;cloudStatus:string;isChildDayDone:(childId:string,day:CourseDay)=>boolean;onNavigate:(view:DashboardViewKey)=>void;onParentArea:()=>void;onSettings:()=>void;activeUser?:FamilyUserProfile;parentPreviewUnlocked?:boolean}) {
+  return <SecondaryPageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
     <section className="v4-page-heading"><div><span>PARENT ANALYTICS · PIN PROTECTED</span><h1>學習報表</h1><p>用遊戲品牌語言呈現完成率、科目、學習時間與成長，不做 Excel 風格後台。</p></div><button className="v4-settings-link" onClick={onSettings}><ShieldCheck/> 家長設定</button></section>
     <div className="v4-report-grid">{settings.children.filter((child)=>!child.disabled).map((child)=>{
       const r=playerResources(progress[child.id]); const doneDays=curriculum.filter((day)=>isChildDayDone(child.id,day)); const doneBlocks=new Set(progress[child.id]?.completedBlocks??[]); const subjectCounts=new Map<string,number>(); curriculum.flatMap((day)=>day.blocks).forEach((block)=>{ if(doneBlocks.has(block.id)) subjectCounts.set(block.subject,(subjectCounts.get(block.subject)??0)+1); }); const pct=Math.round(doneDays.length/curriculum.length*100); const datedDays=curriculum.map((day)=>({day,date:addCourseWeekdaysYmd(settings.semesterStart,day.index-1)})); const availableDays=datedDays.filter(({date})=>date<=trustedDate.ymd); const currentWeek=availableDays.at(-1)?.day.week??1; const availableWeek=availableDays.filter(({day})=>day.week===currentWeek); const weekDone=availableWeek.filter(({day})=>isChildDayDone(child.id,day)).length; const weekRate=availableWeek.length?Math.round(weekDone/availableWeek.length*100):0; const monthKey=trustedDate.ymd.slice(0,7); const availableMonth=availableDays.filter(({date})=>date.startsWith(monthKey)); const monthDone=availableMonth.filter(({day})=>isChildDayDone(child.id,day)).length; const monthRate=availableMonth.length?Math.round(monthDone/availableMonth.length*100):0; const minutes=doneBlocks.size*30; const answerEvents=progress[child.id]?.answerEvents??[]; const correctAnswers=answerEvents.filter((event)=>event.correct).length; const accuracy=answerEvents.length?Math.round(correctAnswers/answerEvents.length*100):null; const wrongCounts=new Map<string,number>(); answerEvents.filter((event)=>!event.correct).forEach((event)=>wrongCounts.set(event.target,(wrongCounts.get(event.target)??0)+1)); const mostWrong=Array.from(wrongCounts.entries()).sort((a,b)=>b[1]-a[1])[0];
-      return <section className="v4-report-player" key={child.id}><header><AvatarHero avatarId={child.avatar} xp={r.xp} equippedCosmetics={progress[child.id]?.equippedCosmetics} size={110}/><div><span>LEARNER</span><h2>{child.name}</h2><p>Lv.{r.level} · {levelTitle(r.level)}</p></div><div className="v4-report-score"><strong>{pct}%</strong><span>學期完成率</span></div></header><div className="v4-report-kpis"><article><Check/><strong>{doneDays.length}</strong><span>完成天數</span></article><article><Zap/><strong>{r.xp}</strong><span>XP 成長</span></article><article><Coins/><strong>{r.coins}</strong><span>Coins</span></article><article><Award/><strong>{Object.keys(progress[child.id]?.badgeUnlocks??{}).length}</strong><span>徽章</span></article></div><div className="v4-report-kpis secondary"><article><CalendarDays/><strong>{Math.round(minutes/60*10)/10}</strong><span>學習小時</span></article><article><Star/><strong>{r.stars}</strong><span>Stars</span></article><article><Gem/><strong>{r.gems}</strong><span>Gems</span></article><article><Trophy/><strong>{weekDone}/{availableWeek.length||0}</strong><span>本週完成</span></article></div><div className="v4-report-periods"><article><span>THIS WEEK</span><strong>{weekRate}%</strong><small>本週完成率 · {weekDone}/{availableWeek.length||0} 個已開放學習日</small></article><article><span>THIS MONTH</span><strong>{monthRate}%</strong><small>本月完成率 · {monthDone}/{availableMonth.length||0} 個已開放學習日</small></article></div><div className="v4-answer-analytics"><article><span>QUICK CHECK ACCURACY</span><strong>{accuracy===null?'—':`${accuracy}%`}</strong><small>{answerEvents.length?`${correctAnswers}/${answerEvents.length} 次答對`:'完成互動題後開始統計'}</small></article><article><span>MOST MISSED WORD</span><strong>{mostWrong?.[0]??'—'}</strong><small>{mostWrong?`答錯 ${mostWrong[1]} 次`:'目前沒有錯題紀錄'}</small></article></div><div className="v4-subject-bars">{['English','Math','Zhuyin','Life','Science','Review'].map((subject)=>{ const count=subjectCounts.get(subject)??0; return <div key={subject}><span>{subject==='Zhuyin'?'中文語音':subject}</span><div><i style={{width:`${Math.min(100,count/30*100)}%`}}/></div><strong>{count}</strong></div>; })}</div><footer><span><Cloud/> 雲端 {cloudStatus}</span><span><Video/> 影片教材 360 unique</span><span><ShieldCheck/> PIN protected</span></footer></section>;
+      return <section className="v4-report-player" key={child.id}><header><AvatarHero avatarId={child.avatar} xp={r.xp} equippedCosmetics={progress[child.id]?.equippedCosmetics} size={110}/><div><span>LEARNER</span><h2>{child.name}</h2><p>Lv.{r.level} · {levelTitle(r.level)}</p></div><div className="v4-report-score"><strong>{pct}%</strong><span>學期完成率</span></div></header><div className="v4-report-kpis"><article><Check/><strong>{doneDays.length}</strong><span>完成天數</span></article><article><Zap/><strong>{r.xp}</strong><span>XP 成長</span></article><article><Coins/><strong>{r.coins}</strong><span>Coins</span></article><article><Award/><strong>{Object.keys(progress[child.id]?.badgeUnlocks??{}).length}</strong><span>徽章</span></article></div><div className="v4-report-kpis secondary"><article><CalendarDays/><strong>{Math.round(minutes/60*10)/10}</strong><span>學習小時</span></article><article><Star/><strong>{r.stars}</strong><span>Stars</span></article><article><Gem/><strong>{r.gems}</strong><span>Gems</span></article><article><Trophy/><strong>{weekDone}/{availableWeek.length||0}</strong><span>本週完成</span></article></div><div className="v4-report-periods"><article><span>THIS WEEK</span><strong>{weekRate}%</strong><small>本週完成率 · {weekDone}/{availableWeek.length||0} 個已開放學習日</small></article><article><span>THIS MONTH</span><strong>{monthRate}%</strong><small>本月完成率 · {monthDone}/{availableMonth.length||0} 個已開放學習日</small></article></div><div className="v4-answer-analytics"><article><span>INTERACTION ACCURACY</span><strong>{accuracy===null?'—':`${accuracy}%`}</strong><small>{answerEvents.length?`${correctAnswers}/${answerEvents.length} 次答對`:'完成互動題後開始統計'}</small></article><article><span>MOST MISSED WORD</span><strong>{mostWrong?.[0]??'—'}</strong><small>{mostWrong?`答錯 ${mostWrong[1]} 次`:'目前沒有錯題紀錄'}</small></article></div><LearningMasteryPanel events={answerEvents} todayYmd={trustedDate.ymd}/><div className="v4-subject-bars">{['English','Math','Zhuyin','Life','Science','Review'].map((subject)=>{ const count=subjectCounts.get(subject)??0; return <div key={subject}><span>{subject==='Zhuyin'?'中文語音':subject}</span><div><i style={{width:`${Math.min(100,count/30*100)}%`}}/></div><strong>{count}</strong></div>; })}</div><footer><span><Cloud/> 雲端 {cloudStatus}</span><span><Video/> 影片教材 360 unique</span><span><ShieldCheck/> PIN protected</span></footer></section>;
     })}</div>
-  </V4PageShell>;
+  </SecondaryPageShell>;
 }

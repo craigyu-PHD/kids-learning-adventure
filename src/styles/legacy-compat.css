@@ -1,0 +1,13 @@
+/*
+ * Transitional compatibility boundary.
+ *
+ * Keep this import order intact until each selector family has moved to a
+ * feature-owned file.  It is deliberately the only place that references
+ * versioned visual layers; application entry points must import index.css.
+ */
+@import '../styles.css';
+@import '../v2.css';
+@import '../v22.css';
+@import '../v23.css';
+@import '../v30.css';
+@import '../v40.css';

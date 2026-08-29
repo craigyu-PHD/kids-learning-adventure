@@ -72,7 +72,7 @@ const groups = [
     name: '05 Responsive & Accessibility',
     checks: [
       browser.status === 'PASS',
-      browser.checks.length === 3,
+      browser.checks.length >= 13,
       browser.checks.every((entry: { snapshot: { overflow: number; brokenImages: unknown[]; bopomofoCount: number } }) => entry.snapshot.overflow <= 1 && entry.snapshot.brokenImages.length === 0 && entry.snapshot.bopomofoCount === 0),
       browser.checks.every((entry: { snapshot: { v40RuntimeMedia: unknown[] } }) => entry.snapshot.v40RuntimeMedia.length === 0),
       browser.checks.find((entry: { viewport: string }) => entry.viewport === '390x844')?.snapshot.dashboardColumnWidths.every((width: number) => width >= 360),

@@ -1,15 +1,15 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { curriculum } from './data/curriculum';
 import { normalizeAvatarId } from './components/AvatarHero';
-import V4Dashboard from './v4/Dashboard';
+import AdventureDashboard from './v4/Dashboard';
 import LessonQuest from './v4/LessonQuest';
-import type { V4RewardMoment } from './v4/RewardModal';
+import type { RewardMoment } from './v4/RewardModal';
 import { playV4Sound } from './v4/sound';
-import { V4AchievementsPage, V4PageShell, V4ReportPage, V4SemesterPage, V4ShopPage } from './v4/SecondaryViews';
+import { AchievementsPage, SecondaryPageShell, ReportPage, SemesterPage, ShopPage } from './v4/SecondaryViews';
 import ParentSettings from './v4/ParentSettings';
 import { AdminPinDialog, FamilySetupDialog, UserSwitchDialog } from './v4/ParentAccess';
 import { normalizeUserRole } from './v4/caregivers';
-import type { ViewKey as V4ViewKey } from './v4/Dashboard';
+import type { DashboardViewKey } from './v4/Dashboard';
 import { createFamilySession, loadCloudSnapshot, normalizeFamilyPin, saveCloudSnapshot, validFamilyPin } from './cloud';
 import type { FamilySession } from './cloud';
 import {
@@ -260,7 +260,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   const [cloudMessage, setCloudMessage] = useState(() => isLocalFamily ? '目前使用本機家庭模式；Child Mode 不需要 PIN。' : '正在驗證家庭安全工作階段…');
   const [cloudReady, setCloudReady] = useState(isLocalFamily);
   const [lastCloudSync, setLastCloudSync] = useState('');
-  const [v4Reward, setV4Reward] = useState<V4RewardMoment | null>(null);
+  const [rewardMoment, setRewardMoment] = useState<RewardMoment | null>(null);
   const [adminUnlocked, setAdminUnlocked] = useState(false);
   const [adminPromptOpen, setAdminPromptOpen] = useState(false);
   const [adminDestination, setAdminDestination] = useState<'report' | 'settings'>('report');
@@ -314,9 +314,9 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   }, [soundEnabled]);
 
   useEffect(() => {
-    if (!soundEnabled || !v4Reward) return;
-    playV4Sound(v4Reward.kind === 'treasure' ? 'treasure' : v4Reward.levelUp ? 'fanfare' : 'success');
-  }, [soundEnabled, v4Reward?.id]);
+    if (!soundEnabled || !rewardMoment) return;
+    playV4Sound(rewardMoment.kind === 'treasure' ? 'treasure' : rewardMoment.levelUp ? 'fanfare' : 'success');
+  }, [soundEnabled, rewardMoment?.id]);
 
   useEffect(() => {
     if (!('IntersectionObserver' in window)) return;
@@ -527,11 +527,14 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     setSelectedDayId(day.id);
   };
 
-  const recordAnswer = (childId: string, day: CourseDay, block: LessonBlock, stage: number, target: string, answer: string, correct: boolean) => {
+  const recordAnswer = (childId: string, day: CourseDay, block: LessonBlock, stage: number, target: string, answer: string, correct: boolean, confidence?: number) => {
     if (!canEarnToday(day)) return;
     const createdAt = new Date().toISOString();
     const randomPart = typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
-    const event: AnswerEvent = { id: `v4-answer:${block.id}:${stage}:${childId}:${randomPart}`, dayId: day.id, blockId: block.id, stage, target, answer, correct, createdAt };
+    // Daily review creates learning evidence but intentionally belongs to a
+    // separate source, so it can never inflate this lesson's accuracy reward.
+    const eventBlockId = stage === -1 ? `review:${block.id}` : stage === -2 ? `speaking:${block.id}` : block.id;
+    const event: AnswerEvent = { id: `v4-answer:${eventBlockId}:${stage}:${childId}:${randomPart}`, dayId: day.id, blockId: eventBlockId, stage, target, answer, correct, confidence, createdAt };
     setProgress((current) => {
       const child = normalizeProgress(current[childId]);
       return { ...current, [childId]: { ...child, answerEvents: [...(child.answerEvents ?? []), event] } };
@@ -562,7 +565,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const name = settings.children.find((child) => child.id === childId)?.name ?? '小朋友';
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(before).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(preview.progress).xp));
-    setV4Reward({
+    setRewardMoment({
       id: Date.now(), childName: name, kind: 'mission', xp: mission.xp, coins: mission.coins, stars: 0, gems: 0,
       badgeIds: preview.newBadgeIds,
       levelUp: afterLevel > beforeLevel ? afterLevel : undefined,
@@ -642,7 +645,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const name = settings.children.find((child) => child.id === childId)?.name ?? '小朋友';
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(before).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(preview.progress).xp));
-    setV4Reward({
+    setRewardMoment({
       id: Date.now(),
       childName: name,
       kind: willFinishDay ? 'day' : 'lesson',
@@ -671,7 +674,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const name = settings.children.find((item) => item.id === childId)?.name ?? '小朋友';
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(child).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(previewProgress).xp));
-    setV4Reward({ id: Date.now(), childName: name, kind: 'bonus', ...SPECIAL_TASK_BONUS, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
+    setRewardMoment({ id: Date.now(), childName: name, kind: 'bonus', ...SPECIAL_TASK_BONUS, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
   };
 
   const claimEgg = (childId: string, day: CourseDay) => {
@@ -696,7 +699,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const name = settings.children.find((item) => item.id === childId)?.name ?? '小朋友';
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(child).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(previewProgress).xp));
-    setV4Reward({ id: Date.now(), childName: name, kind: 'treasure', xp: EGG_REWARD.xp, coins: EGG_REWARD.coins, stars: 0, gems: 3, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
+    setRewardMoment({ id: Date.now(), childName: name, kind: 'treasure', xp: EGG_REWARD.xp, coins: EGG_REWARD.coins, stars: 0, gems: 3, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
   };
 
   const unlockCosmetic = (childId: string, cosmeticId: string) => {
@@ -784,7 +787,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
   </>;
 
-  const navigateV4 = (nextView: V4ViewKey) => {
+  const navigateDashboard = (nextView: DashboardViewKey) => {
     if (nextView === 'report') requestParentArea();
     else setView(nextView);
   };
@@ -804,12 +807,12 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
           reflection={reflections[selectedDay.id] ?? emptyReflection()}
           onUpdateReflection={(patch) => setReflections((current) => ({ ...current, [selectedDay.id]: { ...(current[selectedDay.id] ?? emptyReflection()), ...patch } }))}
           onToggleMission={toggleMission}
-          onAnswer={(childId, target, answer, correct, stage) => recordAnswer(childId, selectedDay, selectedDay.blocks[selectedLessonIndex], stage, target, answer, correct)}
+          onAnswer={(childId, target, answer, correct, stage, confidence) => recordAnswer(childId, selectedDay, selectedDay.blocks[selectedLessonIndex], stage, target, answer, correct, confidence)}
           onToggleBlock={(childId, block) => toggleBlock(childId, selectedDay, block)}
           onClaimSpecialBonus={claimSpecialBonus}
           onBack={() => { window.history.replaceState({}, '', window.location.pathname); setSelectedLessonIndex(null); setSelectedDayId(null); }}
         />
-        {v4Reward && <Suspense fallback={null}><RewardModal moment={v4Reward} onClose={() => setV4Reward(null)} /></Suspense>}
+        {rewardMoment && <Suspense fallback={null}><RewardModal moment={rewardMoment} onClose={() => setRewardMoment(null)} /></Suspense>}
       </>
     );
   }
@@ -817,7 +820,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   if (view === 'home' || view === 'today') {
     return (
       <>
-        <V4Dashboard
+        <AdventureDashboard
           activeView={view}
           settings={settings}
           progress={progress}
@@ -846,19 +849,19 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
           activeUser={activeUser}
           parentPreviewUnlocked={adminUnlocked}
         />
-        {v4Reward && <Suspense fallback={null}><RewardModal moment={v4Reward} onClose={() => setV4Reward(null)} /></Suspense>}
+        {rewardMoment && <Suspense fallback={null}><RewardModal moment={rewardMoment} onClose={() => setRewardMoment(null)} /></Suspense>}
         {accessDialogs}
       </>
     );
   }
 
-  if (view === 'semester') return <><V4SemesterPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} onOpenLesson={openLesson} onNavigate={navigateV4} onParentArea={requestParentArea} parentPreviewUnlocked={adminUnlocked} activeUser={activeUser} />{accessDialogs}</>;
-  if (view === 'achievements') return <><V4AchievementsPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
-  if (view === 'shop') return <><V4ShopPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} onUnlock={unlockCosmetic} onToggle={toggleCosmetic} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
-  if (view === 'report') return <><V4ReportPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} isChildDayDone={isChildDayDone} onNavigate={navigateV4} onParentArea={requestParentArea} onSettings={requestSettings} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
+  if (view === 'semester') return <><SemesterPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} onOpenLesson={openLesson} onNavigate={navigateDashboard} onParentArea={requestParentArea} parentPreviewUnlocked={adminUnlocked} activeUser={activeUser} />{accessDialogs}</>;
+  if (view === 'achievements') return <><AchievementsPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
+  if (view === 'shop') return <><ShopPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} onUnlock={unlockCosmetic} onToggle={toggleCosmetic} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
+  if (view === 'report') return <><ReportPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} isChildDayDone={isChildDayDone} onNavigate={navigateDashboard} onParentArea={requestParentArea} onSettings={requestSettings} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
 
   return (
-    <V4PageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateV4} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked}>
+    <SecondaryPageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked}>
       <ParentSettings
         settings={settings}
         setSettings={setSettings}
@@ -879,7 +882,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
         goHome={() => setView('home')}
       />
       {accessDialogs}
-    </V4PageShell>
+    </SecondaryPageShell>
   );
 }
 

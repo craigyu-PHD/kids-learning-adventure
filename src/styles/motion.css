@@ -1,0 +1,9 @@
+/* Motion tokens are centralized so new interactions do not introduce
+ * indefinite decorative animation. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

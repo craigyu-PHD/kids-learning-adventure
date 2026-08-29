@@ -11,6 +11,7 @@ import { createUserPinCredential } from '../security';
 import { avatarStageFromXp, calculateRewards, levelFromXp, normalizeProgress } from '../rewards';
 import { visualThemeOptions } from '../uiData';
 import { taipeiYmd } from '../dailyChallenge';
+import { contentHealthManifest } from '../generated/contentHealthManifest';
 import type {
   AppProgress, AppSettings, AttendanceMap, ChildProfile, FamilyUserProfile, FamilyUserRole,
   ReflectionMap, ThemeMode,
@@ -100,7 +101,7 @@ export default function ParentSettings({ settings, setSettings, progress, attend
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `小小探險隊-V4.0-學習紀錄-${taipeiYmd(new Date())}.json`;
+    anchor.download = `小小探險隊-V5.3.1-學習紀錄-${taipeiYmd(new Date())}.json`;
     anchor.click();
     URL.revokeObjectURL(url);
   };
@@ -118,7 +119,7 @@ export default function ParentSettings({ settings, setSettings, progress, attend
   };
 
   return <div className="page settings-page v2-settings v4-settings-page">
-    <div className="v30-parent-heading v4-settings-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT CONTROL CENTER · V4.0</span><h1>家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、冒險 Skin、學期日期、雲端同步與高風險資料操作。</p></div></div><ShieldCheck size={34} /></div>
+    <div className="v30-parent-heading v4-settings-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT CONTROL CENTER · V5.3.1</span><h1>家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、冒險 Skin、學期日期、雲端同步與高風險資料操作。</p></div></div><ShieldCheck size={34} /></div>
     <div className="admin-unlocked-banner"><div><strong>管理者 PIN 已解鎖</strong><span>目前為家庭最高管理權限；離開家庭或重新載入後需再次驗證。</span></div><KeyRound size={20} /></div>
     <section className="v22-family-hero v30-family-summary v4-settings-family-hero" aria-label="家庭管理中心">
       <div><span className="v30-overline">FAMILY CONTROL</span><h2>全家的學習資料，由管理者守護</h2><p>照顧者帳號、學習者、個人 PIN、雲端同步與冒險 Skin 都集中在這裡管理；兒童首頁不顯示這些系統資訊。</p></div>
@@ -165,6 +166,12 @@ export default function ParentSettings({ settings, setSettings, progress, attend
       </div>
     </section>
 
-    <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V4.0 JSON（保留 V1／V2／V2.1／V2.2／V3 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
+    <section className="settings-card vertical" aria-label="內容健康度">
+      <div className="setting-label"><span className="setting-icon"><CheckCircle2 size={20} /></span><div><h3>內容健康度</h3><p>由 build-time Gate 驗證的課程與 production 資產清單，不等同於即時網路檢查。</p></div></div>
+      <div className="content-health-grid">{contentHealthManifest.items.map((item) => <article className={item.status} key={item.id}><span>{item.label}</span><strong>{item.actual} / {item.expected}</strong><small>{item.status === 'pass' ? '已通過' : '需要修正'}</small></article>)}</div>
+      <p className="content-health-note">最近驗證：{contentHealthManifest.checkedOn} · 發布前必須重新執行 `npm run qa:content-health` 與線上影片驗證。</p>
+    </section>
+
+    <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V5.3.1 JSON（保留 V1／V2／V2.1／V2.2／V3 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
   </div>;
 }

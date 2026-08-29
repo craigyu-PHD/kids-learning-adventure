@@ -1,0 +1,68 @@
+/* Header base layer. Responsive compatibility remains in v40.css until it is
+ * migrated and visually signed off at every supported viewport. */
+.v5-cinematic-header::before,
+.v5-cinematic-header::after { content: none !important; }
+.v5-cinematic-header { isolation: isolate; overflow: hidden; background: #061d57; }
+.v5-hero-bg { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; pointer-events: none; }
+.v5-cinematic-header::after { content: "" !important; position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(6, 29, 87, .74), rgba(6, 29, 87, .08)); pointer-events: none; }
+.v5-cinematic-header .v4-brand-lockup { position: relative; z-index: 5; display: grid; align-content: center; justify-items: start; gap: 8px; }
+.v5-cinematic-header .v4-brand-lockup strong { font-size: 38px; line-height: 1.05; white-space: nowrap; }
+.v5-cinematic-header .v4-brand-lockup span { font-size: 13px; white-space: nowrap; }
+.v5-hero-layers { position: absolute; z-index: 3; right: 470px; bottom: 0; left: 390px; min-width: 0 !important; height: 150px !important; pointer-events: none; }
+.v5-hero-character { position: absolute !important; bottom: -8px; width: 132px !important; height: 142px !important; object-fit: contain; background: transparent; }
+.v5-hero-character.brother { left: 19%; }
+.v5-hero-character.younger { left: 42%; width: 120px !important; }
+.v5-hero-character.robot { left: 65%; width: 116px !important; }
+.v5-rocket-flyby { position: absolute !important; z-index: 2; inset: 0; width: 100% !important; height: 150px !important; object-fit: cover; pointer-events: none; background: transparent; }
+.v5-header-controls { position: absolute; z-index: 6; top: 50%; right: 20px; display: flex; align-items: center; justify-content: flex-end; gap: 10px; transform: translateY(-50%); }
+.v5-header-theme { display: flex; align-items: center; justify-content: flex-end; gap: 7px; width: auto; height: 58px; }
+.v5-header-theme button { width: 52px; min-width: 52px; height: 52px; padding: 0; overflow: hidden; border: 2px solid rgba(255, 255, 255, .42); border-radius: 16px; background: #0a1f63; box-shadow: 0 4px 12px rgba(0, 0, 0, .22); transition: transform 160ms ease, border-color 160ms ease; }
+.v5-header-theme button.active { border-width: 3px; border-color: #ffd83d; transform: scale(1.08); }
+.v5-header-theme .v4-smart-image { width: 100%; height: 100%; object-fit: cover; }
+.v5-sound-toggle { display: grid; width: 44px; min-width: 44px; min-height: 44px; height: 44px; place-items: center; border: 2px solid rgba(255, 255, 255, .55); border-radius: 14px; color: #fff; background: rgba(6, 29, 87, .82); box-shadow: 0 5px 14px rgba(0, 0, 0, .25); }
+.v5-sound-toggle svg { width: 22px; height: 22px; }
+.v5-ai-bot { display: block; padding: 0; border: 0; cursor: pointer; background: linear-gradient(145deg, #ddf7ff, #edebff); }
+.v5-ai-bot video,
+.v5-ai-bot img { width: 100% !important; height: 100% !important; object-fit: contain; background: transparent; }
+.v5-ai-hint { display: block; margin-top: 6px; color: #2b5b86; font-size: 12px; font-weight: 900; }
+.v4-ai-actions { display: none !important; }
+.v5-cinematic-header .v4-brand-lockup { min-width: 360px; }
+.v53-brand-logo { display: block; width: 370px; max-width: 29vw; height: auto; filter: drop-shadow(0 5px 0 rgba(5, 34, 89, .62)) drop-shadow(0 10px 14px rgba(0, 0, 0, .25)); }
+.v5-cinematic-header .v4-brand-subtitle { padding: 4px 12px !important; font-size: 18px !important; line-height: 1.1 !important; }
+.v53-parent-status { display: grid; grid-template-columns: 40px minmax(0, 1fr) 20px; align-items: center; gap: 7px; min-height: 44px; max-width: 244px; padding: 3px 8px 3px 4px; border: 1.5px solid rgba(255, 255, 255, .62); border-radius: 18px; color: #fff; background: rgba(6, 29, 87, .82); box-shadow: 0 5px 14px rgba(0, 0, 0, .22); text-align: left; }
+.v53-parent-status .v4-caregiver-avatar { width: 40px !important; height: 40px !important; }
+.v53-parent-status span { display: grid; min-width: 0; gap: 1px; }
+.v53-parent-status strong,
+.v53-parent-status small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.v53-parent-status strong { font-size: 12px; }
+.v53-parent-status small { color: #cdeeff; font-size: 11px; }
+.v53-parent-status > svg { width: 19px; height: 19px; color: #ffd83d; }
+
+@media (max-width: 1180px) {
+  .v5-hero-layers { right: 100px; left: 300px; }
+  .v5-header-theme { display: none; }
+  .v53-parent-status { max-width: 196px; }
+  .v53-parent-status strong,
+  .v53-parent-status small { font-size: 11px; }
+  .v53-brand-logo { width: 320px; max-width: 34vw; }
+}
+
+@media (max-width: 760px) {
+  .v5-cinematic-header { display: grid; grid-template-columns: 1fr 120px !important; }
+  .v5-cinematic-header .v4-brand-lockup { min-width: 0; }
+  .v5-cinematic-header .v4-brand-lockup span { display: none !important; }
+  .v5-hero-layers { right: 58px; left: auto; width: 118px; height: 128px !important; }
+  .v5-hero-character { display: none; }
+  .v5-hero-character.brother { display: block; left: 0; width: 112px !important; height: 122px !important; }
+  .v5-rocket-flyby { height: 128px !important; }
+  .v5-header-controls { top: 10px; right: 10px; transform: none; }
+  .v5-sound-toggle { background: rgba(6, 29, 87, .9); }
+  .v53-brand-logo { width: 218px; max-width: 58vw; }
+  .v53-parent-status { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v5-hero-character,
+  .v5-rocket-flyby,
+  .v5-ai-bot video { animation: none !important; }
+}

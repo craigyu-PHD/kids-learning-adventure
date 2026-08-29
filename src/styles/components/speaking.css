@@ -1,0 +1,52 @@
+.speaking-practice {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid color-mix(in srgb, var(--v4-sky) 34%, white);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f3fbff, #f7f4ff);
+}
+
+.speaking-practice header,
+.speaking-practice-controls,
+.speaking-practice-learners article {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.speaking-practice header { justify-content: space-between; }
+.speaking-practice header span { color: var(--v4-blue); font-weight: 900; font-size: 12px; letter-spacing: .08em; }
+.speaking-practice h3 { margin: 2px 0 0; font-size: 18px; color: var(--v4-navy); }
+.speaking-practice header small { color: var(--v4-muted); font-size: 12px; font-weight: 800; }
+.speaking-practice > p { margin: 12px 0; color: var(--v4-muted); font-size: 14px; }
+.speaking-practice-controls { flex-wrap: wrap; }
+.speaking-practice-controls > button,
+.speaking-practice-learners button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  color: white;
+  background: var(--v4-blue);
+  font: inherit;
+  font-weight: 900;
+}
+.speaking-practice-controls > span { color: var(--v4-muted); font-size: 13px; font-weight: 700; }
+.speaking-practice-learners { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-top: 14px; }
+.speaking-practice-learners article { flex-wrap: wrap; justify-content: space-between; padding: 12px; border-radius: 14px; background: white; border: 1px solid #dce8ff; }
+.speaking-practice-learners article.correct { border-color: var(--v4-success); }
+.speaking-practice-learners article.wrong { border-color: var(--v4-orange); }
+.speaking-practice-learners article > span { color: var(--v4-navy); font-size: 14px; font-weight: 900; }
+.speaking-practice-learners small { width: 100%; color: var(--v4-muted); font-size: 12px; font-weight: 700; }
+.speaking-practice-learners button:disabled { cursor: not-allowed; opacity: .55; }
+.speaking-practice footer { margin-top: 14px; color: var(--v4-muted); font-size: 12px; line-height: 1.5; }
+
+@media (max-width: 520px) {
+  .speaking-practice { padding: 14px; }
+  .speaking-practice header { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .speaking-practice-learners { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,19 @@
+/* The only stylesheet imported by src/main.tsx.
+ *
+ * The legacy visual layers remain isolated behind legacy-compat.css while
+ * feature-owned CSS migrates into this directory.  This preserves the V5.3
+ * production cascade during the incremental V6 consolidation.
+ */
+@import './tokens.css';
+@import './reset.css';
+@import './legacy-compat.css';
+@import './layout.css';
+@import './components/header.css';
+@import './components/dashboard.css';
+@import './components/report.css';
+@import './components/review.css';
+@import './components/speaking.css';
+@import './components/parent.css';
+@import './motion.css';
+@import './accessibility.css';
+@import './responsive.css';

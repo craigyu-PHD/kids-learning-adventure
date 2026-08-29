@@ -1,0 +1,15 @@
+.daily-review-panel { margin: 0 0 16px; padding: 14px; border: 1.5px solid #BDE0FB; border-radius: 18px; background: linear-gradient(135deg, #F3FBFF, #F7F4FF); }
+.daily-review-panel > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.daily-review-panel header span { color: #3573A6; font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+.daily-review-panel h3 { margin: 3px 0 0; color: #123A6B; font-size: 17px; }
+.daily-review-panel > header > small { padding: 5px 8px; color: #556D8C; font-size: 12px; font-weight: 800; border-radius: 999px; background: #fff; white-space: nowrap; }
+.daily-review-panel article { display: grid; grid-template-columns: 92px 1fr; align-items: start; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #D8E9F7; }
+.daily-review-panel article > div > strong { display: block; color: #173C6D; font-size: 16px; line-height: 1.2; margin: 2px 0 7px; }
+.daily-review-listen { min-height: 44px; padding: 0 10px; color: #0A5FAF; font-weight: 850; border: 1px solid #A7D5F4; border-radius: 12px; background: #fff; }
+.daily-review-learner { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; min-height: 44px; }
+.daily-review-learner > span { min-width: 34px; color: #425D82; font-size: 13px; font-weight: 850; }
+.daily-review-learner button { min-height: 44px; padding: 0 11px; color: #163A68; font-size: 14px; font-weight: 850; border: 1px solid #BBD9F2; border-radius: 12px; background: #fff; }
+.daily-review-learner button:disabled { color: #28724B; border-color: #9AD7B5; background: #F3FFF8; }
+.daily-review-learner small { color: #617794; font-size: 12px; font-weight: 750; }
+.adaptive-learning-hint { display: block; flex-basis: 100%; color: #3C6F9E !important; }
+@media (max-width: 700px) { .daily-review-panel article { grid-template-columns: 1fr; } }

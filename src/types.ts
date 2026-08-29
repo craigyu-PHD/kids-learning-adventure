@@ -114,6 +114,8 @@ export type AnswerEvent = {
   target: string;
   answer: string;
   correct: boolean;
+  /** Browser speech recognition confidence when a speaking attempt is supported. */
+  confidence?: number;
   createdAt: string;
 };
 

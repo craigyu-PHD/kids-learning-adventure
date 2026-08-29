@@ -39,7 +39,7 @@ import GameIcon from './GameIcon';
 import AnimatedMedia from '../v5/AnimatedMedia';
 import { CaregiverAvatar } from './caregivers';
 
-export type ViewKey = 'home' | 'today' | 'semester' | 'achievements' | 'report' | 'shop';
+export type DashboardViewKey = 'home' | 'today' | 'semester' | 'achievements' | 'report' | 'shop';
 
 type DashboardProps = {
   activeView: 'home' | 'today';
@@ -53,7 +53,7 @@ type DashboardProps = {
   isDayDone: (day: CourseDay) => boolean;
   isChildDayDone: (childId: string, day: CourseDay) => boolean;
   onOpenLesson: (day: CourseDay, lessonIndex: 0 | 1) => void;
-  onNavigate: (view: ViewKey) => void;
+  onNavigate: (view: DashboardViewKey) => void;
   onParentArea: () => void;
   cloudStatus: string;
   soundEnabled: boolean;
@@ -91,8 +91,8 @@ export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggl
   </header>;
 }
 
-export function MainNavigation({ active, onNavigate, onParentArea }: { active: ViewKey; onNavigate: (view: ViewKey) => void; onParentArea: () => void }) {
-  const items: Array<{ id: ViewKey; label: string; icon: React.ReactNode; nav3d: string; action?: () => void }> = [
+export function MainNavigation({ active, onNavigate, onParentArea }: { active: DashboardViewKey; onNavigate: (view: DashboardViewKey) => void; onParentArea: () => void }) {
+  const items: Array<{ id: DashboardViewKey; label: string; icon: React.ReactNode; nav3d: string; action?: () => void }> = [
     { id: 'home', label: '首頁', icon: <Home/>, nav3d: 'home-3d-96' },
     { id: 'today', label: '今日課程', icon: <Gamepad2/>, nav3d: 'book-3d-96' },
     { id: 'semester', label: '學期日曆', icon: <CalendarDays/>, nav3d: 'calendar-3d-96' },
@@ -170,7 +170,7 @@ function CharacterEvolution({ settings, progress }: { settings: AppSettings; pro
   return <section className="v4-panel v4-evolution-panel"><div className="v4-panel-title"><div><span>EVOLUTION</span><h2>角色成長</h2></div><GameIcon tone="purple"><Sparkles/></GameIcon></div><div className="v4-evolution-row">{settings.children.filter((c)=>!c.disabled).map((child)=>{ const r=playerResources(progress[child.id]); const role=normalizeAvatarId(child.avatar); const current=r.level>=15?3:r.level>=10?2:r.level>=5?1:0; return <article className="v5-evolution-lane" key={child.id}><header><strong>{child.name}的進化</strong><span>Lv.{r.level} · {levelTitle(r.level)}</span></header><div className="v5-evolution-stages">{stages.map((stage,stageIndex)=><div className={`v5-evolution-stage ${stageIndex<current?'done':stageIndex===current?'current':'locked'}`} key={stage.level}>{stageIndex>0&&<ChevronRight className="v5-evolution-arrow"/>}<div><GameImage src={`${import.meta.env.BASE_URL}assets/v5/characters/${role}/stage-${stageIndex+1}-thumb.webp`} alt={`${child.name} Lv.${stage.level} ${stage.label}`}/>{stageIndex<current&&<Check className="v5-stage-check"/>}</div><small>Lv.{stage.level}</small><span>{stage.label}</span></div>)}</div></article>; })}</div></section>;
 }
 
-function BadgeShelf({ settings, progress, onNavigate }: { settings: AppSettings; progress: AppProgress; onNavigate: (view: ViewKey) => void }) {
+function BadgeShelf({ settings, progress, onNavigate }: { settings: AppSettings; progress: AppProgress; onNavigate: (view: DashboardViewKey) => void }) {
   const learner = settings.children.find((c)=>!c.disabled); const unlocks = learner ? progress[learner.id]?.badgeUnlocks ?? {} : {};
   return <section className="v4-panel v4-badge-panel"><div className="v4-panel-title"><div><span>ACHIEVEMENTS</span><h2>成就徽章</h2></div><button className="v4-text-action" onClick={()=>onNavigate('achievements')}>全部查看 <ChevronRight/></button></div><div className="v4-badge-shelf">{badges.slice(0,8).map((badge)=><GameBadge key={badge.id} badge={badge} unlocked={Boolean(unlocks[badge.id])} earnedDate={unlocks[badge.id]} size={52}/>)}</div></section>;
 }
@@ -228,7 +228,7 @@ export function BottomStatusBar({ cloudStatus, trustedDate }: { cloudStatus: str
   return <footer className="v4-status-bar"><span><Cloud/>雲端：{cloudStatus}</span><span><ShieldCheck/>日期保護：{trustedDate.verified ? 'Server verified' : 'checking'}</span><span><Video/>影片資料：360 unique</span><strong>下一關，就比上一關更厲害。</strong></footer>;
 }
 
-export default function V4Dashboard(props: DashboardProps) {
+export default function AdventureDashboard(props: DashboardProps) {
   useEffect(() => {
     if (props.activeView !== 'today') return;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

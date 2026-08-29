@@ -1,0 +1,9 @@
+.content-health-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
+.content-health-grid article { min-height: 92px; padding: 11px; border: 1.5px solid #CBE5F1; border-radius: 15px; background: #F8FDFF; }
+.content-health-grid article.pass { border-color: #A8DFC0; background: #F5FFF9; }
+.content-health-grid article.fail { border-color: #F6B2AB; background: #FFF7F5; }
+.content-health-grid span { display: block; color: #53718F; font-size: 12px; font-weight: 800; }
+.content-health-grid strong { display: block; margin-top: 7px; color: #183D69; font-size: 20px; }
+.content-health-grid small { color: #617A95; font-size: 12px; }
+.content-health-note { margin: 0; color: #657A92; font-size: 12px; line-height: 1.5; }
+@media (max-width: 900px) { .content-health-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

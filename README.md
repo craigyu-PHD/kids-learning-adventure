@@ -1,6 +1,6 @@
-# 小小探險隊 Little Explorers V4.0
+# 小小探險隊 Little Explorers V5.3.1
 
-家庭兒童美語學習遊戲，正式定位為 **Enterprise Kids Adventure Learning Game**。V4.0 保留既有教材、90 天課程、180 堂教案、360 個互動任務與 360 支零重複 YouTube 影片資料，前端 Presentation Layer 改為企業級三欄遊戲 Dashboard、九關課堂、角色長期成長、四資源經濟、寶箱、徽章、商店與 PIN 家長保護。
+家庭兒童美語學習遊戲，正式定位為 **Enterprise Kids Adventure Learning Game**。V5.3.1 保留既有教材、90 天課程、180 堂教案、360 個互動任務與 360 支零重複 YouTube 影片資料，並提供企業級三欄遊戲 Dashboard、九關課堂、角色長期成長、四資源經濟、寶箱、徽章、商店與 PIN 家長保護。唯一現行產品規則見 [`docs/CURRENT-SPEC.md`](./docs/CURRENT-SPEC.md)。
 
 ## 不可破壞的資料基線
 
@@ -12,7 +12,7 @@
 - V1／V2／V2.1／V2.2／V2.3／V3 資料仍可讀；V2.2 family namespace 與 cloud snapshot `version: 2` 不變。
 - 內部歷史 subject type `Zhuyin` 仍可存在，但 UI 顯示「中文語音」，production DOM 不顯示注音符號。
 
-## V4 首頁架構
+## V5 首頁架構
 
 Desktop 主要設計寬度 1440–1600px，內容最大寬度約 1560px。首頁固定為三欄：
 
@@ -33,7 +33,7 @@ Hero Header 高約 130–165px，使用深藍宇宙 Banner、哥哥／弟弟、A
 
 Mobile 改為固定 Bottom Navigation。
 
-## V4 Design System
+## V5 Design System
 
 ```text
 Deep Navy      #061D57
@@ -168,7 +168,7 @@ public/assets/v40/
 - Vocabulary：所有 161 個 unique term 都有至少 640×480 V4 圖像。
 - Reward Icon：XP／Coin／Star／Gem／Treasure 各 512×512。
 - V4 runtime 對 `assets/v30/` 的引用必須為 0。
-- `styles.css`／V2／V2.2／V2.3／V3 CSS 目前只保留 legacy migration、共用 accessibility 與舊資料控制項的 compatibility layer；`v40.css` 必須最後載入並主導正式畫面。實測直接移除 V3 CSS 會讓共用 touch target 退化，因此發布前不得為了縮檔而硬刪相容層；但相容層不得提供任何 V3 可見頁面或 V3 圖片。
+- `src/main.tsx` 只載入 `src/styles/index.css`。`styles.css`／V2／V2.2／V2.3／V3／V4 CSS 仍保留為 migration compatibility layer，但只能由 `src/styles/legacy-compat.css` 依既有順序載入；新 CSS 只能寫入 `src/styles/` 的 feature-owned 檔案。完整現況以 `docs/CURRENT-SPEC.md` 為準，歷史演進以 `docs/CHANGELOG.md` 為準。
 
 生成器：`scripts/generate_v40_assets.py`
 
