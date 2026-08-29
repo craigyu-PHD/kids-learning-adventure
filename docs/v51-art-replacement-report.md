@@ -1,7 +1,7 @@
 # V5.1 Art Asset Replacement Sprint — 驗收報告
 
 日期：2026-08-29
-狀態：V5.3.1 production release gate 已於 2026-08-29 通過；上一版 production 為 commit `7f7e59f`。
+狀態：V5.3.1 production release gate 已於 2026-08-29 通過並發布；Git commit `caaa579`，Vercel deployment `dpl_E7kK6BVEnuqNKsezRzv8Ar7DZ8FT`。
 
 ## V5.2 課程預覽與獎勵邊界
 
@@ -77,5 +77,5 @@
 
 - 本輪 WebM 是具實際影格的 2.5D 關鍵幀動畫，不是 Blender 骨架／布料／口型 rig animation。
 - `public/assets/v5/badges/`、`items/`、`vocab/` 與 caregivers 均已重新製作並實際寫入 V5 runtime path：24 枚 Badge、52 件 Shop item、150 個 Vocabulary concept 與 3 名照顧者角色均有透明度、尺寸、SHA uniqueness 及 V4 SHA 差異 Gate；不以「僅搬移檔案」宣稱美術完成。
-- Production 已部署：`https://kids-learning-adventure-chi.vercel.app/`；首頁與 `/api/server-time` HTTP 200、未帶 Bearer 的 `/api/state` HTTP 401、未提供 PIN 的 `/api/family-session` HTTP 400。
+- Production 已部署：`https://kids-learning-adventure-chi.vercel.app/`；2026-08-29 smoke 實測首頁與 `/api/server-time` HTTP 200，未帶 Bearer 的 `/api/state` HTTP 401，未提供 PIN 的 `/api/family-session` HTTP 400，且正式 HTML 指向本輪 `index-TUAQx5l0.js` bundle。
 - 診斷 Vercel local dev 時，本機 `.vercel` 內的敏感環境值曾出現於本次工具輸出，但未進入 Git；本輪使用 CLI 完成發布。Vercel Dashboard 未有登入 session，因此無法在不取得使用者登入授權下執行 Blob Store 的 OIDC 升級／長效 token 輪替；此項保留為需在 Vercel Storage Dashboard 完成的安全後續工作。
