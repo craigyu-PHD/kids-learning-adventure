@@ -72,17 +72,17 @@ export function AdventureHeader({ settings, onThemeChange, soundEnabled, onToggl
   ];
   const art:Record<string,string>={hero:'space-hero-v2',mecha:'mecha-warrior-v2',racing:'racing-adventure-v2',tank:'fantasy-spirit-v2',creature:'ocean-world-v2'};
   return <header className="v4-adventure-header v5-cinematic-header">
-    <img className="v5-hero-bg" src={keyart} alt="" width={3072} height={300} loading="eager" decoding="async" fetchPriority="high" />
+    <img className="v5-hero-bg" src={keyart} alt="" width={3072} height={300} loading="eager" decoding="sync" fetchPriority="high" />
     <div className="v4-brand-lockup">
       <img className="v53-brand-logo" src={`${base}brand/little-explorers-logo-v2.webp`} alt="小小探險隊" width={1997} height={787} loading="eager" decoding="async" fetchPriority="high" />
       <span className="v4-brand-subtitle">一起學習・一起長大</span>
     </div>
     <div className="v4-hero-cast v5-hero-layers" aria-label="小小探險隊夥伴">
-      <AnimatedMedia className="v5-hero-character brother" webm={`${base}animations/brother-idle.webm`} poster={`${base}animations/brother-idle-poster.webp`} alt="哥哥揮手眨眼" size={512}/>
-      <AnimatedMedia className="v5-hero-character younger" webm={`${base}animations/younger-idle.webm`} poster={`${base}animations/younger-idle-poster.webp`} alt="弟弟揮手眨眼" size={512}/>
-      <AnimatedMedia className="v5-hero-character robot" webm={`${base}animations/robot-idle.webm`} poster={`${base}animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光揮手" size={512}/>
+      <AnimatedMedia className="v5-hero-character brother" webm={`${base}animations/brother-idle.webm`} poster={`${base}animations/brother-idle-poster.webp`} alt="哥哥揮手眨眼" size={512} deferPlayback/>
+      <AnimatedMedia className="v5-hero-character younger" webm={`${base}animations/younger-idle.webm`} poster={`${base}animations/younger-idle-poster.webp`} alt="弟弟揮手眨眼" size={512} deferPlayback/>
+      <AnimatedMedia className="v5-hero-character robot" webm={`${base}animations/robot-idle.webm`} poster={`${base}animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光揮手" size={512} deferPlayback/>
     </div>
-    <AnimatedMedia className="v5-rocket-flyby" webm={`${base}animations/rocket-flyby.webm`} poster={`${base}animations/rocket-flyby-poster.webp`} alt="探險火箭飛越基地" size={1536}/>
+    <AnimatedMedia className="v5-rocket-flyby" webm={`${base}animations/rocket-flyby.webm`} poster={`${base}animations/rocket-flyby-poster.webp`} alt="探險火箭飛越基地" size={1536} deferPlayback/>
     <div className="v5-header-controls">
       {activeUser && <button type="button" className="v53-parent-status" onClick={onParentArea} aria-label="開啟家長模式"><CaregiverAvatar user={activeUser} size={40}/><span><strong>歡迎回來，{activeUser.name}</strong><small>{parentPreviewUnlocked ? 'PIN 已解鎖 · 可完整備課' : '家長模式 · 點此解鎖備課'}</small></span><Settings/></button>}
       {onThemeChange && <div className="v5-header-theme">{themes.map(t=> <button key={t.id} onClick={()=>onThemeChange(t.id)} title={t.name} className={settings.visualTheme===t.id?'active':''}><GameImage src={`${base}themes/${art[t.id]}-thumb.webp`} alt={t.name} /></button>)}</div>}
@@ -128,7 +128,7 @@ function AICompanion({ todayDay, isDayDone }: { todayDay?: CourseDay; isDayDone:
   const text = !todayDay ? '下一個冒險日還沒到，我會幫你守住基地！' : isDayDone(todayDay) ? '今天任務全部完成！明天再一起出發。' : '今天有新的冒險喔！兩堂課都在右邊等你。';
   const speak = () => { if (!('speechSynthesis' in window)) return; window.speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'zh-TW'; window.speechSynthesis.speak(u); };
   const mood = !todayDay ? 'guard' : isDayDone(todayDay) ? 'celebrate' : 'ready';
-  return <section className={`v4-panel v4-ai-companion mood-${mood}`}><button type="button" className="v4-ai-bot v5-ai-bot" onClick={speak} aria-label="請小光說出今天的提示"><AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光" size={512}/></button><div><span>AI LEARNING BUDDY</span><h3>小光</h3><p>{text}</p><small className="v5-ai-hint">點小光聽提示</small></div></section>;
+  return <section className={`v4-panel v4-ai-companion mood-${mood}`}><button type="button" className="v4-ai-bot v5-ai-bot" onClick={speak} aria-label="請小光說出今天的提示"><AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光" size={512} deferPlayback/></button><div><span>AI LEARNING BUDDY</span><h3>小光</h3><p>{text}</p><small className="v5-ai-hint">點小光聽提示</small></div></section>;
 }
 
 function SemesterCalendar({ trustedDate, courseDateKey, accessForDay, isDayDone }: Pick<DashboardProps,'trustedDate'|'courseDateKey'|'accessForDay'|'isDayDone'>) {
@@ -151,7 +151,7 @@ function WeeklyProgress({ todayDay, isDayDone }: { todayDay?: CourseDay; isDayDo
   const completed = days.filter(isDayDone).length;
   const pct = completed / 5 * 100;
   const semesterDone = curriculum.filter(isDayDone).length;
-  return <div className="v4-progress-inner"><div className="v4-panel-title"><div><span>WEEK {String(week).padStart(2,'0')}</span><h2>本週進度</h2></div><GameIcon tone="green"><Zap/></GameIcon></div><AnimatedMedia className="v53-weekly-rocket" webm={`${import.meta.env.BASE_URL}assets/v5/animations/weekly-rocket-robot.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/brand/weekly-rocket-robot.webp`} alt="小光搭著火箭陪伴本週學習" size={512}/>
+  return <div className="v4-progress-inner"><div className="v4-panel-title"><div><span>WEEK {String(week).padStart(2,'0')}</span><h2>本週進度</h2></div><GameIcon tone="green"><Zap/></GameIcon></div><AnimatedMedia className="v53-weekly-rocket" webm={`${import.meta.env.BASE_URL}assets/v5/animations/weekly-rocket-robot.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/brand/weekly-rocket-robot.webp`} alt="小光搭著火箭陪伴本週學習" size={512} deferPlayback/>
     <div className="v4-progress-body v5-weekly-body"><div className="v4-progress-ring" style={{'--progress':`${pct * 3.6}deg`,width:118,height:118} as React.CSSProperties}><div><strong style={{fontSize:30}}>{completed} / 5</strong><span>完成</span></div></div><div className="v4-goals v5-goals"><div className={semesterDone >= 5 ? 'done' : ''}><Trophy size={26}/><span>小目標</span><strong>5 天</strong></div><div className={semesterDone >= 10 ? 'done' : ''}><Trophy size={26}/><span>中目標</span><strong>10 天</strong></div><div className={semesterDone >= 90 ? 'done' : ''}><Trophy size={26}/><span>大目標</span><strong>90 天</strong></div></div></div>
   </div>;
 }

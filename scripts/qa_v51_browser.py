@@ -309,7 +309,7 @@ def main() -> int:
         deadline = time.time() + 30
         while time.time() < deadline:
             targets = json.load(urllib.request.urlopen(f"http://127.0.0.1:{debug_port}/json"))
-            page = next((target for target in targets if target.get("type") == "page" and target.get("url") == URL), None)
+            page = next((target for target in targets if target.get("type") == "page" and target.get("url", "").rstrip("/") == URL.rstrip("/")), None)
             if page:
                 break
             time.sleep(0.2)
@@ -394,7 +394,10 @@ def main() -> int:
                 "Emulation.setDeviceMetricsOverride",
                 {"width": width, "height": height, "deviceScaleFactor": 1, "mobile": width < 600},
             )
-            time.sleep(1)
+            # Header and weekly media intentionally keep their WebM out of the
+            # first paint, then begin playback after the poster is visible.
+            # Wait for that production behavior before asserting decode state.
+            wait_js(cdp, "[...document.querySelectorAll('.v5-cinematic-header video, .v53-weekly-rocket')].every(v => v.readyState >= 2)", 30)
             snapshot = cdp.eval(js_snapshot())
             failures = check_snapshot(snapshot, width)
             all_failures.extend(f"{width}x{height}: {failure}" for failure in failures)

@@ -11,6 +11,7 @@ export default function AnimatedMedia({
   size = 512,
   loop = true,
   className,
+  deferPlayback = false,
 }: {
   webm?: string;
   poster: string;
@@ -18,6 +19,8 @@ export default function AnimatedMedia({
   size?: number;
   loop?: boolean;
   className?: string;
+  /** Keep the poster as the first paint, then load/play WebM after that paint. */
+  deferPlayback?: boolean;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   useEffect(() => {
@@ -28,12 +31,30 @@ export default function AnimatedMedia({
       return;
     }
     if (!('IntersectionObserver' in window)) return;
+    let delayedStart: number | undefined;
+    const play = () => {
+      if (deferPlayback) {
+        window.clearTimeout(delayedStart);
+        delayedStart = window.setTimeout(() => v.play().catch(() => {}), 1200);
+      } else {
+        v.play().catch(() => {});
+      }
+    };
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => (e.isIntersecting ? v.play().catch(() => {}) : v.pause()));
+      entries.forEach((e) => {
+        if (e.isIntersecting) play();
+        else {
+          window.clearTimeout(delayedStart);
+          v.pause();
+        }
+      });
     });
     io.observe(v);
-    return () => io.disconnect();
-  }, []);
+    return () => {
+      window.clearTimeout(delayedStart);
+      io.disconnect();
+    };
+  }, [deferPlayback]);
   if (!webm) {
     return <img className={className} src={poster} alt={alt} width={size} height={size} loading="lazy" style={{ width: size, height: size, objectFit: 'contain' }} />;
   }
@@ -41,10 +62,11 @@ export default function AnimatedMedia({
     <video
       ref={ref}
       className={className}
-      autoPlay
+      autoPlay={!deferPlayback}
       muted
       loop={loop}
       playsInline
+      preload={deferPlayback ? "none" : "metadata"}
       poster={poster}
       width={size}
       height={size}

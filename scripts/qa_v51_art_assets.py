@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import hashlib
+import json
+import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -59,6 +62,22 @@ def require_unique(label: str, paths: list[Path]) -> None:
         fail(f"{label} SHA uniqueness {len(set(hashes))}/{len(paths)}")
     else:
         passed(f"{label} SHA uniqueness {len(paths)}/{len(paths)}")
+
+
+def vocabulary_asset_slug(word: str) -> str:
+    value = word.lower().strip().replace("?", "").replace("!", "")
+    value = re.sub(r"\s+[\u4e00-\u9fff]+$", "", value)
+    value = re.sub(r"[^a-z0-9]+", "-", value).strip("-")
+    return value or "zh-audio"
+
+
+def curriculum_vocabulary_words() -> list[str]:
+    code = (
+        "import {curriculum} from './src/data/curriculum.ts'; "
+        "console.log(JSON.stringify([...new Set(curriculum.flatMap(d=>d.blocks).flatMap(b=>b.vocabulary))]))"
+    )
+    output = subprocess.check_output(["npx", "tsx", "-e", code], cwd=ROOT, text=True)
+    return json.loads(output)
 
 
 print("V5.3 Visual Finish QA")
@@ -141,11 +160,119 @@ for role in ("brother", "younger"):
         passed(f"{role} has four 192x192 evolution runtime derivatives")
     require_unique(f"{role} evolution runtime derivatives", stage_runtime_paths)
 
+caregiver_paths = [
+    V5 / "characters" / "caregivers" / f"avatar-{role}.webp"
+    for role in ("father", "mother", "caregiver")
+]
+if all(require_image(path, (1024, 1024), alpha=True) for path in caregiver_paths):
+    passed("three 1024x1024 transparent caregiver production characters")
+require_unique("caregiver production characters", caregiver_paths)
+for path in caregiver_paths:
+    legacy = V40 / "characters" / path.name
+    if legacy.is_file() and digest(path) == digest(legacy):
+        fail(f"{path.name} duplicates V40 caregiver art")
+if not any("duplicates V40 caregiver art" in item for item in FAILURES):
+    passed("V5 caregiver SHA differs from V40 3/3")
+
+shop_item_paths = sorted((V5 / "items").glob("*.webp"))
+if len(shop_item_paths) != 52:
+    fail(f"shop production items {len(shop_item_paths)}/52")
+elif all(require_image(path, (512, 512), alpha=True) for path in shop_item_paths):
+    passed("52 512x512 transparent shop production items")
+require_unique("shop production items", shop_item_paths)
+for path in shop_item_paths:
+    legacy = V40 / "items" / path.name
+    if legacy.is_file() and digest(path) == digest(legacy):
+        fail(f"{path.name} duplicates V40 shop art")
+if not any("duplicates V40 shop art" in item for item in FAILURES):
+    passed("V5 shop item SHA differs from V40 52/52")
+
+featured_vocab_paths = [
+    V5 / "vocab" / f"{word}.webp"
+    for word in (
+        "apple", "banana", "grape", "broccoli", "strawberry", "ice-cream", "juice",
+        "dog", "cat", "fish", "pig", "car", "bus", "train", "ball",
+        "bed", "table", "chair", "book",
+        "red", "yellow", "green", "blue",
+        "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "happy", "sad",
+        "bird", "cow", "duck", "lion", "sun", "moon", "tree", "flower",
+        "shirt", "pants", "shoes", "hat",
+        "sunny", "rainy", "cloudy", "hot",
+        "pizza", "soup", "e-egg", "water",
+        "bike", "toy", "rocket", "dinosaur",
+        "jacket", "school", "park", "store",
+        "circle", "square", "triangle", "star",
+        "home", "room", "road", "v-van",
+        "orange", "purple", "pink", "cold",
+        "a-apple", "i-ice", "o-orange",
+        "shark", "insect", "ocean", "space",
+        "b-ball", "c-cat", "d-dog", "f-fish",
+        "g-grape", "h-hat", "j-juice", "n-nose",
+        "p-pig", "q-queen", "r-red", "s-sun",
+        "t-toy", "u-umbrella", "w-water",
+        "angry", "tired", "jump", "turn",
+        "head", "shoulders", "knees", "toes",
+        "eyes", "ears", "hands", "feet",
+        "clean", "open", "close", "go",
+        "mom", "dad", "brother", "family",
+        "food", "animals", "colors", "numbers",
+        "weather", "body", "big", "small",
+        "hello", "hi", "bye", "friend",
+        "love", "hug", "please", "thank-you",
+        "yes", "no", "stop", "fast",
+        "teacher", "sky", "nose", "abc",
+        "i-am", "i-can", "i-have", "i-like",
+        "i-see", "mountain", "what-is-it", "where-is-it",
+        "zh-audio",
+    )
+]
+if all(require_image(path, (640, 480), alpha=True) for path in featured_vocab_paths):
+    passed("one hundred fifty 640x480 transparent vocabulary teaching images")
+require_unique("featured vocabulary teaching images", featured_vocab_paths)
+for path in featured_vocab_paths:
+    legacy = V40 / "vocab" / path.name
+    if legacy.is_file() and digest(path) == digest(legacy):
+        fail(f"{path.name} duplicates V40 vocabulary art")
+if not any("duplicates V40 vocabulary art" in item for item in FAILURES):
+    passed(f"V5 featured vocabulary SHA differs from V40 {len(featured_vocab_paths)}/{len(featured_vocab_paths)}")
+
+vocabulary_words = curriculum_vocabulary_words()
+vocabulary_slugs = sorted({vocabulary_asset_slug(word) for word in vocabulary_words})
+vocabulary_paths = [V5 / "vocab" / f"{slug}.webp" for slug in vocabulary_slugs]
+if len(vocabulary_words) != 161:
+    fail(f"curriculum vocabulary terms {len(vocabulary_words)}/161")
+elif len(vocabulary_paths) != 150:
+    fail(f"curriculum vocabulary concepts {len(vocabulary_paths)}/150")
+elif all(require_image(path, (640, 480)) for path in vocabulary_paths):
+    passed("161 curriculum terms map to 150 640x480 teaching concepts")
+actual_vocabulary_paths = sorted((V5 / "vocab").glob("*.webp"))
+if {path.name for path in actual_vocabulary_paths} != {path.name for path in vocabulary_paths}:
+    fail("V5 vocabulary directory does not exactly match curriculum concept mapping")
+else:
+    passed("V5 vocabulary filenames exactly match runtime concept mapping 150/150")
+
+badge_master_paths = sorted(
+    path for path in (V5 / "badges").glob("*.webp") if not path.name.endswith("-128.webp")
+)
+if len(badge_master_paths) != 24:
+    fail(f"badge production masters {len(badge_master_paths)}/24")
+elif all(require_image(path, (512, 512), alpha=True) for path in badge_master_paths):
+    passed("24 badge 512x512 transparent production masters")
+require_unique("badge production masters", badge_master_paths)
+
 badge_runtime_paths = sorted((V5 / "badges").glob("*-128.webp"))
 if len(badge_runtime_paths) != 24:
     fail(f"badge runtime derivatives {len(badge_runtime_paths)}/24")
 elif all(require_image(path, (128, 128), alpha=True) for path in badge_runtime_paths):
     passed("24 badge 128x128 runtime derivatives")
+require_unique("badge runtime derivatives", badge_runtime_paths)
+
+for path in badge_master_paths:
+    legacy = V40 / "badges" / path.name
+    if legacy.is_file() and digest(path) == digest(legacy):
+        fail(f"{path.name} duplicates V40 badge art")
+if not any("duplicates V40 badge art" in item for item in FAILURES):
+    passed("V5 badge SHA differs from V40 24/24")
 
 webm_specs = {
     "animations/brother-idle.webm": 100_000,

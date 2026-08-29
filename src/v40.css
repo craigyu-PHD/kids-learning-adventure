@@ -363,3 +363,11 @@ body{background:linear-gradient(180deg,#2B4ED6 0%,#5B6EF5 18%,#A8C4FF 45%,#F7FBF
 @media(max-width:1180px){.v53-parent-status{max-width:196px}.v53-parent-status strong{font-size:11px}.v53-parent-status small{font-size:11px}.v53-brand-logo{width:320px;max-width:34vw}}
 @media(max-width:760px){.v5-cinematic-header .v4-brand-lockup{min-width:0}.v53-brand-logo{width:218px;max-width:58vw}.v53-parent-status{display:none}.v53-date-strip span{font-size:14px}.v53-date-strip i{font-size:12px}.v53-date-strip strong{font-size:19px}.v53-family-level{margin-bottom:8px}.v53-teaser-theme{grid-template-columns:68px minmax(0,1fr);padding:14px}.v53-teaser-theme>svg{width:54px;height:54px}.v53-teaser-theme strong{font-size:19px}}
 .v4-settings-page .avatar-choice-grid{grid-template-columns:repeat(2,minmax(64px,1fr))!important}
+
+/* V5.3 shop readability: item art stays in its own fixed lane; no metadata below 11px. */
+.v4-shop-grid article>span{font-size:11px!important;line-height:1.2!important}
+.v4-shop-grid p{font-size:11px!important;line-height:1.35!important}
+.v4-shop-grid small{font-size:11px!important;line-height:1.3!important}
+.v4-shop-grid button{font-size:12px!important;line-height:1.2!important}
+.v4-wallet span{font-size:11px!important}
+@media(max-width:760px){.v4-shop-grid article{min-height:248px}.v4-shop-grid h3{font-size:15px}}
