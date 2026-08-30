@@ -1,27 +1,76 @@
+/* =============================================================================
+ * Report & Learning Mastery — V6 overrides
+ * ============================================================================= */
+
+/* ── Learning Mastery Panel ─────────────────────────────────────────────────── */
 .learning-mastery-panel {
   margin-top: 14px;
   padding: 16px;
   border: 1.5px solid #D7E9F3;
-  border-radius: 18px;
+  border-radius: var(--radius-md, 16px);  /* was 18px — normalize to token */
   background: #F7FBFF;
 }
 
 .learning-mastery-panel > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .learning-mastery-panel > header h3 { margin: 0; color: #0D2A62; font-size: 17px; }
-.learning-mastery-panel > header span { color: #5D718F; font-size: 12px; font-weight: 800; }
+.learning-mastery-panel > header span { color: #5D718F; font-size: 12px; font-weight: 700; }  /* was 800 */
 .learning-mastery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin-top: 12px; }
-.learning-mastery-skill { min-height: 92px; padding: 10px; border-radius: 14px; background: #fff; border: 1px solid #DCEAF8; }
-.learning-mastery-skill > span { display: block; color: #28466F; font-size: 13px; font-weight: 900; }
+.learning-mastery-skill { min-height: 92px; padding: 10px; border-radius: var(--radius-sm, 10px); background: #fff; border: 1px solid #DCEAF8; }  /* was 14px */
+.learning-mastery-skill > span { display: block; color: #28466F; font-size: 13px; font-weight: 700; }  /* was fw:900 */
 .learning-mastery-skill strong { display: block; margin-top: 4px; color: #0D2A62; font-size: 21px; line-height: 1; }
 .learning-mastery-skill small { display: block; margin-top: 7px; color: #637692; font-size: 12px; line-height: 1.3; }
 .learning-mastery-skill.needs-review { border-color: #FFB8AE; background: #FFF7F5; }
 .learning-mastery-skill.learning { border-color: #FFE2A4; background: #FFFCF4; }
 .learning-mastery-skill.developing { border-color: #A9D9F7; }
 .learning-mastery-skill.mastered { border-color: #A9E5C9; background: #F5FFF9; }
-.learning-review-summary { margin: 13px 0 0; padding: 10px 12px; color: #294A76; font-size: 13px; font-weight: 700; line-height: 1.5; border-radius: 12px; background: #EAF4FF; }
+.learning-review-summary { margin: 13px 0 0; padding: 10px 12px; color: #294A76; font-size: 13px; font-weight: 700; line-height: 1.5; border-radius: var(--radius-sm, 10px); background: #EAF4FF; }
 .learning-review-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 0; padding: 0; list-style: none; }
-.learning-review-list li { padding: 6px 9px; color: #6B3F13; font-size: 12px; font-weight: 850; border-radius: 999px; background: #FFF1CA; }
+.learning-review-list li { padding: 6px 9px; color: #6B3F13; font-size: 12px; font-weight: 800; border-radius: var(--radius-pill, 999px); background: #FFF1CA; }  /* was fw:850 */
 
 @media (max-width: 700px) {
   .learning-mastery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+
+/* ── Page heading h1: margin fix when <span> was removed ──────────────────────
+ * v40.css sets .v4-page-heading h1 { margin: 2px 0 0 } to sit below <span>.
+ * Now that we removed English spans from all page headings, h1 is the first
+ * child → reset margin-top to 0 so there's no phantom whitespace.
+ * ────────────────────────────────────────────────────────────────────────── */
+.v4-page-heading div > h1:first-child {
+  margin-top: 0 !important;
+}
+
+
+/* ── v30.css font-weight:900 sweep ───────────────────────────────────────────
+ * v30.css has 9 occurrences of font-weight:900. These fire in the secondary
+ * pages (quest map, badge shelf, parent calendar) and on v30 hero pages.
+ * Nunito / Noto Sans TC do not include 900 in the loaded subset → faux-bold.
+ * ────────────────────────────────────────────────────────────────────────── */
+
+/* v30.css:748  celebration badge span (fw:900) */
+.v30-celebration-badge span        { font-weight: 800 !important; }
+
+/* v30.css:838  (unknown selector) fw:900 */
+.v30-coin-wallet                   { font-weight: 800 !important; }
+
+/* v30.css:898  badge category title span (fw:900) */
+.v30-badge-category-title span     { font-weight: 800 !important; }
+
+/* v30.css:910  game badge copy em (fw:900) */
+.v30-game-badge-copy em            { font-weight: 800 !important; }
+
+/* v30.css:927  map week head span (fw:900) */
+.v30-map-week-head span            { font-weight: 800 !important; }
+
+/* v30.css:943  map node em (fw:900) */
+.v30-map-node em                   { font-weight: 800 !important; }
+
+/* v30.css:962  parent calendar weekdays (fw:900) */
+.v30-parent-calendar-weekdays span { font-weight: 700 !important; }
+
+/* v30.css:966  parent calendar day span (fw:900, 10px) */
+.v30-parent-calendar-day span      { font-size: 12px !important; font-weight: 700 !important; }
+
+/* v30.css:965  parent calendar day small (10px) */
+.v30-parent-calendar-day small     { font-size: 12px !important; }

@@ -1,8 +1,66 @@
-/* V6 design-token ownership starts here. Existing production tokens remain
- * available through legacy-compat.css until their consumers are migrated. */
+/* V6 Design Tokens — single source of truth.
+ *
+ * All values here are owned by V6. Legacy CSS in v40.css still uses its own
+ * hard-coded values; migrate selectors here as they are reworked.
+ * Do NOT re-invent colours or sizes not listed below — extend this file.
+ */
 :root {
-  --motion-fast: 120ms;
+  /* ── Motion ── */
+  --motion-fast:     120ms;
   --motion-standard: 180ms;
-  --motion-page: 220ms;
+  --motion-page:     220ms;
+
+  /* ── Focus ── */
   --focus-ring: #075BC7;
+
+  /* ── Brand colours ── */
+  --color-brand-900:   #061D57;
+  --color-brand-700:   #073B91;
+  --color-primary:     #1347C6;
+  --color-accent:      #19C9FF;
+  --color-success:     #20C968;
+  --color-reward:      #FFD83D;
+  --color-warning:     #FF8A34;
+  --color-purple:      #A54BFF;
+
+  /* ── Semantic colours ── */
+  --color-locked-bg:     #F0F2F6;
+  --color-locked-text:   #75829A;
+  --color-locked-icon:   #AAB4C4;
+  --color-locked-border: #D9E0EA;
+
+  /* ── Font sizes (minimum scale) ── */
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-16: 16px;
+  --fs-17: 17px;
+  --fs-18: 18px;
+  --fs-21: 21px;
+  --fs-24: 24px;
+
+  /* ── Spacing ── */
+  --space-4:  4px;
+  --space-8:  8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+
+  /* ── Border radius ── */
+  --radius-sm:   10px;
+  --radius-md:   16px;
+  --radius-lg:   22px;
+  --radius-pill: 999px;
+
+  /* ── Shadows ── */
+  --shadow-card:   0 4px 12px rgba(6, 29, 87, .10);
+  --shadow-panel:  0 8px 24px rgba(6, 29, 87, .14);
+  --shadow-active: 0 0 0 3px rgba(25, 201, 255, .22);
+
+  /* ── Font families ── */
+  --font-chinese: 'Noto Sans TC', sans-serif;
+  --font-english: 'Nunito', 'Noto Sans TC', sans-serif;
+  --font-game:    'Fredoka', 'Nunito', sans-serif;
 }

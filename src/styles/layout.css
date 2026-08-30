@@ -1,1 +1,73 @@
-/* Layout ownership: new page and shell selectors are added here. */
+/* =============================================================================
+ * Layout ownership  (V6)
+ *
+ * Three-column outer panels use overflow:clip (not overflow:hidden) so that:
+ *   - position:sticky descendants still work
+ *   - layout bugs are NOT silently masked by clipping
+ *   - decorative backgrounds and border-radius are still respected
+ *
+ * The inset glow on every column is replaced by a single, lower-opacity
+ * ambient shadow — in line with §21 (glow only for active/today/reward).
+ * ============================================================================= */
+
+/* ── Three-column shells ───────────────────────────────────────────────────
+ * Replaces the per-column overflow:hidden + full inset-glow from v40.css.
+ * Border is trimmed from 2px → 1.5px; glow removed from ambient state.
+ * Active column glow is added via .v4-left-column (player panel) because it
+ * is always the "current user" reference point.
+ * ────────────────────────────────────────────────────────────────────────── */
+.v4-left-column,
+.v4-center-column,
+.v4-right-column {
+  overflow: clip !important;          /* replaces overflow:hidden — no layout masking */
+  border-width: 1.5px !important;     /* was 2px */
+  box-shadow:
+    0 10px 28px rgba(3, 28, 88, .28) !important;  /* ambient depth only; no inset glow */
+}
+
+/* ── Inner panel: remove overflow:hidden that masked content overflow ──────
+ * v40.css line 65: .v4-player-card has overflow:hidden — causes content
+ * clipping. Cards should control their own content, not rely on parent clip.
+ * ────────────────────────────────────────────────────────────────────────── */
+.v4-player-card {
+  overflow: visible !important;
+}
+
+/* ── Lesson card: keep clip for border-radius on the card itself ───────────
+ * v40.css line 161: .v4-lesson-card { overflow:hidden } is correct here —
+ * it trims the card thumbnail to the card's border-radius. Allowed.
+ * No override needed.
+ * ────────────────────────────────────────────────────────────────────────── */
+
+
+/* ── Glow discipline: §21 ──────────────────────────────────────────────────
+ * Glow is reserved for:
+ *   - Today's active calendar day    (already via .v4-calendar-day.today)
+ *   - Active navigation button       (via .v4-main-navigation button.active)
+ *   - Reward / treasure              (already via .v4-treasure-chest.treasure-day)
+ *   - Level badge (player card)
+ * All other panels: no inset glow.
+ *
+ * The outer cyan border on the three columns is kept at 1.5px as a design
+ * signature, but the inset glow is removed from ambient state.
+ * ────────────────────────────────────────────────────────────────────────── */
+
+/* Panel-level border: inner cards use a lighter border, no glow by default */
+.v4-panel {
+  box-shadow: var(--shadow-card, 0 4px 12px rgba(3, 28, 88, .10)) !important;
+}
+
+/* Active navigation button — keep glow */
+.v4-main-navigation button.active {
+  box-shadow: inset 0 0 0 2px rgba(25, 201, 255, .70),
+              0 0 12px rgba(25, 201, 255, .28) !important;
+}
+
+/* Panel title: reduce font-weight from fw:1000 → 700 for loaded weights */
+.v4-panel-title span,
+.v4-daily-head span,
+.v4-ai-companion > div:last-child > span {
+  font-weight: 700 !important;   /* was fw:1000 — not in loaded font weight */
+  font-size: 11px !important;
+  letter-spacing: .12em;
+}

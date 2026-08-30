@@ -1,17 +1,535 @@
-/* Dashboard ownership: new semantic feature rules live here, not in v40.css. */
+/* =============================================================================
+ * Dashboard ownership  (V6)
+ * New semantic feature rules live here, not in v40.css.
+ * All overrides use !important only to win over v40.css specificity;
+ * new components defined here should NOT need !important internally.
+ * ============================================================================= */
+
+/* ─── Lesson Card ─────────────────────────────────────────────────────────── */
 
 /* Lesson cards keep visual media and copy in independent grid lanes. */
-.v5-lesson-card-header { height: 38px; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(180deg, #f3f8ff, #e6f1ff); color: #0d2a62; }
-.v5-lesson-card-header strong { display: flex; align-items: center; gap: 4px; font-size: 11px; letter-spacing: .08em; }
+.v5-lesson-card-header {
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #f3f8ff, #e6f1ff);
+  color: #0d2a62;
+}
+
+/* Lesson header labels: 12px / 800 (was 11px) */
+.v5-lesson-card-header strong {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: .06em;
+}
 .v5-lesson-card-header strong svg { width: 14px; height: 14px; color: #e9a400; fill: #ffd83d; }
-.v5-lesson-card-header span { color: #75809a; font-size: 11px; font-weight: 900; }
-.v5-lesson-card-body { box-sizing: border-box; display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 12px; height: 156px; padding: 10px; }
-.v4-right-column .v5-lesson-card-body .v4-lesson-thumb { align-self: start; grid-row: auto; width: 116px !important; height: 78px !important; border-radius: 14px; }
-.v4-right-column .v5-lesson-card-body .v4-lesson-content { display: flex !important; flex-direction: column; grid-row: auto; min-width: 0; gap: 4px; overflow: hidden; padding: 0; grid-template-columns: none !important; }
-.v5-lesson-card-body .v4-lesson-content h3 { display: -webkit-box; margin: 0; overflow: hidden; font-size: 14px; line-height: 1.25; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-.v5-lesson-card-body .v4-lesson-content p { max-width: 100%; margin: 0; font-size: 11px !important; line-height: 1.25 !important; }
-.v4-right-column .v5-lesson-card-body .v4-lesson-content button { width: 100% !important; height: 44px !important; min-height: 44px; margin-top: auto; font-size: 13px !important; }
+
+/* Lesson time: 12px / 700 (was 11px) */
+.v5-lesson-card-header span {
+  color: #75809a;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.v5-lesson-card-body {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  gap: 12px;
+  height: 156px;
+  padding: 10px;
+}
+
+.v4-right-column .v5-lesson-card-body .v4-lesson-thumb {
+  align-self: start;
+  grid-row: auto;
+  width: 116px !important;
+  height: 78px !important;
+  border-radius: 14px;
+}
+
+.v4-right-column .v5-lesson-card-body .v4-lesson-content {
+  display: flex !important;
+  flex-direction: column;
+  grid-row: auto;
+  min-width: 0;
+  gap: 4px;
+  overflow: hidden;
+  padding: 0;
+  grid-template-columns: none !important;
+}
+
+/* Lesson title: 17px / 800 (was 14px) */
+.v5-lesson-card-body .v4-lesson-content h3 {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.25;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Song/source label: 12px (was 11px) */
+.v5-lesson-card-body .v4-lesson-content p {
+  max-width: 100%;
+  margin: 0;
+  font-size: 12px !important;
+  line-height: 1.3 !important;
+}
+
+/* CTA: 15px / 800 / 44px (was 13px) */
+.v4-right-column .v5-lesson-card-body .v4-lesson-content button {
+  width: 100% !important;
+  height: 44px !important;
+  min-height: 44px;
+  margin-top: auto;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+}
+
 .v5-lesson-card-body .v4-lesson-meta { min-width: 0; gap: 6px; }
-.v5-lesson-card-body .v4-lesson-meta small { min-width: 0; overflow: hidden; color: #75809a; font-size: 11px !important; line-height: 1.25 !important; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Meta small labels: 12px (was 11px) */
+.v5-lesson-card-body .v4-lesson-meta small {
+  min-width: 0;
+  overflow: hidden;
+  color: #75809a;
+  font-size: 12px !important;
+  line-height: 1.3 !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .v4-lesson-card.preview { border-color: #afcfec; }
-.v4-lesson-card.preview .v4-lesson-thumb > i { background: linear-gradient(135deg, rgba(6, 29, 87, .45), rgba(7, 91, 199, .34)); }
+.v4-lesson-card.preview .v4-lesson-thumb > i {
+  background: linear-gradient(135deg, rgba(6,29,87,.45), rgba(7,91,199,.34));
+}
+
+
+/* ─── Evolution ───────────────────────────────────────────────────────────── */
+
+/* Evolution lane header */
+.v5-evolution-lane {
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) !important;
+  grid-template-rows: 24px 1fr !important;
+  align-items: stretch !important;
+  padding: 5px 8px !important;
+  overflow: visible !important; /* was hidden — let character overflow clip to panel, not lane */
+}
+
+/* Character name: 14px / 800 (was 13px) */
+.v5-evolution-lane > header strong {
+  font-size: 14px !important;
+  font-weight: 800 !important;
+}
+
+/* Current level label: 12px / 700 (was 11px) */
+.v5-evolution-lane > header span {
+  font-size: 12px !important;
+  color: #75809A;
+  font-weight: 700 !important;
+}
+
+/* Stage label (Lv.X): 12px / 800 (was 9→11px / fw900→1000) */
+.v5-evolution-stage > small {
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Stage name text: 12px / 700 (was 9→11px) */
+.v5-evolution-stage > span {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  white-space: nowrap;
+  line-height: 1.35 !important;
+  letter-spacing: -.02em;
+}
+
+/* Character image: 72×78px (was 62×68px) */
+.v5-evolution-stage .v4-smart-image {
+  width: 72px !important;
+  height: 78px !important;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* Stage box: done/locked */
+.v5-evolution-stage.done  > div { border-color: #20C968; }
+.v5-evolution-stage.locked > div { opacity: .35; filter: grayscale(.35); }
+
+
+/* ─── Badge Shelf (Dashboard panel) ──────────────────────────────────────── */
+
+/* Slot: 86×96px (was 84×92px), flex column for name beneath image */
+.v4-badge-panel .v4-badge-shelf .v30-game-badge {
+  width: 86px !important;
+  height: 96px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 6px 4px 4px !important;
+  gap: 3px !important;
+  border-radius: 18px;
+  box-shadow: 0 6px 14px rgba(10,31,99,.12);
+}
+
+/* Art: 64×64px (was 66×66px) */
+.v4-badge-panel .v4-badge-shelf .v30-game-badge-art {
+  width: 64px !important;
+  height: 64px !important;
+}
+
+/* Badge name: 12px / 700, 2-line clamp, no 9px shrink (was unset → inherits 9px) */
+.v4-badge-panel .v4-badge-shelf .v30-game-badge > span,
+.v4-badge-panel .v4-badge-shelf .v30-game-badge > strong,
+.v4-badge-panel .v4-badge-shelf .v30-game-badge-copy strong,
+.v4-badge-panel .v4-badge-shelf .v30-game-badge-copy small {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  line-height: 1.2;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 82px;
+  white-space: normal !important;
+}
+
+
+/* ─── Calendar ────────────────────────────────────────────────────────────── */
+
+/* Legend: 12px / 700 (was 10px / fw850) */
+.v4-calendar-legend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #647697;
+}
+.v4-calendar-legend i { width: 10px; height: 10px; border-radius: 4px; }
+.v4-calendar-legend .done  { background: var(--v4-green, #20C968); }
+.v4-calendar-legend .today { background: var(--v4-blue, #2E89FF); }
+.v4-calendar-legend .lock  { background: #C4CFDD; }
+
+/* Weekday headers: 12px / 700 (was 10px / fw1000) */
+.v4-calendar-weekdays { display: grid; grid-template-columns: repeat(5,1fr); gap: 7px; margin-bottom: 7px; }
+.v4-calendar-weekdays span {
+  text-align: center;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #7290AF;
+  letter-spacing: .08em;
+}
+
+/* Day date number: 12px / 700 (was 9px / fw800) */
+.v4-calendar-day span {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #8C9BB0;
+}
+
+/* Day number (e.g. "Day 28"): 14px / 800 (was 12px) */
+.v4-calendar-day strong {
+  font-size: 14px !important;
+  font-weight: 800 !important;
+}
+
+/* Status icon: 24px (was 21px) */
+.v4-calendar-day i {
+  margin-top: 3px;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #E2EAF3;
+  color: #8A98AA;
+}
+.v4-calendar-day i svg { width: 15px !important; }
+
+/* Semester overview: 70px height (was 66px) */
+.v5-semester-overview .v4-calendar-day {
+  width: 96px !important;
+  max-width: 96px !important;
+  height: 70px !important;
+  min-height: 70px !important;
+}
+.v5-semester-overview .v4-calendar-day strong { font-size: 16px !important; }
+
+/* ── Locked state: replace global opacity with explicit muted colours ── */
+/* Override v40.css opacity:.65 — keep text legible */
+.v4-calendar-day.locked {
+  opacity: 1 !important;
+  background: var(--color-locked-bg, #F0F2F6) !important;
+  border-color: var(--color-locked-border, #D9E0EA) !important;
+}
+.v4-calendar-day.locked span,
+.v4-calendar-day.locked strong {
+  color: var(--color-locked-text, #75829A) !important;
+}
+.v4-calendar-day.locked i {
+  background: #E2E8F2 !important;
+  color: var(--color-locked-icon, #AAB4C4) !important;
+}
+.v4-calendar-day.locked b { color: var(--color-locked-icon, #AAB4C4) !important; }
+
+
+/* ─── Player Card ─────────────────────────────────────────────────────────── */
+
+/* Resource row: 4 columns → 2 (only XP + Coins visible) */
+.v4-resource-row {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+/* Resource icons & text size up slightly */
+.v4-resource-row span {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+.v4-resource-row svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* "Next level" copy: 12px / 700 / #667A96 (was 10px uninherited) */
+.v4-player-copy small {
+  display: block;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #667A96 !important;
+}
+
+
+/* ─── Date Strip ──────────────────────────────────────────────────────────── */
+
+/* Date: 15px/800  Weekday: 13px/700  Day: 24px/800/Fredoka */
+.v53-date-strip span   { font-size: 15px !important; font-weight: 800 !important; }
+.v53-date-strip i      { font-size: 13px !important; font-weight: 700 !important; color: #477092; }
+.v53-date-strip strong {
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  font-family: var(--font-game, 'Fredoka', 'Nunito', sans-serif);
+  line-height: 1;
+  color: #075BC7;
+}
+
+
+/* ─── font-weight cap: replace synthetic-bold values ─────────────────────── */
+/* Target the most visible offenders — complete sweep is a future task       */
+
+/* Evolution stage labels (fw:1000/900 → 800/700 already done above)        */
+
+/* Player copy h3 (fw:900 in v40.css:182) */
+.v4-player-copy h3 { font-weight: 800 !important; }
+
+/* AI companion h3 */
+.v4-ai-companion h3 { font-weight: 800 !important; }
+
+/* Status bar strong */
+.v4-status-bar strong { font-weight: 700 !important; }
+
+/* Lesson meta span badge (fw:1000 implied by shorthand) */
+.v4-lesson-card .v4-lesson-meta span { font-weight: 700 !important; }
+
+/* Lock note */
+.v4-lock-note { font-size: 12px !important; line-height: 1.45 !important; font-weight: 700 !important; }
+
+/* Family level labels */
+.v53-family-level span  { font-weight: 700 !important; }
+.v53-family-level small { font-weight: 700 !important; }
+
+
+/* ─── §19 Lesson Card: Song 2-row information hierarchy ──────────────────── */
+
+/* Container: flex column, tight gap */
+.v5-song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 2px 0;
+}
+
+/* "課前歌曲" label: 11px uppercase, muted — acts as field label */
+.v5-song-label {
+  display: block;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #8A9BB5;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* Song title: 12px, readable — the actual content */
+.v5-song-name {
+  display: block;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #2D4A72;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ─── Panel-title h2: margin fix when <span> is absent ───────────────────── */
+/* v40.css sets h2 { margin: 2px 0 0 } to sit below <span>.
+ * For panels where we removed the English span (EVOLUTION, ACHIEVEMENTS),
+ * h2 becomes the first child — reset margin to 0. */
+.v4-evolution-panel .v4-panel-title h2,
+.v4-badge-panel     .v4-panel-title h2 {
+  margin: 0 !important;
+}
+
+/* AI companion h3 (no span either) */
+.v4-ai-companion > div > h3 {
+  margin: 0 0 4px !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+}
+
+
+/* ─── Complete font-weight sweep: v40.css fw:850 / 900 / 950 / 1000 ─────────
+ * v40.css has 24 occurrences of these values. None are in loaded font weights
+ * (Nunito / Noto Sans TC / Fredoka load 400-800 only). Browsers synthesise
+ * faux-bold which looks inconsistent across Chrome / Safari / Android.
+ * Map: 850 → 800,  900 → 800,  950 → 800,  1000 → 800 (or 700 for secondary)
+ * ────────────────────────────────────────────────────────────────────────── */
+
+/* v40.css:62  .v4-panel-title span (fw:1000) — handled in layout.css        */
+/* v40.css:182 .v4-player-copy h3  (fw:900) — handled above                  */
+/* v40.css:254 evolution stage     (fw:1000/900) — handled above              */
+
+/* v40.css:95  reward modal kicker (fw:1000) */
+.v4-reward-kicker                  { font-weight: 800 !important; }
+
+/* v40.css:95  reward continue button (fw:1000) */
+.v4-reward-continue                { font-weight: 800 !important; }
+
+/* v40.css:95  reward modal > p (fw:750) — close enough, raise to 700 */
+.v4-reward-modal > p               { font-weight: 700 !important; }
+
+/* v40.css:95  reward resource-grid span (fw:1000) */
+.v4-reward-resource-grid span      { font-weight: 700 !important; }
+
+/* v40.css:95  new-badge / level-up-banner span (fw:1000) */
+.v4-new-badge > span,
+.v4-level-up-banner span           { font-weight: 700 !important; }
+
+/* v40.css:98  history-panel header span (fw:1000) */
+.v4-history-panel > header span    { font-weight: 700 !important; }
+
+/* v40.css:98  history-lessons span (fw:1000) */
+.v4-history-lessons span           { font-weight: 700 !important; }
+
+/* v40.css:98  history-lessons small (fw:1000 implied) */
+.v4-history-lessons small          { font-weight: 700 !important; }
+
+/* v40.css:98  history-learners span (fw:1000) */
+.v4-history-learners span          { font-weight: 700 !important; }
+
+/* v40.css:119 quick-check header span (fw:1000) */
+.v4-quick-check > header span      { font-weight: 700 !important; }
+
+/* v40.css:119 quick-check button (fw:950) */
+.v4-quick-check > header button    { font-weight: 800 !important; }
+.v4-quick-check article > div button { font-weight: 800 !important; }
+
+/* v40.css:119 answer-analytics / report-periods span (fw:1000) */
+.v4-answer-analytics span,
+.v4-report-periods   span          { font-weight: 700 !important; }
+
+/* v40.css:305 family-level span/small (fw:900/800) — already handled above  */
+
+/* v40.css:309 date-strip span (fw:900) — already handled above (→800)       */
+
+/* v40.css:311 teaser-theme span (fw:900) */
+.v53-teaser-theme span             { font-weight: 700 !important; }
+
+/* v40.css:316–318 shop-grid items (fw implied from shorthand) */
+.v4-shop-grid article > span       { font-weight: 700 !important; }
+
+/* v40.css:320 wallet span (fw implied) */
+.v4-wallet span                    { font-weight: 700 !important; }
+
+/* v40.css:87  theme-grid button (fw:950) */
+.v4-theme-grid button              { font-weight: 800 !important; }
+
+
+/* ─── §22 Border-radius token application ────────────────────────────────────
+ * Tokens:  --radius-sm:10  --radius-md:16  --radius-lg:22  --radius-pill:999
+ *
+ * The most visible outliers in v40.css:
+ *   Outer panels (left/center/right) use 22px  → --radius-lg  ✅ (correct)
+ *   Inner panels (.v4-panel)        use 16px  → --radius-md  ✅ (correct)
+ *   Player card                     uses 22px → --radius-lg  (keep)
+ *   Lesson card                     uses 18px → --radius-md  (normalise)
+ *   History panel                   uses 28px → --radius-lg  (normalise)
+ *   Daily panel                     uses 28px → --radius-lg  (normalise)
+ *   Reward modal                    uses 30px → --radius-lg  (normalise — slightly bigger is fine for modal)
+ *   Robot avatar                    uses 30px → keep (it's a specific design choice)
+ * ────────────────────────────────────────────────────────────────────────── */
+
+/* Lesson card: 18→16px (--radius-md) */
+.v4-lesson-card {
+  border-radius: var(--radius-md, 16px) !important;
+}
+
+/* History panel: 28→22px */
+.v4-history-panel {
+  border-radius: var(--radius-lg, 22px) !important;
+}
+
+/* Daily panel at 1560px+: was 28px */
+.v4-daily-panel {
+  border-radius: var(--radius-lg, 22px) !important;
+}
+
+/* Calendar panel at 1560px+: was 28px */
+.v4-calendar-panel {
+  border-radius: var(--radius-lg, 22px) !important;
+}
+
+/* History-lessons articles: 18→16px */
+.v4-history-lessons article {
+  border-radius: var(--radius-md, 16px) !important;
+}
+
+/* History-learners articles: 20→16px */
+.v4-history-learners > article {
+  border-radius: var(--radius-md, 16px) !important;
+}
+
+/* Quest-stage card: 18→16px */
+.v4-quest-stage-card {
+  border-radius: var(--radius-md, 16px) !important;
+}
+
+/* Quick-check article slots: 18→16px */
+.v4-quick-check article {
+  border-radius: var(--radius-md, 16px) !important;
+}
+
+/* Answer analytics / report period cards: 18→16px */
+.v4-answer-analytics article,
+.v4-report-periods article {
+  border-radius: var(--radius-md, 16px) !important;
+}

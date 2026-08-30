@@ -1,2 +1,198 @@
-/* Responsive ownership: add feature-specific breakpoints here, with the
- * component that owns them, rather than appending to a historical version. */
+/* =============================================================================
+ * Responsive ownership  (V6)
+ *
+ * Four-tier breakpoint system:
+ *   ≥1480px  Desktop XL  — default layout (260 / 880 / 344)
+ *  1280–1479  Desktop     — narrower grid, fluid calendar cells
+ *  1024–1279  Tablet LS   — two-column (left | center); right as second row
+ *   768–1023  Tablet PT   — single-column stacked
+ *      <768   Mobile      — single-column (defined in v40.css, extended here)
+ *
+ * Navigation rules also live here, keyed by viewport width.
+ * ============================================================================= */
+
+
+/* ── ≥1480 Desktop XL ──────────────────────────────────────────────────────
+ * Baseline: 260 / 880 / 344 — no overrides needed.
+ * ────────────────────────────────────────────────────────────────────────── */
+
+
+/* ── 1280–1479 Desktop ─────────────────────────────────────────────────────
+ * Shrink side columns; make calendar cells fluid (no fixed 96px).
+ * ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1479px) and (min-width: 1280px) {
+  /* Dashboard grid: narrower sides */
+  .v4-dashboard-grid {
+    grid-template-columns: 240px 1fr 320px !important;
+    width: min(1480px, calc(100% - 28px)) !important;
+  }
+
+  /* Calendar cells: fluid, no hard 96px */
+  .v5-semester-overview .v4-calendar-day {
+    width: auto !important;
+    max-width: none !important;
+  }
+  .v5-semester-overview .v4-calendar-grid.v5-grid-15 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  /* Right column lesson cards */
+  .v4-right-column .v4-lesson-card {
+    width: 100% !important;
+  }
+}
+
+
+/* ── 1024–1279 Tablet Landscape ────────────────────────────────────────────
+ * Two-column: left (240px) + center (1fr).
+ * Right column (Today Mission / Lesson cards) moves to a full-width second row.
+ * ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .v4-dashboard-grid {
+    grid-template-columns: 240px 1fr !important;
+    grid-template-rows: auto auto !important;
+    width: min(1280px, calc(100% - 28px)) !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .v4-left-column   { grid-column: 1; grid-row: 1; }
+  .v4-center-column { grid-column: 2; grid-row: 1; }
+
+  /* Right column: full width second row */
+  .v4-right-column {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+  }
+  /* Lesson list 2-column in full-width row */
+  .v4-right-column .v4-lesson-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .v4-right-column .v4-lesson-card {
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  /* Evolution / Badge / Calendar: full width */
+  .v4-evolution-panel,
+  .v4-badge-panel {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Calendar: fluid cells */
+  .v5-semester-overview .v4-calendar-day {
+    width: auto !important;
+    max-width: none !important;
+  }
+  .v5-semester-overview .v4-calendar-grid.v5-grid-15 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+
+/* ── 768–1023 Tablet Portrait ──────────────────────────────────────────────
+ * Single-column stacked; order: Mission → Player → Calendar → Weekly → Evolution → Badge
+ * ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .v4-dashboard-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    width: calc(100% - 24px) !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin: 12px auto 80px !important;
+  }
+
+  .v4-right-column,
+  .v4-left-column,
+  .v4-center-column {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Right column first (Today Mission at top) */
+  .v4-right-column { order: -1; }
+
+  .v4-right-column .v4-lesson-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .v4-right-column .v4-lesson-card { width: 100% !important; }
+
+  /* Calendar: full width, fluid */
+  .v4-calendar-panel,
+  .v5-semester-overview {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  .v5-semester-overview .v4-calendar-day {
+    width: auto !important;
+    max-width: none !important;
+  }
+  .v5-semester-overview .v4-calendar-grid.v5-grid-15 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  /* Evolution / Badge: full width */
+  .v4-evolution-panel,
+  .v4-badge-panel {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+  }
+  .v4-evolution-panel .v4-evolution-row article {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Player card full width */
+  .v4-left-column .v4-player-profile { width: 100% !important; min-height: auto !important; }
+  .v4-player-card,
+  .v4-ai-companion { width: 100% !important; }
+}
+
+
+/* ── Navigation: Tablet (761–1180) ─────────────────────────────────────────
+ * Keep 6 columns but scale down icons and text — no 3×2 wrap.
+ * ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 1180px) and (min-width: 761px) {
+  /* Override v40.css repeat(3,1fr) at ≤1180 */
+  .v4-main-navigation {
+    grid-template-columns: repeat(6, 1fr) !important;
+    height: 64px;
+    gap: 2px;
+  }
+  .v4-main-navigation button {
+    min-height: 52px !important;
+    font-size: 11px !important;
+    padding: 4px;
+    gap: 2px;
+  }
+  .v4-main-navigation .v4-glossy-icon {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 11px;
+    margin: auto;
+  }
+  .v4-main-navigation .v4-glossy-icon svg { width: 17px !important; }
+}
+
+
+/* ── Mobile Navigation: 8px → 12px ─────────────────────────────────────────
+ * v40.css sets font-size:8px at ≤760px. Override to minimum 12px.
+ * ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  .v4-main-navigation button {
+    min-height: 58px !important;
+    font-size: 12px !important;
+    gap: 2px !important;
+  }
+  .v4-main-navigation .v4-glossy-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .v4-main-navigation .v4-glossy-icon svg { width: 17px !important; }
+}
