@@ -1,7 +1,7 @@
 {
   "name": "kids-learning-adventure",
   "private": true,
-  "version": "6.0.0",
+  "version": "6.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,10 @@
     "validate": "tsx scripts/validate_curriculum.ts",
     "validate:online": "tsx scripts/validate_curriculum.ts --online",
     "qa:browser": "python3 scripts/qa_v51_browser.py",
+    "qa:v60:browser": "python3 scripts/qa_v51_browser.py",
     "qa:assets": "python3 scripts/qa_v40_assets.py",
+    "qa:avatar-assets": "python3 scripts/qa_avatar_assets.py",
+    "qa:shop": "tsx scripts/qa_shop_transactions.ts",
     "qa:v51:art": "python3 scripts/qa_v51_art_assets.py",
     "qa:v51:browser": "python3 scripts/qa_v51_browser.py",
     "qa:v51:performance": "tsx scripts/qa_v51_performance.ts",
@@ -24,7 +27,8 @@
     "qa:auth": "tsx scripts/qa_v40_family_auth.ts",
     "qa:migration": "python3 scripts/qa_v40_family_migration.py",
     "qa:performance": "tsx scripts/qa_v40_performance.ts",
-    "qa:orbit": "tsx scripts/orbit_ux_director_v40.ts",
+    "qa:orbit": "tsx scripts/orbit_ux_director_v60.ts",
+    "qa:v60:orbit": "tsx scripts/orbit_ux_director_v60.ts",
     "qa:strict": "tsc --noEmit --noUnusedLocals --noUnusedParameters",
     "qa:v30:browser": "python3 scripts/qa_v30_browser.py",
     "qa:v30:orbit": "tsx scripts/orbit_ux_director_v30.ts"

@@ -1,0 +1,231 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "viewports": {
+    "desktop": {
+      "home": {
+        "total": 17,
+        "undersized": [],
+        "unlabeled": []
+      },
+      "shop": {
+        "total": 107,
+        "undersized": [],
+        "unlabeled": []
+      },
+      "keyboard": {
+        "uniqueFocusStops": 13,
+        "stops": [
+          "開啟家長模式",
+          "BUTTON",
+          "BUTTON",
+          "BUTTON",
+          "BUTTON",
+          "BUTTON",
+          "開啟音效",
+          "首頁",
+          "今日課程",
+          "學期日曆",
+          "成就獎勵",
+          "學習報表",
+          "寶物商店",
+          "請小光說出今天的提示",
+          "全部查看",
+          "開始挑戰",
+          "開始挑戰",
+          "一起學習・一起長大歡迎回來，爸爸家長模式 · 點此解鎖備課 冒險世界首頁今日課程學期日曆成就獎勵學習報表寶物商店PLAYER TEAM冒險隊伍家庭冒險等級Lv."
+        ],
+        "pass": true
+      },
+      "modal": {
+        "pass": true,
+        "allFocusInside": true,
+        "escapeCloses": true
+      },
+      "contrast": {
+        "checked": 110,
+        "failures": []
+      },
+      "reducedMotion": {
+        "rocket": "0s",
+        "hero": "0s"
+      }
+    },
+    "mobile": {
+      "home": {
+        "total": 12,
+        "undersized": [],
+        "unlabeled": []
+      },
+      "shop": {
+        "total": 106,
+        "undersized": [],
+        "unlabeled": []
+      },
+      "keyboard": {
+        "uniqueFocusStops": 12,
+        "stops": [
+          "冒險世界",
+          "開啟音效",
+          "首頁",
+          "今日課程",
+          "學期日曆",
+          "成就獎勵",
+          "學習報表",
+          "寶物商店",
+          "請小光說出今天的提示",
+          "全部查看",
+          "開始挑戰",
+          "開始挑戰",
+          "一起學習・一起長大歡迎回來，爸爸家長模式 · 點此解鎖備課 冒險世界首頁今日課程學期日曆成就獎勵學習報表寶物商店PLAYER TEAM冒險隊伍家庭冒險等級Lv.",
+          "冒險世界",
+          "開啟音效",
+          "首頁",
+          "今日課程",
+          "學期日曆"
+        ],
+        "pass": true
+      },
+      "modal": {
+        "pass": true,
+        "allFocusInside": true,
+        "escapeCloses": true
+      },
+      "contrast": {
+        "checked": 103,
+        "failures": []
+      },
+      "reducedMotion": {
+        "rocket": "0s",
+        "hero": "0s"
+      }
+    }
+  },
+  "checks": [
+    {
+      "id": "desktop-accessible-names",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "desktop-touch-targets",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "desktop-keyboard-navigation",
+      "pass": true,
+      "detail": {
+        "uniqueFocusStops": 13,
+        "stops": [
+          "開啟家長模式",
+          "BUTTON",
+          "BUTTON",
+          "BUTTON",
+          "BUTTON",
+          "BUTTON",
+          "開啟音效",
+          "首頁",
+          "今日課程",
+          "學期日曆",
+          "成就獎勵",
+          "學習報表",
+          "寶物商店",
+          "請小光說出今天的提示",
+          "全部查看",
+          "開始挑戰",
+          "開始挑戰",
+          "一起學習・一起長大歡迎回來，爸爸家長模式 · 點此解鎖備課 冒險世界首頁今日課程學期日曆成就獎勵學習報表寶物商店PLAYER TEAM冒險隊伍家庭冒險等級Lv."
+        ],
+        "pass": true
+      }
+    },
+    {
+      "id": "desktop-modal-focus-trap",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "allFocusInside": true,
+        "escapeCloses": true
+      }
+    },
+    {
+      "id": "desktop-reduced-motion",
+      "pass": true,
+      "detail": {
+        "rocket": "0s",
+        "hero": "0s"
+      }
+    },
+    {
+      "id": "desktop-solid-background-contrast",
+      "pass": true,
+      "detail": {
+        "checked": 110,
+        "failures": []
+      }
+    },
+    {
+      "id": "mobile-accessible-names",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "mobile-touch-targets",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "mobile-keyboard-navigation",
+      "pass": true,
+      "detail": {
+        "uniqueFocusStops": 12,
+        "stops": [
+          "冒險世界",
+          "開啟音效",
+          "首頁",
+          "今日課程",
+          "學期日曆",
+          "成就獎勵",
+          "學習報表",
+          "寶物商店",
+          "請小光說出今天的提示",
+          "全部查看",
+          "開始挑戰",
+          "開始挑戰",
+          "一起學習・一起長大歡迎回來，爸爸家長模式 · 點此解鎖備課 冒險世界首頁今日課程學期日曆成就獎勵學習報表寶物商店PLAYER TEAM冒險隊伍家庭冒險等級Lv.",
+          "冒險世界",
+          "開啟音效",
+          "首頁",
+          "今日課程",
+          "學期日曆"
+        ],
+        "pass": true
+      }
+    },
+    {
+      "id": "mobile-modal-focus-trap",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "allFocusInside": true,
+        "escapeCloses": true
+      }
+    },
+    {
+      "id": "mobile-reduced-motion",
+      "pass": true,
+      "detail": {
+        "rocket": "0s",
+        "hero": "0s"
+      }
+    },
+    {
+      "id": "mobile-solid-background-contrast",
+      "pass": true,
+      "detail": {
+        "checked": 103,
+        "failures": []
+      }
+    }
+  ]
+}

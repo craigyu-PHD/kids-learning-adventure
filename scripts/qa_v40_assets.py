@@ -2,15 +2,17 @@
 import json,re,subprocess
 from pathlib import Path
 from PIL import Image
-ROOT=Path(__file__).resolve().parents[1]; A=ROOT/'public/assets/v40'; QA=ROOT/'.qa'; QA.mkdir(exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1]; A=ROOT/'public/assets/v40'; V5=ROOT/'public/assets/v5'; QA=ROOT/'.qa'; QA.mkdir(exist_ok=True)
 fail=[]
 def dim(p):
     with Image.open(p) as im:return im.size
-def require(path,w,h,square=False,label='asset'):
-    p=A/path
+def require_from(root,path,w,h,square=False,label='asset'):
+    p=root/path
     if not p.exists(): fail.append(f'missing {label} {path}'); return
     x,y=dim(p)
     if x<w or y<h or (square and x!=y): fail.append(f'invalid {label} {path} {x}x{y}')
+def require(path,w,h,square=False,label='asset'):
+    require_from(A,path,w,h,square,label)
 require(Path('hero-space-dashboard.webp'),1920,600,label='hero')
 avatars=['nova','thunder','titan','turbo','rex','aqua']
 for aid in avatars:
@@ -18,9 +20,14 @@ for aid in avatars:
     require(Path('characters/bust')/f'{aid}.webp',512,512,True,'character-bust')
 for name in ['avatar-robot.webp','avatar-father.webp','avatar-mother.webp','avatar-caregiver.webp']:
     require(Path('characters')/name,1024,1024,True,'profile-full'); require(Path('characters/bust')/name,512,512,True,'profile-bust')
-code="import {cosmetics} from './src/cosmetics.ts'; console.log(JSON.stringify(cosmetics.map(x=>x.id)))"
-item_ids=json.loads(subprocess.check_output(['npx','tsx','-e',code],cwd=ROOT,text=True).strip())
-for item in item_ids: require(Path('items')/f'{item}.webp',512,512,True,'shop-item')
+code="import {cosmetics} from './src/cosmetics.ts'; console.log(JSON.stringify(cosmetics.map(({id,assetExtension})=>({id,assetExtension:assetExtension ?? 'webp'}))))"
+shop_items=json.loads(subprocess.check_output(['npx','tsx','-e',code],cwd=ROOT,text=True).strip())
+# Shop cards and AvatarHero both load the V5 production path. Validate that
+# actual runtime contract rather than forcing newly added PNG cutouts into the
+# retired V40 asset folder solely to satisfy this historical checker.
+for item in shop_items:
+    is_png=item['assetExtension']=='png'
+    require_from(V5,Path('items')/f"{item['id']}.{item['assetExtension']}",384 if is_png else 512,512,not is_png,'runtime-shop-item')
 badge_ids=['streak-3','streak-7','streak-14','streak-30','speaking-first-word','speaking-brave','speaking-sentence','speaking-hero','listening-good','listening-sound-hunter','listening-music-explorer','listening-master','learning-first-mission','learning-10','learning-50','learning-100','adventure-world-explorer','adventure-forest','adventure-ocean','adventure-space','special-perfect-day','special-early-bird','special-comeback','special-super-explorer']
 for bid in badge_ids: require(Path('badges')/f'{bid}.webp',512,512,True,'badge')
 for theme in ['space-hero','mecha-warrior','racing-adventure','fantasy-spirit','ocean-world']: require(Path('themes')/f'{theme}.webp',1024,768,label='theme-card')
@@ -39,7 +46,7 @@ if legacy: fail.append(f'V4 runtime still references v30 {legacy}')
 settings_text=(ROOT/'src/v4/ParentSettings.tsx').read_text(encoding='utf-8')
 settings_legacy=('assets/v30/' in settings_text) or ('v30Asset(' in settings_text)
 if settings_legacy: fail.append('Visible V4 ParentSettings still references V30 assets')
-result={'status':'PASS' if not fail else 'FAIL','hero':1,'characterFull':30,'profileFull':4,'characterBust':6,'profileBust':4,'shopItems':len(item_ids),'badges':len(badge_ids),'themes':5,'vocabularyTerms':len(vocab),'rewardIcons':5,'runtimeV30Refs':legacy,'settingsV30AssetRefs':settings_legacy,'failures':fail}
+result={'status':'PASS' if not fail else 'FAIL','hero':1,'characterFull':30,'profileFull':4,'characterBust':6,'profileBust':4,'shopItems':len(shop_items),'shopRuntimeDirectory':'assets/v5/items','badges':len(badge_ids),'themes':5,'vocabularyTerms':len(vocab),'rewardIcons':5,'runtimeV30Refs':legacy,'settingsV30AssetRefs':settings_legacy,'failures':fail}
 (QA/'v40_asset_result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(result,ensure_ascii=False,indent=2))
 if fail: raise SystemExit(1)

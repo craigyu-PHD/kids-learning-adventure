@@ -19,11 +19,16 @@
 .v4-left-column,
 .v4-center-column,
 .v4-right-column {
-  overflow: clip !important;          /* replaces overflow:hidden — no layout masking */
+  overflow: visible !important;
   border-width: 1.5px !important;     /* was 2px */
   box-shadow:
     0 10px 28px rgba(3, 28, 88, .28) !important;  /* ambient depth only; no inset glow */
 }
+
+.v4-dashboard-grid { height: auto !important; min-height: 720px; align-items: start; }
+.v4-center-column { height: auto !important; min-height: 720px; }
+.v4-right-column { max-height: 720px; overflow-x: visible !important; overflow-y: auto !important; scrollbar-gutter: stable; overscroll-behavior: contain; }
+@media (max-width: 1180px) { .v4-right-column { max-height: none; overflow: visible !important; } }
 
 /* ── Inner panel: remove overflow:hidden that masked content overflow ──────
  * v40.css line 65: .v4-player-card has overflow:hidden — causes content

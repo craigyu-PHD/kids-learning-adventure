@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Award, Check, Coins, Gem, Gift, Rocket, Sparkles, Star, Trophy, X, Zap } from 'lucide-react';
 import GameBadge from '../components/GameBadge';
 import { badgeById } from '../badges';
+import { useDialogFocusTrap } from '../accessibility';
 
 export type RewardMoment = {
   id: number;
@@ -16,6 +17,7 @@ export type RewardMoment = {
 };
 
 export default function RewardModal({ moment, onClose }: { moment: RewardMoment; onClose: () => void }) {
+  const dialogRef = useDialogFocusTrap<HTMLDivElement>();
   useEffect(() => {
     const timer = window.setTimeout(onClose, moment.kind === 'treasure' || moment.levelUp ? 2600 : 1900);
     const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') onClose(); };
@@ -33,7 +35,7 @@ export default function RewardModal({ moment, onClose }: { moment: RewardMoment;
         ? `${moment.childName} 升到 Lv.${moment.levelUp}！`
         : `${moment.childName} 完成了一段學習冒險。`;
 
-  return <div className={`v4-reward-scrim kind-${moment.kind}`} role="dialog" aria-modal="true" aria-label="學習獎勵">
+  return <div ref={dialogRef} className={`v4-reward-scrim kind-${moment.kind}`} role="dialog" aria-modal="true" aria-label="學習獎勵">
     <div className="v4-reward-particles" aria-hidden="true">{Array.from({length:12},(_,i)=><i key={i}/>)}</div>
     <section className="v4-reward-modal">
       <button className="v4-reward-skip" onClick={onClose} aria-label="略過獎勵動畫"><X/> Skip</button>

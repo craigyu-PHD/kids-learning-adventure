@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "contract": {
+    "canvasWidth": 1024,
+    "canvasHeight": 1536,
+    "transparent": true,
+    "characterCenterX": 512,
+    "groundBaselineY": 1488
+  },
+  "skins": [
+    {"id":"brother:default","skinId":"default","avatarId":"brother","path":"public/assets/v5/characters/brother/wardrobe/base-body.webp"},
+    {"id":"brother:racer","skinId":"outfit-racer","avatarId":"brother","path":"public/assets/v5/characters/brother/wardrobe/looks/outfit-racer-v1.webp"},
+    {"id":"younger:default","skinId":"default","avatarId":"younger","path":"public/assets/v5/characters/younger/wardrobe/base-body.webp"},
+    {"id":"younger:racer","skinId":"outfit-racer","avatarId":"younger","path":"public/assets/v5/characters/younger/wardrobe/looks/outfit-racer-v1.webp"},
+    {"id":"sister:default","skinId":"default","avatarId":"sister","path":"public/assets/v5/characters/sister/wardrobe/base-body.webp"},
+    {"id":"sister:racer","skinId":"outfit-racer","avatarId":"sister","path":"public/assets/v5/characters/sister/wardrobe/looks/outfit-racer-v1.webp"},
+    {"id":"younger-sister:default","skinId":"default","avatarId":"younger-sister","path":"public/assets/v5/characters/younger-sister/wardrobe/base-body.webp"},
+    {"id":"younger-sister:racer","skinId":"outfit-racer","avatarId":"younger-sister","path":"public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-racer-v1.webp"}
+  ],
+  "accessories": [
+    {"id":"effect-stars","slot":"effect","renderer":"css-effect","anchor":{"x":0.5,"y":0.5,"scale":1}},
+    {"id":"effect-bubbles","slot":"effect","renderer":"css-effect","anchor":{"x":0.5,"y":0.5,"scale":1}},
+    {"id":"effect-legend","slot":"effect","renderer":"css-effect","anchor":{"x":0.5,"y":0.5,"scale":1}}
+  ]
+}

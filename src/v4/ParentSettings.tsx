@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
 import {
   ArrowLeft, BookOpen, CalendarDays, CheckCircle2, Cloud, CloudOff, Coins,
-  GraduationCap, KeyRound, LogOut, Map, Monitor, Moon, Plus, RefreshCw, ShieldCheck, Sun,
+  GraduationCap, KeyRound, LogOut, Map, Mic, Monitor, Moon, Plus, RefreshCw, ShieldCheck, Sun,
   Trash2, Users, Zap,
 } from 'lucide-react';
 import AvatarHero, { avatarName, avatarOptions, normalizeAvatarId } from '../components/AvatarHero';
@@ -12,11 +12,13 @@ import { avatarStageFromXp, calculateRewards, levelFromXp, normalizeProgress } f
 import { visualThemeOptions } from '../uiData';
 import { taipeiYmd } from '../dailyChallenge';
 import { contentHealthManifest } from '../generated/contentHealthManifest';
+import { APP_VERSION } from '../generated/appVersion';
 import type {
   AppProgress, AppSettings, AttendanceMap, ChildProfile, FamilyUserProfile, FamilyUserRole,
   ReflectionMap, ThemeMode,
 } from '../types';
 import { CaregiverAvatar, hasUserPin, roleLabel, userRoleOptions } from './caregivers';
+import { availableEnglishVoices, speakEnglish, type EnglishVoiceOption } from './voice';
 
 export type V4CloudStatus = 'local' | 'loading' | 'saving' | 'synced' | 'error';
 
@@ -47,10 +49,18 @@ function CloudPill({ status }: { status: V4CloudStatus }) {
 
 export default function ParentSettings({ settings, setSettings, progress, attendance, reflections, setProgress, setAttendance, setReflections, familyId, cloudStatus, cloudMessage, lastCloudSync, onSyncNow, onPullCloud, onSwitchFamily, onOpenFamily, goHome }: Props) {
   const [confirmReset, setConfirmReset] = useState(false);
+  const [englishVoices, setEnglishVoices] = useState<EnglishVoiceOption[]>([]);
   const [userPinDrafts, setUserPinDrafts] = useState<Record<string, string>>({});
   const [userPinMessages, setUserPinMessages] = useState<Record<string, string>>({});
   const [nextFamilyPin, setNextFamilyPin] = useState('');
   const [pinSwitchError, setPinSwitchError] = useState('');
+
+  useEffect(() => {
+    const refresh = () => setEnglishVoices(availableEnglishVoices());
+    refresh();
+    window.speechSynthesis?.addEventListener?.('voiceschanged', refresh);
+    return () => window.speechSynthesis?.removeEventListener?.('voiceschanged', refresh);
+  }, []);
 
   const addUser = () => {
     const id = `user-${Date.now()}`;
@@ -101,7 +111,7 @@ export default function ParentSettings({ settings, setSettings, progress, attend
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `小小探險隊-V5.3.1-學習紀錄-${taipeiYmd(new Date())}.json`;
+    anchor.download = `小小探險隊-V${APP_VERSION}-學習紀錄-${taipeiYmd(new Date())}.json`;
     anchor.click();
     URL.revokeObjectURL(url);
   };
@@ -119,7 +129,7 @@ export default function ParentSettings({ settings, setSettings, progress, attend
   };
 
   return <div className="page settings-page v2-settings v4-settings-page">
-    <div className="v30-parent-heading v4-settings-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT CONTROL CENTER · V5.3.1</span><h1>家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、冒險 Skin、學期日期、雲端同步與高風險資料操作。</p></div></div><ShieldCheck size={34} /></div>
+    <div className="v30-parent-heading v4-settings-heading"><div><button className="icon-button" onClick={goHome}><ArrowLeft size={20} /></button><div><span className="v30-overline">PARENT CONTROL CENTER · V{APP_VERSION}</span><h1>家庭學習管理中心</h1><p>家庭管理者可管理成員、個人 PIN、冒險 Skin、學期日期、雲端同步與高風險資料操作。</p></div></div><ShieldCheck size={34} /></div>
     <div className="admin-unlocked-banner"><div><strong>管理者 PIN 已解鎖</strong><span>目前為家庭最高管理權限；離開家庭或重新載入後需再次驗證。</span></div><KeyRound size={20} /></div>
     <section className="v22-family-hero v30-family-summary v4-settings-family-hero" aria-label="家庭管理中心">
       <div><span className="v30-overline">FAMILY CONTROL</span><h2>全家的學習資料，由管理者守護</h2><p>照顧者帳號、學習者、個人 PIN、雲端同步與冒險 Skin 都集中在這裡管理；兒童首頁不顯示這些系統資訊。</p></div>
@@ -127,6 +137,8 @@ export default function ParentSettings({ settings, setSettings, progress, attend
     </section>
 
     <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示模式</h3><p>明亮、夜間冒險或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '夜間冒險'}</button>)}</div></section>
+
+    <section className="settings-card voice-settings-card"><div className="setting-label"><span className="setting-icon"><Mic size={20} /></span><div><h3>英文示範語音</h3><p>所有課程、題目與句型共用這裡的語音。先選聲線，再選孩子聽得舒服的速度。</p></div></div><div className="segmented-control voice-choice"><button className={settings.voicePreference !== 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'female', voiceId: undefined }))}>自然女聲</button><button className={settings.voicePreference === 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'male', voiceId: undefined }))}>自然男聲</button><button type="button" className="voice-preview-button" onClick={() => speakEnglish('Hello! Let us learn English together.', settings)}>試聽</button></div><div className="segmented-control voice-speed-choice"><button className={settings.voiceRate !== 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.78 }))}>慢速示範</button><button className={settings.voiceRate === 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.9 }))}>標準速度</button></div>{englishVoices.length > 0 ? <label className="voice-select-label">指定裝置語音<select value={settings.voiceId ?? ''} onChange={(event) => setSettings((current) => ({ ...current, voiceId: event.target.value || undefined }))}><option value="">自動挑選最自然的{settings.voicePreference === 'male' ? '男聲' : '女聲'}</option>{englishVoices.map((voice) => <option key={voice.id} value={voice.id}>{voice.label}</option>)}</select></label> : <p className="voice-device-note">正在讀取這台裝置的英文語音；若尚未安裝高品質英文語音，請先在系統的「輔助使用／朗讀內容」下載後重開此頁。</p>}</section>
 
     <section className="settings-card vertical theme-settings-card">
       <div className="setting-label"><span className="setting-icon"><Map size={20} /></span><div><h3>Theme Skin</h3><p>五套原創 Skin 會同步調整 Header、卡片、按鈕與共享世界裝飾；教材、日期與安全規則保持一致。</p></div></div>
@@ -172,6 +184,6 @@ export default function ParentSettings({ settings, setSettings, progress, attend
       <p className="content-health-note">最近驗證：{contentHealthManifest.checkedOn} · 發布前必須重新執行 `npm run qa:content-health` 與線上影片驗證。</p>
     </section>
 
-    <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V5.3.1 JSON（保留 V1／V2／V2.1／V2.2／V3 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
+    <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V{APP_VERSION} JSON（保留 V1／V2／V2.1／V2.2／V3 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
   </div>;
 }

@@ -1,0 +1,1202 @@
+[
+  {
+    "browser": "chromium",
+    "viewport": "1440x900",
+    "status": "PASS",
+    "elapsedMs": 3006,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 "
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/1440x900-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1280x800",
+    "status": "PASS",
+    "elapsedMs": 2712,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/1280x800-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1024x1366",
+    "status": "PASS",
+    "elapsedMs": 3072,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/1024x1366-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "820x1180",
+    "status": "PASS",
+    "elapsedMs": 3002,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/820x1180-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "768x1024",
+    "status": "PASS",
+    "elapsedMs": 2759,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/768x1024-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "430x932",
+    "status": "PASS",
+    "elapsedMs": 2632,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/430x932-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "390x844",
+    "status": "PASS",
+    "elapsedMs": 2806,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 33,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/390x844-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "360x800",
+    "status": "PASS",
+    "elapsedMs": 2729,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 63,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/chromium/360x800-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1440x900",
+    "status": "PASS",
+    "elapsedMs": 2957,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 "
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/1440x900-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1280x800",
+    "status": "PASS",
+    "elapsedMs": 3057,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/1280x800-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1024x1366",
+    "status": "PASS",
+    "elapsedMs": 3073,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/1024x1366-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "820x1180",
+    "status": "PASS",
+    "elapsedMs": 3060,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/820x1180-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "768x1024",
+    "status": "PASS",
+    "elapsedMs": 2866,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/768x1024-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "430x932",
+    "status": "PASS",
+    "elapsedMs": 2888,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/430x932-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "390x844",
+    "status": "PASS",
+    "elapsedMs": 2964,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 33,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/390x844-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "360x800",
+    "status": "PASS",
+    "elapsedMs": 2826,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 63,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/firefox/360x800-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1440x900",
+    "status": "PASS",
+    "elapsedMs": 2987,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n\n\n\n\n\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/1440x900-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1280x800",
+    "status": "PASS",
+    "elapsedMs": 2958,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/1280x800-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1024x1366",
+    "status": "PASS",
+    "elapsedMs": 2949,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/1024x1366-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "820x1180",
+    "status": "PASS",
+    "elapsedMs": 2831,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/820x1180-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "768x1024",
+    "status": "PASS",
+    "elapsedMs": 2835,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv."
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/768x1024-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "430x932",
+    "status": "PASS",
+    "elapsedMs": 2721,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/430x932-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "390x844",
+    "status": "PASS",
+    "elapsedMs": 2798,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 33,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/390x844-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "360x800",
+    "status": "PASS",
+    "elapsedMs": 2704,
+    "home": {
+      "url": "https://kids-learning-adventure-chi.vercel.app/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 63,
+      "version": [
+        "v6.0.0"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n今日課程\n開始第 1 節\n開始第 2 節\nDay"
+      },
+      "成就獎勵": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\nCoins 只來自學習完成紀錄。購買後立即加入角色裝備，不含真實金錢與抽卡。\n\n60\n冒險商品\n哥哥\n弟弟\n姐姐\n妹妹\nLIVE LOADOUT\n哥哥的全景裝備室\n\n同時搭配不同槽位；儲存前可逐一檢查整套效果。\n\n飛船\n全景基地\nRobot\n背景卡面\n事件特效\nLv.1\n學習新手\n1500\nCoins\n角色裝備\n飛船\n基地\nRob"
+      },
+      "首頁": {
+        "url": "https://kids-learning-adventure-chi.vercel.app/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.1\n0 / 440 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n弟弟\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n姐姐\n\n學習新手\n\n下一級還差 220 XP\n0\n1500\n0\n0\n妹妹\n\n學習新手\n"
+      }
+    },
+    "console": [],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [],
+    "screenshot": "qa/production-audit/2026-09-01/before/webkit/360x800-home.png"
+  }
+]

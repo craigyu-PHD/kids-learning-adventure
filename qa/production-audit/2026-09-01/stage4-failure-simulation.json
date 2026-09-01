@@ -1,0 +1,76 @@
+[
+  {
+    "id": "api-401-error-ui",
+    "pass": true,
+    "detail": {
+      "pass": true,
+      "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
+      "busyState": true,
+      "elapsedMs": 121
+    }
+  },
+  {
+    "id": "api-404-error-ui",
+    "pass": true,
+    "detail": {
+      "pass": true,
+      "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
+      "busyState": true,
+      "elapsedMs": 289
+    }
+  },
+  {
+    "id": "api-500-error-ui",
+    "pass": true,
+    "detail": {
+      "pass": true,
+      "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
+      "busyState": true,
+      "elapsedMs": 281
+    }
+  },
+  {
+    "id": "offline-api-error-ui",
+    "pass": true,
+    "detail": {
+      "pass": true,
+      "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
+      "busyState": true,
+      "elapsedMs": 302
+    }
+  },
+  {
+    "id": "slow-network-busy-and-error-ui",
+    "pass": true,
+    "detail": {
+      "pass": true,
+      "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
+      "busyState": true,
+      "elapsedMs": 1452
+    }
+  },
+  {
+    "id": "trusted-time-failure-safe-preview",
+    "pass": true,
+    "detail": {
+      "text": "目前無法驗證台北時間；已切換為安全預覽，不會寫入 XP／Coins。\n重新確認連線",
+      "progressUnchanged": true
+    }
+  },
+  {
+    "id": "image-404-fallback",
+    "pass": true,
+    "detail": {
+      "fallback": true,
+      "broken": []
+    }
+  },
+  {
+    "id": "video-failure-retry-ui",
+    "pass": true,
+    "detail": {
+      "text": "影片暫時無法載入\n請檢查網路後重試；其他課程內容仍可繼續使用。\n重新載入影片",
+      "retryVisible": true
+    }
+  }
+]

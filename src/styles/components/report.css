@@ -31,6 +31,56 @@
   .learning-mastery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
+/* Report: compact, information-first rather than a field of oversized tiles. */
+.v4-report-player { padding:16px !important; }
+.v4-report-player > header { grid-template-columns:108px minmax(0,1fr) 118px !important; min-height:100px; padding-bottom:12px !important; }
+.v4-report-player > header > .avatar-photo-hero { width:98px !important; height:98px !important; filter:none !important; overflow:visible !important; }
+.v4-report-player > header > .avatar-photo-hero::before,
+.v4-report-player > header > .avatar-photo-hero::after,
+.v4-report-player > header > .avatar-photo-hero .avatar-photo-glow { display:none !important; }
+.v4-report-player > header > .avatar-photo-hero > img:not(.avatar-equipped-cosmetic) { width:100% !important; height:100% !important; border-radius:0 !important; object-fit:contain !important; filter:drop-shadow(0 7px 7px rgba(12,43,91,.18)) !important; }
+.v4-report-player > header h2 { font-size:22px !important; }
+.v4-report-kpis { grid-template-columns:repeat(4,minmax(0,1fr)) !important; gap:8px !important; margin:12px 0 0 !important; }
+.v4-report-kpis article { min-height:76px !important; padding:9px 8px !important; border-radius:14px !important; display:grid; justify-items:center; align-content:center; gap:2px; }
+.v4-report-kpis article svg { width:19px !important; height:19px !important; }
+.v4-report-kpis article strong { font-size:21px !important; line-height:1.1; }
+.v4-report-kpis article span { font-size:12px !important; line-height:1.2; }
+.v4-report-kpis.secondary article { min-height:62px !important; background:#faf8ff !important; }
+.v4-report-periods,.v4-answer-analytics { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-top:12px; }
+.v4-report-periods article,.v4-answer-analytics article { min-height:76px !important; padding:10px 12px !important; border-radius:14px !important; }
+.v4-subject-bars { margin-top:14px; padding:12px; border:1.5px solid #d8eafa; border-radius:16px; background:linear-gradient(135deg,#f8fcff,#f4f9ff); }
+.v4-subject-bars > div { grid-template-columns:78px minmax(0,1fr) 34px !important; gap:10px !important; min-height:28px; }
+.v4-subject-bars span { font-size:12px !important; color:#28476f; }
+.v4-subject-bars > div > div { height:12px !important; padding:2px; border:1px solid #d5e6f7; background:#e5f0fb !important; box-shadow:inset 0 1px 2px rgba(11,50,103,.10); }
+.v4-subject-bars i { min-width:8px; background:linear-gradient(90deg,#25c6eb,#2e89ff 62%,#7554d8) !important; box-shadow:0 1px 4px rgba(31,148,226,.35); }
+.v4-subject-bars strong { font-size:12px !important; color:#1f5ca4; }
+@media (max-width:700px) { .v4-report-player > header { grid-template-columns:80px minmax(0,1fr) 82px !important; } .v4-report-player > header > .avatar-photo-hero { width:76px !important; height:76px !important; } .v4-report-kpis { grid-template-columns:repeat(2,minmax(0,1fr)) !important; } }
+
+/* V6.2: keep a four-learner family visible in one compact dashboard. */
+.v4-report-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px !important; align-items:start; }
+.v4-report-player { min-width:0; padding:14px !important; }
+.v4-report-player > header { grid-template-columns:82px minmax(0,1fr) 96px !important; min-height:78px; gap:10px !important; padding-bottom:10px !important; }
+.v4-report-player > header > .avatar-photo-hero { width:76px !important; height:76px !important; }
+.v4-report-player > header h2 { font-size:20px !important; line-height:1.15; overflow-wrap:anywhere; }
+.v4-report-player > header p { font-size:13px !important; }
+.v4-report-score { width:94px !important; height:70px !important; border-radius:18px !important; }
+.v4-report-score strong { font-size:24px !important; }
+.v4-report-kpis article { min-height:68px !important; padding:8px 6px !important; border-radius:13px !important; }
+.v4-report-kpis article svg { width:18px !important; height:18px !important; }
+.v4-report-kpis article strong { font-size:20px !important; }
+.v4-report-kpis.secondary article { min-height:58px !important; }
+.v4-report-periods article,.v4-answer-analytics article { min-height:68px !important; padding:9px 10px !important; border-radius:13px !important; }
+.learning-mastery-panel { margin-top:10px; padding:12px; }
+.learning-mastery-panel > header h3 { font-size:16px; }
+.learning-mastery-grid { gap:7px; margin-top:9px; }
+.learning-mastery-skill { min-height:72px; padding:8px; }
+.learning-mastery-skill strong { font-size:18px; }
+.learning-mastery-skill small { margin-top:4px; font-size:11px; }
+.learning-review-summary,.learning-review-list { display:none; }
+.v4-subject-bars { margin-top:10px; padding:10px; border-radius:14px; }
+.v4-report-player > footer { gap:10px; flex-wrap:wrap; margin-top:10px; padding-top:9px; font-size:11px; }
+@media (max-width:1050px) { .v4-report-grid { grid-template-columns:1fr; } }
+
 
 /* ── Page heading h1: margin fix when <span> was removed ──────────────────────
  * v40.css sets .v4-page-heading h1 { margin: 2px 0 0 } to sit below <span>.

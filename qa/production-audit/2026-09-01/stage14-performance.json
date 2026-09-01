@@ -1,0 +1,64 @@
+[
+  {
+    "label": "desktop",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "loadMs": 3172,
+    "lcpMs": 164,
+    "cls": 0,
+    "inpMs": 64,
+    "domContentLoaded": 35.5,
+    "transferSizeObserved": 8518820,
+    "homeShopAssetRequests": [],
+    "avatarRequests": [
+      "http://127.0.0.1:4173/assets/v5/characters/brother/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger-sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/brother/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger-sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/brother/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger-sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/brother/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger-sister/wardrobe/base-body.webp"
+    ],
+    "requestCount": 145,
+    "passLCP": true,
+    "passCLS": true,
+    "passINP": true,
+    "passNoShopPreload": true
+  },
+  {
+    "label": "mobile-4g-cpu4x",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "loadMs": 4683,
+    "lcpMs": 1696,
+    "cls": 0.0005,
+    "inpMs": 136,
+    "domContentLoaded": 1329.8,
+    "transferSizeObserved": 1453144,
+    "homeShopAssetRequests": [],
+    "avatarRequests": [
+      "http://127.0.0.1:4173/assets/v5/characters/brother/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/sister/wardrobe/base-body.webp",
+      "http://127.0.0.1:4173/assets/v5/characters/younger-sister/wardrobe/base-body.webp"
+    ],
+    "requestCount": 41,
+    "passLCP": true,
+    "passCLS": true,
+    "passINP": true,
+    "passNoShopPreload": true
+  }
+]

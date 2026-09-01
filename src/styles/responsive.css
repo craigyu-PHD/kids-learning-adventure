@@ -27,6 +27,17 @@
     width: min(1480px, calc(100% - 28px)) !important;
   }
 
+  /* The legacy centre panel used to keep its 880px desktop width here,
+   * pushing the three-column dashboard beyond the viewport. */
+  .v4-center-column {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .v4-right-column {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
   /* Calendar cells: fluid, no hard 96px */
   .v5-semester-overview .v4-calendar-day {
     width: auto !important;
@@ -49,15 +60,16 @@
  * ────────────────────────────────────────────────────────────────────────── */
 @media (max-width: 1279px) and (min-width: 1024px) {
   .v4-dashboard-grid {
-    grid-template-columns: 240px 1fr !important;
+    grid-template-columns: 260px minmax(0, 1fr) !important;
     grid-template-rows: auto auto !important;
     width: min(1280px, calc(100% - 28px)) !important;
     height: auto !important;
     min-height: auto !important;
+    gap: 18px !important;
   }
 
-  .v4-left-column   { grid-column: 1; grid-row: 1; }
-  .v4-center-column { grid-column: 2; grid-row: 1; }
+  .v4-left-column   { grid-column: 1; grid-row: 1; width:100% !important; box-sizing:border-box !important; }
+  .v4-center-column { grid-column: 2; grid-row: 1; width:100% !important; box-sizing:border-box !important; }
 
   /* Right column: full width second row */
   .v4-right-column {
@@ -78,7 +90,17 @@
   .v4-evolution-panel,
   .v4-badge-panel {
     width: 100% !important;
-    max-width: none !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .v5-semester-overview {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    grid-template-columns: minmax(0, 1.5fr) minmax(210px, .75fr) !important;
   }
 
   /* Calendar: fluid cells */
@@ -88,6 +110,15 @@
   }
   .v5-semester-overview .v4-calendar-grid.v5-grid-15 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .v4-badge-panel .v4-badge-shelf {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  .v4-badge-panel .v4-badge-shelf .v30-game-badge {
+    width: 100% !important;
+    max-width: 84px !important;
+    justify-self: center;
   }
 }
 
@@ -148,6 +179,29 @@
     height: auto !important;
   }
 
+  .v4-badge-panel .v4-badge-shelf {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  .v4-badge-panel .v4-badge-shelf .v30-game-badge {
+    width: 100% !important;
+    max-width: 84px !important;
+    justify-self: center;
+  }
+
+  /* V4 used 880px fixed panel widths. At tablet sizes every centre card must
+   * be constrained by the grid track itself, including its border and padding. */
+  .v5-semester-overview,
+  .v4-evolution-panel,
+  .v4-badge-panel {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .v5-semester-overview {
+    grid-template-columns: minmax(0, 1.5fr) minmax(210px, .75fr) !important;
+  }
+
   /* Player card full width */
   .v4-left-column .v4-player-profile { width: 100% !important; min-height: auto !important; }
   .v4-player-card,
@@ -178,6 +232,34 @@
     margin: auto;
   }
   .v4-main-navigation .v4-glossy-icon svg { width: 17px !important; }
+
+  /* Keep the four-character header composition inside tablet widths instead
+   * of preserving the old 400px cast minimum from V4. */
+  .v4-adventure-header {
+    grid-template-columns: minmax(180px, 1fr) minmax(220px, 1.15fr) auto !important;
+    gap: 8px !important;
+    padding-inline: 16px !important;
+  }
+  .v4-hero-cast {
+    left: auto !important;
+    right: 216px !important;
+    min-width: 0 !important;
+    width: min(300px, calc(100% - 236px)) !important;
+    height: 112px !important;
+  }
+  .v4-hero-cast .v5-hero-character,
+  .v4-hero-cast .v6-hero-parent {
+    height: 106px !important;
+    min-width: 0 !important;
+    object-fit: contain !important;
+  }
+  .v4-hero-cast .v6-hero-parent { width: 72px !important; }
+  .v4-hero-cast .v5-hero-character.brother,
+  .v4-hero-cast .v5-hero-character.hero-slot-1 { left: 22% !important; width: 88px !important; }
+  .v4-hero-cast .v5-hero-character.younger,
+  .v4-hero-cast .v5-hero-character.hero-slot-2 { left: 51% !important; width: 78px !important; }
+  .v4-hero-cast .v6-hero-parent.father { left: 0 !important; }
+  .v4-hero-cast .v6-hero-parent.mother { left: 73% !important; }
 }
 
 
@@ -185,6 +267,51 @@
  * v40.css sets font-size:8px at ≤760px. Override to minimum 12px.
  * ────────────────────────────────────────────────────────────────────────── */
 @media (max-width: 760px) {
+  /* Final mobile ownership: this file loads after dashboard.css. Keep the
+     semester overview genuinely single-column so its 260px desktop side rail
+     cannot force a 423px min-content width on 360/390px screens. */
+  .v4-left-column,
+  .v4-center-column,
+  .v4-right-column {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .v5-semester-overview {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .v5-semester-overview > *,
+  .v5-semester-calendar-lane,
+  .v5-weekly-progress-lane,
+  .v5-semester-overview .v4-calendar-inner,
+  .v5-semester-overview .v4-progress-inner {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .v4-badge-panel .v4-badge-shelf {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .v4-badge-panel .v4-badge-shelf .v30-game-badge {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 84px !important;
+    justify-self: center;
+  }
+  .v4-badge-panel .v4-badge-shelf .v30-game-badge-art {
+    width: min(66px, 100%) !important;
+    height: auto !important;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+
   .v4-main-navigation button {
     min-height: 58px !important;
     font-size: 12px !important;
@@ -195,4 +322,209 @@
     height: 30px !important;
   }
   .v4-main-navigation .v4-glossy-icon svg { width: 17px !important; }
+
+  /* Keep release identity visible without competing with the child UI. */
+  .v4-status-bar {
+    display:grid !important;
+    width:calc(100% - 20px) !important;
+    min-height:32px !important;
+    margin:0 auto 82px !important;
+    padding:6px 10px !important;
+    grid-template-columns:1fr !important;
+    border-radius:12px !important;
+  }
+  .v4-status-bar > span,
+  .v4-status-bar > strong { display:none !important; }
+  .v4-status-bar > small {
+    justify-self:end !important;
+    font-size:10px !important;
+    line-height:1.3 !important;
+  }
+}
+
+/* Lesson navigation is a parent-facing table of contents.  It never gates
+   reading; completion and reward gates remain inside the relevant tasks. */
+.v4-stage-map button:not(:disabled) { cursor:pointer; }
+.v4-stage-map button {
+  position:relative;
+  min-height:84px !important;
+  border-radius:19px !important;
+  background:linear-gradient(155deg,#FFFFFF,#EDF8FF) !important;
+  box-shadow:0 5px 12px rgba(10,66,126,.08);
+  transition:transform 160ms ease,box-shadow 160ms ease,border-color 160ms ease;
+}
+.v4-stage-map button:hover { transform:translateY(-3px); border-color:#3FAEEC !important; box-shadow:0 10px 18px rgba(7,91,199,.16); }
+.v4-stage-map button>span { width:28px !important; height:28px !important; font-size:12px !important; background:#DDECFA !important; }
+.v4-stage-map button>svg { width:24px !important; height:24px !important; }
+.v4-stage-map button small { font-size:12px !important; font-weight:800 !important; }
+.v4-stage-map button.done>span { background:#20C968 !important; }
+.v4-stage-map button.active { background:linear-gradient(160deg,#EAFBFF,#E9E4FF) !important; border-color:#0866D5 !important; box-shadow:0 0 0 3px rgba(16,188,235,.16),0 10px 18px rgba(71,72,214,.15) !important; }
+.v4-repeat-hero button,.v4-quest-controls button.primary { min-height:54px !important; border-radius:18px !important; padding-inline:21px !important; font-size:16px !important; box-shadow:0 8px 0 color-mix(in srgb,var(--v4-theme-accent-2) 55%,#063A86),0 13px 22px rgba(7,91,199,.18) !important; }
+.v4-repeat-hero button:active,.v4-quest-controls button.primary:active { transform:translateY(3px); box-shadow:0 4px 0 color-mix(in srgb,var(--v4-theme-accent-2) 55%,#063A86),0 7px 12px rgba(7,91,199,.14) !important; }
+@media (max-width:760px) { .v4-stage-map button { min-height:74px !important; } .v4-stage-map button small { font-size:11px !important; } }
+
+/* ── Family-scale dashboard ───────────────────────────────────────────────
+ * A roster is unbounded in data, but every layout must remain bounded.  The
+ * player rail owns its own vertical scroll; the dashboard tracks never grow
+ * or squeeze beside it.  The header depicts up to four learners and reports
+ * any additional people with a count badge. */
+.v6-player-roster-meta {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin:2px 4px 8px;
+  color:#DFF4FF;
+}
+.v6-player-roster-meta strong { font-size:13px; font-weight:800; }
+.v6-player-roster-meta span { font-size:11px; color:#B9DFFF; font-weight:700; text-align:right; }
+@media (min-width: 1181px) {
+  .v4-dashboard-grid > .v4-left-column {
+    height:auto !important;
+    max-height:none !important;
+    grid-template-rows:auto auto !important;
+    overflow:visible !important;
+    overflow-x:hidden !important;
+  }
+  .v4-left-column .v4-player-profile { min-height:0 !important; overflow:visible !important; }
+  .v4-left-column .v4-player-stack { min-height:0; overflow:visible !important; padding:0 4px 8px 0; }
+  .v4-left-column .v4-player-stack.is-scrollable { max-height:640px; overflow-y:auto !important; overscroll-behavior:contain; scrollbar-gutter:stable; }
+}
+
+/* Four learners are a supported normal state, not an overflow exception.
+   Let the desktop/tablet rail grow with its four cards and keep the companion
+   below it; only a fifth member turns the inner roster into a scroll region. */
+@media (min-width: 761px) {
+  .v4-dashboard-grid > .v4-left-column { height:auto !important; max-height:none !important; overflow:visible !important; }
+  .v4-left-column .v4-player-profile { min-height:0 !important; overflow:visible !important; }
+  .v4-left-column .v4-player-stack { overflow:visible !important; }
+  .v4-left-column .v4-player-stack.is-scrollable { max-height:640px; overflow-y:auto !important; }
+}
+
+@media (min-width: 761px) {
+  .v5-hero-layers {
+    display:grid !important;
+    grid-template-columns:86px minmax(220px,1fr) 86px;
+    align-items:end;
+    column-gap:clamp(4px,1vw,14px);
+    left:clamp(360px,29vw,480px) !important;
+    right:clamp(250px,22vw,380px) !important;
+    width:auto !important;
+    height:148px !important;
+  }
+  .v5-hero-layers .v6-hero-parent {
+    position:relative !important;
+    inset:auto !important;
+    width:86px !important;
+    height:122px !important;
+    align-self:end;
+  }
+  .v5-hero-layers .v6-hero-parent.mother { left:auto !important; }
+  .v5-hero-layers .v6-hero-parent.father { left:auto !important; }
+  .v6-hero-learner-roster {
+    display:flex;
+    align-items:end;
+    justify-content:center;
+    min-width:0;
+    height:100%;
+    gap:clamp(0px,.8vw,10px);
+  }
+  .v6-hero-learner-roster .v5-hero-character {
+    position:relative !important;
+    inset:auto !important;
+    bottom:-5px !important;
+    flex:0 1 118px;
+    width:min(118px,25%) !important;
+    height:138px !important;
+    min-width:0 !important;
+  }
+  .v6-hero-learner-roster.members-1 .v5-hero-character { width:124px !important; }
+  .v6-hero-learner-roster.members-2 .v5-hero-character { width:118px !important; }
+  .v6-hero-more-members {
+    position:absolute;
+    right:70px;
+    top:12px;
+    min-width:32px;
+    height:32px;
+    padding:0 6px;
+    display:grid;
+    place-items:center;
+    border:2px solid #fff;
+    border-radius:999px;
+    background:#A84DF5;
+    color:#fff;
+    box-shadow:0 5px 12px rgba(34,17,91,.34);
+    font-size:13px;
+    font-weight:800;
+  }
+}
+
+/* The report uses shorter, readable information units: less empty card area,
+   larger labels and a clear hierarchy at a glance. */
+@media (min-width: 701px) {
+  .v4-report-player { padding:14px !important; }
+  .v4-report-player > header { grid-template-columns:88px minmax(0,1fr) 108px !important; min-height:82px !important; gap:12px !important; padding-bottom:10px !important; }
+  .v4-report-player > header > .avatar-photo-hero { width:82px !important; height:82px !important; }
+  .v4-report-player > header h2 { font-size:23px !important; }
+  .v4-report-player > header p { font-size:14px !important; }
+  .v4-report-score { width:108px !important; height:72px !important; border-radius:18px !important; }
+  .v4-report-score strong { font-size:27px !important; }
+  .v4-report-score span { font-size:12px !important; }
+  .v4-report-kpis { gap:7px !important; margin:10px 0 0 !important; }
+  .v4-report-kpis article { min-height:64px !important; padding:7px 6px !important; }
+  .v4-report-kpis article svg { width:18px !important; height:18px !important; }
+  .v4-report-kpis article strong { font-size:22px !important; }
+  .v4-report-kpis article span { font-size:13px !important; }
+  .v4-report-kpis.secondary article { min-height:58px !important; }
+}
+
+/* Navigation labels are primary wayfinding, not microcopy. */
+@media (min-width: 1181px) {
+  .v4-main-navigation button { font-size:clamp(16px,1.18vw,20px) !important; }
+}
+
+/* Caregiver lesson map: colourful time waypoints and legible coaching copy. */
+.v6-preparation-stage .v4-teaching-timeline article {
+  grid-template-columns:94px minmax(0,1fr) !important;
+  min-height:154px !important;
+  align-items:stretch;
+}
+.v6-preparation-stage .v4-teaching-timeline article > b {
+  width:80px !important;
+  min-height:100% !important;
+  border-radius:20px !important;
+  background:linear-gradient(160deg,#17C8F3,#0860C7) !important;
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.32),0 7px 14px rgba(8,96,199,.18);
+  font-size:19px !important;
+  letter-spacing:.02em;
+}
+.v6-preparation-stage .v4-teaching-timeline article:nth-child(2n) > b { background:linear-gradient(160deg,#9A5BFF,#6C35CD) !important; }
+.v6-preparation-stage .v4-teaching-timeline article:nth-child(3n) > b { background:linear-gradient(160deg,#FFB945,#F06B31) !important; }
+.v6-preparation-stage .v4-teaching-timeline article:nth-child(4n) > b { background:linear-gradient(160deg,#42D99A,#15996C) !important; }
+.v6-preparation-stage .v4-teaching-timeline article strong { font-size:19px !important; line-height:1.35; }
+.v6-preparation-stage .v4-teaching-timeline article p { font-size:17px !important; line-height:1.6; }
+.v6-preparation-stage .v4-teaching-timeline article span { font-size:15px !important; line-height:1.45; }
+.v6-preparation-stage .v4-caregiver-callout { padding:17px 18px !important; gap:14px !important; }
+.v6-preparation-stage .v4-caregiver-callout > svg { width:27px !important; height:27px !important; }
+.v6-preparation-stage .v4-caregiver-callout strong { font-size:17px !important; }
+.v6-preparation-stage .v4-caregiver-callout p { font-size:17px !important; line-height:1.55 !important; }
+
+@media (max-width: 1180px) and (min-width: 761px) {
+  .v5-hero-layers { left:auto !important; right:216px !important; width:min(310px,calc(100% - 236px)) !important; grid-template-columns:62px minmax(150px,1fr) 62px; height:112px !important; }
+  .v5-hero-layers .v6-hero-parent { width:62px !important; height:98px !important; }
+  .v6-hero-learner-roster .v5-hero-character { width:min(78px,25%) !important; height:104px !important; }
+  .v6-hero-more-members { right:48px; top:2px; transform:scale(.82); }
+}
+
+@media (max-width: 900px) {
+  .v6-preparation-stage .v4-teaching-timeline article { min-height:0 !important; }
+}
+
+@media (max-width: 760px) {
+  .v5-hero-layers { right:16px !important; left:auto !important; width:92px !important; height:118px !important; display:block !important; }
+  .v5-hero-layers .v6-hero-parent,.v6-hero-learner-roster .v5-hero-character:not(.hero-slot-1),.v6-hero-more-members { display:none !important; }
+  .v6-hero-learner-roster .v5-hero-character.hero-slot-1 { position:absolute !important; inset:auto 0 -3px auto !important; display:block !important; width:90px !important; height:110px !important; }
+  .v6-preparation-stage .v4-teaching-timeline article { grid-template-columns:78px minmax(0,1fr) !important; padding:13px !important; }
+  .v6-preparation-stage .v4-teaching-timeline article > b { width:66px !important; min-height:84px !important; font-size:16px !important; }
+  .v6-preparation-stage .v4-teaching-timeline article p,.v6-preparation-stage .v4-caregiver-callout p { font-size:16px !important; }
 }

@@ -1,5 +1,5 @@
-import { cosmeticSpend, normalizeEquippedCosmetics } from './cosmetics';
 import { curriculum } from './data/curriculum';
+import { normalizeShopLedgers, spentCoinsFromPurchases } from './shopLedger';
 import type { ChildProgress } from './types';
 
 export const BLOCK_REWARD = { xp: 15, coins: 5 };
@@ -31,14 +31,16 @@ curriculum.forEach((day) => {
 });
 
 export function normalizeProgress(progress?: Partial<ChildProgress> | null): ChildProgress {
-  const unlockedCosmetics = Array.from(new Set(progress?.unlockedCosmetics ?? []));
+  const shop = normalizeShopLedgers(progress);
   return {
     completedDays: Array.from(new Set(progress?.completedDays ?? [])),
     completedBlocks: Array.from(new Set(progress?.completedBlocks ?? [])),
     completedMissions: Array.from(new Set(progress?.completedMissions ?? [])),
     claimedEggs: Array.from(new Set(progress?.claimedEggs ?? [])),
-    unlockedCosmetics,
-    equippedCosmetics: normalizeEquippedCosmetics(unlockedCosmetics, progress?.equippedCosmetics),
+    unlockedCosmetics: shop.unlockedCosmetics,
+    equippedCosmetics: shop.equippedCosmetics,
+    purchaseTransactions: shop.purchaseTransactions,
+    equipmentTransactions: shop.equipmentTransactions,
     badgeUnlocks: { ...(progress?.badgeUnlocks ?? {}) },
     completionTimestamps: { ...(progress?.completionTimestamps ?? {}) },
     rewardTransactions: Array.from(new Map((progress?.rewardTransactions ?? []).map((item) => [item.id, item])).values()),
@@ -76,7 +78,7 @@ export function calculateRewards(progress?: Partial<ChildProgress> | null) {
   });
 
   const earnedCoins = coins;
-  const spentCoins = cosmeticSpend(normalized.unlockedCosmetics);
+  const spentCoins = spentCoinsFromPurchases(normalized);
   coins = Math.max(0, earnedCoins - spentCoins);
 
   const stars = normalized.rewardTransactions?.reduce((sum, transaction) => sum + transaction.stars, 0) ?? 0;

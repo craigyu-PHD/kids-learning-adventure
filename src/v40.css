@@ -319,3 +319,21 @@ body{background:linear-gradient(180deg,#2B4ED6 0%,#5B6EF5 18%,#A8C4FF 45%,#F7FBF
 .v4-shop-grid button{font-size:12px!important;line-height:1.2!important}
 .v4-wallet span{font-size:11px!important}
 @media(max-width:760px){.v4-shop-grid article{min-height:248px}.v4-shop-grid h3{font-size:15px}}
+
+/* Voice selection stays legible without widening the settings card. */
+.v4-settings-page .voice-settings-card{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:12px!important;align-items:center!important}
+.v4-settings-page .voice-settings-card .voice-choice{display:flex!important;justify-content:flex-end!important;flex-wrap:wrap!important}
+.v4-settings-page .voice-preview-button{border:1.5px solid #9EDFF6!important;background:#EAF8FF!important;color:#075BC7!important}
+.v4-settings-page .voice-select-label{grid-column:1/-1!important;display:grid!important;grid-template-columns:130px minmax(0,1fr)!important;align-items:center!important;gap:10px!important;color:#315879!important;font-size:13px!important;font-weight:850!important}
+.v4-settings-page .voice-device-note{grid-column:1/-1!important;margin:0!important;font-size:12px!important;color:#70819A!important}
+.v4-settings-page .voice-select-label select{width:100%!important}
+@media(max-width:760px){.v4-settings-page .voice-settings-card{grid-template-columns:1fr!important}.v4-settings-page .voice-settings-card .voice-choice{justify-content:stretch!important}.v4-settings-page .voice-select-label{grid-template-columns:1fr!important}}
+
+/* Three-column dashboard: tracks, frames and inner widths must be the same
+   coordinate system.  Fixed 260/344px column boxes used to overflow their
+   responsive grid tracks and visually overlap the centre frame. */
+@media (min-width:1181px) and (max-width:1536px){
+  .v4-dashboard-grid > .v4-left-column,.v4-dashboard-grid > .v4-center-column,.v4-dashboard-grid > .v4-right-column{box-sizing:border-box!important;width:100%!important;min-width:0!important;height:720px!important;min-height:0!important}
+  .v4-left-column,.v4-center-column,.v4-right-column{overflow-y:auto!important;overflow-x:hidden!important;scrollbar-gutter:stable}
+  .v4-left-column .v4-player-profile,.v4-right-column .v4-daily-panel{box-sizing:border-box!important;width:100%!important;max-width:100%!important}
+}

@@ -45,8 +45,35 @@
 .speaking-practice-learners button:disabled { cursor: not-allowed; opacity: .55; }
 .speaking-practice footer { margin-top: 14px; color: var(--v4-muted); font-size: 12px; line-height: 1.5; }
 
+/* A speaking turn has three clear lanes: learner, action, and feedback.  The
+   caregiver confirmation is an explicit accessibility fallback, not a fake
+   microphone result. */
+.speaking-practice { padding:22px; border-width:1.5px; border-radius:22px; }
+.speaking-practice header span { font-size:14px; }
+.speaking-practice h3 { font-size:22px; }
+.speaking-practice header small { font-size:14px; }
+.speaking-practice > p { font-size:16px; line-height:1.55; }
+.speaking-practice-controls > button,
+.speaking-practice-learners button { min-height:50px; padding:11px 16px; border-radius:16px; font-size:16px; font-weight:800; background:linear-gradient(145deg,#168FEA,#075BC7); box-shadow:0 7px 13px rgba(7,91,199,.2); }
+.speaking-practice-controls > button:hover,
+.speaking-practice-learners button:hover { transform:translateY(-2px); filter:brightness(1.04); }
+.speaking-practice-learners { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin-top:16px; }
+.speaking-practice-learners article { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px 14px; min-height:128px; padding:16px; border-radius:18px; border-width:1.5px; align-content:center; }
+.speaking-practice-learners article.correct { background:linear-gradient(135deg,#F2FFF7,#F8FFFC); box-shadow:inset 0 0 0 2px rgba(32,201,104,.1); }
+.speaking-practice-child-copy { min-width:0; display:grid; gap:4px; }
+.speaking-practice-child-copy strong { color:var(--v4-navy); font-size:19px; line-height:1.25; overflow-wrap:anywhere; }
+.speaking-practice-child-copy span { color:#536F91; font-size:14px; font-weight:700; overflow-wrap:anywhere; }
+.speaking-practice-learners article > small { grid-column:1 / -1; width:auto; min-height:22px; padding:8px 10px; border-radius:11px; background:#F1F7FF; color:#506A89; font-size:14px; line-height:1.4; }
+.speaking-practice-learners .caregiver-confirm { color:#145747; background:linear-gradient(145deg,#E6FFF0,#CFF9E1); border:1.5px solid #8DE0AC; box-shadow:none; }
+.speaking-practice footer { font-size:13px; }
+.speaking-practice-rate { align-self:center; padding:8px 11px; border-radius:12px; background:#eef7ff; color:#315f90 !important; font-size:14px !important; line-height:1.35; }
+.speaking-practice-learners small em { display:block; margin-top:5px; color:#2e6895; font-size:13px; font-style:normal; font-weight:800; line-height:1.4; }
+.speaking-practice-learners article.wrong small em { color:#9b4d34; }
+
 @media (max-width: 520px) {
   .speaking-practice { padding: 14px; }
   .speaking-practice header { align-items: flex-start; flex-direction: column; gap: 4px; }
   .speaking-practice-learners { grid-template-columns: 1fr; }
+  .speaking-practice-learners article { min-height:0; grid-template-columns:1fr; }
+  .speaking-practice-learners button { width:100%; }
 }

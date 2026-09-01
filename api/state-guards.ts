@@ -37,6 +37,8 @@ export function sanitizeSnapshot(payload: Record<string, unknown>) {
     const child = { ...(rawChild as Record<string, unknown>) };
     if ('rewardTransactions' in child) child.rewardTransactions = dedupeImmutableEvents(child.rewardTransactions, 'rewardTransactions');
     if ('answerEvents' in child) child.answerEvents = dedupeImmutableEvents(child.answerEvents, 'answerEvents');
+    if ('purchaseTransactions' in child) child.purchaseTransactions = dedupeImmutableEvents(child.purchaseTransactions, 'purchaseTransactions');
+    if ('equipmentTransactions' in child) child.equipmentTransactions = dedupeImmutableEvents(child.equipmentTransactions, 'equipmentTransactions');
     return [childId, child];
   }));
   return { ...payload, settings, progress };
@@ -59,7 +61,7 @@ export function assertImmutableEventsCompatible(previous: unknown, next: unknown
     if (!rawNextChild || typeof rawNextChild !== 'object') continue;
     const rawPreviousChild = previousProgress[childId];
     if (!rawPreviousChild || typeof rawPreviousChild !== 'object') continue;
-    for (const field of ['rewardTransactions', 'answerEvents'] as const) {
+    for (const field of ['rewardTransactions', 'answerEvents', 'purchaseTransactions', 'equipmentTransactions'] as const) {
       const oldEvents = dedupeImmutableEvents((rawPreviousChild as Record<string, unknown>)[field], field) ?? [];
       const nextEvents = dedupeImmutableEvents((rawNextChild as Record<string, unknown>)[field], field) ?? [];
       const oldById = new Map(oldEvents.map((event) => [String(event.id), event]));

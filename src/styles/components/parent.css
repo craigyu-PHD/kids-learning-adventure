@@ -6,4 +6,135 @@
 .content-health-grid strong { display: block; margin-top: 7px; color: #183D69; font-size: 20px; }
 .content-health-grid small { color: #617A95; font-size: 12px; }
 .content-health-note { margin: 0; color: #657A92; font-size: 12px; line-height: 1.5; }
+
+/* Caregiver selection uses a portrait lane, an account-information lane and a
+   clear selected-state lane.  The previous centred-tile treatment made the
+   adults look tiny and left their PIN state visually stranded. */
+.user-switch-modal {
+  box-sizing: border-box;
+  width: min(740px, calc(100vw - 32px));
+  padding: 30px !important;
+  text-align: left;
+}
+
+.user-switch-modal .user-switch-heading { display: grid; gap: 0; }
+.user-switch-modal .eyebrow { color: #A99DFF; font-size: 13px !important; letter-spacing: .12em; }
+.user-switch-modal h2 { margin: 5px 0 0; font-size: 31px !important; line-height: 1.14; }
+
+.user-switch-modal .dialog-intro {
+  max-width: 56ch;
+  margin: 12px 0 22px;
+  color: #C9D5EA;
+  font-size: 16px !important;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.user-switch-modal .user-select-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 18px;
+}
+
+.user-switch-modal .user-select-card {
+  position: relative;
+  min-height: 176px;
+  padding: 18px;
+  border: 1.5px solid rgba(148, 176, 225, .34);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(255,255,255,.075), rgba(135,123,255,.08));
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  grid-template-rows: 1fr auto;
+  align-content: center;
+  column-gap: 16px;
+  row-gap: 10px;
+  text-align: left;
+  color: #F8FAFF;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.user-switch-modal .user-select-card:hover { transform: translateY(-2px); border-color: #83DDFC; }
+.user-switch-modal .user-select-card.selected { border-color: #A99DFF; background: linear-gradient(145deg, rgba(168,77,245,.20), rgba(113,99,232,.20)); box-shadow: inset 0 0 0 2px rgba(169,157,255,.20), 0 10px 24px rgba(4,10,42,.22); }
+
+.user-switch-modal .user-select-art {
+  grid-row: 1 / span 2;
+  align-self: center;
+  width: 104px;
+  height: 126px;
+  display: grid;
+  place-items: end center;
+  border: 1px solid rgba(133,219,252,.46);
+  border-radius: 20px;
+  background: radial-gradient(circle at 50% 18%, rgba(145,231,255,.28), transparent 58%), rgba(5,25,73,.42);
+  overflow: hidden;
+}
+
+.user-switch-modal .user-select-card .caregiver-avatar {
+  width: 100px !important;
+  height: 116px !important;
+  margin: 0 !important;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 10px 12px rgba(0,0,0,.28));
+}
+
+.user-switch-modal .user-select-copy { min-width: 0; align-self: center; display: grid; gap: 5px; }
+.user-switch-modal .user-select-card strong {
+  display: block;
+  font-size: 22px !important;
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.user-switch-modal .user-select-copy > span { color: #B6AFFF; font-size: 14px !important; font-weight: 900; line-height: 1.2; }
+.user-switch-modal .user-select-copy small { color: #C4D2E8; font-size: 13px !important; line-height: 1.35; }
+.user-switch-modal .user-select-state {
+  grid-column: 2;
+  width: fit-content;
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.10);
+  color: #C9D5EA;
+  font-size: 12px !important;
+  font-weight: 850;
+}
+.user-switch-modal .user-select-card.selected .user-select-state { background: #A99DFF; color: #172044; }
+
+.user-switch-modal .user-switch-actions { display: grid; gap: 10px; }
+.user-switch-modal .primary-button.full,
+.user-switch-modal .modal-close-link {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  margin: 0;
+  border-radius: 16px;
+  font-size: 16px !important;
+  font-weight: 900;
+}
+.user-switch-modal .primary-button.full { box-shadow: 0 10px 22px rgba(119,99,232,.28); }
+.user-switch-modal .modal-close-link {
+  display: inline-flex;
+  border: 1.5px solid rgba(190,211,239,.48);
+  background: rgba(255,255,255,.06);
+  color: #E7EFFB;
+}
+
+@media (max-width: 600px) {
+  .user-switch-modal { width: min(100%, calc(100vw - 20px)); padding: 22px 16px !important; }
+  .user-switch-modal h2 { font-size: 26px !important; }
+  .user-switch-modal .dialog-intro { font-size: 15px !important; }
+  .user-switch-modal .user-select-grid { grid-template-columns: 1fr; }
+  .user-switch-modal .user-select-card { min-height: 154px; grid-template-columns: 92px minmax(0, 1fr); padding: 14px; }
+  .user-switch-modal .user-select-art { width: 92px; height: 112px; }
+  .user-switch-modal .user-select-card .caregiver-avatar { width: 90px !important; height: 104px !important; }
+}
+
 @media (max-width: 900px) { .content-health-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

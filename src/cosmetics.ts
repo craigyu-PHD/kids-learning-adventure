@@ -1,5 +1,6 @@
 export type CosmeticSlot = 'hairstyle' | 'outfit' | 'hat' | 'glasses' | 'backpack' | 'cape' | 'headphones' | 'spaceship' | 'room' | 'robot' | 'card' | 'effect';
 export type CosmeticRarity = 'common' | 'rare' | 'epic' | 'legendary';
+export type CosmeticRenderMode = 'garment' | 'attachment' | 'scene' | 'companion' | 'event-effect';
 
 export type CosmeticDefinition = {
   id: string;
@@ -9,6 +10,10 @@ export type CosmeticDefinition = {
   cost: number;
   unlockLevel: number;
   rarity?: CosmeticRarity;
+  /** V6 girl collection uses lossless PNG cutouts; historic collection uses WebP. */
+  assetExtension?: 'png' | 'webp';
+  /** Runtime composition contract: garment mesh, body socket, full scene, companion skin, or finite event effect. */
+  renderMode?: CosmeticRenderMode;
 };
 
 export const cosmetics: CosmeticDefinition[] = [
@@ -75,21 +80,75 @@ export const cosmetics: CosmeticDefinition[] = [
   { id:'effect-stars',slot:'effect',name:'星星軌跡',description:'完成與 Hover 時出現低幅星光。',cost:140,unlockLevel:4,rarity:'rare' },
   { id:'effect-bubbles',slot:'effect',name:'氣泡軌跡',description:'海底世界使用柔和氣泡回饋。',cost:250,unlockLevel:7,rarity:'epic' },
   { id:'effect-legend',slot:'effect',name:'傳奇星塵',description:'只在關鍵互動出現的金色星塵。',cost:500,unlockLevel:15,rarity:'legendary' },
+
+  // 姐姐／妹妹收藏：各自以自己的 Coins 收藏。商品縮圖僅供目錄使用；未經角色專屬完整造型驗證，不得在角色身上疊貼。
+  { id:'sister-starlight-clip',slot:'hairstyle',name:'紫晶星光髮飾',description:'姐姐與妹妹都能戴上的紫晶星星髮夾。',cost:75,unlockLevel:1,rarity:'common',assetExtension:'png' },
+  { id:'sister-mint-bow',slot:'hairstyle',name:'薄荷星結髮飾',description:'清爽的薄荷蝴蝶結與金色星章。',cost:95,unlockLevel:2,rarity:'common',assetExtension:'png' },
+  { id:'sister-lavender-hat',slot:'hat',name:'薰衣草探險帽',description:'帶著星章的輕量遮陽帽。',cost:145,unlockLevel:4,rarity:'rare',assetExtension:'png' },
+  { id:'sister-cat-headphones',slot:'headphones',name:'薄荷貓耳耳機',description:'用清楚的聲音一起練習英文。',cost:230,unlockLevel:6,rarity:'rare',assetExtension:'png' },
+  { id:'sister-heart-glasses',slot:'glasses',name:'晴空愛心眼鏡',description:'把每一次發現都看得亮晶晶。',cost:155,unlockLevel:4,rarity:'rare',assetExtension:'png' },
+  { id:'sister-comet-pack',slot:'backpack',name:'彗星小火箭背包',description:'收好單字卡和今天的冒險地圖。',cost:275,unlockLevel:7,rarity:'epic',assetExtension:'png' },
+  { id:'sister-galaxy-cape',slot:'cape',name:'銀河星圖披風',description:'展開時像一張通往星空的地圖。',cost:360,unlockLevel:10,rarity:'epic',assetExtension:'png' },
+  { id:'sister-bloom-outfit',slot:'outfit',name:'薄荷花語探索服',description:'舒適又明亮的花語探索服。',cost:325,unlockLevel:9,rarity:'epic',assetExtension:'png' },
 ];
 
 export const cosmeticById = new Map(cosmetics.map((item) => [item.id, item]));
+
+export const wearableCosmeticSlots = new Set<CosmeticSlot>(['hairstyle', 'outfit', 'hat', 'glasses', 'backpack', 'cape', 'headphones']);
+export const worldCosmeticSlots = new Set<CosmeticSlot>(['spaceship', 'room', 'robot', 'card', 'effect']);
+
+const girlAvatarIds = new Set(['sister', 'younger-sister', 'luna', 'stella', 'mint', 'blossom']);
+const retiredGirlItems = new Set(['sister-starlight-clip', 'sister-mint-bow']);
+const sharedWearableItems = new Set(['outfit-racer']);
+
+/** Character gear is intentionally collection-bound. World cosmetics remain
+ * family-world items, while a girl avatar can never buy, preview or equip a
+ * boy collection item (and vice versa). */
+export function cosmeticSupportsAvatar(item: CosmeticDefinition, avatarId?: string) {
+  if (!wearableCosmeticSlots.has(item.slot)) return true;
+  if (sharedWearableItems.has(item.id)) return true;
+  const isGirl = girlAvatarIds.has(avatarId ?? '');
+  return item.id.startsWith('sister-') ? isGirl : !isGirl;
+}
+
+/** Broken multi-object source sheets are kept only for old-save compatibility,
+ * never offered as a product until a true single-object cutout is supplied. */
+export function cosmeticIsSelectable(item: CosmeticDefinition) {
+  return !retiredGirlItems.has(item.id);
+}
+
+export function cosmeticAssetPath(item: CosmeticDefinition) {
+  return `${import.meta.env.BASE_URL}assets/v5/items/${item.id}.${item.assetExtension ?? 'webp'}`;
+}
+
+export function cosmeticRenderMode(item: CosmeticDefinition): CosmeticRenderMode {
+  if (item.renderMode) return item.renderMode;
+  if (item.slot === 'outfit') return 'garment';
+  if (item.slot === 'room' || item.slot === 'card') return 'scene';
+  if (item.slot === 'robot' || item.slot === 'spaceship') return 'companion';
+  if (item.slot === 'effect') return 'event-effect';
+  return 'attachment';
+}
+
+export function equippedCosmeticForSlot(ids: string[] | undefined, slot: CosmeticSlot) {
+  for (const id of ids ?? []) {
+    const item = cosmeticById.get(id);
+    if (item?.slot === slot) return item;
+  }
+  return undefined;
+}
 
 export function cosmeticSpend(ids?: string[]) {
   return Array.from(new Set(ids ?? [])).reduce((sum, id) => sum + (cosmeticById.get(id)?.cost ?? 0), 0);
 }
 
-export function normalizeEquippedCosmetics(unlocked: string[], equipped?: string[]) {
+export function normalizeEquippedCosmetics(unlocked: string[], equipped?: string[], avatarId?: string) {
   const unlockedSet = new Set(unlocked);
   const bySlot = new Map<CosmeticSlot, string>();
   for (const id of equipped ?? []) {
     if (!unlockedSet.has(id)) continue;
     const item = cosmeticById.get(id);
-    if (!item) continue;
+    if (!item || (avatarId && !cosmeticSupportsAvatar(item, avatarId))) continue;
     bySlot.set(item.slot, id);
   }
   return Array.from(bySlot.values());

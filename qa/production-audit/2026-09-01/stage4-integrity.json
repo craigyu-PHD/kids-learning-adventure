@@ -1,0 +1,39 @@
+[
+  {
+    "id": "same-tab-double-purchase",
+    "pass": true,
+    "inventory": [
+      "hair-comet"
+    ],
+    "beforeCoins": 1500,
+    "afterCoins": 1440
+  },
+  {
+    "id": "insufficient-coins",
+    "pass": true,
+    "disabled": true,
+    "buttonText": "60 尚未解鎖"
+  },
+  {
+    "id": "two-tab-same-item-idempotency",
+    "pass": true,
+    "secondTabStillOfferedPurchase": true,
+    "inventory": [
+      "hair-comet"
+    ]
+  },
+  {
+    "id": "two-tab-different-purchase-no-lost-update",
+    "pass": false,
+    "inventory": [
+      "outfit-cadet"
+    ]
+  },
+  {
+    "id": "two-tab-equip-no-lost-update",
+    "pass": false,
+    "equipped": [
+      "outfit-cadet"
+    ]
+  }
+]

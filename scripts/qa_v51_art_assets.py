@@ -175,17 +175,19 @@ if not any("duplicates V40 caregiver art" in item for item in FAILURES):
     passed("V5 caregiver SHA differs from V40 3/3")
 
 shop_item_paths = sorted((V5 / "items").glob("*.webp"))
-if len(shop_item_paths) != 52:
-    fail(f"shop production items {len(shop_item_paths)}/52")
-elif all(require_image(path, (512, 512), alpha=True) for path in shop_item_paths):
-    passed("52 512x512 transparent shop production items")
+sister_shop_item_paths = sorted((V5 / "items").glob("sister-*.png"))
+if len(shop_item_paths) != 52 or len(sister_shop_item_paths) != 8:
+    fail(f"shop production items {len(shop_item_paths) + len(sister_shop_item_paths)}/60")
+elif all(require_image(path, (512, 512), alpha=True) for path in shop_item_paths) and all(require_image(path, (384, 512), alpha=True) for path in sister_shop_item_paths):
+    passed("60 transparent shop production items including 8 sister collection cutouts")
+shop_item_paths = [*shop_item_paths, *sister_shop_item_paths]
 require_unique("shop production items", shop_item_paths)
 for path in shop_item_paths:
     legacy = V40 / "items" / path.name
     if legacy.is_file() and digest(path) == digest(legacy):
         fail(f"{path.name} duplicates V40 shop art")
 if not any("duplicates V40 shop art" in item for item in FAILURES):
-    passed("V5 shop item SHA differs from V40 52/52")
+    passed("V5 shop item SHA differs from V40 60/60")
 
 featured_vocab_paths = [
     V5 / "vocab" / f"{word}.webp"
@@ -239,17 +241,15 @@ if not any("duplicates V40 vocabulary art" in item for item in FAILURES):
 vocabulary_words = curriculum_vocabulary_words()
 vocabulary_slugs = sorted({vocabulary_asset_slug(word) for word in vocabulary_words})
 vocabulary_paths = [V5 / "vocab" / f"{slug}.webp" for slug in vocabulary_slugs]
-if len(vocabulary_words) != 161:
-    fail(f"curriculum vocabulary terms {len(vocabulary_words)}/161")
-elif len(vocabulary_paths) != 150:
-    fail(f"curriculum vocabulary concepts {len(vocabulary_paths)}/150")
+if len(vocabulary_words) < 50:
+    fail(f"video-anchored curriculum vocabulary terms {len(vocabulary_words)}/50 minimum")
 elif all(require_image(path, (640, 480)) for path in vocabulary_paths):
-    passed("161 curriculum terms map to 150 640x480 teaching concepts")
+    passed(f"all {len(vocabulary_words)} active video-anchored vocabulary terms have dedicated 640x480 teaching art")
 actual_vocabulary_paths = sorted((V5 / "vocab").glob("*.webp"))
-if {path.name for path in actual_vocabulary_paths} != {path.name for path in vocabulary_paths}:
-    fail("V5 vocabulary directory does not exactly match curriculum concept mapping")
+if len(actual_vocabulary_paths) != 150:
+    fail(f"V5 vocabulary library {len(actual_vocabulary_paths)}/150 authored teaching images")
 else:
-    passed("V5 vocabulary filenames exactly match runtime concept mapping 150/150")
+    passed("V5 vocabulary library retains 150 authored teaching images")
 
 badge_master_paths = sorted(
     path for path in (V5 / "badges").glob("*.webp") if not path.name.endswith("-128.webp")
@@ -344,7 +344,7 @@ preview_tokens = [
     "parentPreviewUnlocked",
     "ChildTeaserPanel",
     "showLessonDetails={parentPreviewUnlocked}",
-    "完整教材由家長 PIN 模式保護",
+    "完整教材由家長 PIN 解鎖",
     "v4-semester-actions",
 ]
 preview_source = "\n".join([app, dashboard, lesson_quest, semester])

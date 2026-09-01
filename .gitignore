@@ -8,3 +8,4 @@ dist/
 .env*
 !.env.example
 AGENTS.md
+_BACKUPS/

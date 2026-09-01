@@ -16,6 +16,8 @@ const parentSettings = text('src/v4/ParentSettings.tsx');
 const styles = text('src/styles/index.css');
 const compatibility = text('src/styles/legacy-compat.css');
 const currentSpec = text('docs/CURRENT-SPEC.md');
+const packageJson = JSON.parse(text('package.json')) as { version?: string };
+const appVersionMatch = text('src/generated/appVersion.ts').match(/APP_VERSION\s*=\s*['\"]([^'\"]+)['\"]/);
 
 expect(main.includes("import './styles/index.css';"), 'main.tsx must use the single styles/index.css entry point.');
 for (const historicalLayer of ['styles.css', 'v2.css', 'v22.css', 'v23.css', 'v30.css', 'v40.css']) {
@@ -33,7 +35,10 @@ for (const selector of ['.v5-hero-bg', '.v5-hero-layers', '.v5-header-controls',
   expect(headerStyles.includes(selector), `Header selector ${selector} must be owned by header.css.`);
 }
 expect(!parentSettings.includes('V4.0'), 'User-visible parent settings must use the current product version.');
-expect(text('package.json').includes('"version": "5.3.1"'), 'package version must match the V5.3.1 production baseline.');
+expect(Boolean(appVersionMatch?.[1]), 'APP_VERSION must exist in the single version source.');
+expect(packageJson.version === appVersionMatch?.[1], 'package version must match APP_VERSION.');
+expect(dashboard.includes("label: '首頁'") && dashboard.includes("label: '今日課程'"), 'V6 navigation must expose the separate Home and Today Course entries.');
+expect(text('src/v4/LessonQuest.tsx').includes('{ title: "家長備課", short: "Prepare"') && text('src/v4/LessonQuest.tsx').includes('家長備課與孩子正式課程十關'), 'V6 must place caregiver preparation at the front of the ten-stage quest.');
 for (const rule of ['孩子未來日', '家長 PIN', '今天是唯一', 'append-only', 'assets/v5']) {
   expect(currentSpec.includes(rule), `CURRENT-SPEC.md is missing current rule: ${rule}`);
 }
