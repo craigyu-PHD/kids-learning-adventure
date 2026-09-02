@@ -246,8 +246,18 @@ def run() -> int:
                 # Report remains unlocked after first controlled PIN validation.
                 goto_named_page(page, name)
                 health = page_health(page)
-                shot = OUT / f"{width}x{height}-{name}.png"
-                page.screenshot(path=str(shot), full_page=True)
+                shot = OUT / f"{width}x{height}-{name}.jpg"
+                print(f"CAPTURE_START {width}x{height} {name}", flush=True)
+                page.screenshot(
+                    path=str(shot),
+                    full_page=True,
+                    type="jpeg",
+                    quality=88,
+                    animations="disabled",
+                    caret="hide",
+                    timeout=30000,
+                )
+                print(f"CAPTURE_DONE {width}x{height} {name}", flush=True)
                 rows.append({
                     "viewport": f"{width}x{height}",
                     "page": name,
