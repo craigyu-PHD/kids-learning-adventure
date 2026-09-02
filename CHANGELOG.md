@@ -54,6 +54,14 @@ No accepted production changes yet.
 - Fresh Desktop Lighthouse: Performance `90`, LCP `2.05s`, CLS `0.00174`, TBT `0ms`, transfer `3.04 MB` — PASS.
 - Legacy V6 Browser + Orbit evidence gates — PASS.
 
+### Production
+- Deployed to `https://kids-learning-adventure-chi.vercel.app/` on 2026-09-02.
+- Vercel deployment: `dpl_G6Qm77oEuQkoQjs8HzyenhpFfacH`.
+- Release commit: `2d7afea896906d434698344ab07a4fe6f371472e`.
+- Post-deploy Chromium / Firefox / WebKit × 8 viewport matrix: `24/24` PASS, with zero application console errors, HTTP errors, horizontal overflow, or broken images.
+- Post-deploy deep interaction flow, cross-tab integrity `5/5`, accessibility `12/12`, and failure simulation `8/8` — PASS.
+- Post-deploy mobile 4G + CPU 4×: LCP `1.824s`, INP `128ms`, CLS `0.0005` — PASS.
+
 ### Preserved / Data Model
 - Curriculum, lesson plans, lesson order/scheduling, videos, family/users, learners, progress, XP, coins, achievements, reports, cloud sync, authentication, local storage namespaces, API behavior, and legacy migrations remain backward-compatible protected systems.
 - Existing `unlockedCosmetics` / `equippedCosmetics` compatibility fields remain available as migration mirrors while immutable ledgers become authoritative for new Shop transactions.

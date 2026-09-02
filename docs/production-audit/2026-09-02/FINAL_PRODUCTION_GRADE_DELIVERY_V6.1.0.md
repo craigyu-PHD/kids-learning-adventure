@@ -317,15 +317,37 @@ Accepted local release gates:
 
 ---
 
-## Definition of Done status before deployment
+## Production Deployment / Post-deploy Verification
 
+- Production release: **V6.1.0 · Updated 2026-09-02**
+- Production URL: `https://kids-learning-adventure-chi.vercel.app/`
+- Vercel deployment: `dpl_G6Qm77oEuQkoQjs8HzyenhpFfacH`
+- Release commit: `2d7afea896906d434698344ab07a4fe6f371472e`
+- Production bundle verified to contain V6.1.0: **PASS**
+- `/api/server-time`: HTTP 200, `Asia/Taipei`: **PASS**
+- Responsive matrix: Chromium / Firefox / WebKit × 8 viewports = **24/24 PASS**
+- Production matrix: console.error **0**, page errors **0**, HTTP errors **0**, overflow **0**, broken images **0**
+- Deep interaction flow: Chromium / Firefox / WebKit **PASS**
+- Cross-tab integrity: **5/5 PASS**
+- Accessibility: **12/12 PASS**
+- Failure simulation: **8/8 PASS**
+- Production mobile 4G + CPU 4×: LCP **1.824s**, INP **128ms**, CLS **0.0005**
+- Production desktop browser gate: LCP **548ms**, INP **48ms**, CLS **0.0**
+- Home Shop asset eager requests: **0**
+
+Third-party YouTube iframe warnings/navigation-cancelled requests remain non-application noise; application-owned console errors and HTTP errors were zero in the production matrix.
+
+## Final Definition of Done status after deployment
+
+- Production URL actually deployed and E2E verified: **PASS**
 - No open P0: **YES**
 - No open core-flow P1: **YES**
 - XP/Coins/Inventory/Equipment consistency: **PASS**
 - Learner isolation: **PASS**
 - Shop Purchase/Inventory/Equip/Persistence: **PASS**
 - Desktop/iPad/Mobile visual regression: **PASS**
+- Console has no unhandled application-owned core errors: **PASS**
 - Core regression suite: **PASS**
 - Accessibility: **PASS**
 - Performance budgets: **PASS**
-- Production URL post-deploy E2E: **PENDING DEPLOYMENT**
+- Definition of Done: **SATISFIED**

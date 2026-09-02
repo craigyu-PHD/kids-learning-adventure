@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "release": "6.1.0",
+  "updatedAt": "2026-09-02",
+  "productionUrl": "https://kids-learning-adventure-chi.vercel.app/",
+  "deploymentId": "dpl_G6Qm77oEuQkoQjs8HzyenhpFfacH",
+  "releaseCommit": "2d7afea896906d434698344ab07a4fe6f371472e",
+  "bundleVerified": true,
+  "serverTimeHttp": 200,
+  "serverTimeZone": "Asia/Taipei",
+  "responsive": {
+    "browsers": ["chromium", "firefox", "webkit"],
+    "viewports": 8,
+    "total": 24,
+    "pass": 24,
+    "fail": 0,
+    "consoleErrors": 0,
+    "pageErrors": 0,
+    "httpErrors": 0,
+    "overflowCases": 0,
+    "brokenImageCases": 0
+  },
+  "deepInteraction": {
+    "chromium": "PASS",
+    "firefox": "PASS",
+    "webkit": "PASS"
+  },
+  "crossTabIntegrity": {"pass": 5, "total": 5},
+  "accessibility": {"pass": 12, "total": 12},
+  "failureSimulation": {"pass": 8, "total": 8},
+  "performance": {
+    "desktop": {"lcpMs": 548, "inpMs": 48, "cls": 0.0},
+    "mobile4gCpu4x": {"lcpMs": 1824, "inpMs": 128, "cls": 0.0005},
+    "homeShopAssetEagerRequests": 0
+  },
+  "definitionOfDone": "SATISFIED"
+}
