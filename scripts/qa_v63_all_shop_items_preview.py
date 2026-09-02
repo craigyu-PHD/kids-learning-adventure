@@ -39,12 +39,15 @@ def validate_stage(page,item_id,mode):
       skin=avatar.get_attribute('data-skin') or ''
       if item_id not in rendered and skin!=item_id: return False,f'item not rendered: rendered={rendered}, skin={skin}'
     elif mode=='ship':
+      page.wait_for_function("()=>{const i=document.querySelector('.v63-equipment-stage .v63-ship-art');return !!i&&i.complete&&i.naturalWidth>0}",timeout=4000)
       img=stage.locator('.v63-ship-art');
       if not img.is_visible() or img.evaluate('(i)=>i.naturalWidth')<=0: return False,'ship preview image missing/broken'
     elif mode=='robot':
+      page.wait_for_function("()=>{const i=document.querySelector('.v63-equipment-stage .v63-robot-art');return !!i&&i.complete&&i.naturalWidth>0}",timeout=4000)
       img=stage.locator('.v63-robot-art');
       if not img.is_visible() or img.evaluate('(i)=>i.naturalWidth')<=0: return False,'robot preview image missing/broken'
     elif mode=='card':
+      page.wait_for_function("()=>{const i=document.querySelector('.v63-equipment-stage .v63-card-art');return !!i&&i.complete&&i.naturalWidth>0}",timeout=4000)
       img=stage.locator('.v63-card-art');
       if not img.is_visible() or img.evaluate('(i)=>i.naturalWidth')<=0: return False,'card preview image missing/broken'
     elif mode=='world':

@@ -1,8 +1,8 @@
 # 小小探險隊 CURRENT SPEC
 
-狀態：**V6.3.0 Accepted Release Candidate（authoritative；pending Production post-deploy validation）**
+狀態：**V6.3.0 Production Baseline（authoritative；post-deploy validation accepted）**
 更新：2026-09-02
-Production：`https://kids-learning-adventure-chi.vercel.app/`（目前正式 baseline 仍為 V6.1.0）
+Production：`https://kids-learning-adventure-chi.vercel.app/`（目前正式 baseline：V6.3.0）
 
 > 本文件是目前產品規格的唯一權威摘要。V2／V3／V4／V5／V6.1／V6.2 文件與 `AGENTS.md` 中的歷史條目只作 migration、相容性與決策脈絡參考；發生衝突時，一律以本文件、目前 Production migration contract 與已驗證的 V6.3 release behavior 為準。不得因舊文件把 V6.3 的 Full Equipment Preview、Hybrid Avatar、ledger、family auth、responsive 或 accessibility 架構回退。
 
@@ -192,9 +192,9 @@ V6.3 發布前至少必須通過：
 
 - 版本與 footer 由 `src/generated/appVersion.ts` 單一來源控制。
 - 測試全部通過前不得先升 Production version。
-- 目前 Production rollback baseline：`V6.1.0 · Updated 2026-09-02`。
-- V6.2.0 為未部署的 intermediate local RC，不可再作最終 Production release。
-- V6.3.0 已完成 local release acceptance；只有 pre-deploy backup 與 Production post-deploy E2E 完成後才可標為 Production Baseline。
+- 目前 Production baseline：`V6.3.0 · Updated 2026-09-02`。
+- V6.1.0 保留為已驗證 rollback baseline；V6.2.0 為未部署的 intermediate local RC，不可再作最終 Production release。
+- V6.3.0 已完成 local release acceptance、pre-deploy backup、Production deployment 與 post-deploy E2E，正式成為 Production Baseline。
 - V6.1 accepted release commit：`2d7afea896906d434698344ab07a4fe6f371472e`。
 - V6.1 production acceptance docs commit：`b7295726733da8741c9ccdab0207bfeda7a2508d`。
 - V6.2 pre-change checkpoint tag：`checkpoint/v6.1.0-before-v6.2`。
@@ -202,6 +202,9 @@ V6.3 發布前至少必須通過：
 - V6.2 local acceptance：36/36 responsive、三引擎 deep E2E、cross-tab 5/5、Accessibility 12/12、Failure 9/9、360/360 YouTube online、Core Web Vitals / soft-navigation performance 全 PASS。
 - V6.3 pre-change physical backup：`_BACKUPS/2026-09-02_before_V6.3_equipment_redesign/`。
 - V6.3 local acceptance：252/252 真實試穿、252/252 transaction flow、24/24 Preview Stage layout、36/36 responsive、三引擎 deep E2E、cross-tab 5/5、Accessibility 12/12、Failure 9/9、fresh 360/360 YouTube online、Core Web Vitals / soft-navigation performance 全 PASS。
+- V6.3 Production deployment：`dpl_12VDeBJkJ7dW91rZ82b2z6dkUadz`；正式 alias `https://kids-learning-adventure-chi.vercel.app/`，Vercel status = Ready。
+- V6.3 Production acceptance：252/252 真實試穿、24/24 Preview Stage layout、36/36 responsive、Chromium/Firefox/WebKit deep E2E、cross-tab 5/5、Accessibility 12/12、Failure 9/9 全 PASS；Production API contract：server-time 200、state unauthenticated 401、invalid family-session 400。
+- V6.3 Production Mobile 390×844 simulated 4G + CPU 4×：LCP 2.252s、INP 128ms、CLS 0.0005；Home Shop preload = 0，soft-navigation 全 PASS。
 - CSS debt 維持 `!important` 1716 → 1677（-39），feature-owned wearable magic-number selector = 0。
 - 所有新版失敗都必須能完整恢復到 V6.1.0。
 

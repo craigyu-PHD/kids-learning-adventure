@@ -118,72 +118,223 @@
         "pass": true
       }
     ],
-    "console": [
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      }
-    ],
+    "console": [],
     "pageErrors": [],
     "requestFailed": [
       {
-        "url": "http://127.0.0.1:4174/api/server-time",
+        "url": "https://i.ytimg.com/vi/Mfb--R1fhtQ/hqdefault.jpg",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4174/api/time",
+        "url": "https://i.ytimg.com/vi/EO1GV4qUxgE/hqdefault.jpg",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4174/api/server-time",
+        "url": "https://i.ytimg.com/vi/kJsQpFX5uM4/hqdefault.jpg",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4174/api/time",
+        "url": "https://i.ytimg.com/vi/kDdg2M1_EuE/hqdefault.jpg",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4174/api/server-time",
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-nebula.webp",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4174/api/time",
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-ocean.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/DX48LXcG0bk/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/im8in5pIqqM/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/phones-racer.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-cat-headphones.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/DO41xyuo1MM/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/OzKY5YHnOTg/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/GS_cGsAnQvQ/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/Jv7JMoxClHA/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/ZMbtivZAbwI/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/S0o3alfcA24/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/phones-sky.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/characters/brother/wardrobe/looks/outfit-racer-v1.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/phones-ai.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/hero-cape.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/C_Sc5ZjdfFI/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/MywYIqV9-W4/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-bloom-outfit.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-mint-bow.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/FODafib0ntI/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/T4-StWTYK7E/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/nTVVz_wdG0g/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-lavender-hat.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/j_-t5_c_B8w/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/-jBfb33_KHU/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/AsZwvuUmHGU/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-galaxy-cape.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-comet-pack.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/tjT_nFtKTas/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-starlight-clip.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-sky.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/pWepfJ-8XU0/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/6ev86MwGvGc/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/KCLjdL8g-8s/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/hW2DDGX7Tcc/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/6-Y-q5eql5o/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/phones-legend.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/cR-Qr1V8e_w/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/Fotkt0dPra0/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/story-headphones.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/yCjJyiqpAuU/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/LFrKYjrIDs8/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sister-heart-glasses.png",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/-HOQGg7uuQQ/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/tP4_XQQ8UVg/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/13mftBvRmvM/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/BpkY2FKll_w/hqdefault.jpg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-legend.webp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://i.ytimg.com/vi/oHcI2vtjybU/hqdefault.jpg",
         "failure": "net::ERR_ABORTED"
       },
       {
@@ -195,38 +346,6 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4174/api/server-time",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://127.0.0.1:4174/api/time",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed.vflset/zh_TW/base.js",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Ry2NDMjTKMQ.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHcixhGj0woJ9UOF4uPmRbk7reXiw/m=root,base",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.slzE8OL8JD0.L.W.O/am=AAAAQA/d=1/br=1/rs=AGKMywHBCjpb4CsS68tLfVquqzzrQLbWDA/m=root,base",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.slzE8OL8JD0.L.W.O/am=AAAAQA/d=1/br=1/rs=AGKMywHBCjpb4CsS68tLfVquqzzrQLbWDA/m=root,base",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Ry2NDMjTKMQ.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHcixhGj0woJ9UOF4uPmRbk7reXiw/m=root,base",
         "failure": "net::ERR_ABORTED"
       },
@@ -235,60 +354,11 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://127.0.0.1:4174/api/server-time",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://127.0.0.1:4174/api/time",
+        "url": "https://www.youtube-nocookie.com/embed/h3C47MHwZXI?rel=0&playsinline=1",
         "failure": "net::ERR_ABORTED"
       }
     ],
-    "badResponses": [
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      }
-    ],
+    "badResponses": [],
     "screenshot": "qa/production-audit/2026-09-01/before/chromium/1440x900-full-flow-final.png"
   },
   {
@@ -413,79 +483,63 @@
     "console": [
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of https://kids-learning-adventure-chi.vercel.app/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"https://kids-learning-adventure-chi.vercel.app/\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of https://kids-learning-adventure-chi.vercel.app/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"https://kids-learning-adventure-chi.vercel.app/\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of https://kids-learning-adventure-chi.vercel.app/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"https://kids-learning-adventure-chi.vercel.app/\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -505,31 +559,31 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/?day=day-3&lesson=1\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of https://kids-learning-adventure-chi.vercel.app/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"https://kids-learning-adventure-chi.vercel.app/?day=day-3&lesson=1\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -549,27 +603,27 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -589,27 +643,27 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -629,31 +683,31 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/?day=day-3&lesson=2\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of https://kids-learning-adventure-chi.vercel.app/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"https://kids-learning-adventure-chi.vercel.app/?day=day-3&lesson=2\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"https://kids-learning-adventure-chi.vercel.app/assets/index-gxSNROnt.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -675,35 +729,103 @@
     "pageErrors": [],
     "requestFailed": [
       {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/br=1/rs=AGKMywHnxr_R5sFRpcwdHc9gE6yIyHDIyw/m=root,base",
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/characters/brother/wardrobe/accessories/back/trail-backpack-back.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/characters/brother/wardrobe/looks/outfit-racer-v1.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/characters/brother/wardrobe/accessories/back/trail-backpack-front.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/outfit-ocean.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/outfit-mage.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/outfit-legend.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sunny-explorer-hat.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/hat-rocket.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/hat-ocean.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/hat-mage.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/hat-crown.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/sky-view-glasses.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/glasses-racer.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/glasses-star.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/glasses-holo.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/glasses-legend.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/trail-backpack.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/pack-treasure.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/pack-ocean.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-nebula.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-ocean.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/cape-legend.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/items/story-headphones.webp",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1",
         "failure": "NS_BINDING_ABORTED"
       },
       {
         "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFESNpOSa0pkiYWFSlo_mW9XNCz7w/m=root,base",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFESNpOSa0pkiYWFSlo_mW9XNCz7w/m=root,base",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/br=1/rs=AGKMywHnxr_R5sFRpcwdHc9gE6yIyHDIyw/m=root,base",
         "failure": "NS_BINDING_ABORTED"
       },
       {
@@ -711,60 +833,15 @@
         "failure": "NS_BINDING_ABORTED"
       },
       {
-        "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/br=1/rs=AGKMywHnxr_R5sFRpcwdHc9gE6yIyHDIyw/m=root,base",
         "failure": "NS_BINDING_ABORTED"
       },
       {
         "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/ck=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=AGKMywGFfn0Jc74EJj7RyTvc8fbr-4udTw/m=r78Drb",
         "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/youtubei/v1/log_event?alt=json",
-        "failure": "NS_BINDING_ABORTED"
       }
     ],
-    "badResponses": [
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      }
-    ],
+    "badResponses": [],
     "screenshot": "qa/production-audit/2026-09-01/before/firefox/1280x800-full-flow-final.png"
   },
   {
@@ -886,50 +963,13 @@
         "pass": true
       }
     ],
-    "console": [
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      },
-      {
-        "type": "error",
-        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
-      }
-    ],
+    "console": [],
     "pageErrors": [],
     "requestFailed": [
+      {
+        "url": "https://kids-learning-adventure-chi.vercel.app/assets/v5/characters/brother/wardrobe/looks/outfit-racer-v1.webp",
+        "failure": "cancelled"
+      },
       {
         "url": "https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1",
         "failure": "cancelled"
@@ -943,56 +983,23 @@
         "failure": "cancelled"
       },
       {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFESNpOSa0pkiYWFSlo_mW9XNCz7w/m=root,base",
+        "failure": "cancelled"
+      },
+      {
         "url": "https://www.youtube-nocookie.com/embed/Cx7e729w4YE?rel=0&playsinline=1",
         "failure": "cancelled"
       },
       {
         "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
         "failure": "cancelled"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFESNpOSa0pkiYWFSlo_mW9XNCz7w/m=root,base",
+        "failure": "cancelled"
       }
     ],
-    "badResponses": [
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/server-time"
-      },
-      {
-        "status": 404,
-        "url": "http://127.0.0.1:4174/api/time"
-      }
-    ],
+    "badResponses": [],
     "screenshot": "qa/production-audit/2026-09-01/before/webkit/390x844-full-flow-final.png"
   }
 ]

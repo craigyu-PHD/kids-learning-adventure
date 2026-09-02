@@ -6,7 +6,7 @@
       "pass": true,
       "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
       "busyState": true,
-      "elapsedMs": 289
+      "elapsedMs": 154
     }
   },
   {
@@ -16,7 +16,7 @@
       "pass": true,
       "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
       "busyState": true,
-      "elapsedMs": 343
+      "elapsedMs": 271
     }
   },
   {
@@ -26,7 +26,7 @@
       "pass": true,
       "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
       "busyState": true,
-      "elapsedMs": 294
+      "elapsedMs": 346
     }
   },
   {
@@ -36,7 +36,7 @@
       "pass": true,
       "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
       "busyState": true,
-      "elapsedMs": 202
+      "elapsedMs": 231
     }
   },
   {
@@ -46,7 +46,7 @@
       "pass": true,
       "message": "目前無法建立安全家庭工作階段，請確認網路後再試。",
       "busyState": true,
-      "elapsedMs": 1444
+      "elapsedMs": 1471
     }
   },
   {

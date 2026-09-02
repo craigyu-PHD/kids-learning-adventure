@@ -4,7 +4,7 @@ All production releases use semantic versioning. Release dates represent the dat
 
 ## Unreleased
 
-No accepted changes beyond the V6.3.0 release candidate.
+No accepted changes beyond the V6.3.0 production release.
 
 ## V6.3.0 — 2026-09-02
 
@@ -50,7 +50,12 @@ No accepted changes beyond the V6.3.0 release candidate.
 - V6.1 rollback tag remains `checkpoint/v6.1.0-before-v6.2`.
 
 ### Production
-- Pending V6.3.0 Production deployment and post-deploy validation.
+- Deployed to the existing Vercel project `kids-learning-adventure` on 2026-09-02; deployment `dpl_12VDeBJkJ7dW91rZ82b2z6dkUadz` is `Ready` and aliased to `https://kids-learning-adventure-chi.vercel.app/`.
+- Production API contract: `/api/server-time` = 200, unauthenticated `/api/state` = 401, invalid short PIN `/api/family-session` = 400.
+- Production all-item preview = `252/252` PASS; Preview Stage layout = `24/24` PASS; responsive matrix = `36/36` PASS with console.error = 0, HTTP errors = 0, overflow = 0, overlap = 0, out-of-viewport = 0, broken images = 0.
+- Production Chromium / Firefox / WebKit deep E2E PASS; cross-tab `5/5`, Accessibility `12/12`, Failure Simulation `9/9` PASS.
+- Production mobile 390×844 simulated 4G + CPU 4×: LCP `2.252s`, INP `128ms`, CLS `0.0005`; Home Shop preload requests = `0`; soft-navigation timings all pass the release budgets.
+- The first remote all-item QA run reported `216/252` because the harness judged new Ship/Robot/Card images after a fixed 35ms delay. The assets themselves returned HTTP 200; the tracked QA was corrected to wait for `img.complete && naturalWidth > 0`, and the full Production rerun passed `252/252` with zero console/page errors.
 
 ## V6.2.0 — 2026-09-02
 
