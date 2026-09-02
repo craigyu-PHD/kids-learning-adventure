@@ -146,6 +146,7 @@ export type AvatarWorldSlot = "spaceship" | "room" | "robot" | "card";
 export type AvatarEquipmentSlot = "skin" | AvatarAccessorySlot | AvatarWorldSlot;
 export type ShopItemKind = "skin" | "accessory" | "world";
 export type ShopItemAvailability = "available" | "unavailable" | "incompatible";
+export type EquipmentPreviewMode = "avatar" | "ship" | "robot" | "card" | "effect" | "world";
 
 export type ShopItem = {
   id: string;
@@ -157,7 +158,8 @@ export type ShopItem = {
   equipmentSlot: AvatarEquipmentSlot;
   legacySlot: string;
   availability: ShopItemAvailability;
-  renderer: "full-skin" | "standard-effect" | "world" | "unsupported-legacy";
+  renderer: "full-skin" | "aligned-overlay" | "split-overlay" | "standard-effect" | "world" | "unsupported-legacy";
+  previewMode: EquipmentPreviewMode;
 };
 
 export type PurchaseTransaction = {

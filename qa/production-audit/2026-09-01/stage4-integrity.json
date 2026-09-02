@@ -3,37 +3,39 @@
     "id": "same-tab-double-purchase",
     "pass": true,
     "inventory": [
-      "hair-comet"
+      "outfit-racer"
     ],
     "beforeCoins": 1500,
-    "afterCoins": 1440
+    "afterCoins": 1370
   },
   {
     "id": "insufficient-coins",
     "pass": true,
     "disabled": true,
-    "buttonText": "60 尚未解鎖"
+    "buttonText": "130 尚未解鎖"
   },
   {
     "id": "two-tab-same-item-idempotency",
     "pass": true,
-    "secondTabStillOfferedPurchase": true,
+    "secondTabStillOfferedPurchase": false,
     "inventory": [
-      "hair-comet"
+      "outfit-racer"
     ]
   },
   {
     "id": "two-tab-different-purchase-no-lost-update",
-    "pass": false,
+    "pass": true,
     "inventory": [
-      "outfit-cadet"
+      "outfit-racer",
+      "effect-stars"
     ]
   },
   {
     "id": "two-tab-equip-no-lost-update",
-    "pass": false,
+    "pass": true,
     "equipped": [
-      "outfit-cadet"
+      "outfit-racer",
+      "effect-stars"
     ]
   }
 ]

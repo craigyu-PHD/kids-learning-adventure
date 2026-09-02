@@ -1,0 +1,2028 @@
+{
+  "summary": {
+    "pass": 252,
+    "total": 252,
+    "expectedItemPreviews": 252,
+    "failed": [],
+    "consoleErrors": [],
+    "pageErrors": []
+  },
+  "results": [
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "starter-sun-cap",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "starter-sky-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "starter-buddy-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hair-comet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hair-wave",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hair-spike",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hair-cloud",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hair-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hair-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "outfit-cadet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "outfit-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "outfit-mecha",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "outfit-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "outfit-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "outfit-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sunny-explorer-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hat-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hat-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hat-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hat-crown",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sky-view-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "glasses-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "glasses-star",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "glasses-holo",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "glasses-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "trail-backpack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "pack-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "pack-treasure",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "pack-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "pack-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "hero-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "cape-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "cape-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "cape-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "cape-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "story-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "phones-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "phones-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "phones-ai",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "phones-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-starlight-clip",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-mint-bow",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-lavender-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-cat-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-heart-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-comet-pack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-galaxy-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "sister-bloom-outfit",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "ship-scout",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "ship-comet",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "ship-legend",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "room-starlab",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "room-ocean",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "room-legend",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "robot-sky",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "robot-mecha",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "robot-legend",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "card-sky",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "card-nebula",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "card-legend",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "effect-stars",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "effect-bubbles",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "brother",
+      "viewport": "1440x900",
+      "itemId": "effect-legend",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "starter-sun-cap",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "starter-sky-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "starter-buddy-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hair-comet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hair-wave",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hair-spike",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hair-cloud",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hair-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hair-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "outfit-cadet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "outfit-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "outfit-mecha",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "outfit-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "outfit-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "outfit-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sunny-explorer-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hat-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hat-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hat-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hat-crown",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sky-view-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "glasses-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "glasses-star",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "glasses-holo",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "glasses-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "trail-backpack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "pack-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "pack-treasure",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "pack-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "pack-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "hero-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "cape-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "cape-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "cape-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "cape-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "story-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "phones-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "phones-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "phones-ai",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "phones-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-starlight-clip",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-mint-bow",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-lavender-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-cat-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-heart-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-comet-pack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-galaxy-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "sister-bloom-outfit",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "ship-scout",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "ship-comet",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "ship-legend",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "room-starlab",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "room-ocean",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "room-legend",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "robot-sky",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "robot-mecha",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "robot-legend",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "card-sky",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "card-nebula",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "card-legend",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "effect-stars",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "effect-bubbles",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger",
+      "viewport": "1024x768",
+      "itemId": "effect-legend",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "starter-sun-cap",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "starter-sky-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "starter-buddy-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hair-comet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hair-wave",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hair-spike",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hair-cloud",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hair-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hair-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "outfit-cadet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "outfit-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "outfit-mecha",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "outfit-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "outfit-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "outfit-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sunny-explorer-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hat-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hat-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hat-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hat-crown",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sky-view-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "glasses-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "glasses-star",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "glasses-holo",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "glasses-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "trail-backpack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "pack-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "pack-treasure",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "pack-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "pack-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "hero-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "cape-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "cape-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "cape-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "cape-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "story-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "phones-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "phones-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "phones-ai",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "phones-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-starlight-clip",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-mint-bow",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-lavender-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-cat-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-heart-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-comet-pack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-galaxy-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "sister-bloom-outfit",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "ship-scout",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "ship-comet",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "ship-legend",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "room-starlab",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "room-ocean",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "room-legend",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "robot-sky",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "robot-mecha",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "robot-legend",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "card-sky",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "card-nebula",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "card-legend",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "effect-stars",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "effect-bubbles",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "sister",
+      "viewport": "390x844",
+      "itemId": "effect-legend",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "starter-sun-cap",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "starter-sky-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "starter-buddy-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hair-comet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hair-wave",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hair-spike",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hair-cloud",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hair-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hair-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "outfit-cadet",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "outfit-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "outfit-mecha",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "outfit-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "outfit-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "outfit-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sunny-explorer-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hat-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hat-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hat-mage",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hat-crown",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sky-view-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "glasses-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "glasses-star",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "glasses-holo",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "glasses-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "trail-backpack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "pack-rocket",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "pack-treasure",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "pack-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "pack-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "hero-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "cape-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "cape-nebula",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "cape-ocean",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "cape-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "story-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "phones-sky",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "phones-racer",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "phones-ai",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "phones-legend",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-starlight-clip",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-mint-bow",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-lavender-hat",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-cat-headphones",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-heart-glasses",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-comet-pack",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-galaxy-cape",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "sister-bloom-outfit",
+      "previewMode": "avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "ship-scout",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "ship-comet",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "ship-legend",
+      "previewMode": "ship",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "room-starlab",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "room-ocean",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "room-legend",
+      "previewMode": "world",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "robot-sky",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "robot-mecha",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "robot-legend",
+      "previewMode": "robot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "card-sky",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "card-nebula",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "card-legend",
+      "previewMode": "card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "effect-stars",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "effect-bubbles",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "avatar": "younger-sister",
+      "viewport": "1920x1080",
+      "itemId": "effect-legend",
+      "previewMode": "effect",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 小小探險隊 Little Explorers V5.3.1
 
-家庭兒童美語學習遊戲，正式定位為 **Enterprise Kids Adventure Learning Game**。V5.3.1 保留既有教材、90 天課程、180 堂教案、360 個互動任務與 360 支零重複 YouTube 影片資料，並提供企業級三欄遊戲 Dashboard、九關課堂、角色長期成長、四資源經濟、寶箱、徽章、商店與 PIN 家長保護。唯一現行產品規則見 [`docs/CURRENT-SPEC.md`](./docs/CURRENT-SPEC.md)。
+家庭兒童美語學習遊戲，正式定位為 **Enterprise Kids Adventure Learning Game**。V6 保留既有教材、90 天課程、180 堂教案、360 個互動任務與 360 支零重複 YouTube 影片資料，並提供企業級三欄遊戲 Dashboard、十階段課堂、角色長期成長、四資源經濟、寶箱、徽章、商店與 PIN 家長保護。唯一現行產品規則見 [`docs/CURRENT-SPEC.md`](./docs/CURRENT-SPEC.md)。
 
 ## 不可破壞的資料基線
 
@@ -61,19 +61,20 @@ Card White     #F9FBFF
 - 以可信 server `now` 精準計算下一個 Asia/Taipei `00:00:00`，午夜後立即重新驗證 active day；每 5 分鐘輪詢只作容錯。
 - URL `?day=...&lesson=...` 有 route guard，只允許 server-confirmed 今日課堂。
 
-## 每堂課固定 9 Stage
+## 每堂課固定 10 Stage
 
 V4 不再把兩堂課壓成一個三段式流程。每堂課直接使用既有 curriculum 的完整內容：
 
-1. Stage 1｜唱歌暖身 — 原 `warmup`
-2. Stage 2｜單字預覽 — 原 `vocabulary`
-3. Stage 3｜觀看影片 — 原 main `video`
-4. Stage 4｜暫停提問 — 原 `steps`／instruction／pause cue
-5. Stage 5｜複誦練習 — 原 sentence／younger／older／caregiverTip
-6. Stage 6｜互動遊戲 — Mission 1
-7. Stage 7｜分類活動 — Mission 2
-8. Stage 8｜完成任務 — 正式完成本堂
-9. Stage 9｜領取獎勵
+1. Stage 1｜家長備課 — 單獨顯示 30 分鐘節奏與材料
+2. Stage 2｜唱歌暖身 — 原 `warmup`
+3. Stage 3｜單字預覽 — 原 `vocabulary`
+4. Stage 4｜觀看影片 — 原 main `video`
+5. Stage 5｜暫停提問 — 依當堂影片、單字與目標產生的三個提問
+6. Stage 6｜複誦練習 — 當堂唯一 sentence／younger／older
+7. Stage 7｜互動遊戲 — Mission 1
+8. Stage 8｜分類活動 — Mission 2
+9. Stage 9｜完成任務 — 正式完成本堂
+10. Stage 10｜領取獎勵
 
 Stage checkpoint 會保存；重新整理不會重置。Stage 6／7 另有 Quick Check，真實保存每次作答的 `AnswerEvent`（target／answer／correct／timestamp），供家長報表計算正確率與最常錯單字；沒有作答資料時不補造統計。任務、課堂與 Reward 都有資料層守門，不只靠 UI disabled。
 

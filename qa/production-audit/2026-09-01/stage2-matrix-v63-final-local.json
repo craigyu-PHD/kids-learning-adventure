@@ -1,0 +1,3518 @@
+[
+  {
+    "browser": "chromium",
+    "viewport": "3440x1440",
+    "status": "PASS",
+    "elapsedMs": 2522,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 780,
+          "right": 1110,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 330,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 1134,
+          "right": 2206,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1072,
+          "height": 948
+        },
+        "right": {
+          "left": 2230,
+          "right": 2660,
+          "top": 244,
+          "bottom": 964,
+          "width": 430,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/3440x1440-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "2560x1440",
+    "status": "PASS",
+    "elapsedMs": 2433,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 340,
+          "right": 670,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 330,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 694,
+          "right": 1766,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1072,
+          "height": 948
+        },
+        "right": {
+          "left": 1790,
+          "right": 2220,
+          "top": 244,
+          "bottom": 964,
+          "width": 430,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/2560x1440-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1920x1080",
+    "status": "PASS",
+    "elapsedMs": 2486,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 38.40625,
+          "right": 370.484375,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 332.078125,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 391.59375,
+          "right": 1434.71875,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1043.125,
+          "height": 948
+        },
+        "right": {
+          "left": 1455.828125,
+          "right": 1881.578125,
+          "top": 244,
+          "bottom": 964,
+          "width": 425.75,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/1920x1080-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1600x900",
+    "status": "PASS",
+    "elapsedMs": 2458,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 32,
+          "right": 308.734375,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 276.734375,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 326.328125,
+          "right": 1195.59375,
+          "top": 244,
+          "bottom": 1192,
+          "width": 869.265625,
+          "height": 948
+        },
+        "right": {
+          "left": 1213.1875,
+          "right": 1567.984375,
+          "top": 244,
+          "bottom": 964,
+          "width": 354.796875,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/1600x900-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1440x900",
+    "status": "PASS",
+    "elapsedMs": 2546,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 254,
+          "top": 244,
+          "bottom": 1338.96875,
+          "width": 240,
+          "height": 1094.96875
+        },
+        "center": {
+          "left": 266,
+          "right": 1094,
+          "top": 244,
+          "bottom": 964,
+          "width": 828,
+          "height": 720
+        },
+        "right": {
+          "left": 1106,
+          "right": 1426,
+          "top": 244,
+          "bottom": 964,
+          "width": 320,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/1440x900-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1280x800",
+    "status": "PASS",
+    "elapsedMs": 2445,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 254,
+          "top": 244,
+          "bottom": 1338.96875,
+          "width": 240,
+          "height": 1094.96875
+        },
+        "center": {
+          "left": 266,
+          "right": 934,
+          "top": 244,
+          "bottom": 964,
+          "width": 668,
+          "height": 720
+        },
+        "right": {
+          "left": 946,
+          "right": 1266,
+          "top": 244,
+          "bottom": 964,
+          "width": 320,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/1280x800-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "1024x1366",
+    "status": "PASS",
+    "elapsedMs": 2505,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 274,
+          "top": 248.796875,
+          "bottom": 1334.671875,
+          "width": 260,
+          "height": 1085.875
+        },
+        "center": {
+          "left": 292,
+          "right": 1010,
+          "top": 248.796875,
+          "bottom": 1292.796875,
+          "width": 718,
+          "height": 1044
+        },
+        "right": {
+          "left": 14,
+          "right": 1010,
+          "top": 1352.671875,
+          "bottom": 2015.859375,
+          "width": 996,
+          "height": 663.1875
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/1024x1366-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "820x1180",
+    "status": "PASS",
+    "elapsedMs": 2476,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 12,
+          "right": 808,
+          "top": 890.546875,
+          "bottom": 1976.421875,
+          "width": 796,
+          "height": 1085.875
+        },
+        "center": {
+          "left": 12,
+          "right": 808,
+          "top": 1988.421875,
+          "bottom": 3032.421875,
+          "width": 796,
+          "height": 1044
+        },
+        "right": {
+          "left": 12,
+          "right": 808,
+          "top": 248.796875,
+          "bottom": 878.546875,
+          "width": 796,
+          "height": 629.75
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/820x1180-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "768x1024",
+    "status": "PASS",
+    "elapsedMs": 2477,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 12,
+          "right": 756,
+          "top": 890.546875,
+          "bottom": 1976.421875,
+          "width": 744,
+          "height": 1085.875
+        },
+        "center": {
+          "left": 12,
+          "right": 756,
+          "top": 1988.421875,
+          "bottom": 3032.421875,
+          "width": 744,
+          "height": 1044
+        },
+        "right": {
+          "left": 12,
+          "right": 756,
+          "top": 248.796875,
+          "bottom": 878.546875,
+          "width": 744,
+          "height": 629.75
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/768x1024-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "430x932",
+    "status": "PASS",
+    "elapsedMs": 2436,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 420,
+          "top": 1031.9375,
+          "bottom": 2115.8125,
+          "width": 410,
+          "height": 1083.875
+        },
+        "center": {
+          "left": 10,
+          "right": 420,
+          "top": 2127.8125,
+          "bottom": 3916.375,
+          "width": 410,
+          "height": 1788.5625
+        },
+        "right": {
+          "left": 10,
+          "right": 420,
+          "top": 138,
+          "bottom": 1019.9375,
+          "width": 410,
+          "height": 881.9375
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/430x932-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "390x844",
+    "status": "PASS",
+    "elapsedMs": 2410,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 380,
+          "top": 1054.703125,
+          "bottom": 2138.578125,
+          "width": 370,
+          "height": 1083.875
+        },
+        "center": {
+          "left": 10,
+          "right": 380,
+          "top": 2150.578125,
+          "bottom": 3939.140625,
+          "width": 370,
+          "height": 1788.5625
+        },
+        "right": {
+          "left": 10,
+          "right": 380,
+          "top": 138,
+          "bottom": 1042.703125,
+          "width": 370,
+          "height": 904.703125
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/390x844-home.png"
+  },
+  {
+    "browser": "chromium",
+    "viewport": "360x800",
+    "status": "PASS",
+    "elapsedMs": 2460,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 350,
+          "top": 1115.484375,
+          "bottom": 2199.359375,
+          "width": 340,
+          "height": 1083.875
+        },
+        "center": {
+          "left": 10,
+          "right": 350,
+          "top": 2211.359375,
+          "bottom": 3999.921875,
+          "width": 340,
+          "height": 1788.5625
+        },
+        "right": {
+          "left": 10,
+          "right": 350,
+          "top": 138,
+          "bottom": 1103.484375,
+          "width": 340,
+          "height": 965.484375
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/chromium/360x800-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "3440x1440",
+    "status": "PASS",
+    "elapsedMs": 3365,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 780,
+          "right": 1110,
+          "top": 244,
+          "bottom": 1332.1500244140625,
+          "width": 330,
+          "height": 1088.1500244140625
+        },
+        "center": {
+          "left": 1134,
+          "right": 2206,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1072,
+          "height": 948
+        },
+        "right": {
+          "left": 2230,
+          "right": 2660,
+          "top": 244,
+          "bottom": 964,
+          "width": 430,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/3440x1440-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "2560x1440",
+    "status": "PASS",
+    "elapsedMs": 2790,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 340,
+          "right": 670,
+          "top": 244,
+          "bottom": 1332.1500244140625,
+          "width": 330,
+          "height": 1088.1500244140625
+        },
+        "center": {
+          "left": 694,
+          "right": 1766,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1072,
+          "height": 948
+        },
+        "right": {
+          "left": 1790,
+          "right": 2220,
+          "top": 244,
+          "bottom": 964,
+          "width": 430,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/2560x1440-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1920x1080",
+    "status": "PASS",
+    "elapsedMs": 2966,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 38.399993896484375,
+          "right": 370.5,
+          "top": 244,
+          "bottom": 1332.1500244140625,
+          "width": 332.1000061035156,
+          "height": 1088.1500244140625
+        },
+        "center": {
+          "left": 391.6166687011719,
+          "right": 1434.7333679199219,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1043.11669921875,
+          "height": 948
+        },
+        "right": {
+          "left": 1455.8499755859375,
+          "right": 1881.6166381835938,
+          "top": 244,
+          "bottom": 964,
+          "width": 425.76666259765625,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/1920x1080-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1600x900",
+    "status": "PASS",
+    "elapsedMs": 2676,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 32,
+          "right": 308.75,
+          "top": 244,
+          "bottom": 1332.1500244140625,
+          "width": 276.75,
+          "height": 1088.1500244140625
+        },
+        "center": {
+          "left": 326.3500061035156,
+          "right": 1195.6000061035156,
+          "top": 244,
+          "bottom": 1192,
+          "width": 869.25,
+          "height": 948
+        },
+        "right": {
+          "left": 1213.199951171875,
+          "right": 1567.9999389648438,
+          "top": 244,
+          "bottom": 964,
+          "width": 354.79998779296875,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/1600x900-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1440x900",
+    "status": "PASS",
+    "elapsedMs": 2654,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 254,
+          "top": 244,
+          "bottom": 1339.1500244140625,
+          "width": 240,
+          "height": 1095.1500244140625
+        },
+        "center": {
+          "left": 266,
+          "right": 1094,
+          "top": 244,
+          "bottom": 964,
+          "width": 828,
+          "height": 720
+        },
+        "right": {
+          "left": 1106,
+          "right": 1426,
+          "top": 244,
+          "bottom": 964,
+          "width": 320,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/1440x900-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1280x800",
+    "status": "PASS",
+    "elapsedMs": 2819,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 254,
+          "top": 244,
+          "bottom": 1339.1500244140625,
+          "width": 240,
+          "height": 1095.1500244140625
+        },
+        "center": {
+          "left": 266,
+          "right": 934,
+          "top": 244,
+          "bottom": 964,
+          "width": 668,
+          "height": 720
+        },
+        "right": {
+          "left": 946,
+          "right": 1266,
+          "top": 244,
+          "bottom": 964,
+          "width": 320,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/1280x800-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "1024x1366",
+    "status": "PASS",
+    "elapsedMs": 2737,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 274,
+          "top": 248.8000030517578,
+          "bottom": 1334.7000274658203,
+          "width": 260,
+          "height": 1085.9000244140625
+        },
+        "center": {
+          "left": 292,
+          "right": 1010,
+          "top": 248.8000030517578,
+          "bottom": 1292.8000030517578,
+          "width": 718,
+          "height": 1044
+        },
+        "right": {
+          "left": 14,
+          "right": 1010,
+          "top": 1352.699951171875,
+          "bottom": 1982.4999389648438,
+          "width": 996,
+          "height": 629.7999877929688
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/1024x1366-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "820x1180",
+    "status": "PASS",
+    "elapsedMs": 2651,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 12,
+          "right": 808,
+          "top": 890.5999755859375,
+          "bottom": 1976.5,
+          "width": 796,
+          "height": 1085.9000244140625
+        },
+        "center": {
+          "left": 12,
+          "right": 808,
+          "top": 1988.5,
+          "bottom": 3032.5,
+          "width": 796,
+          "height": 1044
+        },
+        "right": {
+          "left": 12,
+          "right": 808,
+          "top": 248.8000030517578,
+          "bottom": 878.5999908447266,
+          "width": 796,
+          "height": 629.7999877929688
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/820x1180-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "768x1024",
+    "status": "PASS",
+    "elapsedMs": 2690,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 12,
+          "right": 756,
+          "top": 890.5999755859375,
+          "bottom": 1976.5,
+          "width": 744,
+          "height": 1085.9000244140625
+        },
+        "center": {
+          "left": 12,
+          "right": 756,
+          "top": 1988.5,
+          "bottom": 3032.5,
+          "width": 744,
+          "height": 1044
+        },
+        "right": {
+          "left": 12,
+          "right": 756,
+          "top": 248.8000030517578,
+          "bottom": 878.5999908447266,
+          "width": 744,
+          "height": 629.7999877929688
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/768x1024-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "430x932",
+    "status": "PASS",
+    "elapsedMs": 2449,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 420,
+          "top": 1016.4000244140625,
+          "bottom": 2100.300048828125,
+          "width": 410,
+          "height": 1083.9000244140625
+        },
+        "center": {
+          "left": 10,
+          "right": 420,
+          "top": 2112.300048828125,
+          "bottom": 3900.9000244140625,
+          "width": 410,
+          "height": 1788.5999755859375
+        },
+        "right": {
+          "left": 10,
+          "right": 420,
+          "top": 138,
+          "bottom": 1004.4000244140625,
+          "width": 410,
+          "height": 866.4000244140625
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/430x932-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "390x844",
+    "status": "PASS",
+    "elapsedMs": 2525,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 380,
+          "top": 1054.800048828125,
+          "bottom": 2138.7000732421875,
+          "width": 370,
+          "height": 1083.9000244140625
+        },
+        "center": {
+          "left": 10,
+          "right": 380,
+          "top": 2150.699951171875,
+          "bottom": 3939.2999267578125,
+          "width": 370,
+          "height": 1788.5999755859375
+        },
+        "right": {
+          "left": 10,
+          "right": 380,
+          "top": 138,
+          "bottom": 1042.7999877929688,
+          "width": 370,
+          "height": 904.7999877929688
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/390x844-home.png"
+  },
+  {
+    "browser": "firefox",
+    "viewport": "360x800",
+    "status": "PASS",
+    "elapsedMs": 2461,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 350,
+          "top": 1115.5999755859375,
+          "bottom": 2199.5,
+          "width": 340,
+          "height": 1083.9000244140625
+        },
+        "center": {
+          "left": 10,
+          "right": 350,
+          "top": 2211.5,
+          "bottom": 4000.0999755859375,
+          "width": 340,
+          "height": 1788.5999755859375
+        },
+        "right": {
+          "left": 10,
+          "right": 350,
+          "top": 138,
+          "bottom": 1103.5999755859375,
+          "width": 340,
+          "height": 965.5999755859375
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/firefox/360x800-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "3440x1440",
+    "status": "PASS",
+    "elapsedMs": 2719,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 780,
+          "right": 1110,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 330,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 1134,
+          "right": 2206,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1072,
+          "height": 948
+        },
+        "right": {
+          "left": 2230,
+          "right": 2660,
+          "top": 244,
+          "bottom": 964,
+          "width": 430,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n\n\n\n\n\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/3440x1440-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "2560x1440",
+    "status": "PASS",
+    "elapsedMs": 2712,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 340,
+          "right": 670,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 330,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 694,
+          "right": 1766,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1072,
+          "height": 948
+        },
+        "right": {
+          "left": 1790,
+          "right": 2220,
+          "top": 244,
+          "bottom": 964,
+          "width": 430,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n\n\n\n\n\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/2560x1440-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1920x1080",
+    "status": "PASS",
+    "elapsedMs": 2537,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 38.40625,
+          "right": 370.484375,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 332.078125,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 391.59375,
+          "right": 1434.71875,
+          "top": 244,
+          "bottom": 1192,
+          "width": 1043.125,
+          "height": 948
+        },
+        "right": {
+          "left": 1455.828125,
+          "right": 1881.578125,
+          "top": 244,
+          "bottom": 964,
+          "width": 425.75,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n\n\n\n\n\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/1920x1080-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1600x900",
+    "status": "PASS",
+    "elapsedMs": 2407,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 32,
+          "right": 308.734375,
+          "top": 244,
+          "bottom": 1332.09375,
+          "width": 276.734375,
+          "height": 1088.09375
+        },
+        "center": {
+          "left": 326.328125,
+          "right": 1195.59375,
+          "top": 244,
+          "bottom": 1192,
+          "width": 869.265625,
+          "height": 948
+        },
+        "right": {
+          "left": 1213.1875,
+          "right": 1567.984375,
+          "top": 244,
+          "bottom": 964,
+          "width": 354.796875,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n\n\n\n\n\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/1600x900-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1440x900",
+    "status": "PASS",
+    "elapsedMs": 2452,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 254,
+          "top": 244,
+          "bottom": 1338.96875,
+          "width": 240,
+          "height": 1094.96875
+        },
+        "center": {
+          "left": 266,
+          "right": 1094,
+          "top": 244,
+          "bottom": 964,
+          "width": 828,
+          "height": 720
+        },
+        "right": {
+          "left": 1106,
+          "right": 1426,
+          "top": 244,
+          "bottom": 964,
+          "width": 320,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n\n\n\n\n\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/1440x900-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1280x800",
+    "status": "PASS",
+    "elapsedMs": 2438,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 254,
+          "top": 244,
+          "bottom": 1338.96875,
+          "width": 240,
+          "height": 1094.96875
+        },
+        "center": {
+          "left": 266,
+          "right": 934,
+          "top": 244,
+          "bottom": 964,
+          "width": 668,
+          "height": 720
+        },
+        "right": {
+          "left": 946,
+          "right": 1266,
+          "top": 244,
+          "bottom": 964,
+          "width": 320,
+          "height": 720
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/1280x800-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "1024x1366",
+    "status": "PASS",
+    "elapsedMs": 2428,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 14,
+          "right": 274,
+          "top": 248.796875,
+          "bottom": 1334.671875,
+          "width": 260,
+          "height": 1085.875
+        },
+        "center": {
+          "left": 292,
+          "right": 1010,
+          "top": 248.796875,
+          "bottom": 1292.796875,
+          "width": 718,
+          "height": 1044
+        },
+        "right": {
+          "left": 14,
+          "right": 1010,
+          "top": 1352.671875,
+          "bottom": 1982.421875,
+          "width": 996,
+          "height": 629.75
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/1024x1366-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "820x1180",
+    "status": "PASS",
+    "elapsedMs": 2444,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 12,
+          "right": 808,
+          "top": 890.546875,
+          "bottom": 1976.421875,
+          "width": 796,
+          "height": 1085.875
+        },
+        "center": {
+          "left": 12,
+          "right": 808,
+          "top": 1988.421875,
+          "bottom": 3032.421875,
+          "width": 796,
+          "height": 1044
+        },
+        "right": {
+          "left": 12,
+          "right": 808,
+          "top": 248.796875,
+          "bottom": 878.546875,
+          "width": 796,
+          "height": 629.75
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/820x1180-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "768x1024",
+    "status": "PASS",
+    "elapsedMs": 2400,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 12,
+          "right": 756,
+          "top": 890.546875,
+          "bottom": 1976.421875,
+          "width": 744,
+          "height": 1085.875
+        },
+        "center": {
+          "left": 12,
+          "right": 756,
+          "top": 1988.421875,
+          "bottom": 3032.421875,
+          "width": 744,
+          "height": 1044
+        },
+        "right": {
+          "left": 12,
+          "right": 756,
+          "top": 248.796875,
+          "bottom": 878.546875,
+          "width": 744,
+          "height": 629.75
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "一起學習・一起長大\n歡迎回來，爸爸\n家長模式 · 點此解鎖備課\n冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/768x1024-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "430x932",
+    "status": "PASS",
+    "elapsedMs": 2355,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 420,
+          "top": 1016.3125,
+          "bottom": 2100.1875,
+          "width": 410,
+          "height": 1083.875
+        },
+        "center": {
+          "left": 10,
+          "right": 420,
+          "top": 2112.1875,
+          "bottom": 3900.75,
+          "width": 410,
+          "height": 1788.5625
+        },
+        "right": {
+          "left": 10,
+          "right": 420,
+          "top": 138,
+          "bottom": 1004.3125,
+          "width": 410,
+          "height": 866.3125
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/430x932-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "390x844",
+    "status": "PASS",
+    "elapsedMs": 2330,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 380,
+          "top": 1054.703125,
+          "bottom": 2138.578125,
+          "width": 370,
+          "height": 1083.875
+        },
+        "center": {
+          "left": 10,
+          "right": 380,
+          "top": 2150.578125,
+          "bottom": 3939.140625,
+          "width": 370,
+          "height": 1788.5625
+        },
+        "right": {
+          "left": 10,
+          "right": 380,
+          "top": 138,
+          "bottom": 1042.703125,
+          "width": 370,
+          "height": 904.703125
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/390x844-home.png"
+  },
+  {
+    "browser": "webkit",
+    "viewport": "360x800",
+    "status": "PASS",
+    "elapsedMs": 2398,
+    "home": {
+      "url": "http://127.0.0.1:4174/",
+      "title": "小小探險隊｜兒童英語學習冒險",
+      "overflow": 0,
+      "columns": {
+        "left": {
+          "left": 10,
+          "right": 350,
+          "top": 1115.484375,
+          "bottom": 2199.359375,
+          "width": 340,
+          "height": 1083.875
+        },
+        "center": {
+          "left": 10,
+          "right": 350,
+          "top": 2211.359375,
+          "bottom": 3999.921875,
+          "width": 340,
+          "height": 1788.5625
+        },
+        "right": {
+          "left": 10,
+          "right": 350,
+          "top": 138,
+          "bottom": 1103.484375,
+          "width": 340,
+          "height": 965.484375
+        }
+      },
+      "desktopColumnsOverlap": false,
+      "outsideViewport": [],
+      "version": [
+        "Version V6.2.0 · Updated 2026-09-02"
+      ],
+      "nav": [
+        "首頁",
+        "今日課程",
+        "學期日曆",
+        "成就獎勵",
+        "學習報表",
+        "寶物商店"
+      ],
+      "learners": 4,
+      "lessons": 2,
+      "brokenImages": [],
+      "undersized": [],
+      "unlabeled": []
+    },
+    "navChecks": {
+      "學期日曆": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n學期日曆\n\n孩子可先看未來主題、回顧自己的成果；完整教材由家長 PIN 解鎖。\n\n0\n/ 90 完成\nWEEK 01\nHello！一起出發\n｜建立固定開場儀式，敢開口說 Hello、Bye、Yes、No。\n0/5\nDay 1\n8/31（週一）\n歷史紀錄\n查看學習成果\nDay 2\n9/1（週二）\n歷史紀錄\n查看學習成果\nDay 3\n9/2（週三"
+      },
+      "成就獎勵": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n成就獎勵\n\n每個孩子的徽章、Stars 與 Gems 都獨立保存。\n\n24\n原創徽章\n哥哥\n弟弟\n姐姐\n妹妹\nBADGE COLLECTION\n哥哥的獎盃牆\n\n已收集 0 / 24 枚徽章\n\n0\n0\n3 Days\n7 Days\n14 Days\n30 Days\nFirst Word\nBrave Speaker\nSentence Star\nSpe"
+      },
+      "寶物商店": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\n寶物商店\n\n先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。\n\n63\n件可探索\n哥哥\n弟弟\n姐姐\n妹妹\n角色試穿室\n哥哥的新造型\n\n挑一件喜歡的寶物，這裡會立刻換給你看。\n\n先從右邊挑一件寶物，按「試穿看看」。\n飛船\n基地\nRobot\n卡面\n特效\nLv.7\n星際勇者\n1500\nCoins\n角色裝備\n飛船\n基地\n機器夥伴\n卡面\n特效"
+      },
+      "首頁": {
+        "url": "http://127.0.0.1:4174/",
+        "body": "冒險世界\n首頁\n今日課程\n學期日曆\n成就獎勵\n學習報表\n寶物商店\nPLAYER TEAM\n冒險隊伍\n家庭冒險等級\nLv.14\n6,000 / 6,160 XP\n4 位學習者\n每位獨立記錄進度\n哥哥\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n弟弟\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n0\n0\n姐姐\n\n星際勇者\n\n下一級還差 40 XP\n1500\n1500\n"
+      }
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "pageErrors": [],
+    "requestFailed": [],
+    "badResponses": [
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
+      }
+    ],
+    "screenshot": "qa/production-audit/2026-09-01/v63-final-local/webkit/360x800-home.png"
+  }
+]

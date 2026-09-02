@@ -1,4 +1,5 @@
-import type { CSSProperties } from 'react';
+import { useState, type CSSProperties, type SyntheticEvent } from 'react';
+import { avatarAccessoryLayerSet } from '../avatarAssetRegistry';
 import { shopItemById, shopItemCanRender } from '../avatarShop';
 import { avatarStageFromXp, avatarStageName, levelFromXp } from '../rewards';
 import { composedWardrobeLookAssetPath, wardrobeBaseAssetPath } from './AvatarWardrobe';
@@ -34,6 +35,12 @@ export function avatarStageAssetPath(value: string | undefined, stage: number, t
   return `${import.meta.env.BASE_URL}assets/v5/characters/${id}/stage-${stage}${thumbnail ? '-thumb' : ''}.${imageExtension}`;
 }
 
+function SafeWearableLayer({ src, className, eager }: { src: string; className: string; eager: boolean }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) return null;
+  return <img className={className} src={src} alt="" aria-hidden="true" loading={eager ? 'eager' : 'lazy'} decoding="async" onError={() => setFailed(true)} />;
+}
+
 export default function AvatarRenderer({
   avatarId,
   xp = 0,
@@ -62,20 +69,35 @@ export default function AvatarRenderer({
     '--avatar-primary': primary,
     '--avatar-secondary': secondary,
     '--avatar-accent': accent,
-    width: size,
-    height: size,
+    '--avatar-default-size': `${size}px`,
+    width: 'var(--avatar-renderer-size, var(--avatar-default-size))',
+    height: 'var(--avatar-renderer-size, var(--avatar-default-size))',
   } as CSSProperties;
 
   const equippedItems = equippedCosmetics
     .map((itemId) => shopItemById.get(itemId))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
   const skin = equippedItems.find((item) => item.kind === 'skin' && shopItemCanRender(item, id));
-  const effect = equippedItems.find((item) => item.kind === 'accessory' && item.equipmentSlot === 'effect' && shopItemCanRender(item, id));
+  const effect = equippedItems.find((item) => item.renderer === 'standard-effect' && shopItemCanRender(item, id));
+  const wearableItems = stageOverride
+    ? []
+    : equippedItems.filter((item) => (item.renderer === 'aligned-overlay' || item.renderer === 'split-overlay') && shopItemCanRender(item, id));
+  const wearableLayers = wearableItems.flatMap((item) => {
+    const layers = avatarAccessoryLayerSet(item.id, id);
+    return layers ? [{ item, layers }] : [];
+  });
   const fullSkin = skin?.renderer === 'full-skin' ? composedWardrobeLookAssetPath(id, skin.id) : undefined;
   // Current avatars always use the fixed 1024×1536 wardrobe contract. Legacy
   // stage art is rendered only when an explicit evolution-preview stage is requested.
-  const imageSrc = fullSkin ?? (stageOverride ? avatarStageAssetPath(id, stage, true) : wardrobeBaseAssetPath(id));
+  const baseSkinSrc = wardrobeBaseAssetPath(id);
+  const imageSrc = fullSkin ?? (stageOverride ? avatarStageAssetPath(id, stage, true) : baseSkinSrc);
   const equipmentNames = equippedItems.map((item) => item.name);
+  const restoreBaseSkin = (event: SyntheticEvent<HTMLImageElement>) => {
+    if (event.currentTarget.dataset.fallbackApplied === 'true') return;
+    event.currentTarget.dataset.fallbackApplied = 'true';
+    event.currentTarget.src = baseSkinSrc;
+  };
+  const renderedIds = [skin?.id, ...wearableLayers.map(({ item }) => item.id), effect?.id].filter(Boolean);
 
   return (
     <div
@@ -85,15 +107,26 @@ export default function AvatarRenderer({
       data-stage={stage}
       data-skin={skin?.id ?? 'default'}
       data-cosmetics={equippedCosmetics.join(' ')}
+      data-rendered-items={renderedIds.join(' ')}
     >
-      {effect && <span className={`avatar-standard-effect effect-${effect.id}`} aria-hidden="true">{Array.from({ length: 10 }, (_, index) => <i key={index} />)}</span>}
+      {wearableLayers.map(({ item, layers }) => layers.renderer === 'split-overlay' && layers.back ? (
+        <SafeWearableLayer key={`${item.id}:back`} className="avatar-wearable-layer avatar-wearable-back" src={layers.back} eager={eager} />
+      ) : null)}
       <img
         className="avatar-renderer-skin"
         src={imageSrc}
         alt={`${option.name}，${avatarStageName(xp)}`}
         loading={eager ? 'eager' : 'lazy'}
         decoding="async"
+        onError={restoreBaseSkin}
       />
+      {wearableLayers.map(({ item, layers }) => layers.renderer === 'aligned-overlay' && layers.overlay ? (
+        <SafeWearableLayer key={`${item.id}:aligned`} className={`avatar-wearable-layer avatar-wearable-aligned slot-${item.equipmentSlot}`} src={layers.overlay} eager={eager} />
+      ) : null)}
+      {wearableLayers.map(({ item, layers }) => layers.renderer === 'split-overlay' && layers.front ? (
+        <SafeWearableLayer key={`${item.id}:front`} className="avatar-wearable-layer avatar-wearable-front" src={layers.front} eager={eager} />
+      ) : null)}
+      {effect && <span className={`avatar-standard-effect ${effect.id}`} aria-hidden="true">{Array.from({ length: 8 }, (_, index) => <i key={index} />)}</span>}
       {showStage && <span className="avatar-stage-label">Stage {stage}/4 · {avatarStageName(xp)}</span>}
       {showStage && equipmentNames.length > 0 && <span className="avatar-cosmetic-summary" aria-label={`已裝備：${equipmentNames.join('、')}`}>{equipmentNames.length} 件裝備</span>}
     </div>

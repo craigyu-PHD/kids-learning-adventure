@@ -12,7 +12,7 @@
     "id": "insufficient-coins",
     "pass": true,
     "disabled": true,
-    "buttonText": "130 尚未解鎖"
+    "buttonText": "金幣還差 130"
   },
   {
     "id": "two-tab-same-item-idempotency",

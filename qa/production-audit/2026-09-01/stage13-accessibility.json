@@ -1,5 +1,5 @@
 {
-  "url": "http://127.0.0.1:4173/",
+  "url": "http://127.0.0.1:4174/",
   "viewports": {
     "desktop": {
       "home": {
@@ -8,7 +8,7 @@
         "unlabeled": []
       },
       "shop": {
-        "total": 107,
+        "total": 113,
         "undersized": [],
         "unlabeled": []
       },
@@ -57,7 +57,7 @@
         "unlabeled": []
       },
       "shop": {
-        "total": 106,
+        "total": 112,
         "undersized": [],
         "unlabeled": []
       },

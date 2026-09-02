@@ -17,6 +17,11 @@ export type CosmeticDefinition = {
 };
 
 export const cosmetics: CosmeticDefinition[] = [
+  // V6.2 Starter Wardrobe: free items still use the formal PurchaseTransaction → Inventory → Equip flow.
+  { id:'starter-sun-cap',slot:'hat',name:'晴空小隊帽',description:'免費領取的第一頂探險帽，戴上就能出發。',cost:0,unlockLevel:1,rarity:'common' },
+  { id:'starter-sky-glasses',slot:'glasses',name:'星光觀察鏡',description:'免費領取，看看今天藏著哪些新發現。',cost:0,unlockLevel:1,rarity:'common' },
+  { id:'starter-buddy-headphones',slot:'headphones',name:'小隊聽力耳機',description:'免費領取，準備一起聽歌、聽故事、練英文。',cost:0,unlockLevel:1,rarity:'common' },
+
   { id:'hair-comet',slot:'hairstyle',name:'彗星短髮',description:'俐落的太空探險髮型。',cost:60,unlockLevel:1,rarity:'common' },
   { id:'hair-wave',slot:'hairstyle',name:'銀河波浪',description:'像銀河一樣有層次。',cost:90,unlockLevel:2,rarity:'common' },
   { id:'hair-spike',slot:'hairstyle',name:'火箭尖刺',description:'準備高速升空。',cost:130,unlockLevel:3,rarity:'rare' },
@@ -97,24 +102,17 @@ export const cosmeticById = new Map(cosmetics.map((item) => [item.id, item]));
 export const wearableCosmeticSlots = new Set<CosmeticSlot>(['hairstyle', 'outfit', 'hat', 'glasses', 'backpack', 'cape', 'headphones']);
 export const worldCosmeticSlots = new Set<CosmeticSlot>(['spaceship', 'room', 'robot', 'card', 'effect']);
 
-const girlAvatarIds = new Set(['sister', 'younger-sister', 'luna', 'stella', 'mint', 'blossom']);
-const retiredGirlItems = new Set(['sister-starlight-clip', 'sister-mint-bow']);
-const sharedWearableItems = new Set(['outfit-racer']);
-
-/** Character gear is intentionally collection-bound. World cosmetics remain
- * family-world items, while a girl avatar can never buy, preview or equip a
- * boy collection item (and vice versa). */
-export function cosmeticSupportsAvatar(item: CosmeticDefinition, avatarId?: string) {
-  if (!wearableCosmeticSlots.has(item.slot)) return true;
-  if (sharedWearableItems.has(item.id)) return true;
-  const isGirl = girlAvatarIds.has(avatarId ?? '');
-  return item.id.startsWith('sister-') ? isGirl : !isGirl;
+/** V6.3 formal wearable contract: every Child-visible character item has a
+ * fixed-canvas asset for all four production avatars. Historical item IDs are
+ * preserved for saves/ledgers, but collection naming no longer blocks try-on. */
+export function cosmeticSupportsAvatar(item: CosmeticDefinition, _avatarId?: string) {
+  return wearableCosmeticSlots.has(item.slot) || worldCosmeticSlots.has(item.slot);
 }
 
-/** Broken multi-object source sheets are kept only for old-save compatibility,
- * never offered as a product until a true single-object cutout is supplied. */
-export function cosmeticIsSelectable(item: CosmeticDefinition) {
-  return !retiredGirlItems.has(item.id);
+/** V6.3 rescues every catalog item into a real preview path. Historical IDs are
+ * no longer hidden behind broken source-sheet compatibility flags. */
+export function cosmeticIsSelectable(_item: CosmeticDefinition) {
+  return true;
 }
 
 export function cosmeticAssetPath(item: CosmeticDefinition) {

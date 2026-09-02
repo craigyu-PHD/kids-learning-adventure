@@ -279,7 +279,9 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   const [adminDestination, setAdminDestination] = useState<'report' | 'settings'>('report');
   const [familySetupOpen, setFamilySetupOpen] = useState(false);
   const activeUserKey = `star-learning-v40:${familyId}:active-user`;
-  const [userPromptOpen, setUserPromptOpen] = useState(() => !sessionStorage.getItem(activeUserKey));
+  // V6.2: Child Experience is never blocked by caregiver selection on first run.
+  // Adult identity is requested only when the user explicitly enters Parent/Report/Settings flows.
+  const [userPromptOpen, setUserPromptOpen] = useState(false);
   const [activeUserId, setActiveUserId] = useState<string | null>(() => sessionStorage.getItem(activeUserKey));
   const [trustedDate, setTrustedDate] = useState<TrustedTaipeiDate>(() => ({
     ymd: taipeiYmd(),
@@ -366,7 +368,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
       if (!currentUser || currentUser.disabled) {
         sessionStorage.removeItem(activeUserKey);
         setActiveUserId(null);
-        setUserPromptOpen(true);
+        setUserPromptOpen(false);
       }
     }
   }, [settings.children, settings.users, activeUserId, activeUserKey]);
@@ -783,6 +785,11 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   };
 
   const requestParentArea = () => {
+    setAdminDestination('report');
+    if (!activeUserId) {
+      setUserPromptOpen(true);
+      return;
+    }
     if (isLocalFamily) {
       setFamilySetupOpen(true);
       return;
@@ -791,11 +798,15 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
       setView('report');
       return;
     }
-    setAdminDestination('report');
     setAdminPromptOpen(true);
   };
 
   const requestSettings = () => {
+    setAdminDestination('settings');
+    if (!activeUserId) {
+      setUserPromptOpen(true);
+      return;
+    }
     if (isLocalFamily) {
       setFamilySetupOpen(true);
       return;
@@ -804,7 +815,6 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
       setView('settings');
       return;
     }
-    setAdminDestination('settings');
     setAdminPromptOpen(true);
   };
 
@@ -834,6 +844,9 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     setActiveUserId(userId);
     sessionStorage.setItem(activeUserKey, userId);
     setUserPromptOpen(false);
+    if (isLocalFamily) setFamilySetupOpen(true);
+    else if (!adminUnlocked) setAdminPromptOpen(true);
+    else setView(adminDestination);
   };
 
   const retryTrustedDate = async () => setTrustedDate(await fetchTrustedTaipeiDate());

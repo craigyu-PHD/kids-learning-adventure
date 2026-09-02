@@ -41,6 +41,12 @@
   --fs-21: 21px;
   --fs-24: 24px;
 
+  /* ── V6.2 semantic typography ── */
+  --text-child-body: 14px;
+  --text-secondary: 12px;
+  --text-metadata: 11px;
+  --text-child-button: 14px;
+
   /* ── Spacing ── */
   --space-4:  4px;
   --space-8:  8px;

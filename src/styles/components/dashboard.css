@@ -483,14 +483,15 @@
 .v6-shop-category-heading { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:4px 0 12px; color:#1b4778; }
 .v6-shop-category-heading span { color:#147db9; font-size:14px; font-weight:800; letter-spacing:.07em; }
 .v6-shop-category-heading strong { font-size:17px; }
-.v4-shop-card .v4-shop-grid { grid-template-columns:repeat(4,minmax(0,1fr)) !important; }
+.v4-shop-card .v4-shop-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
 .v4-shop-card .v4-shop-grid article { min-height:274px; padding:14px; }
 .v4-shop-card .v4-item-art { height:142px; }
 .v4-shop-card .v4-shop-grid h3 { font-size:16px; }
-.v4-shop-card .v4-shop-grid p,.v4-shop-card .v4-shop-grid small,.v4-shop-card .v4-shop-grid article>span { font-size:12px !important; line-height:1.35 !important; }
-.v4-shop-card .v4-shop-grid button { min-height:44px; font-size:13px !important; }
-@media (max-width:980px) { .v4-shop-card .v4-shop-grid { grid-template-columns:repeat(3,minmax(0,1fr)) !important; } }
-@media (max-width:620px) { .v6-shop-tabs button { min-width:0; flex:1; justify-content:center; } .v6-shop-category-tabs { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:5px; padding:6px; } .v6-shop-category-tabs button { padding:0 5px; font-size:12px; } .v6-shop-category-heading { align-items:flex-start; flex-direction:column; gap:2px; } .v4-shop-card .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; } .v4-shop-card .v4-item-art { height:118px; } }
+.v4-shop-card .v4-shop-grid p { font-size:var(--text-child-body); line-height:1.45; }
+.v4-shop-card .v4-shop-grid small,.v4-shop-card .v4-shop-grid article>span { font-size:var(--text-secondary); line-height:1.35; }
+.v4-shop-card .v4-shop-grid button { min-height:44px; font-size:var(--text-child-button); }
+@media (max-width:980px) { .v4-shop-card .v4-shop-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:620px) { .v6-shop-tabs button { min-width:0; flex:1; justify-content:center; } .v6-shop-category-tabs { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:5px; padding:6px; } .v6-shop-category-tabs button { padding:0 5px; font-size:12px; } .v6-shop-category-heading { align-items:flex-start; flex-direction:column; gap:2px; } .v4-shop-card .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .v4-shop-card .v4-item-art { height:118px; } }
 
 /* Achievement collection wall keeps one learner in focus and gives every
  * badge enough visual territory to read as a collectible rather than a row. */
@@ -514,46 +515,9 @@
 .avatar-photo-hero .avatar-photo-glow { display:none !important; }
 .avatar-photo-hero > img:not(.avatar-equipped-cosmetic) { width:100% !important; height:100% !important; border-radius:0 !important; object-fit:contain !important; filter:drop-shadow(0 6px 7px rgba(10,38,82,.18)) !important; }
 
-/* Real equipment cutouts: every owned character item is the actual shop art,
-   positioned around the same transparent full-body avatar rather than a CSS
-   placeholder. Back equipment remains behind the character; face and head
-   equipment stays above it. */
-.avatar-equipment-artboard { position:absolute; inset:0; display:block; overflow:visible; }
-.avatar-sister .avatar-equipment-artboard,
-.avatar-younger-sister .avatar-equipment-artboard { left:-16.667%; right:auto; width:133.333%; }
-.avatar-character-cutout { position:absolute; inset:0; z-index:2; display:block; width:100% !important; height:100% !important; object-fit:contain !important; border-radius:0 !important; filter:drop-shadow(0 6px 7px rgba(10,38,82,.18)) !important; }
-.avatar-equipment-layer { position:absolute; inset:0; display:block; pointer-events:none; }
-.avatar-equipment-back { z-index:1; }
-.avatar-equipment-front { z-index:3; }
-.avatar-photo-hero .avatar-equipped-cosmetic { position:absolute; display:block; pointer-events:none; object-fit:contain; background:none !important; border:0 !important; box-shadow:none !important; opacity:1 !important; mix-blend-mode:normal !important; filter:drop-shadow(0 2px 2px rgba(10,38,82,.18)); transform-origin:center; }
-.avatar-photo-hero > .avatar-equipped-cosmetic::before,
-.avatar-photo-hero > .avatar-equipped-cosmetic::after { content:none !important; display:none !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-hairstyle { left:34%; top:-2%; width:32% !important; height:27% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-hat { left:33%; top:-8%; width:34% !important; height:26% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-glasses { left:35%; top:12%; width:30% !important; height:14% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-headphones { left:35%; top:0; width:30% !important; height:27% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-outfit { left:29%; top:29%; width:42% !important; height:45% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-backpack { left:53%; top:29%; width:38% !important; height:49% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic.slot-cape { left:47%; top:26%; width:50% !important; height:63% !important; transform:rotate(-4deg); }
-
-/* The girl artboards use a wider 4:3 source canvas. Their attachment points
-   follow that actual source geometry so the same treasure remains on the head,
-   face and torso instead of drifting when the character changes. */
-.avatar-sister .avatar-equipped-cosmetic.slot-hairstyle,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-hairstyle { left:39%; width:22% !important; top:-2%; height:25% !important; }
-.avatar-sister .avatar-equipped-cosmetic.slot-hat,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-hat { left:37%; width:26% !important; top:-7%; height:27% !important; }
-.avatar-sister .avatar-equipped-cosmetic.slot-glasses,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-glasses { left:39%; width:22% !important; top:12%; height:13% !important; }
-.avatar-sister .avatar-equipped-cosmetic.slot-headphones,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-headphones { left:37%; width:26% !important; top:-2%; height:28% !important; }
-.avatar-sister .avatar-equipped-cosmetic.slot-outfit,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-outfit { left:34%; width:32% !important; top:28%; height:48% !important; }
-.avatar-sister .avatar-equipped-cosmetic.slot-backpack,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-backpack { left:52%; width:30% !important; top:29%; height:50% !important; }
-.avatar-sister .avatar-equipped-cosmetic.slot-cape,
-.avatar-younger-sister .avatar-equipped-cosmetic.slot-cape { left:48%; width:39% !important; top:27%; height:62% !important; }
-.avatar-photo-hero .avatar-equipped-cosmetic[class*="cosmetic-sister-"] { object-fit:cover; }
+/* V6.2: the former per-avatar CSS attachment offsets were removed.
+   Wearable alignment is now baked into fixed 1024×1536 assets and rendered
+   only by AvatarRenderer. Product thumbnails are catalog-only artwork. */
 
 /* The shop is a dressing studio: the learner stays centred while character
    equipment and the five world-item types share one live composition. */
@@ -575,7 +539,7 @@
 .v6-treasure-showcase>header h2 { margin:3px 0 2px; color:#fff; font-size:25px; }
 .v6-treasure-showcase>header p { margin:0; color:#dcedff; font-size:13px; }
 .v6-showcase-status { position:absolute; z-index:9; left:14px; right:14px; bottom:13px; display:flex; justify-content:center; gap:5px; }
-.v6-showcase-status span { min-height:28px; padding:0 9px; display:flex; align-items:center; border:1px solid rgba(255,255,255,.35); border-radius:999px; background:rgba(5,35,85,.68); color:#bed4ec; font-size:10px; font-weight:800; backdrop-filter:blur(6px); }
+.v6-showcase-status span { min-height:28px; padding:0 9px; display:flex; align-items:center; border:1px solid rgba(255,255,255,.35); border-radius:999px; background:rgba(5,35,85,.68); color:#bed4ec; font-size:var(--text-secondary); font-weight:800; backdrop-filter:blur(6px); }
 .v6-showcase-status span.active { border-color:#ffd83d; background:#fff5bd; color:#705000; }
 .v6-clear-preview { width:100%; min-height:46px; margin-top:10px; border:1.5px solid #9a79db; border-radius:15px; color:#4b257c; background:linear-gradient(135deg,#f4edff,#fff); font-size:15px; font-weight:850; }
 .v6-shop-wallet-row { min-height:72px; margin-top:10px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; gap:12px; border:1.5px solid #cce5f3; border-radius:18px; background:linear-gradient(135deg,#f6fcff,#fff9dc); }
@@ -586,14 +550,14 @@
 .v6-shop-wallet-row .v4-wallet svg { grid-row:1/3; }
 .v6-shop-catalog { min-width:0; }
 .v6-shop-catalog .v6-shop-category-tabs { margin-top:0; }
-.v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+.v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .v6-shop-catalog .v4-shop-grid article { min-height:286px; }
 .v6-shop-catalog .v4-item-art { height:132px; }
 @keyframes v6ShowcaseEffect { to { transform:rotate(360deg); } }
 @media (prefers-reduced-motion:reduce) { .v6-showcase-effect { animation:none; } }
-@media (max-width:1050px) { .v6-shop-studio { grid-template-columns:340px minmax(0,1fr); gap:14px; } .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; } .v6-treasure-showcase { min-height:470px; } .v6-showcase-character { transform:translateX(-50%) scale(.84); transform-origin:center bottom; } }
-@media (max-width:800px) { .v6-shop-studio { grid-template-columns:1fr; padding:12px !important; } .v6-shop-preview-column { position:static; } .v6-treasure-showcase { min-height:420px; } .v6-showcase-character { bottom:10px; transform:translateX(-50%) scale(.78); } .v6-showcase-room { width:54%; } .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; } }
-@media (max-width:480px) { .v6-treasure-showcase { min-height:370px; border-radius:20px; } .v6-showcase-character { bottom:-2px; transform:translateX(-50%) scale(.66); } .v6-showcase-ship { top:22%; width:29%; } .v6-showcase-robot { width:24%; bottom:10%; } .v6-showcase-status span { padding:0 6px; font-size:9px; } .v6-shop-catalog .v4-shop-grid article { min-height:270px; padding:10px; } .v6-shop-catalog .v4-item-art { height:105px; } }
+@media (max-width:1050px) { .v6-shop-studio { grid-template-columns:340px minmax(0,1fr); gap:14px; } .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .v6-treasure-showcase { min-height:470px; } .v6-showcase-character { transform:translateX(-50%) scale(.84); transform-origin:center bottom; } }
+@media (max-width:800px) { .v6-shop-studio { grid-template-columns:1fr; padding:12px !important; } .v6-shop-preview-column { position:static; } .v6-treasure-showcase { min-height:420px; } .v6-showcase-character { bottom:10px; transform:translateX(-50%) scale(.78); } .v6-showcase-room { width:54%; } .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:480px) { .v6-treasure-showcase { min-height:370px; border-radius:20px; } .v6-showcase-character { bottom:-2px; transform:translateX(-50%) scale(.66); } .v6-showcase-ship { top:22%; width:29%; } .v6-showcase-robot { width:24%; bottom:10%; } .v6-showcase-status span { padding:0 6px; font-size:var(--text-secondary); } .v6-shop-catalog .v4-shop-grid article { min-height:270px; padding:10px; } .v6-shop-catalog .v4-item-art { height:105px; } }
 
 /* World treasures now mount their real raster assets into the product instead
    of merely tinting the default rocket, robot and cards. */
@@ -1248,13 +1212,19 @@
 @media(max-width:700px) { .v4-mission-focus { grid-template-columns:62px minmax(0,1fr) !important; } .v4-reward-podium { min-height:320px; padding:28px 14px !important; } .v4-reward-orbit img { width:70px !important; height:70px !important; } }
 @media(prefers-reduced-motion:reduce) { .v4-reward-podium::before,.v4-reward-podium::after { animation:none; opacity:.45; } }
 
-/* V6.1 single AvatarRenderer contract. Character skins are full-body renders;
-   only standardized effect accessories are composited until a verified anchor
-   asset exists. Legacy thumbnail overlays remain catalog art only. */
+/* V6.2 Hybrid Avatar V2. All body-alignment lives inside 1024×1536 transparent
+   assets. Runtime layers are always inset:0; React/CSS never guesses wearable
+   position with per-item top/left/scale values. Fixed z-order:
+   split-back → skin → aligned/front → effect. */
 .avatar-renderer { position:relative; display:block; isolation:isolate; overflow:visible; }
-.avatar-renderer .avatar-renderer-skin { position:absolute; z-index:2; inset:0; display:block; width:100%; height:100%; object-fit:contain; border-radius:0; background:transparent; filter:drop-shadow(0 6px 7px rgba(10,38,82,.18)); }
+.avatar-renderer .avatar-wearable-layer,
+.avatar-renderer .avatar-renderer-skin { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:contain; border-radius:0; background:transparent; pointer-events:none; }
+.avatar-renderer .avatar-wearable-back { z-index:1; }
+.avatar-renderer .avatar-renderer-skin { z-index:2; filter:drop-shadow(0 6px 7px rgba(10,38,82,.18)); }
+.avatar-renderer .avatar-wearable-aligned { z-index:3; }
+.avatar-renderer .avatar-wearable-front { z-index:4; }
 .avatar-renderer.skin-active .avatar-renderer-skin { object-fit:contain; }
-.avatar-standard-effect { position:absolute; z-index:3; inset:-5%; pointer-events:none; }
+.avatar-standard-effect { position:absolute; z-index:5; inset:-5%; pointer-events:none; }
 .avatar-standard-effect i { position:absolute; width:8%; aspect-ratio:1; border-radius:50%; background:#ffd83d; box-shadow:0 0 12px rgba(255,216,61,.78); animation:v61AvatarEffect 2.8s ease-in-out infinite alternate; }
 .avatar-standard-effect i:nth-child(1){left:8%;top:18%}.avatar-standard-effect i:nth-child(2){left:78%;top:12%}.avatar-standard-effect i:nth-child(3){left:88%;top:42%}.avatar-standard-effect i:nth-child(4){left:12%;top:54%}.avatar-standard-effect i:nth-child(5){left:72%;top:68%}.avatar-standard-effect i:nth-child(6){left:28%;top:82%}.avatar-standard-effect i:nth-child(7){left:54%;top:5%}.avatar-standard-effect i:nth-child(8){left:50%;top:78%}.avatar-standard-effect i:nth-child(9){left:4%;top:36%}.avatar-standard-effect i:nth-child(10){left:90%;top:76%}
 @keyframes v61AvatarEffect { to { transform:translateY(-5px) scale(1.16); opacity:.58; } }
@@ -1264,13 +1234,144 @@
 
 .v4-shop-grid article.unavailable,.v4-shop-grid article.incompatible { border-style:dashed; background:#f7f9fc; }
 .v4-shop-grid article.unavailable .v4-item-art,.v4-shop-grid article.incompatible .v4-item-art { filter:saturate(.45); opacity:.72; }
-.v6-shop-item-status { display:inline-flex; width:fit-content; min-height:28px; margin-top:7px; padding:0 9px; align-items:center; border-radius:999px; background:#edf5fb; color:#365c80; font-size:11px; font-weight:900; letter-spacing:.02em; }
+.v6-shop-item-status { display:inline-flex; width:fit-content; min-height:28px; margin-top:7px; padding:0 9px; align-items:center; border-radius:999px; background:#edf5fb; color:#365c80; font-size:var(--text-secondary); font-weight:900; letter-spacing:.02em; }
 .v6-shop-item-status.equipped { background:#e8fff0; color:#137341; }
 .v6-shop-item-status.owned { background:#eef0ff; color:#5842a3; }
 .v6-shop-item-status.unavailable,.v6-shop-item-status.incompatible { background:#f0f1f4; color:#697483; }
 .v6-shop-item-status.insufficient-coins { background:#fff4d8; color:#8a6500; }
 .v6-shop-contract { display:block; min-height:30px; margin-top:4px; color:#71839a !important; }
-.v6-shop-feedback { margin-top:10px; padding:13px 14px; display:grid; gap:7px; border:1.5px solid #8fd9b0; border-radius:17px; background:linear-gradient(135deg,#effff5,#f8fffd); color:#205f42; }
-.v6-shop-feedback strong { font-size:15px; }.v6-shop-feedback span { font-size:13px; line-height:1.45; }.v6-shop-feedback>div { display:flex; flex-wrap:wrap; gap:7px; }
-.v6-shop-feedback button { min-height:42px; padding:0 13px; border:0; border-radius:12px; background:#168b56; color:#fff; font-weight:850; }.v6-shop-feedback button.secondary { border:1px solid #b9d9c8; background:#fff; color:#426553; }
+.v6-shop-feedback { margin-top:10px; padding:14px 15px; display:grid; gap:8px; border:1.5px solid #8fd9b0; border-radius:17px; background:linear-gradient(135deg,#effff5,#f8fffd); color:#205f42; animation:v62ShopSuccess .42s ease both; }
+.v6-shop-feedback strong { font-size:16px; }.v6-shop-feedback span { font-size:var(--text-child-body); line-height:1.45; }.v6-shop-feedback>div { display:flex; flex-wrap:wrap; gap:7px; }
+.v6-shop-feedback button { min-height:44px; padding:0 13px; border:0; border-radius:12px; background:#168b56; color:#fff; font-size:var(--text-child-button); font-weight:850; }.v6-shop-feedback button.secondary { border:1px solid #b9d9c8; background:#fff; color:#426553; }
+@keyframes v62ShopSuccess { from{opacity:0;transform:translateY(8px) scale(.98)} to{opacity:1;transform:none} }
+.v62-coming-soon { margin-top:22px; padding:16px; border:1.5px dashed #b8cde1; border-radius:20px; background:linear-gradient(135deg,#f8fbff,#f7f5ff); }
+.v62-coming-soon>div:first-child span { display:block; color:#7762a9; font-size:var(--text-secondary); font-weight:900; letter-spacing:.08em; }
+.v62-coming-soon>div:first-child strong { display:block; margin-top:2px; color:#29466c; font-size:17px; }
+.v62-coming-soon>div:first-child p { margin:4px 0 12px; color:#61758b; font-size:var(--text-child-body); line-height:1.45; }
+.v62-coming-soon>div:last-child { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:9px; }
+.v62-coming-soon article { min-width:0; display:grid; grid-template-columns:58px minmax(0,1fr); align-items:center; gap:8px; padding:8px; border:1px solid #d7e2ed; border-radius:14px; background:rgba(255,255,255,.75); }
+.v62-coming-soon article .v4-smart-image { width:58px; height:58px; }
+.v62-coming-soon article .v4-smart-image img { width:100%; height:100%; object-fit:contain; }
+.v62-coming-soon article strong,.v62-coming-soon article span { display:block; min-width:0; }
+.v62-coming-soon article strong { color:#38506e; font-size:13px; line-height:1.3; }
+.v62-coming-soon article span { margin-top:2px; color:#7d8da0; font-size:var(--text-secondary); }
+@media(max-width:700px){.v62-coming-soon>div:last-child{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(prefers-reduced-motion:reduce){.v6-shop-feedback{animation:none;}}
 @media(prefers-reduced-motion:reduce) { .avatar-standard-effect i { animation:none; } }
+
+/* ── V6.3 Equipment Experience ───────────────────────────────────────────
+   World treasures have dedicated preview stages. Character wearables remain
+   fixed-canvas AvatarRenderer layers; no product thumbnail is positioned on a
+   body at runtime. This block intentionally avoids new cascade-force declarations. */
+.v63-equipment-stage { position:relative; min-height:560px; overflow:hidden; isolation:isolate; border:2px solid #91d9f4; border-radius:28px; background:linear-gradient(165deg,#071d4b,#0b4d91 58%,#0f71a8); box-shadow:0 18px 42px rgba(5,47,103,.18),inset 0 1px rgba(255,255,255,.35); color:#fff; }
+.v63-stage-backdrop { position:absolute; z-index:-3; inset:0; background-image:var(--showcase-scene,radial-gradient(circle at 22% 20%,rgba(105,221,255,.25),transparent 28%),radial-gradient(circle at 82% 30%,rgba(255,221,92,.16),transparent 22%),linear-gradient(180deg,#081e4e,#0a5795 68%,#98def0 68.5%,#5db6cf)); background-size:cover; background-position:center; }
+.v63-stage-backdrop::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(3,16,48,.12),transparent 45%,rgba(2,20,48,.42)); }
+.v63-stage-heading { position:absolute; z-index:20; top:18px; left:22px; right:22px; text-align:center; pointer-events:none; text-shadow:0 2px 7px rgba(0,22,66,.42); }
+.v63-stage-heading span { display:block; color:#9cecff; font-size:12px; font-weight:800; letter-spacing:.12em; }
+.v63-stage-heading h2 { margin:3px 0; color:#fff; font-size:clamp(24px,2.2vw,31px); line-height:1.15; }
+.v63-stage-heading p { margin:0 auto; max-width:38ch; color:#dceeff; font-size:14px; line-height:1.45; }
+.v63-stage-status { position:absolute; z-index:24; left:14px; right:14px; bottom:13px; display:flex; flex-wrap:wrap; justify-content:center; gap:6px; }
+.v63-stage-status span { min-height:30px; padding:0 10px; display:flex; align-items:center; border:1px solid rgba(255,255,255,.28); border-radius:999px; background:rgba(4,27,70,.66); color:#c9dbee; font-size:12px; font-weight:800; backdrop-filter:blur(6px); }
+.v63-stage-status span.active { border-color:#ffe27a; background:#fff4b8; color:#6c4c00; }
+.v63-stage-empty-note { position:absolute; z-index:18; left:50%; bottom:84px; transform:translateX(-50%); width:max-content; max-width:calc(100% - 36px); padding:8px 13px; border-radius:999px; background:rgba(4,28,71,.7); color:#dff5ff; font-size:13px; font-weight:750; text-align:center; }
+
+/* Avatar dressing room / world room */
+.v63-avatar-stage { position:absolute; inset:104px 18px 48px; display:grid; place-items:end center; }
+.v63-avatar-stage .avatar-renderer { --avatar-renderer-size:min(330px,76vw); max-width:76%; max-height:390px; }
+.v63-avatar-platform { position:absolute; left:50%; bottom:20px; width:min(270px,62%); height:50px; transform:translateX(-50%); border-radius:50%; background:radial-gradient(ellipse,#e8ffff 0 8%,#59d6f2 36%,#0969c5 64%,transparent 66%); box-shadow:0 12px 26px rgba(1,29,70,.3); z-index:-1; }
+.v63-world-label { position:absolute; right:12px; bottom:62px; padding:7px 10px; border-radius:11px; background:rgba(8,47,90,.7); font-size:12px; font-weight:800; }
+
+/* Ship: premium hangar, ship is the hero rather than a pasted corner icon. */
+.v63-equipment-stage.mode-ship { background:linear-gradient(160deg,#071735,#102c63 58%,#123f70); border-color:#82dff3; }
+.v63-equipment-stage.mode-ship .v63-stage-backdrop { background:radial-gradient(ellipse at 50% 82%,rgba(66,218,255,.28),transparent 24%),linear-gradient(90deg,rgba(121,228,255,.08) 1px,transparent 1px),linear-gradient(rgba(121,228,255,.08) 1px,transparent 1px),linear-gradient(180deg,#06132e,#0b2b5a 58%,#0d4470); background-size:auto,72px 72px,72px 72px,auto; }
+.v63-hangar-stage { position:absolute; inset:102px 14px 48px; display:grid; place-items:center; }
+.v63-hangar-stage::before,.v63-hangar-stage::after { content:""; position:absolute; left:7%; right:7%; bottom:7%; height:20%; border-radius:50%; border:2px solid rgba(116,231,255,.34); transform:perspective(420px) rotateX(62deg); }
+.v63-hangar-stage::after { left:19%; right:19%; bottom:12%; border-color:rgba(255,224,104,.34); }
+.v63-hangar-orbit { position:absolute; width:72%; aspect-ratio:1.9; border:2px solid rgba(126,226,255,.26); border-radius:50%; transform:rotate(-8deg); box-shadow:0 0 50px rgba(69,214,255,.12); }
+.v63-ship-art { z-index:5; width:min(92%,560px); max-height:320px; object-fit:contain; filter:drop-shadow(0 22px 26px rgba(0,16,52,.42)); animation:v63ShipFloat 4s ease-in-out infinite; }
+.v63-pilot-avatar { position:absolute; z-index:8; left:8px; bottom:18px; display:flex; align-items:end; gap:6px; }
+.v63-pilot-avatar .avatar-renderer { --avatar-renderer-size:112px; }
+.v63-pilot-avatar span { margin-bottom:16px; padding:6px 9px; border-radius:10px; background:rgba(5,32,74,.72); color:#e7f8ff; font-size:12px; font-weight:800; }
+@keyframes v63ShipFloat { 0%,100%{transform:translateY(0) rotate(-1deg)} 50%{transform:translateY(-10px) rotate(1deg)} }
+
+/* Robot companion: side-by-side relationship, never layered over the avatar. */
+.v63-equipment-stage.mode-robot { background:linear-gradient(160deg,#09214f,#164c85 62%,#3a97b3); }
+.v63-companion-stage { position:absolute; inset:105px 24px 50px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:end; justify-items:center; gap:6px; }
+.v63-companion-stage::before { content:""; position:absolute; left:8%; right:8%; bottom:6%; height:48px; border-radius:50%; background:radial-gradient(ellipse,rgba(199,252,255,.84),rgba(50,188,228,.5) 42%,transparent 70%); }
+.v63-companion-avatar { z-index:4; align-self:end; }
+.v63-companion-avatar .avatar-renderer { --avatar-renderer-size:220px; }
+.v63-robot-art { z-index:5; width:min(100%,330px); max-height:330px; object-fit:contain; filter:drop-shadow(0 18px 22px rgba(0,20,58,.36)); animation:v63RobotBob 3.2s ease-in-out infinite alternate; }
+.v63-companion-link { position:absolute; z-index:3; left:46%; top:45%; width:18%; height:3px; background:linear-gradient(90deg,transparent,#8cecff,transparent); }
+.v63-companion-link i { position:absolute; top:-4px; width:10px; height:10px; border-radius:50%; background:#c7fbff; box-shadow:0 0 13px #60ddff; animation:v63LinkPulse 1.8s ease-in-out infinite; }
+.v63-companion-link i:nth-child(1){left:8%}.v63-companion-link i:nth-child(2){left:48%;animation-delay:.2s}.v63-companion-link i:nth-child(3){right:8%;animation-delay:.4s}
+@keyframes v63RobotBob { to{transform:translateY(-8px)} }
+@keyframes v63LinkPulse { 50%{transform:scale(1.5);opacity:.55} }
+
+/* Collectible card viewer: one large physical card with rarity treatment. */
+.v63-equipment-stage.mode-card { background:radial-gradient(circle at 50% 45%,#1c427a,#091a42 68%); }
+.v63-card-viewer { position:absolute; inset:102px 28px 48px; display:grid; place-items:center; perspective:900px; }
+.v63-card-tilt { position:relative; width:min(58%,280px); aspect-ratio:.72; transform:rotateY(-5deg) rotateX(2deg); transform-style:preserve-3d; filter:drop-shadow(0 26px 30px rgba(0,12,42,.45)); }
+.v63-card-art { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+.v63-card-copy { position:absolute; left:9%; right:9%; bottom:7%; min-height:72px; padding:9px 10px; border-radius:15px; background:rgba(4,25,66,.79); color:#fff; backdrop-filter:blur(5px); text-align:left; }
+.v63-card-copy span,.v63-card-copy strong,.v63-card-copy small { display:block; }
+.v63-card-copy span { color:#a9ecff; font-size:10px; font-weight:900; letter-spacing:.16em; }
+.v63-card-copy strong { margin-top:2px; font-size:17px; line-height:1.2; }
+.v63-card-copy small { margin-top:3px; color:#d5e7f7; font-size:11px; }
+.v63-card-viewer.rarity-legendary .v63-card-tilt { filter:drop-shadow(0 0 16px rgba(255,220,88,.45)) drop-shadow(0 26px 30px rgba(0,12,42,.45)); }
+
+/* Effect stage: each effect has a distinct motion language. */
+.v63-equipment-stage.mode-effect { background:radial-gradient(circle at 50% 54%,#155a8b,#081e4f 68%); }
+.v63-effect-stage { position:absolute; inset:105px 20px 50px; display:grid; place-items:end center; }
+.v63-effect-stage .avatar-renderer { --avatar-renderer-size:290px; z-index:4; }
+.v63-effect-aura { position:absolute; z-index:5; inset:4% 10% 8%; pointer-events:none; }
+.v63-effect-aura::before { content:""; position:absolute; inset:20% 25% 12%; border:2px solid rgba(174,242,255,.34); border-radius:50%; box-shadow:0 0 35px rgba(98,219,255,.2); animation:v63AuraBreath 2.8s ease-in-out infinite; }
+.v63-effect-aura i { position:absolute; left:50%; top:58%; width:12px; height:12px; opacity:0; animation:v63StarOrbit 3.4s ease-out infinite; animation-delay:calc(var(--fx) * 180ms); }
+.v63-effect-aura i:nth-child(1){--fx:1}.v63-effect-aura i:nth-child(2){--fx:2}.v63-effect-aura i:nth-child(3){--fx:3}.v63-effect-aura i:nth-child(4){--fx:4}.v63-effect-aura i:nth-child(5){--fx:5}.v63-effect-aura i:nth-child(6){--fx:6}.v63-effect-aura i:nth-child(7){--fx:7}.v63-effect-aura i:nth-child(8){--fx:8}
+.v63-effect-aura.effect-effect-stars i,.v63-effect-aura.effect-stars i { clip-path:polygon(50% 0,61% 35%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 35%); background:#ffe67a; box-shadow:0 0 15px #ffd33d; }
+.v63-effect-aura.effect-effect-bubbles i,.v63-effect-aura.effect-bubbles i { width:18px; height:18px; border:2px solid rgba(225,253,255,.92); border-radius:50%; background:rgba(128,231,255,.15); box-shadow:inset 4px 3px 7px rgba(255,255,255,.55),0 0 13px rgba(90,221,255,.34); animation-name:v63BubbleRise; }
+.v63-effect-aura.effect-effect-legend i,.v63-effect-aura.effect-legend i { width:10px; height:18px; transform:rotate(45deg); background:linear-gradient(180deg,#fffbd0,#ffd24e); box-shadow:0 0 18px #ffbc32; animation-name:v63LegendRise; }
+.v63-effect-replay { position:absolute; z-index:10; right:8px; bottom:18px; min-height:42px; padding:0 12px; border:1px solid rgba(255,255,255,.5); border-radius:999px; background:rgba(4,30,77,.72); color:#fff; font-size:13px; font-weight:800; }
+@keyframes v63AuraBreath { 50%{transform:scale(1.08);opacity:.45} }
+@keyframes v63StarOrbit { 0%{opacity:0;transform:rotate(calc(var(--fx) * 45deg)) translateY(58px) scale(.35)} 20%{opacity:1} 100%{opacity:0;transform:rotate(calc(var(--fx) * 45deg + 35deg)) translateY(-150px) scale(1.25)} }
+@keyframes v63BubbleRise { 0%{opacity:0;transform:translate(calc((var(--fx) - 4) * 18px),86px) scale(.4)} 22%{opacity:.9} 100%{opacity:0;transform:translate(calc((var(--fx) - 4) * 29px),-165px) scale(1.35)} }
+@keyframes v63LegendRise { 0%{opacity:0;transform:translate(calc((var(--fx) - 4) * 16px),76px) rotate(45deg) scale(.35)} 24%{opacity:1} 100%{opacity:0;transform:translate(calc((var(--fx) - 4) * 24px),-165px) rotate(125deg) scale(1.25)} }
+
+/* Avatar-wide effects share the same three visual identities everywhere. */
+.avatar-standard-effect.effect-stars i { clip-path:polygon(50% 0,61% 35%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 35%); border-radius:0; background:#ffe47b; }
+.avatar-standard-effect.effect-bubbles i { border:2px solid rgba(231,253,255,.95); border-radius:50%; background:rgba(111,226,255,.14); box-shadow:inset 2px 2px 5px rgba(255,255,255,.65),0 0 10px rgba(81,214,255,.35); }
+.avatar-standard-effect.effect-legend i { border-radius:2px; background:linear-gradient(180deg,#fffbd4,#ffc83d); box-shadow:0 0 14px #ffb326; transform:rotate(45deg); }
+
+@media(max-width:1050px) {
+  .v63-equipment-stage { min-height:500px; }
+  .v63-ship-art { max-height:280px; }
+  .v63-companion-avatar .avatar-renderer { --avatar-renderer-size:185px; }
+  .v63-robot-art { max-height:290px; }
+}
+@media(max-width:800px) {
+  .v63-equipment-stage { min-height:470px; }
+  .v63-stage-heading { top:14px; left:14px; right:14px; }
+  .v63-hangar-stage,.v63-companion-stage,.v63-card-viewer,.v63-effect-stage,.v63-avatar-stage { top:96px; }
+  .v63-card-tilt { width:min(52%,250px); }
+}
+@media(max-width:480px) {
+  .v63-equipment-stage { min-height:430px; border-radius:21px; }
+  .v63-stage-heading h2 { font-size:23px; }
+  .v63-stage-heading p { font-size:12px; }
+  .v63-hangar-stage { inset:100px 8px 52px; }
+  .v63-ship-art { width:98%; max-height:240px; }
+  .v63-pilot-avatar { left:0; bottom:18px; }
+  .v63-pilot-avatar .avatar-renderer { --avatar-renderer-size:82px; }
+  .v63-pilot-avatar span { display:none; }
+  .v63-companion-stage { inset:105px 8px 50px; grid-template-columns:44% 56%; }
+  .v63-companion-avatar .avatar-renderer { --avatar-renderer-size:145px; }
+  .v63-robot-art { width:100%; max-height:245px; }
+  .v63-card-tilt { width:min(70%,220px); }
+  .v63-effect-stage .avatar-renderer { --avatar-renderer-size:235px; }
+  .v63-avatar-stage .avatar-renderer { --avatar-renderer-size:245px; max-width:none; }
+  .v63-stage-status { gap:4px; }
+  .v63-stage-status span { padding:0 7px; font-size:11px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .v63-ship-art,.v63-robot-art,.v63-companion-link i,.v63-effect-aura::before,.v63-effect-aura i { animation:none; }
+  .v63-effect-aura i { opacity:.55; }
+}

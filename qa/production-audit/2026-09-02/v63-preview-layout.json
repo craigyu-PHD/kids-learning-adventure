@@ -1,0 +1,626 @@
+[
+  {
+    "viewport": "390x844",
+    "itemId": "outfit-legend",
+    "mode": "avatar",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 358,
+      "t": 206.765625,
+      "b": 636.765625,
+      "w": 326,
+      "h": 430
+    },
+    "visual": {
+      "l": 72.5,
+      "r": 317.5,
+      "t": 341.765625,
+      "b": 586.765625,
+      "w": 245,
+      "h": 245
+    }
+  },
+  {
+    "viewport": "390x844",
+    "itemId": "ship-legend",
+    "mode": "ship",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 358,
+      "t": 206.765625,
+      "b": 636.765625,
+      "w": 326,
+      "h": 430
+    },
+    "visual": {
+      "l": 45.0625,
+      "r": 344.9375,
+      "t": 333.3125,
+      "b": 558.21875,
+      "w": 299.875,
+      "h": 224.90625
+    }
+  },
+  {
+    "viewport": "390x844",
+    "itemId": "room-legend",
+    "mode": "world",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 358,
+      "t": 206.765625,
+      "b": 636.765625,
+      "w": 326,
+      "h": 430
+    },
+    "visual": {
+      "l": 52,
+      "r": 338,
+      "t": 304.765625,
+      "b": 586.765625,
+      "w": 286,
+      "h": 282
+    }
+  },
+  {
+    "viewport": "390x844",
+    "itemId": "robot-legend",
+    "mode": "robot",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 358,
+      "t": 206.765625,
+      "b": 636.765625,
+      "w": 326,
+      "h": 430
+    },
+    "visual": {
+      "l": 182.625,
+      "r": 353.984375,
+      "t": 456.25,
+      "b": 584.765625,
+      "w": 171.359375,
+      "h": 128.515625
+    }
+  },
+  {
+    "viewport": "390x844",
+    "itemId": "card-legend",
+    "mode": "card",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 358,
+      "t": 206.765625,
+      "b": 636.765625,
+      "w": 326,
+      "h": 430
+    },
+    "visual": {
+      "l": 102.24015808105469,
+      "r": 288.6583557128906,
+      "t": 316.0259094238281,
+      "b": 576.81982421875,
+      "w": 186.41819763183594,
+      "h": 260.7939147949219
+    }
+  },
+  {
+    "viewport": "390x844",
+    "itemId": "effect-legend",
+    "mode": "effect",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 358,
+      "t": 206.765625,
+      "b": 636.765625,
+      "w": 326,
+      "h": 430
+    },
+    "visual": {
+      "l": 77.5,
+      "r": 312.5,
+      "t": 349.765625,
+      "b": 584.765625,
+      "w": 235,
+      "h": 235
+    }
+  },
+  {
+    "viewport": "768x1024",
+    "itemId": "outfit-legend",
+    "mode": "avatar",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 736,
+      "t": 277.390625,
+      "b": 747.390625,
+      "w": 704,
+      "h": 470
+    },
+    "visual": {
+      "l": 219,
+      "r": 549,
+      "t": 375.390625,
+      "b": 705.390625,
+      "w": 330,
+      "h": 330
+    }
+  },
+  {
+    "viewport": "768x1024",
+    "itemId": "ship-legend",
+    "mode": "ship",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 736,
+      "t": 277.390625,
+      "b": 747.390625,
+      "w": 704,
+      "h": 470
+    },
+    "visual": {
+      "l": 104,
+      "r": 664,
+      "t": 396.390625,
+      "b": 676.390625,
+      "w": 560,
+      "h": 280
+    }
+  },
+  {
+    "viewport": "768x1024",
+    "itemId": "room-legend",
+    "mode": "world",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 736,
+      "t": 277.390625,
+      "b": 747.390625,
+      "w": 704,
+      "h": 470
+    },
+    "visual": {
+      "l": 52,
+      "r": 716,
+      "t": 375.390625,
+      "b": 697.390625,
+      "w": 664,
+      "h": 322
+    }
+  },
+  {
+    "viewport": "768x1024",
+    "itemId": "robot-legend",
+    "mode": "robot",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 736,
+      "t": 277.390625,
+      "b": 747.390625,
+      "w": 704,
+      "h": 470
+    },
+    "visual": {
+      "l": 387,
+      "r": 710,
+      "t": 453.140625,
+      "b": 695.390625,
+      "w": 323,
+      "h": 242.25
+    }
+  },
+  {
+    "viewport": "768x1024",
+    "itemId": "card-legend",
+    "mode": "card",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 736,
+      "t": 277.390625,
+      "b": 747.390625,
+      "w": 704,
+      "h": 470
+    },
+    "visual": {
+      "l": 259.61907958984375,
+      "r": 510.37353515625,
+      "t": 374.6230773925781,
+      "b": 726.07177734375,
+      "w": 250.75445556640625,
+      "h": 351.4486999511719
+    }
+  },
+  {
+    "viewport": "768x1024",
+    "itemId": "effect-legend",
+    "mode": "effect",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 32,
+      "r": 736,
+      "t": 277.390625,
+      "b": 747.390625,
+      "w": 704,
+      "h": 470
+    },
+    "visual": {
+      "l": 239,
+      "r": 529,
+      "t": 405.390625,
+      "b": 695.390625,
+      "w": 290,
+      "h": 290
+    }
+  },
+  {
+    "viewport": "1440x900",
+    "itemId": "outfit-legend",
+    "mode": "avatar",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 40,
+      "r": 470,
+      "t": 14,
+      "b": 574,
+      "w": 430,
+      "h": 560
+    },
+    "visual": {
+      "l": 106.796875,
+      "r": 403.1875,
+      "t": 194,
+      "b": 524,
+      "w": 296.390625,
+      "h": 330
+    }
+  },
+  {
+    "viewport": "1440x900",
+    "itemId": "ship-legend",
+    "mode": "ship",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 40,
+      "r": 470,
+      "t": 341.59375,
+      "b": 901.59375,
+      "w": 430,
+      "h": 560
+    },
+    "visual": {
+      "l": 71.921875,
+      "r": 438.078125,
+      "t": 511.28125,
+      "b": 785.890625,
+      "w": 366.15625,
+      "h": 274.609375
+    }
+  },
+  {
+    "viewport": "1440x900",
+    "itemId": "room-legend",
+    "mode": "world",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 40,
+      "r": 470,
+      "t": 341.59375,
+      "b": 901.59375,
+      "w": 430,
+      "h": 560
+    },
+    "visual": {
+      "l": 60,
+      "r": 450,
+      "t": 447.59375,
+      "b": 851.59375,
+      "w": 390,
+      "h": 404
+    }
+  },
+  {
+    "viewport": "1440x900",
+    "itemId": "robot-legend",
+    "mode": "robot",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 40,
+      "r": 470,
+      "t": 341.59375,
+      "b": 901.59375,
+      "w": 430,
+      "h": 560
+    },
+    "visual": {
+      "l": 258,
+      "r": 444,
+      "t": 710.09375,
+      "b": 849.59375,
+      "w": 186,
+      "h": 139.5
+    }
+  },
+  {
+    "viewport": "1440x900",
+    "itemId": "card-legend",
+    "mode": "card",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 40,
+      "r": 470,
+      "t": 341.59375,
+      "b": 901.59375,
+      "w": 430,
+      "h": 560
+    },
+    "visual": {
+      "l": 148.15325927734375,
+      "r": 363.1821594238281,
+      "t": 498.95989990234375,
+      "b": 799.9627685546875,
+      "w": 215.02890014648438,
+      "h": 301.00286865234375
+    }
+  },
+  {
+    "viewport": "1440x900",
+    "itemId": "effect-legend",
+    "mode": "effect",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 40,
+      "r": 470,
+      "t": 341.59375,
+      "b": 901.59375,
+      "w": 430,
+      "h": 560
+    },
+    "visual": {
+      "l": 110,
+      "r": 400,
+      "t": 559.59375,
+      "b": 849.59375,
+      "w": 290,
+      "h": 290
+    }
+  },
+  {
+    "viewport": "3440x1440",
+    "itemId": "outfit-legend",
+    "mode": "avatar",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 802,
+      "r": 1448.5,
+      "t": 14,
+      "b": 574,
+      "w": 646.5,
+      "h": 560
+    },
+    "visual": {
+      "l": 960.25,
+      "r": 1290.25,
+      "t": 194,
+      "b": 524,
+      "w": 330,
+      "h": 330
+    }
+  },
+  {
+    "viewport": "3440x1440",
+    "itemId": "ship-legend",
+    "mode": "ship",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 802,
+      "r": 1448.5,
+      "t": 479.59375,
+      "b": 1039.59375,
+      "w": 646.5,
+      "h": 560
+    },
+    "visual": {
+      "l": 845.25,
+      "r": 1405.25,
+      "t": 626.59375,
+      "b": 946.59375,
+      "w": 560,
+      "h": 320
+    }
+  },
+  {
+    "viewport": "3440x1440",
+    "itemId": "room-legend",
+    "mode": "world",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 802,
+      "r": 1448.5,
+      "t": 479.59375,
+      "b": 1039.59375,
+      "w": 646.5,
+      "h": 560
+    },
+    "visual": {
+      "l": 822,
+      "r": 1428.5,
+      "t": 585.59375,
+      "b": 989.59375,
+      "w": 606.5,
+      "h": 404
+    }
+  },
+  {
+    "viewport": "3440x1440",
+    "itemId": "robot-legend",
+    "mode": "robot",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 802,
+      "r": 1448.5,
+      "t": 479.59375,
+      "b": 1039.59375,
+      "w": 646.5,
+      "h": 560
+    },
+    "visual": {
+      "l": 1128.25,
+      "r": 1422.5,
+      "t": 766.90625,
+      "b": 987.59375,
+      "w": 294.25,
+      "h": 220.6875
+    }
+  },
+  {
+    "viewport": "3440x1440",
+    "itemId": "card-legend",
+    "mode": "card",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 802,
+      "r": 1448.5,
+      "t": 479.59375,
+      "b": 1039.59375,
+      "w": 646.5,
+      "h": 560
+    },
+    "visual": {
+      "l": 986.0330810546875,
+      "r": 1267.11474609375,
+      "t": 591.0925903320312,
+      "b": 985.094970703125,
+      "w": 281.0816650390625,
+      "h": 394.00238037109375
+    }
+  },
+  {
+    "viewport": "3440x1440",
+    "itemId": "effect-legend",
+    "mode": "effect",
+    "pass": true,
+    "modeOK": true,
+    "visualInsideStage": true,
+    "visualSizeOK": true,
+    "overflow": 0,
+    "stage": {
+      "l": 802,
+      "r": 1448.5,
+      "t": 479.59375,
+      "b": 1039.59375,
+      "w": 646.5,
+      "h": 560
+    },
+    "visual": {
+      "l": 980.25,
+      "r": 1270.25,
+      "t": 697.59375,
+      "b": 987.59375,
+      "w": 290,
+      "h": 290
+    }
+  }
+]

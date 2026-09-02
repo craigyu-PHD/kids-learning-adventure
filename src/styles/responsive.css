@@ -528,3 +528,50 @@
   .v6-preparation-stage .v4-teaching-timeline article > b { width:66px !important; min-height:84px !important; font-size:16px !important; }
   .v6-preparation-stage .v4-teaching-timeline article p,.v6-preparation-stage .v4-caregiver-callout p { font-size:16px !important; }
 }
+
+/* V6.2 wide-screen ownership. The legacy V4 rule fixed the dashboard to 1508px
+   and margin-left:14px above 1560px, which made 1920/2560px displays look
+   misaligned. Large screens now remain centred and fluid without stretching
+   text lines indefinitely. */
+@media (min-width: 1480px) {
+  .v4-dashboard-grid {
+    width:min(1880px,calc(100% - clamp(32px,4vw,96px))) !important;
+    margin-inline:auto !important;
+    grid-template-columns:minmax(250px,.78fr) minmax(720px,2.45fr) minmax(330px,1fr) !important;
+    gap:clamp(14px,1.1vw,24px) !important;
+  }
+  .v4-left-column,.v4-center-column,.v4-right-column {
+    width:100% !important;
+    min-width:0 !important;
+    max-width:none !important;
+    box-sizing:border-box !important;
+  }
+  .v4-right-column { max-height:none !important; overflow:visible !important; }
+  .v4-secondary-main {
+    width:min(1880px,calc(100% - clamp(32px,4vw,96px))) !important;
+    margin-inline:auto !important;
+  }
+  .v6-shop-studio {
+    grid-template-columns:minmax(420px,.92fr) minmax(0,1.65fr) !important;
+    gap:clamp(20px,1.4vw,30px) !important;
+  }
+  .v6-shop-catalog .v4-shop-grid {
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr)) !important;
+  }
+}
+
+@media (min-width: 2200px) {
+  .v4-dashboard-grid,.v4-secondary-main { max-width:1960px; }
+  .v4-dashboard-grid { grid-template-columns:minmax(280px,330px) minmax(0,1fr) minmax(350px,430px) !important; }
+}
+
+/* Child-first Shop ordering: character preview always precedes controls and
+   catalog on compact screens. Grid tracks shrink instead of overlapping. */
+@media (max-width: 800px) {
+  .v6-shop-preview-column { order:0; }
+  .v6-shop-catalog { order:1; min-width:0; }
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width: 420px) {
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:8px !important; }
+}

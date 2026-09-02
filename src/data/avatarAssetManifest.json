@@ -1,25 +1,1009 @@
 {
-  "version": 1,
+  "version": 3,
   "contract": {
     "canvasWidth": 1024,
     "canvasHeight": 1536,
     "transparent": true,
     "characterCenterX": 512,
-    "groundBaselineY": 1488
+    "groundBaselineY": 1488,
+    "runtimeRule": "all wearable alignment is baked into fixed-canvas assets; React/CSS must not reposition body gear"
   },
   "skins": [
-    {"id":"brother:default","skinId":"default","avatarId":"brother","path":"public/assets/v5/characters/brother/wardrobe/base-body.webp"},
-    {"id":"brother:racer","skinId":"outfit-racer","avatarId":"brother","path":"public/assets/v5/characters/brother/wardrobe/looks/outfit-racer-v1.webp"},
-    {"id":"younger:default","skinId":"default","avatarId":"younger","path":"public/assets/v5/characters/younger/wardrobe/base-body.webp"},
-    {"id":"younger:racer","skinId":"outfit-racer","avatarId":"younger","path":"public/assets/v5/characters/younger/wardrobe/looks/outfit-racer-v1.webp"},
-    {"id":"sister:default","skinId":"default","avatarId":"sister","path":"public/assets/v5/characters/sister/wardrobe/base-body.webp"},
-    {"id":"sister:racer","skinId":"outfit-racer","avatarId":"sister","path":"public/assets/v5/characters/sister/wardrobe/looks/outfit-racer-v1.webp"},
-    {"id":"younger-sister:default","skinId":"default","avatarId":"younger-sister","path":"public/assets/v5/characters/younger-sister/wardrobe/base-body.webp"},
-    {"id":"younger-sister:racer","skinId":"outfit-racer","avatarId":"younger-sister","path":"public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-racer-v1.webp"}
+    {
+      "id": "brother:default",
+      "skinId": "default",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/base-body.webp"
+    },
+    {
+      "id": "younger:default",
+      "skinId": "default",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/base-body.webp"
+    },
+    {
+      "id": "sister:default",
+      "skinId": "default",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/base-body.webp"
+    },
+    {
+      "id": "younger-sister:default",
+      "skinId": "default",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/base-body.webp"
+    },
+    {
+      "id": "brother:outfit-cadet",
+      "skinId": "outfit-cadet",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/outfit-cadet-v1.webp"
+    },
+    {
+      "id": "brother:outfit-racer",
+      "skinId": "outfit-racer",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/outfit-racer-v1.webp"
+    },
+    {
+      "id": "brother:outfit-mecha",
+      "skinId": "outfit-mecha",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/outfit-mecha-v1.webp"
+    },
+    {
+      "id": "brother:outfit-ocean",
+      "skinId": "outfit-ocean",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/outfit-ocean-v1.webp"
+    },
+    {
+      "id": "brother:outfit-mage",
+      "skinId": "outfit-mage",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/outfit-mage-v1.webp"
+    },
+    {
+      "id": "brother:outfit-legend",
+      "skinId": "outfit-legend",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/outfit-legend-v1.webp"
+    },
+    {
+      "id": "brother:sister-bloom-outfit",
+      "skinId": "sister-bloom-outfit",
+      "avatarId": "brother",
+      "path": "public/assets/v5/characters/brother/wardrobe/looks/sister-bloom-outfit-v1.webp"
+    },
+    {
+      "id": "younger:outfit-cadet",
+      "skinId": "outfit-cadet",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/outfit-cadet-v1.webp"
+    },
+    {
+      "id": "younger:outfit-racer",
+      "skinId": "outfit-racer",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/outfit-racer-v1.webp"
+    },
+    {
+      "id": "younger:outfit-mecha",
+      "skinId": "outfit-mecha",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/outfit-mecha-v1.webp"
+    },
+    {
+      "id": "younger:outfit-ocean",
+      "skinId": "outfit-ocean",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/outfit-ocean-v1.webp"
+    },
+    {
+      "id": "younger:outfit-mage",
+      "skinId": "outfit-mage",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/outfit-mage-v1.webp"
+    },
+    {
+      "id": "younger:outfit-legend",
+      "skinId": "outfit-legend",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/outfit-legend-v1.webp"
+    },
+    {
+      "id": "younger:sister-bloom-outfit",
+      "skinId": "sister-bloom-outfit",
+      "avatarId": "younger",
+      "path": "public/assets/v5/characters/younger/wardrobe/looks/sister-bloom-outfit-v1.webp"
+    },
+    {
+      "id": "sister:outfit-cadet",
+      "skinId": "outfit-cadet",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/outfit-cadet-v1.webp"
+    },
+    {
+      "id": "sister:outfit-racer",
+      "skinId": "outfit-racer",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/outfit-racer-v1.webp"
+    },
+    {
+      "id": "sister:outfit-mecha",
+      "skinId": "outfit-mecha",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/outfit-mecha-v1.webp"
+    },
+    {
+      "id": "sister:outfit-ocean",
+      "skinId": "outfit-ocean",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/outfit-ocean-v1.webp"
+    },
+    {
+      "id": "sister:outfit-mage",
+      "skinId": "outfit-mage",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/outfit-mage-v1.webp"
+    },
+    {
+      "id": "sister:outfit-legend",
+      "skinId": "outfit-legend",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/outfit-legend-v1.webp"
+    },
+    {
+      "id": "sister:sister-bloom-outfit",
+      "skinId": "sister-bloom-outfit",
+      "avatarId": "sister",
+      "path": "public/assets/v5/characters/sister/wardrobe/looks/sister-bloom-outfit-v1.webp"
+    },
+    {
+      "id": "younger-sister:outfit-cadet",
+      "skinId": "outfit-cadet",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-cadet-v1.webp"
+    },
+    {
+      "id": "younger-sister:outfit-racer",
+      "skinId": "outfit-racer",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-racer-v1.webp"
+    },
+    {
+      "id": "younger-sister:outfit-mecha",
+      "skinId": "outfit-mecha",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-mecha-v1.webp"
+    },
+    {
+      "id": "younger-sister:outfit-ocean",
+      "skinId": "outfit-ocean",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-ocean-v1.webp"
+    },
+    {
+      "id": "younger-sister:outfit-mage",
+      "skinId": "outfit-mage",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-mage-v1.webp"
+    },
+    {
+      "id": "younger-sister:outfit-legend",
+      "skinId": "outfit-legend",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/outfit-legend-v1.webp"
+    },
+    {
+      "id": "younger-sister:sister-bloom-outfit",
+      "skinId": "sister-bloom-outfit",
+      "avatarId": "younger-sister",
+      "path": "public/assets/v5/characters/younger-sister/wardrobe/looks/sister-bloom-outfit-v1.webp"
+    }
   ],
   "accessories": [
-    {"id":"effect-stars","slot":"effect","renderer":"css-effect","anchor":{"x":0.5,"y":0.5,"scale":1}},
-    {"id":"effect-bubbles","slot":"effect","renderer":"css-effect","anchor":{"x":0.5,"y":0.5,"scale":1}},
-    {"id":"effect-legend","slot":"effect","renderer":"css-effect","anchor":{"x":0.5,"y":0.5,"scale":1}}
+    {
+      "id": "hair-comet",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hair-comet.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hair-comet.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hair-comet.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hair-comet.webp"
+      }
+    },
+    {
+      "id": "hair-wave",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hair-wave.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hair-wave.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hair-wave.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hair-wave.webp"
+      }
+    },
+    {
+      "id": "hair-spike",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hair-spike.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hair-spike.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hair-spike.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hair-spike.webp"
+      }
+    },
+    {
+      "id": "hair-cloud",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hair-cloud.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hair-cloud.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hair-cloud.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hair-cloud.webp"
+      }
+    },
+    {
+      "id": "hair-nebula",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hair-nebula.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hair-nebula.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hair-nebula.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hair-nebula.webp"
+      }
+    },
+    {
+      "id": "hair-legend",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hair-legend.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hair-legend.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hair-legend.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hair-legend.webp"
+      }
+    },
+    {
+      "id": "sister-starlight-clip",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/sister-starlight-clip.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/sister-starlight-clip.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/sister-starlight-clip.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/sister-starlight-clip.webp"
+      }
+    },
+    {
+      "id": "sister-mint-bow",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/sister-mint-bow.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/sister-mint-bow.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/sister-mint-bow.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/sister-mint-bow.webp"
+      }
+    },
+    {
+      "id": "starter-sun-cap",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/starter-sun-cap.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/starter-sun-cap.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/starter-sun-cap.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/starter-sun-cap.webp"
+      }
+    },
+    {
+      "id": "sunny-explorer-hat",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/sunny-explorer-hat.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/sunny-explorer-hat.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/sunny-explorer-hat.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/sunny-explorer-hat.webp"
+      }
+    },
+    {
+      "id": "hat-rocket",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hat-rocket.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hat-rocket.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hat-rocket.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hat-rocket.webp"
+      }
+    },
+    {
+      "id": "hat-ocean",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hat-ocean.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hat-ocean.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hat-ocean.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hat-ocean.webp"
+      }
+    },
+    {
+      "id": "hat-mage",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hat-mage.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hat-mage.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hat-mage.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hat-mage.webp"
+      }
+    },
+    {
+      "id": "hat-crown",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/hat-crown.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/hat-crown.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/hat-crown.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/hat-crown.webp"
+      }
+    },
+    {
+      "id": "sister-lavender-hat",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/sister-lavender-hat.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/sister-lavender-hat.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/sister-lavender-hat.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/sister-lavender-hat.webp"
+      }
+    },
+    {
+      "id": "starter-sky-glasses",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/starter-sky-glasses.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/starter-sky-glasses.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/starter-sky-glasses.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/starter-sky-glasses.webp"
+      }
+    },
+    {
+      "id": "sky-view-glasses",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/sky-view-glasses.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/sky-view-glasses.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/sky-view-glasses.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/sky-view-glasses.webp"
+      }
+    },
+    {
+      "id": "glasses-racer",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/glasses-racer.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/glasses-racer.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/glasses-racer.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/glasses-racer.webp"
+      }
+    },
+    {
+      "id": "glasses-star",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/glasses-star.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/glasses-star.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/glasses-star.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/glasses-star.webp"
+      }
+    },
+    {
+      "id": "glasses-holo",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/glasses-holo.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/glasses-holo.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/glasses-holo.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/glasses-holo.webp"
+      }
+    },
+    {
+      "id": "glasses-legend",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/glasses-legend.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/glasses-legend.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/glasses-legend.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/glasses-legend.webp"
+      }
+    },
+    {
+      "id": "sister-heart-glasses",
+      "slot": "face",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/face/sister-heart-glasses.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/face/sister-heart-glasses.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/face/sister-heart-glasses.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/face/sister-heart-glasses.webp"
+      }
+    },
+    {
+      "id": "starter-buddy-headphones",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/starter-buddy-headphones.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/starter-buddy-headphones.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/starter-buddy-headphones.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/starter-buddy-headphones.webp"
+      }
+    },
+    {
+      "id": "story-headphones",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/story-headphones.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/story-headphones.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/story-headphones.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/story-headphones.webp"
+      }
+    },
+    {
+      "id": "phones-sky",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/phones-sky.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/phones-sky.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/phones-sky.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/phones-sky.webp"
+      }
+    },
+    {
+      "id": "phones-racer",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/phones-racer.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/phones-racer.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/phones-racer.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/phones-racer.webp"
+      }
+    },
+    {
+      "id": "phones-ai",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/phones-ai.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/phones-ai.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/phones-ai.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/phones-ai.webp"
+      }
+    },
+    {
+      "id": "phones-legend",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/phones-legend.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/phones-legend.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/phones-legend.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/phones-legend.webp"
+      }
+    },
+    {
+      "id": "sister-cat-headphones",
+      "slot": "head",
+      "renderer": "aligned-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "variants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/head/sister-cat-headphones.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/head/sister-cat-headphones.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/head/sister-cat-headphones.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/head/sister-cat-headphones.webp"
+      }
+    },
+    {
+      "id": "trail-backpack",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/trail-backpack-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/trail-backpack-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/trail-backpack-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/trail-backpack-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/trail-backpack-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/trail-backpack-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/trail-backpack-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/trail-backpack-front.webp"
+      }
+    },
+    {
+      "id": "pack-rocket",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-rocket-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-rocket-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-rocket-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-rocket-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-rocket-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-rocket-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-rocket-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-rocket-front.webp"
+      }
+    },
+    {
+      "id": "pack-treasure",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-treasure-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-treasure-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-treasure-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-treasure-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-treasure-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-treasure-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-treasure-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-treasure-front.webp"
+      }
+    },
+    {
+      "id": "pack-ocean",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-ocean-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-ocean-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-ocean-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-ocean-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-ocean-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-ocean-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-ocean-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-ocean-front.webp"
+      }
+    },
+    {
+      "id": "pack-legend",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-legend-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-legend-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-legend-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-legend-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/pack-legend-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/pack-legend-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/pack-legend-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/pack-legend-front.webp"
+      }
+    },
+    {
+      "id": "sister-comet-pack",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/sister-comet-pack-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/sister-comet-pack-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/sister-comet-pack-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/sister-comet-pack-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/sister-comet-pack-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/sister-comet-pack-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/sister-comet-pack-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/sister-comet-pack-front.webp"
+      }
+    },
+    {
+      "id": "hero-cape",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/hero-cape-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/hero-cape-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/hero-cape-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/hero-cape-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/hero-cape-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/hero-cape-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/hero-cape-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/hero-cape-front.webp"
+      }
+    },
+    {
+      "id": "cape-sky",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-sky-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-sky-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-sky-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-sky-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-sky-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-sky-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-sky-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-sky-front.webp"
+      }
+    },
+    {
+      "id": "cape-nebula",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-nebula-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-nebula-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-nebula-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-nebula-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-nebula-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-nebula-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-nebula-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-nebula-front.webp"
+      }
+    },
+    {
+      "id": "cape-ocean",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-ocean-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-ocean-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-ocean-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-ocean-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-ocean-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-ocean-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-ocean-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-ocean-front.webp"
+      }
+    },
+    {
+      "id": "cape-legend",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-legend-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-legend-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-legend-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-legend-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/cape-legend-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/cape-legend-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/cape-legend-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/cape-legend-front.webp"
+      }
+    },
+    {
+      "id": "sister-galaxy-cape",
+      "slot": "back",
+      "renderer": "split-overlay",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ],
+      "backVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/sister-galaxy-cape-back.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/sister-galaxy-cape-back.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/sister-galaxy-cape-back.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/sister-galaxy-cape-back.webp"
+      },
+      "frontVariants": {
+        "brother": "public/assets/v5/characters/brother/wardrobe/accessories/back/sister-galaxy-cape-front.webp",
+        "younger": "public/assets/v5/characters/younger/wardrobe/accessories/back/sister-galaxy-cape-front.webp",
+        "sister": "public/assets/v5/characters/sister/wardrobe/accessories/back/sister-galaxy-cape-front.webp",
+        "younger-sister": "public/assets/v5/characters/younger-sister/wardrobe/accessories/back/sister-galaxy-cape-front.webp"
+      }
+    },
+    {
+      "id": "effect-stars",
+      "slot": "effect",
+      "renderer": "standard-effect",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ]
+    },
+    {
+      "id": "effect-bubbles",
+      "slot": "effect",
+      "renderer": "standard-effect",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ]
+    },
+    {
+      "id": "effect-legend",
+      "slot": "effect",
+      "renderer": "standard-effect",
+      "supportedAvatars": [
+        "brother",
+        "younger",
+        "sister",
+        "younger-sister"
+      ]
+    }
   ]
 }

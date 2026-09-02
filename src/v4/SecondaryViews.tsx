@@ -31,7 +31,7 @@ const shopCategories = [
   { id: 'character', label: '角色裝備', slots: ['hairstyle', 'outfit', 'hat', 'glasses', 'backpack', 'cape', 'headphones'] },
   { id: 'spaceship', label: '飛船', slots: ['spaceship'] },
   { id: 'room', label: '基地', slots: ['room'] },
-  { id: 'robot', label: 'Robot', slots: ['robot'] },
+  { id: 'robot', label: '機器夥伴', slots: ['robot'] },
   { id: 'card', label: '卡面', slots: ['card'] },
   { id: 'effect', label: '特效', slots: ['effect'] },
 ] as const;
@@ -150,6 +150,7 @@ export function ShopPage({ settings, progress, trustedDate, cloudStatus, onNavig
   parentPreviewUnlocked?:boolean;
 }) {
   const [previewByChild, setPreviewByChild] = useState<Record<string, Record<string, string>>>({});
+  const [previewFocusByChild, setPreviewFocusByChild] = useState<Record<string, string>>({});
   const [pendingItems, setPendingItems] = useState<Record<string, boolean>>({});
   const [feedback, setFeedback] = useState<{ childId:string; itemId:string; kind:'purchase'|'equip'; message:string } | null>(null);
   const learners = settings.children.filter((learner)=>!learner.disabled);
@@ -170,11 +171,15 @@ export function ShopPage({ settings, progress, trustedDate, cloudStatus, onNavig
     return item&&shopItemCanRender(item, child.avatar)?[item]:[];
   });
   const previewIds=new Set(previewItems.map((item)=>item.id));
+  const focusPreviewItemId=previewFocusByChild[child.id] && previewIds.has(previewFocusByChild[child.id]) ? previewFocusByChild[child.id] : previewItems.at(-1)?.id;
   const avatarCosmetics=Array.from(new Set([
     ...(p.equippedCosmetics??[]).filter((id)=>!previewItems.some((item)=>shopItemById.get(id)?.equipmentSlot===item.equipmentSlot)),
     ...previewItems.map((item)=>item.id),
   ]));
-  const visibleItems = shopItems.filter((item)=>activeCategory.slots.includes(item.legacySlot as never));
+  const categoryItems = shopItems.filter((item)=>activeCategory.slots.includes(item.legacySlot as never));
+  const visibleItems = categoryItems.filter((item)=>shopItemCanRender(item, child.avatar));
+  const comingSoonItems = categoryItems.filter((item)=>!shopItemCanRender(item, child.avatar)).slice(0,4);
+  const explorableCount = shopItems.filter((item)=>shopItemCanRender(item, child.avatar)).length;
 
   const runAction = async (itemId:string, action:'purchase'|'equip') => {
     setPendingItems((current)=>({...current,[itemId]:true}));
@@ -182,7 +187,9 @@ export function ShopPage({ settings, progress, trustedDate, cloudStatus, onNavig
       const result = action==='purchase' ? await onUnlock(child.id,itemId) : await onToggle(child.id,itemId);
       const item=shopItemById.get(itemId);
       if (result.ok) {
-        setFeedback({ childId:child.id, itemId, kind:action, message:action==='purchase' ? `${item?.name??'商品'}已加入 Inventory；是否現在裝備？` : result.equipped ? `${item?.name??'裝備'}已套用到角色。` : `${item?.name??'裝備'}已卸下。` });
+        const collected = item?.previewMode==='ship' ? '新飛船加入收藏！' : item?.previewMode==='robot' ? '新夥伴加入隊伍！' : item?.previewMode==='card' ? '新卡片收藏成功！' : item?.previewMode==='effect' ? '新特效解鎖！' : item?.cost===0 ? '免費領取成功！' : `${item?.name??'寶物'}已加入收藏！`;
+        const equippedCopy = item?.previewMode==='ship' ? '飛船已設定完成！' : item?.previewMode==='robot' ? '夥伴已加入冒險！' : item?.previewMode==='card' ? '收藏卡已套用！' : item?.previewMode==='effect' ? '特效已開啟！' : `${item?.name??'裝備'}穿上囉！`;
+        setFeedback({ childId:child.id, itemId, kind:action, message:action==='purchase' ? `${collected} 要不要現在使用？` : result.equipped ? equippedCopy : `${item?.name??'裝備'}先收回收藏。` });
       } else {
         setFeedback({ childId:child.id, itemId, kind:action, message:result.reason??'操作未完成' });
       }
@@ -192,19 +199,19 @@ export function ShopPage({ settings, progress, trustedDate, cloudStatus, onNavig
   };
 
   return <SecondaryPageShell settings={settings} progress={progress} active="shop" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={onNavigate} onParentArea={onParentArea} activeUser={activeUser} parentPreviewUnlocked={parentPreviewUnlocked}>
-    <section className="v4-page-heading"><div><h1>寶物商店</h1><p>Browse → Try-on → Purchase → Equip。購買與裝備是兩個獨立操作；Coins 僅來自學習完成紀錄。</p></div><div className="v4-page-kpi gold"><GameIcon tone="gold" size="lg"><ShoppingBag/></GameIcon><strong>{shopItems.length}</strong><span>冒險商品</span></div></section>
+    <section className="v4-page-heading"><div><h1>寶物商店</h1><p>先挑一件喜歡的寶物試穿看看；喜歡再收藏，收藏後隨時都能穿上。</p></div><div className="v4-page-kpi gold"><GameIcon tone="gold" size="lg"><ShoppingBag/></GameIcon><strong>{explorableCount}</strong><span>件可探索</span></div></section>
     <div className="v6-shop-tabs" role="tablist" aria-label="選擇學習者">{learners.map((learner)=><button key={learner.id} type="button" role="tab" aria-selected={learner.id===child.id} className={learner.id===child.id?'active':''} onClick={()=>{setActiveLearnerId(learner.id);setFeedback(null);}}><AvatarHero avatarId={learner.avatar} xp={playerResources(progress[learner.id]).xp} equippedCosmetics={progress[learner.id]?.equippedCosmetics} size={42}/><span>{learner.name}</span></button>)}</div>
     <section className="v4-shop-card v6-shop-studio">
       <div className="v6-shop-preview-column">
-        <TreasureShowcase avatarId={child.avatar} xp={reward.xp} equippedCosmetics={avatarCosmetics} learnerName={child.name} previewNames={previewItems.map((item)=>item.name)}/>
-        {previewItems.length>0&&<div className="v6-preview-integrity" role="status">此預覽只使用完整角色 Skin、標準化 Effect 或世界物件；未符合 Avatar Asset Contract 的舊素材不會硬貼在人物上。</div>}
-        {previewItems.length>0&&<button type="button" className="v6-clear-preview" onClick={()=>setPreviewByChild((current)=>({...current,[child.id]:{}}))}>清除全部試穿（{previewItems.length}）</button>}
-        {feedback?.childId===child.id&&<div className={`v6-shop-feedback ${feedback.kind}`} role="status"><strong>{feedback.kind==='purchase'?'購買完成':'裝備更新'}</strong><span>{feedback.message}</span><div>{feedback.kind==='purchase'&&owned.has(feedback.itemId)&&!equipped.has(feedback.itemId)&&shopItemAvailability(shopItemById.get(feedback.itemId)!,child.avatar)==='available'&&<button type="button" disabled={pendingItems[feedback.itemId]} onClick={()=>void runAction(feedback.itemId,'equip')}>Equip Now</button>}<button type="button" className="secondary" onClick={()=>setFeedback(null)}>繼續瀏覽</button></div></div>}
+        <TreasureShowcase avatarId={child.avatar} xp={reward.xp} equippedCosmetics={avatarCosmetics} learnerName={child.name} previewNames={previewItems.map((item)=>item.name)} focusItemId={focusPreviewItemId}/>
+        {previewItems.length>0&&<div className="v6-preview-integrity" role="status">正在幫 {child.name} 試穿新寶物，換一件就會立刻看到新造型。</div>}
+        {previewItems.length>0&&<button type="button" className="v6-clear-preview" onClick={()=>{setPreviewByChild((current)=>({...current,[child.id]:{}}));setPreviewFocusByChild((current)=>({...current,[child.id]:''}));}}>清除全部試穿（{previewItems.length}）</button>}
+        {feedback?.childId===child.id&&<div className={`v6-shop-feedback ${feedback.kind}`} role="status"><strong>{feedback.kind==='purchase'?'收藏成功！':'裝備更新'}</strong><span>{feedback.message}</span><div>{feedback.kind==='purchase'&&owned.has(feedback.itemId)&&!equipped.has(feedback.itemId)&&shopItemAvailability(shopItemById.get(feedback.itemId)!,child.avatar)==='available'&&<button type="button" disabled={pendingItems[feedback.itemId]} onClick={()=>void runAction(feedback.itemId,'equip')}>{shopItemById.get(feedback.itemId)?.previewMode==='avatar'?'立即穿上':'立即使用'}</button>}<button type="button" className="secondary" onClick={()=>setFeedback(null)}>繼續逛逛</button></div></div>}
         <div className="v6-shop-wallet-row"><div><strong>Lv.{level}</strong><span>{levelTitle(level)}</span></div><div className="v4-wallet"><Coins/><strong>{reward.coins}</strong><span>Coins</span></div></div>
       </div>
       <div className="v6-shop-catalog">
         <div className="v6-shop-category-tabs" role="tablist" aria-label="商品分類">{shopCategories.map((category)=><button type="button" role="tab" aria-selected={category.id===activeCategory.id} className={category.id===activeCategory.id?'active':''} key={category.id} onClick={()=>setActiveCategoryId(category.id)}>{category.label}</button>)}</div>
-        <div className="v6-shop-category-heading"><span>{activeCategory.label}</span><strong>{visibleItems.length} 件商品</strong></div>
+        <div className="v6-shop-category-heading"><span>{activeCategory.label}</span><strong>{visibleItems.length} 件可以試試看</strong></div>
         <div className="v4-shop-grid">{visibleItems.map((item)=>{
           const legacy=cosmeticById.get(item.id);
           if (!legacy) return null;
@@ -215,21 +222,29 @@ export function ShopPage({ settings, progress, trustedDate, cloudStatus, onNavig
           const canBuy=availability==='available'&&reward.coins>=item.cost&&level>=item.unlockLevel&&!pending;
           const canPreview=shopItemCanRender(item,child.avatar)&&!pending;
           const previewing=previewIds.has(item.id);
-          const status=using?'Equipped':has?'Owned':availability==='incompatible'?'Incompatible':availability==='unavailable'?'Unavailable':level<item.unlockLevel?`Lv.${item.unlockLevel} Required`:reward.coins<item.cost?'Insufficient Coins':'Not Owned';
-          return <article key={item.id} className={`${has?'owned':''} ${using?'equipped':''} ${previewing?'previewing':''} ${availability} rarity-${legacy.rarity??'common'}`}>
+          const coinGap=Math.max(0,item.cost-reward.coins);
+          const status=using?'穿戴中':has?'已收藏':level<item.unlockLevel?`Lv.${item.unlockLevel} 解鎖`:coinGap>0?`金幣還差 ${coinGap}`:item.cost===0?'可以免費領取':'可以收藏';
+          return <article key={item.id} data-item-id={item.id} data-preview-mode={item.previewMode} className={`${has?'owned':''} ${using?'equipped':''} ${previewing?'previewing':''} ${availability} rarity-${legacy.rarity??'common'}`}>
             <div className={`v4-item-art slot-${legacy.slot}`}><GameImage src={cosmeticAssetPath(legacy)} alt={item.name}/></div>
             <span>{legacy.rarity??'common'}</span>
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <small>Lv.{item.unlockLevel} · {shopSlotLabels[legacy.slot] ?? legacy.slot}</small>
-            <strong className={`v6-shop-item-status ${status.toLowerCase().replaceAll(' ','-')}`}>{status}</strong>
+            <strong className={`v6-shop-item-status ${using?'equipped':has?'owned':coinGap>0?'insufficient-coins':'available'}`}>{status}</strong>
             <small className="v6-shop-contract">{shopItemStatusLabel(item,child.avatar)}</small>
-            <button className="v6-preview-button" disabled={!canPreview} onClick={()=>setPreviewByChild((current)=>{const slots=current[child.id]??{};return {...current,[child.id]:previewing?Object.fromEntries(Object.entries(slots).filter(([slot])=>slot!==item.equipmentSlot)):{...slots,[item.equipmentSlot]:item.id}};})}>{availability!=='available'?'預覽不可用':previewing?'取消試穿':'Live Try-on'}</button>
+            <button className="v6-preview-button" disabled={!canPreview} onClick={()=>{setPreviewByChild((current)=>{const slots=current[child.id]??{};return {...current,[child.id]:previewing?Object.fromEntries(Object.entries(slots).filter(([slot])=>slot!==item.equipmentSlot)):{...slots,[item.equipmentSlot]:item.id}};});setPreviewFocusByChild((current)=>({...current,[child.id]:previewing?'':item.id}));}}>{previewing?'取消試穿':'試穿看看'}</button>
             {has
-              ? <button disabled={pending||(!using&&availability!=='available')} onClick={()=>void runAction(item.id,'equip')}>{pending?'處理中…':using?'卸下':'立即裝備'}</button>
-              : <button disabled={!canBuy} onClick={()=>void runAction(item.id,'purchase')}><Coins/>{item.cost} {pending?'購買中…':availability==='unavailable'?'Unavailable':availability==='incompatible'?'Incompatible':level<item.unlockLevel?'尚未解鎖':reward.coins<item.cost?'Coins 不足':'購買'}</button>}
+              ? <button disabled={pending} onClick={()=>void runAction(item.id,'equip')}>{pending?'處理中…':using?'先收起來':item.previewMode==='avatar'?'立即穿上':'立即使用'}</button>
+              : level<item.unlockLevel
+                ? <button disabled>Lv.{item.unlockLevel} 解鎖</button>
+                : item.cost===0
+                  ? <button disabled={!canBuy} onClick={()=>void runAction(item.id,'purchase')}>{pending?'領取中…':'免費領取'}</button>
+                  : coinGap>0
+                    ? <button disabled>金幣還差 {coinGap}</button>
+                    : <button disabled={!canBuy} onClick={()=>void runAction(item.id,'purchase')}><Coins/>用 {item.cost} 金幣收藏</button>}
           </article>;
         })}</div>
+        {comingSoonItems.length>0&&<section className="v62-coming-soon" aria-label="新裝備準備中"><div><span>新裝備準備中</span><strong>下一批冒險寶物</strong><p>這些寶物還在調整穿戴效果，準備好才會放進正式收藏區。</p></div><div>{comingSoonItems.map((item)=>{const legacy=cosmeticById.get(item.id);if(!legacy)return null;return <article key={item.id}><GameImage src={cosmeticAssetPath(legacy)} alt={item.name}/><div><strong>{item.name}</strong><span>{shopSlotLabels[legacy.slot]??legacy.slot}</span></div></article>;})}</div></section>}
       </div>
     </section>
   </SecondaryPageShell>;

@@ -133,7 +133,7 @@ sessionStorage.setItem('star-learning-v40:{FAMILY_ID}:active-user','user-father'
         wait_http(f'http://127.0.0.1:{port}/json/version'); deadline=time.time()+20; page=None
         while time.time()<deadline:
             targets=json.load(urllib.request.urlopen(f'http://127.0.0.1:{port}/json'))
-            page=next((x for x in targets if x.get('type')=='page' and x.get('url')==URL),None)
+            page=next((x for x in targets if x.get('type')=='page' and str(x.get('url','')).startswith(URL.rstrip('/'))),None)
             if page:break
             time.sleep(.2)
         if not page: raise RuntimeError('app target not found')

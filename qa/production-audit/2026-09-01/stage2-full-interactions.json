@@ -21,6 +21,10 @@
         "pass": true
       },
       {
+        "id": "first-run-child-not-blocked",
+        "pass": true
+      },
+      {
         "id": "parent-gate-local-safe-cancel",
         "pass": true
       },
@@ -37,13 +41,36 @@
         "pass": true
       },
       {
-        "id": "legacy-wearable-unavailable",
+        "id": "legacy-wearable-rescued-into-normal-catalog",
         "pass": true
       },
       {
-        "id": "shop-live-tryon",
+        "id": "child-copy-no-engineering-language",
+        "pass": true
+      },
+      {
+        "id": "aligned-overlay-visual",
         "pass": true,
-        "detail": "此預覽只使用完整角色 Skin、標準化 Effect 或世界物件；未符合 Avatar Asset Contract 的舊素材不會硬貼在人物上。",
+        "rendered": "starter-sun-cap",
+        "src": "./assets/v5/characters/brother/wardrobe/accessories/head/starter-sun-cap.webp"
+      },
+      {
+        "id": "free-starter-purchase",
+        "pass": true
+      },
+      {
+        "id": "starter-equip",
+        "pass": true
+      },
+      {
+        "id": "split-overlay-visual",
+        "pass": true,
+        "back": 1,
+        "front": 1
+      },
+      {
+        "id": "full-skin-tryon",
+        "pass": true,
         "skin": "outfit-racer"
       },
       {
@@ -123,24 +150,40 @@
       {
         "type": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
       }
     ],
     "pageErrors": [],
     "requestFailed": [
       {
-        "url": "http://127.0.0.1:4173/api/server-time",
+        "url": "http://127.0.0.1:4174/api/server-time",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4173/api/time",
+        "url": "http://127.0.0.1:4174/api/time",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4173/api/server-time",
+        "url": "http://127.0.0.1:4174/api/server-time",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4173/api/time",
+        "url": "http://127.0.0.1:4174/api/time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/server-time",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:4174/api/time",
         "failure": "net::ERR_ABORTED"
       },
       {
@@ -152,15 +195,11 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4173/api/server-time",
+        "url": "http://127.0.0.1:4174/api/server-time",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4173/api/time",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.3upHZJNEn00.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywH4zizjgpEZ3eqQqJ755kmT1FmaHg/m=root,base",
+        "url": "http://127.0.0.1:4174/api/time",
         "failure": "net::ERR_ABORTED"
       },
       {
@@ -168,7 +207,27 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.3upHZJNEn00.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywH4zizjgpEZ3eqQqJ755kmT1FmaHg/m=root,base",
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Ry2NDMjTKMQ.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHcixhGj0woJ9UOF4uPmRbk7reXiw/m=root,base",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.slzE8OL8JD0.L.W.O/am=AAAAQA/d=1/br=1/rs=AGKMywHBCjpb4CsS68tLfVquqzzrQLbWDA/m=root,base",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.slzE8OL8JD0.L.W.O/am=AAAAQA/d=1/br=1/rs=AGKMywHBCjpb4CsS68tLfVquqzzrQLbWDA/m=root,base",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Ry2NDMjTKMQ.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHcixhGj0woJ9UOF4uPmRbk7reXiw/m=root,base",
         "failure": "net::ERR_ABORTED"
       },
       {
@@ -176,54 +235,58 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.3upHZJNEn00.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywH4zizjgpEZ3eqQqJ755kmT1FmaHg/m=root,base",
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed.vflset/zh_TW/base.js",
+        "url": "http://127.0.0.1:4174/api/server-time",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "http://127.0.0.1:4173/api/server-time",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://127.0.0.1:4173/api/time",
+        "url": "http://127.0.0.1:4174/api/time",
         "failure": "net::ERR_ABORTED"
       }
     ],
     "badResponses": [
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
       }
     ],
     "screenshot": "qa/production-audit/2026-09-01/before/chromium/1440x900-full-flow-final.png"
@@ -250,6 +313,10 @@
         "pass": true
       },
       {
+        "id": "first-run-child-not-blocked",
+        "pass": true
+      },
+      {
         "id": "parent-gate-local-safe-cancel",
         "pass": true
       },
@@ -266,13 +333,36 @@
         "pass": true
       },
       {
-        "id": "legacy-wearable-unavailable",
+        "id": "legacy-wearable-rescued-into-normal-catalog",
         "pass": true
       },
       {
-        "id": "shop-live-tryon",
+        "id": "child-copy-no-engineering-language",
+        "pass": true
+      },
+      {
+        "id": "aligned-overlay-visual",
         "pass": true,
-        "detail": "此預覽只使用完整角色 Skin、標準化 Effect 或世界物件；未符合 Avatar Asset Contract 的舊素材不會硬貼在人物上。",
+        "rendered": "starter-sun-cap",
+        "src": "./assets/v5/characters/brother/wardrobe/accessories/head/starter-sun-cap.webp"
+      },
+      {
+        "id": "free-starter-purchase",
+        "pass": true
+      },
+      {
+        "id": "starter-equip",
+        "pass": true
+      },
+      {
+        "id": "split-overlay-visual",
+        "pass": true,
+        "back": 1,
+        "front": 1
+      },
+      {
+        "id": "full-skin-tryon",
+        "pass": true,
         "skin": "outfit-racer"
       },
       {
@@ -323,103 +413,39 @@
     "console": [
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4173/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4173/\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4173/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4173/\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4173/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4173/?day=day-3&lesson=1\" line: 0}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -439,27 +465,111 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified\" {file: \"https://www.youtube-nocookie.com/embed/yDua9ms9_eg?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/?day=day-3&lesson=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified\" {file: \"https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1\" line: 0}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
+      },
+      {
+        "type": "warning",
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -479,27 +589,27 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -519,31 +629,31 @@
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4173/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4173/?day=day-3&lesson=2\" line: 0}]"
+        "text": "[JavaScript Warning: \"Preload of http://127.0.0.1:4174/assets/v5/keyart/hero-bg-mobile.webp was ignored due to unknown “as” or “type” values, or non-matching “media” attribute.\" {file: \"http://127.0.0.1:4174/?day=day-3&lesson=2\" line: 0}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “autoplay”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “encrypted-media”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
-        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4173/assets/index-Cy1sy5AV.js\" line: 8}]"
+        "text": "[JavaScript Warning: \"Feature Policy: Skipping unsupported feature name “picture-in-picture”.\" {file: \"http://127.0.0.1:4174/assets/index-B_5YN_Lv.js\" line: 8}]"
       },
       {
         "type": "warning",
@@ -560,16 +670,40 @@
       {
         "type": "warning",
         "text": "[JavaScript Warning: \"Content-Security-Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified\" {file: \"https://www.youtube-nocookie.com/embed/Cx7e729w4YE?rel=0&playsinline=1\" line: 0}]"
-      },
-      {
-        "type": "warning",
-        "text": "[JavaScript Warning: \"Layout was forced before the page was fully loaded. If stylesheets are not yet loaded this may cause a flash of unstyled content.\" {file: \"https://www.youtube-nocookie.com/embed/Cx7e729w4YE?rel=0&playsinline=1\" line: 0}]"
       }
     ],
     "pageErrors": [],
     "requestFailed": [
       {
-        "url": "https://www.youtube-nocookie.com/embed/f9vIk_DvljU?rel=0&playsinline=1",
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/br=1/rs=AGKMywHnxr_R5sFRpcwdHc9gE6yIyHDIyw/m=root,base",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFESNpOSa0pkiYWFSlo_mW9XNCz7w/m=root,base",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFESNpOSa0pkiYWFSlo_mW9XNCz7w/m=root,base",
+        "failure": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/br=1/rs=AGKMywHnxr_R5sFRpcwdHc9gE6yIyHDIyw/m=root,base",
         "failure": "NS_BINDING_ABORTED"
       },
       {
@@ -577,82 +711,58 @@
         "failure": "NS_BINDING_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
+        "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
         "failure": "NS_BINDING_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.z4VWFy2ux0c.L.F4.O/am=AAAAQA/d=1/br=1/rs=AGKMywEW1rr9GdOpTYtWvcOKwNondX8v2Q/m=root,base",
+        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.OkgKYy53rBw.2021.O/ck=ytembeds.base.XT8I0pzAGv4.L.F4.O/am=AAAAQA/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=AGKMywGFfn0Jc74EJj7RyTvc8fbr-4udTw/m=r78Drb",
         "failure": "NS_BINDING_ABORTED"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.T1chnuN1Xdw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHAPa8q2KL197Je93MGlvislTmFww/m=root,base",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.T1chnuN1Xdw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHAPa8q2KL197Je93MGlvislTmFww/m=root,base",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.T1chnuN1Xdw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHAPa8q2KL197Je93MGlvislTmFww/m=root,base",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "NS_BINDING_ABORTED"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
+        "url": "https://www.youtube-nocookie.com/youtubei/v1/log_event?alt=json",
         "failure": "NS_BINDING_ABORTED"
       }
     ],
     "badResponses": [
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
       }
     ],
     "screenshot": "qa/production-audit/2026-09-01/before/firefox/1280x800-full-flow-final.png"
@@ -679,6 +789,10 @@
         "pass": true
       },
       {
+        "id": "first-run-child-not-blocked",
+        "pass": true
+      },
+      {
         "id": "parent-gate-local-safe-cancel",
         "pass": true
       },
@@ -695,13 +809,36 @@
         "pass": true
       },
       {
-        "id": "legacy-wearable-unavailable",
+        "id": "legacy-wearable-rescued-into-normal-catalog",
         "pass": true
       },
       {
-        "id": "shop-live-tryon",
+        "id": "child-copy-no-engineering-language",
+        "pass": true
+      },
+      {
+        "id": "aligned-overlay-visual",
         "pass": true,
-        "detail": "此預覽只使用完整角色 Skin、標準化 Effect 或世界物件；未符合 Avatar Asset Contract 的舊素材不會硬貼在人物上。",
+        "rendered": "starter-sun-cap",
+        "src": "./assets/v5/characters/brother/wardrobe/accessories/head/starter-sun-cap.webp"
+      },
+      {
+        "id": "free-starter-purchase",
+        "pass": true
+      },
+      {
+        "id": "starter-equip",
+        "pass": true
+      },
+      {
+        "id": "split-overlay-visual",
+        "pass": true,
+        "back": 1,
+        "front": 1
+      },
+      {
+        "id": "full-skin-tryon",
+        "pass": true,
         "skin": "outfit-racer"
       },
       {
@@ -781,6 +918,14 @@
       {
         "type": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
       }
     ],
     "pageErrors": [],
@@ -794,18 +939,6 @@
         "failure": "cancelled"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/ss/k=ytembeds.base.hCP4MDnWsTA.L.W.O/am=AAAAQA/d=1/br=1/rs=AGKMywFQXoUeBS9y4LO6X1veiQEEC75p1Q/m=root,base",
-        "failure": "cancelled"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/www-player.css",
-        "failure": "cancelled"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.T1chnuN1Xdw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHAPa8q2KL197Je93MGlvislTmFww/m=root,base",
-        "failure": "cancelled"
-      },
-      {
         "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
         "failure": "cancelled"
       },
@@ -814,58 +947,50 @@
         "failure": "cancelled"
       },
       {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.T1chnuN1Xdw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHAPa8q2KL197Je93MGlvislTmFww/m=root,base",
-        "failure": "cancelled"
-      },
-      {
         "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "cancelled"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/embed/h3C47MHwZXI?rel=0&playsinline=1",
-        "failure": "cancelled"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/player/e937390a/player_embed_es6.vflset/zh_TW/base.js",
-        "failure": "cancelled"
-      },
-      {
-        "url": "https://www.youtube-nocookie.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.T1chnuN1Xdw.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHAPa8q2KL197Je93MGlvislTmFww/m=root,base",
         "failure": "cancelled"
       }
     ],
     "badResponses": [
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/server-time"
+        "url": "http://127.0.0.1:4174/api/server-time"
       },
       {
         "status": 404,
-        "url": "http://127.0.0.1:4173/api/time"
+        "url": "http://127.0.0.1:4174/api/time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/server-time"
+      },
+      {
+        "status": 404,
+        "url": "http://127.0.0.1:4174/api/time"
       }
     ],
     "screenshot": "qa/production-audit/2026-09-01/before/webkit/390x844-full-flow-final.png"

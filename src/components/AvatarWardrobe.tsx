@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { avatarSkinAssetPath, hasAvatarSkinContract } from "../avatarAssetRegistry";
 import { equippedCosmeticForSlot } from "../cosmetics";
 const wardrobeAvatarIds = new Set([
   "brother",
@@ -20,37 +21,14 @@ export function wardrobeBaseAssetPath(avatarId?: string) {
   return `${import.meta.env.BASE_URL}assets/v5/characters/${normalizeWardrobeAvatarId(avatarId)}/wardrobe/base-body.webp`;
 }
 
-/**
- * A wearable image is accepted only if it is a complete, same-pose render of
- * this exact avatar. Product thumbnails never qualify: they are catalog art,
- * not clothes. The map intentionally starts small and grows asset-by-asset
- * after visual QA, rather than falling back to an ugly overlay.
- */
-const composedLookAssets: Record<string, Partial<Record<string, string>>> = {
-  brother: {
-    "outfit-racer": "outfit-racer-v1.webp",
-  },
-  younger: {
-    "outfit-racer": "outfit-racer-v1.webp",
-  },
-  sister: {
-    "outfit-racer": "outfit-racer-v1.webp",
-  },
-  "younger-sister": {
-    "outfit-racer": "outfit-racer-v1.webp",
-  },
-};
-
+/** Every full-skin outfit is resolved from the authoritative avatar asset
+ * manifest. Product thumbnails never qualify as wearable layers. */
 export function hasComposedWardrobeLook(avatarId?: string, outfitId?: string) {
-  return Boolean(outfitId && composedLookAssets[normalizeWardrobeAvatarId(avatarId)]?.[outfitId]);
+  return Boolean(outfitId && hasAvatarSkinContract(outfitId, normalizeWardrobeAvatarId(avatarId)));
 }
 
 export function composedWardrobeLookAssetPath(avatarId?: string, outfitId?: string) {
-  const normalizedAvatarId = normalizeWardrobeAvatarId(avatarId);
-  const file = outfitId ? composedLookAssets[normalizedAvatarId]?.[outfitId] : undefined;
-  return file
-    ? `${import.meta.env.BASE_URL}assets/v5/characters/${normalizedAvatarId}/wardrobe/looks/${file}`
-    : undefined;
+  return outfitId ? avatarSkinAssetPath(outfitId, normalizeWardrobeAvatarId(avatarId)) : undefined;
 }
 
 /**

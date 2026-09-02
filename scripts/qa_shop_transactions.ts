@@ -11,6 +11,25 @@ const seedChild = (coins = 1000) => normalizeProgress({ rewardTransactions: [see
 const base = (): AppProgress => ({ child1: seedChild(), child2: seedChild() });
 
 {
+  const starterBase: AppProgress = { child1: seedChild(0) };
+  const purchased = purchaseShopItem(starterBase, 'child1', 'brother', 'starter-sun-cap', '2026-09-01T00:10:00.000Z');
+  assert.equal(purchased.result.ok, true, 'free starter purchase must succeed with zero coins');
+  const afterPurchase = normalizeProgress(purchased.next.child1);
+  assert.equal(afterPurchase.purchaseTransactions?.filter((tx) => tx.itemId === 'starter-sun-cap').length, 1, 'free starter still creates one purchase transaction');
+  assert.equal(afterPurchase.purchaseTransactions?.find((tx) => tx.itemId === 'starter-sun-cap')?.cost, 0, 'starter purchase freezes cost 0');
+  assert.ok(afterPurchase.unlockedCosmetics?.includes('starter-sun-cap'), 'starter enters inventory');
+  const equipped = toggleShopItem(purchased.next, 'child1', 'brother', 'starter-sun-cap', 'starter-equip', '2026-09-01T00:11:00.000Z');
+  assert.equal(equipped.result.equipped, true, 'starter equips');
+  assert.ok(normalizeProgress(equipped.next.child1).equippedCosmetics?.includes('starter-sun-cap'), 'starter equip mirror persists');
+  const reloaded = normalizeProgress(JSON.parse(JSON.stringify(equipped.next.child1)));
+  assert.ok(reloaded.equippedCosmetics?.includes('starter-sun-cap'), 'starter equip survives serialization');
+  const unequipped = toggleShopItem(equipped.next, 'child1', 'brother', 'starter-sun-cap', 'starter-unequip', '2026-09-01T00:12:00.000Z');
+  assert.equal(unequipped.result.equipped, false, 'starter unequips');
+  assert.ok(!normalizeProgress(unequipped.next.child1).equippedCosmetics?.includes('starter-sun-cap'), 'starter unequip persists');
+  assert.equal(calculateRewards(unequipped.next.child1).coins, 0, 'free starter never changes wallet');
+}
+
+{
   const first = purchaseShopItem(base(), 'child1', 'brother', 'outfit-racer', '2026-09-01T01:00:00.000Z');
   assert.equal(first.result.ok, true);
   const second = purchaseShopItem(first.next, 'child1', 'brother', 'outfit-racer', '2026-09-01T01:01:00.000Z');
@@ -63,10 +82,36 @@ const base = (): AppProgress => ({ child1: seedChild(), child2: seedChild() });
 }
 
 {
+  const representativeItems = [
+    ['aligned-overlay', 'sunny-explorer-hat'],
+    ['split-overlay', 'trail-backpack'],
+    ['full-skin', 'outfit-racer'],
+    ['ship', 'ship-scout'],
+    ['robot', 'robot-sky'],
+    ['card', 'card-sky'],
+    ['effect', 'effect-stars'],
+  ] as const;
+  for (const [mode, itemId] of representativeItems) {
+    const purchased = purchaseShopItem(base(), 'child1', 'brother', itemId, `2026-09-01T04:00:${String(representativeItems.findIndex((entry) => entry[1] === itemId)).padStart(2, '0')}.000Z`);
+    assert.equal(purchased.result.ok, true, `${mode} purchase must succeed`);
+    const afterPurchase = normalizeProgress(purchased.next.child1);
+    assert.ok(afterPurchase.unlockedCosmetics?.includes(itemId), `${mode} item must enter inventory`);
+    const equipped = toggleShopItem(purchased.next, 'child1', 'brother', itemId, `v63-equip:${itemId}`, '2026-09-01T04:10:00.000Z');
+    assert.equal(equipped.result.ok, true, `${mode} equip/use must succeed`);
+    assert.equal(equipped.result.equipped, true, `${mode} must report equipped/selected`);
+    const reloaded = normalizeProgress(JSON.parse(JSON.stringify(equipped.next.child1)));
+    assert.ok(reloaded.equippedCosmetics?.includes(itemId), `${mode} selection must survive serialization`);
+    const removed = toggleShopItem(equipped.next, 'child1', 'brother', itemId, `v63-unequip:${itemId}`, '2026-09-01T04:20:00.000Z');
+    assert.equal(removed.result.equipped, false, `${mode} unequip/unselect must succeed`);
+    assert.ok(!normalizeProgress(removed.next.child1).equippedCosmetics?.includes(itemId), `${mode} unequip must persist`);
+  }
+}
+
+{
   const legacy = normalizeProgress({ unlockedCosmetics: ['hair-comet'], equippedCosmetics: ['hair-comet'] });
   assert.equal(legacy.purchaseTransactions?.[0]?.source, 'legacy-migration');
   assert.equal(legacy.purchaseTransactions?.[0]?.cost, 60, 'legacy ownership must be frozen into migration ledger');
   assert.ok(legacy.equippedCosmetics?.includes('hair-comet'), 'legacy equipment data must remain recoverable');
 }
 
-console.log('PASS qa_shop_transactions: idempotency, insufficient coins, price freeze, persistence, learner isolation, concurrent merge');
+console.log('PASS qa_shop_transactions: free starter, all representative preview modes purchase/equip/unequip persistence, idempotency, insufficient coins, price freeze, learner isolation, concurrent merge');

@@ -1,7 +1,7 @@
 {
   "name": "kids-learning-adventure",
   "private": true,
-  "version": "6.1.0",
+  "version": "6.3.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,10 @@
     "qa:assets": "python3 scripts/qa_v40_assets.py",
     "qa:avatar-assets": "python3 scripts/qa_avatar_assets.py",
     "qa:shop": "tsx scripts/qa_shop_transactions.ts",
+    "qa:v62:css": "python3 scripts/qa_v62_css_debt.py",
+    "qa:v63:shop-preview": "python3 scripts/qa_v63_all_shop_items_preview.py",
+    "qa:v63:shop-transactions": "tsx scripts/qa_v63_all_shop_transactions.ts",
+    "qa:v63:preview-layout": "python3 scripts/qa_v63_preview_layout.py",
     "qa:v51:art": "python3 scripts/qa_v51_art_assets.py",
     "qa:v51:browser": "python3 scripts/qa_v51_browser.py",
     "qa:v51:performance": "tsx scripts/qa_v51_performance.ts",

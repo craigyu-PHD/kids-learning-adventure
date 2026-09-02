@@ -4,7 +4,107 @@ All production releases use semantic versioning. Release dates represent the dat
 
 ## Unreleased
 
-No accepted production changes yet.
+No accepted changes beyond the V6.3.0 release candidate.
+
+## V6.3.0 — 2026-09-02
+
+### Added
+- Full Equipment Preview architecture with six explicit child-facing modes: `avatar`, `ship`, `robot`, `card`, `effect`, and `world`, while preserving the existing Shop ledger and Avatar state.
+- Formal V6.3 asset pipeline covering all 48 wearable ShopItems across brother, younger, sister, and younger-sister on the fixed 1024×1536 transparent-canvas contract.
+- Seven full-skin outfit families, 29 aligned-overlay wearable families, and 12 split-overlay wearable families with four-avatar coverage.
+- Dedicated redesigned preview art/stages for all three Ships, three Robots, three collectible Cards, and three Effects; world/room preview remains presentation-only over the existing world state.
+- Automated `qa:v63:shop-preview` hard gate that actually opens every child-visible ShopItem for every production avatar: 63×4 = 252/252 required.
+- Automated `qa:v63:shop-transactions` hard gate for purchase, inventory, equip/use, serialization persistence, and unequip across all 252 item/avatar combinations.
+- Preview-stage layout regression across avatar/ship/robot/card/effect/world on mobile, tablet, desktop, and ultrawide widths.
+
+### Changed
+- All formally available character equipment can now be tried on before purchase; no normal Child Catalog item depends on a dead preview path.
+- Ship preview is now a Hangar experience with the vehicle as the primary visual instead of a small thumbnail pasted beside the avatar.
+- Robot preview is now a Companion experience with clear two-subject staging.
+- Card preview is now a collectible-card viewer with rarity framing and dedicated artwork.
+- Effects now preview directly around the shared AvatarRenderer and respect reduced-motion behavior.
+- World-type items use child-facing `立即使用` / `使用中` language while wearable items retain `立即穿上` / `穿戴中`.
+- Avatar sizing inside the V6.3 preview feature now uses CSS custom properties instead of new `!important` overrides.
+- `CURRENT-SPEC.md` and `AGENTS.md` now treat V6.3 Full Equipment Preview as authoritative and prevent historical V6.1/V6.2 rules from rolling the feature back.
+
+### Preserved
+- No Curriculum, Lesson flow, immutable Purchase/Equipment/Reward/Answer ledgers, family namespace, signed session, cloud persistence, migration, trusted date engine, or learner isolation architecture was rebuilt.
+- V6.1 Production rollback and V6.2 local-RC history remain recoverable.
+
+### Validation
+- Protected curriculum: `90 days / 180 lessons / 360 missions` — PASS.
+- Fresh online video validation: `360/360` unique YouTube assignments playable/embeddable; `180/180` main-video topic alignment — PASS.
+- Avatar asset contract: `48/48` wearables × four production avatars — PASS.
+- Browser all-item preview: `252/252` — PASS with zero page/console errors in the dedicated preview run.
+- All-item transaction flow: `252/252` purchase/equip-or-use/persist/unequip — PASS.
+- Preview-stage layout: `24/24` — PASS.
+- Responsive matrix: Chromium / Firefox / WebKit × 12 viewports = `36/36` PASS, including 1600/1920/2560/3440px and zero overflow/overlap/out-of-viewport/broken-image cases.
+- Deep browser E2E: Chromium / Firefox / WebKit — PASS.
+- Cross-tab integrity: `5/5` PASS; Accessibility: `12/12` PASS; Failure simulation: `9/9` PASS.
+- Mobile 390×844 simulated 4G + CPU 4×: LCP `1.708s`, INP `112ms`, CLS `0.0005`; Home Shop preload requests = `0` — PASS.
+- CSS debt: `!important` `1716 → 1677` (`-39`); direct feature-owned wearable magic-number selectors = `0`.
+- Architecture, Learning, Shop, State, Auth, Migration, Date, Content Health, TypeScript strict, and production build — PASS.
+
+### Rollback
+- Pre-change physical backup: `_BACKUPS/2026-09-02_before_V6.3_equipment_redesign/` with SHA-256 evidence.
+- V6.1 rollback tag remains `checkpoint/v6.1.0-before-v6.2`.
+
+### Production
+- Pending V6.3.0 Production deployment and post-deploy validation.
+
+## V6.2.0 — 2026-09-02
+
+### Added
+- Hybrid Avatar V2 render modes: `full-skin`, `aligned-overlay`, `split-overlay`, `standard-effect`, and `world`, all extending the existing V6.1 ledger/renderer architecture.
+- Fixed-canvas 1024×1536 wearable asset pipeline and automated manifest validator for aligned and split layers.
+- Three Lv.1 / 0-Coin Starter Wardrobe items that still use the normal `purchaseShopItem()` transaction path.
+- Validated wearable support for Starter hat/glasses/headphones plus selected legacy hat/glasses/headphones/hair/backpack/cape items across all four avatars.
+- Wearable asset 404 fallback that unmounts only the failed layer while preserving the base avatar.
+- Large/ultrawide responsive regression coverage for 1600, 1920, 2560, and 3440px desktop widths.
+- SPA soft-navigation performance gates for Home → Today, Home → Shop, Shop → Home, and Home → Report.
+- V6.2 CSS-debt QA that compares the real V6.1 rollback baseline and blocks direct wearable magic-number selectors in feature-owned CSS.
+
+### Changed
+- Child Shop now uses child-facing game language such as `試穿看看`, `免費領取`, `用 X 金幣收藏`, `立即穿上`, `已收藏`, and `穿戴中` instead of renderer/asset/purchase engineering terminology.
+- Normal Child Catalog now contains only genuinely usable/owned/equipped/previewable items; unfinished legacy items are limited to a small `新裝備準備中` preview section.
+- Shop reports the real explorable count instead of presenting the historical asset total as if every item were usable; the current four-avatar contract exposes 25 available shop items per avatar.
+- Shop desktop hierarchy keeps the large live avatar preview as the primary visual; mobile order is Preview → Category → Product Grid.
+- First-run Child Experience no longer forces a Caregiver Selector before entering the site. Caregiver selection/PIN is deferred to parent report/settings/protected flows.
+- Child typography now uses explicit body/secondary metadata tokens with a ≥14px body target and ≥12px secondary-information target.
+- Dashboard and secondary page width ownership now uses centered fluid `minmax()` / `clamp()` behavior on large and ultrawide displays instead of the legacy 1508px left-offset rule.
+- Shop CSS ownership migrated further out of `v40.css`; the historical compatibility layer remains intact for unmigrated features.
+- Legacy family migration QA now isolates client migration behind controlled API stubs while the separate Auth QA continues to validate real server session signing.
+- Content Health asset baseline now records 63 Shop asset files after adding the three Starter catalog images; this engineering count is not exposed as a child-facing available-product count.
+
+### Fixed
+- Large desktop/ultrawide column misalignment, overlap, and off-center layout behavior.
+- Direct thumbnail/CSS-magic-number wearable composition in the current AvatarRenderer path.
+- Child-facing dead cards that appeared available despite lacking a valid wearable asset contract.
+- First-run caregiver modal interruption of normal Child Mode.
+- Broken wearable image nodes remaining in the DOM after an asset failure.
+- Stale QA assertions that still searched for `購買`, `立即裝備`, or the pre-V6.2 shop contract.
+
+### Validation
+- Protected curriculum: `90 days / 180 lessons / 360 missions` — PASS.
+- Online video validation: `360/360` unique YouTube assignments playable/embeddable — PASS.
+- Architecture, Learning, Avatar Asset, Shop, State, Auth, Migration, Date, Content Health, TypeScript strict, and production build — PASS.
+- CSS debt: `!important` count `1716 → 1677` (`-39`); direct feature-owned wearable magic-number selectors = `0`.
+- Responsive matrix: Chromium / Firefox / WebKit × 12 viewports = `36/36` PASS, with zero horizontal overflow, column overlap, out-of-viewport columns, or broken images.
+- Deep interaction E2E: Chromium / Firefox / WebKit PASS including first-run Child Mode, Starter purchase, aligned overlay, split overlay, full skin, refresh persistence, learner isolation, two lesson flows, and reward dedupe.
+- Cross-tab Shop integrity: `5/5` PASS.
+- Accessibility: `12/12` PASS.
+- Failure simulation: `9/9` PASS, including wearable 404 fallback.
+- Mobile 390×844, simulated 4G + CPU 4×: LCP `1.720s`, INP `104ms`, CLS `0.0005` — PASS.
+- Soft navigation: Home → Today `156ms`, Home → Shop `233ms`, Shop → Home `189ms`, Home → Report gate `169ms` on the final local mobile run — PASS.
+
+### Preserved / Rollback
+- V6.1 Protected Core, immutable ledgers, family namespaces, signed sessions, cloud persistence, date engine, curriculum, lesson flow, migrations, learner isolation, and existing production data remain unchanged.
+- Remaining unfinished legacy wearables are preserved as data and Coming Soon candidates; V6.2 does not claim that all historical wearables are converted.
+- Pre-change Git tag: `checkpoint/v6.1.0-before-v6.2`.
+- Pre-change physical rollback: `_BACKUPS/2026-09-02_before_V6.2/`.
+
+### Production
+- Pending V6.2.0 Production deployment and post-deploy validation.
 
 ## V6.1.0 — 2026-09-02
 
