@@ -10,6 +10,7 @@
 @import './layout.css';
 @import './components/header.css';
 @import './components/dashboard.css';
+@import './components/shop.css';
 @import './components/report.css';
 @import './components/review.css';
 @import './components/speaking.css';

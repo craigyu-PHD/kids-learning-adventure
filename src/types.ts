@@ -141,9 +141,13 @@ export type RewardTransaction = {
 };
 
 /** Production-grade shop/avatar model. Purchase and equipment are separate immutable ledgers. */
-export type AvatarAccessorySlot = "head" | "face" | "back" | "hand" | "effect";
+export type AvatarFineAccessorySlot = "hair" | "headwear" | "earwear" | "face" | "backpack" | "cape" | "hand" | "effect";
+/** Historical V6.1 grouped slots are accepted only when replaying old immutable events. */
+export type AvatarLegacyAccessorySlot = "head" | "back";
+export type AvatarAccessorySlot = AvatarFineAccessorySlot | AvatarLegacyAccessorySlot;
 export type AvatarWorldSlot = "spaceship" | "room" | "robot" | "card";
 export type AvatarEquipmentSlot = "skin" | AvatarAccessorySlot | AvatarWorldSlot;
+export type AvatarVisualSlot = "skin" | AvatarFineAccessorySlot;
 export type ShopItemKind = "skin" | "accessory" | "world";
 export type ShopItemAvailability = "available" | "unavailable" | "incompatible";
 export type EquipmentPreviewMode = "avatar" | "ship" | "robot" | "card" | "effect" | "world";
@@ -160,6 +164,11 @@ export type ShopItem = {
   availability: ShopItemAvailability;
   renderer: "full-skin" | "aligned-overlay" | "split-overlay" | "standard-effect" | "world" | "unsupported-legacy";
   previewMode: EquipmentPreviewMode;
+  /** V6.4 presentation metadata. It never mutates ownership/equipment ledgers. */
+  visualSlot?: AvatarVisualSlot;
+  occludes?: AvatarVisualSlot[];
+  conflictsWith?: AvatarVisualSlot[];
+  zLayer?: number;
 };
 
 export type PurchaseTransaction = {

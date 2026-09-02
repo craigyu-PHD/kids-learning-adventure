@@ -14,12 +14,24 @@ const LEGACY_MIGRATION_AT = '1970-01-01T00:00:00.000Z';
 
 export function legacySlotToEquipmentSlot(slot?: string): AvatarEquipmentSlot {
   if (slot === 'outfit') return 'skin';
-  if (slot === 'hairstyle' || slot === 'hat' || slot === 'headphones') return 'head';
+  if (slot === 'hairstyle') return 'hair';
+  if (slot === 'hat') return 'headwear';
+  if (slot === 'headphones') return 'earwear';
   if (slot === 'glasses') return 'face';
-  if (slot === 'backpack' || slot === 'cape') return 'back';
+  if (slot === 'backpack') return 'backpack';
+  if (slot === 'cape') return 'cape';
   if (slot === 'effect') return 'effect';
   if (slot === 'spaceship' || slot === 'room' || slot === 'robot' || slot === 'card') return slot;
   return 'hand';
+}
+
+/** Replay old immutable grouped-slot events without rewriting them. New events
+ * are written to fine-grained V6.4 slots, while historical `head` / `back`
+ * entries resolve through the item's original catalog slot. */
+export function effectiveEquipmentSlot(slot: AvatarEquipmentSlot, itemId: string): AvatarEquipmentSlot {
+  if (slot !== 'head' && slot !== 'back') return slot;
+  const item = cosmeticById.get(itemId);
+  return legacySlotToEquipmentSlot(item?.slot);
 }
 
 function byStableTime<T extends { id: string; createdAt: string }>(a: T, b: T) {
@@ -86,10 +98,11 @@ export function equippedItemIdsFromProgress(progress?: Partial<ChildProgress> | 
   const inventory = new Set(inventoryFromProgress(progress).itemIds);
   const bySlot = new Map<AvatarEquipmentSlot, string>();
   for (const tx of normalizeEquipmentTransactions(progress)) {
+    const slot = effectiveEquipmentSlot(tx.slot, tx.itemId);
     if (tx.action === 'equip') {
-      if (inventory.has(tx.itemId)) bySlot.set(tx.slot, tx.itemId);
-    } else if (bySlot.get(tx.slot) === tx.itemId) {
-      bySlot.delete(tx.slot);
+      if (inventory.has(tx.itemId)) bySlot.set(slot, tx.itemId);
+    } else if (bySlot.get(slot) === tx.itemId) {
+      bySlot.delete(slot);
     }
   }
   return Array.from(bySlot.values());
@@ -114,9 +127,10 @@ export function equippedAvatarFromProgress(progress?: Partial<ChildProgress> | n
   const equipped = new Set(equippedItemIdsFromProgress(progress));
   for (const tx of normalizeEquipmentTransactions(progress)) {
     if (!equipped.has(tx.itemId) || tx.action !== 'equip') continue;
-    if (tx.slot === 'skin') skinId = tx.itemId;
-    else if (tx.slot === 'spaceship' || tx.slot === 'room' || tx.slot === 'robot' || tx.slot === 'card') world[tx.slot] = tx.itemId;
-    else accessories[tx.slot] = tx.itemId;
+    const slot = effectiveEquipmentSlot(tx.slot, tx.itemId);
+    if (slot === 'skin') skinId = tx.itemId;
+    else if (slot === 'spaceship' || slot === 'room' || slot === 'robot' || slot === 'card') world[slot] = tx.itemId;
+    else accessories[slot] = tx.itemId;
   }
   return { skinId, accessories, world };
 }

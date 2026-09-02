@@ -25,10 +25,137 @@
     0 10px 28px rgba(3, 28, 88, .28) !important;  /* ambient depth only; no inset glow */
 }
 
-.v4-dashboard-grid { height: auto !important; min-height: 720px; align-items: start; }
-.v4-center-column { height: auto !important; min-height: 720px; }
-.v4-right-column { max-height: 720px; overflow-x: visible !important; overflow-y: auto !important; scrollbar-gutter: stable; overscroll-behavior: contain; }
-@media (max-width: 1180px) { .v4-right-column { max-height: none; overflow: visible !important; } }
+.v4-dashboard-grid { height: auto; min-height: 720px; align-items: start; }
+.v4-center-column { height: auto; min-height: 720px; }
+.v4-right-column { max-height: 720px; overflow-x: visible; overflow-y: auto; scrollbar-gutter: stable; overscroll-behavior: contain; }
+@media (max-width: 1180px) { .v4-right-column { max-height: none; overflow: visible; } }
+
+/* ── V6.4 Large Display Contract ───────────────────────────────────────────
+ * Historical 1508/260/880/344 desktop ownership was removed from v40.css.
+ * From 1480px upward the grid is genuinely fluid; every major child panel
+ * fills the track that owns it instead of keeping a smaller fixed inner box.
+ * ────────────────────────────────────────────────────────────────────────── */
+@media (min-width: 1480px) {
+  .v4-dashboard-grid {
+    width: min(94vw, 1880px);
+    grid-template-columns:
+      minmax(300px, .82fr)
+      minmax(780px, 2.3fr)
+      minmax(360px, 1fr);
+    gap: clamp(14px, 1vw, 24px);
+  }
+
+  .v4-left-column,
+  .v4-center-column,
+  .v4-right-column {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .v4-left-column .v4-player-profile,
+  .v4-player-card,
+  .v4-ai-companion,
+  .v5-semester-overview,
+  .v4-calendar-panel,
+  .v4-evolution-panel,
+  .v4-badge-panel,
+  .v4-right-column .v4-daily-panel,
+  .v4-right-column .v4-lesson-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .v5-semester-overview {
+    grid-template-columns: minmax(0, 1.72fr) minmax(250px, .88fr);
+    height: auto;
+  }
+  .v5-semester-overview .v4-calendar-inner,
+  .v5-semester-overview .v4-progress-inner {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .v5-semester-overview .v4-calendar-day {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+
+  .v4-evolution-panel { height: auto; }
+  .v4-evolution-panel .v4-evolution-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v4-evolution-panel .v4-evolution-row article { width: auto; max-width: none; min-width: 0; }
+
+  .v4-badge-panel { height: auto; }
+  .v4-badge-panel .v4-badge-shelf { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+
+  .v4-right-column { max-height: none; overflow: visible; }
+  .v4-right-column .v4-daily-panel { height: auto; min-height: 720px; }
+  .v4-right-column .v4-lesson-content {
+    grid-template-columns: minmax(120px, .42fr) minmax(0, 1fr);
+    align-items: center;
+  }
+  .v4-right-column .v4-lesson-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+  }
+  .v4-right-column .v4-lesson-content button {
+    width: min(100%, 190px);
+    height: auto;
+  }
+
+  .v4-status-bar {
+    width: min(94vw, 1880px);
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 3199px) {
+  .v4-dashboard-grid,
+  .v4-status-bar { width: min(92vw, 2800px); }
+  .v4-dashboard-grid {
+    grid-template-columns:
+      minmax(330px, .78fr)
+      minmax(1040px, 2.4fr)
+      minmax(420px, 1fr);
+    gap: clamp(18px, .9vw, 28px);
+  }
+}
+
+@media (min-width: 3200px) and (max-width: 4599px) {
+  .v4-dashboard-grid,
+  .v4-status-bar { width: min(92vw, 3200px); }
+  .v4-dashboard-grid {
+    grid-template-columns:
+      minmax(380px, .82fr)
+      minmax(1280px, 2.45fr)
+      minmax(480px, 1.06fr);
+    gap: clamp(22px, .8vw, 32px);
+  }
+  .v4-panel { padding: clamp(16px, .7vw, 24px); }
+  .v4-player-card { grid-template-columns: minmax(100px, .42fr) minmax(0, 1fr); }
+  .v4-right-column .v4-lesson-content { grid-template-columns: minmax(150px, .44fr) minmax(0, 1fr); }
+}
+
+@media (min-width: 4600px) {
+  .v4-dashboard-grid,
+  .v4-status-bar { width: min(90vw, 3600px); }
+  .v4-dashboard-grid {
+    grid-template-columns:
+      minmax(420px, .84fr)
+      minmax(1480px, 2.5fr)
+      minmax(520px, 1.08fr);
+    gap: 32px;
+  }
+}
 
 /* ── Inner panel: remove overflow:hidden that masked content overflow ──────
  * v40.css line 65: .v4-player-card has overflow:hidden — causes content

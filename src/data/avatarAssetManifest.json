@@ -1,12 +1,28 @@
 {
-  "version": 3,
+  "version": 4,
   "contract": {
     "canvasWidth": 1024,
     "canvasHeight": 1536,
     "transparent": true,
     "characterCenterX": 512,
     "groundBaselineY": 1488,
-    "runtimeRule": "all wearable alignment is baked into fixed-canvas assets; React/CSS must not reposition body gear"
+    "runtimeRule": "all wearable alignment is baked into fixed-canvas assets; React/CSS must not reposition body gear",
+    "visualSlots": [
+      "skin",
+      "hair",
+      "headwear",
+      "earwear",
+      "face",
+      "backpack",
+      "cape",
+      "hand",
+      "effect"
+    ],
+    "legacyLedgerSlots": [
+      "head",
+      "back"
+    ],
+    "slotCompatibility": "manifest uses fine-grained V6.4 visual slots; immutable historical ledger events may still contain head/back and are mapped at replay time"
   },
   "skins": [
     {
@@ -205,7 +221,7 @@
   "accessories": [
     {
       "id": "hair-comet",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -222,7 +238,7 @@
     },
     {
       "id": "hair-wave",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -239,7 +255,7 @@
     },
     {
       "id": "hair-spike",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -256,7 +272,7 @@
     },
     {
       "id": "hair-cloud",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -273,7 +289,7 @@
     },
     {
       "id": "hair-nebula",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -290,7 +306,7 @@
     },
     {
       "id": "hair-legend",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -307,7 +323,7 @@
     },
     {
       "id": "sister-starlight-clip",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -324,7 +340,7 @@
     },
     {
       "id": "sister-mint-bow",
-      "slot": "head",
+      "slot": "hair",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -341,7 +357,7 @@
     },
     {
       "id": "starter-sun-cap",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -358,7 +374,7 @@
     },
     {
       "id": "sunny-explorer-hat",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -375,7 +391,7 @@
     },
     {
       "id": "hat-rocket",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -392,7 +408,7 @@
     },
     {
       "id": "hat-ocean",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -409,7 +425,7 @@
     },
     {
       "id": "hat-mage",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -426,7 +442,7 @@
     },
     {
       "id": "hat-crown",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -443,7 +459,7 @@
     },
     {
       "id": "sister-lavender-hat",
-      "slot": "head",
+      "slot": "headwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -579,7 +595,7 @@
     },
     {
       "id": "starter-buddy-headphones",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -596,7 +612,7 @@
     },
     {
       "id": "story-headphones",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -613,7 +629,7 @@
     },
     {
       "id": "phones-sky",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -630,7 +646,7 @@
     },
     {
       "id": "phones-racer",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -647,7 +663,7 @@
     },
     {
       "id": "phones-ai",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -664,7 +680,7 @@
     },
     {
       "id": "phones-legend",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -681,7 +697,7 @@
     },
     {
       "id": "sister-cat-headphones",
-      "slot": "head",
+      "slot": "earwear",
       "renderer": "aligned-overlay",
       "supportedAvatars": [
         "brother",
@@ -698,7 +714,7 @@
     },
     {
       "id": "trail-backpack",
-      "slot": "back",
+      "slot": "backpack",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -721,7 +737,7 @@
     },
     {
       "id": "pack-rocket",
-      "slot": "back",
+      "slot": "backpack",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -744,7 +760,7 @@
     },
     {
       "id": "pack-treasure",
-      "slot": "back",
+      "slot": "backpack",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -767,7 +783,7 @@
     },
     {
       "id": "pack-ocean",
-      "slot": "back",
+      "slot": "backpack",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -790,7 +806,7 @@
     },
     {
       "id": "pack-legend",
-      "slot": "back",
+      "slot": "backpack",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -813,7 +829,7 @@
     },
     {
       "id": "sister-comet-pack",
-      "slot": "back",
+      "slot": "backpack",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -836,7 +852,7 @@
     },
     {
       "id": "hero-cape",
-      "slot": "back",
+      "slot": "cape",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -859,7 +875,7 @@
     },
     {
       "id": "cape-sky",
-      "slot": "back",
+      "slot": "cape",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -882,7 +898,7 @@
     },
     {
       "id": "cape-nebula",
-      "slot": "back",
+      "slot": "cape",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -905,7 +921,7 @@
     },
     {
       "id": "cape-ocean",
-      "slot": "back",
+      "slot": "cape",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -928,7 +944,7 @@
     },
     {
       "id": "cape-legend",
-      "slot": "back",
+      "slot": "cape",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",
@@ -951,7 +967,7 @@
     },
     {
       "id": "sister-galaxy-cape",
-      "slot": "back",
+      "slot": "cape",
       "renderer": "split-overlay",
       "supportedAvatars": [
         "brother",

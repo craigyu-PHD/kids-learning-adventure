@@ -1,0 +1,417 @@
+{
+  "status": "PASS",
+  "viewports": 4,
+  "passed": 4,
+  "failed": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "results": [
+    {
+      "viewport": "390x844",
+      "pass": true,
+      "checks": [
+        {
+          "name": "recommended-progressive-limit",
+          "pass": true,
+          "detail": "initial=12"
+        },
+        {
+          "name": "mobile-mini-preview-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "mobile-mini-preview-sticky",
+          "pass": true,
+          "detail": "position=sticky"
+        },
+        {
+          "name": "load-more-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "load-more-increases-cards",
+          "pass": true,
+          "detail": "12->24"
+        },
+        {
+          "name": "free-filter",
+          "pass": true,
+          "detail": "['starter-buddy-headphones', 'starter-sky-glasses', 'starter-sun-cap']"
+        },
+        {
+          "name": "equipped-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "owned-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "hair-filter",
+          "pass": true,
+          "detail": "['hair-cloud', 'hair-comet', 'hair-legend', 'hair-nebula', 'hair-spike', 'hair-wave', 'sister-mint-bow', 'sister-starlight-clip']"
+        },
+        {
+          "name": "hat-filter",
+          "pass": true,
+          "detail": "['hat-crown', 'hat-mage', 'hat-ocean', 'hat-rocket', 'sister-lavender-hat', 'starter-sun-cap', 'sunny-explorer-hat']"
+        },
+        {
+          "name": "headphones-filter",
+          "pass": true,
+          "detail": "['phones-ai', 'phones-legend', 'phones-racer', 'phones-sky', 'sister-cat-headphones', 'starter-buddy-headphones', 'story-headphones']"
+        },
+        {
+          "name": "compare-control-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "fine-slot-trial-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "current-mode-keeps-equipped-skin",
+          "pass": true,
+          "detail": "skin=outfit-cadet, rendered=['outfit-cadet']"
+        },
+        {
+          "name": "current-mode-hides-trial-accessories",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "trial-mode-restores-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "no-horizontal-overflow",
+          "pass": true,
+          "detail": "overflow=0"
+        },
+        {
+          "name": "no-broken-images",
+          "pass": true,
+          "detail": "[]"
+        },
+        {
+          "name": "mobile-page-height-bounded",
+          "pass": true,
+          "detail": "height=3219"
+        }
+      ],
+      "failures": [],
+      "screenshot": "qa/production-audit/2026-09-02/v64-4k/390x844-shop-combo.png"
+    },
+    {
+      "viewport": "768x1024",
+      "pass": true,
+      "checks": [
+        {
+          "name": "recommended-progressive-limit",
+          "pass": true,
+          "detail": "initial=12"
+        },
+        {
+          "name": "mobile-mini-preview-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "mobile-mini-preview-sticky",
+          "pass": true,
+          "detail": "position=sticky"
+        },
+        {
+          "name": "load-more-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "load-more-increases-cards",
+          "pass": true,
+          "detail": "12->24"
+        },
+        {
+          "name": "free-filter",
+          "pass": true,
+          "detail": "['starter-buddy-headphones', 'starter-sky-glasses', 'starter-sun-cap']"
+        },
+        {
+          "name": "equipped-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "owned-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "hair-filter",
+          "pass": true,
+          "detail": "['hair-cloud', 'hair-comet', 'hair-legend', 'hair-nebula', 'hair-spike', 'hair-wave', 'sister-mint-bow', 'sister-starlight-clip']"
+        },
+        {
+          "name": "hat-filter",
+          "pass": true,
+          "detail": "['hat-crown', 'hat-mage', 'hat-ocean', 'hat-rocket', 'sister-lavender-hat', 'starter-sun-cap', 'sunny-explorer-hat']"
+        },
+        {
+          "name": "headphones-filter",
+          "pass": true,
+          "detail": "['phones-ai', 'phones-legend', 'phones-racer', 'phones-sky', 'sister-cat-headphones', 'starter-buddy-headphones', 'story-headphones']"
+        },
+        {
+          "name": "compare-control-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "fine-slot-trial-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "current-mode-keeps-equipped-skin",
+          "pass": true,
+          "detail": "skin=outfit-cadet, rendered=['outfit-cadet']"
+        },
+        {
+          "name": "current-mode-hides-trial-accessories",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "trial-mode-restores-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "no-horizontal-overflow",
+          "pass": true,
+          "detail": "overflow=0"
+        },
+        {
+          "name": "no-broken-images",
+          "pass": true,
+          "detail": "[]"
+        }
+      ],
+      "failures": [],
+      "screenshot": "qa/production-audit/2026-09-02/v64-4k/768x1024-shop-combo.png"
+    },
+    {
+      "viewport": "1440x900",
+      "pass": true,
+      "checks": [
+        {
+          "name": "recommended-progressive-limit",
+          "pass": true,
+          "detail": "initial=12"
+        },
+        {
+          "name": "mobile-mini-preview-hidden-on-wide",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "load-more-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "load-more-increases-cards",
+          "pass": true,
+          "detail": "12->24"
+        },
+        {
+          "name": "free-filter",
+          "pass": true,
+          "detail": "['starter-buddy-headphones', 'starter-sky-glasses', 'starter-sun-cap']"
+        },
+        {
+          "name": "equipped-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "owned-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "hair-filter",
+          "pass": true,
+          "detail": "['hair-cloud', 'hair-comet', 'hair-legend', 'hair-nebula', 'hair-spike', 'hair-wave', 'sister-mint-bow', 'sister-starlight-clip']"
+        },
+        {
+          "name": "hat-filter",
+          "pass": true,
+          "detail": "['hat-crown', 'hat-mage', 'hat-ocean', 'hat-rocket', 'sister-lavender-hat', 'starter-sun-cap', 'sunny-explorer-hat']"
+        },
+        {
+          "name": "headphones-filter",
+          "pass": true,
+          "detail": "['phones-ai', 'phones-legend', 'phones-racer', 'phones-sky', 'sister-cat-headphones', 'starter-buddy-headphones', 'story-headphones']"
+        },
+        {
+          "name": "compare-control-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "fine-slot-trial-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "current-mode-keeps-equipped-skin",
+          "pass": true,
+          "detail": "skin=outfit-cadet, rendered=['outfit-cadet']"
+        },
+        {
+          "name": "current-mode-hides-trial-accessories",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "trial-mode-restores-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "no-horizontal-overflow",
+          "pass": true,
+          "detail": "overflow=0"
+        },
+        {
+          "name": "no-broken-images",
+          "pass": true,
+          "detail": "[]"
+        }
+      ],
+      "failures": [],
+      "screenshot": "qa/production-audit/2026-09-02/v64-4k/1440x900-shop-combo.png"
+    },
+    {
+      "viewport": "3840x2160",
+      "pass": true,
+      "checks": [
+        {
+          "name": "recommended-progressive-limit",
+          "pass": true,
+          "detail": "initial=12"
+        },
+        {
+          "name": "mobile-mini-preview-hidden-on-wide",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "load-more-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "load-more-increases-cards",
+          "pass": true,
+          "detail": "12->24"
+        },
+        {
+          "name": "free-filter",
+          "pass": true,
+          "detail": "['starter-buddy-headphones', 'starter-sky-glasses', 'starter-sun-cap']"
+        },
+        {
+          "name": "equipped-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "owned-filter",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "hair-filter",
+          "pass": true,
+          "detail": "['hair-cloud', 'hair-comet', 'hair-legend', 'hair-nebula', 'hair-spike', 'hair-wave', 'sister-mint-bow', 'sister-starlight-clip']"
+        },
+        {
+          "name": "hat-filter",
+          "pass": true,
+          "detail": "['hat-crown', 'hat-mage', 'hat-ocean', 'hat-rocket', 'sister-lavender-hat', 'starter-sun-cap', 'sunny-explorer-hat']"
+        },
+        {
+          "name": "headphones-filter",
+          "pass": true,
+          "detail": "['phones-ai', 'phones-legend', 'phones-racer', 'phones-sky', 'sister-cat-headphones', 'starter-buddy-headphones', 'story-headphones']"
+        },
+        {
+          "name": "compare-control-visible",
+          "pass": true,
+          "detail": "count=1"
+        },
+        {
+          "name": "fine-slot-trial-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "current-mode-keeps-equipped-skin",
+          "pass": true,
+          "detail": "skin=outfit-cadet, rendered=['outfit-cadet']"
+        },
+        {
+          "name": "current-mode-hides-trial-accessories",
+          "pass": true,
+          "detail": "['outfit-cadet']"
+        },
+        {
+          "name": "trial-mode-restores-combination",
+          "pass": true,
+          "detail": "['hair-comet', 'outfit-cadet', 'starter-buddy-headphones', 'starter-sun-cap']"
+        },
+        {
+          "name": "no-horizontal-overflow",
+          "pass": true,
+          "detail": "overflow=0"
+        },
+        {
+          "name": "no-broken-images",
+          "pass": true,
+          "detail": "[]"
+        },
+        {
+          "name": "4k-shop-workspace-wide",
+          "pass": true,
+          "detail": "{'width': 3200, 'height': 1256.859375}"
+        },
+        {
+          "name": "4k-preview-column-substantial",
+          "pass": true,
+          "detail": "{'width': 1154.78125, 'height': 1082.421875}"
+        },
+        {
+          "name": "4k-preview-stage-fills-column",
+          "pass": true,
+          "detail": "stage={'width': 1154.78125, 'height': 820}, preview={'width': 1154.78125, 'height': 1082.421875}"
+        },
+        {
+          "name": "4k-cards-remain-collectible-size",
+          "pass": true,
+          "detail": "{'width': 311.53125, 'height': 501.84375}"
+        }
+      ],
+      "failures": [],
+      "screenshot": "qa/production-audit/2026-09-02/v64-4k/3840x2160-shop-combo.png"
+    }
+  ]
+}

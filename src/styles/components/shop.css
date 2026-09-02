@@ -1,0 +1,192 @@
+/* =============================================================================
+ * Shop ownership — V6.4 Premium Visual Wardrobe
+ * ============================================================================= */
+
+.v64-character-filters {
+  display:flex;
+  gap:8px;
+  margin:12px 0 4px;
+  padding:6px;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  border:1px solid #d6e7f4;
+  border-radius:16px;
+  background:#f7fbff;
+}
+.v64-character-filters button {
+  flex:0 0 auto;
+  min-height:40px;
+  padding:0 13px;
+  border:1px solid transparent;
+  border-radius:999px;
+  background:#fff;
+  color:#315a82;
+  font:800 13px/1 'Nunito','Noto Sans TC',sans-serif;
+  cursor:pointer;
+}
+.v64-character-filters button.active {
+  border-color:#7f65da;
+  background:linear-gradient(135deg,#efe9ff,#e8f8ff);
+  color:#5536a2;
+  box-shadow:0 4px 10px rgba(88,65,159,.12);
+}
+
+.v64-preview-compare {
+  width:min(100%,420px);
+  margin:0 auto 10px;
+  padding:4px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4px;
+  border:1px solid #b7d8ec;
+  border-radius:14px;
+  background:#edf7fd;
+}
+.v64-preview-compare button {
+  min-height:42px;
+  border:0;
+  border-radius:11px;
+  background:transparent;
+  color:#47677f;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+}
+.v64-preview-compare button.active {
+  background:#fff;
+  color:#5536a2;
+  box-shadow:0 4px 10px rgba(49,84,121,.13);
+}
+
+.v64-load-more {
+  width:min(100%,420px);
+  min-height:50px;
+  margin:18px auto 4px;
+  display:block;
+  border:1.5px solid #91bfe4;
+  border-radius:16px;
+  background:linear-gradient(180deg,#fff,#eef8ff);
+  color:#185b91;
+  font-size:14px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.v64-mobile-mini-preview { display:none; }
+
+/* The V6.4 desktop shop uses available display area instead of preserving the
+   V6.3 1880px island. Card count grows conservatively; card size never drops
+   below a useful child-facing touch/visual size. */
+@media (min-width:1480px) {
+  .v4-secondary-shell .v4-secondary-content,
+  .v4-secondary-page .v4-secondary-content,
+  .v4-secondary-main {
+    width:min(94vw,1880px);
+    max-width:none;
+  }
+  .v6-shop-studio {
+    grid-template-columns:minmax(440px,.72fr) minmax(0,1.55fr);
+    gap:clamp(20px,1vw,30px);
+  }
+  .v6-shop-preview-column { min-width:0; }
+  .v63-equipment-stage { min-height:clamp(560px,38vw,720px); }
+  .v6-shop-catalog .v4-shop-grid {
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:16px;
+  }
+  .v6-shop-catalog .v4-shop-grid article { min-height:300px; }
+  .v6-shop-catalog .v4-item-art {
+    height:auto;
+    aspect-ratio:4/3;
+  }
+  .v6-shop-catalog .v4-item-art img {
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+  }
+}
+
+@media (min-width:2200px) and (max-width:3199px) {
+  .v4-secondary-shell .v4-secondary-content,
+  .v4-secondary-page .v4-secondary-content,
+  .v4-secondary-main { width:min(92vw,2800px); }
+  .v6-shop-studio { grid-template-columns:minmax(620px,.86fr) minmax(0,1.65fr); }
+  .v63-equipment-stage { min-height:720px; }
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+}
+
+@media (min-width:3200px) and (max-width:4599px) {
+  .v4-secondary-shell .v4-secondary-content,
+  .v4-secondary-page .v4-secondary-content,
+  .v4-secondary-main { width:min(92vw,3200px); }
+  .v6-shop-studio { grid-template-columns:minmax(760px,.95fr) minmax(0,1.62fr); gap:32px; }
+  .v63-equipment-stage { min-height:820px; }
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:20px; }
+  .v6-shop-catalog .v4-shop-grid article { min-height:330px; }
+}
+
+@media (min-width:4600px) {
+  .v4-secondary-shell .v4-secondary-content,
+  .v4-secondary-page .v4-secondary-content,
+  .v4-secondary-main { width:min(90vw,3600px); }
+  .v6-shop-studio { grid-template-columns:minmax(840px,1fr) minmax(0,1.68fr); gap:34px; }
+  .v63-equipment-stage { min-height:860px; }
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(auto-fit,minmax(285px,1fr)); gap:22px; }
+}
+
+/* Mobile catalogue is deliberately bounded. Filters + progressive disclosure
+   prevent a 10k+ px wardrobe page, while the preview remains visible before
+   the grid and shrinks to a compact stage. */
+@media (max-width:800px) {
+  .v64-character-filters {
+    margin-top:8px;
+    position:sticky;
+    top:0;
+    z-index:12;
+    background:rgba(247,251,255,.96);
+    backdrop-filter:blur(10px);
+  }
+  .v64-mobile-mini-preview {
+    position:sticky;
+    top:58px;
+    z-index:11;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-height:76px;
+    margin:8px 0 10px;
+    padding:7px 10px;
+    border:1px solid rgba(127,101,218,.25);
+    border-radius:16px;
+    background:rgba(255,255,255,.94);
+    box-shadow:0 8px 22px rgba(29,70,118,.14);
+    backdrop-filter:blur(12px);
+  }
+  .v64-mobile-mini-preview .avatar-hero { flex:0 0 auto; }
+  .v64-mobile-mini-preview > div { min-width:0; display:grid; gap:2px; }
+  .v64-mobile-mini-preview span { color:#6b7f96; font-size:12px; font-weight:800; }
+  .v64-mobile-mini-preview strong { overflow:hidden; color:#25486f; font-size:14px; font-weight:950; text-overflow:ellipsis; white-space:nowrap; }
+  .v6-shop-preview-column {
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:8px;
+    align-items:start;
+  }
+  .v6-shop-preview-column > .v63-equipment-stage {
+    grid-column:1/-1;
+    min-height:470px;
+  }
+  .v6-shop-preview-column > .v6-preview-integrity,
+  .v6-shop-preview-column > .v6-shop-feedback { grid-column:1/-1; }
+  .v6-shop-preview-column > .v6-clear-preview { margin:0; width:auto; min-height:44px; }
+  .v6-shop-preview-column > .v6-shop-wallet-row { margin:0; min-height:44px; padding:6px 10px; }
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+}
+
+@media (max-width:480px) {
+  .v6-shop-preview-column > .v63-equipment-stage { min-height:430px; }
+  .v6-shop-catalog .v4-shop-grid article { min-height:258px; }
+  .v64-character-filters button { min-height:38px; padding-inline:11px; font-size:12px; }
+  .v64-mobile-mini-preview { top:54px; min-height:70px; padding:5px 8px; }
+}

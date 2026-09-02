@@ -66,6 +66,13 @@ def run():
       seen=set()
       for category in CATEGORIES:
         page.get_by_role('tab',name=category,exact=True).click(); page.wait_for_timeout(50)
+        # V6.4 progressively discloses large character catalogs. Expand the
+        # current category completely so this legacy all-item gate still
+        # proves every historical item can be previewed.
+        while True:
+          more=page.locator('.v64-load-more')
+          if more.count()==0 or not more.is_visible(): break
+          more.click(); page.wait_for_timeout(35)
         cards=page.locator('.v4-shop-grid article[data-item-id]')
         for idx in range(cards.count()):
           card=cards.nth(idx); item_id=card.get_attribute('data-item-id'); mode=card.get_attribute('data-preview-mode')

@@ -79,9 +79,13 @@ export default function AvatarRenderer({
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
   const skin = equippedItems.find((item) => item.kind === 'skin' && shopItemCanRender(item, id));
   const effect = equippedItems.find((item) => item.renderer === 'standard-effect' && shopItemCanRender(item, id));
+  const activeOcclusions = new Set(equippedItems.flatMap((item) => item.occludes ?? []));
   const wearableItems = stageOverride
     ? []
-    : equippedItems.filter((item) => (item.renderer === 'aligned-overlay' || item.renderer === 'split-overlay') && shopItemCanRender(item, id));
+    : equippedItems
+      .filter((item) => (item.renderer === 'aligned-overlay' || item.renderer === 'split-overlay') && shopItemCanRender(item, id))
+      .filter((item) => !item.visualSlot || !activeOcclusions.has(item.visualSlot))
+      .sort((a, b) => (a.zLayer ?? 50) - (b.zLayer ?? 50));
   const wearableLayers = wearableItems.flatMap((item) => {
     const layers = avatarAccessoryLayerSet(item.id, id);
     return layers ? [{ item, layers }] : [];

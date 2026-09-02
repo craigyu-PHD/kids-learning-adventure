@@ -26,6 +26,14 @@ def rect(page,selector):
 def contained(outer,inner,tolerance=3):
     return inner['l']>=outer['l']-tolerance and inner['r']<=outer['r']+tolerance and inner['t']>=outer['t']-tolerance and inner['b']<=outer['b']+tolerance
 
+def ensure_card_visible(page,item_id):
+    card=page.locator(f'article[data-item-id="{item_id}"]')
+    while card.count()==0:
+        more=page.locator('.v64-load-more')
+        if more.count()==0 or not more.is_visible(): break
+        more.click(); page.wait_for_timeout(40)
+    return card
+
 def run():
   rows=[]
   with sync_playwright() as pw:
@@ -34,7 +42,7 @@ def run():
       c=browser.new_context(viewport={'width':w,'height':h},reduced_motion='reduce'); c.add_init_script(SEED_SCRIPT); c.route('**/api/server-time',route_time); c.route('**/api/time',route_time)
       p=c.new_page(); p.goto(URL,wait_until='domcontentloaded',timeout=45000); p.wait_for_selector('.v4-dashboard-grid'); p.get_by_role('button',name='寶物商店',exact=True).click(); p.wait_for_selector('.v6-shop-studio')
       for category,item_id,mode,visual_selector in REPRESENTATIVES:
-        p.get_by_role('tab',name=category,exact=True).click(); card=p.locator(f'article[data-item-id="{item_id}"]'); card.locator('.v6-preview-button').click(); p.wait_for_function("id=>document.querySelector('.v63-equipment-stage')?.dataset.previewItem===id",arg=item_id)
+        p.get_by_role('tab',name=category,exact=True).click(); card=ensure_card_visible(p,item_id); card.locator('.v6-preview-button').click(); p.wait_for_function("id=>document.querySelector('.v63-equipment-stage')?.dataset.previewItem===id",arg=item_id)
         stage_locator=p.locator('.v63-equipment-stage'); stage_locator.scroll_into_view_if_needed(); p.wait_for_timeout(120)
         scoped_selector=f'.v63-equipment-stage {visual_selector}'
         p.wait_for_function("sel=>{const el=document.querySelector(sel);if(!el)return false;const r=el.getBoundingClientRect();const imageOK=el.tagName!=='IMG'||el.naturalWidth>0;return imageOK&&r.width>24&&r.height>24}",arg=scoped_selector,timeout=4000)

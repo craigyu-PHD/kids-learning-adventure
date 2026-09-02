@@ -8,7 +8,7 @@ import {
 } from './cosmetics';
 import { hasAvatarAccessoryContract, hasAvatarSkinContract } from './avatarAssetRegistry';
 import { legacySlotToEquipmentSlot } from './shopLedger';
-import type { ShopItem, ShopItemAvailability } from './types';
+import type { AvatarVisualSlot, ShopItem, ShopItemAvailability } from './types';
 
 function rendererFor(item: CosmeticDefinition): ShopItem['renderer'] {
   if (item.slot === 'outfit') return 'full-skin';
@@ -34,6 +34,36 @@ function kindFor(item: CosmeticDefinition): ShopItem['kind'] {
   return 'accessory';
 }
 
+function visualMetadataFor(item: CosmeticDefinition): Pick<ShopItem, 'visualSlot' | 'occludes' | 'conflictsWith' | 'zLayer'> {
+  const slotMap: Partial<Record<CosmeticDefinition['slot'], AvatarVisualSlot>> = {
+    outfit: 'skin',
+    hairstyle: 'hair',
+    hat: 'headwear',
+    headphones: 'earwear',
+    glasses: 'face',
+    backpack: 'backpack',
+    cape: 'cape',
+    effect: 'effect',
+  };
+  const zMap: Partial<Record<CosmeticDefinition['slot'], number>> = {
+    outfit: 10,
+    cape: 20,
+    backpack: 24,
+    hairstyle: 40,
+    headphones: 50,
+    hat: 60,
+    glasses: 70,
+    effect: 90,
+  };
+  const visualSlot = slotMap[item.slot];
+  if (!visualSlot) return {};
+  // Occlusion is presentation-only. The underlying equipment transaction stays
+  // equipped so a hidden hair/cape automatically returns when the occluder is removed.
+  const occludes: AvatarVisualSlot[] = [];
+  if (item.id.includes('helmet')) occludes.push('hair', 'earwear');
+  return { visualSlot, occludes, conflictsWith: [], zLayer: zMap[item.slot] ?? 50 };
+}
+
 export function toShopItem(item: CosmeticDefinition): ShopItem {
   const renderer = rendererFor(item);
   const available = cosmeticIsSelectable(item) && renderer !== 'unsupported-legacy';
@@ -49,6 +79,7 @@ export function toShopItem(item: CosmeticDefinition): ShopItem {
     availability: available ? 'available' : 'unavailable',
     renderer,
     previewMode: previewModeFor(item),
+    ...visualMetadataFor(item),
   };
 }
 
