@@ -21,6 +21,7 @@
     "qa:v64:4k": "python3 scripts/qa_v64_4k_layout.py",
     "qa:v64:slots": "tsx scripts/qa_v64_avatar_slots.ts",
     "qa:v64:shop-ux": "python3 scripts/qa_v64_shop_ux.py",
+    "qa:v64:browser": "python3 scripts/qa_v64_browser_matrix.py",
     "qa:v64:art-matrix": "tsx scripts/generate_v64_art_acceptance.ts",
     "qa:v64:art": "tsx scripts/qa_v64_art_acceptance.ts",
     "qa:v64:layout-review-matrix": "tsx scripts/generate_v64_layout_visual_review.ts",

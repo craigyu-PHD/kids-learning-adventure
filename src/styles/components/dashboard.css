@@ -365,16 +365,16 @@
 @media (prefers-reduced-motion: reduce) { .v5-rocket-flyby,.v5-evolution-stage.current .v4-smart-image > img { animation:none !important; } }
 
 /* Daily lessons: centred full preview and a text lane that never overlaps it. */
-.v4-right-column .v5-lesson-card-body { grid-template-columns:148px minmax(0,1fr) !important; height:auto !important; min-height:166px; align-items:center; padding:12px; }
-.v4-right-column .v5-lesson-card-body .v4-lesson-thumb { justify-self:center; align-self:center; width:148px !important; height:96px !important; background:#102a5a; }
+.v4-right-column .v5-lesson-card-body { grid-template-columns:minmax(148px,.46fr) minmax(0,1fr) !important; height:auto !important; min-height:166px; align-items:center; padding:12px; }
+.v4-right-column .v5-lesson-card-body .v4-lesson-thumb { justify-self:center; align-self:center; width:100% !important; height:auto !important; aspect-ratio:16/10; background:#102a5a; }
 .v4-right-column .v5-lesson-card-body .v4-lesson-thumb .v4-smart-image > img { object-fit:contain !important; }
-.v4-right-column .v5-lesson-card-body .v4-lesson-content { min-height:140px; overflow:visible !important; }
+.v4-right-column .v5-lesson-card-body .v4-lesson-content { min-height:0; overflow:visible !important; }
 .v5-lesson-card-body .v4-lesson-content h3 { overflow:visible; -webkit-line-clamp:unset; font-size:16px !important; line-height:1.35; }
 
 /* The daily card owns its CTA without invading the text lane. */
 .v4-right-column .v4-lesson-card { height: auto !important; min-height: 0 !important; grid-template-rows: 38px auto !important; }
 .v4-right-column .v5-lesson-card-body { min-height: 146px !important; }
-.v4-right-column .v5-lesson-card-body .v4-lesson-content button { height:44px !important; min-height:44px !important; margin-top:4px !important; font-size:14px !important; }
+.v4-right-column .v5-lesson-card-body .v4-lesson-content button { height:48px !important; min-height:48px !important; margin-top:6px !important; font-size:15px !important; }
 
 @media (min-width: 761px) {
   .v4-main-navigation button { font-size: 19px !important; }
@@ -500,12 +500,19 @@
 .v6-achievement-tabs button.active { border-color:#7d58d8; background:linear-gradient(135deg,#f5efff,#ebf8ff); box-shadow:0 0 0 3px rgba(126,88,216,.14); }
 .v6-achievement-tabs .avatar-photo-hero { width:42px !important; height:42px !important; }
 .v6-achievement-wall>header>div:nth-child(2)>span { display:block; color:#7250b8; font-size:12px; font-weight:800; letter-spacing:.09em; }
-.v6-achievement-wall .v4-full-badge-grid { grid-template-columns:repeat(4,minmax(0,1fr)) !important; gap:18px; padding:20px 4px 4px; }
+.v6-achievement-wall .v4-full-badge-grid { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) !important; grid-auto-rows:1fr; gap:18px; padding:20px 4px 4px; }
 .v6-achievement-wall .v30-game-badge { min-height:178px; padding:14px!important; border-radius:20px!important; }
 .v6-achievement-wall .v30-game-badge-art { width:104px!important; height:104px!important; }
 .v6-achievement-wall .v30-game-badge-copy strong { font-size:15px!important; line-height:1.25; }
 .v6-achievement-wall .v30-game-badge-copy small { display:none!important; }
 @media(max-width:760px) { .v6-achievement-tabs button { min-width:0; flex:1; justify-content:center; } .v6-achievement-wall .v4-full-badge-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:12px; } .v6-achievement-wall .v30-game-badge { min-height:156px; } .v6-achievement-wall .v30-game-badge-art { width:86px!important; height:86px!important; } }
+@media(min-width:2200px) {
+  .v4-semester-weeks { grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:18px; }
+  .v4-week-strip { align-self:start; }
+}
+@media(min-width:4600px) {
+  .v4-semester-weeks { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
 
 /* One shared AvatarHero treatment: every functional learner avatar is a clean
    transparent cutout driven by the same XP and equippedCosmetics source. */

@@ -39,9 +39,9 @@
   .v4-dashboard-grid {
     width: min(94vw, 1880px);
     grid-template-columns:
-      minmax(300px, .82fr)
-      minmax(780px, 2.3fr)
-      minmax(360px, 1fr);
+      minmax(320px, .92fr)
+      minmax(720px, 2.05fr)
+      minmax(400px, 1.12fr);
     gap: clamp(14px, 1vw, 24px);
   }
 
@@ -123,9 +123,9 @@
   .v4-status-bar { width: min(92vw, 2800px); }
   .v4-dashboard-grid {
     grid-template-columns:
-      minmax(330px, .78fr)
-      minmax(1040px, 2.4fr)
-      minmax(420px, 1fr);
+      minmax(360px, 1fr)
+      minmax(980px, 2.1fr)
+      minmax(460px, 1.15fr);
     gap: clamp(18px, .9vw, 28px);
   }
 }
@@ -135,9 +135,9 @@
   .v4-status-bar { width: min(92vw, 3200px); }
   .v4-dashboard-grid {
     grid-template-columns:
-      minmax(380px, .82fr)
-      minmax(1280px, 2.45fr)
-      minmax(480px, 1.06fr);
+      minmax(420px, 1.05fr)
+      minmax(1180px, 2.2fr)
+      minmax(520px, 1.2fr);
     gap: clamp(22px, .8vw, 32px);
   }
   .v4-panel { padding: clamp(16px, .7vw, 24px); }
@@ -150,9 +150,9 @@
   .v4-status-bar { width: min(90vw, 3600px); }
   .v4-dashboard-grid {
     grid-template-columns:
-      minmax(420px, .84fr)
-      minmax(1480px, 2.5fr)
-      minmax(520px, 1.08fr);
+      minmax(460px, 1.05fr)
+      minmax(1380px, 2.25fr)
+      minmax(580px, 1.2fr);
     gap: 32px;
   }
 }

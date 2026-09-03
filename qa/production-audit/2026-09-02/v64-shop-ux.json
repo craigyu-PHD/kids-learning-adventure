@@ -392,7 +392,7 @@
         {
           "name": "4k-shop-workspace-wide",
           "pass": true,
-          "detail": "{'width': 3200, 'height': 1256.859375}"
+          "detail": "{'width': 3200, 'height': 1591.546875}"
         },
         {
           "name": "4k-preview-column-substantial",
@@ -407,7 +407,7 @@
         {
           "name": "4k-cards-remain-collectible-size",
           "pass": true,
-          "detail": "{'width': 311.53125, 'height': 501.84375}"
+          "detail": "{'width': 477.296875, 'height': 658.578125}"
         }
       ],
       "failures": [],

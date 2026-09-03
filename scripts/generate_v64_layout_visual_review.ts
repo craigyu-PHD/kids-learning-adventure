@@ -24,7 +24,7 @@ const records:any[]=[];
 for (const viewport of viewports) for (const page of pages) {
   const key=`${viewport}:${page}`;
   const old:any=oldByKey.get(key) ?? {};
-  const screenshot=`qa/production-audit/2026-09-02/v64-4k/${viewport}-${page}.png`;
+  const screenshot=path.relative(ROOT, path.join(SHOT_DIR, `${viewport}-${page}.jpg`));
   records.push({
     viewport,page,screenshot,
     screenshotExists: fs.existsSync(path.join(ROOT,screenshot)),

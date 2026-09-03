@@ -190,3 +190,42 @@
   .v64-character-filters button { min-height:38px; padding-inline:11px; font-size:12px; }
   .v64-mobile-mini-preview { top:54px; min-height:70px; padding:5px 8px; }
 }
+
+/* V6.4 visual-model remediation: on large displays keep the catalogue as a
+   deliberate wardrobe, not an auto-fit wall of tiny colourful tiles. */
+@media (min-width:1480px) {
+  .v6-shop-studio { padding:24px; }
+  .v6-shop-category-tabs { padding:10px; gap:9px; }
+  .v6-shop-category-tabs button { min-height:48px; padding-inline:17px; font-size:15px; }
+  .v64-character-filters button { min-height:44px; font-size:14px; }
+  .v6-shop-category-heading { margin:10px 0 14px; }
+  .v6-shop-category-heading span { font-size:16px; }
+  .v6-shop-category-heading strong { font-size:19px; }
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(4,minmax(0,1fr)); grid-auto-rows:1fr; gap:18px; }
+  .v6-shop-catalog .v4-shop-grid article {
+    height:100%;
+    min-height:370px;
+    padding:16px;
+    border-color:#c9ddea;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(29,67,112,.07);
+  }
+  .v6-shop-catalog .v4-item-art { min-height:180px; border-radius:18px; margin-bottom:12px; background:linear-gradient(145deg,#eff8ff,#edf1ff); }
+  .v6-shop-catalog .v4-shop-grid h3 { margin:5px 0 3px; color:#173d6b; font-size:18px; line-height:1.25; }
+  .v6-shop-catalog .v4-shop-grid p { min-height:42px; margin:2px 0 5px; color:#526b83; font-size:14px; line-height:1.5; }
+  .v6-shop-catalog .v4-shop-grid small { color:#647990; font-size:12px; line-height:1.4; }
+  .v6-shop-item-status { margin-top:7px; font-size:13px; line-height:1.35; }
+  .v6-shop-catalog .v4-shop-grid button { min-height:48px; margin-top:8px; font-size:14px; }
+  .v6-treasure-showcase > header h2 { font-size:28px; }
+  .v6-treasure-showcase > header p { font-size:14px; }
+  .v6-shop-wallet-row > div:first-child strong { font-size:22px; }
+  .v6-shop-wallet-row > div:first-child span { font-size:13px; }
+}
+@media (min-width:3200px) {
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+  .v6-shop-catalog .v4-shop-grid article { min-height:390px; }
+  .v6-shop-catalog .v4-item-art { min-height:190px; }
+}
+@media (min-width:4600px) {
+  .v6-shop-catalog .v4-shop-grid { grid-template-columns:repeat(5,minmax(0,1fr)); gap:22px; }
+}

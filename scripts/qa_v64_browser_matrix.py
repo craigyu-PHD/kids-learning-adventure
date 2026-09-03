@@ -300,40 +300,45 @@ def desktop_flow(page: Page) -> list[str]:
 
 
 def run() -> int:
-    console_errors=[]; page_errors=[]; checks=[]; screenshots=[]; flow_failures=[]
+    console_errors=[]; page_errors=[]; checks=[]; screenshots=[]; flow_failures=[]; reduced_states={}
+    engines=('chromium','firefox','webkit')
     with sync_playwright() as pw:
-        browser=pw.chromium.launch(headless=True)
-        for width,height in VIEWPORTS:
-            context=browser.new_context(viewport={'width':width,'height':height})
-            context.add_init_script(SEED); install_routes(context)
-            page=context.new_page()
-            page.on('console', lambda msg, wh=f'{width}x{height}': console_errors.append({'viewport':wh,'text':msg.text}) if msg.type=='error' else None)
-            page.on('pageerror', lambda exc, wh=f'{width}x{height}': page_errors.append({'viewport':wh,'text':str(exc)}))
-            page.goto(URL, wait_until='domcontentloaded', timeout=60000)
-            page.wait_for_selector('.v4-dashboard-grid', timeout=30000)
-            page.wait_for_timeout(350)
-            snap=page.evaluate(SNAPSHOT_JS)
-            failures=check_snapshot(snap,width)
-            checks.append({'viewport':f'{width}x{height}','snapshot':snap,'failures':failures})
-            if (width,height)==(1536,1024):
-                flow_failures.extend(desktop_flow(page))
-            if (width,height) in BASELINE_SHOTS:
-                shot=SHOT_DIR/f'v64-{width}x{height}.png'; page.screenshot(path=str(shot), full_page=True); screenshots.append(str(shot.relative_to(ROOT)))
-            context.close()
+        for engine_name in engines:
+            browser_type=getattr(pw, engine_name)
+            browser=browser_type.launch(headless=True)
+            for width,height in VIEWPORTS:
+                context=browser.new_context(viewport={'width':width,'height':height})
+                context.add_init_script(SEED); install_routes(context)
+                page=context.new_page()
+                tag=f'{engine_name}:{width}x{height}'
+                page.on('console', lambda msg, wh=tag: console_errors.append({'case':wh,'text':msg.text}) if msg.type=='error' else None)
+                page.on('pageerror', lambda exc, wh=tag: page_errors.append({'case':wh,'text':str(exc)}))
+                page.goto(URL, wait_until='domcontentloaded', timeout=60000)
+                page.wait_for_selector('.v4-dashboard-grid', timeout=30000)
+                page.wait_for_timeout(350)
+                snap=page.evaluate(SNAPSHOT_JS)
+                failures=check_snapshot(snap,width)
+                checks.append({'engine':engine_name,'viewport':f'{width}x{height}','snapshot':snap,'failures':failures})
+                if (width,height)==(1536,1024):
+                    flow_failures.extend(f'{engine_name}: {failure}' for failure in desktop_flow(page))
+                if engine_name=='chromium' and (width,height) in BASELINE_SHOTS:
+                    shot=SHOT_DIR/f'v64-{width}x{height}.png'; page.screenshot(path=str(shot), full_page=True); screenshots.append(str(shot.relative_to(ROOT)))
+                context.close()
 
-        reduced=browser.new_context(viewport={'width':390,'height':844}, reduced_motion='reduce')
-        reduced.add_init_script(SEED); install_routes(reduced)
-        p=reduced.new_page(); p.goto(URL,wait_until='domcontentloaded',timeout=60000); p.wait_for_selector('.v4-dashboard-grid'); p.wait_for_timeout(250)
-        reduced_state=p.evaluate("""() => ({
-          matches:matchMedia('(prefers-reduced-motion: reduce)').matches,
-          animations:[...document.getAnimations()].filter(a=>a.playState==='running').length,
-          videos:[...document.querySelectorAll('.v5-cinematic-header video,.v53-weekly-rocket')].map(v=>({paused:v.paused,readyState:v.readyState}))
-        })""")
-        if not reduced_state['matches']: flow_failures.append('reduced-motion media query did not match')
-        if any(not v['paused'] for v in reduced_state['videos']): flow_failures.append(f"reduced-motion video still playing: {reduced_state['videos']}")
-        reduced.close(); browser.close()
+            reduced=browser.new_context(viewport={'width':390,'height':844}, reduced_motion='reduce')
+            reduced.add_init_script(SEED); install_routes(reduced)
+            p=reduced.new_page(); p.goto(URL,wait_until='domcontentloaded',timeout=60000); p.wait_for_selector('.v4-dashboard-grid'); p.wait_for_timeout(250)
+            reduced_state=p.evaluate("""() => ({
+              matches:matchMedia('(prefers-reduced-motion: reduce)').matches,
+              animations:[...document.getAnimations()].filter(a=>a.playState==='running').length,
+              videos:[...document.querySelectorAll('.v5-cinematic-header video,.v53-weekly-rocket')].map(v=>({paused:v.paused,readyState:v.readyState}))
+            })""")
+            reduced_states[engine_name]=reduced_state
+            if not reduced_state['matches']: flow_failures.append(f'{engine_name}: reduced-motion media query did not match')
+            if any(not v['paused'] for v in reduced_state['videos']): flow_failures.append(f"{engine_name}: reduced-motion video still playing: {reduced_state['videos']}")
+            reduced.close(); browser.close()
 
-    viewport_failures=[{'viewport':x['viewport'],'failures':x['failures']} for x in checks if x['failures']]
+    viewport_failures=[{'engine':x['engine'],'viewport':x['viewport'],'failures':x['failures']} for x in checks if x['failures']]
     all_failures=[]
     all_failures.extend(viewport_failures)
     all_failures.extend({'flow':x} for x in flow_failures)
@@ -342,9 +347,10 @@ def run() -> int:
     result={
         'status':'PASS' if not all_failures else 'FAIL',
         'evidence':evidence_identity(),
+        'engines':list(engines),
         'checks':checks,
         'flowFailures':flow_failures,
-        'reducedMotion':reduced_state,
+        'reducedMotion':reduced_states,
         'consoleErrors':console_errors,
         'pageErrors':page_errors,
         'screenshots':screenshots,
@@ -352,9 +358,9 @@ def run() -> int:
     }
     RESULT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({
-        'status':result['status'],'viewports':len(checks),
+        'status':result['status'],'engines':list(engines),'cases':len(checks),
         'viewportFailures':viewport_failures,'flowFailures':flow_failures,
-        'consoleErrors':console_errors,'pageErrors':page_errors,'reducedMotion':reduced_state,
+        'consoleErrors':console_errors,'pageErrors':page_errors,'reducedMotion':reduced_states,
         'result':str(RESULT.relative_to(ROOT)),
     },ensure_ascii=False,indent=2))
     return 0 if result['status']=='PASS' else 1
