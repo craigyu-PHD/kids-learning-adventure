@@ -1,0 +1,112 @@
+{
+  "group": "headwearNegative",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:28:13.854779+00:00",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-http-final-r5.json",
+    "sha256": "bde8a5e5c541434fee396ff8261e0fb42eb5bd2c79c9dd41c3672794c13a370f"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run_density_r2.py",
+    "sha256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951"
+  },
+  "cases": [
+    {
+      "values": {
+        "control": "missing-layer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+        "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+      },
+      "bindings": {
+        "control": "/cases/0/values/control"
+      },
+      "checks": {
+        "rejected": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+            "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+          },
+          "pointer": "/cases/0/checks/rejected",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "control": "swapped-item"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+        "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+      },
+      "bindings": {
+        "control": "/cases/1/values/control"
+      },
+      "checks": {
+        "rejected": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+            "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+          },
+          "pointer": "/cases/1/checks/rejected",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "control": "stale-candidate"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+        "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+      },
+      "bindings": {
+        "control": "/cases/2/values/control"
+      },
+      "checks": {
+        "rejected": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+            "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+          },
+          "pointer": "/cases/2/checks/rejected",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "control": "wrong-avatar"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+        "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+      },
+      "bindings": {
+        "control": "/cases/3/values/control"
+      },
+      "checks": {
+        "rejected": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/observations.json",
+            "sha256": "cd8a84139bf0930bf48a0fb4b3fdaa446c0c04da3d975cbdcc0280acbc4f56c9"
+          },
+          "pointer": "/cases/3/checks/rejected",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

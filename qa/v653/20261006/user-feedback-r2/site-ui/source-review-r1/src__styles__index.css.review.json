@@ -1,0 +1,14 @@
+{
+  "path": "src/styles/index.css",
+  "beforeSHA256": "957bb1d6f585662f821b359e6394512ef9b4f11f384c4379d06f4bae52152684",
+  "afterSHA256": "339aeb71b53d9c83f9ff473794aac4f85d50948bec93f4b5e62ed5b41dbbd3a8",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。只於 navigation 後匯入 actions.css，讓該檔的精確主要動作 selector 在共享樣式後生效。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__index.css.diff",
+    "sha256": "06e8e2b62e5acd7eb7f16eb51e2b2ba6f33ee77ed9cb67744dc74478bd3d6667"
+  },
+  "observedAt": "2026-10-06T03:21:01.073944+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "avatar": "brother",
+    "sourceBody": "public/assets/v5/characters/brother/wardrobe/base-body.webp",
+    "sourceBodySHA256": "22a5ed7a9ae5bdfc278c7db97d7c787b20eb75cf0e4b3cf6e447ce228d3e69db",
+    "nativeHair": "art-source/v653/headwear-feedback-r2/soft-nebula-r8/brother.png",
+    "nativeHairSHA256": "ba40ec56fe8e562687d9ca1612a128fa8502bda847fa68d0a8f8b980f903f526",
+    "mask": "art-source/v653/headwear-feedback-r2/soft-nebula-r8/brother--body-hair-mask-r5.png",
+    "maskSHA256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43",
+    "sourceLegacyMask": null,
+    "method": "Preserve existing face/ears rig mask; girls clear old scalp above y110, and only clear body outside 280px+ wide native outer hair row envelope above y430. No RGB colour segmentation. Brother preserves natural sideburns.",
+    "status": "AWAITING_VISUAL_REVIEW"
+  },
+  {
+    "avatar": "younger",
+    "sourceBody": "public/assets/v5/characters/younger/wardrobe/base-body.webp",
+    "sourceBodySHA256": "8457700a5c7c6c52dba256651cc49cfbaece432b221c667f0628639f0f846dbb",
+    "nativeHair": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger.png",
+    "nativeHairSHA256": "ae6797a0f1e9bf311345b840930c39fde7ba484553f54869776bd82ef1f38bfa",
+    "mask": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger--body-hair-mask-r5.png",
+    "maskSHA256": "77c09a997b3506f2d1f65ff2910ee203f69ebd41597756da8bf53bb31aa555cc",
+    "sourceLegacyMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--hair-visibility-mask.png",
+    "method": "Preserve existing face/ears rig mask; girls clear old scalp above y110, and only clear body outside 280px+ wide native outer hair row envelope above y430. No RGB colour segmentation. Brother preserves natural sideburns.",
+    "status": "AWAITING_VISUAL_REVIEW"
+  },
+  {
+    "avatar": "sister",
+    "sourceBody": "public/assets/v5/characters/sister/wardrobe/base-body.webp",
+    "sourceBodySHA256": "8a77750949b73d2079a3f0103579f1850899775843875e22eec83d80c2b30f82",
+    "nativeHair": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/sister.png",
+    "nativeHairSHA256": "53f12340cf627849381f5a7d1e4714704b1e088d9baabe6c0963e0922288993e",
+    "mask": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/sister--body-hair-mask-r5.png",
+    "maskSHA256": "9669871c47cce7cc210fb66af8a3069614c2686ecbbf352bf6158edadbb368e3",
+    "sourceLegacyMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--hair-visibility-mask.png",
+    "method": "Preserve existing face/ears rig mask; girls clear old scalp above y110, and only clear body outside 280px+ wide native outer hair row envelope above y430. No RGB colour segmentation. Brother preserves natural sideburns.",
+    "status": "AWAITING_VISUAL_REVIEW"
+  },
+  {
+    "avatar": "younger-sister",
+    "sourceBody": "public/assets/v5/characters/younger-sister/wardrobe/base-body.webp",
+    "sourceBodySHA256": "5a9d1a618747ced95749ba53d61728228257281036319901e4547a0be4f45a43",
+    "nativeHair": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger-sister.png",
+    "nativeHairSHA256": "1b2e8e68c2d9c4f3fac7a57c0fd656034a91afa8bc316b6587e428825514edb0",
+    "mask": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger-sister--body-hair-mask-r5.png",
+    "maskSHA256": "68abba04d58dee3505acf17255121dcdd8a45bcd025801c4677913119793a758",
+    "sourceLegacyMask": null,
+    "method": "Preserve existing face/ears rig mask; girls clear old scalp above y110, and only clear body outside 280px+ wide native outer hair row envelope above y430. No RGB colour segmentation. Brother preserves natural sideburns.",
+    "status": "AWAITING_VISUAL_REVIEW"
+  }
+]

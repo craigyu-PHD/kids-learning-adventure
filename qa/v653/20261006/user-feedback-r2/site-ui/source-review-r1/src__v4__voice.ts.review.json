@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/voice.ts",
+  "beforeSHA256": "8f5caa8e8ac03f778d3bfaed085f1eebac761f8d8e670fc93fb14b70059bb387",
+  "afterSHA256": "3b87a8323ca7f52f67bda3e3533881cc457b7427b36e1e7e282b7fa266f1af5c",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。靜態 AAC 只在 female auto 與 manifest exact key 使用；request ID 防舊播放/延遲聲線回呼，取消清除 timer/listeners/audio 與 TTS。4 秒/播放失敗可退裝置語音；指定語音與男聲保留 TTS。514 音檔與瀏覽器音訊驗收由 voice report 另行綁定，不由此 diff 取代。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__voice.ts.diff",
+    "sha256": "8a7b044e1ca5a8b5345e4b7660d459fe64810db49652115d84c34fd065dad5d7"
+  },
+  "observedAt": "2026-10-06T03:21:01.077357+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

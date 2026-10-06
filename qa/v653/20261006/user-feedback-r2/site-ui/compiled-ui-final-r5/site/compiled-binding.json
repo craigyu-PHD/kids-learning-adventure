@@ -1,0 +1,1082 @@
+{
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:27:17.105235+00:00",
+  "completedAt": "2026-10-06T04:28:33.935846+00:00",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/served-artifacts.json",
+    "sha256": "53e80283c26487846748372e363fe84bc8494ea92a633c36e1993d40d43b3d15"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_site.py",
+    "sha256": "e2e5da8c52dc6226d96bd62ed961c27d718ba5e546bc003ed7e8c82b70e59e7d"
+  },
+  "responses": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "matches": true
+    },
+    {
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "matches": true
+    },
+    {
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "matches": true
+    },
+    {
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "matches": true
+    },
+    {
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "matches": true
+    },
+    {
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "matches": true
+    },
+    {
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "matches": true
+    },
+    {
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "matches": true
+    }
+  ],
+  "errors": [],
+  "browserClosed": true,
+  "stageRoot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5",
+  "capturedImages": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-dark-hero-start.png": "e160008ce74893b302ef6a18de6b1ecfdcf23260457317e7d6d2d5a10d767b16",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-shop-top.png": "7581cfc8552cdcf660d0bc724f716b65927ac737331c9f990ee750cee57118ae",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-shop-top.png": "792bca99f36dcd94ebe876782cadc9276f0d2736c46ad34a9b5454868d11d496",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-semester-lower.png": "8d41f8347ce7a05b998e2945d67b2a39b022d6275a854c6d55e97f15b04ba211",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-menu.png": "b538f4a3683eaed120f90b9ff26858cca153416491b16bd4de43037a53dc4574",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-creature-start.png": "de4a36bc3aa428352b049a49021fb161c2d8533acbc418cbdb617c2abfcd0805",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-shop-lower.png": "0be195f870ba4d3dacfe88bbd236cf9274a3d4c4aec93446f52cb38f0a4f5d01",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-home-lower.png": "272a8d23e9c8514f5920f27da710acf06a48a4eaa685aea4c15b3a6f22fba9fe",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-home-lower.png": "7efbd08ddea142f438ce129e1baf14801f51fda3cf16d3fdc1979d40b5ce83c3",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-semester-lower.png": "48263d76fc3b219d39125878a0e0c0a6e8ad34198bba302a8fd6008bb4c71edb",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-achievements-lower.png": "90b5e9e832b35e4ca75ee61b7199d28f91158530908e3aacb691869dd0c4d7be",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-semester-lower.png": "9113f9b718a14ba5440715506040cf8cc38b49c6592232f2a78a645ca308b9f1",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-shop-top.png": "129d197dc428ff7ca85fcb32fe95f99f8743b29a1a28d1d57df0f15b0c139f24",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-semester-top.png": "5576ce5338028ffa52e3284e3e65de59ae3293283e1fb7faf925f64c501f3570",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-shop-lower.png": "4753a1b1111f9964f8018ab2c4ae614f458811abd4685f562ef0e8c1c33bc1a7",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-menu.png": "661f848327cde86a46c107cd09e6f9ba27ac4adcd2883a3e9658a73f8ef62660",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-semester-top.png": "907ebc99133d24819cc9b5effc7939a41d637b60ca95b7cd99f930beab557265",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-achievements-lower.png": "bd81edafdfb5d9fbf9398b2d7d86450b4698954405a42eb57d94f6e048b578cc",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-allDone.png": "194f0058247dfb9f3be3abf22c3a05130001f1a018951063bb173f417f5b6070",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-achievements-lower.png": "ca20d803ea5b85e62259e7a50d2dee51b949c5f77a4fc610f3b5b65e4d344c43",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-home-top.png": "c37de0d7baf01140d8d0a5bb8170d13585f925ca497289a8aac2456802e7a9b6",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-home-top.png": "431cc7d3608fd0954255bf57ddfa25ff612906229d30451d4138f83c8eee7632",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-home-lower.png": "1bc736c8f7239fb11ea0f7bf6770b166aedf8a3f742946dfff6b8142f81c4a35",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-tank-start.png": "29f25131648f547c13e400e55f55694f5eb0e1a4a2114a6c8b93ceef2a658df1",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-menu.png": "eacb0ad9ff7e5907818a20d6e032c4c103f048aace11c7c3f12d6da4f0448cd8",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-shop-lower.png": "ee377d4fef9fad2cbc941677a61c0dea1976b6d57bb1459e7ebd681312e2c69a",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-dark-hero-start.png": "33ed1252da0b067ccc05bb435e2c4fe3e468d361abcb7db68eccf7225aad79c5",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-hero-start.png": "eacb0ad9ff7e5907818a20d6e032c4c103f048aace11c7c3f12d6da4f0448cd8",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-home-top.png": "1c359c5c59af998cb1296682e01a34602421dbdb0008504987add8dd0882e51a",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-parent.png": "cd81a8e3ab50165bcde20bbd1597c867923b3de8abe412b8c9b711302c8832e7",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-semester-lower.png": "f08a02b0e95098b7053b261e4ec821623954c26563174caeb6fac7ae107312b3",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-shop-lower.png": "563cb26e27dc820249b0bda2107dabe51b636f0564b7ecb3ad65e67f6ebcfdc3",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-home-lower.png": "2817b7b4f634e84c8cc57299bb74b3c421edb52ce1dc43515936b8fca48a5a5c",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-parent.png": "bdf3974f6ccd4e54576b290d697c4800a9dfc827177f98f2e7de90e76764011b",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-parent.png": "28c51e1a907f54f013a90fb39bf4f3886ba5b460a8b7586841c610b4b6b1704f",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-missingtrusteddate.png": "d253824d4b7b23c4259e086211b0c390e3b146a2dcf521b32be37ba7e0a456ad",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-achievements-top.png": "8c93c9f0e7dd543f8bc3588db17ca1ed222568dd1d447a1d03018cdd53e7d26c",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-home-lower.png": "93fe574fd48d3dc99435548a7940f7971ddf6025424e9961c8d31d7cf4e888a7",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-menu.png": "774d87f2e8137c29d1e5d6920327f6fef6bc2228e1f53ecf61a5020b48166ac6",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-menu.png": "ab2faf700734470c57e86f34b984be3af78cdc06dfe31170cb4697049c719258",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-semester-top.png": "8b98e013569478df291ab5fe36268d6e3e1cf01624511866d14264abd2305335",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-shop-top.png": "e5d59c9fd060d5e8bd94de1626e31c2f88eba525261985a0750ad235b70039ae",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-achievements-top.png": "19637e132a05f91b70ca3601ed1d8b5ed016dcc3f44b4e2131974801aacc674b",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-shop-lower.png": "b499efd51813e96972f1e67308698ee0cb474135d1a911809c760cb2b46b56e9",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-achievements-top.png": "a73685f55aa376b9d870223443e673689fcaa5ee07066f12821ebf4bc5e2d9fa",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-achievements-top.png": "dc7a3f748a79351bb133bdc3fc02a3da3590de4c3bcc0ac7240ef1946b6197cb",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-semester-lower.png": "d12217b93cba6bf45f10d15bd92e394ae449aec6d6b66d154d2efcb8f79ef035",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-achievements-lower.png": "7df8d505a6f3e86865336ed4ce87894f3d83237b2ed3c185760e6c169f16608c",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-shop-top.png": "f943c2dead9cec8b99e80643b2a56007070bab42c0ab2a5a3dbf88829e167084",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-light-shop-top.png": "6db01b5cbbe27b8b6e4a7f51b475a389534f8633fae1aacd3b2bb3325d50a982",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-parent.png": "b7419cec2079ef5fda4dd6ebc4adad8a2ebe72737e5eed32b4b7994c1d107d21",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-racing-start.png": "35288df04f69f01ec2a6ac10b8de1949fd15c5f34a8d8c825721abd6dc6f8f2a",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-semester-top.png": "1890eea86d8ffcb1aea3b6bff36e06db631a2dcb8943524004e3baf3d4439ae3",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-achievements-lower.png": "82544626ec498fb9a0176bdbcf0fc23e04ffea2e2d712460189b6f4c719451e2",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-achievements-top.png": "797d3771c0883664fd90b82d38fae5d1c86d270178d6301a77eb18191bac4c0a",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-achievements-lower.png": "a5cf29c0426f5ec72477e0d587b1772c479a1d5020a8da1477ab5e6dcab86657",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-tank-start.png": "3d76dffd0b2c0f77a965b6b171aee886a5bcfa2d45334e0cdd149e767e1d8860",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-semester-top.png": "520fbfea2044e09dfc3673db9aafe3ba2e87720dda856bd7b779ea9cc59afa21",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-racing-start.png": "176347ef6087d6171f5468b723517714f78e7fa5cdad7efcb3fab835d5181898",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-parent.png": "bbe4ae0629c7398cf1a806a47778fca75d5d65915d335cc62517607e13059941",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-semester-top.png": "1adffe258d7c0f32de6b588947bdca9340a898d61106f05dae39c6b34a7b21c8",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-selected0.png": "48f3daad87bf34e11d942ee0ce6f5d1e481003c33c235109e4679202c36f1043",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-home-top.png": "4171400576f37ddda6edc8993766203d1d2f64783bf52edb1218abddaaccd3a8",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-mecha-start.png": "5922898dff56c1b89ba1db81aff70eacca60078add1f5454e8b997b830db0992",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-parent.png": "abd77c130ce245c1555ca053625101adc7d4c17c860bd23d3fd3ee0505992c9e",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-achievements-top.png": "28b9b7cbda344fed483ec490796820168f867f5803e3aa9b509098d9216d19e0",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-home-top.png": "5d102be4ba7baa5b377078513993bbe954bc2f28adbeda4a61b20eced47b01e7",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-creature-start.png": "059f65e80cab7ebe121a076e332d270e52ca40a22ddf076a68e815312fd43714",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-light-shop-lower.png": "1b8e1145c67297935b3a939cd4546c6780ab0076d4971ff814ad312fbcfb8d4a",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-mecha-start.png": "dab88ac060871d951d23ca802648c6349c6d5234ee0fd0568678393b43f89e33",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-midLesson.png": "b82d54c72e348877b71219bea00683d6ed58d7521b9a327a443d5551bd7a341b",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-start.png": "51b2070f3405719d62669e66d444262c5b820ee1333523ccd36fb11cd7d93ffe",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-dark-home-top.png": "37ed115055e8097c8cdf822053dc007c6aaffac36844b07c018beb40add9e6d8",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-820-dark-home-lower.png": "01d569b17698d0e393c8569934f014988302736291d3f7a7b2dd1d9a1f78f161",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-390-dark-menu.png": "36838d28b220cbfb822735b63777fa3a00db8d0a87b39a6f96742c4474abd9fb",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/navigation-1440-light-semester-lower.png": "dd3e170df88b0bf94eebaa3ea09c306233790613a00c809bcdc06290d767fd4f"
+  }
+}

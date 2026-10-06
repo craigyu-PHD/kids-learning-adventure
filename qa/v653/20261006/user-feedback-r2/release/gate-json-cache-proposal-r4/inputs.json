@@ -1,0 +1,160 @@
+{
+  "evidence": {
+    "core": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-final-r5/gate-core.json",
+        "sha256": "a6960a740eeb54ef0c09816ac7dfd7f9fefaefabde224480645ecefd3f843b50"
+      }
+    ],
+    "voiceBrowser": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/gate-voice-browser-adapter.json",
+        "sha256": "13588d1beed9baf22e819021cbc946b9157bfbed0d7250eb697d0bb0844eb642"
+      }
+    ],
+    "headwearNegative": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-adapter-final-r5/headwearNegative.json",
+        "sha256": "59006d1addc05b227f55186b77289f3da582c844787b3c25b690ca4d9c8f151a"
+      }
+    ],
+    "siteCTA": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/site-siteCTA.json",
+        "sha256": "8fbb0991d00d6afb2f07aee85ccbc0d684ed99b028fd96726b6c59de7ee103b8"
+      }
+    ],
+    "siteNavigation": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/site-siteNavigation.json",
+        "sha256": "f44681a308bc39a2658a4d1d050b1b0f07e4358d2a24aa6b8e1de39fddfba0e3"
+      }
+    ],
+    "lessonRuntime": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/lesson-lessonRuntime.json",
+        "sha256": "c39d53c96c655f3b5a5d57010b856b38d5577fef3f43ba39b73d8c3c3e952e65"
+      }
+    ],
+    "lessonFlow": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/lesson-lessonFlow.json",
+        "sha256": "18aa3467c23a7a0a0573b9c37c92e0472301d34957410d8ad1d513ccb85434bb"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/preparation-lessonFlow.json",
+        "sha256": "fd172a6c3a578a9150c9d162ac3485adbcc197123480d90103fe1100b15d5447"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/reward-lessonFlow.json",
+        "sha256": "b82b8f3d491c3b7392aa5ac0b46b2944bd5c943ca86e88c254fde67428a1be53"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/fallback-lessonFlow.json",
+        "sha256": "8602b0bb95d2bf8cb8489ebf7a3b6e305f02fbfe6f7a1fa09cfea70b9a5e0d96"
+      }
+    ],
+    "companion": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/gate-adapters/companion-companion.json",
+        "sha256": "97ed50521627202ee38589e7db0e27cc84a92f3a4f976f2a8c26337e93793b8c"
+      }
+    ],
+    "headwearFit": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/headwearFit-0.json",
+        "sha256": "12f0ab03f9ee86082711e0e62090fbde440c8e1ddf5d9c70c15066a4b5d20a9c"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/headwearFit-1.json",
+        "sha256": "1b23f92642749af665d0a9fe63091c9ab97e36c6ad116839ca75f1c8dd8eb495"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/headwearFit-2.json",
+        "sha256": "887463fe6f7595227752c7293397121decfb6d8442e61c8e31f5f61772b41c36"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/headwearFit-3.json",
+        "sha256": "a9fb652bc113867201be501c48104d5a569b3d9472b5e7c744d089710b77d8b1"
+      }
+    ],
+    "retainedEarwearHairFit": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/retainedEarwearHairFit-4.json",
+        "sha256": "ea67d0d78be715b8bbeadfadddbfdd4d26d0ca58e54ad2063d32d681586a1bf7"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/retainedEarwearHairFit-5.json",
+        "sha256": "792e2b3cde0a4719094519f250489a4f6415222ab5d56aafff89c6130078b66f"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/retainedEarwearHairFit-6.json",
+        "sha256": "86e3e4bca0e66df3a7749e4ff32e872579d0db7db1c9409b4d76bc33cac84827"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-adapters-final-r5/retainedEarwearHairFit-7.json",
+        "sha256": "b63db872553f9a2cdffeebf85fc2df23e78de657f2b14706faa825c2f3a494c1"
+      }
+    ],
+    "siteVisual": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/independent-visual-final-r5/gate-site-visual.json",
+        "sha256": "8d32e2aec16e029a260b59a489a5d162535fdc31ce5819a33df679745d461c3b"
+      }
+    ],
+    "lessonVisual": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/independent-visual-final-r5/gate-lesson-visual.json",
+        "sha256": "6a7f553c9bb98da996bb1d94f666b4e3860742ad6176f1927e39a54f901af0c1"
+      }
+    ],
+    "headwearVisual": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/headwearVisual-shard0.json",
+        "sha256": "794822c5f2a5433f642c81690f0288be3e01d401c1a57d6aff9ebc6b487e3eed"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/headwearVisual-shard1.json",
+        "sha256": "9da0fd714e9dc10e568525a0077eb109d8219fa2432c761f431982d655cbf4db"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/headwearVisual-shard2.json",
+        "sha256": "518be27fe704cf58424ff44f4078c4e7277b3cfa5ee1de982a0051e4573c2f2d"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/headwearVisual-shard3.json",
+        "sha256": "3f26d03e89eb8a4e8bd0c3ab6feed24862b4211b9ce066416107f5bb8ce9ce1e"
+      }
+    ],
+    "retainedEarwearHairVisual": [
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/retainedEarwearHairVisual-shard0.json",
+        "sha256": "8882811e3fece42d03e3a842915306a44977c51b4e8205688f595812923bc190"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/retainedEarwearHairVisual-shard1.json",
+        "sha256": "63386e67602f115b9040f20c9ed3cb97fff46632a9d13443009794a371c5a475"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/retainedEarwearHairVisual-shard2.json",
+        "sha256": "80643295d936086d6ba539e63996b99c83e3f7f75a0df08d16eb828910024a3f"
+      },
+      {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-art-adapters-final-r5/retainedEarwearHairVisual-shard3.json",
+        "sha256": "c223697a4e9e2bec88fd75bed064a8aa2a63a56ad87e6fb98a143adea8512f26"
+      }
+    ]
+  },
+  "strict": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-final-r5/gate-strict.json",
+    "sha256": "dbb75d5fd36b228c5063970b57d7dbb25434aaa9ef8727d2a3bf72095ba3f7de"
+  },
+  "audio": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/gate-audio-adapter.json",
+    "sha256": "872319bc2c39d387e9ab09cfe087414f6d8adb8691e74b1b72b246fd5f3b3364"
+  },
+  "performance": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/performance-r5-gzip/gate-performance.json",
+    "sha256": "2d5a07a80a94275ebad7258ac6ce502200974f2c481733e9fd439f09c9383d0f"
+  }
+}

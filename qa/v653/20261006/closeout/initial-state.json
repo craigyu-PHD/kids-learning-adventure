@@ -1,0 +1,53 @@
+{
+  "host": "yuzikuideMacBook-Pro.local",
+  "root": "/Users/yuzikui/Library/CloudStorage/GoogleDrive-craigpop.tw@gmail.com/我的雲端硬碟/011-OpenCode/11-兒童美語教學網站",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "symbolic-ref",
+        "--short",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "main\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "51ff808af4389dbe4f25c88aebb7f87e78aa073b\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "exitCode": 0,
+      "stdout": " M api/state-guards.ts\n M api/state.ts\n D docs/CHANGELOG.md\n D docs/CSS-MIGRATION.md\n M docs/CURRENT-SPEC.md\n D docs/V6.0.0-RELEASE.md\n D docs/V6.4-ART-BIBLE.md\n D docs/V6.4-ART-PIPELINE.md\n D docs/V6.4-HANDOFF-2026-09-02-NEW-CHAT.md\n D docs/V6.4-HANDOFF-2026-09-02.md\n D docs/V6.4-HANDOFF-2026-09-03-NEW-CHAT.md\n D docs/art-bible-v5.md\n D docs/production-audit/2026-09-01/01_ARCHITECTURE_INVENTORY.md\n D docs/production-audit/2026-09-02/FINAL_PRODUCTION_GRADE_DELIVERY_V6.1.0.md\n D docs/production-audit/2026-09-02/V6.2_LOCAL_ACCEPTANCE.md\n D docs/production-audit/2026-09-02/V6.3_PRODUCTION_ACCEPTANCE.md\n D docs/v5-p3-character-sheet.md\n D docs/v51-art-replacement-report.md\n D docs/v51-imagegen-prompts.md\n M package-lock.json\n M package.json\n M public/assets/v6.4/README.md\n D qa/production-audit/2026-09-01/stage13-accessibility.json\n D qa/production-audit/2026-09-01/stage14-performance.json\n D qa/production-audit/2026-09-01/stage2-full-interactions.json\n D qa/production-audit/2026-09-01/stage2-matrix-after.json\n D qa/production-audit/2026-09-01/stage2-matrix-after2.json\n D qa/production-audit/2026-09-01/stage2-matrix-after3.json\n D qa/production-audit/2026-09-01/stage2-matrix-final-local.json\n D qa/production-audit/2026-09-01/stage2-matrix-production-v610.json\n D qa/production-audit/2026-09-01/stage2-matrix-production-v630.json\n D qa/production-audit/2026-09-01/stage2-matrix-release-v610.json\n D qa/production-audit/2026-09-01/stage2-matrix-v63-final-local.json\n D qa/production-audit/2026-09-01/stage2-matrix.json\n D qa/production-audit/2026-09-01/stage4-failure-simulation.json\n D qa/production-audit/2026-09-01/stage4-integrity-local.json\n D qa/production-audit/2026-09-01/stage4-integrity.json\n D qa/production-audit/2026-09-02/all-shop-items-preview.json\n D qa/production-audit/2026-09-02/production-v610-summary.json\n D qa/production-audit/2026-09-02/v63-preview-layout.json\n D qa/production-audit/2026-09-02/v63-shop-1440x900.png\n D qa/production-audit/2026-09-02/v63-shop-3440x1440.png\n D qa/production-audit/2026-09-02/v63-shop-390x844.png\n D qa/production-audit/2026-09-02/v63-shop-768x1024.png\n D qa/production-audit/2026-09-02/v64-shop-ux.json\n D qa/screenshots/v5/v5-1024x768.png\n D qa/screenshots/v5/v5-1280x800.png\n D qa/screenshots/v5/v5-1440x900.png\n D qa/screenshots/v5/v5-1536x1024.png\n D qa/screenshots/v5/v5-390x844.png\n D qa/screenshots/v51/v51-1536x1024.png\n D qa/screenshots/v51/v51-390x844.png\n D qa/screenshots/v51/v51-820x1180.png\n D qa/v5-visual-qa.md\n D qa/visual-audit/2026-09-02-v64/art-acceptance.json\n D qa/visual-audit/2026-09-02-v64/layout-review.json\n D scripts/__pycache__/qa_v40_browser.cpython-311.pyc\n M scripts/content_health_manifest.ts\n D scripts/convert_checker_alpha.mjs\n M scripts/generate_v64_art_acceptance.ts\n M scripts/qa_architecture.ts\n M scripts/qa_learning_analytics.ts\n M scripts/qa_v40_date_engine.ts\n M scripts/qa_v40_family_auth.ts\n M scripts/qa_v40_state_guard.ts\n M scripts/qa_v62_css_debt.py\n M scripts/qa_v63_all_shop_items_preview.py\n M scripts/qa_v63_preview_layout.py\n M scripts/qa_v64_4k_layout.py\n M scripts/qa_v64_art_acceptance.ts\n M scripts/qa_v64_browser_matrix.py\n M scripts/qa_v64_layout_visual_review.ts\n D scripts/v51_remove_background.swift\n M scripts/validate_curriculum.ts\n M src/App.tsx\n M src/avatarAssetRegistry.ts\n M src/avatarShop.ts\n M src/badges.ts\n M src/cloud.ts\n M src/components/AvatarRenderer.tsx\n M src/components/GameBadge.tsx\n M src/components/TreasureShowcase.tsx\n M src/cosmetics.ts\n M src/data/avatarAssetManifest.json\n M src/data/curriculum.ts\n M src/data/videos.ts\n M src/equipmentPreview.ts\n M src/generated/appVersion.ts\n M src/generated/contentHealthManifest.ts\n M src/learningAnalytics.ts\n M src/rewards.ts\n M src/shopLedger.ts\n M src/shopService.ts\n M src/styles/components/dashboard.css\n M src/styles/components/header.css\n M src/styles/components/parent.css\n M src/styles/components/report.css\n M src/styles/components/review.css\n M src/styles/components/shop.css\n M src/styles/components/speaking.css\n M src/styles/index.css\n M src/styles/layout.css\n M src/styles/motion.css\n M src/styles/responsive.css\n M src/styles/tokens.css\n M src/types.ts\n M src/v2.css\n M src/v4/Dashboard.tsx\n M src/v4/GameImage.tsx\n M src/v4/LessonQuest.tsx\n M src/v4/ParentAccess.tsx\n M src/v4/ParentSettings.tsx\n M src/v4/RewardModal.tsx\n M src/v4/SecondaryViews.tsx\n M src/v4/caregivers.tsx\n M src/v4/voice.ts\n M src/v40.css\n M src/v5/AnimatedMedia.tsx\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "exitCode": 0,
+      "stdout": "https://github.com/craigyu-PHD/kids-learning-adventure.git\n",
+      "stderr": ""
+    }
+  ],
+  "sourceCount": 115,
+  "publicCount": 4424,
+  "sourceDrift": [],
+  "publicDrift": []
+}

@@ -10,11 +10,15 @@
 @import './layout.css';
 @import './components/header.css';
 @import './components/dashboard.css';
+@import './components/lesson.css';
 @import './components/shop.css';
 @import './components/report.css';
 @import './components/review.css';
 @import './components/speaking.css';
 @import './components/parent.css';
+@import './themes.css';
 @import './motion.css';
 @import './accessibility.css';
 @import './responsive.css';
+@import './components/navigation.css';
+@import './components/actions.css';

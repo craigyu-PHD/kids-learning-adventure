@@ -1,0 +1,18 @@
+{
+  "path": "src/v4/Dashboard.tsx",
+  "beforeSHA256": "7f82588a29aef6b5acc32a9a9137288a486255ff4b03dc27a6336db568c40720",
+  "afterSHA256": "3da5d0ffee97902b800f4c7f6e42c1c2c491bf2978df4db9158e7570d1d5eeb2",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "實讀r3→r4 selector完整差異與r4→r5移位差異。兩欄title/孩子buttons保留原map、aria-pressed、onDisplayLearnerChange；重複姓名移除，完整說明改section直屬small。primaryAction原JSX逐字移至日期之後，missionBrief完整保留於後；events/state/copy無改。完整r6→r3差異已先讀并有前次review。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r5/src__v4__Dashboard.tsx.diff",
+    "sha256": "5e25a195eb3b15b987b597da3d8dde2cef475867f1ee6fbc1d12d9391455b19b"
+  },
+  "observedAt": "2026-10-06T04:22:29.197735+00:00",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r3/src__v4__Dashboard.tsx.review.json",
+    "sha256": "5e61ed0a932c02ec08bcce9ecc59228f94951f5b4bd7b25389c368f353ea1e40"
+  },
+  "scope": "Source change acceptance, runtime and independent visual gate separate"
+}

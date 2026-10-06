@@ -1,0 +1,996 @@
+{
+  "schemaVersion": 1,
+  "scope": "Reviewed World art integrated locally per item. Full release acceptance remains separate.",
+  "records": [
+    {
+      "itemId": "ship-scout",
+      "slot": "spaceship",
+      "source": {
+        "path": "public/assets/v6.4/world-source/spaceship/ship-scout.png",
+        "sha256": "ba4dfffb7e863c4eb6bcb9e26af5c77d6d97dd3c18415ea1935f95162b7e801d"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/spaceship/ship-scout.webp",
+        "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_133736/spaceship/ship-scout/png-art-review.json",
+        "sha256": "b6e98d0c14477c6d68bccb6d099b47f6cde05c6e7c6f66c6c808d3f4005607a1"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_133736/spaceship/ship-scout/pairing-lossless.json",
+        "sha256": "ef00f29d76351ba2bb2e07fac1447a907f17f1a9545d5851fb86323a859494bc"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_133736/spaceship/ship-scout/native-ui-execution.json",
+        "sha256": "a735a09038c7478bfab397a5672d3abfbfc7049b1d8bdee0e4b3b8b10f7e89f2"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+          "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+          "width": 384,
+          "height": 256,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/spaceship/ship-scout-384-pair.json",
+            "sha256": "7ae281e111ec6e957652f5f384cfe6e4350089b8c4b7a0585f41092068abf9e8"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/spaceship/ship-scout-768.webp",
+          "sha256": "2d7c75844d3979e8002627661a80a06a30f517272ff7a90e5427ff9ea4256d38",
+          "width": 768,
+          "height": 512,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/spaceship/ship-scout-768-pair.json",
+            "sha256": "def4ea2d625034f760da1daff9364b058028159302ae0a8c227a9e128832cd56"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "room-starlab",
+      "slot": "room",
+      "source": {
+        "path": "public/assets/v6.4/world-source/room/room-starlab.png",
+        "sha256": "2a81929574552cc76294191f7b1b66979c6dc9f1d51f1c8b08f46636e375a27c"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/room/room-starlab.webp",
+        "sha256": "968fb6a634e13cf705da2e2a0793cc4f151bc6b2a8538ae32b1a1fe8802de4fb"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/retained-rooms/source-review/room-starlab/png-art-review.json",
+        "sha256": "44b6fa0e80548dd393593518906cdb5b28658293dae615169c5552afff230bc8"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-performance/opaque-room-delivery/room-starlab-pair.json",
+        "sha256": "2f17d80c6a6801b21e887cfdadc5e1b1158568fff529e119f3611c1649ed2e13"
+      },
+      "retentionEvidence": {
+        "path": "qa/art-gate/retained-rooms/source-review/room-starlab/retention-evidence.json",
+        "sha256": "f6952a20728284b8a40b3c0a98a5e8ed95dff4ad009b39ed793e884a956fcff5"
+      },
+      "productionUrlPass": "PENDING",
+      "alternateDelivery": {
+        "format": "avif",
+        "path": "public/assets/v6.4/world/room/room-starlab.avif",
+        "sha256": "c6d4ef5181c81328db906012b7ee32f2fc0aaa7fa7c74aad0ee2887110ac75c0",
+        "width": 1536,
+        "height": 1024,
+        "pairing": {
+          "path": "qa/art-gate/world-performance/room-avif-q92/room-starlab-delivery-pair.json",
+          "sha256": "ec182967e94e0e4e869feb8bd15c2618e05b48585bbeaeeb7fa5166cb6587295"
+        }
+      }
+    },
+    {
+      "itemId": "room-ocean",
+      "slot": "room",
+      "source": {
+        "path": "public/assets/v6.4/world-source/room/room-ocean.png",
+        "sha256": "12f0b5dc2533e3ba8569a9729621a09ccec2c625e8314030313982e90ffa7d74"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/room/room-ocean.webp",
+        "sha256": "32eb34007d8d3d6bd6dccc2f14e6bbea4e5b4c0b7d22bafe470ea63ba060e112"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/retained-rooms/source-review/room-ocean/png-art-review.json",
+        "sha256": "72c2555eb0bd796551bb7fd076a244a7b3337e967697609310dc6a98ce7e896f"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-performance/opaque-room-delivery/room-ocean-pair.json",
+        "sha256": "f90766c3c99cda5634d30b90850ce6c8b8673f26c56aa3a55647d218820d9ef1"
+      },
+      "retentionEvidence": {
+        "path": "qa/art-gate/retained-rooms/source-review/room-ocean/retention-evidence.json",
+        "sha256": "088c134420db820e3444524c02b84baebbe4b1a08a29e918152d175f05ee7f7c"
+      },
+      "productionUrlPass": "PENDING",
+      "alternateDelivery": {
+        "format": "avif",
+        "path": "public/assets/v6.4/world/room/room-ocean.avif",
+        "sha256": "09bf9360fd2c58f76d6ed4951bffdcb9a2f2b7f2418997299708fd2924772095",
+        "width": 1536,
+        "height": 1024,
+        "pairing": {
+          "path": "qa/art-gate/world-performance/room-avif-q92/room-ocean-delivery-pair.json",
+          "sha256": "74e2d12f7c21778b4327ef3275db6c3db0a82b08a008310ec0f762ae52eabf09"
+        }
+      }
+    },
+    {
+      "itemId": "room-legend",
+      "slot": "room",
+      "source": {
+        "path": "public/assets/v6.4/world-source/room/room-legend.png",
+        "sha256": "0820f4051e2077c849dda243a670ff2e2a9c03a90590265ff249dc8dbb66f924"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/room/room-legend.webp",
+        "sha256": "4f0a6c53e9114e6e5f81a5dbf202fd6219ac894f1746941425d791d4c3e9e183"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/retained-rooms/source-review/room-legend/png-art-review.json",
+        "sha256": "deb82c281ae2a152d47e47be2d35e353d9354bf3b71969c17b214aa1b6de6c9a"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-performance/opaque-room-delivery/room-legend-pair.json",
+        "sha256": "daec7cea8e07e234b16f5b3c054ce330af91de3b542090f2db2c2f0b6a37391c"
+      },
+      "retentionEvidence": {
+        "path": "qa/art-gate/retained-rooms/source-review/room-legend/retention-evidence.json",
+        "sha256": "8496a522a84058fc8dc29091b6a50db20a5df4179b2b68db4fc1b4d4e7031e79"
+      },
+      "productionUrlPass": "PENDING",
+      "alternateDelivery": {
+        "format": "avif",
+        "path": "public/assets/v6.4/world/room/room-legend.avif",
+        "sha256": "8a2c109bfcf73246b448090a59662236145c2e75905e4e27ecc553689e38e443",
+        "width": 1536,
+        "height": 1024,
+        "pairing": {
+          "path": "qa/art-gate/world-performance/room-avif-q92/room-legend-delivery-pair.json",
+          "sha256": "c3952fcb6e63e1d02f641fc01c3eab8cb30b0e899d685f3559944efc90168da0"
+        }
+      }
+    },
+    {
+      "itemId": "ship-comet",
+      "slot": "spaceship",
+      "source": {
+        "path": "public/assets/v6.4/world-source/spaceship/ship-comet.png",
+        "sha256": "d794c577851fe891253cff5f1f76a21e57fbe5f8986cacf1f3ee0d5276a8d021"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/spaceship/ship-comet.webp",
+        "sha256": "be57dab64cfe9fab91b431715c9f6e455418df5ea2aaa1d17254a6cac211d717"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_144527/spaceship/ship-comet/png-art-review.json",
+        "sha256": "7427814e947ca31a4c7aac171be2dc76c07503e3b33bff3e235636ed93e436f6"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_144527/spaceship/ship-comet/pairing-lossless.json",
+        "sha256": "1f4334a6e64294a5666891960612dfc5eb20ead3af5ae007e861fda09444cda4"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_144527/spaceship/ship-comet/native-ui-execution.json",
+        "sha256": "c78954c54ebd473515c5c223878883548c32a8640fefd44fad4f5bb30b3d82a6"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/spaceship/ship-comet-384.webp",
+          "sha256": "38978410614d1b3221efcaee34877e10211fe15ad63ee2d67fa0f6a8658a56ab",
+          "width": 384,
+          "height": 256,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/spaceship/ship-comet-384-pair.json",
+            "sha256": "077880d189c3efd37ac38220789403f17ee092051d2e2ad19743a50ee09f05d2"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/spaceship/ship-comet-768.webp",
+          "sha256": "2251cce1e9d68d5fe9371aa9693039c81a430df231e1914462400c4fd934b66f",
+          "width": 768,
+          "height": 512,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/spaceship/ship-comet-768-pair.json",
+            "sha256": "af3dfeeae44f9e38963ffe9a4f6b827d2af76d875833644081b0a0a0b0f7978a"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "ship-legend",
+      "slot": "spaceship",
+      "source": {
+        "path": "public/assets/v6.4/world-source/spaceship/ship-legend.png",
+        "sha256": "f7ea9f9b9f0e1d16d22c860ce2513fc73e997208e64c56133d2efe5b4f18356b"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/spaceship/ship-legend.webp",
+        "sha256": "fff37c928066949b565b5be6ecb21a45f6b4b4f8f0bffa90eb6cd6d7c4efd8cf"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_144628/spaceship/ship-legend/png-art-review.json",
+        "sha256": "b0a3c10a52ec1bcd37757c2e8f84995eb0c8b85304c70c1c1c1ee43d91f6e244"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_144628/spaceship/ship-legend/pairing-lossless.json",
+        "sha256": "7c6872aa433262ad78658cb1661b467e51ec25accb36dd32e6cc335c6f8c1d72"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_144628/spaceship/ship-legend/native-ui-execution.json",
+        "sha256": "fef8d8c70fd345058c2c9f66978ea493d663882858e11ec82c642e3550a08702"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/spaceship/ship-legend-384.webp",
+          "sha256": "e8ca03456dd9dd4bb40c456fa74d4f1405f571cfc929a42f8e5d4e40652ff160",
+          "width": 384,
+          "height": 256,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/spaceship/ship-legend-384-pair.json",
+            "sha256": "8ba4af23d7e13000bea28d69dbbdeee3886467b7771558b39b98fcbcc92d8bba"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/spaceship/ship-legend-768.webp",
+          "sha256": "9e059971f78b9e16d65a44bc199f76d87e7bd1601f7f48a6f54ef89f1afc5110",
+          "width": 768,
+          "height": 512,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/spaceship/ship-legend-768-pair.json",
+            "sha256": "960d6fa6fb58282b1b9f1b966e9104c75a82d0a05b5a566b92f81bc77b3f4989"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "robot-sky",
+      "slot": "robot",
+      "source": {
+        "path": "public/assets/v6.4/world-source/robot/robot-sky.png",
+        "sha256": "534585f33c2a319e5fa7ebee5c45cf18663ab418d46c2dbdae987d4413d66f9b"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/robot/robot-sky.webp",
+        "sha256": "af6d7d5bfcfda853efa87d9ca7ddf8be1329b9049be2622bcbc2db53ecf91ccb"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_151110/robot/robot-sky/png-art-review.json",
+        "sha256": "6d9ee12646044533247f36b9775b06bee1eefd6b4fdd8d598257ea13586a79c2"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_151110/robot/robot-sky/pairing-lossless.json",
+        "sha256": "d511a0ac82f9e7fc92efbc81f541d7f7efe91854a22912f0da9ae04cf2a7dc1c"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_151110/robot/robot-sky/native-ui-execution.json",
+        "sha256": "929da1330043be0850fa011f7ba08651dfc13ccc29b6005e514ff72b35841b56"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/robot/robot-sky-384.webp",
+          "sha256": "b97764c8a20a49316e6bed138d63d85f3b32107851b005c0404fd09d27b236a1",
+          "width": 384,
+          "height": 384,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/robot/robot-sky-384-pair.json",
+            "sha256": "7ec143b5d056ff08907f15917f137d070cba5836d00b92f0b033fb3096bf59db"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/robot/robot-sky-768.webp",
+          "sha256": "606442a23be40bcf073b5edca619cc3a3a825f8c7f2d7ec68d2cf6ab137d3d18",
+          "width": 768,
+          "height": 768,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/robot/robot-sky-768-pair.json",
+            "sha256": "832431c50b4d834af6858fa4d8c4c93b65a57af41dd1d366e519349f215d0577"
+          }
+        }
+      ],
+      "blink": {
+        "source": {
+          "path": "public/assets/v6.4/world-motion-source/robot/robot-sky-blink.png",
+          "sha256": "a2bfc64253f85b7829b38169ca7c584c7fe836d1b52cdd734512b6c007600f7b"
+        },
+        "delivery": {
+          "path": "public/assets/v6.4/world-motion/robot/robot-sky-blink.webp",
+          "sha256": "e1e21730af6f8ddf374da7c28a75ab8c00e28f7deed70dfeac3e6fd9f91a8a7d"
+        },
+        "referenceSha256": "534585f33c2a319e5fa7ebee5c45cf18663ab418d46c2dbdae987d4413d66f9b",
+        "pngReview": {
+          "path": "qa/art-gate/robot-blink-attempts/20260909_023138/robot-sky/png-art-review.json",
+          "sha256": "0cdca12f87b0e5ece172394141550ed872ff3bd6b452ac9556f595e595366c83"
+        },
+        "pairing": {
+          "path": "qa/art-gate/robot-blink-attempts/20260909_023138/robot-sky/pairing.json",
+          "sha256": "70af619132ca1b90ed15ecafa4d63f269ea402718de1d0b129cc37c975c7940b"
+        },
+        "generationTrace": {
+          "path": "qa/art-gate/robot-blink-attempts/20260909_023138/robot-sky/native-ui-execution.json",
+          "sha256": "f3b21f74091f9d40c799c1499934098a2a994724fddb616dba0f0fffbc78d155"
+        },
+        "displayVariants": [
+          {
+            "path": "public/assets/v6.4/world-motion/robot/robot-sky-blink-384.webp",
+            "sha256": "3ea7a385bcbbdc5069c18873012452dc9afa2b44e6f7ef8cde867ff635b73495",
+            "width": 384,
+            "height": 384,
+            "pairing": {
+              "path": "qa/art-gate/robot-blink-attempts/20260909_023138/robot-sky/pairing-display-384.json",
+              "sha256": "cf7d8d85f0fcf17793afbde8bf8827caa9214c8afebdab55470bdd43a4cdce8d"
+            }
+          },
+          {
+            "path": "public/assets/v6.4/world-motion/robot/robot-sky-blink-768.webp",
+            "sha256": "42ac521d4ccab0165dc2ddb9ca91247ef91268a74aaa903669cac8d397a9d8c6",
+            "width": 768,
+            "height": 768,
+            "pairing": {
+              "path": "qa/art-gate/robot-blink-attempts/20260909_023138/robot-sky/pairing-display-768.json",
+              "sha256": "6333c7b7e21e29745c05d0998a20ab12553587e1fb8f8de9ec3f7fa8621ad252"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "robot-mecha",
+      "slot": "robot",
+      "source": {
+        "path": "public/assets/v6.4/world-source/robot/robot-mecha.png",
+        "sha256": "f2c958cb43f558485c25e3d2d4cdedd0394a8c917bb1905279d8af03068190e9"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/robot/robot-mecha.webp",
+        "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_151343/robot/robot-mecha/png-art-review.json",
+        "sha256": "cde18970a2f89309ae44b2e74e71efffd1d249c568c696802a6be45faba82a51"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_151343/robot/robot-mecha/pairing-lossless.json",
+        "sha256": "3904813c7ef739479456c3fc856e69ed6203e611fe074ab4dd9bfa11b937c48f"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_151343/robot/robot-mecha/native-ui-execution.json",
+        "sha256": "f0ca74fdd90a2a884ca4c28173b997ff215f471c7b6a8486ec6e45866f74026a"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+          "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+          "width": 384,
+          "height": 384,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/robot/robot-mecha-384-pair.json",
+            "sha256": "13f6249c54e9ad2131df2aff813054bbc11e6f4a8343678704921ab2947ee203"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/robot/robot-mecha-768.webp",
+          "sha256": "33c1da1e93c3e379e9c505c912c3dbdb74fb17eb5751ef4f727474566d4b8252",
+          "width": 768,
+          "height": 768,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/robot/robot-mecha-768-pair.json",
+            "sha256": "c7f5f75ea8b58f3094a47fe8c650bac9ba12a4625bc3777fc0e76c2073c9f4bb"
+          }
+        }
+      ],
+      "blink": {
+        "source": {
+          "path": "public/assets/v6.4/world-motion-source/robot/robot-mecha-blink.png",
+          "sha256": "880fa8d094c575455cf6cfd804e1a39f216380358ce42f56647382d0473d9571"
+        },
+        "delivery": {
+          "path": "public/assets/v6.4/world-motion/robot/robot-mecha-blink.webp",
+          "sha256": "571da584f63e2e33e25ccccc5e41f2761654198139e308131d6511d50364eb1b"
+        },
+        "referenceSha256": "f2c958cb43f558485c25e3d2d4cdedd0394a8c917bb1905279d8af03068190e9",
+        "derivation": {
+          "method": "reviewed-robot-sky-native-open-to-blink-eye-delta-on-approved-same-rig",
+          "referenceBlinkSource": {
+            "path": "public/assets/v6.4/world-motion-source/robot/robot-sky-blink.png",
+            "sha256": "a2bfc64253f85b7829b38169ca7c584c7fe836d1b52cdd734512b6c007600f7b"
+          },
+          "eligibility": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+            "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+          },
+          "candidateManifest": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+            "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+          },
+          "visualAdmission": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+            "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+          },
+          "sourceCandidate": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/robot/robot-mecha-blink.png",
+            "sha256": "880fa8d094c575455cf6cfd804e1a39f216380358ce42f56647382d0473d9571"
+          },
+          "metrics": {
+            "boxes": [
+              [
+                431,
+                296,
+                582,
+                495
+              ],
+              [
+                669,
+                298,
+                822,
+                496
+              ]
+            ],
+            "changedPixels": 59143,
+            "changedFraction": 0.03761042812918915,
+            "maskPixels": 59144,
+            "outsideMaskChangedPixels": 0,
+            "alphaExact": true,
+            "anchorComponents": [
+              {
+                "pixels": 17636,
+                "score": 2740869,
+                "bbox": [
+                  438,
+                  303,
+                  575,
+                  488
+                ]
+              },
+              {
+                "pixels": 17575,
+                "score": 2687704,
+                "bbox": [
+                  676,
+                  305,
+                  815,
+                  489
+                ]
+              }
+            ]
+          }
+        },
+        "displayVariants": [
+          {
+            "path": "public/assets/v6.4/world-motion/robot/robot-mecha-blink-384.webp",
+            "sha256": "a61031c07c0823f6d077647bdca2d07762cfb7bf99ab94f831152a6467653f22",
+            "width": 384,
+            "height": 384
+          },
+          {
+            "path": "public/assets/v6.4/world-motion/robot/robot-mecha-blink-768.webp",
+            "sha256": "06cbea14a61eff37224592f2b037c45134bdec2d6e133ad5ee2a5a62939c5421",
+            "width": 768,
+            "height": 768
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "robot-legend",
+      "slot": "robot",
+      "source": {
+        "path": "public/assets/v6.4/world-source/robot/robot-legend.png",
+        "sha256": "76c11fff2730db10217ab9203833f61620a09aa974b3ea7370fe7bcfc5ec17c4"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/robot/robot-legend.webp",
+        "sha256": "f39d0750c75d2e9592e020420c96f54edaf1f763007b530a7b05d6cf8ce65d27"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_151631/robot/robot-legend/png-art-review.json",
+        "sha256": "1b404af22274cdd921f7c07ea850c1bc9a20b05f6986d09607a80f83678b78b7"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_151631/robot/robot-legend/pairing-lossless.json",
+        "sha256": "a2f48b00ee1373b4e5b12bcb21dd89f95ea20d7a8f1709d4d0b6c02acdc38a57"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_151631/robot/robot-legend/native-ui-execution.json",
+        "sha256": "0b65c1f45340204afd69428ac595ddee3d1857d0aa2a0a0f149b6a5e9a8f0eff"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/robot/robot-legend-384.webp",
+          "sha256": "c7b4d3a1eee42b0332de90bb19d099db00a959aec78e362f982f350c79ad4631",
+          "width": 384,
+          "height": 384,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/robot/robot-legend-384-pair.json",
+            "sha256": "33f3fded235c0d62402bd1da58be61daa7e9a9f0afc2bb6efb04a6b9f5ecc1bd"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/robot/robot-legend-768.webp",
+          "sha256": "5028de97d0deb67fec03338f5a8e95734c4d3b60a333ad83b575894d7fa159b4",
+          "width": 768,
+          "height": 768,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/robot/robot-legend-768-pair.json",
+            "sha256": "46bf3517bb0e1ab6d2b56ce3c4705cd3399f3a1237b9436b4bf20d94ebf79527"
+          }
+        }
+      ],
+      "blink": {
+        "source": {
+          "path": "public/assets/v6.4/world-motion-source/robot/robot-legend-blink.png",
+          "sha256": "46860e15b8391d77ddb9b7402bcbc63af7a082691ed6e08503fba3978ae35011"
+        },
+        "delivery": {
+          "path": "public/assets/v6.4/world-motion/robot/robot-legend-blink.webp",
+          "sha256": "5b80dcf65db9f30b0f67b05c69eceda3318ee2b439c9d74187a4456c17d41665"
+        },
+        "referenceSha256": "76c11fff2730db10217ab9203833f61620a09aa974b3ea7370fe7bcfc5ec17c4",
+        "derivation": {
+          "method": "reviewed-robot-sky-native-open-to-blink-eye-delta-on-approved-same-rig",
+          "referenceBlinkSource": {
+            "path": "public/assets/v6.4/world-motion-source/robot/robot-sky-blink.png",
+            "sha256": "a2bfc64253f85b7829b38169ca7c584c7fe836d1b52cdd734512b6c007600f7b"
+          },
+          "eligibility": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+            "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+          },
+          "candidateManifest": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+            "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+          },
+          "visualAdmission": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+            "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+          },
+          "sourceCandidate": {
+            "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/robot/robot-legend-blink.png",
+            "sha256": "46860e15b8391d77ddb9b7402bcbc63af7a082691ed6e08503fba3978ae35011"
+          },
+          "metrics": {
+            "boxes": [
+              [
+                431,
+                296,
+                582,
+                495
+              ],
+              [
+                669,
+                298,
+                822,
+                496
+              ]
+            ],
+            "changedPixels": 45476,
+            "changedFraction": 0.028919260598938262,
+            "maskPixels": 45477,
+            "outsideMaskChangedPixels": 0,
+            "alphaExact": true,
+            "anchorComponents": [
+              {
+                "pixels": 17636,
+                "score": 2740869,
+                "bbox": [
+                  438,
+                  303,
+                  575,
+                  488
+                ]
+              },
+              {
+                "pixels": 17575,
+                "score": 2687704,
+                "bbox": [
+                  676,
+                  305,
+                  815,
+                  489
+                ]
+              }
+            ]
+          }
+        },
+        "displayVariants": [
+          {
+            "path": "public/assets/v6.4/world-motion/robot/robot-legend-blink-384.webp",
+            "sha256": "d2b13762f3f1b050a7416c5978c5c07e765cfd936f2acbc41987aa1824d1d59e",
+            "width": 384,
+            "height": 384
+          },
+          {
+            "path": "public/assets/v6.4/world-motion/robot/robot-legend-blink-768.webp",
+            "sha256": "bdecc62f83f64b65e79aeadfb2d4d77459303b4dad290fb15be4c1768a35763c",
+            "width": 768,
+            "height": 768
+          }
+        ]
+      }
+    },
+    {
+      "itemId": "card-sky",
+      "slot": "card",
+      "source": {
+        "path": "public/assets/v6.5.3/world-source/card/card-sky.png",
+        "sha256": "f80816439f59ff3c849764761e4f2de413e3ca0d8550d026c6fcde17432e6aea"
+      },
+      "delivery": {
+        "path": "public/assets/v6.5.3/world/card/card-sky.webp",
+        "sha256": "5f39a8d70d50186746f5fdca3dc2a41da64c30d26de8ad41fd543df94f6b1f12"
+      },
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.5.3/world-display/card/card-sky-384--lossless.webp",
+          "sha256": "a9b7af4b84d5b3aad2509a816728be50f59acacaa7644ca0adb036b7a37756b6",
+          "width": 384,
+          "height": 576,
+          "pairing": {
+            "path": "qa/v653/20261005/blender/cards/native-r5-candidate/card-sky-384-pair.json",
+            "sha256": "dae3d2eb786f91862817efdab525bc90712c7dd22f1e20667a7fc4398b522a18"
+          }
+        },
+        {
+          "path": "public/assets/v6.5.3/world-display/card/card-sky-768--lossless.webp",
+          "sha256": "8453721317cb26ff2dd7cd70b792f77a85f14b4b42c8bf900fa62aea89e45f9d",
+          "width": 768,
+          "height": 1152,
+          "pairing": {
+            "path": "qa/v653/20261005/blender/cards/native-r5-candidate/card-sky-768-pair.json",
+            "sha256": "4ca7698e19c20c2cef7784bfa2021227a93875ea862d7d12a405bfff84a0c768"
+          }
+        }
+      ],
+      "productionUrlPass": "PENDING",
+      "pngReview": {
+        "path": "qa/v653/20261005/blender/cards/native-r5-candidate/source-review.json",
+        "sha256": "f01afa96275793b7f5f30e11b2f4c2b4001c2aa5d9a52efc69fa1ed1c63fedd0"
+      },
+      "pairing": {
+        "path": "qa/v653/20261005/blender/cards/native-r5-candidate/lossless-pair.json",
+        "sha256": "4e20d74fed1dd29e7165e78f4b2e9eaa11ed7959a27e8801645e373996756fc0"
+      },
+      "generationTrace": {
+        "path": "qa/v653/20261005/blender/cards/native-r5-candidate/native-generation.json",
+        "sha256": "07bd1793bc647bfe8033a51f1e152ebb748054f3f41fda28964130aec29b4e80"
+      }
+    },
+    {
+      "itemId": "card-nebula",
+      "slot": "card",
+      "source": {
+        "path": "public/assets/v6.4/world-source/card/card-nebula.png",
+        "sha256": "fa7991d73a1ec8086306fa986e98fa671fbbdd5bf6a4dc679910faf7ab1e634e"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/card/card-nebula.webp",
+        "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_153530/card/card-nebula/png-art-review.json",
+        "sha256": "88334cc47af241457b4e70108ef9238d7ea5bc0b63bf7b373dfd9f30b4eefb96"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_153530/card/card-nebula/pairing-lossless.json",
+        "sha256": "053355ef73bdef78d6e53e37b7d27983d001e635f72b11798736f3e72ac8cf99"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_153530/card/card-nebula/native-ui-execution.json",
+        "sha256": "2549cdce7327a6d930cd1f3f0dfd5d639b36e61845d8c3058a739be8f11c4231"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "width": 384,
+          "height": 576,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/card/card-nebula-384-pair.json",
+            "sha256": "a56256358f8c801de8ff4489b79a252083baee8c48de2e2693d6c9f06de845e4"
+          },
+          "alternateDelivery": {
+            "format": "avif",
+            "path": "public/assets/v6.4/world-display/card/card-nebula-384.avif",
+            "width": 384,
+            "height": 576,
+            "sha256": "250fd8a793cd983b1d8259b75af33289c828dfa8a302733d6058549ec2a4247c",
+            "pairing": {
+              "path": "qa/art-gate/world-performance/20260908_220500_card_codec/card-nebula-384-pair.json",
+              "sha256": "20e3bcb1a17ce1d021fe39eb40b1322af1ef95f4705a446f77d73f1204263492"
+            }
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/card/card-nebula-768.webp",
+          "sha256": "565197f0c3b8ce2464354e89b447c04b00354309ae5775e2d3db44da987cf2cb",
+          "width": 768,
+          "height": 1152,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/card/card-nebula-768-pair.json",
+            "sha256": "c22a47ea99680b5401cd970d1bf7a998bb177d1f90e52ec717667ec48e38e88a"
+          },
+          "alternateDelivery": {
+            "format": "avif",
+            "path": "public/assets/v6.4/world-display/card/card-nebula-768.avif",
+            "width": 768,
+            "height": 1152,
+            "sha256": "e4181311411e50f5c88b30475fa304149f62a5463fe3287ace9bb21bec72299c",
+            "pairing": {
+              "path": "qa/art-gate/world-performance/20260908_220500_card_codec/card-nebula-768-pair.json",
+              "sha256": "2db473956eda64544b3a584b1f77fe59d2310d9bb259af54bb4cff23070e6ef1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "card-legend",
+      "slot": "card",
+      "source": {
+        "path": "public/assets/v6.4/world-source/card/card-legend.png",
+        "sha256": "d744f2f120d62d2570b667fe7a3ec001a77e387b5b3b9c219da5b91b621c576d"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/card/card-legend.webp",
+        "sha256": "02e4f3c2b82517a1d9ac21bbb41b480969382e21ae80bdeabc675a36db938574"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_153838/card/card-legend/png-art-review.json",
+        "sha256": "db2e11046c8c7fbdae9fcd1bd65b3448fc0fc201d34ee7bf9f2faca260f89885"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_153838/card/card-legend/pairing-lossless.json",
+        "sha256": "13c290b019f98054925f316421d433fa436cb7de1ff1b82a142439162224f24e"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_153838/card/card-legend/native-ui-execution.json",
+        "sha256": "20d8b9dec583c13ac01a27d17422cf1ccc582253756f13b22cfb0b875a50d8a2"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/card/card-legend-384.webp",
+          "sha256": "68eebde454d600cb578f9ba21ae88df0a5819c13dc1ceb2ac9043dbeb6737781",
+          "width": 384,
+          "height": 576,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/card/card-legend-384-pair.json",
+            "sha256": "7681d6bd00c391b64e55e44b7212856d6b0b2c28ec1ccccd25e530754ac6a1ff"
+          },
+          "alternateDelivery": {
+            "format": "avif",
+            "path": "public/assets/v6.4/world-display/card/card-legend-384.avif",
+            "width": 384,
+            "height": 576,
+            "sha256": "15d8442c9fdf427f1344fcfaf133908c564c46084f89aa681155e167401ee835",
+            "pairing": {
+              "path": "qa/art-gate/world-performance/20260908_220500_card_codec/card-legend-384-pair.json",
+              "sha256": "09d8207884a6f7f5e68ae98181b992a41697e78e0565b0e6bb0e3948bf772f23"
+            }
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/card/card-legend-768.webp",
+          "sha256": "8e0807180d7ef29bcb8ade10a27fc188b616421f27339c507403aef2265dadb5",
+          "width": 768,
+          "height": 1152,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/card/card-legend-768-pair.json",
+            "sha256": "6e57515a696d0e13a36f1477e4891a86bfc463ae1cf7860c0180247ea645168c"
+          },
+          "alternateDelivery": {
+            "format": "avif",
+            "path": "public/assets/v6.4/world-display/card/card-legend-768.avif",
+            "width": 768,
+            "height": 1152,
+            "sha256": "a410052cd02066d2ecf5c85e6d0ec11f7bfec6a93a81ea63dc0939f89e00592b",
+            "pairing": {
+              "path": "qa/art-gate/world-performance/20260908_220500_card_codec/card-legend-768-pair.json",
+              "sha256": "a295373644fdb4c6b73914a126eefd543dc58a55ac9dd1aebdcb8ca793ab31e3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "effect-stars",
+      "slot": "effect",
+      "source": {
+        "path": "public/assets/v6.4/world-source/effect/effect-stars.png",
+        "sha256": "56ea9f68d0a47c71b31bd83e01fb6377a5927d91e05fb78ee55febd7e04f92eb"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/effect/effect-stars.webp",
+        "sha256": "b32c99cb713f19ad8312cea2594ce22552d930ca37313e0163e648292c98377b"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_160345/effect/effect-stars/png-art-review.json",
+        "sha256": "29ca74d4a40630189150d6ad116749ce73a7a7214be84f227f4bad2fe4337d33"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_160345/effect/effect-stars/pairing-lossless.json",
+        "sha256": "13dabeadb6ac6f092ab7a0c7f5c1318eed2432578c7c18f5142dcd1154fc5cd1"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_160345/effect/effect-stars/native-ui-execution.json",
+        "sha256": "a2a91d8682fda3e5f79add46f0f65673dbca0f808a465dfebe45df20404fe958"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/effect/effect-stars-384.webp",
+          "sha256": "9425cf342ca37ba01e62b0f02a02f9ce565ca43241c67d08073e7c52b8b74595",
+          "width": 384,
+          "height": 576,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/effect/effect-stars-384-pair.json",
+            "sha256": "08386b43602f1cb314a416460c195f9442d56a64689683524074bbf0f6c2244b"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/effect/effect-stars-768.webp",
+          "sha256": "9566ed24262c5df8284f21a4316e61ee111f477e41a2999fa725280855316ab0",
+          "width": 768,
+          "height": 1152,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/effect/effect-stars-768-pair.json",
+            "sha256": "d6c10d5c7595007ed85ec9d95894f40235c110320fa82afe98e06be642a91cc7"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "effect-bubbles",
+      "slot": "effect",
+      "source": {
+        "path": "public/assets/v6.4/world-source/effect/effect-bubbles.png",
+        "sha256": "34f3762d62e0c1eb01a48eb46246c1a58bc6d968002ed8cda5ba72f4a5b2c95f"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/effect/effect-bubbles.webp",
+        "sha256": "d151cb0f115403f9d9d9be302bd9a3cacdecfa1786e60fc53f7357f7b5f0d536"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_160533/effect/effect-bubbles/png-art-review.json",
+        "sha256": "3fbec320eac9865071ce44c2b837fdb3d17e05f73ae8403b318ca733d7d2bedc"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_160533/effect/effect-bubbles/pairing-lossless.json",
+        "sha256": "3f95dff6491b19630a5cc4f9a0390cd0eb500384b07e61b75c0c39bbaf9187c6"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_160533/effect/effect-bubbles/native-ui-execution.json",
+        "sha256": "f506e2ee7d86ddb0a408eeecf663565040d3bdca72ce6f6c2f7cff562e9f513e"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/effect/effect-bubbles-384.webp",
+          "sha256": "a145467d6990163d69516182597736773891341035b6fceebdd549005add10bb",
+          "width": 384,
+          "height": 576,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/effect/effect-bubbles-384-pair.json",
+            "sha256": "28cd77511ebccbd8600110a55a11f4a981101681913d4beae441fb8ab14d7a5a"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/effect/effect-bubbles-768.webp",
+          "sha256": "ec80c51d82e2a6c00cffcd44da682d989e5b631a5e463a0eaf2c3c711cee6227",
+          "width": 768,
+          "height": 1152,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/effect/effect-bubbles-768-pair.json",
+            "sha256": "d4ab0766ffb65a5ddd6a03bc8a459e470b0f9479740499029653dd6b74b4f8fd"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "effect-legend",
+      "slot": "effect",
+      "source": {
+        "path": "public/assets/v6.4/world-source/effect/effect-legend.png",
+        "sha256": "1f3624bf02605716ee69e52054f3d750ddb3115fd767d41b4fbf0b63636902d6"
+      },
+      "delivery": {
+        "path": "public/assets/v6.4/world/effect/effect-legend.webp",
+        "sha256": "b6eb6b897dd700d185d02b190d691d3e344ada8aee391134a3c3566dac0b6df8"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/world-attempts/20260908_160726/effect/effect-legend/png-art-review.json",
+        "sha256": "5c0f1684a3c467e0da79f70078e786539205819cc0840a355d72e8e975416a8d"
+      },
+      "pairing": {
+        "path": "qa/art-gate/world-attempts/20260908_160726/effect/effect-legend/pairing-lossless.json",
+        "sha256": "d2b39cd7b7606a2eaa6ec577ec4f5d84958d7fb7962ac7dc86a5351f1b7f5a72"
+      },
+      "generationTrace": {
+        "path": "qa/art-gate/world-attempts/20260908_160726/effect/effect-legend/native-ui-execution.json",
+        "sha256": "c1935982385a25b519738f036359489cd2422de023ad3c0531ff1862a87f5fb0"
+      },
+      "productionUrlPass": "PENDING",
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.4/world-display/effect/effect-legend-384.webp",
+          "sha256": "d65d2592deb459652ca1da1f5054df535aad5456f6a34e30f1ea4b9e63318bfa",
+          "width": 384,
+          "height": 576,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/effect/effect-legend-384-pair.json",
+            "sha256": "4f4c44a9a028768ef4d33c893a2a18f05af55d7beca5b178d6d2a87c89cce188"
+          }
+        },
+        {
+          "path": "public/assets/v6.4/world-display/effect/effect-legend-768.webp",
+          "sha256": "3b62651b8adc8fd3769c816bb6c86e8e96850158bc16173396d82faa2c5de7a7",
+          "width": 768,
+          "height": 1152,
+          "pairing": {
+            "path": "qa/art-gate/world-performance/display-derivatives/effect/effect-legend-768-pair.json",
+            "sha256": "47f59439184d4f3748d205352c79f37994d9ae91ce68f0895ee83f598c956108"
+          }
+        }
+      ]
+    },
+    {
+      "itemId": "pet-space-fox",
+      "slot": "pet",
+      "source": {
+        "path": "public/assets/v6.5.3/world-source/pet/pet-space-fox.png",
+        "sha256": "e517c04e5f20e46cd402a84878b96d7093bf2d36ed5f0db008480dccd499fc45"
+      },
+      "delivery": {
+        "path": "public/assets/v6.5.3/world/pet/pet-space-fox.webp",
+        "sha256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561"
+      },
+      "displayVariants": [
+        {
+          "path": "public/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "width": 384,
+          "height": 448,
+          "pairing": {
+            "path": "qa/v653/20261005/blender/pet/runtime-candidate-r1/384-pair.json",
+            "sha256": "c6331e8a572baa759aede7617329579b64f5d655c19697643cd3830bc3a6055a"
+          }
+        },
+        {
+          "path": "public/assets/v6.5.3/world-display/pet/pet-space-fox-768--lossless.webp",
+          "sha256": "b4e17ae223283fbe1e6d422fb32754c8020fb654122aa2b40a3d9b1ace1fb7c7",
+          "width": 768,
+          "height": 896,
+          "pairing": {
+            "path": "qa/v653/20261005/blender/pet/runtime-candidate-r1/768-pair.json",
+            "sha256": "9406886d820785088a5c8d633eeb55e4e4148a3b9420ada583ca0231cac2dfc6"
+          }
+        }
+      ],
+      "productionUrlPass": "PENDING",
+      "pngReview": {
+        "path": "qa/v653/20261005/blender/pet/runtime-candidate-r1/source-review.json",
+        "sha256": "08b42387a0e99010fd7a5327085260af22a534ea8beab8118156da6835f07834"
+      },
+      "pairing": {
+        "path": "qa/v653/20261005/blender/pet/runtime-candidate-r1/full-lossless-pair.json",
+        "sha256": "5b4ffbd13bb1789c834d5fd077525a9accedce15de277bd8932397c23ec3e320"
+      },
+      "generationTrace": {
+        "path": "qa/v653/20261005/blender/pet/runtime-candidate-r1/generation.json",
+        "sha256": "7732dc70b81b38a45ebd8d95639037d7bf974535417962d8cffc8bdd7cf675ec"
+      }
+    }
+  ]
+}

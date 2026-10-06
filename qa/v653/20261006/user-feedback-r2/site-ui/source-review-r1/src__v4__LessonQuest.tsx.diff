@@ -1,0 +1,225 @@
+--- published-r6/src/v4/LessonQuest.tsx
++++ feedback/src/v4/LessonQuest.tsx
+@@ -1,6 +1,7 @@
+ import '../styles/components/review.css';
+ import '../styles/components/speaking.css';
+ import '../styles/components/lesson.css';
++import '../styles/components/reward.css';
+ import DailyParticipants from './DailyParticipants';
+ import { useEffect, useMemo, useRef, useState } from "react";
+ import {
+@@ -25,7 +26,6 @@
+   Star,
+   Tags,
+   Trophy,
+-  Users,
+   Volume2,
+   Zap,
+ } from "lucide-react";
+@@ -54,7 +54,7 @@
+ import { subjectLabel } from "./model";
+ import GameImage from "./GameImage";
+ import { playV4Sound } from "./sound";
+-import { speakEnglish } from "./voice";
++import { cancelEnglishSpeech, speakEnglish } from "./voice";
+ import { RecorderController, RecorderControllerError, type RecordedClip } from "../speech/recorder";
+ import {
+   lessonBlockCompletionState,
+@@ -172,6 +172,14 @@
+   const stageMeta = (index: number) => ({ ...STAGES[index], ...(lessonStageLabel(block, index) ?? {}) });
+   const firstUnfinishedStage = STAGES.findIndex((_, index) => !completedStages.includes(lessonStagePersistenceKey(index)));
+   const [stage, setStage] = useState(firstUnfinishedStage < 0 ? STAGES.length - 1 : firstUnfinishedStage);
++  useEffect(() => () => cancelEnglishSpeech(), [block.id, stage]);
++  const [preparationExpanded, setPreparationExpanded] = useState(() => window.matchMedia('(min-width: 1180px)').matches);
++  useEffect(() => {
++    const media = window.matchMedia('(min-width: 1180px)');
++    const update = () => setPreparationExpanded(media.matches);
++    media.addEventListener('change', update);
++    return () => media.removeEventListener('change', update);
++  }, []);
+   const [rewardCeremony, setRewardCeremony] = useState(0);
+   const [revealedWords, setRevealedWords] = useState<Set<string>>(() => new Set());
+   const learnerList = props.settings.children.filter(
+@@ -319,7 +327,7 @@
+ 
+       <main className="v4-quest-stage-card">
+         {stage === 0 && (
+-          <section className="v4-stage-content v6-preparation-stage">
++          <section className="v4-stage-content v653-preparation-stage">
+             <StageHeading
+               icon={<ClipboardList />}
+               eyebrow="STAGE 1"
+@@ -327,31 +335,19 @@
+               text="這一關只給家長看：先掌握 30 分鐘節奏、素材和提示，再讓孩子開始暖身。"
+             />
+             <section className="v4-lesson-preflight" aria-label="家長備課總覽">
+-              <div className="v4-lesson-preflight-heading">
+-                <BookOpen />
+-                <div>
+-                  <span>CAREGIVER PRE-FLIGHT</span>
+-                  <h2>本節 30 分鐘帶課地圖</h2>
+-                </div>
++              <div className="v653-preparation-heading">
++                <div><span>30 分鐘帶課地圖</span><h2>今天怎麼帶孩子學</h2></div>
++                <p><b>15 分鐘</b> 唱跳暖身 <span>＋</span> <b>15 分鐘</b> 主課與任務</p>
+               </div>
+-              <section className="v4-lesson-brief">
+-                <div>
+-                  <span>家長帶課總覽</span>
+-                  <strong>暖身 15 分＋主課 15 分</strong>
+-                </div>
+-                <p>
+-                  先確認本節目標、影片、單字與句型。看完後按「下一關」，第 2
+-                  關才進入孩子的唱跳暖身。
+-                </p>
+-              </section>
+               <DailyParticipants children={props.settings.children} selectedIds={props.participants} editable={canSelectToday} onChange={props.onSelectParticipant} />
+-              <LessonPreparation day={props.day} block={block} onInspect={setStage} />
+-              <div className="v4-teaching-timeline">
++              <LessonPreparation day={props.day} block={block} onInspect={setStage} expanded={preparationExpanded} />
++              <section className="v653-teaching-plan" aria-label="本節帶課時間表">
++                <h3>帶課時間表</h3>
++                <div className="v653-teaching-timeline">
+                 {block.steps.map((step, index) => (
+-                  <article key={`${step.minute}-${index}`}>
+-                    <b>{step.minute}</b>
++                  <details key={`${step.minute}-${index}`} open={preparationExpanded || index === 0}>
++                    <summary><b>{step.minute}</b><strong>{step.title}</strong></summary>
+                     <div>
+-                      <strong>{step.title}</strong>
+                       <p>{lessonInstructionText(step.instruction)}</p>
+                       {step.cue && (
+                         <span>
+@@ -359,10 +355,10 @@
+                         </span>
+                       )}
+                     </div>
+-                  </article>
++                  </details>
+                 ))}
+-              </div>
+-              <CaregiverCallout block={block} />
++                </div>
++              </section>
+             </section>
+           </section>
+         )}
+@@ -397,16 +393,16 @@
+               title="單字預覽"
+               text="每個單字都能直接播放英文發音。"
+             />
+-            <div className="v4-word-grid">
++            <div className="v4-word-grid v653-word-grid">
+               {block.vocabulary.map((word) => {
+                 const revealed = revealedWords.has(word);
+                 return <button key={word} className={`v64-word-flip ${revealed ? 'revealed' : ''}`} aria-pressed={revealed} onClick={() => { setRevealedWords((current) => { const next = new Set(current); if (next.has(word)) next.delete(word); else next.add(word); return next; }); speak(word); }}>
+-                  <span className="v64-word-flip-stage" aria-hidden="true">
++                  <span className="v64-word-flip-stage v653-word-stage" aria-hidden="true">
+                     <span className="v64-word-face image-face"><GameImage src={`${import.meta.env.BASE_URL}assets/v5/vocab/${slug(word)}.webp`} alt="" className="v4-vocab-image" /></span>
+                     <span className="v64-word-face word-face"><strong>{lessonInstructionText(word)}</strong></span>
+                   </span>
+                   <strong className="v64-word-accessible-copy">{lessonInstructionText(word)}</strong>
+-                  <span><Volume2 /> {revealed ? '看圖片並聆聽' : '翻卡並聆聽'}</span>
++                  <span className="v653-word-action"><Volume2 /> {revealed ? '看圖片並聆聽' : '翻卡並聆聽'}</span>
+                 </button>;
+               })}
+             </div>
+@@ -445,11 +441,11 @@
+                   <div>
+                     <span>{lessonInstructionText(prompt.moment)}</span>
+                     <h3>{lessonInstructionText(prompt.title)}</h3>
+-                    <strong>
+-                      <MessageCircleQuestion />
+-                      {lessonInstructionText(prompt.question)}
+-                    </strong>
+-                    <p>回答後延伸：{lessonInstructionText(prompt.followUp)}</p>
++                    <div className="v653-question-box">
++                      <span><MessageCircleQuestion /> 問孩子</span>
++                      <strong>{lessonInstructionText(prompt.question)}</strong>
++                    </div>
++                    <p><b>接著一起做</b>{lessonInstructionText(prompt.followUp)}</p>
+                   </div>
+                 </article>
+               ))}
+@@ -594,7 +590,7 @@
+               title="領取獎勵"
+               text="完成紀錄是唯一發獎依據；重新整理或重進本頁不會再次領取。"
+             />
+-            <div key={`reward-ceremony-${rewardCeremony}`} className="v4-reward-podium">
++            <div key={`reward-ceremony-${rewardCeremony}`} className="v4-reward-podium v653-reward-podium">
+               <div className="v4-reward-orbit">
+                 <img
+                   src={`${import.meta.env.BASE_URL}assets/v5/badges/learning-first-mission-128.webp`}
+@@ -634,7 +630,7 @@
+                     ? "這堂課的完成紀錄已安全保存；正確率 Bonus 會在完成本堂時自動結算。"
+                     : "獎勵按每位孩子自己的完成紀錄獨立計算。"}
+               </p>
+-              <button type="button" className="v6-reward-replay" onClick={() => setRewardCeremony((value) => value + 1)}><Sparkles /> 再次播放通關彩帶</button>
++              <button type="button" className="v6-reward-replay" onClick={() => setRewardCeremony((value) => value + 1)}><Sparkles /> 再看一次獎勵</button>
+             </div>
+             <div className="v4-special-task">
+               <div>
+@@ -746,18 +742,6 @@
+         <p>{text}</p>
+       </div>
+     </div>
+-  );
+-}
+-
+-function CaregiverCallout({ block }: { block: LessonBlock }) {
+-  return (
+-    <aside className="v4-caregiver-callout">
+-      <Users />
+-      <div>
+-        <strong>家長帶課提示</strong>
+-        <p>{lessonInstructionText(block.caregiverTip)}</p>
+-      </div>
+-    </aside>
+   );
+ }
+ 
+@@ -861,7 +845,7 @@
+   };
+   const startRecording = async (childId: string) => {
+     if (!recordingSupported || activeRecording !== null || listeningChildId !== null || activeSession.current !== null) return;
+-    window.speechSynthesis?.cancel();
++    cancelEnglishSpeech();
+     const controller = recorderFor(childId);
+     setActiveRecording({ childId, phase: "permission" });
+     setRecordings((current) => ({ ...current, [childId]: { detail: "正在取得麥克風權限…" } }));
+@@ -974,7 +958,7 @@
+         <button type="button" onClick={() => speak(target)}>
+           <Volume2 /> 再聽一次
+         </button>
+-        <span className="speaking-practice-rate">目前示範語速：{document.documentElement.dataset.voiceRate === "0.9" ? "標準 0.9×" : "慢速 0.78×"}；可在家長設定切換。</span>
++        <span className="speaking-practice-rate">目前示範語速：{document.documentElement.dataset.voiceRate === "0.9" ? "標準語速" : "慢速示範"}；可在家長設定切換。音色依示範音檔或裝置語音而定。</span>
+         {!recognitionConstructor && (
+           <span>這台裝置暫不支援語音辨識，可用下方「照顧者確認」記下孩子已開口。</span>
+         )}
+@@ -1295,7 +1279,7 @@
+           </section>
+         </div>
+       </details>
+-      <section className="v4-quick-check">
++      <section className="v4-quick-check v653-quick-check">
+         <header>
+           <div>
+             <span>STEP 2 · 聽題作答</span>
+@@ -1325,7 +1309,7 @@
+             );
+             const state = alreadyCorrect ? "correct" : feedback[child.id];
+             return (
+-              <article key={child.id} className={state ?? ""} data-quick-child={child.id}>
++              <div key={child.id} className={`v653-answer-card ${state ?? ""}`} data-quick-child={child.id}>
+                 <div className="v4-quick-check-learner">
+                   <AvatarHero
+                     avatarId={child.avatar}
+@@ -1361,7 +1345,7 @@
+                   </small>
+                   {state === "correct" && <div className="v6-answer-win" aria-live="polite"><Sparkles /> 答對了！星星能量已收集<span className="v64-answer-stars" aria-hidden="true"><i/><i/><i/></span></div>}
+                 </div>
+-              </article>
++              </div>
+             );
+           })}
+         </div>

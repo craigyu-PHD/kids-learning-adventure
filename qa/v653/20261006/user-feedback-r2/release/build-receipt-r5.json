@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "exitCode": 0,
+  "startedAt": "2026-10-06T04:21:52.421615+00:00",
+  "completedAt": "2026-10-06T04:21:54.701878+00:00",
+  "stageRoot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "publicPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/public-pins-final-r5.json",
+    "sha256": "7bd98f97cdd95a519670b159d354524bcc456073e5b51483bf70407f4db35d41"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "log": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/vite-build-r5.log",
+    "sha256": "a30bb9cc284708e725efca41929f55013f70b023f4325d0335f502fd91cc964d"
+  },
+  "sourceFiles": 115,
+  "publicFiles": 4424,
+  "proofFiles": 877,
+  "changedFromR1": [
+    "src/styles/components/dashboard.css",
+    "src/styles/components/lesson.css",
+    "src/styles/responsive.css",
+    "src/v4/Dashboard.tsx",
+    "src/v4/GameImage.tsx"
+  ],
+  "addedSourceInputs": [
+    "tsconfig.json"
+  ],
+  "rootManifestUnpromoted": true,
+  "scope": "Direct candidate-only test build; no prebuild or deployment admission"
+}

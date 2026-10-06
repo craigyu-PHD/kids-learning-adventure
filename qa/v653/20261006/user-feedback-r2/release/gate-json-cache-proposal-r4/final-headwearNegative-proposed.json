@@ -1,0 +1,134 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "headwearNegative report fresh",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative timestamp",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative unique observation {\"control\": \"missing-layer\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw identity {\"control\": \"missing-layer\"} control",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative check coverage {\"control\": \"missing-layer\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative asserted rejected {\"control\": \"missing-layer\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative unique observation {\"control\": \"swapped-item\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw identity {\"control\": \"swapped-item\"} control",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative check coverage {\"control\": \"swapped-item\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative asserted rejected {\"control\": \"swapped-item\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative unique observation {\"control\": \"stale-candidate\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw identity {\"control\": \"stale-candidate\"} control",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative check coverage {\"control\": \"stale-candidate\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative asserted rejected {\"control\": \"stale-candidate\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative unique observation {\"control\": \"wrong-avatar\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative raw identity {\"control\": \"wrong-avatar\"} control",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative check coverage {\"control\": \"wrong-avatar\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative asserted rejected {\"control\": \"wrong-avatar\"}",
+      "pass": true
+    },
+    {
+      "check": "headwearNegative exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

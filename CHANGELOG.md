@@ -4,7 +4,32 @@ All production releases use semantic versioning. Release dates represent the dat
 
 ## Unreleased
 
-No accepted changes beyond the V6.3.0 production release.
+下一輪先完成實體手機與兒童語音驗收；尚未核准新功能或新正式版本。
+
+## v6.5.3 — 2026-10-06
+
+### 修復
+- 五款重點配件、髮型與貓耳混搭；四角色八套服裝定位與換裝尺寸穩定。
+- 首頁短螢幕／長姓名及課堂操作布局；保留既有課程、家庭與 immutable ledger。
+
+### 改善
+- 首頁按鈕、小光、備課、字卡、提問、四孩子口說任務及領獎動畫。
+- 257 慢速與 257 標準速英文 AAC，採用使用者選定的較慢跟讀。
+
+### 驗證
+- 608 穿戴功能／獨立視覺、104 新 UI 圖、80 指定流程、1,024 商店流程。
+- 正式站 15 情境功能及 15 情境獨立視覺接受，441 檔 HTTP／MIME／SHA 一致。
+- 商店矩陣採 isolated owned fixture；原始失敗與有時間收據補驗保留，不宣稱真家庭雲端或真價格購買驗收。
+- 同候選 build／final-output gate 通過；本機同成品 Lighthouse 96，不當成 Production 新效能量測。
+
+### Pending QA
+- 實體 iPhone Safari／Android Chrome。
+- 兒童 holdout audio、兩位獨立成人標註；全部語音尚未逐段人工聽驗。
+
+### 基線保存
+- 沿用既有 GitHub 公開倉庫，checkpoint 分支 `codex/checkpoint-v6.5.3-20261006`；不推送 main、不重新部署。
+- 詳細範圍及原始證據：[修復與發布報告](qa/v653/20261006/user-feedback-r2/release/修復與發布報告.md)；off-Git 素材見 ASSET_MANIFEST.md。
+- 6.3 至 6.5.3 的中間發布記錄以 CURRENT-SPEC、既有 handover 與各版原始 QA 為準，本次不補造日期／驗收。
 
 ## V6.3.0 — 2026-09-02
 

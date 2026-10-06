@@ -1,0 +1,14 @@
+{
+  "path": "src/styles/responsive.css",
+  "beforeSHA256": "6ff1a05c3147749962af606e3b2c474779aceabae685ba0e26aae91b855d2853",
+  "afterSHA256": "03849ffabb9bece1c15b09c96500dbb7843723ce4c0f89300e274aa0d0a15cec",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。僅兩條既有按鈕 shadow 與按下位移下降，原有最低 54px、字級和 selector 優先序保留；未新增 !important。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__responsive.css.diff",
+    "sha256": "c50f70c9a13a709c8b5368ea44251b41b1dcc34a9330f2ddd23b70de2a300515"
+  },
+  "observedAt": "2026-10-06T03:21:01.073436+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

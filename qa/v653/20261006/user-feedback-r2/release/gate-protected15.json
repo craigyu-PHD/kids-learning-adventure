@@ -1,0 +1,17 @@
+{
+  "api/family-auth.ts": "5712a8028956798b6fb62dfc20fa2672bf04d290680f7f2744204bcbb9b9646a",
+  "api/family-session.ts": "5d4c4c5278b07c217f98eeec76e00e38f7eeed8e3a25eb09e6c020b80be4768c",
+  "api/server-time.ts": "b6939b0b3d0670191e262749e4c2f8416483330939e9414b80a54bc1110848bf",
+  "api/state-guards.ts": "735219cc29e4a417049bc278f5f3858a8e613bace2cbcb6916f10cfea1e7b992",
+  "api/state.ts": "fc45892cd0fe429a59399f22b445b0ad82d3803870c4977c305b7f3716b8afce",
+  "api/time.ts": "df9f62c2cd94a85e06cf8d5926e6264e1f9aaf83c983c9f1b4ef2218b617c7d4",
+  "src/cloud.ts": "b2b102e1595141729962bcb96c42687764848038f8e637ddc963821d398c1b49",
+  "src/dailyChallenge.ts": "13a5d3ca725a747a6f38708df4b2f1f31631ce2b887c815577f80a7621a6dde8",
+  "src/data/curriculum.ts": "d5eacb63e60c944535a84b94ec884a8d5b027644b704c4e2a0192ad58e8f810c",
+  "src/data/videos.ts": "9e3045f635265ab5052007fd1ab83a7152dd8c9b4303fc05161702c7fb7b8270",
+  "src/data/worldArtManifest.json": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d",
+  "src/lessonCompletionPolicy.ts": "07ddfdcf1065fd8e409f134a3d526e9c19f970c8df763b5393a31da95725a97b",
+  "src/rewards.ts": "09cbff0280a3175b97c511a7148d32c6075b09b0a4af43ab5890e52ec94aa1f9",
+  "src/shopService.ts": "0aae411b7dabe176c2c9ad33b441f87ca1ecdbf11d945ec911a965450ba9a5ad",
+  "tsconfig.json": "84618d2d7522d32ae96ae1335f20c5e63328056c8e20066102640a84fb436a4a"
+}

@@ -1,0 +1,266 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "lessonFlow report fresh",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow timestamp",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow unique observation {\"case\": \"speaking-four-children\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw identity {\"case\": \"speaking-four-children\"} case",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow check coverage {\"case\": \"speaking-four-children\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow asserted passed {\"case\": \"speaking-four-children\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow report fresh",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow timestamp",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow unique observation {\"case\": \"preparation-keyboard\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw identity {\"case\": \"preparation-keyboard\"} case",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow check coverage {\"case\": \"preparation-keyboard\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow asserted passed {\"case\": \"preparation-keyboard\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow report fresh",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow timestamp",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow unique observation {\"case\": \"mission-wrong-right\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw identity {\"case\": \"mission-wrong-right\"} case",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow check coverage {\"case\": \"mission-wrong-right\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow asserted passed {\"case\": \"mission-wrong-right\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow unique observation {\"case\": \"reward-idempotency\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw identity {\"case\": \"reward-idempotency\"} case",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow check coverage {\"case\": \"reward-idempotency\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow asserted passed {\"case\": \"reward-idempotency\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow unique observation {\"case\": \"360x560-badge\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw identity {\"case\": \"360x560-badge\"} case",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow check coverage {\"case\": \"360x560-badge\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow asserted passed {\"case\": \"360x560-badge\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow report fresh",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow timestamp",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow unique observation {\"case\": \"thumbnail-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow raw identity {\"case\": \"thumbnail-fallback\"} case",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow check coverage {\"case\": \"thumbnail-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow asserted passed {\"case\": \"thumbnail-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonFlow exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

@@ -57,6 +57,12 @@
 .user-switch-modal .user-select-card:hover { transform: translateY(-2px); border-color: #83DDFC; }
 .user-switch-modal .user-select-card.selected { border-color: #A99DFF; background: linear-gradient(145deg, rgba(168,77,245,.20), rgba(113,99,232,.20)); box-shadow: inset 0 0 0 2px rgba(169,157,255,.20), 0 10px 24px rgba(4,10,42,.22); }
 
+.motion-preference-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; width:100%; }
+.motion-preference-grid>div { display:flex; align-items:center; justify-content:space-between; gap:12px; min-width:0; padding:12px 14px; border:1px solid var(--v4-border,#d8e7f7); border-radius:14px; background:var(--v4-card,#fff); }
+.motion-preference-grid>div>span { display:flex; align-items:center; gap:8px; min-width:0; font-weight:800; }
+.motion-preference-grid .segmented-control { flex:0 0 auto; }
+@media(max-width:760px){ .motion-preference-grid { grid-template-columns:1fr; } .motion-preference-grid>div { align-items:flex-start; flex-direction:column; } .motion-preference-grid .segmented-control { width:100%; } .motion-preference-grid .segmented-control button { flex:1; } }
+
 .user-switch-modal .user-select-art {
   grid-row: 1 / span 2;
   align-self: center;
@@ -138,3 +144,112 @@
 }
 
 @media (max-width: 900px) { .content-health-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* V6.5 family identifier has explanatory text, not the old 42px copy-button column. */
+.v4-settings-page .cloud-code-box.pin-code-box {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: center;
+  gap: 7px 12px;
+  padding: 14px;
+}
+.v4-settings-page .cloud-code-box.pin-code-box > span { grid-column: 1; }
+.v4-settings-page .cloud-code-box.pin-code-box > strong { min-width: 0; overflow-wrap: anywhere; }
+.v4-settings-page .cloud-code-box.pin-code-box > small {
+  grid-column: 1 / -1;
+  color: #566781;
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 480px) {
+  .v4-settings-page .cloud-code-box.pin-code-box { grid-template-columns: minmax(0, 1fr); }
+  .v4-settings-page .cloud-code-box.pin-code-box > strong { font-size: 18px !important; }
+}
+
+/* Parent controls share the Night Adventure palette; override retained V4
+   light-only declarations without changing the legacy migration layer. */
+.dark .v4-settings-page .settings-card {
+  background: #222742 !important;
+  color: #F8FAFF !important;
+  border-color: #444C70 !important;
+}
+.dark .v4-settings-page :is(.setting-label h3, .user-pin-editor strong, .family-pin-switcher strong) { color: #F8FAFF !important; }
+.dark .v4-settings-page :is(.setting-label p, .child-name-editor > span, .user-pin-editor small, .family-pin-switcher span, .cloud-security-note) { color: #B6BFDA !important; }
+.dark .v4-settings-page :is(.cloud-active-panel, .child-setting-card, .family-pin-switcher, .segmented-control) {
+  background: #2B3150 !important;
+  border-color: #444C70 !important;
+}
+.dark .v4-settings-page :is(.cloud-code-box, .cloud-status-box, input, select, .avatar-choice-grid button, .visual-theme-option) {
+  background: #222742 !important;
+  color: #F8FAFF !important;
+  border-color: #566181 !important;
+}
+.dark .v4-settings-page .cloud-code-box strong { color: #72D6FF !important; }
+.dark .v4-settings-page :is(.cloud-code-box > span, .cloud-code-box > small, .cloud-status-box p, .cloud-status-box small, .visual-theme-option small) { color: #B6BFDA !important; }
+.dark .v4-settings-page input::placeholder { color: #B6BFDA; opacity: 1; }
+.dark .v4-settings-page .secondary-button {
+  background: #343B5D !important;
+  color: #F8FAFF !important;
+  border-color: #637398 !important;
+}
+.dark .v4-settings-page .danger-outline { background: #422D44 !important; color: #FFB6AE !important; border-color: #AD6C77 !important; }
+.dark .v4-settings-page :is(.segmented-control button.active, .avatar-choice-grid button.active) { background: #51468E !important; color: #FFFFFF !important; border-color: #B7AAFF !important; }
+.dark .v4-settings-page .visual-theme-option.active { background: #3C3B43 !important; color: #FFF2BD !important; border-color: #FFD966 !important; }
+.dark .v4-settings-page .child-inline-stats span { background: #343B5D !important; color: #B6E8FF !important; }
+.dark .v4-settings-page .content-health-grid article { background: #2B3150; border-color: #566181; }
+.dark .v4-settings-page .content-health-grid article.pass { background: #233E3B; border-color: #4E8E78; }
+.dark .v4-settings-page .content-health-grid article.fail { background: #422D44; border-color: #AD6C77; }
+.dark .v4-settings-page .content-health-grid strong { color: #F8FAFF; }
+.dark .v4-settings-page :is(.content-health-grid span, .content-health-grid small, .content-health-note) { color: #C5CEE7; }
+
+.v4-settings-page .family-pin-switcher > div:first-child > span {
+  color: #566781 !important;
+  font-size: 12px !important;
+}
+.dark .v4-settings-page .family-pin-switcher > div:first-child > span { color: #B6BFDA !important; }
+
+/* Keep nested preference labels readable on the Night Adventure surfaces. */
+.dark .v4-settings-page .motion-preference-grid > div { background: #2B3150; border-color: #566181; }
+.dark .v4-settings-page .motion-preference-grid > div > span { color: #F8FAFF; }
+.dark .v4-settings-page .admin-unlocked-banner { background: #233E3B !important; border-color: #4E8E78 !important; color: #B2F0D5 !important; }
+.dark .v4-settings-page .admin-unlocked-banner span { color: #C3DFD8 !important; }
+.dark .v4-settings-page :is(.voice-select-label,.voice-device-note) { color: #C5CEE7 !important; }
+
+/* Parent entry: opaque surfaces and readable copy in both themes. */
+.user-switch-modal,.v4-pin-modal,.v30-family-setup-modal { max-height:calc(100dvh - 32px); overflow-y:auto; overscroll-behavior:contain; }
+.user-switch-modal .dialog-intro { color:#53627c; margin:10px 0 14px; }
+.user-switch-modal .eyebrow { color:#6254bc; }
+.user-switch-modal .user-select-card strong { color:#283858; }
+.user-switch-modal .user-select-copy > span { color:#5e4c98; }
+.user-switch-modal .user-select-copy small { color:#52617c; }
+.user-switch-modal .user-select-state { background:#e4e9f6; color:#445574; }
+.user-switch-modal .modal-close-link { color:#3c5278; border-color:#b9c9e2; background:#f4f7fd; }
+.v652-parent-guide { display:grid; gap:9px; margin:12px 0 18px; padding:14px 16px; border:1px solid #c4d6ef; border-radius:16px; background:#f0f5fd; text-align:left; }
+.v652-parent-guide > div { display:grid; gap:3px; }
+.v652-parent-guide dt { color:#25416b; font-size:14px; font-weight:850; }
+.v652-parent-guide dd { margin:0; color:#54657d; font-size:13px; line-height:1.5; }
+.dark .user-switch-modal .dialog-intro,.dark .user-switch-modal .user-select-copy small { color:#c8d5e9; }
+.dark .user-switch-modal .eyebrow,.dark .user-switch-modal .user-select-copy > span { color:#c1b6ff; }
+.dark .user-switch-modal .user-select-card strong { color:#f6f8ff; }
+.dark .user-switch-modal .user-select-state { background:#3d4866; color:#eef2ff; }
+.dark .user-switch-modal .user-select-card.selected .user-select-state { background:#b4a6ff; color:#172044; }
+.dark .user-switch-modal .modal-close-link { background:#2c3651; border-color:#7280a2; color:#eef2ff; }
+.dark .v652-parent-guide { background:#29344f; border-color:#566789; }
+.dark .v652-parent-guide dt { color:#e2eaff; }
+.dark .v652-parent-guide dd { color:#c4d2e9; }
+@media(max-width:480px) {
+  .user-switch-modal { max-height:calc(100dvh - 16px); }
+  .user-switch-modal .user-select-card { min-height:112px; grid-template-columns:72px minmax(0,1fr); padding:10px; }
+  .user-switch-modal .user-select-art { width:70px; height:86px; }
+  .user-switch-modal .user-select-card .caregiver-avatar { width:66px !important; height:82px !important; }
+  .user-switch-modal .user-select-grid { gap:8px; margin-bottom:12px; }
+  .v652-parent-guide { padding:11px 12px; gap:8px; margin:10px 0 14px; }
+}
+
+/* Match the PIN keypad to Night Adventure; legacy V4 forced a white surface. */
+.dark .v4-pin-modal { background:linear-gradient(180deg,#222742,#28334e) !important; color:#f8faff; border-color:#7289b7 !important; }
+.dark .v4-pin-modal > h2 { color:#f8faff; }
+.dark .v4-pin-modal > p,.dark .v4-pin-modal > label,.dark .v4-pin-modal .modal-family-hint { color:#c8d7ed; }
+.dark .v4-pin-modal .modal-close-link { color:#dce7ff; }
+.dark .v4-pin-modal .v4-pin-grid button { background:linear-gradient(180deg,#364665,#2b3955); color:#f8faff; border-color:#657da3; }
+.dark .v4-pin-modal .v4-pin-grid button:is(.clear,.backspace) { color:#cfddf1; }
+.dark .v4-pin-modal .v4-pin-submit:disabled { background:#39465e; color:#becde2; }

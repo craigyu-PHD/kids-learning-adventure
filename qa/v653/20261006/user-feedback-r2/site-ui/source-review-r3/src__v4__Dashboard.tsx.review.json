@@ -1,0 +1,18 @@
+{
+  "path": "src/v4/Dashboard.tsx",
+  "beforeSHA256": "7f82588a29aef6b5acc32a9a9137288a486255ff4b03dc27a6336db568c40720",
+  "afterSHA256": "a8b3829a351dd4ab7c5e73463464026cb253d0e30b21cb9a2578dedd0ea69755",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "沿用已實讀r6完整差異審查，並實讀r1→r2→r3所有新增差異。fallback狀態只控制LessonMissionCard顯示，label移至內容區獨立status div，避免舊p單行截斷；課堂click與access/verified/ledger邏輯未變。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r3/src__v4__Dashboard.tsx.diff",
+    "sha256": "47bc7eadfa8ca3c4fde3f76f3f21e7ceb18e708159db3c53ffaf71fe20a60fc3"
+  },
+  "observedAt": "2026-10-06T04:01:24.216358+00:00",
+  "scope": "Complete previously read r6→r1 diff plus actually read r1→r3 changes; no git history; source acceptance only",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__Dashboard.tsx.review.json",
+    "sha256": "d4f8dca8158e1a07f9793c994b7d977a11b8ddb89b81366a58ee8a02c56c7277"
+  }
+}

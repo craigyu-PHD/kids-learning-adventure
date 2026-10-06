@@ -1,0 +1,61 @@
+{
+  "sourceDependencies": {
+    "api/family-auth.ts": "5712a8028956798b6fb62dfc20fa2672bf04d290680f7f2744204bcbb9b9646a",
+    "api/family-session.ts": "5d4c4c5278b07c217f98eeec76e00e38f7eeed8e3a25eb09e6c020b80be4768c",
+    "api/server-time.ts": "b6939b0b3d0670191e262749e4c2f8416483330939e9414b80a54bc1110848bf",
+    "api/state-guards.ts": "735219cc29e4a417049bc278f5f3858a8e613bace2cbcb6916f10cfea1e7b992",
+    "api/state.ts": "fc45892cd0fe429a59399f22b445b0ad82d3803870c4977c305b7f3716b8afce",
+    "api/time.ts": "df9f62c2cd94a85e06cf8d5926e6264e1f9aaf83c983c9f1b4ef2218b617c7d4",
+    "package-lock.json": "cc47d7f6ecba7c639baab54ec9468ab85115353b073555f76e921b2f51a4c1dc",
+    "package.json": "11d3f031426d35639b8853ba04877ea0385b62bd92a5410d78206977e248d354",
+    "src/App.tsx": "7062af71178b8c2bae1344535ae53aad3e356ff1ed78ea037a0d478c1ffb7187",
+    "src/avatarAssetRegistry.ts": "f698f7cff916a06670a7eb5ff58cc2694990ce8ccb0bd4ae116d2bd764b17d0a",
+    "src/avatarCanvasGeometry.ts": "6273f20d3a06446775a166761c23a0199f57ae509848b557e9b2676ef9cac868",
+    "src/avatarShop.ts": "1642c36fc11a7cc65822b547acb1a8e9075f8cf01e8b076d1ad2e6f38d1a3a9e",
+    "src/cloud.ts": "b2b102e1595141729962bcb96c42687764848038f8e637ddc963821d398c1b49",
+    "src/cosmetics.ts": "abeebfb02021dbb8381f0036ecf28b76c4556b6f23f8ffcfcd02678fe8326a4b",
+    "src/dailyChallenge.ts": "13a5d3ca725a747a6f38708df4b2f1f31631ce2b887c815577f80a7621a6dde8",
+    "src/data/avatarAssetManifest.json": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "src/data/curriculum.ts": "d5eacb63e60c944535a84b94ec884a8d5b027644b704c4e2a0192ad58e8f810c",
+    "src/data/videoReuseReview.ts": "bae25deb0700c07b2082e4eddea8cddadbaf42a34c1182382bc18e5d388df9a3",
+    "src/data/videos.ts": "9e3045f635265ab5052007fd1ab83a7152dd8c9b4303fc05161702c7fb7b8270",
+    "src/data/worldArtManifest.json": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d",
+    "src/lessonCompletionPolicy.ts": "07ddfdcf1065fd8e409f134a3d526e9c19f970c8df763b5393a31da95725a97b",
+    "src/rewards.ts": "09cbff0280a3175b97c511a7148d32c6075b09b0a4af43ab5890e52ec94aa1f9",
+    "src/semesters.ts": "5f85dea35f9ea073af08fb835fc1b65f36726f8d99fe7e56c9494f67a45fbb87",
+    "src/shopLedger.ts": "a19b63f740c60befcb071a28eb98124ee539078e10fc7a33a5fb388fdb0d1247",
+    "src/shopService.ts": "0aae411b7dabe176c2c9ad33b441f87ca1ecdbf11d945ec911a965450ba9a5ad",
+    "src/types.ts": "a0388f14b5a7f8bc3983f11404e27f3ca34c65675cd9a6bdb19b5845f6f6713b",
+    "src/v4/ParentSettings.tsx": "3b638ef50ca3a2bc754ddbabf6cd1eb9ff1be71f36b327f0632e973af76ecce1",
+    "src/worldArtAssets.ts": "00524e58023dca9ba3b115fff9730565eea00691892605b4d6afb584a8059d26",
+    "tsconfig.json": "84618d2d7522d32ae96ae1335f20c5e63328056c8e20066102640a84fb436a4a"
+  },
+  "runnerDependencies": {
+    "scripts/curriculum_video_policy.ts": "b2f987c590a44e420276cb6e80e6a763499ef6315006aefb9e7ba16e20834f61",
+    "scripts/qa_v40_date_engine.ts": "ccb0a4ce230f11073bfad3ab02273cb887e05bf826e7476b66e7257472cae662",
+    "scripts/qa_v40_family_auth.ts": "6c367c489d23101d23fba9f02a5d45113d5237e746f4078584147e56f2f6889f",
+    "scripts/qa_v40_state_guard.ts": "7e23f13a4c4394578f7ee2b7e03d74135b9e692c10ba22af064f0596dd4149c9",
+    "scripts/qa_v653_shop_economy.ts": "d983a0ce57e5325b77dc8e3a5a33bcab74f2ccc7030734e77a83b9c2f79d0ddf",
+    "scripts/qa_v65_lesson_policy.ts": "dbca799be2050812f56178f6bb4f8fb8d96869cd0c1f26b2ca992249404c5030",
+    "scripts/validate_curriculum.ts": "5dc0ecf64731df60a64208f0bd821f6b8b7d0a57f31bbf59ca46801e60329e63"
+  },
+  "externalImports": [
+    "node:assert/strict",
+    "node:crypto",
+    "node:fs",
+    "node:path"
+  ],
+  "derivation": "Transitive relative imports from six freshly executed service runners and online runner/policy; add auth text-read App/ParentSettings/cloud/API state, protected15 and package/lock. No broad UI transitive expansion from text-read files.",
+  "coreRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+    "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+  },
+  "originalCompilerSources": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r1.json",
+    "sha256": "1584f24d4a724552f8ba90551b20ab2fc5a9516d4cfc7158f45a82cd6582c7d0"
+  },
+  "protected15": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-protected15.json",
+    "sha256": "94054b41636386676bc7b85a76df37e635bc87c90623ef872ce3e92de4060103"
+  }
+}

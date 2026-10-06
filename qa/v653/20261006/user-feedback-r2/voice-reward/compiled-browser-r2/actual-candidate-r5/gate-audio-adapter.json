@@ -1,0 +1,23 @@
+{
+  "renderedCorpus": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/rendered-corpus.json",
+    "sha256": "2743b9b2061e88d23332cb9b8dd88cc21a93e74b751284ed22c69b85d80f5a60"
+  },
+  "corpus": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/corpus.json",
+    "sha256": "4885c7090f46330e0851385691933c8344592d39e2669b2ac082603a6e5b2660"
+  },
+  "decoded": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/corpus-verification.json",
+    "sha256": "33852a68e57815160245523632c68bef717f3889a0e2cba30107ba22975ee95d"
+  },
+  "selectedSample": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/selected-sample-preservation.json",
+    "sha256": "75a165ded669cd8038bac637495316bbda8c9e9c3557349bb1c52ea5099bff49"
+  },
+  "http": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/http-result.json",
+    "sha256": "536e3a7685150062db9f18968a8dc2fd4d8791e28df26ed1c6ee9279e62693ca"
+  },
+  "humanAuditoryAcceptance": "selected-slow-sample-only"
+}

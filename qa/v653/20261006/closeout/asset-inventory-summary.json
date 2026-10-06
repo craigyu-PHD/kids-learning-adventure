@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "status": "READ_ONLY_ASSET_CLASSIFICATION_NOT_UPLOAD_OR_BACKUP",
+  "recordedAt": "2026-10-06T06:49:45.080921+00:00",
+  "method": {
+    "inventory": "Metadata-only filename and lstat enumeration; historical V6.4 content not scanned. No symlink traversal.",
+    "listingStatus": "PARTIAL_LISTING_TIMEOUT_45S",
+    "listingExitCode": null,
+    "excludedRecursiveDirectories": [
+      ".git",
+      "node_modules",
+      "dist",
+      ".vercel",
+      "__pycache__",
+      ".cache",
+      ".vite",
+      ".parcel-cache",
+      ".pytest_cache"
+    ],
+    "priorBoundedAttempt": "Stopped own PID92567 when directory enumeration stalled at .vercel/output/static/assets/v23; no content scan/no output file from that attempt.",
+    "contentReadScope": "Only explicit115sources/4424runtime/877proof/2514closure unique union hashed; selected closure JSON inspected for absolute Stage references.",
+    "duplicateScope": "Excluded directories above; equal basenames are candidates only. Exact SHA duplication restricted to selected files."
+  },
+  "totalMeasured": {
+    "files": 57127,
+    "logicalBytes": 10299900908,
+    "allocatedBytes": 10327539712,
+    "maxFile": {
+      "path": "qa/v653/20261006/full-goal-audit/targeted-head-depth-r1/diagnostic026-r1/report.json",
+      "bytes": 30596374,
+      "allocatedBytes": 30597120
+    },
+    "scope": "Excludes listed cache/dependency/build/.git directories; not claimed whole checkout disk usage."
+  },
+  "rootDirectoriesNotRecursivelyMeasured": [
+    {
+      "path": ".git",
+      "exists": true,
+      "count": null,
+      "bytes": null,
+      "reason": "Bounded skip of cache/build/dependency/history metadata; no deletion recommendation for .git."
+    },
+    {
+      "path": "node_modules",
+      "exists": true,
+      "count": null,
+      "bytes": null,
+      "reason": "Bounded skip of cache/build/dependency/history metadata; no deletion recommendation for .git."
+    },
+    {
+      "path": "dist",
+      "exists": true,
+      "count": null,
+      "bytes": null,
+      "reason": "Bounded skip of cache/build/dependency/history metadata; no deletion recommendation for .git."
+    },
+    {
+      "path": ".vercel",
+      "exists": true,
+      "count": null,
+      "bytes": null,
+      "reason": "Bounded skip of cache/build/dependency/history metadata; no deletion recommendation for .git."
+    }
+  ],
+  "selectedSets": {
+    "source115": {
+      "count": 115,
+      "bytes": 2555314,
+      "exact": 115,
+      "nonExact": [],
+      "maxFile": {
+        "path": "src/data/curriculum.ts",
+        "bytes": 609218
+      },
+      "blendFiles": 0
+    },
+    "runtimePublic4424": {
+      "count": 4424,
+      "bytes": 539321149,
+      "exact": 4424,
+      "nonExact": [],
+      "maxFile": {
+        "path": "public/assets/v5/characters/brother/master-sheet.png",
+        "bytes": 4012287
+      },
+      "blendFiles": 0
+    },
+    "nativeAndProof877": {
+      "count": 877,
+      "bytes": 428976959,
+      "exact": 877,
+      "nonExact": [],
+      "maxFile": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger.blend",
+        "bytes": 26393443
+      },
+      "blendFiles": 143
+    },
+    "selectedClosure2514": {
+      "count": 2514,
+      "bytes": 780889413,
+      "exact": 2514,
+      "nonExact": [],
+      "maxFile": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger.blend",
+        "bytes": 26393443
+      },
+      "blendFiles": 143
+    }
+  },
+  "classification": {
+    "A": {
+      "meaning": "GitHub baseline needed",
+      "recommendation": "Commit exact115 source/config/lock and4424 selected public runtime files plus safe release docs/scripts/pins/reviews. Current prebuild also requires the selected QA/proof closure, split A/B as size warrants. Do not blanket-add dirty history.",
+      "caution": "Repo is public; root performs secret/private-data review. Runtime assets should not be moved into LFS without tested deployment materialization."
+    },
+    "B": {
+      "meaning": "Git LFS eligible for evaluation only",
+      "recommendation": "Large native .blend, source WAV/PNG, selected QA captures and other necessary binary evidence. The >=50MiB list is a review threshold, not a claimed GitHub limit.",
+      "caution": "git lfs version exits1; .gitattributes absent. No installation/upload/configuration performed. Quota and build fetch support remain unverified."
+    },
+    "C": {
+      "meaning": "Important separately preserved",
+      "recommendation": "All editable Blender/source art/WAV, accepted and rejected QA history, old handovers, _BACKUPS/_DEPLOY_STAGING/V6.4審查包/設計範例 not included in selected current closure. Keep private .env.local/.vercel linkage out of public repo.",
+      "caution": "If selected binary proofs stay offGitHub, save a SHA-pinned archive at a verified independent location with original repo-relative restore paths. This inventory creates no backup; GoogleDrive local presence is not cloud-sync proof."
+    },
+    "D": {
+      "meaning": "Regenerable dependencies/cache/build; no deletion authorized",
+      "recommendation": "node_modules, python/frontend caches, dist and .vercel/output may be rebuilt from exact lock/config/source. Preserve actual artifact maps, build logs and receipts because regeneration is not original release evidence.",
+      "exceptions": [
+        ".git is essential history, not disposable cache.",
+        ".vercel/project.json can be needed for project linkage; separate it from output.",
+        ".blend1/.blend2 backups can contain unique recoverable model revisions and are not automatically disposable."
+      ]
+    }
+  },
+  "errors": [],
+  "recommendations": [
+    "Use the selectedFiles exact SHA inventory as root input to ASSET_MANIFEST and commit planning; no staging occurred.",
+    "Keep native .blend/source WAV and all877 proofs plus2514 selectedclosure with hashes and restore paths; rendered runtime files cannot reproduce editable native source or acceptance evidence.",
+    "Treat duplicates/conflict names as manual review candidates; identical selected SHA files can still need distinct manifest paths.",
+    "Do not remove any external stage until independent preservation of artifact/source/nativeproof/QA has actually been verified.",
+    "Retain prior cache-directory timeout as a measurement limitation; actual sizes/counts for excluded roots are unknown, not zero."
+  ],
+  "rootDirectoriesCoverage": {
+    "status": "PARTIAL_GENERAL_ENUMERATION_PLUS_COMPLETE_SELECTED_SETS",
+    "note": "General filename listing is partial. Exact selectedSets are complete and separately hashed; their bytes overlap general measured counts, so do not add group totals."
+  },
+  "explicitRecoveryNamedFile": {
+    "path": "package_RECOVERED_FROM_OLD_DRIVE_20260929.json",
+    "bytes": 4683,
+    "recommendedClass": "C",
+    "reason": "Recovered historical package copy; preserve and compare intentionally, do not replace current package.json or auto-delete. Content not read in this classification."
+  },
+  "fullInventory": {
+    "path": "qa/v653/20261006/closeout/asset-inventory.json",
+    "sha256": "3ce2602e511a273e67242adfbe267d2ced996f4f91237bae4d5934647b8915d8",
+    "storage": "Off-Git preservation archive; original retained locally"
+  },
+  "suspiciousNameCount": 49,
+  "verifiedDuplicatesGroups": 1079
+}

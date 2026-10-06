@@ -1,0 +1,945 @@
+{
+  "status": "PASS",
+  "scope": "Actual compiled Chromium UI media playback, isolated synthetic family/API and injected playback negatives. No audible naturalness assessment.",
+  "startedAt": "2026-10-06T04:22:55.740819+00:00",
+  "baseURL": "http://127.0.0.1:5196/",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/run.py",
+    "sha256": "76cfaf1018d12363271d038b83fde0069227f12d24d7cc609240631accd2e054"
+  },
+  "fixture": {
+    "path": "qa/v653/20261005/lessons/default-storage.json",
+    "sha256": "7929645e34ccdb4eb2826ab36f7c5749fc069621f33b7b40c0b5abc31c31bd6e"
+  },
+  "checks": [
+    {
+      "id": "no-preload",
+      "name": "Initial home makes zero audio requests",
+      "passed": true,
+      "data": [],
+      "observedAt": "2026-10-06T04:22:58.672080+00:00"
+    },
+    {
+      "id": "lesson-slow-ended",
+      "name": "Real selected slow clip plays and ends",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 1045.1000000014901,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 1059.6000000014901,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "playing",
+          "time": 1251.5,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "pause",
+          "time": 3429.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 2.176,
+          "paused": true,
+          "duration": 2.176
+        },
+        {
+          "type": "ended",
+          "time": 3429.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 2.176,
+          "paused": true,
+          "duration": 2.176
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:02.110672+00:00"
+    },
+    {
+      "id": "rapid-replay",
+      "name": "Three clicks invoke native pause, clear both prior media, and leave only final clip playing",
+      "passed": true,
+      "data": {
+        "trace": [
+          {
+            "type": "construct",
+            "time": 3453.8000000044703,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": true
+          },
+          {
+            "type": "loadedmetadata",
+            "time": 3464,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": false,
+            "duration": 2.176
+          },
+          {
+            "type": "playing",
+            "time": 3483.4000000059605,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": false,
+            "duration": 2.176
+          },
+          {
+            "type": "native-pause",
+            "time": 3552.7000000029802,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0.03824,
+            "paused": true,
+            "before": {
+              "paused": false,
+              "currentTime": 0.038225,
+              "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+            },
+            "afterPaused": true
+          },
+          {
+            "type": "construct",
+            "time": 3552.9000000059605,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": true
+          },
+          {
+            "type": "loadedmetadata",
+            "time": 3564,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": false,
+            "duration": 2.176
+          },
+          {
+            "type": "playing",
+            "time": 3583,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": false,
+            "duration": 2.176
+          },
+          {
+            "type": "native-pause",
+            "time": 3652.4000000059605,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0.031324,
+            "paused": true,
+            "before": {
+              "paused": false,
+              "currentTime": 0.031313,
+              "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+            },
+            "afterPaused": true
+          },
+          {
+            "type": "construct",
+            "time": 3652.60000000149,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": true
+          },
+          {
+            "type": "loadedmetadata",
+            "time": 3663.9000000059605,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": false,
+            "duration": 2.176
+          },
+          {
+            "type": "playing",
+            "time": 3683.60000000149,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0,
+            "paused": false,
+            "duration": 2.176
+          }
+        ],
+        "mediaStates": [
+          {
+            "paused": true,
+            "ended": true,
+            "src": "./assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 2.176
+          },
+          {
+            "paused": true,
+            "ended": false,
+            "src": null,
+            "currentTime": 0
+          },
+          {
+            "paused": true,
+            "ended": false,
+            "src": null,
+            "currentTime": 0
+          },
+          {
+            "paused": false,
+            "ended": false,
+            "src": "./assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+            "currentTime": 0.043721
+          }
+        ]
+      },
+      "observedAt": "2026-10-06T04:23:02.425196+00:00"
+    },
+    {
+      "id": "stage-cancel",
+      "name": "Changing stage pauses live media",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 3453.8000000044703,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 3464,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "playing",
+          "time": 3483.4000000059605,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "native-pause",
+          "time": 3552.7000000029802,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0.03824,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0.038225,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        },
+        {
+          "type": "construct",
+          "time": 3552.9000000059605,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 3564,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "playing",
+          "time": 3583,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "native-pause",
+          "time": 3652.4000000059605,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0.031324,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0.031313,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        },
+        {
+          "type": "construct",
+          "time": 3652.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 3663.9000000059605,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "playing",
+          "time": 3683.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "native-pause",
+          "time": 3762.9000000059605,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0.056438,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0.056426,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:02.550417+00:00"
+    },
+    {
+      "id": "route-cancel",
+      "name": "SPA return pauses live lesson media",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 3912.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 3926.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "playing",
+          "time": 3947.8000000044703,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "native-pause",
+          "time": 3985.3000000044703,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0.001566,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0.001552,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:02.755110+00:00"
+    },
+    {
+      "id": "404-fallback",
+      "name": "404 invokes one correct fallback",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 1029.6999999955297,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "error",
+          "time": 1040.6999999955297,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": null
+        },
+        {
+          "type": "native-pause",
+          "time": 1040.8999999985099,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        },
+        {
+          "type": "speech-fallback",
+          "time": 1044.7999999970198,
+          "src": "",
+          "currentTime": null,
+          "paused": null,
+          "text": "I can take three steps.",
+          "lang": "en-US",
+          "rate": 0.7799999713897705,
+          "pitch": 1
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:04.106449+00:00"
+    },
+    {
+      "id": "rejected-play-fallback",
+      "name": "Rejected native play promise falls back once",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 1370,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "injected-rejection",
+          "time": 1370,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "native-pause",
+          "time": 1370.5,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true,
+          "before": {
+            "paused": true,
+            "currentTime": 0,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        },
+        {
+          "type": "speech-fallback",
+          "time": 1370.7999999970198,
+          "src": "",
+          "currentTime": null,
+          "paused": null,
+          "text": "I can take three steps.",
+          "lang": "en-US",
+          "rate": 0.7799999713897705,
+          "pitch": 1
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:04.130596+00:00"
+    },
+    {
+      "id": "delayed-fallback",
+      "name": "Four-second timeout has no late playback after response",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 1394.5999999940395,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "native-pause",
+          "time": 5395.29999999702,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        },
+        {
+          "type": "speech-fallback",
+          "time": 5395.5999999940395,
+          "src": "",
+          "currentTime": null,
+          "paused": null,
+          "text": "I can take three steps.",
+          "lang": "en-US",
+          "rate": 0.7799999713897705,
+          "pitch": 1
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:09.269979+00:00"
+    },
+    {
+      "id": "pagehide-cancel",
+      "name": "Pagehide pauses active media",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 6528,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 6540,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "playing",
+          "time": 6557.39999999851,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.176
+        },
+        {
+          "type": "native-pause",
+          "time": 6561.0999999940395,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+          "currentTime": 0,
+          "paused": true,
+          "before": {
+            "paused": false,
+            "currentTime": 0,
+            "src": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a"
+          },
+          "afterPaused": true
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:09.422721+00:00"
+    },
+    {
+      "id": "settings-slow",
+      "name": "Actual parent setting plays slow clip to ended",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 1528.3000000044703,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 1540.6000000014901,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.944
+        },
+        {
+          "type": "playing",
+          "time": 1558.5,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.944
+        },
+        {
+          "type": "pause",
+          "time": 4461.30000000447,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+          "currentTime": 2.944,
+          "paused": true,
+          "duration": 2.944
+        },
+        {
+          "type": "ended",
+          "time": 4461.30000000447,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+          "currentTime": 2.944,
+          "paused": true,
+          "duration": 2.944
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:13.960445+00:00"
+    },
+    {
+      "id": "settings-normal",
+      "name": "Actual normal setting plays separate normal clip to ended",
+      "passed": true,
+      "data": [
+        {
+          "type": "construct",
+          "time": 4853.5,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+          "currentTime": 0,
+          "paused": true
+        },
+        {
+          "type": "loadedmetadata",
+          "time": 4864.30000000447,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.816
+        },
+        {
+          "type": "playing",
+          "time": 4883.60000000149,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+          "currentTime": 0,
+          "paused": false,
+          "duration": 2.816
+        },
+        {
+          "type": "pause",
+          "time": 7640,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+          "currentTime": 2.816,
+          "paused": true,
+          "duration": 2.816
+        },
+        {
+          "type": "ended",
+          "time": 7640,
+          "src": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+          "currentTime": 2.816,
+          "paused": true,
+          "duration": 2.816
+        }
+      ],
+      "observedAt": "2026-10-06T04:23:17.134672+00:00"
+    }
+  ],
+  "errors": [],
+  "traffic": [
+    {
+      "host": "127.0.0.1",
+      "path": "/api/state",
+      "method": "GET",
+      "action": "blocked"
+    },
+    {
+      "path": "/api/family-session",
+      "method": "POST",
+      "action": "synthetic session response"
+    }
+  ],
+  "compiledResponses": [
+    {
+      "url": "http://127.0.0.1:5196/",
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-KC1rU43V.css",
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-DkO6mlaB.js",
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/?day=day-27&lesson=1",
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-KC1rU43V.css",
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-DkO6mlaB.js",
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/LessonQuest-D241cfb4.js",
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/mic-BPfc-ykm.js",
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/learningAnalytics-BiVMp2Ug.js",
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/LessonQuest-uWYxmINz.css",
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/reward-CnWJ6mFt.css",
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/?day=day-27&lesson=1",
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-KC1rU43V.css",
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-DkO6mlaB.js",
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/LessonQuest-D241cfb4.js",
+      "path": "assets/LessonQuest-D241cfb4.js",
+      "status": 200,
+      "sha256": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/mic-BPfc-ykm.js",
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/learningAnalytics-BiVMp2Ug.js",
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/LessonQuest-uWYxmINz.css",
+      "path": "assets/LessonQuest-uWYxmINz.css",
+      "status": 200,
+      "sha256": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/reward-CnWJ6mFt.css",
+      "path": "assets/reward-CnWJ6mFt.css",
+      "status": 200,
+      "sha256": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/",
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-KC1rU43V.css",
+      "path": "assets/index-KC1rU43V.css",
+      "status": 200,
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/index-DkO6mlaB.js",
+      "path": "assets/index-DkO6mlaB.js",
+      "status": 200,
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/x-CwjU7BFr.js",
+      "path": "assets/x-CwjU7BFr.js",
+      "status": 200,
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/SecondaryViews-Bd69SkOV.js",
+      "path": "assets/SecondaryViews-Bd69SkOV.js",
+      "status": 200,
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/learningAnalytics-BiVMp2Ug.js",
+      "path": "assets/learningAnalytics-BiVMp2Ug.js",
+      "status": 200,
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/SecondaryViews-aPwGWhRg.css",
+      "path": "assets/SecondaryViews-aPwGWhRg.css",
+      "status": 200,
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/mic-BPfc-ykm.js",
+      "path": "assets/mic-BPfc-ykm.js",
+      "status": 200,
+      "sha256": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/ParentSettings-BLm0wnd1.js",
+      "path": "assets/ParentSettings-BLm0wnd1.js",
+      "status": 200,
+      "sha256": "7053eedf3d742db2922c0d9bb73db7fc710777ead08fcafc753d1284b1d47aad",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/ParentSettings-C7cwrLWi.css",
+      "path": "assets/ParentSettings-C7cwrLWi.css",
+      "status": 200,
+      "sha256": "a0018f5bdda9c46b73fb16bf5b31011d147df77ab0575dc055ea0d0f56121692",
+      "passed": true
+    }
+  ],
+  "audioResponses": [
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "expectedArtifactSHA256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "expectedArtifactSHA256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "expectedArtifactSHA256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "expectedArtifactSHA256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "expectedArtifactSHA256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 404,
+      "negativeControl": "404"
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "path": "assets/v6.5/audio/0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "expectedArtifactSHA256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+      "path": "assets/v6.5/audio/84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "9cefa87272f9163b544789fe0d00c66397819bcf8e4b3d75177ef0c8724f8f8c",
+      "expectedArtifactSHA256": "9cefa87272f9163b544789fe0d00c66397819bcf8e4b3d75177ef0c8724f8f8c",
+      "passed": true
+    },
+    {
+      "url": "http://127.0.0.1:5196/assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+      "path": "assets/v6.5/audio/84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+      "status": 200,
+      "negativeControl": null,
+      "sha256": "c19ddc3e777fc3d82062d6951e208275708c3658dab8b0fdbf530d5173b906ee",
+      "expectedArtifactSHA256": "c19ddc3e777fc3d82062d6951e208275708c3658dab8b0fdbf530d5173b906ee",
+      "passed": true
+    }
+  ],
+  "sourceDrift": [],
+  "browserClosed": true,
+  "completedAt": "2026-10-06T04:23:17.211889+00:00",
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/served-artifacts.json",
+    "sha256": "1946c3574998d87cfcf16d613ce4dcfcccca3fc9fffa350ff70973b835a7b61a"
+  }
+}

@@ -41,6 +41,21 @@ try {
 }
 assert(immutableConflict, 'existing immutable transaction cannot change value');
 
+const ledgerFields = ['answerEvents', 'rewardTransactions', 'purchaseTransactions', 'equipmentTransactions'] as const;
+const allLedgers = Object.fromEntries(ledgerFields.map(field => [field, [{ id: `${field}-stored`, value: 1 }]]));
+for (const field of ledgerFields) {
+  const omitted = { ...allLedgers };
+  delete omitted[field];
+  let rejected = false;
+  try { assertImmutableEventsCompatible({ progress: { 'child-1': allLedgers } }, { progress: { 'child-1': omitted } }); }
+  catch (error) { rejected = error instanceof SnapshotConflictError; }
+  assert(rejected, `${field} must not disappear when its field is omitted`);
+}
+let learnerOmissionRejected = false;
+try { assertImmutableEventsCompatible({ progress: { 'child-1': allLedgers } }, { progress: {} }); }
+catch (error) { learnerOmissionRejected = error instanceof SnapshotConflictError; }
+assert(learnerOmissionRejected, 'omitting an entire learner must not delete their events');
+
 assertBaseVersion(previous, previous.updatedAt);
 let baseConflict = false;
 try {
@@ -65,10 +80,12 @@ const result = {
   identicalTransactionDedupe: true,
   conflictingTransactionRejected: true,
   immutableRemoteEventProtected: true,
+  allFourOmittedLedgersRejected: true,
+  omittedLearnerRejected: true,
   staleBaseRejected: true,
   familyCodeSanitized: true,
 };
-const qaDir = path.resolve(import.meta.dirname, '..', '.qa');
+const qaDir = path.resolve(process.env.LITTLE_EXPLORERS_QA_OUTPUT_DIR ?? path.resolve(import.meta.dirname, '..', '.qa'));
 fs.mkdirSync(qaDir, { recursive: true });
 fs.writeFileSync(path.join(qaDir, 'v40_state_guard_result.json'), JSON.stringify(result, null, 2));
 console.log(JSON.stringify(result, null, 2));

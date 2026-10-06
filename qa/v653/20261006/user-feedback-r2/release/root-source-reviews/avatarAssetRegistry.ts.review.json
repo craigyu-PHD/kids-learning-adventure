@@ -1,0 +1,12 @@
+{
+  "path": "src/avatarAssetRegistry.ts",
+  "beforeSHA256": "f4e381612de1569a1da37292fcbdae807f563324eebc1ec82d975ce9fcb84be7",
+  "afterSHA256": "f698f7cff916a06670a7eb5ff58cc2694990ce8ccb0bd4ae116d2bd764b17d0a",
+  "decision": "ACCEPT",
+  "reviewer": "root-code-review",
+  "reason": "Reviewed actual published-r6 diff. Adds an explicit exact hairstyle/role/skin split pair contract, with a required-fit marker preventing fallback when a declared pair or one half is missing. Existing default/outfit pair fallback is unchanged for other hairstyles. Existing supported-role and canvas geometry checks remain in force. No alternate shop state or default item identity changes.",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/root-source-reviews/avatarAssetRegistry.ts.diff",
+    "sha256": "3a57d0ca2b5b1b08e239c9c9519d75696b31d640c44b44bc1822e4801815431d"
+  }
+}

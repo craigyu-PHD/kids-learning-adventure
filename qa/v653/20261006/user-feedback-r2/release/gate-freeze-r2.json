@@ -1,0 +1,44 @@
+{
+  "status": "GATE_R2_IMPLEMENTATION_FROZEN_NOT_RELEASE_ADMISSION",
+  "files": {
+    "scripts/qa_v653_feedback_release.py": "9ea11d7f49d77b5110f83e0e3b3ec174272c7c3a684de71cba092aaf7f5d0803",
+    "scripts/prebuild_v653.py": "d8aa74b109aece6030c594b732e176dc97ec027c0bb4460e1bccf96181aac82f"
+  },
+  "priorFreeze": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-freeze.json",
+    "sha256": "984764b0cb098ba53a4d9b1dc1f9e411c4979f59f2937905d69aa3d77d6b42fa"
+  },
+  "changes": [
+    "Only four retained earwear records may add exact Nebula two-field pairing metadata; original catalog/front/default/skin bytes preserved",
+    "128 retainedEarwearHairFit plus independentVisual cases; original480/80/1024 unchanged",
+    "prebuild retains every common gate and dist but never requires future Vercel output; deployable=false",
+    "final-output same index + SHA-pinned receipt requires exact static/config/six functions/source-map bindings and output controls before deployable=true",
+    "15 real-index and 9 real-output receipt control definitions; actual baseline absent, not run yet"
+  ],
+  "unitReport": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-r2-unit-result.json",
+    "sha256": "f511148f37ebb2197b683c5b0f71cfa609acd689a967a750121a264abd5e866e"
+  },
+  "additionalUnitReport": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-r2-additional-controls.json",
+    "sha256": "5e6090a37bac4bc5350060e5c365e03575caf2994660d6902c5b5167f826d192"
+  },
+  "contract": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-contract-r2-final.json",
+    "sha256": "600e8d93572a5189517482cf76a605ebb2e2c364dd2689205d4f7f61584b8926"
+  },
+  "schema": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-schema-r2.json",
+    "sha256": "789c416f2f32453b956ebe0fa6e7afb617dc12dce6f911c967cd0778394c65e1"
+  },
+  "readme": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-README-r2.md",
+    "sha256": "151eb498ac01940a5c1bfb1520c7da1904600cf6b4e074c89f3b4c0177f83c64"
+  },
+  "limitations": [
+    "No full current release index / compiled stage / fresh128 evidence yet",
+    "No actual candidate admission PASS",
+    "No browser used",
+    "No runtime/pointer/stage changes or deployment"
+  ]
+}

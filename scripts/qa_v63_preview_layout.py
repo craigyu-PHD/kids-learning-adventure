@@ -6,7 +6,8 @@ from qa_v63_browser_seed import SEED_SCRIPT
 
 ROOT=Path(__file__).resolve().parents[1]
 URL=os.environ.get('AUDIT_URL','http://127.0.0.1:4174/')
-OUT=ROOT/'qa/production-audit/2026-09-02/v63-preview-layout.json'; OUT.parent.mkdir(parents=True,exist_ok=True)
+_report_arg=Path(os.environ['V65_PREVIEW_LAYOUT_REPORT']) if os.environ.get('V65_PREVIEW_LAYOUT_REPORT') else None
+OUT=(_report_arg if _report_arg and _report_arg.is_absolute() else ROOT/_report_arg).resolve() if _report_arg else ROOT/'qa/production-audit/2026-09-02/v63-preview-layout.json'; OUT.parent.mkdir(parents=True,exist_ok=True)
 TIME=json.dumps({'now':'2026-09-02T02:30:00.000Z','activeDate':'2026-09-02','taipeiDate':'2026-09-02','taipeiTime':'10:30:00','timeZone':'Asia/Taipei'})
 VIEWPORTS=[(390,844),(768,1024),(1440,900),(3440,1440)]
 REPRESENTATIVES=[

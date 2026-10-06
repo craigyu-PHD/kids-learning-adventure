@@ -1,0 +1,347 @@
+{
+  "status": "EXACT_SUBCONTRACT_COMPARISON_NOT_RELEASE",
+  "inputs": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/inputs.json",
+    "sha256": "4a0fdebaaf83ae3dbcf25e121787cbb132249c774f1103ff504cf162b07bdf1f"
+  },
+  "original": {
+    "path": "scripts/qa_v653_feedback_release.py",
+    "sha256": "9ea11d7f49d77b5110f83e0e3b3ec174272c7c3a684de71cba092aaf7f5d0803"
+  },
+  "proposal": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/proposed.py",
+    "sha256": "73bb1f8fa71d6610ff2a4c4b76f3f0b3da47d6b54bf710f5fdfb2373c72ad71e"
+  },
+  "groups": {
+    "core": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-core-R2.json",
+          "sha256": "97cf9bf97148c0042a13d061ce78a21030a33b7951ba25414dc5bcf7e3121739"
+        },
+        "elapsedSeconds": 0.0075957500012009405,
+        "checkCount": 47,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-core-proposed.json",
+          "sha256": "97cf9bf97148c0042a13d061ce78a21030a33b7951ba25414dc5bcf7e3121739"
+        },
+        "elapsedSeconds": 0.002371750000747852,
+        "checkCount": 47,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "voiceBrowser": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-voiceBrowser-R2.json",
+          "sha256": "f8c0f9d615cc22733abea9892a32872e6a346eae1f499b4906e5398af004e41a"
+        },
+        "elapsedSeconds": 0.013804249996610451,
+        "checkCount": 74,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-voiceBrowser-proposed.json",
+          "sha256": "f8c0f9d615cc22733abea9892a32872e6a346eae1f499b4906e5398af004e41a"
+        },
+        "elapsedSeconds": 0.006345916997815948,
+        "checkCount": 74,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "headwearNegative": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-headwearNegative-R2.json",
+          "sha256": "88ffb55865355d1dbb471c5a72758e4f58617999c2b7875ccfe2f5257d6dd94e"
+        },
+        "elapsedSeconds": 0.00829870899906382,
+        "checkCount": 32,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-headwearNegative-proposed.json",
+          "sha256": "88ffb55865355d1dbb471c5a72758e4f58617999c2b7875ccfe2f5257d6dd94e"
+        },
+        "elapsedSeconds": 0.004698459000792354,
+        "checkCount": 32,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "siteCTA": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-siteCTA-R2.json",
+          "sha256": "7d107a42a4c7025a34adf09c340be1da2dd97db4225c14f760b0180c7bbef149"
+        },
+        "elapsedSeconds": 0.5759904160004226,
+        "checkCount": 168,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-siteCTA-proposed.json",
+          "sha256": "7d107a42a4c7025a34adf09c340be1da2dd97db4225c14f760b0180c7bbef149"
+        },
+        "elapsedSeconds": 0.024185041002056096,
+        "checkCount": 168,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "siteNavigation": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-siteNavigation-R2.json",
+          "sha256": "6ac960141ea316086bc033f3b66c3810b71445c75f06ff1e7eae243108aade64"
+        },
+        "elapsedSeconds": 0.1640755829939735,
+        "checkCount": 50,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-siteNavigation-proposed.json",
+          "sha256": "6ac960141ea316086bc033f3b66c3810b71445c75f06ff1e7eae243108aade64"
+        },
+        "elapsedSeconds": 0.010689791000913829,
+        "checkCount": 50,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "lessonRuntime": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-lessonRuntime-R2.json",
+          "sha256": "36c522cf73f4534694e115c629809528a9ff7dbecab3e518ead1859bff610800"
+        },
+        "elapsedSeconds": 0.06182595800055424,
+        "checkCount": 456,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-lessonRuntime-proposed.json",
+          "sha256": "36c522cf73f4534694e115c629809528a9ff7dbecab3e518ead1859bff610800"
+        },
+        "elapsedSeconds": 0.017730999999912456,
+        "checkCount": 456,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "lessonFlow": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-lessonFlow-R2.json",
+          "sha256": "c9249023b7e841ecb46149e4e061044ebd00b2f48e826bc30324b5d4930261e5"
+        },
+        "elapsedSeconds": 0.05565970799943898,
+        "checkCount": 65,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-lessonFlow-proposed.json",
+          "sha256": "c9249023b7e841ecb46149e4e061044ebd00b2f48e826bc30324b5d4930261e5"
+        },
+        "elapsedSeconds": 0.012486250001529697,
+        "checkCount": 65,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "companion": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-companion-R2.json",
+          "sha256": "7087f75616c7ae79749b3789244eb53a26c85df3846869e90ce9932b3fbc47d6"
+        },
+        "elapsedSeconds": 0.010831125000549946,
+        "checkCount": 44,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-companion-proposed.json",
+          "sha256": "7087f75616c7ae79749b3789244eb53a26c85df3846869e90ce9932b3fbc47d6"
+        },
+        "elapsedSeconds": 0.006084500004362781,
+        "checkCount": 44,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "siteVisual": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-siteVisual-R2.json",
+          "sha256": "3f5d9e217332519bb6a937fd268f10a47df0a0e48c854f8e43d9c966f926bb74"
+        },
+        "elapsedSeconds": 0.04062366700236453,
+        "checkCount": 217,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-siteVisual-proposed.json",
+          "sha256": "3f5d9e217332519bb6a937fd268f10a47df0a0e48c854f8e43d9c966f926bb74"
+        },
+        "elapsedSeconds": 0.017681874996924307,
+        "checkCount": 217,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "lessonVisual": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-lessonVisual-R2.json",
+          "sha256": "a2367f813dca2b6e7578abd8d9433d5fe5f70352e9f36a1b13c454393c494f54"
+        },
+        "elapsedSeconds": 0.193509125005221,
+        "checkCount": 681,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-lessonVisual-proposed.json",
+          "sha256": "a2367f813dca2b6e7578abd8d9433d5fe5f70352e9f36a1b13c454393c494f54"
+        },
+        "elapsedSeconds": 0.04443791700032307,
+        "checkCount": 681,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "audio": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-audio-R2.json",
+          "sha256": "bbdb881832c96f1c3dace636a3eab8541b8f4c9783dba9bf84127b14f61c9ec5"
+        },
+        "elapsedSeconds": 1.0066235840058653,
+        "checkCount": 2577,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-audio-proposed.json",
+          "sha256": "bbdb881832c96f1c3dace636a3eab8541b8f4c9783dba9bf84127b14f61c9ec5"
+        },
+        "elapsedSeconds": 0.29085620799742173,
+        "checkCount": 2577,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "strict": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-strict-R2.json",
+          "sha256": "a25c50e64d41032f2a75de49ecdd86e9fa21ab094249a44286404453270cb91f"
+        },
+        "elapsedSeconds": 0.0019040840052184649,
+        "checkCount": 1,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-strict-proposed.json",
+          "sha256": "a25c50e64d41032f2a75de49ecdd86e9fa21ab094249a44286404453270cb91f"
+        },
+        "elapsedSeconds": 0.0012791670014848933,
+        "checkCount": 1,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "performance": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/ordinary-performance-R2.json",
+          "sha256": "fce9a3c50f118858b33fc51990d4e0bf13961f6ed3df9ce96f965f22c002da48"
+        },
+        "elapsedSeconds": 0.00517487499746494,
+        "checkCount": 7,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-performance-proposed.json",
+          "sha256": "fce9a3c50f118858b33fc51990d4e0bf13961f6ed3df9ce96f965f22c002da48"
+        },
+        "elapsedSeconds": 0.005505790999450255,
+        "checkCount": 7,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "headwearFit": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/fit608-headwearFit-R2.json",
+          "sha256": "6555ccbb92cbb4504b8b427634966d4f70c07522882ea8e4ff109f31804af991"
+        },
+        "elapsedSeconds": 120.4386040419995,
+        "checkCount": 4829,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-headwearFit-proposed.json",
+          "sha256": "6555ccbb92cbb4504b8b427634966d4f70c07522882ea8e4ff109f31804af991"
+        },
+        "elapsedSeconds": 14.416486084002827,
+        "checkCount": 4829,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    },
+    "retainedEarwearHairFit": {
+      "R2": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r3/fit608-retainedEarwearHairFit-R2.json",
+          "sha256": "27cf320fe29ac683cdaff777c2598f892098a6227f276cebdcbe1013a6bfd6b5"
+        },
+        "elapsedSeconds": 13.283527874998981,
+        "checkCount": 1437,
+        "status": "PASS_SUBCONTRACT_ONLY",
+        "reusedExactPriorFullChecks": true
+      },
+      "proposed": {
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-retainedEarwearHairFit-proposed.json",
+          "sha256": "27cf320fe29ac683cdaff777c2598f892098a6227f276cebdcbe1013a6bfd6b5"
+        },
+        "elapsedSeconds": 4.9421512089975295,
+        "checkCount": 1437,
+        "status": "PASS_SUBCONTRACT_ONLY"
+      },
+      "fullChecksStatusErrorsExact": true
+    }
+  }
+}

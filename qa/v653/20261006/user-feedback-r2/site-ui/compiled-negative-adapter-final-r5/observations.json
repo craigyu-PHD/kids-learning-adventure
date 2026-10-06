@@ -1,0 +1,89 @@
+{
+  "status": "PASS_EXACT_RAW_AUDIT",
+  "observedAt": "2026-10-06T04:28:13.854779+00:00",
+  "scope": "Read-only assertions on actual immutable runtime raw; not another browser run or visual acceptance",
+  "rawReports": [
+    {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-final-r5/report.json",
+      "sha256": "3ee18a288a533f23f3fdd5da0e6b47d2e795412adb1aa53e9c07d71578d06b07"
+    }
+  ],
+  "httpReceipt": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-http-final-r5.json",
+    "sha256": "bde8a5e5c541434fee396ff8261e0fb42eb5bd2c79c9dd41c3672794c13a370f"
+  },
+  "auditor": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/adapt.py",
+    "sha256": "25bd6ac7673d73223caaafd8366b49e2f04f8850377399279a280ff20852a643"
+  },
+  "cases": [
+    {
+      "expectedCandidateSHA256": "6fd828fade9d29753f3e2454edc2abd8ab7b6792ef3084d17630a782cb628238",
+      "originalMode": "missing",
+      "itemId": "phones-sky",
+      "role": "brother",
+      "values": {
+        "control": "missing-layer"
+      },
+      "checks": {
+        "rejected": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-final-r5/report.json",
+        "sha256": "3ee18a288a533f23f3fdd5da0e6b47d2e795412adb1aa53e9c07d71578d06b07"
+      },
+      "sourcePointer": "/controls/1"
+    },
+    {
+      "expectedCandidateSHA256": "6fd828fade9d29753f3e2454edc2abd8ab7b6792ef3084d17630a782cb628238",
+      "originalMode": "swapped",
+      "itemId": "phones-sky",
+      "role": "brother",
+      "values": {
+        "control": "swapped-item"
+      },
+      "checks": {
+        "rejected": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-final-r5/report.json",
+        "sha256": "3ee18a288a533f23f3fdd5da0e6b47d2e795412adb1aa53e9c07d71578d06b07"
+      },
+      "sourcePointer": "/controls/2"
+    },
+    {
+      "expectedCandidateSHA256": "6fd828fade9d29753f3e2454edc2abd8ab7b6792ef3084d17630a782cb628238",
+      "originalMode": "stale",
+      "itemId": "phones-sky",
+      "role": "brother",
+      "values": {
+        "control": "stale-candidate"
+      },
+      "checks": {
+        "rejected": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-final-r5/report.json",
+        "sha256": "3ee18a288a533f23f3fdd5da0e6b47d2e795412adb1aa53e9c07d71578d06b07"
+      },
+      "sourcePointer": "/controls/3"
+    },
+    {
+      "expectedCandidateSHA256": "6fd828fade9d29753f3e2454edc2abd8ab7b6792ef3084d17630a782cb628238",
+      "originalMode": "wrong-role",
+      "itemId": "phones-sky",
+      "role": "brother",
+      "values": {
+        "control": "wrong-avatar"
+      },
+      "checks": {
+        "rejected": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-negative-final-r5/report.json",
+        "sha256": "3ee18a288a533f23f3fdd5da0e6b47d2e795412adb1aa53e9c07d71578d06b07"
+      },
+      "sourcePointer": "/controls/4"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "git",
+    "--no-replace-objects",
+    "-c",
+    "gc.auto=0",
+    "fetch",
+    "--refetch",
+    "--no-tags",
+    "--no-write-fetch-head",
+    "--no-auto-maintenance",
+    "origin",
+    "51ff808af4389dbe4f25c88aebb7f87e78aa073b"
+  ],
+  "status": "TIMEOUT",
+  "stdout": null,
+  "stderr": null
+}

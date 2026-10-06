@@ -1,0 +1,514 @@
+{
+  "scope": "Source/service tests with synthetic fixtures, not compiled browser, production cloud or child ASR acceptance.",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r1.json",
+    "sha256": "1584f24d4a724552f8ba90551b20ab2fc5a9516d4cfc7158f45a82cd6582c7d0"
+  },
+  "protected15": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-protected15.json",
+    "sha256": "94054b41636386676bc7b85a76df37e635bc87c90623ef872ce3e92de4060103"
+  },
+  "missingFromInitialCompilerInventory": [
+    "tsconfig.json"
+  ],
+  "cases": [
+    {
+      "case": "date",
+      "passed": true,
+      "startedAt": "2026-10-06T03:42:52.019515+00:00",
+      "completedAt": "2026-10-06T03:42:52.428548+00:00",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "scripts/qa_v40_date_engine.ts"
+      ],
+      "runner": {
+        "path": "scripts/qa_v40_date_engine.ts",
+        "sha256": "ccb0a4ce230f11073bfad3ab02273cb887e05bf826e7476b66e7257472cae662"
+      },
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/date.log",
+        "sha256": "77ef5d4efeac09a1271b8e9e6e2ed601e732efa8a3ebc8af814f82ad5dd73cd2"
+      },
+      "details": {
+        "flags": {
+          "yesterdayLocks": true,
+          "newDayUnlocks": true,
+          "futureStaysLocked": true
+        },
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/raw/v40_date_engine_result.json",
+          "sha256": "e81fcce619651fe0860c45fd7b0d4dfbb7e9c0588b14759611241b7e33e74ff7"
+        }
+      }
+    },
+    {
+      "case": "auth",
+      "passed": true,
+      "startedAt": "2026-10-06T03:42:52.428654+00:00",
+      "completedAt": "2026-10-06T03:42:52.771761+00:00",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "scripts/qa_v40_family_auth.ts"
+      ],
+      "runner": {
+        "path": "scripts/qa_v40_family_auth.ts",
+        "sha256": "6c367c489d23101d23fba9f02a5d45113d5237e746f4078584147e56f2f6889f"
+      },
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/auth.log",
+        "sha256": "0403dacbb231c48bf61500c141e9b469c2f8a756baf678742ca2da8e7f7413b3"
+      },
+      "details": {
+        "flags": {
+          "legacyNamespaceStable": true,
+          "signedSessionValid": true,
+          "tamperedRejected": true,
+          "expiredRejected": true,
+          "invalidPinRejected": true,
+          "endpointPostWorks": true,
+          "endpointRejectsInvalidPin": true,
+          "endpointRejectsWrongMethod": true,
+          "endpointNoStoreCors": true,
+          "endpointRateLimitsPinAttempts": true,
+          "stateUsesBearerOnly": true,
+          "clientUsesBearer": true,
+          "noActivePinWrite": true,
+          "v40FamilyNamespace": true,
+          "settingsHidePin": true
+        },
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/raw/v40_family_auth_result.json",
+          "sha256": "79140e6487b69ec4ad39aad672eacabc39a230b1d39a11119a7dac95402f5607"
+        }
+      }
+    },
+    {
+      "case": "state",
+      "passed": true,
+      "startedAt": "2026-10-06T03:42:52.772088+00:00",
+      "completedAt": "2026-10-06T03:42:53.009516+00:00",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "scripts/qa_v40_state_guard.ts"
+      ],
+      "runner": {
+        "path": "scripts/qa_v40_state_guard.ts",
+        "sha256": "7e23f13a4c4394578f7ee2b7e03d74135b9e692c10ba22af064f0596dd4149c9"
+      },
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/state.log",
+        "sha256": "72b782224811210d5c0f232e8742eab9b5548c77d016fc226afeb33b8eeee58e"
+      },
+      "details": {
+        "flags": {
+          "identicalTransactionDedupe": true,
+          "conflictingTransactionRejected": true,
+          "immutableRemoteEventProtected": true,
+          "allFourOmittedLedgersRejected": true,
+          "omittedLearnerRejected": true,
+          "staleBaseRejected": true,
+          "familyCodeSanitized": true
+        },
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/raw/v40_state_guard_result.json",
+          "sha256": "65965922fce378be302b7fd58bb8aa4832490f28db759cbb07a3262cefc9ca23"
+        }
+      }
+    },
+    {
+      "case": "structural",
+      "passed": true,
+      "startedAt": "2026-10-06T03:42:53.009603+00:00",
+      "completedAt": "2026-10-06T03:42:53.457690+00:00",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "scripts/validate_curriculum.ts"
+      ],
+      "runner": {
+        "path": "scripts/validate_curriculum.ts",
+        "sha256": "5dc0ecf64731df60a64208f0bd821f6b8b7d0a57f31bbf59ca46801e60329e63"
+      },
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/structural.log",
+        "sha256": "1a72c76e9ef9284c89aec4ca040e85971c472f17fac77244c70808b117714a6d"
+      },
+      "details": {
+        "days": 90,
+        "blocks": 180,
+        "missions": 360,
+        "uniqueVideoIds": 264,
+        "semanticApproval": false
+      }
+    },
+    {
+      "case": "online",
+      "passed": true,
+      "scope": "Already executed within this feedback goal; source-preserved online evidence carry, not rerun during adapter assembly or semantic approval.",
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/raw/curriculum-online.log",
+        "sha256": "bbb53c4350bbaa4b458a03aeddee51cf659f12a26538edea0e29b2c520beea89"
+      },
+      "originalLog": {
+        "path": "qa/v653/20261006/user-feedback-r2/service-checks-r2/curriculum-online.log",
+        "sha256": "bbb53c4350bbaa4b458a03aeddee51cf659f12a26538edea0e29b2c520beea89"
+      },
+      "uniqueIds": [
+        "-CJUvZM3Ix8",
+        "-EJGW7QVG2s",
+        "-HOQGg7uuQQ",
+        "-jBfb33_KHU",
+        "03pyY9C2Pm8",
+        "06Kg6XeMhQU",
+        "0ARbIcYtSIg",
+        "0DqkEfKXT5Y",
+        "0W0zEJ9uR2U",
+        "0z5G7OXG6MY",
+        "1GDFa-nEzlg",
+        "1PObnf_lJAU",
+        "1XFdFMuJblg",
+        "1Ziku4FLka4",
+        "1b4gSs0KhIU",
+        "1h6F-YngTi0",
+        "1jX8XyYvtWs",
+        "2Expn6UPZqI",
+        "2QfOM_GsyEE",
+        "2S__fbCGwOM",
+        "3ahpruY9eYM",
+        "3zm5JMGIsRU",
+        "494e4txpwSg",
+        "4XLQpRI_wOQ",
+        "4YBGRGBj7_w",
+        "4fLTro4RwM4",
+        "4qfz6l42Pzk",
+        "5CI29h-AXDM",
+        "5Y-ZvM_2Sjo",
+        "5qlbpMB-z_c",
+        "5rdlXji2jR0",
+        "6916kVhbEZw",
+        "7SxqpsDI2ho",
+        "7p38bHv7Zxc",
+        "83a7wLOTsXk",
+        "8I9gz-5_h60",
+        "8QmzQUQDpwc",
+        "9FcCV286-gA",
+        "9UasekNr8KI",
+        "9mmF8zOlh_g",
+        "9o3RmdiLnI8",
+        "AIgJJV6-stM",
+        "AKnUdOnsMWs",
+        "AQZNBkdxCMY",
+        "AT8qLCmseuE",
+        "AlB6ZNqykXU",
+        "Aq4UAss33qA",
+        "AvCcpY3UBCM",
+        "B0LscFd2vRk",
+        "B1u-ylQR6Fo",
+        "BG_B_0d5zZQ",
+        "BIgQ0UQIkqo",
+        "BM7Cg905Wo8",
+        "BcxMAA32nbM",
+        "Bd1yjm_zopI",
+        "BpkY2FKll_w",
+        "CEFL-4weVsI",
+        "CXWjNunuseI",
+        "CXaOaz3a8Cg",
+        "Cx7e729w4YE",
+        "DDjOLRNby20",
+        "DO41xyuo1MM",
+        "Dj4W819wIIE",
+        "DuwTW6DzObs",
+        "E-krsNziXEw",
+        "EHaoEKcuX0g",
+        "EO1GV4qUxgE",
+        "Ec1cz_jHQM8",
+        "EgiQ6GliTrI",
+        "EqEfTWx9n3c",
+        "F0Fe576R7C4",
+        "FODafib0ntI",
+        "FSZ9Wy0o4ww",
+        "FczqntFwb6k",
+        "FejjRyuOcYw",
+        "GGbm73UAfUs",
+        "GR2o6k8aPlI",
+        "GoSq-yZcJ-4",
+        "GukdT4gUlZs",
+        "H5uQuQ06SVM",
+        "HGgsklW-mtg",
+        "Hi63z3wn9n8",
+        "JC29ZvTkBT0",
+        "JOQD--a225k",
+        "JRMAptlBgTk",
+        "JV-D_K4drsA",
+        "K53J44ioDxI",
+        "KP69YPqHquY",
+        "KbrSWbuWtmc",
+        "KdHViSpdGTk",
+        "KzPNNAogq3w",
+        "L4ajCZ8_FNg",
+        "LNmEFt8cQ_U",
+        "LormeVxHyQ4",
+        "Lxd64ix4sG4",
+        "M55R32lQvLg",
+        "Nktg1Wjs4l4",
+        "Nu3R6d54KNo",
+        "OBSx0laWFZk",
+        "OKbpLQp509Y",
+        "OjmWon9KebI",
+        "Osfoa6w605g",
+        "OwRmivbNgQk",
+        "Pm-wT01kDT4",
+        "Po32PQoPcMI",
+        "PoRPyPJnqTY",
+        "PraN5ZoSjiY",
+        "Q8X0oLVtc2Y",
+        "QSzrgQ-pMZM",
+        "QVUcllKglfk",
+        "Qs4qZwIffjI",
+        "R9wDQWJ_z_A",
+        "RNUZBHlRH4Y",
+        "R_GIt4Ccorc",
+        "S0pUkqCdSH4",
+        "SFE0mMWbA-Y",
+        "SZLXLjKHb1M",
+        "Sa_zH0RXfvk",
+        "ShqXL-zfLxY",
+        "SpzLA-w1I8s",
+        "TCoQ_2WWwxQ",
+        "TJhfl5vdxp4",
+        "Tm__D2tDJLk",
+        "ToeaHKxqKWA",
+        "U9FmaEE4aSU",
+        "UKNiCMrd3nU",
+        "UQfvAlmr5g0",
+        "UVjqZqgx5NU",
+        "UxyN-HgosQ8",
+        "V5Bs9xydba0",
+        "VJXg2xmdG7k",
+        "VK8t4-yzGog",
+        "VNRNAloCb5Y",
+        "VaARSaHa5GA",
+        "Vr-L6q4vbWU",
+        "VsgpUHUYuJI",
+        "VvJJeqVo3vk",
+        "W0ubdDYJRmg",
+        "W9rX6ApYqjo",
+        "WHbhD2w3a20",
+        "WX8HmogNyCY",
+        "WYYJ7yaL9WU",
+        "XM7Jnetdf0I",
+        "XgTNWZMpzFo",
+        "Y7QM_H0P4Q8",
+        "YCf-PGu55Nc",
+        "YE7PiTwhTQk",
+        "Yq6qYbwqAk8",
+        "YqFP0NjoGY4",
+        "ZUi1YJVChpg",
+        "ZZiTNJ6QleA",
+        "ZanHgPprl-0",
+        "ZhODBFQ2-bQ",
+        "_6HzoUcx3eo",
+        "_RQFMyof650",
+        "_djvsC6ekTY",
+        "a728rGeMb54",
+        "aC5Kpm5M5j8",
+        "aMTIm-D1l54",
+        "aWAOqzudtSM",
+        "baeeSczb4-s",
+        "bebLde5kcqo",
+        "bqhInQRrc08",
+        "c-v-7JRisLA",
+        "c_JBqkET7vQ",
+        "chxQb4YRC2U",
+        "cm-6n4ChZ78",
+        "dGpxkD-hh8Q",
+        "dNBC8jQFgHo",
+        "dRYSYAnQTuA",
+        "dbklZrO5H78",
+        "dflOyBPPuu0",
+        "dg0cQtVisLw",
+        "eADGlv9k7IM",
+        "eREwH764WGM",
+        "ecm9HEFcfdQ",
+        "edWvujH-SjQ",
+        "efMHLkyb7ho",
+        "eu5GyYCIKlw",
+        "ew9a1JKSfO0",
+        "f1WN-qxmpOA",
+        "f8PoDBzz4I8",
+        "f9vIk_DvljU",
+        "fN1Cyr0ZK9M",
+        "f_raDpgx_3M",
+        "g1zEoojAsqk",
+        "g64qCr3Y_QU",
+        "g9EgE_JtEAw",
+        "gWwGeeYKEAo",
+        "gtc4c1JlAEM",
+        "h3C47MHwZXI",
+        "h42mCV2utyk",
+        "hDqWTltrGJ8",
+        "hMl7k1UYtk0",
+        "hNkvV4PR-q0",
+        "hwuu1chu1Nc",
+        "iDVJZlr3LM0",
+        "if5vr5s3lNw",
+        "ihBUjRip3KY",
+        "ij_eHTvhIlE",
+        "iyvDPW3IKP0",
+        "j6_CZXNAmAw",
+        "j9PpVDuoVAo",
+        "jF6jyPAoRWw",
+        "jdg50KzCR9w",
+        "k765VI7gWx0",
+        "kH9LjP8OBM8",
+        "kt319a0GkCc",
+        "l7QHIxqi6kM",
+        "lCPJhybHBkA",
+        "lMQcwNZVUO8",
+        "lVFj91Z1AfM",
+        "lsuqa9U3wik",
+        "mOZiy3EnH8Y",
+        "mYOl_L58PlE",
+        "nFxAiWkSePk",
+        "nrrA9j51tQ0",
+        "nrv495corBc",
+        "oZa415bNvSA",
+        "pDuaaEq7rk4",
+        "pWepfJ-8XU0",
+        "pZ7H3XuEFkQ",
+        "pZw9veQ76fo",
+        "q66PesWESnQ",
+        "qJvkiMbjRko",
+        "qQJroIl5jWU",
+        "qUv_N8HzWt0",
+        "r5WLXZspD1M",
+        "rD6FRDd9Hew",
+        "rHLoiosDf5Y",
+        "re3gXNTtwig",
+        "s2rgaLmyiFU",
+        "sYwRV7WHzm8",
+        "tIxk5NeiTck",
+        "tVlcKp3bWH8",
+        "tbbKjDjMDok",
+        "tmHrUZsZ2Bo",
+        "trDl36m9pgA",
+        "tuguGv649Do",
+        "uBJM2t4q5C8",
+        "uP3qXCkKIto",
+        "uWegqqriRw0",
+        "ug1pI-Ephns",
+        "up7SZzzGHHg",
+        "v1YjJmMvnOw",
+        "vR4pVGNisZA",
+        "vcMmiR7jWQc",
+        "vcUyDAO1Fk0",
+        "vjfICihohbI",
+        "vmSN7TatwaM",
+        "wDLJaMnBJ-s",
+        "wE0qcTPGCVs",
+        "wceMsYSyNUQ",
+        "wdi9F5_-f9k",
+        "wmy1KpoM-R8",
+        "wtX9hMdLuew",
+        "xNw1SSz18Gg",
+        "yDua9ms9_eg",
+        "yFrMF0ScN3Q",
+        "yNDuIGc_BFo",
+        "yfLi1w3un98",
+        "ykTR0uFGwE0",
+        "zXEq-QO3xTg",
+        "zxIpA5nF_LY"
+      ],
+      "uniqueCount": 264,
+      "assignmentSlots": 360,
+      "terminalSummary": "ONLINE OK 264/264",
+      "dependencies": {
+        "src/data/curriculum.ts": "d5eacb63e60c944535a84b94ec884a8d5b027644b704c4e2a0192ad58e8f810c",
+        "src/data/videos.ts": "9e3045f635265ab5052007fd1ab83a7152dd8c9b4303fc05161702c7fb7b8270",
+        "src/data/videoReuseReview.ts": "bae25deb0700c07b2082e4eddea8cddadbaf42a34c1182382bc18e5d388df9a3",
+        "src/types.ts": "a0388f14b5a7f8bc3983f11404e27f3ca34c65675cd9a6bdb19b5845f6f6713b"
+      },
+      "runners": [
+        {
+          "path": "scripts/validate_curriculum.ts",
+          "sha256": "5dc0ecf64731df60a64208f0bd821f6b8b7d0a57f31bbf59ca46801e60329e63"
+        },
+        {
+          "path": "scripts/curriculum_video_policy.ts",
+          "sha256": "b2f987c590a44e420276cb6e80e6a763499ef6315006aefb9e7ba16e20834f61"
+        }
+      ],
+      "originalLogFileModifiedAt": "2026-10-06T02:38:46.609833+00:00"
+    },
+    {
+      "case": "shop_service",
+      "passed": true,
+      "startedAt": "2026-10-06T03:42:53.457852+00:00",
+      "completedAt": "2026-10-06T03:42:54.190422+00:00",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "scripts/qa_v653_shop_economy.ts",
+        "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/raw/shop-economy.json"
+      ],
+      "runner": {
+        "path": "scripts/qa_v653_shop_economy.ts",
+        "sha256": "d983a0ce57e5325b77dc8e3a5a33bcab74f2ccc7030734e77a83b9c2f79d0ddf"
+      },
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/shop_service.log",
+        "sha256": "77e1d59e65b6af9706d0fcc31fc05a4d8f86ddf7f940e37bd17345cac1166dbc"
+      },
+      "details": {
+        "rows": 256,
+        "result": {
+          "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/raw/shop-economy.json",
+          "sha256": "8d5665b3c4d6849a00324d4edbe0ed212c2df19020b9e2774ae0c3b6ae04c176"
+        },
+        "dependencies": {
+          "src/shopService.ts": "0aae411b7dabe176c2c9ad33b441f87ca1ecdbf11d945ec911a965450ba9a5ad",
+          "src/shopLedger.ts": "a19b63f740c60befcb071a28eb98124ee539078e10fc7a33a5fb388fdb0d1247",
+          "src/rewards.ts": "09cbff0280a3175b97c511a7148d32c6075b09b0a4af43ab5890e52ec94aa1f9",
+          "src/avatarShop.ts": "1642c36fc11a7cc65822b547acb1a8e9075f8cf01e8b076d1ad2e6f38d1a3a9e",
+          "src/cosmetics.ts": "abeebfb02021dbb8381f0036ecf28b76c4556b6f23f8ffcfcd02678fe8326a4b",
+          "src/types.ts": "a0388f14b5a7f8bc3983f11404e27f3ca34c65675cd9a6bdb19b5845f6f6713b",
+          "src/data/avatarAssetManifest.json": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+          "src/data/worldArtManifest.json": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+        },
+        "runtimeScope": "In-memory isolated service operations; no browser/cloud"
+      }
+    },
+    {
+      "case": "lessonpolicy",
+      "passed": true,
+      "startedAt": "2026-10-06T03:42:54.190528+00:00",
+      "completedAt": "2026-10-06T03:42:54.702480+00:00",
+      "exitCode": 0,
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "scripts/qa_v65_lesson_policy.ts"
+      ],
+      "runner": {
+        "path": "scripts/qa_v65_lesson_policy.ts",
+        "sha256": "dbca799be2050812f56178f6bb4f8fb8d96869cd0c1f26b2ca992249404c5030"
+      },
+      "log": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/lessonpolicy.log",
+        "sha256": "dcbfcd405e0c4d51182cf5d2a529c154553ef387935fde749eb4815c8b504346"
+      },
+      "details": {
+        "sharedPolicyAssertionsPassed": true
+      }
+    }
+  ],
+  "completedAt": "2026-10-06T03:42:54.714121+00:00"
+}

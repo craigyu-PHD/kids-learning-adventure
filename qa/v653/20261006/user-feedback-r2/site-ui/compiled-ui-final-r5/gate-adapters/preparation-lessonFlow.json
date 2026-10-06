@@ -1,0 +1,46 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/preparation/served-artifacts.json",
+    "sha256": "0b1874972e387da3e110f5e03042f6d91385f3b79e309410fbb55857c348964d"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_preparation.py",
+    "sha256": "b73f5378edfd1b5980f967a0d1b93d387c875cf2f3f67641cedfd249cf0f95f9"
+  },
+  "observedAt": "2026-10-06T04:29:45.231944+00:00",
+  "group": "lessonFlow",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "case": "preparation-keyboard"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/preparation/result.json",
+        "sha256": "0aeed42badbbae0948dca84136e05fcb4dd32ff1e669d70404418c515256a281"
+      },
+      "bindings": {
+        "case": "/flowCases/0/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/preparation/result.json",
+            "sha256": "0aeed42badbbae0948dca84136e05fcb4dd32ff1e669d70404418c515256a281"
+          },
+          "pointer": "/flowCases/0/passed",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

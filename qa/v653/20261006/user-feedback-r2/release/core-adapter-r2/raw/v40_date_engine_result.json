@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "simulatedTaipeiTime": "2026-08-27 23:59:59.500 → 2026-08-28 00:00:00.000",
+  "scheduledDelayMs": 750,
+  "yesterdayLocks": true,
+  "newDayUnlocks": true,
+  "futureStaysLocked": true
+}

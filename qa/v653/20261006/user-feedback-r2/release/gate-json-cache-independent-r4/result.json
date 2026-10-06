@@ -1,0 +1,528 @@
+{
+  "decision": "ACCEPT",
+  "scope": "Independent Gate.read semantic/predicate equivalence review only; not full release admission",
+  "baseline": {
+    "path": "scripts/qa_v653_feedback_release.py",
+    "sha256": "9ea11d7f49d77b5110f83e0e3b3ec174272c7c3a684de71cba092aaf7f5d0803"
+  },
+  "proposal": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/proposed.py",
+    "sha256": "73bb1f8fa71d6610ff2a4c4b76f3f0b3da47d6b54bf710f5fdfb2373c72ad71e"
+  },
+  "checks": [
+    {
+      "check": "entire module AST exact except two authorized methods and marshal import",
+      "pass": true
+    },
+    {
+      "check": "full contract equality",
+      "pass": true
+    },
+    {
+      "check": "values raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "values fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "negative zero ind_r2",
+      "pass": true
+    },
+    {
+      "check": "nested alias isolation ind_r2",
+      "pass": true
+    },
+    {
+      "check": "mutation cannot forge assertion ind_r2",
+      "pass": true
+    },
+    {
+      "check": "strict bool-int assertion distinction ind_r2",
+      "pass": true
+    },
+    {
+      "check": "values raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "values fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "negative zero ind_r4",
+      "pass": true
+    },
+    {
+      "check": "nested alias isolation ind_r4",
+      "pass": true
+    },
+    {
+      "check": "mutation cannot forge assertion ind_r4",
+      "pass": true
+    },
+    {
+      "check": "strict bool-int assertion distinction ind_r4",
+      "pass": true
+    },
+    {
+      "check": "values equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "array raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "array fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "array raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "array fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "array equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "scalarBool raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "scalarBool raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "scalarBool equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "scalarInt raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "scalarInt raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "scalarInt equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "scalarString raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "scalarString raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "scalarString equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "scalarNull raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "scalarNull raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "scalarNull equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "nan raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "nan raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "nan fallback used",
+      "pass": true
+    },
+    {
+      "check": "nan equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "nanlist raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "nanlist fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "nanlist raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "nanlist fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "nanlist fallback used",
+      "pass": true
+    },
+    {
+      "check": "nanlist equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "nandict raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "nandict fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "nandict raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "nandict fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "nandict fallback used",
+      "pass": true
+    },
+    {
+      "check": "nandict equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "infinity raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "infinity fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "infinity raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "infinity fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "infinity equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "surrogate raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "surrogate raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "surrogate equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "duplicate raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "duplicate fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "duplicate raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "duplicate fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "duplicate equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "BOM raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "BOM fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "BOM raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "BOM fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "BOM equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "deep900 raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "deep900 fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "deep900 raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "deep900 fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "deep900 equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "deep980 raw bytes ind_r2",
+      "pass": true
+    },
+    {
+      "check": "deep980 fresh native container ind_r2",
+      "pass": true
+    },
+    {
+      "check": "deep980 raw bytes ind_r4",
+      "pass": true
+    },
+    {
+      "check": "deep980 fresh native container ind_r4",
+      "pass": true
+    },
+    {
+      "check": "deep980 equivalent success/type/value or rejection",
+      "pass": true
+    },
+    {
+      "check": "invalid both rejected same exception",
+      "pass": true
+    },
+    {
+      "check": "invalidutf both rejected same exception",
+      "pass": true
+    },
+    {
+      "check": "wrong SHA rejected after warm ind_r2",
+      "pass": true
+    },
+    {
+      "check": "malformed reference rejected after warm ind_r2",
+      "pass": true
+    },
+    {
+      "check": "wrong SHA rejected after warm ind_r4",
+      "pass": true
+    },
+    {
+      "check": "malformed reference rejected after warm ind_r4",
+      "pass": true
+    },
+    {
+      "check": "baseline Gate unchanged",
+      "pass": true
+    }
+  ],
+  "fixtureResults": {
+    "values": [
+      {
+        "outcome": "ok",
+        "type": "dict",
+        "normalized": "{\"false\": false, \"true\": true, \"null\": null, \"int\": 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, \"float\": 1.125, \"negativeZero\": -0.0, \"unicode\": \"\\u7e41\\u9ad4\\u81fa\\u7063\\ud83d\\ude00 e\\u0301\", \"nested\": [{\"a\": [1, false, null]}]}"
+      },
+      {
+        "outcome": "ok",
+        "type": "dict",
+        "normalized": "{\"false\": false, \"true\": true, \"null\": null, \"int\": 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, \"float\": 1.125, \"negativeZero\": -0.0, \"unicode\": \"\\u7e41\\u9ad4\\u81fa\\u7063\\ud83d\\ude00 e\\u0301\", \"nested\": [{\"a\": [1, false, null]}]}"
+      }
+    ],
+    "array": [
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[false, null, 1, 1.0, {}, []]"
+      },
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[false, null, 1, 1.0, {}, []]"
+      }
+    ],
+    "scalarBool": [
+      {
+        "outcome": "ok",
+        "type": "bool",
+        "normalized": "true"
+      },
+      {
+        "outcome": "ok",
+        "type": "bool",
+        "normalized": "true"
+      }
+    ],
+    "scalarInt": [
+      {
+        "outcome": "ok",
+        "type": "int",
+        "normalized": "123"
+      },
+      {
+        "outcome": "ok",
+        "type": "int",
+        "normalized": "123"
+      }
+    ],
+    "scalarString": [
+      {
+        "outcome": "ok",
+        "type": "str",
+        "normalized": "\"abc\""
+      },
+      {
+        "outcome": "ok",
+        "type": "str",
+        "normalized": "\"abc\""
+      }
+    ],
+    "scalarNull": [
+      {
+        "outcome": "ok",
+        "type": "NoneType",
+        "normalized": "null"
+      },
+      {
+        "outcome": "ok",
+        "type": "NoneType",
+        "normalized": "null"
+      }
+    ],
+    "nan": [
+      {
+        "outcome": "ok",
+        "type": "float",
+        "normalized": "NaN"
+      },
+      {
+        "outcome": "ok",
+        "type": "float",
+        "normalized": "NaN"
+      }
+    ],
+    "nanlist": [
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[NaN]"
+      },
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[NaN]"
+      }
+    ],
+    "nandict": [
+      {
+        "outcome": "ok",
+        "type": "dict",
+        "normalized": "{\"nan\": NaN}"
+      },
+      {
+        "outcome": "ok",
+        "type": "dict",
+        "normalized": "{\"nan\": NaN}"
+      }
+    ],
+    "infinity": [
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[Infinity, -Infinity]"
+      },
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[Infinity, -Infinity]"
+      }
+    ],
+    "surrogate": [
+      {
+        "outcome": "ok",
+        "type": "str",
+        "normalized": "\"\\ud800\""
+      },
+      {
+        "outcome": "ok",
+        "type": "str",
+        "normalized": "\"\\ud800\""
+      }
+    ],
+    "duplicate": [
+      {
+        "outcome": "ok",
+        "type": "dict",
+        "normalized": "{\"a\": false}"
+      },
+      {
+        "outcome": "ok",
+        "type": "dict",
+        "normalized": "{\"a\": false}"
+      }
+    ],
+    "BOM": [
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[\"\\u4e2d\\u6587\"]"
+      },
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[\"\\u4e2d\\u6587\"]"
+      }
+    ],
+    "deep900": [
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[0]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+      },
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[0]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+      }
+    ],
+    "deep980": [
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[0]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+      },
+      {
+        "outcome": "ok",
+        "type": "list",
+        "normalized": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[0]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+      }
+    ]
+  }
+}

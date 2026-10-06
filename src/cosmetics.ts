@@ -1,4 +1,7 @@
-export type CosmeticSlot = 'hairstyle' | 'outfit' | 'hat' | 'glasses' | 'backpack' | 'cape' | 'headphones' | 'spaceship' | 'room' | 'robot' | 'card' | 'effect';
+import { reviewedWorldAssetPath } from './worldArtAssets';
+import { avatarAccessoryCatalogAssetPath, avatarSkinAssetPath } from './avatarAssetRegistry';
+
+export type CosmeticSlot = 'hairstyle' | 'outfit' | 'hat' | 'glasses' | 'backpack' | 'cape' | 'headphones' | 'spaceship' | 'room' | 'robot' | 'card' | 'effect' | 'pet';
 export type CosmeticRarity = 'common' | 'rare' | 'epic' | 'legendary';
 export type CosmeticRenderMode = 'garment' | 'attachment' | 'scene' | 'companion' | 'event-effect';
 
@@ -78,16 +81,18 @@ export const cosmetics: CosmeticDefinition[] = [
   { id:'robot-mecha',slot:'robot',name:'小光機甲裝甲',description:'紫藍機甲外殼與 HUD 眼燈。',cost:300,unlockLevel:9,rarity:'epic' },
   { id:'robot-legend',slot:'robot',name:'小光傳奇裝甲',description:'金色星環版 AI 夥伴造型。',cost:540,unlockLevel:15,rarity:'legendary' },
 
-  { id:'card-sky',slot:'card',name:'天空任務卡',description:'主要任務卡換成天空玻璃邊框。',cost:130,unlockLevel:3,rarity:'common' },
-  { id:'card-nebula',slot:'card',name:'星雲任務卡',description:'任務卡加入紫色星雲邊框。',cost:270,unlockLevel:8,rarity:'epic' },
-  { id:'card-legend',slot:'card',name:'傳奇任務卡',description:'金色傳奇任務卡外觀。',cost:480,unlockLevel:14,rarity:'legendary' },
+  { id:'card-sky',slot:'card',name:'天空任務卡',description:'首頁課程區展示天空收藏卡，沒有資源加成。',cost:130,unlockLevel:3,rarity:'common' },
+  { id:'card-nebula',slot:'card',name:'星雲任務卡',description:'首頁課程區展示星雲收藏卡，沒有資源加成。',cost:270,unlockLevel:8,rarity:'epic' },
+  { id:'card-legend',slot:'card',name:'傳奇任務卡',description:'首頁課程區展示傳奇收藏卡，沒有資源加成。',cost:480,unlockLevel:14,rarity:'legendary' },
 
   { id:'effect-stars',slot:'effect',name:'星星軌跡',description:'完成與 Hover 時出現低幅星光。',cost:140,unlockLevel:4,rarity:'rare' },
   { id:'effect-bubbles',slot:'effect',name:'氣泡軌跡',description:'海底世界使用柔和氣泡回饋。',cost:250,unlockLevel:7,rarity:'epic' },
   { id:'effect-legend',slot:'effect',name:'傳奇星塵',description:'只在關鍵互動出現的金色星塵。',cost:500,unlockLevel:15,rarity:'legendary' },
 
+  { id:'pet-space-fox',slot:'pet',name:'太空狐狸',description:'溫暖的狐狸寵物，陪你留在冒險基地；點牠打招呼。純外觀收藏，沒有資源加成。',cost:180,unlockLevel:4,rarity:'rare',renderMode:'companion' },
+
   // 姐姐／妹妹收藏：各自以自己的 Coins 收藏。商品縮圖僅供目錄使用；未經角色專屬完整造型驗證，不得在角色身上疊貼。
-  { id:'sister-starlight-clip',slot:'hairstyle',name:'紫晶星光髮飾',description:'姐姐與妹妹都能戴上的紫晶星星髮夾。',cost:75,unlockLevel:1,rarity:'common',assetExtension:'png' },
+  { id:'sister-starlight-clip',slot:'hairstyle',name:'紫晶星光髮飾',description:'姐姐與妹妹都能戴上的紫晶星星髮夾。',cost:75,unlockLevel:1,rarity:'common',assetExtension:'webp' },
   { id:'sister-mint-bow',slot:'hairstyle',name:'薄荷星結髮飾',description:'清爽的薄荷蝴蝶結與金色星章。',cost:95,unlockLevel:2,rarity:'common',assetExtension:'png' },
   { id:'sister-lavender-hat',slot:'hat',name:'薰衣草探險帽',description:'帶著星章的輕量遮陽帽。',cost:145,unlockLevel:4,rarity:'rare',assetExtension:'png' },
   { id:'sister-cat-headphones',slot:'headphones',name:'薄荷貓耳耳機',description:'用清楚的聲音一起練習英文。',cost:230,unlockLevel:6,rarity:'rare',assetExtension:'png' },
@@ -100,7 +105,7 @@ export const cosmetics: CosmeticDefinition[] = [
 export const cosmeticById = new Map(cosmetics.map((item) => [item.id, item]));
 
 export const wearableCosmeticSlots = new Set<CosmeticSlot>(['hairstyle', 'outfit', 'hat', 'glasses', 'backpack', 'cape', 'headphones']);
-export const worldCosmeticSlots = new Set<CosmeticSlot>(['spaceship', 'room', 'robot', 'card', 'effect']);
+export const worldCosmeticSlots = new Set<CosmeticSlot>(['spaceship', 'room', 'robot', 'card', 'effect', 'pet']);
 
 /** V6.3 formal wearable contract: every Child-visible character item has a
  * fixed-canvas asset for all four production avatars. Historical item IDs are
@@ -115,15 +120,20 @@ export function cosmeticIsSelectable(_item: CosmeticDefinition) {
   return true;
 }
 
-export function cosmeticAssetPath(item: CosmeticDefinition) {
-  return `${import.meta.env.BASE_URL}assets/v5/items/${item.id}.${item.assetExtension ?? 'webp'}`;
+export function cosmeticAssetPath(item: CosmeticDefinition, avatarId?: string) {
+  // Outfit cards show the selected child's exact full-skin rendition.
+  const outfit = item.slot === 'outfit' && avatarId ? avatarSkinAssetPath(item.id, avatarId) : undefined;
+  return outfit
+    ?? reviewedWorldAssetPath(item.id, item.slot)
+    ?? avatarAccessoryCatalogAssetPath(item.id, avatarId)
+    ?? `${import.meta.env.BASE_URL}assets/v5/items/${item.id}.${item.assetExtension ?? 'webp'}`;
 }
 
 export function cosmeticRenderMode(item: CosmeticDefinition): CosmeticRenderMode {
   if (item.renderMode) return item.renderMode;
   if (item.slot === 'outfit') return 'garment';
   if (item.slot === 'room' || item.slot === 'card') return 'scene';
-  if (item.slot === 'robot' || item.slot === 'spaceship') return 'companion';
+  if (item.slot === 'robot' || item.slot === 'spaceship' || item.slot === 'pet') return 'companion';
   if (item.slot === 'effect') return 'event-effect';
   return 'attachment';
 }

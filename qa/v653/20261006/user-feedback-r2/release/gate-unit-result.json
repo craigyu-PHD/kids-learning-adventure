@@ -1,0 +1,94 @@
+{
+  "status": "PASS_GATE_UNIT_CHECKS_NOT_CANDIDATE_ADMISSION",
+  "checks": [
+    {
+      "check": "Python source syntax",
+      "pass": true
+    },
+    {
+      "check": "exact boolean assertion",
+      "pass": true
+    },
+    {
+      "check": "integer cannot stand in for true",
+      "pass": true
+    },
+    {
+      "check": "false stays failed",
+      "pass": true
+    },
+    {
+      "check": "escaped JSON pointer",
+      "pass": true
+    },
+    {
+      "check": "join binding",
+      "pass": true
+    },
+    {
+      "check": "stage string binding",
+      "pass": true
+    },
+    {
+      "check": "unordered item binding",
+      "pass": true
+    },
+    {
+      "check": "hash tamper rejected",
+      "pass": true
+    },
+    {
+      "check": "path traversal rejected",
+      "pass": true
+    },
+    {
+      "check": "480 precise unique fits",
+      "pass": true
+    },
+    {
+      "check": "80 workflow distinct from fit",
+      "pass": true
+    },
+    {
+      "check": "1024 catalog regression",
+      "pass": true
+    },
+    {
+      "check": "56 lesson and 16 CTA",
+      "pass": true
+    },
+    {
+      "check": "anchor baselineSource",
+      "pass": true
+    },
+    {
+      "check": "anchor baselineArtifacts",
+      "pass": true
+    },
+    {
+      "check": "anchor baselinePublic",
+      "pass": true
+    },
+    {
+      "check": "anchor requirements",
+      "pass": true
+    },
+    {
+      "check": "anchor protected15",
+      "pass": true
+    },
+    {
+      "check": "old prebuild byte preservation",
+      "pass": true
+    },
+    {
+      "check": "incomplete real index fails closed",
+      "pass": true
+    },
+    {
+      "check": "negative controls refuse invalid positive baseline",
+      "pass": true
+    }
+  ],
+  "limitations": "No full positive release index exists yet; actual 13-index negative suite is not claimed run."
+}

@@ -1,0 +1,2580 @@
+{
+  "status": "PASS_SELECTED_SCOPE_PENDING_VISUAL",
+  "candidateId": "feedback-r2-a7960962-final-r5",
+  "phase": "matrix",
+  "catalogCount": 64,
+  "fullMatrixCount": 1024,
+  "selectedMatrixCount": 128,
+  "plannedCases": 1,
+  "shardCount": 1024,
+  "shardIndex": 818,
+  "plannedOriginalMatrixIndices": [
+    818
+  ],
+  "freshCasesOnly": true,
+  "cases": [
+    {
+      "item": {
+        "id": "card-nebula",
+        "slot": "card",
+        "name": "星雲任務卡"
+      },
+      "avatar": "brother",
+      "profile": {
+        "id": "mobile-dark",
+        "width": 390,
+        "height": 844,
+        "theme": "dark"
+      },
+      "originalMatrixIndex": 818,
+      "index": 0,
+      "compiled": {
+        "footer": "Version V6.5.3 · Updated 2026-10-06",
+        "scriptURLs": [
+          "http://127.0.0.1:5196/assets/index-DkO6mlaB.js"
+        ],
+        "manifestOverrides": false,
+        "cssOverrides": false
+      },
+      "ledgerBefore": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "card-nebula"
+        ],
+        "equippedCosmetics": [],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-card-nebula",
+            "childId": "child-1",
+            "itemId": "card-nebula",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "catalog": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/card/card-nebula.webp",
+              "cls": "",
+              "visible": true,
+              "width": 1024,
+              "height": 1536,
+              "rect": {
+                "x": 210,
+                "y": 738.984375,
+                "width": 143,
+                "height": 105,
+                "top": 738.984375,
+                "right": 353,
+                "bottom": 843.984375,
+                "left": 210
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/card/card-nebula.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/card/card-nebula.webp",
+            "domNatural": [
+              1024,
+              1536
+            ],
+            "pinnedFileSize": [
+              1024,
+              1536
+            ],
+            "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "http": {
+              "status": 200,
+              "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+              "bytes": 2177386
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world/card/card-nebula.webp",
+            "status": 200,
+            "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "bytes": 2177386,
+            "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/shop-catalog-actual-size.png",
+        "screenshotSHA256": "91f77f41e15afbf970c5ed62abb9158b27394e89c0ea7908edccc8b9df713543",
+        "rect": {
+          "x": 210,
+          "y": 738.984375,
+          "width": 143,
+          "height": 105
+        }
+      },
+      "trial": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/card/card-nebula.webp",
+              "cls": "v63-card-art",
+              "visible": true,
+              "width": 1024,
+              "height": 1536,
+              "rect": {
+                "x": 69.90625,
+                "y": 117.40625,
+                "width": 250.1875,
+                "height": 375.28125,
+                "top": 117.40625,
+                "right": 320.09375,
+                "bottom": 492.6875,
+                "left": 69.90625
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/card/card-nebula.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/card/card-nebula.webp",
+            "domNatural": [
+              1024,
+              1536
+            ],
+            "pinnedFileSize": [
+              1024,
+              1536
+            ],
+            "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "http": {
+              "status": 200,
+              "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+              "bytes": 2177386
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world/card/card-nebula.webp",
+            "status": 200,
+            "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "bytes": 2177386,
+            "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/shop-trial.png",
+        "screenshotSHA256": "561a96354bcf5877504abdab7dbd70b6e179cc2febefa97dcdafbf304ee1ea21",
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 629.109375
+        }
+      },
+      "cancelPreservesProgress": true,
+      "ledgerAfterEquip": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "card-nebula"
+        ],
+        "equippedCosmetics": [
+          "card-nebula"
+        ],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-card-nebula",
+            "childId": "child-1",
+            "itemId": "card-nebula",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [
+          {
+            "id": "avatar-equip:child-1:card-nebula:9b607421-415d-46cc-acd5-570b2ef3db91",
+            "childId": "child-1",
+            "itemId": "card-nebula",
+            "slot": "card",
+            "action": "equip",
+            "createdAt": "2026-10-06T04:59:06.595Z"
+          }
+        ],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "equipped": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/card/card-nebula.webp",
+              "cls": "v63-card-art",
+              "visible": true,
+              "width": 1024,
+              "height": 1536,
+              "rect": {
+                "x": 69.90625,
+                "y": 121,
+                "width": 250.1875,
+                "height": 375.28125,
+                "top": 121,
+                "right": 320.09375,
+                "bottom": 496.28125,
+                "left": 69.90625
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/card/card-nebula.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/card/card-nebula.webp",
+            "domNatural": [
+              1024,
+              1536
+            ],
+            "pinnedFileSize": [
+              1024,
+              1536
+            ],
+            "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "http": {
+              "status": 200,
+              "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+              "bytes": 2177386
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world/card/card-nebula.webp",
+            "status": 200,
+            "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "bytes": 2177386,
+            "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/shop-equipped.png",
+        "screenshotSHA256": "5252e3538dc03edb08582f8d4c6813572aab4cbc3ddf2cbfd1ba7fa5d1972298",
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 632.703125
+        }
+      },
+      "home": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 851.203125,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 851.203125,
+                "right": 111.703125,
+                "bottom": 928.34375,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/brother/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "http": {
+              "status": 200,
+              "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+              "bytes": 33908
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "status": 200,
+            "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "bytes": 33908,
+            "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-player.png",
+        "screenshotSHA256": "cddfeb7f9c877c4d7ab61482821da691ce8871a6be85fc85bc40689137ca8d08",
+        "rect": {
+          "x": 32,
+          "y": 729.359375,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 406.359375,
+            "width": 90,
+            "height": 90,
+            "top": 406.359375,
+            "right": 131,
+            "bottom": 496.359375,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 419.203125,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 419.203125,
+            "right": 111.703125,
+            "bottom": 496.34375,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 419.20703125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              30,
+              2,
+              151,
+              277
+            ],
+            "paintedAlphaWidth": 32.406494140625,
+            "paintedAlphaHeight": 73.651123046875,
+            "normalizedBottom": 0.9618055555555556,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+              "http": {
+                "status": 200,
+                "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+                "bytes": 33908
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "equipped": {
+          "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 738.359375,
+            "width": 90,
+            "height": 90,
+            "top": 738.359375,
+            "right": 131,
+            "bottom": 828.359375,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 751.203125,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 751.203125,
+            "right": 111.703125,
+            "bottom": 828.34375,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 751.20703125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              30,
+              2,
+              151,
+              277
+            ],
+            "paintedAlphaWidth": 32.406494140625,
+            "paintedAlphaHeight": 73.651123046875,
+            "normalizedBottom": 0.9618055555555556,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+              "http": {
+                "status": 200,
+                "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+                "bytes": 33908
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "homeWorld": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+              "cls": "v653-lesson-collectible",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 296,
+                "y": 0.453125,
+                "width": 48,
+                "height": 72,
+                "top": 0.453125,
+                "right": 344,
+                "bottom": 72.453125,
+                "left": 296
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/card/card-nebula-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "http": {
+              "status": 200,
+              "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+              "bytes": 358458
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "status": 200,
+            "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "bytes": 358458,
+            "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-world-inline.png",
+        "screenshotSHA256": "758247cab656147f25641cc8e4faef77d3cbc6520fda07c32aa803d8e6a15142",
+        "rect": {
+          "x": 296,
+          "y": 0.453125,
+          "width": 48,
+          "height": 72
+        }
+      },
+      "homeWorldContext": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+              "cls": "v653-lesson-collectible",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 296,
+                "y": 7.453125,
+                "width": 48,
+                "height": 72,
+                "top": 7.453125,
+                "right": 344,
+                "bottom": 79.453125,
+                "left": 296
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/card/card-nebula-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "http": {
+              "status": 200,
+              "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+              "bytes": 358458
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "status": 200,
+            "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "bytes": 358458,
+            "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-world-inline-in-lesson-header.png",
+        "screenshotSHA256": "246608629859c03bac72e7998b4683173fdcdc5ccf8349385aa78d9c222987cc",
+        "rect": {
+          "x": 34,
+          "y": 0.453125,
+          "width": 322,
+          "height": 88
+        }
+      },
+      "homeReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 851.203125,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 851.203125,
+                "right": 111.703125,
+                "bottom": 928.34375,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/brother/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "http": {
+              "status": 200,
+              "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+              "bytes": 33908
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "status": 200,
+            "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "bytes": 33908,
+            "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-reload.png",
+        "screenshotSHA256": "cfb4506cc3a826ddba390d39df7c7e8fb5be862c750fd4b0c1b39b03284a44db",
+        "rect": {
+          "x": 32,
+          "y": 729.359375,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeWorldReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+              "cls": "v653-lesson-collectible",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 296,
+                "y": 0.453125,
+                "width": 48,
+                "height": 72,
+                "top": 0.453125,
+                "right": 344,
+                "bottom": 72.453125,
+                "left": 296
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/card/card-nebula-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "http": {
+              "status": 200,
+              "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+              "bytes": 358458
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "status": 200,
+            "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "bytes": 358458,
+            "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-world-reload.png",
+        "screenshotSHA256": "758247cab656147f25641cc8e4faef77d3cbc6520fda07c32aa803d8e6a15142",
+        "rect": {
+          "x": 296,
+          "y": 0.453125,
+          "width": 48,
+          "height": 72
+        }
+      },
+      "achievement": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 54.28125,
+                "y": 479.625,
+                "width": 59.421875,
+                "height": 89.140625,
+                "top": 479.625,
+                "right": 113.703125,
+                "bottom": 568.765625,
+                "left": 54.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/brother/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "http": {
+              "status": 200,
+              "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+              "bytes": 33908
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "status": 200,
+            "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "bytes": 33908,
+            "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/achievements-avatar.png",
+        "screenshotSHA256": "b63e630d06801d9fbacde8748465b37b16de245dba55e01670439f3f3d382565",
+        "rect": {
+          "x": 32,
+          "y": 464.78125,
+          "width": 104,
+          "height": 104
+        }
+      },
+      "exactCandidatePaths": {
+        "trial": [
+          "/assets/v6.4/world/card/card-nebula.webp"
+        ],
+        "homeWorld": [
+          "/assets/v6.4/world-display/card/card-nebula-384.webp"
+        ],
+        "homeWorldReload": [
+          "/assets/v6.4/world-display/card/card-nebula-384.webp"
+        ]
+      },
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "equipmentTransactions": [
+        {
+          "id": "avatar-equip:child-1:card-nebula:9b607421-415d-46cc-acd5-570b2ef3db91",
+          "childId": "child-1",
+          "itemId": "card-nebula",
+          "slot": "card",
+          "action": "equip",
+          "createdAt": "2026-10-06T04:59:06.595Z"
+        },
+        {
+          "id": "avatar-equip:child-1:card-nebula:fc88bf28-e08d-4010-886b-3463d32b9903",
+          "childId": "child-1",
+          "itemId": "card-nebula",
+          "slot": "card",
+          "action": "unequip",
+          "createdAt": "2026-10-06T04:59:09.512Z"
+        }
+      ],
+      "ledgerScope": "one synthetic cost-zero owned item; actual UI equip + unequip append-only; no real purchase assertion",
+      "visualReview": "NOT_PERFORMED",
+      "contextClosed": true
+    }
+  ],
+  "controls": [],
+  "fallback": [],
+  "browserClosed": true,
+  "visualReview": "NOT_PERFORMED",
+  "scope": "Synthetic preowned cost-zero fixture; real trial/cancel/equip/home/reload/achievement/unequip; no real purchase, cloud auth, or earned rewards",
+  "negativeScope": "Missing asset fail-close plus exact browser byte admission; swapped/stale/wrong-role rejection belongs to QA, not runtime authenticity enforcement",
+  "runnerSHA256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "id": "desktop-light",
+      "width": 1440,
+      "height": 1050,
+      "theme": "light"
+    },
+    {
+      "id": "desktop-dark",
+      "width": 1440,
+      "height": 1050,
+      "theme": "dark"
+    },
+    {
+      "id": "mobile-light",
+      "width": 390,
+      "height": 844,
+      "theme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "theme": "dark"
+    }
+  ],
+  "roles": [
+    "brother",
+    "younger",
+    "sister",
+    "younger-sister"
+  ],
+  "items": [
+    "robot-legend",
+    "card-sky",
+    "card-nebula",
+    "card-legend",
+    "effect-stars",
+    "effect-bubbles",
+    "effect-legend",
+    "pet-space-fox"
+  ],
+  "noExtraDecode": true,
+  "sourcePinsSHA256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+  "artifactPinsSHA256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+  "manifestPins": {
+    "avatar": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "world": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "harnessDependencies": {
+    "scripts/qa_v653_full_shop_acceptance.py": "2cc9a9758c2f62c3c4cd04c37c89a63beb8e7793460f205bcd8492e6aaee064f",
+    "scripts/qa_v653_release_smoke.py": "cf12df2f42db0c28c0c8f6c0255cb4fa202318a0219a0549c6103d06526d06d9",
+    "scripts/qa_v653_shop_coverage.py": "338e0a268e615f72a3b24bdcb7bab982b67f9835543b7c9359ef11cb9a0d23ee"
+  },
+  "preservedRunnerDependencies": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run.py": "6454034c5f095c10cdae43b91b00e2b95b0833d626264d8c562905b696cd2888"
+  },
+  "densityCorrection": "width srcset: descriptor equals physical width; positive density-corrected DOM and <=1px aspect tolerance; no decode",
+  "compiledDocuments": {
+    "/": {
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "bytes": 988,
+      "status": 200
+    }
+  },
+  "compiledAssets": {
+    "/assets/index-KC1rU43V.css": {
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "bytes": 493690,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-KC1rU43V.css"
+    },
+    "/assets/index-DkO6mlaB.js": {
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "bytes": 1434192,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-DkO6mlaB.js"
+    },
+    "/assets/SecondaryViews-Bd69SkOV.js": {
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "bytes": 43717,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-Bd69SkOV.js"
+    },
+    "/assets/x-CwjU7BFr.js": {
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "bytes": 143,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/x-CwjU7BFr.js"
+    },
+    "/assets/learningAnalytics-BiVMp2Ug.js": {
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "bytes": 2617,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/learningAnalytics-BiVMp2Ug.js"
+    },
+    "/assets/SecondaryViews-aPwGWhRg.css": {
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "bytes": 30904,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-aPwGWhRg.css"
+    }
+  },
+  "networkErrors": [],
+  "sourceRequests": [],
+  "servedAssets": {
+    "/assets/v6.4/world/card/card-nebula.webp": {
+      "status": 200,
+      "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+      "bytes": 2177386,
+      "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+    },
+    "/assets/v6.4/avatar-display/brother/base-body-192.webp": {
+      "status": 200,
+      "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+      "bytes": 33908,
+      "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+    },
+    "/assets/v6.4/world-display/card/card-nebula-384.webp": {
+      "status": 200,
+      "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+      "bytes": 358458,
+      "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+    }
+  },
+  "apiBlocks": [],
+  "captures": [
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/card/card-nebula.webp",
+            "cls": "",
+            "visible": true,
+            "width": 1024,
+            "height": 1536,
+            "rect": {
+              "x": 210,
+              "y": 738.984375,
+              "width": 143,
+              "height": 105,
+              "top": 738.984375,
+              "right": 353,
+              "bottom": 843.984375,
+              "left": 210
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/card/card-nebula.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/card/card-nebula.webp",
+          "domNatural": [
+            1024,
+            1536
+          ],
+          "pinnedFileSize": [
+            1024,
+            1536
+          ],
+          "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+          "http": {
+            "status": 200,
+            "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "bytes": 2177386
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world/card/card-nebula.webp",
+          "status": 200,
+          "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+          "bytes": 2177386,
+          "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/shop-catalog-actual-size.png",
+      "screenshotSHA256": "91f77f41e15afbf970c5ed62abb9158b27394e89c0ea7908edccc8b9df713543",
+      "rect": {
+        "x": 210,
+        "y": 738.984375,
+        "width": 143,
+        "height": 105
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/card/card-nebula.webp",
+            "cls": "v63-card-art",
+            "visible": true,
+            "width": 1024,
+            "height": 1536,
+            "rect": {
+              "x": 69.90625,
+              "y": 117.40625,
+              "width": 250.1875,
+              "height": 375.28125,
+              "top": 117.40625,
+              "right": 320.09375,
+              "bottom": 492.6875,
+              "left": 69.90625
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/card/card-nebula.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/card/card-nebula.webp",
+          "domNatural": [
+            1024,
+            1536
+          ],
+          "pinnedFileSize": [
+            1024,
+            1536
+          ],
+          "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+          "http": {
+            "status": 200,
+            "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "bytes": 2177386
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world/card/card-nebula.webp",
+          "status": 200,
+          "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+          "bytes": 2177386,
+          "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/shop-trial.png",
+      "screenshotSHA256": "561a96354bcf5877504abdab7dbd70b6e179cc2febefa97dcdafbf304ee1ea21",
+      "rect": {
+        "x": 26,
+        "y": -0.421875,
+        "width": 338,
+        "height": 629.109375
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/card/card-nebula.webp",
+            "cls": "v63-card-art",
+            "visible": true,
+            "width": 1024,
+            "height": 1536,
+            "rect": {
+              "x": 69.90625,
+              "y": 121,
+              "width": 250.1875,
+              "height": 375.28125,
+              "top": 121,
+              "right": 320.09375,
+              "bottom": 496.28125,
+              "left": 69.90625
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/card/card-nebula.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/card/card-nebula.webp",
+          "domNatural": [
+            1024,
+            1536
+          ],
+          "pinnedFileSize": [
+            1024,
+            1536
+          ],
+          "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+          "http": {
+            "status": 200,
+            "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+            "bytes": 2177386
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world/card/card-nebula.webp",
+          "status": 200,
+          "sha256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a",
+          "bytes": 2177386,
+          "expectedSHA256": "3919b11b1bc68867c808e4431cc761953e3120af27ab1a7a61c58df40b52603a"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/shop-equipped.png",
+      "screenshotSHA256": "5252e3538dc03edb08582f8d4c6813572aab4cbc3ddf2cbfd1ba7fa5d1972298",
+      "rect": {
+        "x": 26,
+        "y": -0.421875,
+        "width": 338,
+        "height": 632.703125
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 851.203125,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 851.203125,
+              "right": 111.703125,
+              "bottom": 928.34375,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/brother/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+          "http": {
+            "status": 200,
+            "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "bytes": 33908
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "status": 200,
+          "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+          "bytes": 33908,
+          "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-player.png",
+      "screenshotSHA256": "cddfeb7f9c877c4d7ab61482821da691ce8871a6be85fc85bc40689137ca8d08",
+      "rect": {
+        "x": 32,
+        "y": 729.359375,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "cls": "v653-lesson-collectible",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 296,
+              "y": 0.453125,
+              "width": 48,
+              "height": 72,
+              "top": 0.453125,
+              "right": 344,
+              "bottom": 72.453125,
+              "left": 296
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/card/card-nebula-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "http": {
+            "status": 200,
+            "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "bytes": 358458
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "status": 200,
+          "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "bytes": 358458,
+          "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-world-inline.png",
+      "screenshotSHA256": "758247cab656147f25641cc8e4faef77d3cbc6520fda07c32aa803d8e6a15142",
+      "rect": {
+        "x": 296,
+        "y": 0.453125,
+        "width": 48,
+        "height": 72
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "cls": "v653-lesson-collectible",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 296,
+              "y": 7.453125,
+              "width": 48,
+              "height": 72,
+              "top": 7.453125,
+              "right": 344,
+              "bottom": 79.453125,
+              "left": 296
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/card/card-nebula-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "http": {
+            "status": 200,
+            "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "bytes": 358458
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "status": 200,
+          "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "bytes": 358458,
+          "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-world-inline-in-lesson-header.png",
+      "screenshotSHA256": "246608629859c03bac72e7998b4683173fdcdc5ccf8349385aa78d9c222987cc",
+      "rect": {
+        "x": 34,
+        "y": 0.453125,
+        "width": 322,
+        "height": 88
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 851.203125,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 851.203125,
+              "right": 111.703125,
+              "bottom": 928.34375,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/brother/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+          "http": {
+            "status": 200,
+            "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "bytes": 33908
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "status": 200,
+          "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+          "bytes": 33908,
+          "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-reload.png",
+      "screenshotSHA256": "cfb4506cc3a826ddba390d39df7c7e8fb5be862c750fd4b0c1b39b03284a44db",
+      "rect": {
+        "x": 32,
+        "y": 729.359375,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "cls": "v653-lesson-collectible",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 296,
+              "y": 0.453125,
+              "width": 48,
+              "height": 72,
+              "top": 0.453125,
+              "right": 344,
+              "bottom": 72.453125,
+              "left": 296
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/card/card-nebula-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "http": {
+            "status": 200,
+            "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+            "bytes": 358458
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/card/card-nebula-384.webp",
+          "status": 200,
+          "sha256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da",
+          "bytes": 358458,
+          "expectedSHA256": "5c057d515bd7752176b3bc02cb1ca1717827a21672e2c50232d0a1f9066962da"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/home-world-reload.png",
+      "screenshotSHA256": "758247cab656147f25641cc8e4faef77d3cbc6520fda07c32aa803d8e6a15142",
+      "rect": {
+        "x": 296,
+        "y": 0.453125,
+        "width": 48,
+        "height": 72
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 54.28125,
+              "y": 479.625,
+              "width": 59.421875,
+              "height": 89.140625,
+              "top": 479.625,
+              "right": 113.703125,
+              "bottom": 568.765625,
+              "left": 54.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/brother/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+          "http": {
+            "status": 200,
+            "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+            "bytes": 33908
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/brother/base-body-192.webp",
+          "status": 200,
+          "sha256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535",
+          "bytes": 33908,
+          "expectedSHA256": "8495999e118c4ea1495bc1a894568f793625048d7c2f90ba8dcec1c0523a0535"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/mobile-dark/brother/card-nebula/achievements-avatar.png",
+      "screenshotSHA256": "b63e630d06801d9fbacde8748465b37b16de245dba55e01670439f3f3d382565",
+      "rect": {
+        "x": 32,
+        "y": 464.78125,
+        "width": 104,
+        "height": 104
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 376.671875,
+          "width": 90,
+          "height": 90,
+          "top": 376.671875,
+          "right": 131,
+          "bottom": 466.671875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 406.359375,
+          "width": 90,
+          "height": 90,
+          "top": 406.359375,
+          "right": 131,
+          "bottom": 496.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 531.03125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 93.609375,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.609375,
+          "right": 344,
+          "bottom": 397.4375,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 210,
+          "y": 738.984375,
+          "width": 143,
+          "height": 105,
+          "top": 738.984375,
+          "right": 353,
+          "bottom": 843.984375,
+          "left": 210
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1536
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 629.109375,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 628.6875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1536
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 531.03125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 632.703125,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 632.28125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/card/card-nebula.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1536
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.734375,
+          "width": 260,
+          "height": 115,
+          "top": 728.734375,
+          "right": 292,
+          "bottom": 843.734375,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 738.359375,
+          "width": 90,
+          "height": 90,
+          "top": 738.359375,
+          "right": 131,
+          "bottom": 828.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 296,
+          "y": 0.453125,
+          "width": 48,
+          "height": 72,
+          "top": 0.453125,
+          "right": 344,
+          "bottom": 72.453125,
+          "left": 296
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 34,
+          "y": 0.453125,
+          "width": 322,
+          "height": 88,
+          "top": 0.453125,
+          "right": 356,
+          "bottom": 88.453125,
+          "left": 34
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.734375,
+          "width": 260,
+          "height": 115,
+          "top": 728.734375,
+          "right": 292,
+          "bottom": 843.734375,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 296,
+          "y": 0.453125,
+          "width": 48,
+          "height": 72,
+          "top": 0.453125,
+          "right": 344,
+          "bottom": 72.453125,
+          "left": 296
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/card/card-nebula-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 464.78125,
+          "width": 104,
+          "height": 104,
+          "top": 464.78125,
+          "right": 136,
+          "bottom": 568.78125,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "card-nebula",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.671875,
+          "width": 90,
+          "height": 90,
+          "top": 753.671875,
+          "right": 131,
+          "bottom": 843.671875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 754.359375,
+          "width": 90,
+          "height": 90,
+          "top": 754.359375,
+          "right": 131,
+          "bottom": 844.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/brother/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    }
+  ]
+}

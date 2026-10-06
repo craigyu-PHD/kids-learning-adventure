@@ -1,0 +1,14 @@
+{
+  "path": "src/styles/components/speaking.css",
+  "beforeSHA256": "b6e939257e883459ef569da6910b65111fac5b8191332fc3f49fc9bfc5793b7c",
+  "afterSHA256": "aa479ebe7841f97992989337862441bb05c244d5a9b4372f3ba914c1bfa77739",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取新增規則。每位孩子錄音與回饋置同卡，按鈕至少 48px，窄欄單列，桌機兩列；保留錄音控制行為且有 night/reduced-motion 規則。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__components__speaking.css.diff",
+    "sha256": "fa7e79c0acd9bb6b20fa6425af92e2c53c9f0da595e9792c05e98d6de7a7c7bf"
+  },
+  "observedAt": "2026-10-06T03:21:01.070102+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

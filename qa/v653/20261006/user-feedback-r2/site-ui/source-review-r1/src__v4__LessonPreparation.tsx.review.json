@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/LessonPreparation.tsx",
+  "beforeSHA256": "55dcf06fcc5d1599b3f30aee5a2803484608bfc59ae5e199d1da04a47fade1d3",
+  "afterSHA256": "af9889c19be15e79c22ce95d04c24bacac8fc50d067c2f8f33d89ee3b4f8c68f",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取 r6 與候選差異。保留 focus、所有詞彙句型、素材入口、分齡與照顧者文字；只重組可讀區域與 native details，既有 onInspect 契約保留。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__LessonPreparation.tsx.diff",
+    "sha256": "c8cfd3e6f2a5a2c82578b2e5ba079dcd5bc2b1c9697dfa3b4741571bc91b321f"
+  },
+  "observedAt": "2026-10-06T03:21:01.067477+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

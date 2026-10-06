@@ -1,0 +1,54 @@
+--- published-r6/src/v4/Dashboard.tsx
++++ candidate-r3/src/v4/Dashboard.tsx
+@@ -1,4 +1,5 @@
+ import DailyParticipants from './DailyParticipants';
++import { cancelEnglishSpeech } from './voice';
+ import { cloudStatusLabel } from '../statusLabels';
+ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+ import WorldDisplayImage from '../components/WorldDisplayImage';
+@@ -213,7 +214,7 @@
+     // Visible feedback must commit even when a device TTS implementation is slow.
+     // Run speech in a later task instead of blocking React's click-state paint.
+     window.setTimeout(() => {
+-      window.speechSynthesis.cancel();
++      cancelEnglishSpeech();
+       const u = new SpeechSynthesisUtterance(spokenText);
+       u.lang = 'zh-TW';
+       window.speechSynthesis.speak(u);
+@@ -222,7 +223,7 @@
+   const mood = !todayDay ? 'guard' : isDayDone(todayDay) ? 'celebrate' : 'ready';
+   const room = equippedCosmeticForSlot(equippedCosmetics, 'room');
+   const robot = equippedCosmeticForSlot(equippedCosmetics, 'robot');
+-  return <section className={`v4-panel v4-ai-companion mood-${mood} ${reacting?'v64-companion-reacting':''} ${room?'has-mounted-room':''} ${robot?'has-mounted-robot':''}`} data-room={room?.id ?? 'base'} data-companion-reaction={reacting ? 'playing' : 'resting'}><button type="button" className="v4-ai-bot v5-ai-bot" onClick={speak} aria-label="請小光說出今天的提示">{robot?<WorldDisplayImage itemId={robot.id} slot="robot" className="v6-ai-robot-art" fallback={cosmeticAssetPath(robot)} alt={`${robot.name}小光造型`}/>:<AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光" size={512} deferPlayback deferUntilNearViewport/>}</button><div><h3>小光</h3><p aria-live="polite">{reacting ? '一起出發！我會陪你完成今天的冒險。' : text}</p><small className="v5-ai-hint">{reacting ? '收到！準備出發' : robot?`已裝備 ${robot.name}`:'點小光聽提示'}</small></div></section>;
++  return <section className={`v4-panel v4-ai-companion mood-${mood} ${reacting?'v64-companion-reacting':''} ${room?'has-mounted-room':''} ${robot?'has-mounted-robot':''}`} data-room={room?.id ?? 'base'} data-companion-reaction={reacting ? 'playing' : 'resting'}><button type="button" className="v4-ai-bot v5-ai-bot" onClick={speak} aria-label="請小光說出今天的提示">{robot?<WorldDisplayImage itemId={robot.id} slot="robot" className="v6-ai-robot-art" fallback={cosmeticAssetPath(robot)} alt={`${robot.name}小光造型`}/>:<AnimatedMedia webm={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle.webm`} poster={`${import.meta.env.BASE_URL}assets/v5/animations/robot-idle-poster.webp`} alt="AI 學習夥伴小光" size={512} fitContainer deferPlayback deferUntilNearViewport/>}</button><div><h3>小光</h3><p aria-live="polite">{reacting ? '一起出發！我會陪你完成今天的冒險。' : text}</p><small className="v5-ai-hint">{reacting ? '收到！準備出發' : robot?`已裝備 ${robot.name}`:'點小光聽提示'}</small></div></section>;
+ }
+ 
+ function SemesterCalendar({ settings, trustedDate, courseDateKey, accessForDay, isDayDone }: Pick<DashboardProps,'settings'|'trustedDate'|'courseDateKey'|'accessForDay'|'isDayDone'>) {
+@@ -276,6 +277,7 @@
+ }
+ 
+ function LessonMissionCard({ cardId, day, lessonIndex, access, verified, done, parentPreviewUnlocked, onOpen, onRequestParent }: { cardId?: string; day: CourseDay; lessonIndex: 0|1; access: CourseDayAccess; verified: boolean; done: boolean; parentPreviewUnlocked: boolean; onOpen: () => void; onRequestParent: () => void }) {
++  const [coverUnavailable, setCoverUnavailable] = useState(false);
+   const collectible = equippedCosmeticForSlot(cardId ? [cardId] : [], 'card');
+   const collectiblePath = collectible ? cardFrameAssetPath(collectible.id) : undefined;
+   const block = day.blocks[lessonIndex]; const formal = access === 'today' && verified;
+@@ -288,8 +290,8 @@
+   const click = canOpenLesson ? onOpen : onRequestParent;
+   return <article data-collectible-card={collectible?.id} className={`v4-lesson-card ${collectiblePath ? 'has-collectible-card' : ''} ${done ? 'done' : ''} ${formal ? '' : 'preview'}`}>
+     <header className="v5-lesson-card-header"><strong><Star/> 第 {lessonIndex + 1} 節</strong><span>{clock}</span>{collectible && collectiblePath && <WorldDisplayImage itemId={collectible.id} slot="card" fallback={collectiblePath} className="v653-lesson-collectible" alt={`${collectible.name}收藏卡`}/>}</header>
+-    <div className="v5-lesson-card-body"><div className="v4-lesson-thumb"><GameImage src={childTeaser ? `${import.meta.env.BASE_URL}assets/v5/vocab/rocket.webp` : youtubeThumb(block.video.videoId)} alt={childTeaser ? `${day.theme} 主題預告` : `${block.video.title} 影片封面`} fallbackLabel="影片封面暫時無法載入，仍可開啟課程" deferUntilNearViewport/>{!formal && <i><BookOpen/></i>}</div>
+-      <div className="v4-lesson-content"><div className="v4-lesson-meta"><span>{childTeaser ? 'Adventure' : subjectLabel(block.subject)}</span><small>{status}</small></div><h3>{childTeaser ? `${day.theme} 冒險預告` : block.title}</h3>{(formal || fullPreview) ? <div className="v5-song-info"><small className="v5-song-label">課前歌曲</small><span className="v5-song-name">{block.warmup.title}</span></div> : <p>明日主題：{day.theme}</p>}<button onClick={click}>{done ? <><Check/> {action}</> : formal ? <><Play/> {action} <ChevronRight/></> : <><BookOpen/> {action} <ChevronRight/></>}</button></div>
++    <div className="v5-lesson-card-body"><div className="v4-lesson-thumb"><GameImage src={childTeaser ? `${import.meta.env.BASE_URL}assets/v5/vocab/rocket.webp` : youtubeThumb(block.video.videoId)} alt={childTeaser ? `${day.theme} 主題預告` : `${block.video.title} 影片封面`} fallbackLabel="影片封面暫時無法載入，仍可開啟課程" showFallbackLabel={false} onFallbackChange={setCoverUnavailable} deferUntilNearViewport/>{!formal && <i><BookOpen/></i>}</div>
++      <div className="v4-lesson-content"><div className="v4-lesson-meta"><span>{childTeaser ? 'Adventure' : subjectLabel(block.subject)}</span><small>{status}</small></div><h3>{childTeaser ? `${day.theme} 冒險預告` : block.title}</h3>{(formal || fullPreview) ? <div className="v5-song-info"><small className="v5-song-label">課前歌曲</small><span className="v5-song-name">{block.warmup.title}</span></div> : <p>明日主題：{day.theme}</p>}{coverUnavailable && <div className="v64-image-fallback-label v653-lesson-cover-status" role="status">影片封面暫時無法載入，仍可開啟課程</div>}<button onClick={click}>{done ? <><Check/> {action}</> : formal ? <><Play/> {action} <ChevronRight/></> : <><BookOpen/> {action} <ChevronRight/></>}</button></div>
+     </div>
+   </article>;
+ }
+@@ -373,7 +375,7 @@
+     onOpenLesson(day, nextLessonIndex);
+   };
+   return <section id="today-course" tabIndex={-1} className="v4-panel v4-daily-panel"><div className="v53-date-strip"><span>今天・{Number(date.slice(5,7))}月{Number(date.slice(8,10))}日</span><i>{weekday}</i><strong>{todayDay ? `Day ${day.index}` : '今天沒有正式課'}</strong></div><div className="v4-daily-head v652-mission-brief"><div><span>{todayDay ? '今天的冒險 · TODAY' : '下一次冒險 · NEXT'}</span><h2>{day.title}</h2>{!todayDay && <strong className="v4-next-adventure-date">{adventureDate} · Day {day.index}</strong>}<p>{day.bigIdea}</p></div><img className="v5-daily-mission-art" src={`${import.meta.env.BASE_URL}assets/v6.5/display/rocket-flyby-poster-384.webp`} alt="" onError={(event)=>{ if (!event.currentTarget.src.includes('/v5/animations/rocket-flyby-poster.webp')) event.currentTarget.src=`${import.meta.env.BASE_URL}assets/v5/animations/rocket-flyby-poster.webp`; }} /></div>
+-    <div className="v64-home-primary-action"><button type="button" className="v64-home-primary-cta" data-home-primary-action={primaryActionKind} onClick={handlePrimaryAction}>{primaryActionKind === 'rewards' ? <Trophy/> : primaryActionKind === 'next-adventure' ? <CalendarDays/> : <Rocket/>}<span>{primaryLabel}</span><ChevronRight/></button><small>{formalToday ? selectedIds.length ? allDone ? '兩堂都完成了，去看看今天累積的成果。' : `今天 ${selectedIds.length} 位孩子一起冒險。` : '先勾選今天一起上課的孩子，再從這裡出發。' : `${adventureDate} · Day ${day.index}`}</small></div>
++    <div className="v64-home-primary-action"><button type="button" className="v64-home-primary-cta" data-home-primary-action={primaryActionKind} onClick={handlePrimaryAction}><span className="v653-action-emblem" aria-hidden="true">{primaryActionKind === 'rewards' ? <Trophy/> : primaryActionKind === 'next-adventure' ? <CalendarDays/> : <Rocket/>}</span><span className="v653-action-label">{primaryLabel}</span><ChevronRight aria-hidden="true"/></button><small>{formalToday ? selectedIds.length ? allDone ? '兩堂都完成了，去看看今天累積的成果。' : `今天 ${selectedIds.length} 位孩子一起冒險。` : '先勾選今天一起上課的孩子，再從這裡出發。' : `${adventureDate} · Day ${day.index}`}</small></div>
+     <ol className="v652-daily-route" aria-label="今天的學習路徑">
+       {(['第一堂', '第二堂', '今日收穫'] as const).map((label, index) => <li key={label} className={(index < 2 ? lessonDone[index] : allDone) ? 'is-complete' : ''}><span aria-hidden="true">{index === 2 ? <Trophy size={16}/> : index + 1}</span><strong>{label}</strong>{(index < 2 ? lessonDone[index] : allDone) && <small>完成</small>}</li>)}
+     </ol>

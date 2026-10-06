@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/RewardModal.tsx",
+  "beforeSHA256": "a88483ff3a407a0484f99b9be7dba1c758729d1498d52d7ea2243a8180153a78",
+  "afterSHA256": "590d68d774d09b4d2b9f7391648cfc653ad4f2dc61efdc10bb20266d7f287f55",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。移除彩帶節點，新增角色/勳章卡與本地化文案；原獎勵數值、定時與 onClose 行為未改，不加入 ledger 寫入。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__RewardModal.tsx.diff",
+    "sha256": "11ce2f3faa81e92a0208544a645c208f18e44a90300ae337d6b3b5113fe0d13b"
+  },
+  "observedAt": "2026-10-06T03:21:01.075297+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

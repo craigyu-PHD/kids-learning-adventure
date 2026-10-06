@@ -1,0 +1,47 @@
+--- published-r6/src/v4/GameImage.tsx
++++ candidate-r3/src/v4/GameImage.tsx
+@@ -7,6 +7,8 @@
+   eager?: boolean;
+   deferUntilNearViewport?: boolean;
+   fallbackLabel?: string;
++  showFallbackLabel?: boolean;
++  onFallbackChange?: (unavailable: boolean) => void;
+ };
+ 
+ /** Image wrapper with an intrinsic skeleton so slow networks never show an empty card. */
+@@ -14,14 +16,17 @@
+   return <ImageContent key={props.src} {...props} />;
+ }
+ 
+-function ImageContent({ src, alt, className = '', eager = false, deferUntilNearViewport = false, fallbackLabel }: Props) {
++function ImageContent({ src, alt, className = '', eager = false, deferUntilNearViewport = false, fallbackLabel, showFallbackLabel = true, onFallbackChange }: Props) {
+   const container = useRef<HTMLSpanElement>(null);
+   const image = useRef<HTMLImageElement>(null);
+   const [nearViewport, setNearViewport] = useState(false);
+   const shouldLoad = eager || !deferUntilNearViewport || nearViewport;
+-  const fallback = `${import.meta.env.BASE_URL}assets/v5/themes/space-hero-v2-thumb.webp`;
++  const fallback = `${import.meta.env.BASE_URL}assets/v5/themes/space-hero-v2.webp`;
+   const [loaded, setLoaded] = useState(false);
+   const [resolvedSrc, setResolvedSrc] = useState(src);
++  const unavailable = resolvedSrc === fallback && src !== fallback;
++
++  useEffect(() => { onFallbackChange?.(unavailable); }, [unavailable, onFallbackChange]);
+ 
+   useEffect(() => {
+     if (shouldLoad) return;
+@@ -60,13 +65,13 @@
+     {shouldLoad && <img
+       ref={image}
+       src={resolvedSrc}
+-      alt={resolvedSrc === fallback && src !== fallback && fallbackLabel ? fallbackLabel : alt}
++      alt={unavailable && fallbackLabel ? fallbackLabel : alt}
+       loading={eager ? 'eager' : 'lazy'}
+       fetchPriority={eager ? 'high' : 'auto'}
+       decoding="async"
+       onLoad={() => setLoaded(true)}
+       onError={handleError}
+     />}
+-    {resolvedSrc === fallback && src !== fallback && fallbackLabel && <span className="v64-image-fallback-label">{fallbackLabel}</span>}
++    {unavailable && showFallbackLabel && fallbackLabel && <span className="v64-image-fallback-label">{fallbackLabel}</span>}
+   </span>;
+ }

@@ -1,0 +1,1833 @@
+{
+  "status": "PASS_EXACT_RAW_AUDIT_WITH_EXPLICIT_RETRIES",
+  "observedAt": "2026-10-06T04:58:14.573580+00:00",
+  "scope": "Immutable per-row observations; original failed report remains failed. No new browser or visual claim.",
+  "rawReports": [
+    {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+      "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+    },
+    {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+      "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+    },
+    {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+      "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+    }
+  ],
+  "retryReports": [
+    {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/report.json",
+      "sha256": "3fe82c1116b11000a3d9b548e037b3cba2b1deec1c241bf2187137654905d2f9"
+    }
+  ],
+  "retrySelections": [
+    {
+      "originalMatrixIndex": 706,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-light"
+      },
+      "originalRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "originalPointer": "/cases/18",
+      "originalTopStatus": "FAIL_RAW_CASES_PRESERVED",
+      "originalStatus": "FAIL",
+      "originalReason": "AssertionError(('fresh readiness timeout', None, {'ready': False, 'locatorError': 'Locator.evaluate: Timeout 322.0012919991859ms exceeded.\\nCall log:\\n  - waiting for locator(\".v4-player-card\").first.locator(\".avatar-renderer\").first\\n'}))",
+      "originalFailureScreenshotError": "TimeoutError('Page.screenshot: Timeout 5000ms exceeded.\\nCall log:\\n  - taking page screenshot\\n')",
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/report.json",
+        "sha256": "3fe82c1116b11000a3d9b548e037b3cba2b1deec1c241bf2187137654905d2f9"
+      },
+      "retryPointer": "/cases/0",
+      "retryStatus": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "afterComplete": true,
+      "timingPointer": "/events/0",
+      "originalCompletedAt": "2026-10-06T04:31:32.840065+00:00",
+      "retryStartedAt": "2026-10-06T04:56:35.811683+00:00",
+      "retryCompletedAt": "2026-10-06T04:56:51.768743+00:00"
+    }
+  ],
+  "timingReceipt": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/workflow706-timed-r5/timing-receipt.json",
+    "sha256": "e8a8defebfaa5dbe1f6685e0c2fe1a8d97a2e51a292e83020b5603afad3a92e1"
+  },
+  "httpReceipt": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-http-final-r5.json",
+    "sha256": "bde8a5e5c541434fee396ff8261e0fb42eb5bd2c79c9dd41c3672794c13a370f"
+  },
+  "auditor": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/adapt_retry_r5.py",
+    "sha256": "e1278f954a3c18bcbab86beea32c59ffcf6f413dc9b006f8c41d6723875bd7fc"
+  },
+  "originalCaseChecker": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/adapt.py",
+    "sha256": "25bd6ac7673d73223caaafd8366b49e2f04f8850377399279a280ff20852a643"
+  },
+  "cases": [
+    {
+      "originalMatrixIndex": 0,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/0"
+    },
+    {
+      "originalMatrixIndex": 2,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/0"
+    },
+    {
+      "originalMatrixIndex": 7,
+      "values": {
+        "role": "brother",
+        "itemId": "hair-nebula",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/0"
+    },
+    {
+      "originalMatrixIndex": 36,
+      "values": {
+        "role": "brother",
+        "itemId": "phones-sky",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/1"
+    },
+    {
+      "originalMatrixIndex": 59,
+      "values": {
+        "role": "brother",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/1"
+    },
+    {
+      "originalMatrixIndex": 64,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/1"
+    },
+    {
+      "originalMatrixIndex": 66,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/2"
+    },
+    {
+      "originalMatrixIndex": 71,
+      "values": {
+        "role": "younger",
+        "itemId": "hair-nebula",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/2"
+    },
+    {
+      "originalMatrixIndex": 100,
+      "values": {
+        "role": "younger",
+        "itemId": "phones-sky",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/2"
+    },
+    {
+      "originalMatrixIndex": 123,
+      "values": {
+        "role": "younger",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/3"
+    },
+    {
+      "originalMatrixIndex": 128,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/3"
+    },
+    {
+      "originalMatrixIndex": 130,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/3"
+    },
+    {
+      "originalMatrixIndex": 135,
+      "values": {
+        "role": "sister",
+        "itemId": "hair-nebula",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/4"
+    },
+    {
+      "originalMatrixIndex": 164,
+      "values": {
+        "role": "sister",
+        "itemId": "phones-sky",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/4"
+    },
+    {
+      "originalMatrixIndex": 187,
+      "values": {
+        "role": "sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/4"
+    },
+    {
+      "originalMatrixIndex": 192,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/5"
+    },
+    {
+      "originalMatrixIndex": 194,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/5"
+    },
+    {
+      "originalMatrixIndex": 199,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "hair-nebula",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/5"
+    },
+    {
+      "originalMatrixIndex": 228,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "phones-sky",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/6"
+    },
+    {
+      "originalMatrixIndex": 251,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/6"
+    },
+    {
+      "originalMatrixIndex": 256,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/6"
+    },
+    {
+      "originalMatrixIndex": 258,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/7"
+    },
+    {
+      "originalMatrixIndex": 263,
+      "values": {
+        "role": "brother",
+        "itemId": "hair-nebula",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/7"
+    },
+    {
+      "originalMatrixIndex": 292,
+      "values": {
+        "role": "brother",
+        "itemId": "phones-sky",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/7"
+    },
+    {
+      "originalMatrixIndex": 315,
+      "values": {
+        "role": "brother",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/8"
+    },
+    {
+      "originalMatrixIndex": 320,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/8"
+    },
+    {
+      "originalMatrixIndex": 322,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/8"
+    },
+    {
+      "originalMatrixIndex": 327,
+      "values": {
+        "role": "younger",
+        "itemId": "hair-nebula",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/9"
+    },
+    {
+      "originalMatrixIndex": 356,
+      "values": {
+        "role": "younger",
+        "itemId": "phones-sky",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/9"
+    },
+    {
+      "originalMatrixIndex": 379,
+      "values": {
+        "role": "younger",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/9"
+    },
+    {
+      "originalMatrixIndex": 384,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/10"
+    },
+    {
+      "originalMatrixIndex": 386,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/10"
+    },
+    {
+      "originalMatrixIndex": 391,
+      "values": {
+        "role": "sister",
+        "itemId": "hair-nebula",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/10"
+    },
+    {
+      "originalMatrixIndex": 420,
+      "values": {
+        "role": "sister",
+        "itemId": "phones-sky",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/11"
+    },
+    {
+      "originalMatrixIndex": 443,
+      "values": {
+        "role": "sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/11"
+    },
+    {
+      "originalMatrixIndex": 448,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-sun-cap",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/11"
+    },
+    {
+      "originalMatrixIndex": 450,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/12"
+    },
+    {
+      "originalMatrixIndex": 455,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "hair-nebula",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/12"
+    },
+    {
+      "originalMatrixIndex": 484,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "phones-sky",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/12"
+    },
+    {
+      "originalMatrixIndex": 507,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "1440-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/13"
+    },
+    {
+      "originalMatrixIndex": 512,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-sun-cap",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/13"
+    },
+    {
+      "originalMatrixIndex": 514,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/13"
+    },
+    {
+      "originalMatrixIndex": 519,
+      "values": {
+        "role": "brother",
+        "itemId": "hair-nebula",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/14"
+    },
+    {
+      "originalMatrixIndex": 548,
+      "values": {
+        "role": "brother",
+        "itemId": "phones-sky",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/14"
+    },
+    {
+      "originalMatrixIndex": 571,
+      "values": {
+        "role": "brother",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/14"
+    },
+    {
+      "originalMatrixIndex": 576,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-sun-cap",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/15"
+    },
+    {
+      "originalMatrixIndex": 578,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/15"
+    },
+    {
+      "originalMatrixIndex": 583,
+      "values": {
+        "role": "younger",
+        "itemId": "hair-nebula",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/15"
+    },
+    {
+      "originalMatrixIndex": 612,
+      "values": {
+        "role": "younger",
+        "itemId": "phones-sky",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/16"
+    },
+    {
+      "originalMatrixIndex": 635,
+      "values": {
+        "role": "younger",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/16"
+    },
+    {
+      "originalMatrixIndex": 640,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-sun-cap",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/16"
+    },
+    {
+      "originalMatrixIndex": 642,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/17"
+    },
+    {
+      "originalMatrixIndex": 647,
+      "values": {
+        "role": "sister",
+        "itemId": "hair-nebula",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/17"
+    },
+    {
+      "originalMatrixIndex": 676,
+      "values": {
+        "role": "sister",
+        "itemId": "phones-sky",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/17"
+    },
+    {
+      "originalMatrixIndex": 699,
+      "values": {
+        "role": "sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/18"
+    },
+    {
+      "originalMatrixIndex": 704,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-sun-cap",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/18"
+    },
+    {
+      "originalMatrixIndex": 706,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/report.json",
+        "sha256": "3fe82c1116b11000a3d9b548e037b3cba2b1deec1c241bf2187137654905d2f9"
+      },
+      "sourcePointer": "/cases/0"
+    },
+    {
+      "originalMatrixIndex": 711,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "hair-nebula",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/19"
+    },
+    {
+      "originalMatrixIndex": 740,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "phones-sky",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/19"
+    },
+    {
+      "originalMatrixIndex": 763,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-light"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/19"
+    },
+    {
+      "originalMatrixIndex": 768,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-sun-cap",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/20"
+    },
+    {
+      "originalMatrixIndex": 770,
+      "values": {
+        "role": "brother",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/20"
+    },
+    {
+      "originalMatrixIndex": 775,
+      "values": {
+        "role": "brother",
+        "itemId": "hair-nebula",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/20"
+    },
+    {
+      "originalMatrixIndex": 804,
+      "values": {
+        "role": "brother",
+        "itemId": "phones-sky",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/21"
+    },
+    {
+      "originalMatrixIndex": 827,
+      "values": {
+        "role": "brother",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/21"
+    },
+    {
+      "originalMatrixIndex": 832,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-sun-cap",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/21"
+    },
+    {
+      "originalMatrixIndex": 834,
+      "values": {
+        "role": "younger",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/22"
+    },
+    {
+      "originalMatrixIndex": 839,
+      "values": {
+        "role": "younger",
+        "itemId": "hair-nebula",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/22"
+    },
+    {
+      "originalMatrixIndex": 868,
+      "values": {
+        "role": "younger",
+        "itemId": "phones-sky",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/22"
+    },
+    {
+      "originalMatrixIndex": 891,
+      "values": {
+        "role": "younger",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/23"
+    },
+    {
+      "originalMatrixIndex": 896,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-sun-cap",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/23"
+    },
+    {
+      "originalMatrixIndex": 898,
+      "values": {
+        "role": "sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/23"
+    },
+    {
+      "originalMatrixIndex": 903,
+      "values": {
+        "role": "sister",
+        "itemId": "hair-nebula",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/24"
+    },
+    {
+      "originalMatrixIndex": 932,
+      "values": {
+        "role": "sister",
+        "itemId": "phones-sky",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/24"
+    },
+    {
+      "originalMatrixIndex": 955,
+      "values": {
+        "role": "sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/24"
+    },
+    {
+      "originalMatrixIndex": 960,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-sun-cap",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/25"
+    },
+    {
+      "originalMatrixIndex": 962,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "starter-buddy-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/25"
+    },
+    {
+      "originalMatrixIndex": 967,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "hair-nebula",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "sourcePointer": "/cases/25"
+    },
+    {
+      "originalMatrixIndex": 996,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "phones-sky",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard0/report.json",
+        "sha256": "849099adf8714c59f4789a77c6d3bb5b05ef7ad497686edc1eadc862a22682a7"
+      },
+      "sourcePointer": "/cases/26"
+    },
+    {
+      "originalMatrixIndex": 1019,
+      "values": {
+        "role": "younger-sister",
+        "itemId": "sister-cat-headphones",
+        "profile": "390-dark"
+      },
+      "checks": {
+        "trial": true,
+        "cancel": true,
+        "equip": true,
+        "home": true,
+        "reload": true,
+        "achievements": true,
+        "ledger": true
+      },
+      "sourceRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard2/report.json",
+        "sha256": "2fb1ec4eb90b6c7d85d078c3a290a1d65319f2a5c1904a15f8166b05eb3c980f"
+      },
+      "sourcePointer": "/cases/26"
+    }
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+  "count": 27,
+  "rows": [
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp",
+        "sha256": "758dd3897dc17e7cbe765a3ec9196aebe3f35ccdd4c8d3fca547883342838925"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-brother--default-body.png",
+        "sha256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43"
+      },
+      "role": "brother",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/soft-nebula-r8/brother--body-hair-mask-r5.png",
+        "sha256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp",
+        "sha256": "0791ec8c440272d82f86bcc538e1cc66e9f204c7024be150ddebe4aabfc89633"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger--default-body.png",
+        "sha256": "77c09a997b3506f2d1f65ff2910ee203f69ebd41597756da8bf53bb31aa555cc"
+      },
+      "role": "younger",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-racer",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger--body-hair-mask-r5.png",
+        "sha256": "77c09a997b3506f2d1f65ff2910ee203f69ebd41597756da8bf53bb31aa555cc"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp",
+        "sha256": "dff6bddd16036c87d3e3f260a4498051b65eff1f0e655258c0d20978913f0359"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-sister--default-body.png",
+        "sha256": "9669871c47cce7cc210fb66af8a3069614c2686ecbbf352bf6158edadbb368e3"
+      },
+      "role": "sister",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-racer",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/sister--body-hair-mask-r5.png",
+        "sha256": "9669871c47cce7cc210fb66af8a3069614c2686ecbbf352bf6158edadbb368e3"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp",
+        "sha256": "fd2c97a381f90df7af57fe68748864302b36ef08e548cb00fba6303c20bf2ca0"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger-sister--default-body.png",
+        "sha256": "68abba04d58dee3505acf17255121dcdd8a45bcd025801c4677913119793a758"
+      },
+      "role": "younger-sister",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger-sister--body-hair-mask-r5.png",
+        "sha256": "68abba04d58dee3505acf17255121dcdd8a45bcd025801c4677913119793a758"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer--body-mask.webp",
+        "sha256": "758dd3897dc17e7cbe765a3ec9196aebe3f35ccdd4c8d3fca547883342838925"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-brother--outfit-racer-body.png",
+        "sha256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43"
+      },
+      "role": "brother",
+      "renderPose": "outfit-racer",
+      "exactSkins": [
+        "outfit-racer"
+      ],
+      "scale": 0.9344181388742431,
+      "translate": [
+        39.97497636905052,
+        24.888919941386575
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/soft-nebula-r8/brother--body-hair-mask-r5.png",
+        "sha256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet--body-mask.webp",
+        "sha256": "57be51d78783daae1c2fae70a6b3b5da9bc2ccb3eb8eb1e7bdeac5b1021a2007"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger--outfit-cadet-body.png",
+        "sha256": "23e9ffa5c775f0c4de2969049dc5afc98ac353d8b60a03ccf68d21d493b3876b"
+      },
+      "role": "younger",
+      "renderPose": "outfit-cadet",
+      "exactSkins": [
+        "outfit-cadet"
+      ],
+      "scale": 1.0020152811980851,
+      "translate": [
+        -0.5554661819330704,
+        -11.324024587768577
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger--body-hair-mask-r5.png",
+        "sha256": "77c09a997b3506f2d1f65ff2910ee203f69ebd41597756da8bf53bb31aa555cc"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend--body-mask.webp",
+        "sha256": "70eca7d74db39d0d7810df1487ac93ae46d77b3fd19360fc36082839979f36b3"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger--outfit-legend-body.png",
+        "sha256": "92ebd48b85d4e7fa6f5530eaa3de64cfa6a6d2fd23f5a34de495d466460b7a18"
+      },
+      "role": "younger",
+      "renderPose": "outfit-legend",
+      "exactSkins": [
+        "outfit-legend"
+      ],
+      "scale": 1.0020152811980851,
+      "translate": [
+        -1.5554661819330704,
+        -32.32402458776858
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger--body-hair-mask-r5.png",
+        "sha256": "77c09a997b3506f2d1f65ff2910ee203f69ebd41597756da8bf53bb31aa555cc"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha--body-mask.webp",
+        "sha256": "7a753fc51eb9c7351970235925b252f148eb5d320739e9a9ec33dcae27788c19"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-sister--outfit-mecha-body.png",
+        "sha256": "c4b680dfafa4cc21d27f7bdd1a6861c394e52544e0cfb2d9b1e0deb52645e890"
+      },
+      "role": "sister",
+      "renderPose": "outfit-mecha",
+      "exactSkins": [
+        "outfit-mecha"
+      ],
+      "scale": 1.0185892553583247,
+      "translate": [
+        -9.991327065687528,
+        -25.155474790164874
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/sister--body-hair-mask-r5.png",
+        "sha256": "9669871c47cce7cc210fb66af8a3069614c2686ecbbf352bf6158edadbb368e3"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer--body-mask.webp",
+        "sha256": "85e1ad0414a1d31a8809a7c24a3e7b3267663722abf8465d804b95562f536051"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger-sister--outfit-racer-body.png",
+        "sha256": "121ce49bacbbcb2d5f90113b9f7c3d0438a4f2953080b44ff33b98863c8c3726"
+      },
+      "role": "younger-sister",
+      "renderPose": "outfit-racer",
+      "exactSkins": [
+        "outfit-racer"
+      ],
+      "scale": 0.9803701754421309,
+      "translate": [
+        4.284888564040784,
+        -3.7290383468535993
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputMask": {
+        "path": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger-sister--body-hair-mask-r5.png",
+        "sha256": "68abba04d58dee3505acf17255121dcdd8a45bcd025801c4677913119793a758"
+      },
+      "maskSourceBuilder": {
+        "path": "art-source/v653/headwear-feedback-r2/prepare_hair_masks_r5.py",
+        "sha256": "2b3c688bbd5907d4814125fed4090247d9a1dabea44a735e3dbeef2f52415d73"
+      },
+      "sourceLineage": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/hair-mask-lineage-r5.json",
+        "sha256": "4a85bf39722ba4b7840a98381b76a457828396659c09052ed6271c148326cb25"
+      },
+      "method": "Face-safe luminance mask projected by inverse affine with same native body pose; BICUBIC; outside white; no RGB-derived face or ear removal"
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
+        "sha256": "917f42c810fcd34b69d3f4528531528b2c9aa828e3f7acfe798002e57fcd9e56"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--default-under.png",
+        "sha256": "d945ca40d52820772fd7548ce8d16eb04b7fce9c07e52a5bbdcd9b0b1cff1b7d"
+      },
+      "role": "brother",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
+        "sha256": "6753443c4bcf1b1b47c0b12702bb7fc67840935e14d5d24e6d2866a3e9b1eb92"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/brother.png",
+        "sha256": "46de785e72207485a686211d0518cc8b255506c82696063a50d97f2a5adb0ff6"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/brother.blend",
+        "sha256": "5abbc8308a0acc9294fd2d9d4c8f41abe726240ee4f7720dbe30ee4c5b4b0079"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp",
+        "sha256": "88a5347ff9663b15d8ffbc25f5e697939914d35415bc88425bffaeea52914acb"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--default-body.png",
+        "sha256": "0a2f7955c8342d4fd45489861745402d897509d405b4f7f0a59994c180e58861"
+      },
+      "role": "brother",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
+        "sha256": "6753443c4bcf1b1b47c0b12702bb7fc67840935e14d5d24e6d2866a3e9b1eb92"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/brother.png",
+        "sha256": "46de785e72207485a686211d0518cc8b255506c82696063a50d97f2a5adb0ff6"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/brother.blend",
+        "sha256": "5abbc8308a0acc9294fd2d9d4c8f41abe726240ee4f7720dbe30ee4c5b4b0079"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
+        "sha256": "8aee3f5bfa0cc7d2551448b409c391d1b0d4a3875aafed2b1d06f9df29875897"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--default-under.png",
+        "sha256": "086fd4b1904b95a8eee246091c4e7da194df8df427aaa70060d089a7846d369c"
+      },
+      "role": "younger",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-racer",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
+        "sha256": "2c8de9b098dede6aeb80261e908e26e54b1b5373ea193fbe9579bdc527a0a6c4"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger.png",
+        "sha256": "b4e81d36f6fed59a9789b747130691bde7b723c8e6ef9bbe3c8b7db8895648c2"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger.blend",
+        "sha256": "3858f88b3b147e2ccd011d9ebdd58a5da22e9a7bff1e707bfc8623b3772411fd"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp",
+        "sha256": "9f038b4d06a57cebc915d98956ca10346eb95b1b6acb4459fc28b9df7ce3348a"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--default-body.png",
+        "sha256": "f6c0a056785846bdd0010ccacabc67d841d134cecc63be67608e2dcba95a1ef9"
+      },
+      "role": "younger",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-racer",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
+        "sha256": "2c8de9b098dede6aeb80261e908e26e54b1b5373ea193fbe9579bdc527a0a6c4"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger.png",
+        "sha256": "b4e81d36f6fed59a9789b747130691bde7b723c8e6ef9bbe3c8b7db8895648c2"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger.blend",
+        "sha256": "3858f88b3b147e2ccd011d9ebdd58a5da22e9a7bff1e707bfc8623b3772411fd"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
+        "sha256": "8e55ee68f7fee8e5544240d4f2f26ee2cc474b66ddca1ecfbebc8dc99d5d4959"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--default-under.png",
+        "sha256": "77de3109e87156450e6194b59f681ff1582e1ab3bbdfbd2b5d5b76625cf0427e"
+      },
+      "role": "sister",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-racer",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
+        "sha256": "b21cba5753d962838fb2d1a794c95cbccd0f8e6bc9bc29570cff253dbc60801d"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/sister.png",
+        "sha256": "ed4e34d33ebf52070408954fddcaa7b1ebf0e0ce56ec72bdcd539cb547e017cd"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/sister.blend",
+        "sha256": "934534c3a133b92cd6d26a3fa624ff012092015a2282fa07f2cd87dd3d299b67"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp",
+        "sha256": "d06b97566aab6f32106153ce0723ac9440dcaaf9fdea24363643244ad24cbeed"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--default-body.png",
+        "sha256": "b204d2577295164b479a8336ae0f9ecedfe46224b5675d0ca8dac1133a240e78"
+      },
+      "role": "sister",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-racer",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
+        "sha256": "b21cba5753d962838fb2d1a794c95cbccd0f8e6bc9bc29570cff253dbc60801d"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/sister.png",
+        "sha256": "ed4e34d33ebf52070408954fddcaa7b1ebf0e0ce56ec72bdcd539cb547e017cd"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/sister.blend",
+        "sha256": "934534c3a133b92cd6d26a3fa624ff012092015a2282fa07f2cd87dd3d299b67"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
+        "sha256": "907f3dd4493560fefe574b072313606131d012e727ef53812e08830ec0992f1a"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--default-under.png",
+        "sha256": "02dc38b2cc7bcf2ecc043cec2e521109ced893fa86c2e93588cdbaa8809e736d"
+      },
+      "role": "younger-sister",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
+        "sha256": "e10391c7d04c823c7fb6a74501b1b2370fefe9ee5fe3facabc81e225318b6d43"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger-sister.png",
+        "sha256": "f982e6c26344fbbfd4d6c603bfcd5b100c8ecd1c5a43c95a1d6407dde4fc0126"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger-sister.blend",
+        "sha256": "59dceeb498e4a617b721f634aa82689f5cda528f49f64fd342117dbdb0b54f28"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp",
+        "sha256": "874440990bf491225a23cc9cb33736b8ea29813fc0421c30025c66f7562608e9"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--default-body.png",
+        "sha256": "860dfc3ba54c4cd80b4068117e8b7589b235b9c7fa3c02cd85e40be307250af7"
+      },
+      "role": "younger-sister",
+      "renderPose": "default",
+      "exactSkins": [
+        "default",
+        "outfit-cadet",
+        "outfit-mecha",
+        "outfit-ocean",
+        "outfit-mage",
+        "outfit-legend",
+        "sister-bloom-outfit"
+      ],
+      "scale": 1.0,
+      "translate": [
+        0.0,
+        0.0
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
+        "sha256": "e10391c7d04c823c7fb6a74501b1b2370fefe9ee5fe3facabc81e225318b6d43"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger-sister.png",
+        "sha256": "f982e6c26344fbbfd4d6c603bfcd5b100c8ecd1c5a43c95a1d6407dde4fc0126"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger-sister.blend",
+        "sha256": "59dceeb498e4a617b721f634aa82689f5cda528f49f64fd342117dbdb0b54f28"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--under-mask.webp",
+        "sha256": "1030621c452da1fe84d9253c16b62cf2f34e7fc0d71dc57bc0ea87c83151a303"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--outfit-racer-under.png",
+        "sha256": "eb53a0b5c7cbf3ab6732d83950d3184abc33068faf44cd4e75d5a2cc566ec56b"
+      },
+      "role": "brother",
+      "renderPose": "outfit-racer",
+      "exactSkins": [
+        "outfit-racer"
+      ],
+      "scale": 0.9344181388742431,
+      "translate": [
+        39.97497636905052,
+        24.888919941386575
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer.webp",
+        "sha256": "4bbc41ff43012c27d820579a4e446a41eaa897c33ca0440c5b01934306c3aff6"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/brother--outfit-racer.png",
+        "sha256": "1a966c0630ad02695fbcd0b39675e64f557db09650b2b1d80df0bbb8df10032f"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/brother--outfit-racer.blend",
+        "sha256": "df893114ce82d1f09ebf33cc8bfbdca3e8b206b2bc18fc1ea657be2a0fb6618e"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--body-mask.webp",
+        "sha256": "89bea779a0e9cd2ce0582c71d4e9ee3fc98aed12860e64199742e3f0e8bc5635"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--outfit-racer-body.png",
+        "sha256": "2c63e9447fdf41585b267b7a3f24b685b2e03e8eea42ee697f7edf7becd8e5e9"
+      },
+      "role": "brother",
+      "renderPose": "outfit-racer",
+      "exactSkins": [
+        "outfit-racer"
+      ],
+      "scale": 0.9344181388742431,
+      "translate": [
+        39.97497636905052,
+        24.888919941386575
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer.webp",
+        "sha256": "4bbc41ff43012c27d820579a4e446a41eaa897c33ca0440c5b01934306c3aff6"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/brother--outfit-racer.png",
+        "sha256": "1a966c0630ad02695fbcd0b39675e64f557db09650b2b1d80df0bbb8df10032f"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/brother--outfit-racer.blend",
+        "sha256": "df893114ce82d1f09ebf33cc8bfbdca3e8b206b2bc18fc1ea657be2a0fb6618e"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--under-mask.webp",
+        "sha256": "5965a2abe17d7f76d5a5a1ceff4567786b9524138a097569bbd85c6188abfcc6"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-cadet-under.png",
+        "sha256": "cc6f8d8d0110997d3bf64ca3c29ca70761fce3d4aa05eff75ef39c994ee4ce63"
+      },
+      "role": "younger",
+      "renderPose": "outfit-cadet",
+      "exactSkins": [
+        "outfit-cadet"
+      ],
+      "scale": 1.0020152811980851,
+      "translate": [
+        -0.5554661819330704,
+        -11.324024587768577
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet.webp",
+        "sha256": "d6154eff628e8ea1ad9a24f1af109ad1119087bef96ceb6f12470971aefb7b62"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-cadet.png",
+        "sha256": "8104a30813c19bac01feeb626c05b380f814d50d57da4345605e394126e69f4c"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-cadet.blend",
+        "sha256": "1ce8342a57b850a50c2293fac805662930457cea49bfad249df09e2bd5a11e27"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--body-mask.webp",
+        "sha256": "6bfac98af82073ceb64bbec277ffeeaad870790ee1c4e0d188dd2eaf59a79bb9"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-cadet-body.png",
+        "sha256": "7bf084b0c91e74acf24ed7752379156edbd7765660a55c51f3711838e35e6ab2"
+      },
+      "role": "younger",
+      "renderPose": "outfit-cadet",
+      "exactSkins": [
+        "outfit-cadet"
+      ],
+      "scale": 1.0020152811980851,
+      "translate": [
+        -0.5554661819330704,
+        -11.324024587768577
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet.webp",
+        "sha256": "d6154eff628e8ea1ad9a24f1af109ad1119087bef96ceb6f12470971aefb7b62"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-cadet.png",
+        "sha256": "8104a30813c19bac01feeb626c05b380f814d50d57da4345605e394126e69f4c"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-cadet.blend",
+        "sha256": "1ce8342a57b850a50c2293fac805662930457cea49bfad249df09e2bd5a11e27"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--under-mask.webp",
+        "sha256": "8d0b58dce24a6225f6be0573ea98b62ba8fc859d5c11df3e2b4bc726d9b475e3"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-legend-under.png",
+        "sha256": "f188ba5013f227bb330bd379560dbf5cbc499c80879b12bdffcec8b80aef8770"
+      },
+      "role": "younger",
+      "renderPose": "outfit-legend",
+      "exactSkins": [
+        "outfit-legend"
+      ],
+      "scale": 1.0020152811980851,
+      "translate": [
+        -1.5554661819330704,
+        -32.32402458776858
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend.webp",
+        "sha256": "4abe49c4215e8c75d73e7125894ff57d90bf9eb70f7848db3d5e7b164012b22a"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-legend.png",
+        "sha256": "63cd80eb7333c5469287a104e7239bc1b150020884c465105be5c7f6ffb7884a"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-legend.blend",
+        "sha256": "af7404bba2d4e2efa860d2c24e70b4fcfd0f6375f42f79ced82dea1f7bdf8aa0"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--body-mask.webp",
+        "sha256": "c36f2ceabf8e9825dfe48943d0559b76f5202b9e16f7f7cf21746996c2ba4a0f"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-legend-body.png",
+        "sha256": "cbf23f5b3913dd5657c9f1ab316f8ff2fc3b38daaa411247018cc895166882f0"
+      },
+      "role": "younger",
+      "renderPose": "outfit-legend",
+      "exactSkins": [
+        "outfit-legend"
+      ],
+      "scale": 1.0020152811980851,
+      "translate": [
+        -1.5554661819330704,
+        -32.32402458776858
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend.webp",
+        "sha256": "4abe49c4215e8c75d73e7125894ff57d90bf9eb70f7848db3d5e7b164012b22a"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-legend.png",
+        "sha256": "63cd80eb7333c5469287a104e7239bc1b150020884c465105be5c7f6ffb7884a"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-legend.blend",
+        "sha256": "af7404bba2d4e2efa860d2c24e70b4fcfd0f6375f42f79ced82dea1f7bdf8aa0"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--under-mask.webp",
+        "sha256": "5abbdd6ccc1b9f8835d2fe9cbf3f5f78ea909ecbf12fb5cee24c76f5212c960c"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--outfit-mecha-under.png",
+        "sha256": "d59a13ac17cb4a6605e92135b6058e8356d8f42bc22befcf6ccb6ac93253a3ec"
+      },
+      "role": "sister",
+      "renderPose": "outfit-mecha",
+      "exactSkins": [
+        "outfit-mecha"
+      ],
+      "scale": 1.0185892553583247,
+      "translate": [
+        -9.991327065687528,
+        -25.155474790164874
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha.webp",
+        "sha256": "562b40f996905953d27f3f41bc2e1ab661c5ed342e901d426caf6fbe229dcd5d"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/sister--outfit-mecha.png",
+        "sha256": "6477c49fdbb0704e7e0d74b05a6346aca5904a275ffb48a7042211d43168a42e"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/sister--outfit-mecha.blend",
+        "sha256": "d279d42a6f96968a7d515854d3a459f2909d4516f857b4ebedc885e13705eb28"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--body-mask.webp",
+        "sha256": "117e62f62c26d2e5e1e630eb6b2fa9129e690101b5a08a864d85b3b4cf591de1"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--outfit-mecha-body.png",
+        "sha256": "f0e0c92ce5c876440ecf2fcee28d9c8c0e8feb13dbc75864ea9fb46affeadb2f"
+      },
+      "role": "sister",
+      "renderPose": "outfit-mecha",
+      "exactSkins": [
+        "outfit-mecha"
+      ],
+      "scale": 1.0185892553583247,
+      "translate": [
+        -9.991327065687528,
+        -25.155474790164874
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha.webp",
+        "sha256": "562b40f996905953d27f3f41bc2e1ab661c5ed342e901d426caf6fbe229dcd5d"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/sister--outfit-mecha.png",
+        "sha256": "6477c49fdbb0704e7e0d74b05a6346aca5904a275ffb48a7042211d43168a42e"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/sister--outfit-mecha.blend",
+        "sha256": "d279d42a6f96968a7d515854d3a459f2909d4516f857b4ebedc885e13705eb28"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--under-mask.webp",
+        "sha256": "ce0ecb0cfb3e1058abb162c88f90b01cc7a55d48725861817ad4d8b8814fb2bb"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--outfit-racer-under.png",
+        "sha256": "28588defcef50dd97f5dfa1e38e50f6b12cffa6bba7fa4fba44d326a012debc5"
+      },
+      "role": "younger-sister",
+      "renderPose": "outfit-racer",
+      "exactSkins": [
+        "outfit-racer"
+      ],
+      "scale": 0.9803701754421309,
+      "translate": [
+        4.284888564040784,
+        -3.7290383468535993
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer.webp",
+        "sha256": "528331558c86ca2301424ec9ceef789389d104ba569ed8f86f63f47ca75213f9"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger-sister--outfit-racer.png",
+        "sha256": "c4a42fcadcd5cfba0b74a9db6f6322a6b8f92887091cbc35e95855ce9c320877"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger-sister--outfit-racer.blend",
+        "sha256": "07daaf38f158cd3400cde132277d44709d8cab1974a76b9f21b6d1387ca253cf"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    },
+    {
+      "target": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--body-mask.webp",
+        "sha256": "e5ebb3cfd427a149647b015895b2538f554fcd74c525fe76ce08d79c2362c43a"
+      },
+      "sourcePNG": {
+        "path": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--outfit-racer-body.png",
+        "sha256": "2d69cd0f2773142c9055743202975de94667d373bc985a6974558f133a62c769"
+      },
+      "role": "younger-sister",
+      "renderPose": "outfit-racer",
+      "exactSkins": [
+        "outfit-racer"
+      ],
+      "scale": 0.9803701754421309,
+      "translate": [
+        4.284888564040784,
+        -3.7290383468535993
+      ],
+      "materializer": {
+        "path": "art-source/v653/headwear-feedback-r2/package_candidate_r1.py",
+        "sha256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22"
+      },
+      "poseMap": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/pose-jobs/pose-map.json",
+        "sha256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad"
+      },
+      "inputNativeCapOverlay": {
+        "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer.webp",
+        "sha256": "528331558c86ca2301424ec9ceef789389d104ba569ed8f86f63f47ca75213f9"
+      },
+      "inputNativeCapPNG": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger-sister--outfit-racer.png",
+        "sha256": "c4a42fcadcd5cfba0b74a9db6f6322a6b8f92887091cbc35e95855ce9c320877"
+      },
+      "nativeBlend": {
+        "path": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger-sister--outfit-racer.blend",
+        "sha256": "07daaf38f158cd3400cde132277d44709d8cab1974a76b9f21b6d1387ca253cf"
+      },
+      "method": "Native alpha >80 last row per x minus1.5; interpolate empty columns to nearest brim endpoint;2px antialias. Above entire brim black. Body mask crops rows256: from extended under-mask."
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+/* Shared reading floors; each large-display type scale is still owned below. */
+.v4-quest-shell { --lesson-small-size:12px; }
+.v4-quest-shell :is(.v4-quest-title>span,.v4-quest-mode,.v4-word-grid span:not(.v4-smart-image),.v4-repeat-hero>div:first-child>span,.v4-mission-focus>div>span,.v4-quick-check header span,.v4-special-task button strong,.v4-quest-controls span) { font-size:12px; }
+.v4-quest-shell .v4-quest-title p { font-size:var(--lesson-title-body-size,14px); }
+.v4-quick-check-learner>span { font-size:14px; }
+
+/* A lesson grid must fit the card even when four participant labels or long
+ * material titles have a wider intrinsic size than the phone screen. */
+.v4-stage-content { grid-template-columns:minmax(0,1fr); }
+.v4-stage-content > *, .v4-lesson-preflight > * { min-width:0; }
+.v4-stage-heading > span { flex-shrink:0; }
+.v4-stage-heading > div { min-width:0; }
+.v4-lesson-preflight-heading > svg { flex-shrink:0; }
+.v4-lesson-preflight-heading > div { min-width:0; }
+
+/* Keep the listen action readable; let its heading wrap independently. */
+.v4-quick-check>header { flex-wrap:wrap; }
+.v4-quick-check>header>div { flex:1 1 160px; min-width:0; }
+.v4-quick-check>header>button { flex:0 0 auto; white-space:nowrap; }
+
+/* Light lesson copy uses readable blue/grey ink without changing the shared
+ * Night palette or the original illustration and teaching content. */
+:where(:root:not(.dark)) .v4-quest-shell {
+  --lesson-muted:#526780;
+  --lesson-time-blue:linear-gradient(160deg,#086f9f,#0752a0);
+  --lesson-time-purple:linear-gradient(160deg,#7843bd,#6030ae);
+  --lesson-time-orange:linear-gradient(160deg,#a34c08,#914115);
+  --lesson-time-green:linear-gradient(160deg,#117352,#0d6048);
+}
+:where(:root:not(.dark)) .v4-quest-shell :is(.v4-stage-heading p,.v4-video-frame span,.speaking-practice>p,.speaking-practice header small,.speaking-practice footer,.speaking-practice-controls>span,.v4-mission-focus p,.v4-special-task p,.v4-quick-check-learner>span,.v4-mission-learners small,.v4-finish-grid span) { color:#526780; }
+:where(:root:not(.dark)) .v4-quest-shell .v4-stage-map button:where(:not(.active)) { color:#526780; }
+:where(:root:not(.dark)) .v4-quest-shell :is(.v4-stage-heading small,.v4-lesson-preflight-heading span,.v4-lesson-brief span,.v4-repeat-hero>div:first-child>span,.v6-pause-grid article span,.v4-quick-check header span) { color:#09699f; }
+:where(:root:not(.dark)) .v4-quest-shell .v6-pause-grid article>b { background:linear-gradient(145deg,#0876ad,#075bc7); }
+:where(:root:not(.dark)) .v4-quest-shell :is(.speaking-practice-controls>button,.speaking-practice-learners button:not(.caregiver-confirm)) { background:linear-gradient(145deg,#0873bd,#075bc7); }
+:where(:root:not(.dark)) .v4-quest-shell .v4-mission-number { background:linear-gradient(145deg,#8643cf,#7335c5); }
+:where(:root:not(.dark)) .v4-quest-shell .v6-reward-replay { background:#6535c3; }
+:where(:root:not(.dark)) .v4-quest-shell .v4-quest-controls button.primary { background:linear-gradient(145deg,#0873bd,#075bc7); }
+:where(:root:not(.dark)) .v4-quest-shell .v4-quest-controls span { color:#405772; }
+
+/* Night lesson surfaces retain the existing teaching flow, images and layout. */
+.dark .v4-quest-shell {
+  color:var(--night-text);
+  --lesson-nav-bg:var(--night-raised);
+  --lesson-number-bg:var(--night-control);
+  --lesson-done-bg:#196744;
+  --lesson-active-bg:#35466e;
+  --lesson-active-border:var(--night-sky);
+  --lesson-time-blue:#155c9b;
+  --lesson-time-purple:#633cac;
+  --lesson-time-orange:#914416;
+  --lesson-time-green:#176446;
+  --lesson-border:var(--night-border);
+  --lesson-muted:var(--night-muted);
+  --lesson-text:var(--night-text);
+  --lesson-accent:var(--night-sky);
+  --lesson-track-bg:var(--night-control);
+  --lesson-small-size:12px;
+}
+.dark .v4-quest-shell :is(.v4-quest-progress,.v4-quest-stage-card) {
+  background:var(--night-surface); border-color:var(--night-border); color:var(--night-text);
+}
+.dark .v4-quest-shell :is(.v4-lesson-preflight,.v4-video-frame,.v4-repeat-hero>div:first-child,.v4-mission-focus,.v4-quick-check,.speaking-practice,.daily-review-panel,.v4-special-task,.v4-reward-podium) {
+  background:var(--night-raised); border-color:var(--night-border); color:var(--night-text);
+}
+.dark .v4-quest-shell :is(.v64-preparation-summary>article,.v4-teaching-timeline article,.v4-age-tips article,.v4-quick-check article,.speaking-practice-learners article,.v4-word-grid button,.v4-mission-learners button,.v4-finish-grid button,.v4-special-task button,.v4-reward-values span) {
+  background:var(--night-surface); border-color:var(--night-border); color:var(--night-text);
+}
+.dark .v4-quest-shell :is(.v4-lesson-brief,.v4-caregiver-callout,.v64-preparation-materials button,.speaking-practice-rate,.speaking-practice-learners article>small,.v4-word-grid img,.daily-review-panel>header>small) {
+  background:var(--night-control); border-color:var(--night-border); color:var(--night-text);
+}
+.dark .v4-quest-shell :is(h2,h3,strong,.v6-sentence-copy) { color:var(--night-text); }
+.dark .v4-quest-shell .v64-word-face.word-face { background:linear-gradient(145deg,#eef8ff,#dceeff); border:2px solid #72d6ff; }
+.dark .v4-quest-shell .v64-word-face.word-face strong { color:#123c70; text-shadow:none; }
+.dark .v4-quest-shell :is(p,small,.v4-video-frame span,.v4-age-tips p,.speaking-practice footer,.speaking-practice-child-copy span,.v64-preparation-materials span,.v4-quick-check-learner span,.daily-review-learner>span) { color:var(--night-muted); }
+.dark .v4-quest-shell :is(.v4-stage-heading small,.v4-lesson-preflight-heading span,.v4-lesson-brief span,.v4-word-grid span,.v4-age-tips span,.v4-repeat-hero>div:first-child>span,.speaking-practice header span,.v4-quick-check header span,.v4-mission-focus>div>span,.v4-special-task>div:first-child>span,.daily-review-panel header span) { color:var(--night-sky); }
+.dark .v4-stage-map button { color:var(--night-muted); border-color:var(--night-border); }
+.dark .v4-stage-map button.active { color:var(--night-text); }
+.dark .v4-stage-map button small { color:inherit; }
+.dark .v4-quest-shell .v4-teaching-timeline article span { background:#403750; color:var(--night-purple); }
+.dark .v4-quest-shell .v4-teaching-timeline article>b { background:var(--lesson-time-blue); color:#fff; }
+.dark .v4-quest-shell .v4-mission-number { background:#633cac; color:#fff; }
+.dark .v4-quest-shell .v4-mission-number small { color:#fff; }
+.dark .v4-quest-shell .v4-caregiver-callout strong { color:var(--night-purple); }
+.dark .v4-quest-shell :is(.v4-quest-controls button,.v4-quick-check-answer button,.daily-review-listen,.daily-review-learner button) { background:var(--night-control); border-color:var(--night-border); color:var(--night-text); }
+.dark .v4-quest-shell :is(.v4-repeat-hero button,.v4-quest-controls button.primary,.speaking-practice-controls>button,.speaking-practice-learners button) { background:#075bc7; color:#fff; }
+.dark .v4-quest-shell .v6-reward-replay { background:#633cac; color:#fff; }
+.dark .v4-quest-shell :is(.speaking-practice-learners .caregiver-confirm,.daily-review-learner button:disabled,.v4-mission-learners button.done,.v4-finish-grid button.done,.v4-special-task button.done) { background:#214e40; color:var(--night-mint); border-color:var(--night-mint); }
+.dark .v4-quest-shell .speaking-practice-learners article.correct { background:#214e40; border-color:var(--night-mint); }
+.dark .v4-quest-shell .speaking-practice-learners small em { color:var(--night-sky); }
+.dark .v4-quest-shell .speaking-practice-learners article.wrong small em { color:#ffb8a9; }
+.dark .v4-quest-shell :is(.v4-quest-title>span,.v4-quest-mode,.v4-word-grid span,.v4-repeat-hero>div:first-child>span,.v4-mission-focus>div>span,.v4-quick-check header span) { font-size:12px; }
+.dark .v4-quest-shell .v6-pause-grid article { background:var(--night-raised); border-color:var(--night-border); }
+.dark .v4-quest-shell .v6-pause-grid article>b { background:var(--lesson-time-blue); color:#fff; }
+.dark .v4-quest-shell .v6-pause-grid article span { color:var(--night-sky); }
+.dark .v4-quest-shell :is(.v6-pause-grid article strong,.v6-mission-prompt>strong) { background:var(--night-control); color:var(--night-text); }
+.dark .v4-quest-shell .v4-special-task button strong { font-size:12px; }
+.dark .v4-quest-shell .v4-quick-check article.correct { background:#214e40; border-color:var(--night-mint); }
+.dark .v4-quest-shell .v4-quick-check article.wrong { background:#493139; border-color:#ffb8a9; }
+.dark .v4-quest-shell .v6-answer-win { background:#214e40; color:var(--night-mint); border-color:var(--night-mint); }
+.dark .v4-quest-controls span { color:var(--night-muted); font-size:12px; }
+.dark .v4-quest-shell .speaking-practice-controls>span { color:var(--night-muted); }
+
+.v65-recording-entry { width:100%; min-height:78px; display:grid; grid-template-columns:52px minmax(0,1fr) 24px; align-items:center; gap:12px; padding:12px 16px; border:2px solid color-mix(in srgb,var(--v4-theme-accent) 42%,#b9ddf4); border-radius:20px; background:linear-gradient(145deg,#edf9ff,#f5efff); color:#163f73; text-align:left; box-shadow:0 9px 20px rgba(28,91,155,.12); }
+.v65-recording-entry>span { width:48px; height:48px; display:grid; place-items:center; border-radius:16px; background:linear-gradient(145deg,#ff6f78,#d92f50); color:#fff; box-shadow:0 6px 12px rgba(185,35,62,.22); }
+.v65-recording-entry>div { min-width:0; display:grid; gap:3px; }
+.v65-recording-entry strong { color:#163f73; font-size:17px; }
+.v65-recording-entry small { color:#526780; font-size:13px; line-height:1.45; }
+.dark .v4-quest-shell .v65-recording-entry { background:linear-gradient(145deg,#263554,#352e59); border-color:var(--night-purple); color:var(--night-text); }
+.dark .v4-quest-shell .v65-recording-entry :is(strong,small) { color:var(--night-text); }
+
+/* A classroom on a large display needs a bounded reading canvas. P02 keeps
+ * long-form teaching content at <=1600px even on 4K/5K so parent instructions
+ * do not become extremely long lines. */
+@media (min-width:1600px) {
+  .v4-quest-shell {
+    --lesson-canvas:min(1600px,calc(100% - 96px));
+    --lesson-body-size:clamp(20px,.65vw,26px);
+    --lesson-title-body-size:18px;
+    --lesson-answer-size:24px;
+    --lesson-answer-note-size:18px;
+    --lesson-learner-name-size:24px;
+    --lesson-learner-lane:180px;
+    --lesson-nav-label-size:16px;
+    --lesson-action-size:20px;
+    --lesson-timeline-title-size:24px;
+    --lesson-timeline-body-size:var(--lesson-body-size);
+    --lesson-timeline-note-size:18px;
+  }
+  .v4-quest-shell :is(.v4-quest-header,.v4-quest-progress,.v4-stage-map,.v4-quest-stage-card,.v4-quest-controls,.v4-quest-lock-banner) { width:var(--lesson-canvas); }
+  .v4-quest-stage-card { min-height:0; padding:32px; }
+  .v4-quest-title h1 { font-size:38px; }
+  .v4-quest-title p { font-size:18px; }
+  .v4-quest-shell p { max-width:68ch; }
+  .v4-quest-shell .v4-stage-heading h2 { font-size:36px; }
+  .v4-quest-shell .v4-stage-heading p { font-size:20px; max-width:76ch; line-height:1.5; }
+  .v4-stage-content { gap:24px; }
+  .v4-quest-shell :is(.v4-mission-focus p,.v4-age-tips p,.v4-teaching-timeline p,.v64-preparation-summary p,.v4-caregiver-callout p,.v6-pause-grid article p) { font-size:var(--lesson-body-size); line-height:1.55; max-width:68ch; }
+  .v4-quest-shell :is(.v4-mission-focus h3,.v6-pause-grid article h3) { font-size:28px; }
+  .v4-quest-shell .v6-pause-grid article strong { font-size:26px; }
+  .v4-quest-shell .v4-mission-focus h3 { max-width:64ch; }
+  .v4-quest-shell .v4-quest-controls { grid-template-columns:240px 1fr 240px; }
+
+  /* Preparation and the timed teaching plan share a row, with readable
+   * subcolumns inside each; DOM reading order and all disclosure controls stay. */
+  .v6-preparation-stage .v4-lesson-preflight { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:24px; align-items:start; }
+  .v6-preparation-stage :is(.v4-lesson-preflight-heading,.v4-lesson-brief,.v4-caregiver-callout) { grid-column:1/-1; margin:0; }
+  .v6-preparation-stage .v64-preparation-summary { margin:0; }
+  .v6-preparation-stage .v64-preparation-summary h3 { font-size:22px; }
+  .v6-preparation-stage .v64-preparation-summary summary { font-size:18px; }
+  .v6-preparation-stage .v4-teaching-timeline article { min-height:0; }
+  .v4-quest-shell .v64-preparation-materials b { font-size:18px; }
+  .v4-quest-shell .v64-preparation-materials span { font-size:16px; }
+  .v4-quick-check-learner .avatar-renderer { --avatar-renderer-size:144px; }
+
+  /* Four actual words fill four tracks. The 640×480 originals are displayed
+   * at at most 480px high, with no artificial high-resolution claim. */
+  .v4-word-grid { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; }
+  .v4-word-grid button { padding:20px; gap:12px; }
+  .v4-word-grid .v4-vocab-image { height:clamp(280px,10vw,480px); background:transparent; }
+  .v4-word-grid .v4-vocab-image img { height:100%; background:transparent; }
+  .v4-word-grid strong { font-size:32px; }
+  .v4-quest-shell .v4-word-grid span:not(.v4-smart-image) { font-size:18px; }
+
+  /* Preserve a 16:9 teaching screen that fits the display height, plus a
+   * separate readable title/retry lane. Never stretch the iframe vertically. */
+  .v4-video-frame { width:100%; max-width:min(100%,calc(112vh + 344px)); margin-inline:auto; grid-template-columns:minmax(0,1fr) 340px; }
+  .v4-video-frame strong { font-size:24px; }
+  .v4-quest-shell .v4-video-frame span { font-size:16px; }
+  .v4-repeat-hero { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; }
+  .v4-quest-shell .v6-sentence-copy { font-size:36px; max-width:32ch; }
+}
+
+/* In-stage caregiver reference reads existing lesson content; native details
+ * stays keyboard-operable without writing a lesson checkpoint. */
+.v64-mission-guidance {
+  border:1px solid var(--lesson-border,#bfdcff);
+  border-radius:20px;
+  background:var(--lesson-guide-bg,#fff);
+  color:var(--lesson-text,#27314a);
+}
+.dark .v4-quest-shell { --lesson-guide-bg:var(--night-surface); }
+.v64-mission-guidance>summary {
+  min-height:52px;
+  padding:14px 20px;
+  font-size:var(--lesson-body-size,16px);
+  font-weight:800;
+  line-height:1.5;
+  cursor:pointer;
+}
+.v64-mission-guidance>summary:focus-visible {
+  outline:3px solid var(--lesson-accent,#075bc7);
+  outline-offset:3px;
+}
+.v64-mission-guidance-body {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,28rem),1fr));
+  gap:20px;
+  padding:4px 20px 20px;
+}
+.v64-mission-guidance-body>section { min-width:0; }
+.v64-mission-guidance-body h3 {
+  margin:0 0 8px;
+  font-size:var(--lesson-body-size,16px);
+  line-height:1.5;
+}
+.v64-mission-guidance-body :is(p,li) {
+  margin:0;
+  color:var(--lesson-muted,#526780);
+  font-size:var(--lesson-body-size,14px);
+  line-height:1.65;
+  overflow-wrap:anywhere;
+}
+.v64-mission-guidance-body ol { margin:0; padding-left:1.4em; }
+.v64-mission-guidance-body li+li { margin-top:10px; }
+
+/* Daily selection shares the current family state across Home and preparation. */
+.v64-daily-participants { min-width: 0; margin: 12px 0; padding: 12px; border: 1px solid #a8c9e5; border-radius: 16px; background: #f2f8ff; color: #233c59; }
+.v64-daily-participants legend { padding: 0 6px; font-size: 16px; font-weight: 800; }
+.v64-daily-participants p { margin: 4px 0 8px; font-size: 14px; line-height: 1.55; }
+.v64-daily-participants > div { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 110px), 1fr)); gap: 6px; }
+.v64-daily-participants label { display: flex; align-items: center; gap: 8px; min-height: 44px; min-width: 0; padding: 4px 8px; border-radius: 10px; background: #fff; cursor: pointer; font-size: 14px; font-weight: 700; }
+.v64-daily-participants label span { overflow-wrap: anywhere; }
+.v64-daily-participants input { flex: 0 0 20px; width: 20px; height: 20px; margin: 0; accent-color: #075bc7; }
+.v64-daily-participants label:focus-within { outline: 3px solid #0874b9; outline-offset: 2px; }
+.dark .v64-daily-participants { background: #252d48; color: #f3f6ff; border-color: #677b9d; }
+.dark .v64-daily-participants label { background: #34415f; }
+.dark .v64-daily-participants label:focus-within { outline-color: #84d8ff; }
+
+/* Reward copy and participant cards need independent tracks on small screens. */
+.v4-quest-shell .v4-reward-podium { grid-template-columns:minmax(0,1fr); }
+.v4-quest-shell .v4-reward-podium > * { min-width:0; max-width:100%; }
+.v4-quest-shell .v4-reward-podium p { overflow-wrap:anywhere; }
+.v4-quest-shell .v4-special-task > div { min-width:0; }
+.v4-quest-shell .v4-special-task > div:last-child { align-content:start; }
+@media (max-width:820px) {
+  .v4-quest-shell .v4-special-task { grid-template-columns:minmax(0,1fr); align-items:start; }
+  .v4-quest-shell .v4-special-task p { font-size:14px; line-height:1.6; }
+  .v4-quest-shell .v4-special-task > div:first-child > :is(span,strong) { font-size:14px; line-height:1.5; }
+}
+@media (max-width:520px) {
+  .v4-quest-shell .v4-special-task button { grid-template-columns:48px minmax(0,1fr) 22px; gap:4px 8px; padding:10px; }
+  .v4-quest-shell .v4-special-task button > .avatar-renderer { grid-column:1; grid-row:1 / span 2; }
+  .v4-quest-shell .v4-special-task button > span { grid-column:2; grid-row:1; overflow-wrap:anywhere; }
+  .v4-quest-shell .v4-special-task button > strong { grid-column:2; grid-row:2; font-size:14px; overflow-wrap:anywhere; }
+  .v4-quest-shell .v4-special-task button > svg { grid-column:3; grid-row:1 / span 2; }
+}
+
+/* Keep earned resources readable inside narrow reward cards. */
+.v4-quest-shell .v4-reward-values { flex-wrap:wrap; }
+.v4-quest-shell .v4-reward-values > span { white-space:nowrap; max-width:100%; }
+
+/* V6.5.3 feedback R2: natural-height teaching content owns its layout here.
+ * New timetable/card lanes avoid historical fixed-height dashboard rules. */
+.v4-quest-shell {
+  --lesson-ink:#203952;
+  --lesson-soft:#f2f7fc;
+  --lesson-surface:#fff;
+  --lesson-line:#cbddea;
+  --lesson-question:#edf5ff;
+  --lesson-question-line:#2773be;
+}
+.dark .v4-quest-shell {
+  --lesson-ink:#f3f6ff;
+  --lesson-soft:#29334e;
+  --lesson-surface:#222b43;
+  --lesson-line:#536581;
+  --lesson-question:#273e60;
+  --lesson-question-line:#72d6ff;
+}
+.v4-quest-shell .v653-preparation-stage { gap:16px; }
+.v653-preparation-stage .v4-lesson-preflight { display:grid; grid-template-columns:minmax(0,1fr); width:100%; margin:0; padding:18px; gap:16px; background:var(--lesson-soft); box-shadow:none; }
+.v653-preparation-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 20px; }
+.v653-preparation-heading span { font-size:13px; font-weight:800; color:var(--lesson-muted,#526780); }
+.v653-preparation-heading h2 { margin:3px 0 0; font-size:22px; color:var(--lesson-ink); }
+.v653-preparation-heading p { margin:0; font-size:14px; line-height:1.6; }
+.v653-preparation-heading p span { margin-inline:6px; }
+.v653-preparation-stage .v64-daily-participants { margin:0; }
+.v653-preparation-stage .v64-daily-participants>div { grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr)); grid-auto-flow:row; grid-auto-columns:auto; overflow:visible; }
+.v653-preparation-stage .v64-daily-participants label { min-height:44px; overflow:visible; }
+.v653-preparation-stage .v64-daily-participants label span { min-width:0; flex:1; white-space:normal; overflow:visible; text-overflow:clip; overflow-wrap:anywhere; }
+@media (max-width:600px) {
+  .v653-preparation-stage .v64-daily-participants>div { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+.v4-quest-shell .v653-preparation-summary { gap:12px; margin:0; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.v4-quest-shell .v653-preparation-summary>article { padding:16px; background:var(--lesson-surface); border:1px solid var(--lesson-line); border-radius:16px; color:var(--lesson-ink); }
+.v4-quest-shell .v653-preparation-summary h3 { display:flex; align-items:center; gap:8px; margin:0 0 10px; font-size:17px; }
+.v653-preparation-summary h3>span { display:grid; place-items:center; width:28px; height:28px; border-radius:9px; color:var(--lesson-accent,#075bc7); background:var(--lesson-soft); font-size:12px; }
+.v4-quest-shell .v653-preparation-summary p { font-size:14px; line-height:1.55; margin:8px 0; }
+.v4-quest-shell .v653-preparation-summary .v653-preparation-focus { font-size:18px; line-height:1.45; color:var(--lesson-ink); font-weight:800; }
+.v653-preparation-summary dl { display:grid; gap:10px; margin:12px 0 0; }
+.v653-preparation-summary dl>div { display:grid; grid-template-columns:82px minmax(0,1fr); gap:8px; align-items:start; }
+.v653-preparation-summary dt { font-size:13px; font-weight:800; color:var(--lesson-muted,#526780); line-height:1.6; }
+.v653-preparation-summary dd { margin:0; font-size:14px; line-height:1.6; overflow-wrap:anywhere; }
+.v653-word-chip { display:inline-block; margin:0 5px 5px 0; padding:3px 8px; border-radius:8px; background:var(--lesson-soft); color:var(--lesson-ink); font-weight:700; }
+.v4-quest-shell .v653-preparation-summary .v64-preparation-materials { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.v4-quest-shell .v653-preparation-summary .v64-preparation-materials button { height:100%; min-height:68px; padding:10px; background:var(--lesson-soft); border-color:var(--lesson-line); }
+.v4-quest-shell .v653-preparation-summary .v64-preparation-materials b { font-size:14px; line-height:1.5; }
+.v4-quest-shell .v653-preparation-summary .v64-preparation-materials span { font-size:12px; line-height:1.5; color:var(--lesson-muted,#526780); }
+.v653-preparation-summary details { border-top:1px solid var(--lesson-line); }
+.v4-quest-shell .v653-preparation-summary summary { padding:10px 0; min-height:44px; font-size:14px; font-weight:750; }
+.v653-teaching-plan { min-width:0; }
+.v653-teaching-plan>h3 { margin:0 0 10px; font-size:18px; color:var(--lesson-ink); }
+.v653-teaching-timeline { display:grid; gap:0; border:1px solid var(--lesson-line); border-radius:16px; background:var(--lesson-surface); overflow:hidden; }
+
+/* The 3:2 viewport and both faces share one size; the illustration cannot
+ * inherit a larger fixed height from the legacy large-display rules. */
+.v4-quest-shell .v653-word-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.v4-quest-shell .v653-word-grid .v64-word-flip { min-width:0; min-height:0; padding:10px; gap:10px; border:1px solid var(--lesson-line); border-radius:18px; background:var(--lesson-surface); box-shadow:0 4px 12px #1234560a; align-content:start; }
+.v4-quest-shell .v653-word-grid .v653-word-stage { display:block; width:100%; min-height:0; aspect-ratio:3/2; border-radius:12px; }
+.v4-quest-shell .v653-word-grid .v64-word-face { display:grid; overflow:hidden; }
+.v4-quest-shell .v653-word-grid .v4-vocab-image { display:block; width:100%; height:100%; min-height:0; max-height:100%; background:#f2f7fc; border-radius:12px; }
+.v4-quest-shell .v653-word-grid .v4-vocab-image img { width:100%; height:100%; max-height:100%; object-fit:contain; background:transparent; border-radius:12px; }
+.v4-quest-shell .v653-word-grid .word-face strong { font-size:clamp(18px,2vw,32px); line-height:1.2; overflow-wrap:anywhere; text-transform:none; color:#123c70; }
+.v4-quest-shell .v653-word-grid .v653-word-action { font-size:14px; min-height:32px; line-height:1.4; justify-content:center; color:var(--lesson-accent,#075bc7); }
+.v4-quest-shell .v653-word-grid .v653-word-action svg { width:18px; height:18px; flex:none; }
+
+/* A question is the primary reading target; timing and follow-up are distinct. */
+.v4-quest-shell .v6-pause-grid { grid-template-columns:minmax(0,1fr); gap:14px; }
+.v4-quest-shell .v6-pause-grid article { display:grid; grid-template-columns:36px minmax(0,1fr); align-items:start; gap:14px; min-height:0; padding:18px; border:1px solid var(--lesson-line); border-radius:18px; background:var(--lesson-surface); box-shadow:none; }
+.v4-quest-shell .v6-pause-grid article>b { position:static; width:36px; height:36px; font-size:16px; border-radius:12px; }
+.v4-quest-shell .v6-pause-grid article>div>span { padding:0; font-size:13px; color:var(--lesson-muted,#526780); }
+.v4-quest-shell .v6-pause-grid article h3 { margin:4px 0 12px; font-size:18px; color:var(--lesson-ink); }
+.v653-question-box { padding:14px 16px; border-left:4px solid var(--lesson-question-line); border-radius:0 12px 12px 0; background:var(--lesson-question); }
+.v4-quest-shell .v6-pause-grid .v653-question-box>span { display:flex; gap:6px; padding:0; align-items:center; color:var(--lesson-accent,#075bc7); font-size:13px; }
+.v653-question-box>span svg { width:18px; height:18px; }
+.v4-quest-shell .v6-pause-grid .v653-question-box strong { display:block; padding:6px 0 0; background:transparent; color:var(--lesson-ink); font-size:clamp(20px,1.6vw,26px); line-height:1.5; }
+.v4-quest-shell .v6-pause-grid article p { margin:12px 0 0; font-size:14px; line-height:1.6; max-width:none; }
+.v6-pause-grid article p>b { display:block; margin-bottom:2px; color:var(--lesson-ink); }
+
+.v4-quest-shell .v4-mission-focus { padding:16px; gap:12px; grid-template-columns:52px minmax(0,1fr); border-radius:18px; }
+.v4-quest-shell .v4-mission-number { width:48px; height:56px; border-radius:14px; font-size:24px; }
+.v4-quest-shell .v4-mission-focus p { margin-top:10px; padding-top:10px; border-top:1px solid var(--lesson-line); font-size:16px; line-height:1.55; }
+.v4-quest-shell .v4-mission-focus p strong { color:var(--lesson-ink); font-size:14px; }
+.v4-quest-shell .v653-quick-check { padding:16px; border-radius:18px; }
+.v653-quick-check>div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.v653-answer-card { display:grid; grid-template-columns:82px minmax(0,1fr); gap:12px; align-items:center; padding:12px; border:1px solid var(--lesson-line); border-radius:14px; background:var(--lesson-surface); }
+.v4-quest-shell .v653-answer-card .v4-quick-check-learner { min-height:0; grid-template-rows:auto; padding-right:10px; }
+.v653-answer-card .v4-quick-check-learner .avatar-renderer { --avatar-renderer-size:64px; }
+.v4-quest-shell .v653-answer-card .v4-quick-check-answer { display:grid; gap:6px; min-width:0; }
+.v653-answer-card.correct { border-color:#54a87a; background:var(--lesson-soft); }
+.v653-answer-card.wrong { border-color:#c77559; }
+.v4-quest-shell .v4-quick-check-answer .v6-answer-win { font-size:14px; padding:8px; }
+.v4-quest-shell .v4-mission-learners button { min-height:80px; padding:10px 12px; }
+.v4-quest-shell .v4-mission-learners small { font-size:14px; line-height:1.4; }
+.v4-quest-shell .v4-repeat-hero { gap:12px; }
+.v4-quest-shell .v4-repeat-hero>div:first-child { padding:18px; border-radius:18px; }
+.v4-quest-shell .v4-age-tips { gap:10px; }
+.v4-quest-shell .v4-age-tips article { padding:14px; border-radius:16px; }
+.v4-quest-shell .v4-age-tips span { font-size:14px; }
+.v4-quest-shell .v4-age-tips p { font-size:16px; line-height:1.55; }
+@media (min-width:1180px) {
+  .v653-preparation-stage .v4-lesson-preflight { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:18px; align-items:start; }
+  .v653-preparation-heading,.v653-preparation-stage .v64-daily-participants { grid-column:1/-1; }
+  .v4-quest-shell .v653-preparation-summary { grid-template-columns:minmax(0,1fr); }
+}
+@media (max-width:1000px) { .v653-quick-check>div { grid-template-columns:minmax(0,1fr); } }
+@media (max-width:760px) {
+  .v653-preparation-stage .v4-lesson-preflight { padding:12px; }
+  .v4-quest-shell .v653-preparation-summary { grid-template-columns:minmax(0,1fr); }
+  .v4-quest-shell .v653-word-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .v4-quest-shell .v653-word-grid .v64-word-flip { padding:7px; }
+  .v4-quest-shell .v6-pause-grid article { grid-template-columns:28px minmax(0,1fr); gap:8px; padding:12px; }
+  .v4-quest-shell .v6-pause-grid article>b { width:28px; height:28px; font-size:14px; border-radius:8px; }
+  .v653-question-box { padding:10px; }
+  .v4-quest-shell .v4-mission-focus { grid-template-columns:minmax(0,1fr); }
+  .v4-quest-shell .v4-mission-number { display:flex; align-items:center; justify-content:center; width:max-content; height:32px; gap:6px; padding:0 10px; font-size:16px; }
+  .v4-quest-shell .v653-quick-check { padding:12px; }
+}
+@media (max-width:400px) {
+  .v4-quest-shell .v653-preparation-summary .v64-preparation-materials { grid-template-columns:minmax(0,1fr); }
+  .v653-preparation-summary dl>div { grid-template-columns:minmax(0,1fr); gap:2px; }
+  .v653-answer-card { grid-template-columns:minmax(0,1fr); }
+  .v4-quest-shell .v653-answer-card .v4-quick-check-learner { display:flex; justify-content:start; gap:8px; border:0; padding:0; }
+}
+.v653-answer-card .v4-quick-check-answer button { border:1px solid var(--lesson-line); border-radius:12px; background:var(--lesson-soft); color:var(--lesson-ink); font-weight:800; cursor:pointer; }
+.v653-answer-card .v4-quick-check-answer button:disabled { cursor:default; }
+.v653-answer-card .v4-quick-check-answer>small { color:var(--lesson-muted,#526780); }
+.v4-quest-shell .v653-word-grid .v64-word-flip:focus-visible,
+.v653-answer-card button:focus-visible { outline:3px solid var(--lesson-accent,#075bc7); outline-offset:3px; }
+/* Give the name a full text lane instead of wrapping it beside a narrow avatar. */
+.v4-quest-shell .v653-answer-card { grid-template-columns:minmax(0,1fr); }
+.v4-quest-shell .v653-answer-card .v4-quick-check-learner { display:grid; grid-template-columns:52px minmax(0,1fr); grid-template-rows:auto auto; justify-items:start; gap:0 10px; border:0; padding:0; }
+.v653-answer-card .v4-quick-check-learner .avatar-renderer { grid-row:1/span 2; --avatar-renderer-size:52px; }
+.v653-answer-card .v4-quick-check-learner strong { align-self:end; }
+.v653-answer-card .v4-quick-check-learner>span { grid-column:2; align-self:start; }
+.dark .v4-quest-shell .v6-pause-grid .v653-question-box strong { background:transparent; color:var(--lesson-ink); }
+
+/* Mobile preparation shows the whole timetable at a glance. Native details
+ * retains every instruction and keyboard access; wide screens start expanded. */
+.v4-quest-shell .v653-preparation-summary>.v653-preparation-section { padding:0 16px; min-width:0; border:1px solid var(--lesson-line); border-radius:16px; background:var(--lesson-surface); color:var(--lesson-ink); }
+.v4-quest-shell .v653-preparation-summary>.v653-preparation-section>summary { min-height:54px; margin:0; padding:12px 0; font-size:17px; line-height:1.5; font-weight:800; }
+.v653-preparation-section>summary>span { display:inline-grid; place-items:center; width:28px; height:28px; margin-right:7px; border-radius:9px; font-size:12px; background:var(--lesson-soft); color:var(--lesson-accent,#075bc7); }
+.v653-preparation-section>div { padding-bottom:14px; }
+.v653-teaching-timeline>details+details { border-top:1px solid var(--lesson-line); }
+.v653-teaching-timeline>details>summary { position:relative; display:grid; grid-template-columns:68px minmax(0,1fr) 16px; align-items:center; gap:10px; min-height:60px; padding:12px 16px; cursor:pointer; list-style:none; }
+.v653-teaching-timeline>details>summary::-webkit-details-marker { display:none; }
+.v653-teaching-timeline>details>summary::after { content:'＋'; color:var(--lesson-accent,#075bc7); font-size:18px; font-weight:800; }
+.v653-teaching-timeline>details[open]>summary::after { content:'−'; }
+.v653-teaching-timeline>details>summary>b { padding:5px; border-radius:8px; font-size:14px; line-height:1.5; text-align:center; background:var(--lesson-soft); color:var(--lesson-accent,#075bc7); }
+.v653-teaching-timeline>details>summary>strong { color:var(--lesson-ink); font-size:16px; line-height:1.5; }
+.v653-teaching-timeline>details>div { padding:0 16px 14px; }
+.v653-teaching-timeline>details p { margin:0; color:var(--lesson-muted,#526780); font-size:14px; line-height:1.6; }
+.v653-teaching-timeline>details span { display:flex; gap:7px; align-items:start; margin-top:7px; font-size:13px; line-height:1.5; color:var(--lesson-ink); }
+.v653-teaching-timeline>details span svg { flex:none; width:16px; height:18px; }
+.v653-teaching-timeline>details>summary:focus-visible { outline:3px solid var(--lesson-accent,#075bc7); outline-offset:-3px; border-radius:8px; }
+@media (min-width:1180px) {
+  .v653-teaching-timeline>details>div { padding-left:94px; }
+  .v653-teaching-timeline>details p { font-size:16px; }
+}

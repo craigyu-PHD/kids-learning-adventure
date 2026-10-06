@@ -1,0 +1,7 @@
+--- published-r6/src/styles/index.css
++++ feedback/src/styles/index.css
+@@ -21,3 +21,4 @@
+ @import './accessibility.css';
+ @import './responsive.css';
+ @import './components/navigation.css';
++@import './components/actions.css';

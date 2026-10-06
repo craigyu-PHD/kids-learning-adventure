@@ -1,0 +1,1830 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "lessonRuntime report fresh",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime timestamp",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"360-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"820-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"390-dark\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"1440-dark\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime unique observation {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime raw identity {\"profile\": \"2560-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime check coverage {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted healthy {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime asserted interaction {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonRuntime exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

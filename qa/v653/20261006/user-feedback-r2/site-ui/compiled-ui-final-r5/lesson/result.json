@@ -1,0 +1,2062 @@
+{
+  "scope": "supplied local candidate URL, isolated synthetic storage, blocked external/API network, stage layout inspection only; no reward completion seeded",
+  "profiles": [
+    {
+      "width": 360,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "360-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "360-light-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 28,
+                  "y": 386.09375,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 386.09375,
+                  "right": 175,
+                  "bottom": 531.421875,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 394.09375,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 394.09375,
+                  "right": 167,
+                  "bottom": 481.421875,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 185,
+                  "y": 386.09375,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 386.09375,
+                  "right": 332,
+                  "bottom": 531.421875,
+                  "left": 185
+                },
+                "image": {
+                  "x": 193,
+                  "y": 394.09375,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 394.09375,
+                  "right": 324,
+                  "bottom": 481.421875,
+                  "left": 193
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 28,
+                  "y": 541.421875,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 541.421875,
+                  "right": 175,
+                  "bottom": 686.75,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 549.421875,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 549.421875,
+                  "right": 167,
+                  "bottom": 636.75,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 185,
+                  "y": 541.421875,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 541.421875,
+                  "right": 332,
+                  "bottom": 686.75,
+                  "left": 185
+                },
+                "image": {
+                  "x": 193,
+                  "y": 549.421875,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 549.421875,
+                  "right": 324,
+                  "bottom": 636.75,
+                  "left": 193
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "360-light-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 28,
+                  "y": 386.09375,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 386.09375,
+                  "right": 175,
+                  "bottom": 531.421875,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 394.09375,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 394.09375,
+                  "right": 167,
+                  "bottom": 481.421875,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 185,
+                  "y": 386.09375,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 386.09375,
+                  "right": 332,
+                  "bottom": 531.421875,
+                  "left": 185
+                },
+                "image": {
+                  "x": 193,
+                  "y": 394.09375,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 394.09375,
+                  "right": 324,
+                  "bottom": 481.421875,
+                  "left": 193
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 28,
+                  "y": 541.421875,
+                  "width": 147,
+                  "height": 145.328125,
+                  "top": 541.421875,
+                  "right": 175,
+                  "bottom": 686.75,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 549.421875,
+                  "width": 131,
+                  "height": 87.328125,
+                  "top": 549.421875,
+                  "right": 167,
+                  "bottom": 636.75,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 183.89749145507812,
+                  "y": 538.3319091796875,
+                  "width": 149.20498657226562,
+                  "height": 147.508056640625,
+                  "top": 538.3319091796875,
+                  "right": 333.10247802734375,
+                  "bottom": 685.8399658203125,
+                  "left": 183.89749145507812
+                },
+                "image": {
+                  "x": 192.01748657226562,
+                  "y": 546.451904296875,
+                  "width": 132.96499633789062,
+                  "height": 88.6380615234375,
+                  "top": 546.451904296875,
+                  "right": 324.98248291015625,
+                  "bottom": 635.0899658203125,
+                  "left": 192.01748657226562
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "360-light-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "360-light-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "360-light-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "360-light-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "360-light-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "390-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "390-light-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 28,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 190,
+                  "bottom": 521.890625,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 182,
+                  "bottom": 471.890625,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 200,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 362,
+                  "bottom": 521.890625,
+                  "left": 200
+                },
+                "image": {
+                  "x": 208,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 354,
+                  "bottom": 471.890625,
+                  "left": 208
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 28,
+                  "y": 531.890625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 531.890625,
+                  "right": 190,
+                  "bottom": 687.21875,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 539.890625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 539.890625,
+                  "right": 182,
+                  "bottom": 637.21875,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 200,
+                  "y": 531.890625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 531.890625,
+                  "right": 362,
+                  "bottom": 687.21875,
+                  "left": 200
+                },
+                "image": {
+                  "x": 208,
+                  "y": 539.890625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 539.890625,
+                  "right": 354,
+                  "bottom": 637.21875,
+                  "left": 208
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "390-light-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 28,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 190,
+                  "bottom": 521.890625,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 182,
+                  "bottom": 471.890625,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 200,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 362,
+                  "bottom": 521.890625,
+                  "left": 200
+                },
+                "image": {
+                  "x": 208,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 354,
+                  "bottom": 471.890625,
+                  "left": 208
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 28,
+                  "y": 531.890625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 531.890625,
+                  "right": 190,
+                  "bottom": 687.21875,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 539.890625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 539.890625,
+                  "right": 182,
+                  "bottom": 637.21875,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 198.78500366210938,
+                  "y": 528.7256469726562,
+                  "width": 164.42999267578125,
+                  "height": 157.6580810546875,
+                  "top": 528.7256469726562,
+                  "right": 363.2149963378906,
+                  "bottom": 686.3837280273438,
+                  "left": 198.78500366210938
+                },
+                "image": {
+                  "x": 206.90499877929688,
+                  "y": 536.8456420898438,
+                  "width": 148.19000244140625,
+                  "height": 98.78802490234375,
+                  "top": 536.8456420898438,
+                  "right": 355.0950012207031,
+                  "bottom": 635.6336669921875,
+                  "left": 206.90499877929688
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "390-light-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "390-light-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "390-light-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "390-light-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "390-light-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 820,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "820-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "820-light-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 46,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 216,
+                  "bottom": 627.421875,
+                  "left": 46
+                },
+                "image": {
+                  "x": 57,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 205,
+                  "bottom": 574.421875,
+                  "left": 57
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 232,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 402,
+                  "bottom": 627.421875,
+                  "left": 232
+                },
+                "image": {
+                  "x": 243,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 391,
+                  "bottom": 574.421875,
+                  "left": 243
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 418,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 588,
+                  "bottom": 627.421875,
+                  "left": 418
+                },
+                "image": {
+                  "x": 429,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 577,
+                  "bottom": 574.421875,
+                  "left": 429
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 604,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 774,
+                  "bottom": 627.421875,
+                  "left": 604
+                },
+                "image": {
+                  "x": 615,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 763,
+                  "bottom": 574.421875,
+                  "left": 615
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "820-light-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 46,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 216,
+                  "bottom": 627.421875,
+                  "left": 46
+                },
+                "image": {
+                  "x": 57,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 205,
+                  "bottom": 574.421875,
+                  "left": 57
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 232,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 402,
+                  "bottom": 627.421875,
+                  "left": 232
+                },
+                "image": {
+                  "x": 243,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 391,
+                  "bottom": 574.421875,
+                  "left": 243
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 418,
+                  "y": 464.765625,
+                  "width": 170,
+                  "height": 162.65625,
+                  "top": 464.765625,
+                  "right": 588,
+                  "bottom": 627.421875,
+                  "left": 418
+                },
+                "image": {
+                  "x": 429,
+                  "y": 475.765625,
+                  "width": 148,
+                  "height": 98.65625,
+                  "top": 475.765625,
+                  "right": 577,
+                  "bottom": 574.421875,
+                  "left": 429
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 602.7249755859375,
+                  "y": 461.54571533203125,
+                  "width": 172.54998779296875,
+                  "height": 165.0960693359375,
+                  "top": 461.54571533203125,
+                  "right": 775.2749633789062,
+                  "bottom": 626.6417846679688,
+                  "left": 602.7249755859375
+                },
+                "image": {
+                  "x": 613.8899536132812,
+                  "y": 472.710693359375,
+                  "width": 150.22003173828125,
+                  "height": 100.1361083984375,
+                  "top": 472.710693359375,
+                  "right": 764.1099853515625,
+                  "bottom": 572.8468017578125,
+                  "left": 613.8899536132812
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "820-light-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "820-light-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "820-light-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "820-light-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "820-light-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "1440-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "1440-light-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 98,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 397,
+                  "bottom": 713.421875,
+                  "left": 98
+                },
+                "image": {
+                  "x": 109,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 386,
+                  "bottom": 660.421875,
+                  "left": 109
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 413,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 712,
+                  "bottom": 713.421875,
+                  "left": 413
+                },
+                "image": {
+                  "x": 424,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 701,
+                  "bottom": 660.421875,
+                  "left": 424
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 728,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 1027,
+                  "bottom": 713.421875,
+                  "left": 728
+                },
+                "image": {
+                  "x": 739,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 1016,
+                  "bottom": 660.421875,
+                  "left": 739
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1043,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 1342,
+                  "bottom": 713.421875,
+                  "left": 1043
+                },
+                "image": {
+                  "x": 1054,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 1331,
+                  "bottom": 660.421875,
+                  "left": 1054
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "1440-light-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 98,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 397,
+                  "bottom": 713.421875,
+                  "left": 98
+                },
+                "image": {
+                  "x": 109,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 386,
+                  "bottom": 660.421875,
+                  "left": 109
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 413,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 712,
+                  "bottom": 713.421875,
+                  "left": 413
+                },
+                "image": {
+                  "x": 424,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 701,
+                  "bottom": 660.421875,
+                  "left": 424
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 728,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 1027,
+                  "bottom": 713.421875,
+                  "left": 728
+                },
+                "image": {
+                  "x": 739,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 1016,
+                  "bottom": 660.421875,
+                  "left": 739
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1040.757568359375,
+                  "y": 460.90069580078125,
+                  "width": 303.48486328125,
+                  "height": 252.3861083984375,
+                  "top": 460.90069580078125,
+                  "right": 1344.242431640625,
+                  "bottom": 713.2868041992188,
+                  "left": 1040.757568359375
+                },
+                "image": {
+                  "x": 1051.9224853515625,
+                  "y": 472.0657043457031,
+                  "width": 281.155029296875,
+                  "height": 187.42611694335938,
+                  "top": 472.0657043457031,
+                  "right": 1333.0775146484375,
+                  "bottom": 659.4918212890625,
+                  "left": 1051.9224853515625
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "1440-light-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "1440-light-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "1440-light-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "1440-light-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "1440-light-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "390-dark-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "390-dark-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 28,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 190,
+                  "bottom": 521.890625,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 182,
+                  "bottom": 471.890625,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 200,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 362,
+                  "bottom": 521.890625,
+                  "left": 200
+                },
+                "image": {
+                  "x": 208,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 354,
+                  "bottom": 471.890625,
+                  "left": 208
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 28,
+                  "y": 531.890625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 531.890625,
+                  "right": 190,
+                  "bottom": 687.21875,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 539.890625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 539.890625,
+                  "right": 182,
+                  "bottom": 637.21875,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 200,
+                  "y": 531.890625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 531.890625,
+                  "right": 362,
+                  "bottom": 687.21875,
+                  "left": 200
+                },
+                "image": {
+                  "x": 208,
+                  "y": 539.890625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 539.890625,
+                  "right": 354,
+                  "bottom": 637.21875,
+                  "left": 208
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "390-dark-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 28,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 190,
+                  "bottom": 521.890625,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 182,
+                  "bottom": 471.890625,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 200,
+                  "y": 366.5625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 366.5625,
+                  "right": 362,
+                  "bottom": 521.890625,
+                  "left": 200
+                },
+                "image": {
+                  "x": 208,
+                  "y": 374.5625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 374.5625,
+                  "right": 354,
+                  "bottom": 471.890625,
+                  "left": 208
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 28,
+                  "y": 531.890625,
+                  "width": 162,
+                  "height": 155.328125,
+                  "top": 531.890625,
+                  "right": 190,
+                  "bottom": 687.21875,
+                  "left": 28
+                },
+                "image": {
+                  "x": 36,
+                  "y": 539.890625,
+                  "width": 146,
+                  "height": 97.328125,
+                  "top": 539.890625,
+                  "right": 182,
+                  "bottom": 637.21875,
+                  "left": 36
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 198.78500366210938,
+                  "y": 528.7256469726562,
+                  "width": 164.42999267578125,
+                  "height": 157.6580810546875,
+                  "top": 528.7256469726562,
+                  "right": 363.2149963378906,
+                  "bottom": 686.3837280273438,
+                  "left": 198.78500366210938
+                },
+                "image": {
+                  "x": 206.90499877929688,
+                  "y": 536.8456420898438,
+                  "width": 148.19000244140625,
+                  "height": 98.78802490234375,
+                  "top": 536.8456420898438,
+                  "right": 355.0950012207031,
+                  "bottom": 635.6336669921875,
+                  "left": 206.90499877929688
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "390-dark-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "390-dark-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "390-dark-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "390-dark-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "390-dark-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "1440-dark-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "1440-dark-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 98,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 397,
+                  "bottom": 713.421875,
+                  "left": 98
+                },
+                "image": {
+                  "x": 109,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 386,
+                  "bottom": 660.421875,
+                  "left": 109
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 413,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 712,
+                  "bottom": 713.421875,
+                  "left": 413
+                },
+                "image": {
+                  "x": 424,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 701,
+                  "bottom": 660.421875,
+                  "left": 424
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 728,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 1027,
+                  "bottom": 713.421875,
+                  "left": 728
+                },
+                "image": {
+                  "x": 739,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 1016,
+                  "bottom": 660.421875,
+                  "left": 739
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1043,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 1342,
+                  "bottom": 713.421875,
+                  "left": 1043
+                },
+                "image": {
+                  "x": 1054,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 1331,
+                  "bottom": 660.421875,
+                  "left": 1054
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "1440-dark-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 98,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 397,
+                  "bottom": 713.421875,
+                  "left": 98
+                },
+                "image": {
+                  "x": 109,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 386,
+                  "bottom": 660.421875,
+                  "left": 109
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 413,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 712,
+                  "bottom": 713.421875,
+                  "left": 413
+                },
+                "image": {
+                  "x": 424,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 701,
+                  "bottom": 660.421875,
+                  "left": 424
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 728,
+                  "y": 464.765625,
+                  "width": 299,
+                  "height": 248.65625,
+                  "top": 464.765625,
+                  "right": 1027,
+                  "bottom": 713.421875,
+                  "left": 728
+                },
+                "image": {
+                  "x": 739,
+                  "y": 475.765625,
+                  "width": 277,
+                  "height": 184.65625,
+                  "top": 475.765625,
+                  "right": 1016,
+                  "bottom": 660.421875,
+                  "left": 739
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1040.757568359375,
+                  "y": 460.90069580078125,
+                  "width": 303.48486328125,
+                  "height": 252.3861083984375,
+                  "top": 460.90069580078125,
+                  "right": 1344.242431640625,
+                  "bottom": 713.2868041992188,
+                  "left": 1040.757568359375
+                },
+                "image": {
+                  "x": 1051.9224853515625,
+                  "y": 472.0657043457031,
+                  "width": 281.155029296875,
+                  "height": 187.42611694335938,
+                  "top": 472.0657043457031,
+                  "right": 1333.0775146484375,
+                  "bottom": 659.4918212890625,
+                  "left": 1051.9224853515625
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "1440-dark-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "1440-dark-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "1440-dark-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "1440-dark-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "1440-dark-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 2560,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": "0",
+          "file": "2560-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2",
+          "file": "2560-light-stage2.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 514,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 885,
+                  "bottom": 763.421875,
+                  "left": 514
+                },
+                "image": {
+                  "x": 525,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 874,
+                  "bottom": 710.421875,
+                  "left": 525
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 901,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 1272,
+                  "bottom": 763.421875,
+                  "left": 901
+                },
+                "image": {
+                  "x": 912,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 1261,
+                  "bottom": 710.421875,
+                  "left": 912
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1288,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 1659,
+                  "bottom": 763.421875,
+                  "left": 1288
+                },
+                "image": {
+                  "x": 1299,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 1648,
+                  "bottom": 710.421875,
+                  "left": 1299
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1675,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 2046,
+                  "bottom": 763.421875,
+                  "left": 1675
+                },
+                "image": {
+                  "x": 1686,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 2035,
+                  "bottom": 710.421875,
+                  "left": 1686
+                },
+                "contained": true
+              }
+            ]
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "2-back",
+          "file": "2560-light-stage2-back.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": [
+              {
+                "box": {
+                  "x": 514,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 885,
+                  "bottom": 763.421875,
+                  "left": 514
+                },
+                "image": {
+                  "x": 525,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 874,
+                  "bottom": 710.421875,
+                  "left": 525
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 901,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 1272,
+                  "bottom": 763.421875,
+                  "left": 901
+                },
+                "image": {
+                  "x": 912,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 1261,
+                  "bottom": 710.421875,
+                  "left": 912
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1288,
+                  "y": 466.765625,
+                  "width": 371,
+                  "height": 296.65625,
+                  "top": 466.765625,
+                  "right": 1659,
+                  "bottom": 763.421875,
+                  "left": 1288
+                },
+                "image": {
+                  "x": 1299,
+                  "y": 477.765625,
+                  "width": 349,
+                  "height": 232.65625,
+                  "top": 477.765625,
+                  "right": 1648,
+                  "bottom": 710.421875,
+                  "left": 1299
+                },
+                "contained": true
+              },
+              {
+                "box": {
+                  "x": 1672.217529296875,
+                  "y": 462.54071044921875,
+                  "width": 376.56494140625,
+                  "height": 301.1060791015625,
+                  "top": 462.54071044921875,
+                  "right": 2048.782470703125,
+                  "bottom": 763.6467895507812,
+                  "left": 1672.217529296875
+                },
+                "image": {
+                  "x": 1683.382568359375,
+                  "y": 473.7057189941406,
+                  "width": 354.2349853515625,
+                  "height": 236.14608764648438,
+                  "top": 473.7057189941406,
+                  "right": 2037.6175537109375,
+                  "bottom": 709.851806640625,
+                  "left": 1683.382568359375
+                },
+                "contained": true
+              }
+            ]
+          },
+          "interaction": true,
+          "healthy": true
+        },
+        {
+          "stage": "4",
+          "file": "2560-light-stage4.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "5",
+          "file": "2560-light-stage5.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "6",
+          "file": "2560-light-stage6.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "7",
+          "file": "2560-light-stage7.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        },
+        {
+          "stage": "9",
+          "file": "2560-light-stage9.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          },
+          "healthy": true,
+          "interaction": true
+        }
+      ],
+      "errors": [],
+      "speakingLearnerCount": 4,
+      "speakingFourChildren": true,
+      "progressUnchanged": true,
+      "pass": true
+    }
+  ],
+  "flowCases": [
+    {
+      "case": "speaking-four-children",
+      "passed": true
+    }
+  ]
+}

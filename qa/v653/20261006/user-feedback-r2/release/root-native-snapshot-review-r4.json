@@ -1,0 +1,8 @@
+{
+  "decision": "ACCEPT_SUBJECT_TO_INDEPENDENT_REVIEW",
+  "originalSHA256": "9ea11d7f49d77b5110f83e0e3b3ec174272c7c3a684de71cba092aaf7f5d0803",
+  "proposedSHA256": "73bb1f8fa71d6610ff2a4c4b76f3f0b3da47d6b54bf710f5fdfb2373c72ad71e",
+  "allOtherASTIdentical": true,
+  "readReview": "SHA checked bytes remain cached per Gate. Only process-generated marshal bytes; each return fresh native types. Any JSON restore mismatch falls back to original decoder. No reference, predicate, matrix, threshold or negative mutation changes.",
+  "boundary": "QA performance proposal review only; not candidate admission or deployment."
+}

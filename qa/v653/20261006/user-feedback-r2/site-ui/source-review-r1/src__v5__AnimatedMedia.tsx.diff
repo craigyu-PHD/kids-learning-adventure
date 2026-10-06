@@ -1,0 +1,37 @@
+--- published-r6/src/v5/AnimatedMedia.tsx
++++ feedback/src/v5/AnimatedMedia.tsx
+@@ -12,6 +12,7 @@
+   size = 512,
+   loop = true,
+   className,
++  fitContainer = false,
+   deferPlayback = false,
+   deferUntilNearViewport = false,
+   onEnded,
+@@ -25,6 +26,8 @@
+   size?: number;
+   loop?: boolean;
+   className?: string;
++  /** Fit a sized control while retaining the media's intrinsic dimensions. */
++  fitContainer?: boolean;
+   /** Keep the poster as the first paint, then load/play WebM after that paint. */
+   deferPlayback?: boolean;
+   /** Do not request poster/video bytes until the media is near the viewport. */
+@@ -99,7 +102,7 @@
+     };
+   }, [deferPlayback, webm, mediaReady]);
+   if (!webm) {
+-    return <img className={className} src={mediaReady ? posterSrc : undefined} alt={alt} width={size} height={size} loading="lazy" style={{ width: size, height: size, objectFit: 'contain' }} />;
++    return <img className={className} src={mediaReady ? posterSrc : undefined} alt={alt} width={size} height={size} loading="lazy" style={{ width: fitContainer ? '100%' : size, height: fitContainer ? '100%' : size, objectFit: 'contain' }} />;
+   }
+   return (
+     <video
+@@ -115,7 +118,7 @@
+       aria-label={alt}
+       width={size}
+       height={size}
+-      style={{ width: size, height: size, objectFit: 'contain' }}
++      style={{ width: fitContainer ? '100%' : size, height: fitContainer ? '100%' : size, objectFit: 'contain' }}
+     >
+       {mediaReady && <source src={webm} type="video/webm" onError={onPlaybackError} />}
+       {mediaReady && <img src={posterSrc} alt={alt} />}

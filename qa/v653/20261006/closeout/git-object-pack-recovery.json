@@ -1,0 +1,13 @@
+{
+  "method": "Git smart HTTP v2 fetch of exact existing HEAD, no haves; index-pack into additional local object directory; existing refs/index/worktree untouched",
+  "packBytes": 112837272,
+  "packSHA256": "98b167025b2f197a77fa4ead6f2eda8b3a8ed61d52b18ad976b8258a8c049777",
+  "packetHeaders": [
+    "packfile\n"
+  ],
+  "exitCode": 0,
+  "stdout": "pack\t9b7b8fb4403bc6391babf5cd56e1e537d3d01985\n",
+  "stderr": "",
+  "objectDirectory": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-closeout-git-objects",
+  "elapsedSeconds": 15.037948083001538
+}

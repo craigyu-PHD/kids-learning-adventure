@@ -1,0 +1,2730 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "lessonVisual report fresh",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual timestamp",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual independent reviewer",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"360-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"360-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"820-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"820-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"390-dark\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"390-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"1440-dark\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"1440-dark\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"0\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"0\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"0\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"2\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"2\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"2\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"2-back\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"2-back\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"2-back\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"4\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"4\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"4\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"5\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"5\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"5\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"6\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"6\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"6\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"7\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"7\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"7\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual unique observation {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"9\"} profile",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual raw identity {\"profile\": \"2560-light\", \"stage\": \"9\"} stage",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual check coverage {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual asserted accepted {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image required {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual image bytes {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual reviewed image hash coverage {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual actual reviewed image hash {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual meaningful review {\"profile\": \"2560-light\", \"stage\": \"9\"}",
+      "pass": true
+    },
+    {
+      "check": "lessonVisual exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

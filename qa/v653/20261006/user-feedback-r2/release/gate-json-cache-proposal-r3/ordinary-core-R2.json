@@ -1,0 +1,194 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "core report fresh",
+      "pass": true
+    },
+    {
+      "check": "core minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "core exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "core timestamp",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"date\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"date\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"date\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"date\"}",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"auth\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"auth\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"auth\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"auth\"}",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"state\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"state\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"state\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"state\"}",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"structural\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"structural\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"structural\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"structural\"}",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"online\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"online\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"online\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"online\"}",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"shop_service\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"shop_service\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"shop_service\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"shop_service\"}",
+      "pass": true
+    },
+    {
+      "check": "core unique observation {\"case\": \"lessonpolicy\"}",
+      "pass": true
+    },
+    {
+      "check": "core raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "core dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "core raw identity {\"case\": \"lessonpolicy\"} case",
+      "pass": true
+    },
+    {
+      "check": "core check coverage {\"case\": \"lessonpolicy\"}",
+      "pass": true
+    },
+    {
+      "check": "core asserted passed {\"case\": \"lessonpolicy\"}",
+      "pass": true
+    },
+    {
+      "check": "core exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

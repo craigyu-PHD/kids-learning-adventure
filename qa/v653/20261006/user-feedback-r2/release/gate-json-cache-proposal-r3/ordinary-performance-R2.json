@@ -1,0 +1,34 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "performance same artifact",
+      "pass": true
+    },
+    {
+      "check": "performance age <=6 hours",
+      "pass": true
+    },
+    {
+      "check": "desktop Lighthouse",
+      "pass": true
+    },
+    {
+      "check": "performance >=90",
+      "pass": true
+    },
+    {
+      "check": "largest-contentful-paint",
+      "pass": true
+    },
+    {
+      "check": "cumulative-layout-shift",
+      "pass": true
+    },
+    {
+      "check": "total-blocking-time",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,38 @@
+--- published-r6/src/avatarAssetRegistry.ts
++++ feedback-r2/src/avatarAssetRegistry.ts
+@@ -47,6 +47,9 @@
+   /** Explicit paired full-skin split renders; never combine a base half with a skin half. */
+   skinBackVariants?: Record<string, Record<string, string>>;
+   skinFrontVariants?: Record<string, Record<string, string>>;
++  /** Reviewed complete split pair for one hairstyle, learner, and body pose. */
++  requiredHairstyleFits?: string[];
++  hairstyleSplitVariants?: Record<string, Record<string, Record<string, { back: string; front: string }>>>;
+   canvasTopPadding?: number;
+   headwearVariants?: Record<string, Record<string, { overlay: string; foreground: boolean }>>;
+   defaultSkinDetails?: Record<string, ManifestAccessoryDetail>;
+@@ -84,7 +87,7 @@
+   return Boolean(avatarSkinAssetPath(itemId, avatarId));
+ }
+ 
+-export function avatarAccessoryLayerSet(itemId: string, avatarId?: string, skinId?: string, headwearId?: string): AvatarAccessoryLayerSet | undefined {
++export function avatarAccessoryLayerSet(itemId: string, avatarId?: string, skinId?: string, headwearId?: string, hairstyleId?: string): AvatarAccessoryLayerSet | undefined {
+   const entry = accessoryById.get(itemId);
+   if (!entry) return undefined;
+   const avatar = normalizeAvatar(avatarId);
+@@ -114,6 +117,16 @@
+   }
+   if (entry.renderer === 'split-overlay') {
+     if (entry.canvasTopPadding !== undefined && !isSupportedAvatarCanvasTopPadding(entry.canvasTopPadding)) return undefined;
++    const hairstylePairs = hairstyleId ? entry.hairstyleSplitVariants?.[hairstyleId] : undefined;
++    if (hairstylePairs || (hairstyleId && entry.requiredHairstyleFits?.includes(hairstyleId))) {
++      const pair = hairstylePairs?.[avatar]?.[skinId ?? 'default'];
++      const back = publicAssetPath(pair?.back);
++      const front = publicAssetPath(pair?.front);
++      // A declared hairstyle fit is exact: a missing half/pose must not reuse a different fit.
++      return back && front ? { renderer: entry.renderer, slot: entry.slot, back, front,
++        ...(entry.canvasTopPadding !== undefined ? { canvasTopPadding: entry.canvasTopPadding as 0 | 256 } : {}),
++      } : undefined;
++    }
+     const skinBack = skinId ? entry.skinBackVariants?.[avatar]?.[skinId] : undefined;
+     const skinFront = skinId ? entry.skinFrontVariants?.[avatar]?.[skinId] : undefined;
+     const hasSkinPair = Boolean(skinBack && skinFront);

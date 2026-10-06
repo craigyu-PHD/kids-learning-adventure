@@ -1,0 +1,1410 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled_fit_r2.py",
+    "sha256": "5e89a73acc91fcfccebbcbcd2e7e9fbf03c9a0111f2957dd0f3956cb038f935b"
+  },
+  "group": "retainedEarwearHairVisual",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:45:02.915016+00:00",
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/served-artifacts.json",
+    "sha256": "548bf497ba7ed0beb1bdfcb7907a9498a7ff5c6d5fbdb50030c81e2161410638"
+  },
+  "reviewer": "lesson_layout_feedback_r2",
+  "runtimeOperator": "root-compiled-fit",
+  "originalRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/report.json",
+    "sha256": "9dcf1d74e47a80a364b5afbe8f149e293b47f388fd1df1099147e10b763160d6"
+  },
+  "reviewRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+    "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+  },
+  "cases": [
+    {
+      "values": {
+        "role": "brother",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/120/values/role",
+        "skin": "/cases/120/values/skin",
+        "itemSet": "/cases/120/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/120/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/default/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "7eb76765268286d7da4f6eb72063cf7a18d8cb21f6949bde34a02f319e9bf36c"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/120/images/0/sha256",
+          "equals": "7eb76765268286d7da4f6eb72063cf7a18d8cb21f6949bde34a02f319e9bf36c"
+        }
+      ],
+      "reviewNotes": "brother／default；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/121/values/role",
+        "skin": "/cases/121/values/skin",
+        "itemSet": "/cases/121/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/121/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/outfit-cadet/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "6eec1f3ffd2bf2ee58e152928fd65066e535376d2eb59cd64202f96ccc82acb4"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/121/images/0/sha256",
+          "equals": "6eec1f3ffd2bf2ee58e152928fd65066e535376d2eb59cd64202f96ccc82acb4"
+        }
+      ],
+      "reviewNotes": "brother／outfit-cadet；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/122/values/role",
+        "skin": "/cases/122/values/skin",
+        "itemSet": "/cases/122/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/122/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/outfit-legend/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "dda885c07ac25695395266fd20bb09d08dd298f48e61548491a1a592dc8ff5b2"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/122/images/0/sha256",
+          "equals": "dda885c07ac25695395266fd20bb09d08dd298f48e61548491a1a592dc8ff5b2"
+        }
+      ],
+      "reviewNotes": "brother／outfit-legend；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/123/values/role",
+        "skin": "/cases/123/values/skin",
+        "itemSet": "/cases/123/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/123/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/outfit-mage/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "8bb6d450a4ff603388e40ff89567a1aafdbd64bea06e830b58269ab035a6ee1c"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/123/images/0/sha256",
+          "equals": "8bb6d450a4ff603388e40ff89567a1aafdbd64bea06e830b58269ab035a6ee1c"
+        }
+      ],
+      "reviewNotes": "brother／outfit-mage；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/124/values/role",
+        "skin": "/cases/124/values/skin",
+        "itemSet": "/cases/124/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/124/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/outfit-mecha/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "b9b4227d85c3cba8e0557193c461905c832b192842a78c2f493fdcdfa4f1f469"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/124/images/0/sha256",
+          "equals": "b9b4227d85c3cba8e0557193c461905c832b192842a78c2f493fdcdfa4f1f469"
+        }
+      ],
+      "reviewNotes": "brother／outfit-mecha；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/125/values/role",
+        "skin": "/cases/125/values/skin",
+        "itemSet": "/cases/125/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/125/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/outfit-ocean/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "403774829ea0387a1133feee9073be7628ff07b5624ae286db9d421fe76a704e"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/125/images/0/sha256",
+          "equals": "403774829ea0387a1133feee9073be7628ff07b5624ae286db9d421fe76a704e"
+        }
+      ],
+      "reviewNotes": "brother／outfit-ocean；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/126/values/role",
+        "skin": "/cases/126/values/skin",
+        "itemSet": "/cases/126/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/126/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/outfit-racer/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "e214aacbffc6f93e04f0d93310243b07e6cd01043bb100f76d5b8bed8e2da780"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/126/images/0/sha256",
+          "equals": "e214aacbffc6f93e04f0d93310243b07e6cd01043bb100f76d5b8bed8e2da780"
+        }
+      ],
+      "reviewNotes": "brother／outfit-racer；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/127/values/role",
+        "skin": "/cases/127/values/skin",
+        "itemSet": "/cases/127/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/127/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/brother/sister-bloom-outfit/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "987782351d862b45136729443a162c5488aaa0dbf79a48853c2c8fa87104b9c7"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/127/images/0/sha256",
+          "equals": "987782351d862b45136729443a162c5488aaa0dbf79a48853c2c8fa87104b9c7"
+        }
+      ],
+      "reviewNotes": "brother／sister-bloom-outfit；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/128/values/role",
+        "skin": "/cases/128/values/skin",
+        "itemSet": "/cases/128/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/128/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/default/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "e465f123c8e434d43c8bb05211f15510de51b9a5f37635036a5680e6ce6e8f32"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/128/images/0/sha256",
+          "equals": "e465f123c8e434d43c8bb05211f15510de51b9a5f37635036a5680e6ce6e8f32"
+        }
+      ],
+      "reviewNotes": "younger／default；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/129/values/role",
+        "skin": "/cases/129/values/skin",
+        "itemSet": "/cases/129/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/129/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/outfit-cadet/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "b5ff43aa5c9c0a0e0a625e3e24bbf9052790c60a9476b1d17db529b3fe8b0ce7"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/129/images/0/sha256",
+          "equals": "b5ff43aa5c9c0a0e0a625e3e24bbf9052790c60a9476b1d17db529b3fe8b0ce7"
+        }
+      ],
+      "reviewNotes": "younger／outfit-cadet；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/130/values/role",
+        "skin": "/cases/130/values/skin",
+        "itemSet": "/cases/130/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/130/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/outfit-legend/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "3dd878a26a394ecb0b6a2da0a5583c6141c47e88f8973d9411141644cb939bfb"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/130/images/0/sha256",
+          "equals": "3dd878a26a394ecb0b6a2da0a5583c6141c47e88f8973d9411141644cb939bfb"
+        }
+      ],
+      "reviewNotes": "younger／outfit-legend；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/131/values/role",
+        "skin": "/cases/131/values/skin",
+        "itemSet": "/cases/131/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/131/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/outfit-mage/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "eef3fe95681708a60da1a4ba7e3eb2ec270f939502607f1c7dd794a72344bfc5"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/131/images/0/sha256",
+          "equals": "eef3fe95681708a60da1a4ba7e3eb2ec270f939502607f1c7dd794a72344bfc5"
+        }
+      ],
+      "reviewNotes": "younger／outfit-mage；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/132/values/role",
+        "skin": "/cases/132/values/skin",
+        "itemSet": "/cases/132/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/132/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/outfit-mecha/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "c94e5279050dd8df3b7fec6061a25e06e30035748d3302b51d94b2b01c445ca5"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/132/images/0/sha256",
+          "equals": "c94e5279050dd8df3b7fec6061a25e06e30035748d3302b51d94b2b01c445ca5"
+        }
+      ],
+      "reviewNotes": "younger／outfit-mecha；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/133/values/role",
+        "skin": "/cases/133/values/skin",
+        "itemSet": "/cases/133/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/133/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/outfit-ocean/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "77f0e7130ac0e4fbbd8424ca405d473b104f82df06f4030d532ba8055798d126"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/133/images/0/sha256",
+          "equals": "77f0e7130ac0e4fbbd8424ca405d473b104f82df06f4030d532ba8055798d126"
+        }
+      ],
+      "reviewNotes": "younger／outfit-ocean；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/134/values/role",
+        "skin": "/cases/134/values/skin",
+        "itemSet": "/cases/134/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/134/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/outfit-racer/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "bc00c3ea206b06036894b7643fe9c4a30b56bda08e3ba2cda85d900523175ebe"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/134/images/0/sha256",
+          "equals": "bc00c3ea206b06036894b7643fe9c4a30b56bda08e3ba2cda85d900523175ebe"
+        }
+      ],
+      "reviewNotes": "younger／outfit-racer；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/135/values/role",
+        "skin": "/cases/135/values/skin",
+        "itemSet": "/cases/135/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/135/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger/sister-bloom-outfit/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "782cdca63d5a1a524e434aa17467a28eb1bcebe37a8185d7136abdf36ab3504e"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/135/images/0/sha256",
+          "equals": "782cdca63d5a1a524e434aa17467a28eb1bcebe37a8185d7136abdf36ab3504e"
+        }
+      ],
+      "reviewNotes": "younger／sister-bloom-outfit；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/136/values/role",
+        "skin": "/cases/136/values/skin",
+        "itemSet": "/cases/136/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/136/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/default/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "ef3df6496bab2fb4ec12177522a1414f27f9e505d8a7cb582d71ee89edab3471"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/136/images/0/sha256",
+          "equals": "ef3df6496bab2fb4ec12177522a1414f27f9e505d8a7cb582d71ee89edab3471"
+        }
+      ],
+      "reviewNotes": "sister／default；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/137/values/role",
+        "skin": "/cases/137/values/skin",
+        "itemSet": "/cases/137/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/137/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/outfit-cadet/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "9fd0abfa273dade949ffb7c6b0320be0e19f48f75cfd96fd9c2d37da537d4fe2"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/137/images/0/sha256",
+          "equals": "9fd0abfa273dade949ffb7c6b0320be0e19f48f75cfd96fd9c2d37da537d4fe2"
+        }
+      ],
+      "reviewNotes": "sister／outfit-cadet；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/138/values/role",
+        "skin": "/cases/138/values/skin",
+        "itemSet": "/cases/138/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/138/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/outfit-legend/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "ac9f2772f67e8e4d28cd244feb7ae9c736f7c447760c1d075e130b4eee4d9f12"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/138/images/0/sha256",
+          "equals": "ac9f2772f67e8e4d28cd244feb7ae9c736f7c447760c1d075e130b4eee4d9f12"
+        }
+      ],
+      "reviewNotes": "sister／outfit-legend；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/139/values/role",
+        "skin": "/cases/139/values/skin",
+        "itemSet": "/cases/139/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/139/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/outfit-mage/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "7fd267cdb6bc80f5d3975659d80b75a60bcf4c0883bf3e8eb8e0002f01169376"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/139/images/0/sha256",
+          "equals": "7fd267cdb6bc80f5d3975659d80b75a60bcf4c0883bf3e8eb8e0002f01169376"
+        }
+      ],
+      "reviewNotes": "sister／outfit-mage；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/140/values/role",
+        "skin": "/cases/140/values/skin",
+        "itemSet": "/cases/140/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/140/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/outfit-mecha/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "ab32e4d9b4aa989304356b7f9d0500104caf465860b4cbe6b0485d528903a441"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/140/images/0/sha256",
+          "equals": "ab32e4d9b4aa989304356b7f9d0500104caf465860b4cbe6b0485d528903a441"
+        }
+      ],
+      "reviewNotes": "sister／outfit-mecha；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/141/values/role",
+        "skin": "/cases/141/values/skin",
+        "itemSet": "/cases/141/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/141/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/outfit-ocean/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "b5841e0b6338ff96368371294445732d33570323cbbbf26ca87cc8a9eef16c31"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/141/images/0/sha256",
+          "equals": "b5841e0b6338ff96368371294445732d33570323cbbbf26ca87cc8a9eef16c31"
+        }
+      ],
+      "reviewNotes": "sister／outfit-ocean；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/142/values/role",
+        "skin": "/cases/142/values/skin",
+        "itemSet": "/cases/142/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/142/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/outfit-racer/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "5ddbb1259a0fe2694d35070f632597efc760ed4159f27ab8a56b49cca8458f88"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/142/images/0/sha256",
+          "equals": "5ddbb1259a0fe2694d35070f632597efc760ed4159f27ab8a56b49cca8458f88"
+        }
+      ],
+      "reviewNotes": "sister／outfit-racer；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/143/values/role",
+        "skin": "/cases/143/values/skin",
+        "itemSet": "/cases/143/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/143/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/sister/sister-bloom-outfit/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "2883c557b2ea051764aaebe7690cf0ec43924c5d8e90910bba14a103d8a635c4"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/143/images/0/sha256",
+          "equals": "2883c557b2ea051764aaebe7690cf0ec43924c5d8e90910bba14a103d8a635c4"
+        }
+      ],
+      "reviewNotes": "sister／sister-bloom-outfit；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/144/values/role",
+        "skin": "/cases/144/values/skin",
+        "itemSet": "/cases/144/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/144/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/default/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "f40235bb66c5c66cf77482ff13797b9c541b864a26a8034bf18abbe0ef8d8d72"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/144/images/0/sha256",
+          "equals": "f40235bb66c5c66cf77482ff13797b9c541b864a26a8034bf18abbe0ef8d8d72"
+        }
+      ],
+      "reviewNotes": "younger-sister／default；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/145/values/role",
+        "skin": "/cases/145/values/skin",
+        "itemSet": "/cases/145/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/145/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/outfit-cadet/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "81699c6609331e5dba0e519e621aff0a69357502f5d629d030dafd54f968f204"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/145/images/0/sha256",
+          "equals": "81699c6609331e5dba0e519e621aff0a69357502f5d629d030dafd54f968f204"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-cadet；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/146/values/role",
+        "skin": "/cases/146/values/skin",
+        "itemSet": "/cases/146/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/146/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/outfit-legend/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "d5560abab57044a566d06e371013ecb7a528d4a2af6efa8cb959e1972b6b50b1"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/146/images/0/sha256",
+          "equals": "d5560abab57044a566d06e371013ecb7a528d4a2af6efa8cb959e1972b6b50b1"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-legend；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/147/values/role",
+        "skin": "/cases/147/values/skin",
+        "itemSet": "/cases/147/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/147/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/outfit-mage/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "b1588b357e287a2ba44a7a1ec9cc6ed29f55ad715b644b37c2f9690bb93ce199"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/147/images/0/sha256",
+          "equals": "b1588b357e287a2ba44a7a1ec9cc6ed29f55ad715b644b37c2f9690bb93ce199"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-mage；唯一目標 phones-racer。目標競速耳機搭配星雲髮型：橘藍頭弧沿髮冠可見，矩形耳罩邊角、直條裝飾及細麥克風保留原形，左右耳位合理，不穿入眼睛或嘴部。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/148/values/role",
+        "skin": "/cases/148/values/skin",
+        "itemSet": "/cases/148/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/148/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/outfit-mecha/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "41d5b5c94c47336a0c52dde7f8683fd59483495da6928ec61142d7cd4bf43def"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/148/images/0/sha256",
+          "equals": "41d5b5c94c47336a0c52dde7f8683fd59483495da6928ec61142d7cd4bf43def"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-mecha；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/149/values/role",
+        "skin": "/cases/149/values/skin",
+        "itemSet": "/cases/149/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/149/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/outfit-ocean/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "1a79e615874a5ee7ffc286b3ae0c1fd2e41236ea15ed4811be830bdb2eb12a29"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/149/images/0/sha256",
+          "equals": "1a79e615874a5ee7ffc286b3ae0c1fd2e41236ea15ed4811be830bdb2eb12a29"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-ocean；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/150/values/role",
+        "skin": "/cases/150/values/skin",
+        "itemSet": "/cases/150/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/150/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/outfit-racer/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "e1f7a7bbfa879dcae592d9a63a99d3a4e24650cb79ee47816bd869f8e1a99bb7"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/150/images/0/sha256",
+          "equals": "e1f7a7bbfa879dcae592d9a63a99d3a4e24650cb79ee47816bd869f8e1a99bb7"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-racer；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-racer"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/151/values/role",
+        "skin": "/cases/151/values/skin",
+        "itemSet": "/cases/151/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/151/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard0/retainedEarwearHairFit/younger-sister/sister-bloom-outfit/hair-nebula+phones-racer/actual-shop-avatar.png",
+          "sha256": "371c5d9a7316e4612dd347e0a0ba2cb04b225dec0e7e531564e93076414f1a99"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/151/images/0/sha256",
+          "equals": "371c5d9a7316e4612dd347e0a0ba2cb04b225dec0e7e531564e93076414f1a99"
+        }
+      ],
+      "reviewNotes": "younger-sister／sister-bloom-outfit；唯一目標 phones-racer。後四服裝的競速耳機弧線、矩形耳罩與麥克風位置一致；四角色均未出現耳罩伸長、鉸鏈偏移或服裝拉縮頭部的情況。"
+    }
+  ]
+}

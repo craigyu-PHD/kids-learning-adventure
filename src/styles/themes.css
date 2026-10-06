@@ -1,0 +1,307 @@
+/* V6.4 feature-owned five-world presentation + bounded fine-pointer effects.
+ * The historical visualTheme IDs remain migration-compatible; this layer only
+ * changes presentation and never curriculum, date, auth, ledger or shop state.
+ */
+:root {
+  --v64-theme-primary:#2755e8;
+  --v64-theme-secondary:#6d4df7;
+  --v64-theme-accent:#ffd23f;
+  --v64-theme-cyan:#3de7ff;
+  --v64-theme-radius:24px;
+  --v64-theme-panel-clip:none;
+  --v64-theme-shell-pattern:
+    radial-gradient(circle at 13% 16%,rgba(70,217,255,.13),transparent 24rem),
+    radial-gradient(circle at 88% 8%,rgba(112,86,255,.12),transparent 26rem);
+  --v64-theme-panel-overlay:linear-gradient(145deg,rgba(255,255,255,.92),rgba(247,251,255,.97));
+  --v64-theme-night-panel-overlay:linear-gradient(145deg,rgba(34,39,66,.94),rgba(43,49,80,.96));
+  --v64-pointer-core:#ffd23f;
+  --v64-pointer-ring:#3de7ff;
+}
+
+:root[data-adventure-theme='hero'] {
+  --v64-theme-primary:#2755e8;--v64-theme-secondary:#6d4df7;--v64-theme-accent:#ffd23f;--v64-theme-cyan:#3de7ff;--v64-theme-radius:24px;
+  --v64-theme-shell-pattern:
+    radial-gradient(circle at 12px 12px,rgba(58,150,255,.11) 0 1.5px,transparent 2px) 0 0/48px 48px,
+    radial-gradient(circle at 82% 12%,rgba(109,77,247,.18),transparent 30rem),
+    radial-gradient(circle at 12% 30%,rgba(61,231,255,.14),transparent 26rem);
+  --v64-pointer-core:#ffd83d;--v64-pointer-ring:#55eaff;
+}
+:root[data-adventure-theme='mecha'] {
+  --v64-theme-primary:#087c98;--v64-theme-secondary:#183a55;--v64-theme-accent:#74fbff;--v64-theme-cyan:#2ee6d6;--v64-theme-radius:24px;
+  --v64-theme-panel-clip:none;
+  --v64-theme-shell-pattern:
+    linear-gradient(90deg,rgba(46,230,214,.07) 1px,transparent 1px) 0 0/30px 30px,
+    linear-gradient(rgba(46,230,214,.07) 1px,transparent 1px) 0 0/30px 30px,
+    radial-gradient(circle at 80% 20%,rgba(116,251,255,.13),transparent 26rem);
+  --v64-pointer-core:#75fbff;--v64-pointer-ring:#20d7c8;
+}
+:root[data-adventure-theme='racing'] {
+  --v64-theme-primary:#d7333d;--v64-theme-secondary:#34384c;--v64-theme-accent:#ffd432;--v64-theme-cyan:#49cfff;--v64-theme-radius:24px;
+  --v64-theme-shell-pattern:
+    linear-gradient(115deg,transparent 0 62%,rgba(255,212,50,.08) 62% 64%,transparent 64% 70%,rgba(215,51,61,.05) 70% 72%,transparent 72%),
+    linear-gradient(45deg,rgba(38,43,58,.05) 25%,transparent 25% 75%,rgba(38,43,58,.05) 75%) 0 0/26px 26px;
+  --v64-pointer-core:#ffd432;--v64-pointer-ring:#ff4d52;
+}
+:root[data-adventure-theme='tank'] {
+  /* Historical ID retained; current child-facing meaning is fantasy spirit. */
+  --v64-theme-primary:#537548;--v64-theme-secondary:#705ca7;--v64-theme-accent:#e8bd55;--v64-theme-cyan:#78d7bb;--v64-theme-radius:24px;
+  --v64-theme-shell-pattern:
+    radial-gradient(ellipse at 20% 15%,rgba(102,156,91,.10) 0 22%,transparent 23%) 0 0/90px 60px,
+    radial-gradient(circle at 78% 12%,rgba(125,96,177,.12),transparent 28rem),
+    radial-gradient(circle at 14% 75%,rgba(232,189,85,.10),transparent 24rem);
+  --v64-pointer-core:#e6b94d;--v64-pointer-ring:#8fd9af;
+}
+:root[data-adventure-theme='creature'] {
+  --v64-theme-primary:#266fac;--v64-theme-secondary:#177e79;--v64-theme-accent:#ffbc35;--v64-theme-cyan:#40e3cf;--v64-theme-radius:24px;
+  --v64-theme-shell-pattern:
+    radial-gradient(circle at 18px 18px,rgba(64,227,207,.08) 0 8px,transparent 9px) 0 0/64px 64px,
+    radial-gradient(circle at 80% 18%,rgba(66,173,225,.14),transparent 28rem),
+    radial-gradient(circle at 12% 78%,rgba(23,126,121,.10),transparent 24rem);
+  --v64-pointer-core:#ffbf38;--v64-pointer-ring:#4ae4c7;
+}
+
+/* Make a world switch unmistakable throughout the home shell, while keeping
+   every card in the same place. */
+:root[data-adventure-theme='hero'] { --home-accent:#2755e8;--home-heading:#173765;--home-border:#aac9ff;--home-raised:linear-gradient(145deg,#f7fbff,#edf2ff);--home-control:#e7efff; }
+:root[data-adventure-theme='mecha'] { --home-accent:#087c98;--home-heading:#123e52;--home-border:#8fded8;--home-raised:linear-gradient(145deg,#f3fffe,#e7f7f6);--home-control:#dff3f2; }
+:root[data-adventure-theme='racing'] { --home-accent:#d7333d;--home-heading:#532d37;--home-border:#f0a6a1;--home-raised:linear-gradient(145deg,#fffaf2,#fff0ed);--home-control:#fbe5e1; }
+:root[data-adventure-theme='tank'] { --home-accent:#537548;--home-heading:#33472d;--home-border:#bdd49f;--home-raised:linear-gradient(145deg,#fbfff3,#f1f7df);--home-control:#e8efd5; }
+:root[data-adventure-theme='creature'] { --home-accent:#177e79;--home-heading:#174c5c;--home-border:#8adbd1;--home-raised:linear-gradient(145deg,#f2fffc,#e3f7f5);--home-control:#daf1ef; }
+:root[data-adventure-theme] .v4-panel { border-color:color-mix(in srgb,var(--v64-theme-primary) 48%,var(--home-border)); }
+:root[data-adventure-theme] .v4-dashboard-grid > :is(.v4-left-column,.v4-center-column,.v4-right-column) {
+  border-color:color-mix(in srgb,var(--v64-theme-primary) 68%,var(--home-border)) !important;
+  box-shadow:0 10px 28px color-mix(in srgb,var(--v64-theme-primary) 20%,transparent) !important;
+}
+:root[data-adventure-theme] :is(.v4-player-card,.v4-daily-panel,.v5-semester-overview,.v5-weekly-progress-lane) {
+  border-color:var(--home-border) !important;
+}
+:root[data-adventure-theme] .v4-panel-title>div>span { color:var(--home-accent); }
+:root[data-adventure-theme] .v4-main-navigation button.active { background:linear-gradient(145deg,color-mix(in srgb,var(--v64-theme-accent) 86%,white),color-mix(in srgb,var(--v64-theme-primary) 22%,white)); border-color:var(--v64-theme-primary); }
+
+/* Keep equipped room/card presentation authoritative; theme is the base skin. */
+.v4-shell:not([class*='has-room-']):not([class*='has-card-']),
+.v4-secondary-shell {
+  background-image:var(--v64-theme-shell-pattern),linear-gradient(145deg,#f4f9ff 0%,#fbfdff 48%,#eef7ff 100%);
+  background-attachment:fixed;
+}
+.dark .v4-shell:not([class*='has-room-']):not([class*='has-card-']),
+.dark .v4-secondary-shell {
+  background-image:var(--v64-theme-shell-pattern),linear-gradient(145deg,#171a32 0%,#202641 55%,#252c49 100%);
+}
+
+.v4-panel,.v4-shop-card,.v4-week-strip,.v4-report-player,.v4-history-panel,.v4-settings-card {
+  border-radius:var(--v64-theme-radius);
+}
+/* Header scene switching uses actual existing raster theme art. */
+.v5-hero-bg-picture,.v5-hero-bg { transition:opacity .20s ease,filter .20s ease; }
+:root[data-adventure-theme='mecha'] .v5-hero-bg { filter:saturate(.92) contrast(1.08); }
+:root[data-adventure-theme='racing'] .v5-hero-bg { filter:saturate(1.12) contrast(1.05); }
+:root[data-adventure-theme='tank'] .v5-hero-bg { filter:saturate(.92) brightness(1.03); }
+:root[data-adventure-theme='creature'] .v5-hero-bg { filter:saturate(1.10) hue-rotate(-5deg); }
+
+:root[data-motion-effects='false'] :is(
+  .v5-rocket-flyby,
+  .v5-evolution-stage.current .v4-smart-image > img,
+  .v64-character-reacting .v64-player-reactor,
+  .v64-companion-reacting .v4-ai-bot,
+  .v6-showcase-ship-bay .v6-showcase-ship,
+  .v6-showcase-ship-beacon,
+  .v6-showcase-robot-dock .v6-showcase-robot,
+  .v6-showcase-event-effect::before,
+  .v6-showcase-event-effect i,
+  .v63-ship-art,
+  .v63-robot-art,
+  .v63-companion-link i,
+  .v63-effect-aura::before,
+  .v63-effect-aura i,
+  .v4-reward-podium::before,
+  .v4-reward-podium::after,
+  .v6-answer-win
+) { animation:none !important; }
+:root[data-motion-effects='false'] :is(.v5-hero-bg-picture,.v5-hero-bg) { transition:none !important; }
+
+@media (prefers-reduced-motion:reduce) {
+  .v5-hero-bg-picture,.v5-hero-bg { transition:none !important; }
+}
+
+/* V6.5.2: one rounded-card system; each world owns a readable colour family. */
+:root {
+  --world-surface:#eef2ff; --world-raised:#e0e8ff; --world-border:#a2b5ee;
+  --world-heading:#243a70; --world-muted:#4d5e80; --world-action:#3156c6;
+  --world-action-end:#6647be; --world-shell:#f5f6ff;
+  --world-night-surface:#242b49; --world-night-raised:#30395e; --world-night-border:#7183b4;
+  --world-night-heading:#f2f5ff; --world-night-muted:#c1cce9; --world-night-accent:#aec5ff;
+  --world-night-shell:#191f36;
+  --world-cursor:url('/assets/v6.5.2/ui/cursors/hero.svg') 5 4, auto;
+  --world-cursor-hover:url('/assets/v6.5.2/ui/cursors/hero-hover.svg') 5 4, pointer;
+}
+:root[data-adventure-theme='mecha'] {
+  --world-surface:#e8f8f3; --world-raised:#d3eee5; --world-border:#80bfae;
+  --world-heading:#184d48; --world-muted:#40655f; --world-action:#086c66;
+  --world-action-end:#126678; --world-shell:#f1faf6;
+  --world-night-surface:#1c353a; --world-night-raised:#27484c; --world-night-border:#649c9b;
+  --world-night-heading:#e8fff8; --world-night-muted:#b2d9d0; --world-night-accent:#89e1ce;
+  --world-night-shell:#15292e;
+  --world-cursor:url('/assets/v6.5.2/ui/cursors/mecha.svg') 5 4, auto;
+  --world-cursor-hover:url('/assets/v6.5.2/ui/cursors/mecha-hover.svg') 5 4, pointer;
+}
+:root[data-adventure-theme='racing'] {
+  --world-surface:#fff0e5; --world-raised:#ffdfce; --world-border:#dbac94;
+  --world-heading:#6a3432; --world-muted:#79584e; --world-action:#b83a38;
+  --world-action-end:#a64224; --world-shell:#fff7ef;
+  --world-night-surface:#3e2b36; --world-night-raised:#553a40; --world-night-border:#b78178;
+  --world-night-heading:#fff1e9; --world-night-muted:#e9c4b4; --world-night-accent:#ffb9a1;
+  --world-night-shell:#2b202b;
+  --world-cursor:url('/assets/v6.5.2/ui/cursors/racing.svg') 5 4, auto;
+  --world-cursor-hover:url('/assets/v6.5.2/ui/cursors/racing-hover.svg') 5 4, pointer;
+}
+:root[data-adventure-theme='tank'] {
+  --v64-theme-primary:#7950ad; --v64-theme-secondary:#ad62b9;
+  --world-surface:#f3ecff; --world-raised:#e8d9f7; --world-border:#bca0d9;
+  --world-heading:#513568; --world-muted:#69567b; --world-action:#75439f;
+  --world-action-end:#8c428e; --world-shell:#faf5ff;
+  --world-night-surface:#332c48; --world-night-raised:#46395d; --world-night-border:#9982b7;
+  --world-night-heading:#fbf0ff; --world-night-muted:#d7c2e7; --world-night-accent:#ddb4fa;
+  --world-night-shell:#241f35;
+  --world-cursor:url('/assets/v6.5.2/ui/cursors/tank.svg') 5 4, auto;
+  --world-cursor-hover:url('/assets/v6.5.2/ui/cursors/tank-hover.svg') 5 4, pointer;
+}
+:root[data-adventure-theme='creature'] {
+  --world-surface:#e5f5ff; --world-raised:#cbeaf6; --world-border:#87bdd4;
+  --world-heading:#174d68; --world-muted:#426578; --world-action:#136a94;
+  --world-action-end:#137d83; --world-shell:#f0fbff;
+  --world-night-surface:#1e334b; --world-night-raised:#28465e; --world-night-border:#668eae;
+  --world-night-heading:#eafbff; --world-night-muted:#b4d4e7; --world-night-accent:#90d9f2;
+  --world-night-shell:#17273b;
+  --world-cursor:url('/assets/v6.5.2/ui/cursors/creature.svg') 5 4, auto;
+  --world-cursor-hover:url('/assets/v6.5.2/ui/cursors/creature-hover.svg') 5 4, pointer;
+}
+:root[data-adventure-theme] {
+  --home-accent:var(--world-action); --home-heading:var(--world-heading);
+  --home-muted:var(--world-muted); --home-border:var(--world-border);
+  --home-raised:var(--world-raised); --home-control:var(--world-raised);
+}
+:root.dark[data-adventure-theme] {
+  --world-surface:var(--world-night-surface); --world-raised:var(--world-night-raised);
+  --world-border:var(--world-night-border); --world-heading:var(--world-night-heading);
+  --world-muted:var(--world-night-muted); --world-shell:var(--world-night-shell);
+  --home-accent:var(--world-night-accent);
+}
+:root[data-adventure-theme] :is(.v4-shell,.v4-secondary-shell,.v4-dashboard-grid) {
+  --home-heading:var(--world-heading); --home-muted:var(--world-muted);
+  --home-accent:var(--world-action); --home-border:var(--world-border);
+  --home-raised:var(--world-raised); --home-control:var(--world-raised);
+}
+:root.dark[data-adventure-theme] :is(.v4-shell,.v4-secondary-shell,.v4-dashboard-grid) {
+  --home-accent:var(--world-night-accent);
+  --night-surface:var(--world-surface); --night-raised:var(--world-raised);
+  --night-control:var(--world-raised); --night-border:var(--world-border);
+}
+:root[data-adventure-theme] :is(.v4-shell:not([class*='has-room-']):not([class*='has-card-']),.v4-secondary-shell) {
+  background-color:var(--world-shell);
+  background-image:var(--v64-theme-shell-pattern),linear-gradient(var(--world-shell),var(--world-shell));
+}
+/* These are card shells, not image masks, reward icons or round avatar frames. */
+:root[data-adventure-theme] :is(.v4-panel,.v4-shop-card,.v4-week-strip,.v4-report-player,.v4-history-panel,.v4-settings-card,.v4-player-card,.v4-lesson-card,.v5-semester-overview,.v5-weekly-progress-lane,.v4-progress-inner,.v4-ai-companion,.v4-daily-progress,.v4-treasure-chest,.v6-shop-preview) {
+  border-radius:24px !important;
+  clip-path:none !important;
+  border-color:var(--world-border) !important;
+  background:var(--world-surface) !important;
+  color:var(--world-heading);
+  box-shadow:0 6px 20px color-mix(in srgb,var(--world-action) 9%,transparent);
+}
+:root[data-adventure-theme] :is(.v4-player-card,.v4-lesson-card,.v5-weekly-progress-lane,.v4-daily-progress) {
+  border-radius:22px !important;
+  background:var(--world-raised) !important;
+}
+:root[data-adventure-theme] :is(.v4-panel-title h2,.v4-player-copy h3,.v4-shop-card h3,.v5-lesson-card-header) { color:var(--world-heading) !important; }
+:root[data-adventure-theme] :is(.v4-panel-title>div>span,.v4-text-action) { color:var(--home-accent); }
+:root[data-adventure-theme] :is(.v64-home-primary-cta,.v4-lesson-card button:not(:disabled)) {
+  background:linear-gradient(135deg,var(--world-action),var(--world-action-end)) !important;
+  color:#fff !important; border-color:var(--world-action) !important;
+  border-radius:22px; clip-path:none; transform:none;
+}
+:root[data-adventure-theme] .v4-main-navigation button.active {
+  background:var(--world-raised) !important; color:var(--world-heading) !important; border-color:var(--world-border) !important;
+}
+
+/* Override the historical cursor:none. The OS renders these 40px vector cursors
+   at hotspot (5,4), with real native arrow/hand fallbacks and no follow element. */
+html,body { cursor:auto !important; }
+button,a,[role='button'],[role='tab'],summary { cursor:pointer !important; }
+@media (hover:hover) and (pointer:fine) {
+  :root[data-theme-pointer='true'] body { cursor:var(--world-cursor) !important; }
+  :root[data-theme-pointer='true'] :is(button,a,[role='button'],[role='tab'],summary) { cursor:var(--world-cursor-hover) !important; }
+}
+:root :is([role='dialog'],.v4-quest-shell,.v4-pin-pad,.v4-settings-page) { cursor:auto !important; }
+:root :is([role='dialog'],.v4-quest-shell,.v4-pin-pad,.v4-settings-page) :is(button,a,[role='button'],summary) { cursor:pointer !important; }
+:root input,:root textarea,:root [contenteditable='true'] { cursor:text !important; }
+:root select,:root input:is([type='checkbox'],[type='radio'],[type='range'],[type='color']) { cursor:default !important; }
+:root button:disabled,:root [aria-disabled='true'] { cursor:not-allowed !important; }
+
+.v652-theme-click-layer { position:fixed; inset:0; z-index:10030; pointer-events:none; overflow:hidden; }
+.v652-theme-click {
+  position:absolute; width:64px; height:64px; margin:-32px 0 0 -32px;
+  pointer-events:none; background:center/contain no-repeat url('/assets/v6.5.2/ui/cursors/hero-click.svg');
+  animation:v652ThemeClick 480ms cubic-bezier(.18,.7,.25,1) both;
+}
+.v652-theme-click[data-theme='mecha'] { background-image:url('/assets/v6.5.2/ui/cursors/mecha-click.svg'); }
+.v652-theme-click[data-theme='racing'] { background-image:url('/assets/v6.5.2/ui/cursors/racing-click.svg'); }
+.v652-theme-click[data-theme='tank'] { background-image:url('/assets/v6.5.2/ui/cursors/tank-click.svg'); }
+.v652-theme-click[data-theme='creature'] { background-image:url('/assets/v6.5.2/ui/cursors/creature-click.svg'); }
+@keyframes v652ThemeClick {
+  0% { transform:scale(.35); opacity:.9; }
+  25% { opacity:.85; }
+  100% { transform:scale(1.12); opacity:0; }
+}
+@media (pointer:coarse), (hover:none), (prefers-reduced-motion:reduce) {
+  .v652-theme-click-layer { display:none !important; }
+}
+:root[data-motion-effects='false'] .v652-theme-click-layer,
+:root[data-cursor-effects='false'] .v652-theme-click-layer { display:none !important; }
+
+/* The legacy dashboard column frame and navigation also follow the world. */
+:root[data-adventure-theme] .v4-dashboard-grid > :is(.v4-left-column,.v4-center-column,.v4-right-column) {
+  background:var(--world-raised) !important;
+  border-color:var(--world-border) !important;
+  border-radius:24px !important;
+  clip-path:none !important;
+  box-shadow:0 8px 24px color-mix(in srgb,var(--world-action) 12%,transparent) !important;
+}
+:root[data-adventure-theme] .v4-main-navigation {
+  background:linear-gradient(120deg,var(--world-action),var(--world-action-end)) !important;
+  border-color:var(--world-border) !important;
+}
+:root[data-adventure-theme] .v4-daily-panel .v652-mission-brief {
+  background:linear-gradient(130deg,color-mix(in srgb,var(--world-action) 70%,#162039),color-mix(in srgb,var(--world-action-end) 68%,#162039)) !important;
+  border-color:var(--world-border) !important;
+  border-radius:22px;
+}
+:root[data-adventure-theme] .v6-player-roster-meta { color:var(--world-muted) !important; }
+:root[data-theme-pointer] button:disabled,
+:root[data-theme-pointer] [aria-disabled='true'] { cursor:not-allowed !important; }
+@media (pointer:coarse), (hover:none) {
+  :root[data-theme-pointer] body { cursor:auto !important; }
+}
+:root[data-adventure-theme] :is(.v65-home-display-selector,.v64-overview-disclosure,.v5-evolution-lane) {
+  border-radius:22px !important; clip-path:none !important;
+  background:var(--world-surface) !important; border-color:var(--world-border) !important;
+}
+:root[data-adventure-theme] .v6-player-roster-meta span { color:var(--world-muted) !important; }
+:root[data-adventure-theme] .v4-shop-grid > article {
+  border-radius:22px !important; clip-path:none !important;
+  background:var(--world-raised) !important; border-color:var(--world-border) !important;
+}
+:root[data-adventure-theme] .v4-shop-grid > article h3 { color:var(--world-heading) !important; }
+:root[data-adventure-theme] .v4-shop-grid > article :is(p,small) { color:var(--world-muted) !important; }
+:root[data-adventure-theme] .v4-shop-grid > article.previewing { border-color:var(--home-accent) !important; box-shadow:0 0 0 2px var(--home-accent); }
+:root[data-adventure-theme] .v4-shop-grid > article button:not(:disabled):not(.v6-preview-button) {
+  background:linear-gradient(135deg,var(--world-action),var(--world-action-end)) !important;
+  color:#fff !important; border-color:var(--world-action) !important;
+}
+:root[data-adventure-theme] .v65-mini-preview-content > div:last-child strong { color:var(--world-heading) !important; }
+:root[data-adventure-theme] .v65-mini-preview-content > div:last-child span { color:var(--world-muted) !important; }
+:root[data-adventure-theme] .v4-shop-grid > article .v6-preview-button:not(:disabled) {
+  background:var(--world-surface) !important; color:var(--world-heading) !important;
+  border-color:var(--world-border) !important;
+}

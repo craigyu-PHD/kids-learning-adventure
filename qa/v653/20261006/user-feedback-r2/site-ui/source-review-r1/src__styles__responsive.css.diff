@@ -1,0 +1,13 @@
+--- published-r6/src/styles/responsive.css
++++ feedback/src/styles/responsive.css
+@@ -310,8 +310,8 @@
+ .v4-stage-map button small { font-size:var(--lesson-nav-label-size,12px) !important; font-weight:800 !important; }
+ .v4-stage-map button.done>span { background:var(--lesson-done-bg,#20C968) !important; }
+ .v4-stage-map button.active { background:var(--lesson-active-bg,linear-gradient(160deg,#EAFBFF,#E9E4FF)) !important; border-color:var(--lesson-active-border,#0866D5) !important; box-shadow:0 0 0 3px rgba(16,188,235,.16),0 10px 18px rgba(71,72,214,.15) !important; }
+-.v4-repeat-hero button,.v4-quest-controls button.primary { min-height:54px !important; border-radius:18px !important; padding-inline:21px !important; font-size:var(--lesson-action-size,16px) !important; box-shadow:0 8px 0 color-mix(in srgb,var(--v4-theme-accent-2) 55%,#063A86),0 13px 22px rgba(7,91,199,.18) !important; }
+-.v4-repeat-hero button:active,.v4-quest-controls button.primary:active { transform:translateY(3px); box-shadow:0 4px 0 color-mix(in srgb,var(--v4-theme-accent-2) 55%,#063A86),0 7px 12px rgba(7,91,199,.14) !important; }
++.v4-repeat-hero button,.v4-quest-controls button.primary { min-height:54px !important; border-radius:18px !important; padding-inline:21px !important; font-size:var(--lesson-action-size,16px) !important; box-shadow:0 4px 12px rgba(7,91,199,.15) !important; }
++.v4-repeat-hero button:active,.v4-quest-controls button.primary:active { transform:translateY(1px); box-shadow:0 2px 7px rgba(7,91,199,.12) !important; }
+ @media (max-width:760px) { .v4-stage-map button { min-height:74px !important; } .v4-stage-map button small { font-size:var(--lesson-small-size,11px) !important; } }
+ 
+ /* ── Family-scale dashboard ───────────────────────────────────────────────

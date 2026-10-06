@@ -1,0 +1,7 @@
+{
+  "status": "READ_TREE_HOOK_METADATA_TIMEOUT_NOT_STAGED",
+  "command": "git read-tree exact base with alternate index",
+  "originalIndexUnchanged": true,
+  "refAndIndexHookMetadataUnavailable": true,
+  "methodContinued": "Native hash-object/mktree/commit-tree objects; remote Git receive-pack; no hooks disabled"
+}

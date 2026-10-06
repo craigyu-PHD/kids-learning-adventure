@@ -9,3 +9,19 @@ dist/
 !.env.example
 AGENTS.md
 _BACKUPS/
+
+# 本機開發與素材原件；正式 public 與精選 QA 使用明確清單入 Git
+__pycache__/
+*.py[cod]
+*.blend
+*.blend1
+art-source/**/*.png
+art-source/**/*.wav
+qa/**/*.png
+qa/**/*.webp
+qa/**/*.wav
+qa/**/*.mp4
+qa/**/*.mov
+# 收工後產生的本機收據不參與已發布基線的自我引用
+qa/v653/20261006/closeout/git-checkpoint-receipt.json
+qa/v653/20261006/closeout/收工報告.md

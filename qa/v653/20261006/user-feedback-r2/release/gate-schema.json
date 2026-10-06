@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Feedback release index v1 (semantic checks are in Python gate)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "kind",
+    "sourcePins",
+    "baselineAvatarManifest",
+    "toolPins",
+    "publicPins",
+    "unpublishedLocalFiles",
+    "sourceReviews",
+    "assetLineage",
+    "build",
+    "evidence",
+    "audio",
+    "strict",
+    "performance",
+    "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "kind": {
+      "const": "little-explorers-feedback-release"
+    },
+    "sourcePins": {
+      "$ref": "#/$defs/ref"
+    },
+    "baselineAvatarManifest": {
+      "$ref": "#/$defs/ref"
+    },
+    "toolPins": {
+      "$ref": "#/$defs/ref"
+    },
+    "publicPins": {
+      "$ref": "#/$defs/ref"
+    },
+    "unpublishedLocalFiles": {
+      "$ref": "#/$defs/ref"
+    },
+    "build": {
+      "$ref": "#/$defs/ref"
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "headwearFit",
+        "headwearVisual",
+        "headwearWorkflow",
+        "shopRegression",
+        "headwearNegative",
+        "lessonRuntime",
+        "lessonVisual",
+        "lessonFlow",
+        "siteCTA",
+        "siteNavigation",
+        "companion",
+        "siteVisual",
+        "voiceBrowser",
+        "core"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "headwearFit": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "headwearVisual": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "headwearWorkflow": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "shopRegression": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "headwearNegative": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "lessonRuntime": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "lessonVisual": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "lessonFlow": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "siteCTA": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "siteNavigation": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "companion": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "siteVisual": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "voiceBrowser": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "core": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "assertion": {
+      "type": "object",
+      "required": [
+        "ref",
+        "pointer",
+        "equals"
+      ],
+      "properties": {
+        "ref": {
+          "$ref": "#/$defs/ref"
+        },
+        "pointer": {
+          "type": "string"
+        },
+        "equals": {}
+      }
+    }
+  }
+}

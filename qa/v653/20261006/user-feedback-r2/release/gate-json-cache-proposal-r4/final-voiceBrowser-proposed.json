@@ -1,0 +1,302 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "voiceBrowser report fresh",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser timestamp",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"no-preload\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"no-preload\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"no-preload\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"no-preload\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"lesson-slow-ended\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"lesson-slow-ended\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"lesson-slow-ended\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"lesson-slow-ended\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"rapid-replay\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"rapid-replay\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"rapid-replay\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"rapid-replay\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"stage-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"stage-cancel\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"stage-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"stage-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"route-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"route-cancel\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"route-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"route-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"404-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"404-fallback\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"404-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"404-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"rejected-play-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"rejected-play-fallback\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"rejected-play-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"rejected-play-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"delayed-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"delayed-fallback\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"delayed-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"delayed-fallback\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"pagehide-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"pagehide-cancel\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"pagehide-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"pagehide-cancel\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"settings-slow\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"settings-slow\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"settings-slow\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"settings-slow\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser unique observation {\"case\": \"settings-normal\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser raw identity {\"case\": \"settings-normal\"} case",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser check coverage {\"case\": \"settings-normal\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser asserted passed {\"case\": \"settings-normal\"}",
+      "pass": true
+    },
+    {
+      "check": "voiceBrowser exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

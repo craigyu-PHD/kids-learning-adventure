@@ -5,7 +5,7 @@ import { familyIdFromPin, issueFamilySession, verifyFamilySessionToken } from '.
 import familySessionApi from '../api/family-session';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
-const QA = path.join(ROOT, '.qa');
+const QA = path.resolve(process.env.LITTLE_EXPLORERS_QA_OUTPUT_DIR ?? path.join(ROOT, '.qa'));
 fs.mkdirSync(QA, { recursive: true });
 process.env.FAMILY_PIN_PEPPER = 'v40-family-auth-qa-pepper-32-bytes-minimum';
 

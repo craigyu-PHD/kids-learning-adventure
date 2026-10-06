@@ -1,0 +1,2637 @@
+{
+  "status": "PASS_SELECTED_SCOPE_PENDING_VISUAL",
+  "candidateId": "feedback-r2-a7960962-final-r5",
+  "phase": "matrix",
+  "catalogCount": 64,
+  "fullMatrixCount": 1024,
+  "selectedMatrixCount": 128,
+  "plannedCases": 1,
+  "shardCount": 1024,
+  "shardIndex": 936,
+  "plannedOriginalMatrixIndices": [
+    936
+  ],
+  "freshCasesOnly": true,
+  "cases": [
+    {
+      "item": {
+        "id": "ship-scout",
+        "slot": "spaceship",
+        "name": "藍翼偵察艇"
+      },
+      "avatar": "sister",
+      "profile": {
+        "id": "mobile-dark",
+        "width": 390,
+        "height": 844,
+        "theme": "dark"
+      },
+      "originalMatrixIndex": 936,
+      "index": 0,
+      "compiled": {
+        "footer": "Version V6.5.3 · Updated 2026-10-06",
+        "scriptURLs": [
+          "http://127.0.0.1:5196/assets/index-DkO6mlaB.js"
+        ],
+        "manifestOverrides": false,
+        "cssOverrides": false
+      },
+      "ledgerBefore": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "ship-scout"
+        ],
+        "equippedCosmetics": [],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-ship-scout",
+            "childId": "child-1",
+            "itemId": "ship-scout",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "catalog": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/spaceship/ship-scout.webp",
+              "cls": "",
+              "visible": true,
+              "width": 1536,
+              "height": 1024,
+              "rect": {
+                "x": 37,
+                "y": 738.984375,
+                "width": 143,
+                "height": 105,
+                "top": 738.984375,
+                "right": 180,
+                "bottom": 843.984375,
+                "left": 37
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/spaceship/ship-scout.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "domNatural": [
+              1536,
+              1024
+            ],
+            "pinnedFileSize": [
+              1536,
+              1024
+            ],
+            "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "http": {
+              "status": 200,
+              "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+              "bytes": 1079894
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "status": 200,
+            "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "bytes": 1079894,
+            "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/shop-catalog-actual-size.png",
+        "screenshotSHA256": "b5deccc1b31902537bb4c30496ab7726ea38b427f7bdacad9615200f55397069",
+        "rect": {
+          "x": 37,
+          "y": 738.984375,
+          "width": 143,
+          "height": 105
+        }
+      },
+      "trial": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/spaceship/ship-scout.webp",
+              "cls": "v63-ship-art",
+              "visible": true,
+              "width": 1536,
+              "height": 1024,
+              "rect": {
+                "x": 48.71875,
+                "y": 117.578125,
+                "width": 292.546875,
+                "height": 160,
+                "top": 117.578125,
+                "right": 341.265625,
+                "bottom": 277.578125,
+                "left": 48.71875
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 53.5625,
+                "y": 305.28125,
+                "width": 46.84375,
+                "height": 70.28125,
+                "top": 305.28125,
+                "right": 100.40625,
+                "bottom": 375.5625,
+                "left": 53.5625
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "domNatural": [
+              1536,
+              1024
+            ],
+            "pinnedFileSize": [
+              1536,
+              1024
+            ],
+            "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "http": {
+              "status": 200,
+              "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+              "bytes": 1079894
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          },
+          {
+            "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "status": 200,
+            "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "bytes": 1079894,
+            "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/shop-trial.png",
+        "screenshotSHA256": "7fa4dbd3ec98ca61b0482dc4a2251cbc270693cc96e9c05af3f719f18d0ccfb1",
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 430
+        }
+      },
+      "cancelPreservesProgress": true,
+      "ledgerAfterEquip": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "ship-scout"
+        ],
+        "equippedCosmetics": [
+          "ship-scout"
+        ],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-ship-scout",
+            "childId": "child-1",
+            "itemId": "ship-scout",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [
+          {
+            "id": "avatar-equip:child-1:ship-scout:d21fa314-0a2e-4464-8a85-a446bd9fb765",
+            "childId": "child-1",
+            "itemId": "ship-scout",
+            "slot": "spaceship",
+            "action": "equip",
+            "createdAt": "2026-10-06T04:59:00.027Z"
+          }
+        ],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "equipped": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/spaceship/ship-scout.webp",
+              "cls": "v63-ship-art",
+              "visible": true,
+              "width": 1536,
+              "height": 1024,
+              "rect": {
+                "x": 48.71875,
+                "y": 117.578125,
+                "width": 292.546875,
+                "height": 160,
+                "top": 117.578125,
+                "right": 341.265625,
+                "bottom": 277.578125,
+                "left": 48.71875
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 53.5625,
+                "y": 305.28125,
+                "width": 46.84375,
+                "height": 70.28125,
+                "top": 305.28125,
+                "right": 100.40625,
+                "bottom": 375.5625,
+                "left": 53.5625
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "domNatural": [
+              1536,
+              1024
+            ],
+            "pinnedFileSize": [
+              1536,
+              1024
+            ],
+            "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "http": {
+              "status": 200,
+              "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+              "bytes": 1079894
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          },
+          {
+            "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "status": 200,
+            "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "bytes": 1079894,
+            "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/shop-equipped.png",
+        "screenshotSHA256": "a4f0fcab9cf56fa1327d41a12a6a09d745d094c27a1ce622ab240d0cb5bafabe",
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 430
+        }
+      },
+      "home": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 810.203125,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 810.203125,
+                "right": 111.703125,
+                "bottom": 887.34375,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-player.png",
+        "screenshotSHA256": "d95105543e5428099b6016bd50f2bfcc481072921b89d6befc2a34e2d0912b85",
+        "rect": {
+          "x": 32,
+          "y": 729.359375,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 406.359375,
+            "width": 90,
+            "height": 90,
+            "top": 406.359375,
+            "right": 131,
+            "bottom": 496.359375,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 419.203125,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 419.203125,
+            "right": 111.703125,
+            "bottom": 496.34375,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 419.20703125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              42,
+              5,
+              149,
+              278
+            ],
+            "paintedAlphaWidth": 28.656982421875,
+            "paintedAlphaHeight": 73.115478515625,
+            "normalizedBottom": 0.9652777777777778,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "http": {
+                "status": 200,
+                "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+                "bytes": 31708
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "equipped": {
+          "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 738.359375,
+            "width": 90,
+            "height": 90,
+            "top": 738.359375,
+            "right": 131,
+            "bottom": 828.359375,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 751.203125,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 751.203125,
+            "right": 111.703125,
+            "bottom": 828.34375,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 751.20703125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              42,
+              5,
+              149,
+              278
+            ],
+            "paintedAlphaWidth": 28.656982421875,
+            "paintedAlphaHeight": 73.115478515625,
+            "normalizedBottom": 0.9652777777777778,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "http": {
+                "status": 200,
+                "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+                "bytes": 31708
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "homeWorld": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+              "cls": "v5-rocket-flyby v6-equipped-header-ship",
+              "visible": true,
+              "width": 384,
+              "height": 256,
+              "rect": {
+                "x": 7.857882499694824,
+                "y": -0.14211654663085938,
+                "width": 72.28424072265625,
+                "height": 72.28424072265625,
+                "top": -0.14211654663085938,
+                "right": 80.14212322235107,
+                "bottom": 72.14212417602539,
+                "left": 7.857882499694824
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/spaceship/ship-scout-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "domNatural": [
+              384,
+              256
+            ],
+            "pinnedFileSize": [
+              384,
+              256
+            ],
+            "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+            "http": {
+              "status": 200,
+              "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+              "bytes": 86460
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "status": 200,
+            "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+            "bytes": 86460,
+            "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-world-inline.png",
+        "screenshotSHA256": "b9a2a7cd466771c26457b6b4242485def6eb5d72a3090a4230100894337f46e7",
+        "rect": {
+          "x": 7.857882499694824,
+          "y": -0.14211654663085938,
+          "width": 72.2842378616333,
+          "height": 72.28423690795898
+        }
+      },
+      "homeReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 810.203125,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 810.203125,
+                "right": 111.703125,
+                "bottom": 887.34375,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-reload.png",
+        "screenshotSHA256": "b3d2432a1e3098aa160dc77dac4225f46e1b625f8837aa4b2790ec4b2659a375",
+        "rect": {
+          "x": 32,
+          "y": 729.359375,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeWorldReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+              "cls": "v5-rocket-flyby v6-equipped-header-ship",
+              "visible": true,
+              "width": 384,
+              "height": 256,
+              "rect": {
+                "x": 7.857882499694824,
+                "y": -0.14211654663085938,
+                "width": 72.28424072265625,
+                "height": 72.28424072265625,
+                "top": -0.14211654663085938,
+                "right": 80.14212322235107,
+                "bottom": 72.14212417602539,
+                "left": 7.857882499694824
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/spaceship/ship-scout-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "domNatural": [
+              384,
+              256
+            ],
+            "pinnedFileSize": [
+              384,
+              256
+            ],
+            "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+            "http": {
+              "status": 200,
+              "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+              "bytes": 86460
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "status": 200,
+            "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+            "bytes": 86460,
+            "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-world-reload.png",
+        "screenshotSHA256": "b9a2a7cd466771c26457b6b4242485def6eb5d72a3090a4230100894337f46e7",
+        "rect": {
+          "x": 7.857882499694824,
+          "y": -0.14211654663085938,
+          "width": 72.2842378616333,
+          "height": 72.28423690795898
+        }
+      },
+      "achievement": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 54.28125,
+                "y": 479.625,
+                "width": 59.421875,
+                "height": 89.140625,
+                "top": 479.625,
+                "right": 113.703125,
+                "bottom": 568.765625,
+                "left": 54.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/achievements-avatar.png",
+        "screenshotSHA256": "addbe44bb320fccd23c0445f6894a00f7490755fa70f567c4aa321e06af768c4",
+        "rect": {
+          "x": 32,
+          "y": 464.78125,
+          "width": 104,
+          "height": 104
+        }
+      },
+      "exactCandidatePaths": {
+        "trial": [
+          "/assets/v6.4/world/spaceship/ship-scout.webp"
+        ],
+        "homeWorld": [
+          "/assets/v6.4/world-display/spaceship/ship-scout-384.webp"
+        ],
+        "homeWorldReload": [
+          "/assets/v6.4/world-display/spaceship/ship-scout-384.webp"
+        ]
+      },
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "equipmentTransactions": [
+        {
+          "id": "avatar-equip:child-1:ship-scout:d21fa314-0a2e-4464-8a85-a446bd9fb765",
+          "childId": "child-1",
+          "itemId": "ship-scout",
+          "slot": "spaceship",
+          "action": "equip",
+          "createdAt": "2026-10-06T04:59:00.027Z"
+        },
+        {
+          "id": "avatar-equip:child-1:ship-scout:4ef412e1-b85f-4dac-b49f-1634920fb9ac",
+          "childId": "child-1",
+          "itemId": "ship-scout",
+          "slot": "spaceship",
+          "action": "unequip",
+          "createdAt": "2026-10-06T04:59:02.593Z"
+        }
+      ],
+      "ledgerScope": "one synthetic cost-zero owned item; actual UI equip + unequip append-only; no real purchase assertion",
+      "visualReview": "NOT_PERFORMED",
+      "contextClosed": true
+    }
+  ],
+  "controls": [],
+  "fallback": [],
+  "browserClosed": true,
+  "visualReview": "NOT_PERFORMED",
+  "scope": "Synthetic preowned cost-zero fixture; real trial/cancel/equip/home/reload/achievement/unequip; no real purchase, cloud auth, or earned rewards",
+  "negativeScope": "Missing asset fail-close plus exact browser byte admission; swapped/stale/wrong-role rejection belongs to QA, not runtime authenticity enforcement",
+  "runnerSHA256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "id": "desktop-light",
+      "width": 1440,
+      "height": 1050,
+      "theme": "light"
+    },
+    {
+      "id": "desktop-dark",
+      "width": 1440,
+      "height": 1050,
+      "theme": "dark"
+    },
+    {
+      "id": "mobile-light",
+      "width": 390,
+      "height": 844,
+      "theme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "theme": "dark"
+    }
+  ],
+  "roles": [
+    "brother",
+    "younger",
+    "sister",
+    "younger-sister"
+  ],
+  "items": [
+    "ship-scout",
+    "ship-comet",
+    "ship-legend",
+    "room-starlab",
+    "room-ocean",
+    "room-legend",
+    "robot-sky",
+    "robot-mecha"
+  ],
+  "noExtraDecode": true,
+  "sourcePinsSHA256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+  "artifactPinsSHA256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+  "manifestPins": {
+    "avatar": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "world": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "harnessDependencies": {
+    "scripts/qa_v653_full_shop_acceptance.py": "2cc9a9758c2f62c3c4cd04c37c89a63beb8e7793460f205bcd8492e6aaee064f",
+    "scripts/qa_v653_release_smoke.py": "cf12df2f42db0c28c0c8f6c0255cb4fa202318a0219a0549c6103d06526d06d9",
+    "scripts/qa_v653_shop_coverage.py": "338e0a268e615f72a3b24bdcb7bab982b67f9835543b7c9359ef11cb9a0d23ee"
+  },
+  "preservedRunnerDependencies": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run.py": "6454034c5f095c10cdae43b91b00e2b95b0833d626264d8c562905b696cd2888"
+  },
+  "densityCorrection": "width srcset: descriptor equals physical width; positive density-corrected DOM and <=1px aspect tolerance; no decode",
+  "compiledDocuments": {
+    "/": {
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "bytes": 988,
+      "status": 200
+    }
+  },
+  "compiledAssets": {
+    "/assets/index-KC1rU43V.css": {
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "bytes": 493690,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-KC1rU43V.css"
+    },
+    "/assets/index-DkO6mlaB.js": {
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "bytes": 1434192,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-DkO6mlaB.js"
+    },
+    "/assets/SecondaryViews-Bd69SkOV.js": {
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "bytes": 43717,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-Bd69SkOV.js"
+    },
+    "/assets/x-CwjU7BFr.js": {
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "bytes": 143,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/x-CwjU7BFr.js"
+    },
+    "/assets/learningAnalytics-BiVMp2Ug.js": {
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "bytes": 2617,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/learningAnalytics-BiVMp2Ug.js"
+    },
+    "/assets/SecondaryViews-aPwGWhRg.css": {
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "bytes": 30904,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-aPwGWhRg.css"
+    }
+  },
+  "networkErrors": [],
+  "sourceRequests": [],
+  "servedAssets": {
+    "/assets/v6.4/world/spaceship/ship-scout.webp": {
+      "status": 200,
+      "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+      "bytes": 1079894,
+      "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+    },
+    "/assets/v6.4/avatar-display/sister/base-body-192.webp": {
+      "status": 200,
+      "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+      "bytes": 31708,
+      "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+    },
+    "/assets/v6.4/world-display/spaceship/ship-scout-384.webp": {
+      "status": 200,
+      "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+      "bytes": 86460,
+      "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586"
+    }
+  },
+  "apiBlocks": [],
+  "captures": [
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "cls": "",
+            "visible": true,
+            "width": 1536,
+            "height": 1024,
+            "rect": {
+              "x": 37,
+              "y": 738.984375,
+              "width": 143,
+              "height": 105,
+              "top": 738.984375,
+              "right": 180,
+              "bottom": 843.984375,
+              "left": 37
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/spaceship/ship-scout.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "domNatural": [
+            1536,
+            1024
+          ],
+          "pinnedFileSize": [
+            1536,
+            1024
+          ],
+          "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+          "http": {
+            "status": 200,
+            "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "bytes": 1079894
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "status": 200,
+          "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+          "bytes": 1079894,
+          "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/shop-catalog-actual-size.png",
+      "screenshotSHA256": "b5deccc1b31902537bb4c30496ab7726ea38b427f7bdacad9615200f55397069",
+      "rect": {
+        "x": 37,
+        "y": 738.984375,
+        "width": 143,
+        "height": 105
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "cls": "v63-ship-art",
+            "visible": true,
+            "width": 1536,
+            "height": 1024,
+            "rect": {
+              "x": 48.71875,
+              "y": 117.578125,
+              "width": 292.546875,
+              "height": 160,
+              "top": 117.578125,
+              "right": 341.265625,
+              "bottom": 277.578125,
+              "left": 48.71875
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 53.5625,
+              "y": 305.28125,
+              "width": 46.84375,
+              "height": 70.28125,
+              "top": 305.28125,
+              "right": 100.40625,
+              "bottom": 375.5625,
+              "left": 53.5625
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "domNatural": [
+            1536,
+            1024
+          ],
+          "pinnedFileSize": [
+            1536,
+            1024
+          ],
+          "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+          "http": {
+            "status": 200,
+            "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "bytes": 1079894
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        },
+        {
+          "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "status": 200,
+          "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+          "bytes": 1079894,
+          "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/shop-trial.png",
+      "screenshotSHA256": "7fa4dbd3ec98ca61b0482dc4a2251cbc270693cc96e9c05af3f719f18d0ccfb1",
+      "rect": {
+        "x": 26,
+        "y": -0.421875,
+        "width": 338,
+        "height": 430
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/spaceship/ship-scout.webp",
+            "cls": "v63-ship-art",
+            "visible": true,
+            "width": 1536,
+            "height": 1024,
+            "rect": {
+              "x": 48.71875,
+              "y": 117.578125,
+              "width": 292.546875,
+              "height": 160,
+              "top": 117.578125,
+              "right": 341.265625,
+              "bottom": 277.578125,
+              "left": 48.71875
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 53.5625,
+              "y": 305.28125,
+              "width": 46.84375,
+              "height": 70.28125,
+              "top": 305.28125,
+              "right": 100.40625,
+              "bottom": 375.5625,
+              "left": 53.5625
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "domNatural": [
+            1536,
+            1024
+          ],
+          "pinnedFileSize": [
+            1536,
+            1024
+          ],
+          "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+          "http": {
+            "status": 200,
+            "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+            "bytes": 1079894
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        },
+        {
+          "path": "/assets/v6.4/world/spaceship/ship-scout.webp",
+          "status": 200,
+          "sha256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc",
+          "bytes": 1079894,
+          "expectedSHA256": "6e8e4711835b022632a5e395be534df3ccfb1a988c3d1f2145f1d003ae666abc"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/shop-equipped.png",
+      "screenshotSHA256": "a4f0fcab9cf56fa1327d41a12a6a09d745d094c27a1ce622ab240d0cb5bafabe",
+      "rect": {
+        "x": 26,
+        "y": -0.421875,
+        "width": 338,
+        "height": 430
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 810.203125,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 810.203125,
+              "right": 111.703125,
+              "bottom": 887.34375,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-player.png",
+      "screenshotSHA256": "d95105543e5428099b6016bd50f2bfcc481072921b89d6befc2a34e2d0912b85",
+      "rect": {
+        "x": 32,
+        "y": 729.359375,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "cls": "v5-rocket-flyby v6-equipped-header-ship",
+            "visible": true,
+            "width": 384,
+            "height": 256,
+            "rect": {
+              "x": 7.857882499694824,
+              "y": -0.14211654663085938,
+              "width": 72.28424072265625,
+              "height": 72.28424072265625,
+              "top": -0.14211654663085938,
+              "right": 80.14212322235107,
+              "bottom": 72.14212417602539,
+              "left": 7.857882499694824
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/spaceship/ship-scout-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+          "domNatural": [
+            384,
+            256
+          ],
+          "pinnedFileSize": [
+            384,
+            256
+          ],
+          "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+          "http": {
+            "status": 200,
+            "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+            "bytes": 86460
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+          "status": 200,
+          "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+          "bytes": 86460,
+          "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-world-inline.png",
+      "screenshotSHA256": "b9a2a7cd466771c26457b6b4242485def6eb5d72a3090a4230100894337f46e7",
+      "rect": {
+        "x": 7.857882499694824,
+        "y": -0.14211654663085938,
+        "width": 72.2842378616333,
+        "height": 72.28423690795898
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 810.203125,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 810.203125,
+              "right": 111.703125,
+              "bottom": 887.34375,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-reload.png",
+      "screenshotSHA256": "b3d2432a1e3098aa160dc77dac4225f46e1b625f8837aa4b2790ec4b2659a375",
+      "rect": {
+        "x": 32,
+        "y": 729.359375,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "cls": "v5-rocket-flyby v6-equipped-header-ship",
+            "visible": true,
+            "width": 384,
+            "height": 256,
+            "rect": {
+              "x": 7.857882499694824,
+              "y": -0.14211654663085938,
+              "width": 72.28424072265625,
+              "height": 72.28424072265625,
+              "top": -0.14211654663085938,
+              "right": 80.14212322235107,
+              "bottom": 72.14212417602539,
+              "left": 7.857882499694824
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/spaceship/ship-scout-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+          "domNatural": [
+            384,
+            256
+          ],
+          "pinnedFileSize": [
+            384,
+            256
+          ],
+          "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+          "http": {
+            "status": 200,
+            "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+            "bytes": 86460
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+          "status": 200,
+          "sha256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586",
+          "bytes": 86460,
+          "expectedSHA256": "e7c68f44b0f3e11263b7452327c1260b50f34a08b714fc3dffa9d9a36bd01586"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/home-world-reload.png",
+      "screenshotSHA256": "b9a2a7cd466771c26457b6b4242485def6eb5d72a3090a4230100894337f46e7",
+      "rect": {
+        "x": 7.857882499694824,
+        "y": -0.14211654663085938,
+        "width": 72.2842378616333,
+        "height": 72.28423690795898
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 54.28125,
+              "y": 479.625,
+              "width": 59.421875,
+              "height": 89.140625,
+              "top": 479.625,
+              "right": 113.703125,
+              "bottom": 568.765625,
+              "left": 54.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/mobile-dark/sister/ship-scout/achievements-avatar.png",
+      "screenshotSHA256": "addbe44bb320fccd23c0445f6894a00f7490755fa70f567c4aa321e06af768c4",
+      "rect": {
+        "x": 32,
+        "y": 464.78125,
+        "width": 104,
+        "height": 104
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 376.671875,
+          "width": 90,
+          "height": 90,
+          "top": 376.671875,
+          "right": 131,
+          "bottom": 466.671875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 406.359375,
+          "width": 90,
+          "height": 90,
+          "top": 406.359375,
+          "right": 131,
+          "bottom": 496.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 531.03125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 93.609375,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.609375,
+          "right": 344,
+          "bottom": 397.4375,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 37,
+          "y": 738.984375,
+          "width": 143,
+          "height": 105,
+          "top": 738.984375,
+          "right": 180,
+          "bottom": 843.984375,
+          "left": 37
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+            "complete": true,
+            "natural": [
+              1536,
+              1024
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 430,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 429.578125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+            "complete": true,
+            "natural": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 531.03125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 430,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 429.578125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/spaceship/ship-scout.webp",
+            "complete": true,
+            "natural": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.671875,
+          "width": 260,
+          "height": 115,
+          "top": 728.671875,
+          "right": 292,
+          "bottom": 843.671875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 738.359375,
+          "width": 90,
+          "height": 90,
+          "top": 738.359375,
+          "right": 131,
+          "bottom": 828.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 7.857882499694824,
+          "y": -0.14211654663085938,
+          "width": 72.28424072265625,
+          "height": 72.28424072265625,
+          "top": -0.14211654663085938,
+          "right": 80.14212322235107,
+          "bottom": 72.14212417602539,
+          "left": 7.857882499694824
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              256
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.671875,
+          "width": 260,
+          "height": 115,
+          "top": 728.671875,
+          "right": 292,
+          "bottom": 843.671875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 7.857882499694824,
+          "y": -0.14211654663085938,
+          "width": 72.28424072265625,
+          "height": 72.28424072265625,
+          "top": -0.14211654663085938,
+          "right": 80.14212322235107,
+          "bottom": 72.14212417602539,
+          "left": 7.857882499694824
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/spaceship/ship-scout-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              256
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 464.78125,
+          "width": 104,
+          "height": 104,
+          "top": 464.78125,
+          "right": 136,
+          "bottom": 568.78125,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "ship-scout",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.671875,
+          "width": 90,
+          "height": 90,
+          "top": 753.671875,
+          "right": 131,
+          "bottom": 843.671875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 754.359375,
+          "width": 90,
+          "height": 90,
+          "top": 754.359375,
+          "right": 131,
+          "bottom": 844.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    }
+  ]
+}

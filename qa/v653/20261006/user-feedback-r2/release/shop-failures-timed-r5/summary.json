@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-06T04:59:10.348041+00:00",
+  "originalJobs": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/runtime-jobs-r5-shop/jobs.json",
+    "sha256": "f418d863c9ccb050c6a623420f990a65e0b4010f9f554612768726dff9114729"
+  },
+  "maxWorkers": 2,
+  "results": [
+    {
+      "originalMatrixIndex": 400,
+      "exitCode": 0,
+      "process": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-400/process-receipt.json",
+        "sha256": "72b5a5e98727e3c84ea10f717bb33b152d600ef8f8ef0270b3ce9afdd683002b"
+      },
+      "timing": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-400/timing-receipt.json",
+        "sha256": "42db03fd5d04847851bb392c90de03e70c4318991a99961c9c4aa9ecd46acc22"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/report.json",
+        "sha256": "a5cb12edb9a56439ccebbb7cfb16095823dfcc4c94be24d72a6ce0e8c5bd3ded"
+      },
+      "caseStatuses": [
+        {
+          "originalMatrixIndex": 400,
+          "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+          "error": null
+        }
+      ],
+      "browserClosed": true
+    },
+    {
+      "originalMatrixIndex": 750,
+      "exitCode": 0,
+      "process": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-750/process-receipt.json",
+        "sha256": "023e283695a3d8c642f039f813f3dd8c2892ece3d49886970ed3c79fdb41e926"
+      },
+      "timing": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-750/timing-receipt.json",
+        "sha256": "2ada4787a11be527c677fa2871369b5dd354389b73bd25733723e94dcdac4d11"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry750-timed/report.json",
+        "sha256": "72f5d0da16e40b27a25500ad41b472206232e3bdfb80abadbdb39568acd437ea"
+      },
+      "caseStatuses": [
+        {
+          "originalMatrixIndex": 750,
+          "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+          "error": null
+        }
+      ],
+      "browserClosed": true
+    },
+    {
+      "originalMatrixIndex": 936,
+      "exitCode": 0,
+      "process": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-936/process-receipt.json",
+        "sha256": "5eee72e5b04183602c198e50e57a16d73d68386916c8cc5bbd8020b48d897e9d"
+      },
+      "timing": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-936/timing-receipt.json",
+        "sha256": "e63b5d5c7467a616404112a6d4415bc6d4cf902a021a7a7f84f7735fd89a93d3"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry936-timed/report.json",
+        "sha256": "6a8b3f4e79b33d431a48567cd649944f585575d64f600487d0eebee247645d07"
+      },
+      "caseStatuses": [
+        {
+          "originalMatrixIndex": 936,
+          "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+          "error": null
+        }
+      ],
+      "browserClosed": true
+    },
+    {
+      "originalMatrixIndex": 1007,
+      "exitCode": 0,
+      "process": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-1007/process-receipt.json",
+        "sha256": "2701eb89b215c1e7a1f09436876135e6aad03e00e5600bd5e7cabf8226b14b01"
+      },
+      "timing": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-1007/timing-receipt.json",
+        "sha256": "238dcb1f8d2149e43dfe1886e4e441c240c67c1c4d57b98f88b96e15daff83aa"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/report.json",
+        "sha256": "634879871340d57e47b2ee5f5084cc41fbdb77135b0ed87a78c02883bdb2facf"
+      },
+      "caseStatuses": [
+        {
+          "originalMatrixIndex": 1007,
+          "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+          "error": null
+        }
+      ],
+      "browserClosed": true
+    },
+    {
+      "originalMatrixIndex": 631,
+      "exitCode": 0,
+      "process": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-631/process-receipt.json",
+        "sha256": "d6441f52411d75167e69276496ca917e11464c8f73104b681a766c0ec5ed32bb"
+      },
+      "timing": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-631/timing-receipt.json",
+        "sha256": "0cd66d81830baf74ffd1173a45baee3841d622619cb0bed88c5aa3268999278c"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/report.json",
+        "sha256": "17fc381d894f96608662a135650b595227f836dad6d716de59a76219d9afd36a"
+      },
+      "caseStatuses": [
+        {
+          "originalMatrixIndex": 631,
+          "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+          "error": null
+        }
+      ],
+      "browserClosed": true
+    },
+    {
+      "originalMatrixIndex": 818,
+      "exitCode": 0,
+      "process": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-818/process-receipt.json",
+        "sha256": "2d156f9768ea51a8bd5281281921f8c8e95753f7594f2e7b38146a9c7e724dee"
+      },
+      "timing": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-818/timing-receipt.json",
+        "sha256": "4507e64d9b969a0988c63d1737f5acabad095adbe1faa71ab2e1b762104a8f90"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry818-timed/report.json",
+        "sha256": "1a2d39515deef676e8ee87e843b583642c5aa80f50a79eee443fb2f1ce9722ee"
+      },
+      "caseStatuses": [
+        {
+          "originalMatrixIndex": 818,
+          "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+          "error": null
+        }
+      ],
+      "browserClosed": true
+    }
+  ],
+  "browserClosed": true,
+  "noProductRunnerAssertionChanges": true
+}

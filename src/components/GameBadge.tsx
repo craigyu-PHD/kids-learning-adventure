@@ -1,11 +1,12 @@
 import { badgeById, type BadgeDefinition } from '../badges';
 
-export default function GameBadge({ badge, unlocked = false, earnedDate, size = 96, label = true }: {
+export default function GameBadge({ badge, unlocked = false, earnedDate, size = 96, label = true, displaySizes }: {
   badge: BadgeDefinition | string;
   unlocked?: boolean;
   earnedDate?: string;
   size?: number;
   label?: boolean;
+  displaySizes?: string;
 }) {
   const definition = typeof badge === 'string' ? badgeById.get(badge) : badge;
   if (!definition) return null;
@@ -15,6 +16,8 @@ export default function GameBadge({ badge, unlocked = false, earnedDate, size = 
       <img
         className="v30-game-badge-art"
         src={src}
+        srcSet={`${src} 128w, ${import.meta.env.BASE_URL}assets/v5/badges/${definition.id}.webp 512w`}
+        sizes={displaySizes ?? `${size}px`}
         width={size}
         height={size}
         alt={`${definition.name}${unlocked ? '，已解鎖' : '，未解鎖'}`}

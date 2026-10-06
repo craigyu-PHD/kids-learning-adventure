@@ -1,0 +1,76 @@
+{
+  "id": "prj_PZeqjxQBaKmn4J3BvHztpC7bSuBt",
+  "name": "kids-learning-adventure",
+  "framework": null,
+  "nodeVersion": "24.x",
+  "buildCommand": null,
+  "rootDirectory": null,
+  "outputDirectory": null,
+  "gitProviderOptions": {
+    "createDeployments": "enabled"
+  },
+  "gitForkProtection": true,
+  "gitLFS": false,
+  "productionDeploymentsFastLane": true,
+  "autoAssignCustomDomains": true,
+  "latestDeployments": [
+    {
+      "id": "dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2",
+      "url": "kids-learning-adventure-d9bx5w8wb-kui-yus-projects.vercel.app",
+      "readyState": "READY",
+      "target": "production",
+      "createdAt": 1791266843990,
+      "meta": {
+        "actor": "codex",
+        "lambdaRuntimeStats": "{\"nodejs\":6}"
+      }
+    },
+    {
+      "id": "dpl_Dx5cLPJZAdFehrKJekLoQnVCoc1x",
+      "url": "kids-learning-adventure-qm575ee5r-kui-yus-projects.vercel.app",
+      "readyState": "READY",
+      "target": "production",
+      "createdAt": 1791243226604,
+      "meta": {
+        "actor": "codex",
+        "lambdaRuntimeStats": "{\"nodejs\":6}"
+      }
+    }
+  ],
+  "targets": {
+    "production": {
+      "id": "dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2",
+      "url": "kids-learning-adventure-d9bx5w8wb-kui-yus-projects.vercel.app",
+      "readyState": "READY",
+      "target": "production",
+      "createdAt": 1791266843990,
+      "meta": {
+        "actor": "codex",
+        "lambdaRuntimeStats": "{\"nodejs\":6}"
+      }
+    },
+    "preview": {
+      "id": "dpl_4k3Pt4NwhoqvcJ5zwhoqZ8N9DkbF",
+      "url": "kids-learning-adventure-legayffpp-kui-yus-projects.vercel.app",
+      "readyState": "READY",
+      "target": null,
+      "createdAt": 1789373823661,
+      "meta": {
+        "githubCommitAuthorName": "craigyu-PHD",
+        "githubCommitAuthorEmail": "181915095+craigyu-PHD@users.noreply.github.com",
+        "githubCommitMessage": "feat(v6): checkpoint V6.4 visual and browser gates",
+        "githubCommitOrg": "craigyu-PHD",
+        "githubCommitRef": "main",
+        "githubCommitRepo": "kids-learning-adventure",
+        "githubCommitSha": "51ff808af4389dbe4f25c88aebb7f87e78aa073b",
+        "githubDeployment": "1",
+        "githubOrg": "craigyu-PHD",
+        "githubRepo": "kids-learning-adventure",
+        "gitDirty": "1",
+        "gitRootDirectory": "",
+        "actor": "codex",
+        "lambdaRuntimeStats": "{\"nodejs\":6}"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "legacyNamespaceStable": true,
+  "signedSessionValid": true,
+  "tamperedRejected": true,
+  "expiredRejected": true,
+  "invalidPinRejected": true,
+  "endpointPostWorks": true,
+  "endpointRejectsInvalidPin": true,
+  "endpointRejectsWrongMethod": true,
+  "endpointNoStoreCors": true,
+  "endpointRateLimitsPinAttempts": true,
+  "stateUsesBearerOnly": true,
+  "clientUsesBearer": true,
+  "noActivePinWrite": true,
+  "v40FamilyNamespace": true,
+  "settingsHidePin": true,
+  "failures": []
+}

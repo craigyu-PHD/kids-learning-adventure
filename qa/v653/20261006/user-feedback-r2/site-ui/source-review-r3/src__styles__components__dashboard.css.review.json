@@ -1,0 +1,18 @@
+{
+  "path": "src/styles/components/dashboard.css",
+  "beforeSHA256": "29221fe8c6f016dcadbc681f13e15ba0449dc006aa76a1038ee72b28af027253",
+  "afterSHA256": "1d4faa4a2cae79dba997da6b552ad157339e3ae7b069fe72bb2e5d5bea16e95b",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "沿用已實讀r6完整差異審查，並實讀r1→r2→r3新增差異。新規則僅匹配LessonMissionCard status，明確14px、normal換行、visible overflow、clip text-overflow；夜間文字與背景有對應色。四profile實際fallback已通過glyph containment/noImageOverlap，舊FAIL保留。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r3/src__styles__components__dashboard.css.diff",
+    "sha256": "761357466e9942fd1a2ae007902d972348e6f0bef744137f7e9121fed1caadb5"
+  },
+  "observedAt": "2026-10-06T04:01:24.221157+00:00",
+  "scope": "Complete previously read r6→r1 diff plus actually read r1→r3 changes; no git history; source acceptance only",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__components__dashboard.css.review.json",
+    "sha256": "e0e574a00e9f2aa3291f443ed27b07008225a4525e1b3417bfa92a4f016f5620"
+  }
+}

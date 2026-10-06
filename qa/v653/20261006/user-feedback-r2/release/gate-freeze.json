@@ -1,0 +1,33 @@
+{
+  "status": "GATE_IMPLEMENTATION_FROZEN_NOT_RELEASE_ADMISSION",
+  "files": {
+    "scripts/qa_v653_feedback_release.py": "7615e0030abbf2d30dcda607d58830c862c9dd40f795830d8b0875e3a97ba70f",
+    "scripts/prebuild_v653.py": "af105703ab4fc27ac7762aacc591487d9d57a8ad0e3cfd16fe5e90db1ac7f4e6"
+  },
+  "syntax": "PASS",
+  "unitReport": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-unit-result.json",
+    "sha256": "6b26867bc59bbde86b9972582e14256c37359d203c329501c96d995ebf79ccb4"
+  },
+  "failClosedReport": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-incomplete-result-final.json",
+    "sha256": "298c7404d558c91cd105bda03d2843d7304093bc782fe2d14fdbdd4ca8fb0aad"
+  },
+  "contract": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-contract-final.json",
+    "sha256": "ba1228e495850dbda754ea0217779f64e1a0ebde2ea291befbb1e796aa2b7aa9"
+  },
+  "schema": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-schema.json",
+    "sha256": "94c675247c52b9fff7097cfa51b11d84a00f8c11c3e22f318eaaa30dbde2c963"
+  },
+  "readme": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-README.md",
+    "sha256": "2542af8283b7030493999d3be510bb3b79470cc7cd379d7d7b46813741ebc49f"
+  },
+  "limitations": [
+    "Full candidate evidence absent; no admission PASS",
+    "13 real-index rejection controls require an actually passing baseline; not run yet",
+    "No pointer/build/deployment changes"
+  ]
+}

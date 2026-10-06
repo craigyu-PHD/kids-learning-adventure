@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "DRAFT_REQUIRED_GATES_NOT_RELEASE_READY",
+  "baselineDeployment": "dpl_Dx5cLPJZAdFehrKJekLoQnVCoc1x",
+  "baselinePins": {
+    "path": "qa/v653/20261006/full-goal-audit/incremental-release/source-pins107-final-r6.json",
+    "sha256": "04be36df35c2b1b924d9008cb03e94ab8a7644f281d6c6569eddbc474169612f"
+  },
+  "gates": {
+    "headwear": "all_named_items_4_roles_all8_body_skins_and_multiitem_hair_hat_headphone_combinations; actual_Shop_trial_cancel_equip_Home_reload_Achievements; same_body_size; independent_visual; wrong_avatar_missing_layer_swapped_item_stale_candidate",
+    "lesson": "all_requested_screens_7_profiles_8_stages_actual_visual; compact_preparation_keyboard; speaking_4_children; real_mission_and_reward_idempotency; 360x560_badge_layout",
+    "siteUI": "16_home_CTA_cases_6_child_nav_profiles_plus_companion_crop_4_profiles_click_reduced_motion_equipped_robot_room",
+    "voice": "514_source_bound_AAC_decoded_HTTP_MIME_SHA; user_selected_sample_preserved; browser_real_playback_cancel_route_and_errors; no_claim_all_clips_human_listened",
+    "core": "strict_types; date_auth_state_curriculum_structure_online_and_shop_service; protected15_bytes_equal_published",
+    "sameCandidate": "new_source_and_public_pin_inventory; immutable_published_r6; candidate_compiled_actual_runtime_and_visual_same_build; stage_source_receipt; wrong_input_gate_controls",
+    "release": "prebuild_all_required_new_evidence; build_production_preview_performance; vercel_prebuilt_unchanged_stage; public_postdeploy_hash_and_isolated_runtime"
+  },
+  "limitations": [
+    "No physical mobile T01",
+    "No real family cloud writes",
+    "No 257-phrase human auditory acceptance",
+    "No commit or push"
+  ],
+  "deployAuthorization": "Earlier direct user request to deploy after fixes persists; deploy only after current required gates pass"
+}

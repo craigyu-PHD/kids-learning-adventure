@@ -1,0 +1,94 @@
+{
+  "status": "COMPLETED_RAW_REVIEW_REQUIRED",
+  "command": [
+    "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+    "-B",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run_density_r2.py",
+    "--run",
+    "--base",
+    "http://127.0.0.1:5196/",
+    "--build-dir",
+    "dist",
+    "--source-pins",
+    "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "--artifact-pins",
+    "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "--candidate-id",
+    "feedback-r2-a7960962-final-r5",
+    "--source-pins-sha",
+    "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+    "--artifact-pins-sha",
+    "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+    "--items",
+    "ship-scout,ship-comet,ship-legend,room-starlab,room-ocean,room-legend,robot-sky,robot-mecha",
+    "--out",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry750-timed",
+    "--shard-count",
+    "1024",
+    "--shard-index",
+    "750"
+  ],
+  "originalCommand": [
+    "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+    "-B",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run_density_r2.py",
+    "--run",
+    "--base",
+    "http://127.0.0.1:5196/",
+    "--build-dir",
+    "dist",
+    "--source-pins",
+    "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "--artifact-pins",
+    "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "--candidate-id",
+    "feedback-r2-a7960962-final-r5",
+    "--source-pins-sha",
+    "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+    "--artifact-pins-sha",
+    "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+    "--items",
+    "ship-scout,ship-comet,ship-legend,room-starlab,room-ocean,room-legend,robot-sky,robot-mecha",
+    "--out",
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-part5"
+  ],
+  "originalJobs": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/runtime-jobs-r5-shop/jobs.json",
+    "sha256": "f418d863c9ccb050c6a623420f990a65e0b4010f9f554612768726dff9114729"
+  },
+  "originalRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-part5/report.json",
+    "sha256": "770ad9056181e7d2be6cded6c0569b7440eaaed770610237f749ebaa452e4144"
+  },
+  "originalRowIndex": 94,
+  "originalMatrixIndex": 750,
+  "originalCompletedAt": "2026-10-06T04:57:53.486284+00:00",
+  "startedAt": "2026-10-06T04:58:50.258538+00:00",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "pid": 82140,
+  "exitCode": 0,
+  "completedAt": "2026-10-06T04:58:57.045002+00:00",
+  "log": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-750/runner.log",
+    "sha256": "0f50c8c6fac6f57197d5915b8343166ee245d9fe0b7d2b968014f55d8e34ea58"
+  },
+  "retryRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry750-timed/report.json",
+    "sha256": "72f5d0da16e40b27a25500ad41b472206232e3bdfb80abadbdb39568acd437ea"
+  },
+  "browserClosed": true,
+  "caseStatuses": [
+    {
+      "originalMatrixIndex": 750,
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "error": null
+    }
+  ]
+}

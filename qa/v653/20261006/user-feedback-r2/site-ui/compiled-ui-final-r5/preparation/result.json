@@ -1,0 +1,92 @@
+{
+  "scope": "supplied local candidate URL, isolated synthetic storage, blocked external/API network, stage layout inspection only; no reward completion seeded",
+  "profiles": [
+    {
+      "width": 390,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": 0,
+          "file": "390-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          }
+        }
+      ],
+      "errors": [],
+      "preparation": {
+        "height": 1751.21875,
+        "timeRows": 7,
+        "openTimeRows": 1,
+        "openReference": 0,
+        "allText": "STAGE 1家長備課課表這一關只給家長看：先掌握 30 分鐘節奏、素材和提示，再讓孩子開始暖身。30 分鐘帶課地圖今天怎麼帶孩子學15 分鐘 唱跳暖身 ＋ 15 分鐘 主課與任務今天誰一起上課？勾選今天參與的孩子，兩堂課共用這份名單；已留下的紀錄會保留。哥哥弟弟姊姊長名字版面驗證妹妹今天 4 位孩子參與01 本節學習目標跟身體歌指認四個部位，再輪流當小老師下指令。本週目標用 TPR 動作把 body parts 與 action verbs 連在一起。重點單字kneestoesheadshoulders練習句型Show me knees, then point to toes.02 素材與準備暖身影片 ↗If I Were A Ghost | Kids Hallowen Song主課影片 ↗Head Shoulders Knees & Toes (Sing It)單字圖卡與發音 ↗knees · toes · head · shoulders帶課提醒：主課直接唱出head、shoulders、knees、toes。先慢慢指自己或圖卡，聽清楚再做；歌曲速度較快時可暫停逐一說，不要求彎腰碰腳趾。小老師出題先一個部位、再兩個部位，家人普通音量回應。實作用品怎麼準備圖卡與影片已在本課備妥。找物或實作時，依任務說明選用家中現成物品，並留出做動作的空間。03 分齡帶法較小的孩子先選 knees 或 toes 圖卡，指出位置並跟說一個詞；輪到當小老師時可以舉手指卡，請家人回答，不必一次給兩個指令。較大的孩子先用本課句型請家人指出膝蓋、再指出腳趾，觀察對方是否依序完成；接著換用 head 或 shoulders 出一題，輪到回答時自己指認。04 任務完成標準輪流出題【身體動起來・小老師】完成 3 次「問答」：knees / toes / head完成標準：只有孩子真的完成 3 次指定的「問答」才按完成；大人示範不算，答錯後提示再完成可以算。開口任務【身體動起來・小老師】至少開口一次：Show me knees, then point to toes.完成標準：孩子有主動發出目標單字或句型即可；4 歲只說最後一個關鍵字也算，6 歲鼓勵完整句。帶課時間表0–4唱跳開機｜小老師播放假扮角色暖身的機器人或貓段，先聽聲音，再用手勢和普通音量模仿；孩子不喜歡其他角色時不強迫觀看。 帶課提醒：暖身的目標是喚醒身體與注意力，不要求唱準或一次跟完。4–8第二輪跟唱回播選定短段，大人發聲、孩子回應，再交換；不需要尖叫或把聲音越拉越高才算參與。8–12暫停模仿挑戰停音樂，每人選一個喜歡的角色手勢當領隊，家人跟做，最後放慢並讓聲音休息。12–15暖身收束喝水，開啟四張身體圖卡。先指自己的頭與肩，預告今天聽身體歌後輪流當小老師。15–20正式素材｜四個身體部位與兩步口令。播放〈Head Shoulders Knees & Toes (Sing It)〉一輪，跟著歌詞指出head、shoulders、knees、toes；跟不上就停片慢指，不比快。20–25回看＋開口先各問knees與toes，再練Show me knees, then point to toes.；孩子熟悉後換head或shoulders，觀察家人是否依序完成。25–30輪流出題完成knees、toes、head三次問答，每人另輪到一次出題與開口；只記自己的回應，不以音量或速度判完成。"
+      },
+      "keyboardTogglePassed": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "shots": [
+        {
+          "stage": 0,
+          "file": "390-dark-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          }
+        }
+      ],
+      "errors": [],
+      "preparation": {
+        "height": 1751.21875,
+        "timeRows": 7,
+        "openTimeRows": 1,
+        "openReference": 0,
+        "allText": "STAGE 1家長備課課表這一關只給家長看：先掌握 30 分鐘節奏、素材和提示，再讓孩子開始暖身。30 分鐘帶課地圖今天怎麼帶孩子學15 分鐘 唱跳暖身 ＋ 15 分鐘 主課與任務今天誰一起上課？勾選今天參與的孩子，兩堂課共用這份名單；已留下的紀錄會保留。哥哥弟弟姊姊長名字版面驗證妹妹今天 4 位孩子參與01 本節學習目標跟身體歌指認四個部位，再輪流當小老師下指令。本週目標用 TPR 動作把 body parts 與 action verbs 連在一起。重點單字kneestoesheadshoulders練習句型Show me knees, then point to toes.02 素材與準備暖身影片 ↗If I Were A Ghost | Kids Hallowen Song主課影片 ↗Head Shoulders Knees & Toes (Sing It)單字圖卡與發音 ↗knees · toes · head · shoulders帶課提醒：主課直接唱出head、shoulders、knees、toes。先慢慢指自己或圖卡，聽清楚再做；歌曲速度較快時可暫停逐一說，不要求彎腰碰腳趾。小老師出題先一個部位、再兩個部位，家人普通音量回應。實作用品怎麼準備圖卡與影片已在本課備妥。找物或實作時，依任務說明選用家中現成物品，並留出做動作的空間。03 分齡帶法較小的孩子先選 knees 或 toes 圖卡，指出位置並跟說一個詞；輪到當小老師時可以舉手指卡，請家人回答，不必一次給兩個指令。較大的孩子先用本課句型請家人指出膝蓋、再指出腳趾，觀察對方是否依序完成；接著換用 head 或 shoulders 出一題，輪到回答時自己指認。04 任務完成標準輪流出題【身體動起來・小老師】完成 3 次「問答」：knees / toes / head完成標準：只有孩子真的完成 3 次指定的「問答」才按完成；大人示範不算，答錯後提示再完成可以算。開口任務【身體動起來・小老師】至少開口一次：Show me knees, then point to toes.完成標準：孩子有主動發出目標單字或句型即可；4 歲只說最後一個關鍵字也算，6 歲鼓勵完整句。帶課時間表0–4唱跳開機｜小老師播放假扮角色暖身的機器人或貓段，先聽聲音，再用手勢和普通音量模仿；孩子不喜歡其他角色時不強迫觀看。 帶課提醒：暖身的目標是喚醒身體與注意力，不要求唱準或一次跟完。4–8第二輪跟唱回播選定短段，大人發聲、孩子回應，再交換；不需要尖叫或把聲音越拉越高才算參與。8–12暫停模仿挑戰停音樂，每人選一個喜歡的角色手勢當領隊，家人跟做，最後放慢並讓聲音休息。12–15暖身收束喝水，開啟四張身體圖卡。先指自己的頭與肩，預告今天聽身體歌後輪流當小老師。15–20正式素材｜四個身體部位與兩步口令。播放〈Head Shoulders Knees & Toes (Sing It)〉一輪，跟著歌詞指出head、shoulders、knees、toes；跟不上就停片慢指，不比快。20–25回看＋開口先各問knees與toes，再練Show me knees, then point to toes.；孩子熟悉後換head或shoulders，觀察家人是否依序完成。25–30輪流出題完成knees、toes、head三次問答，每人另輪到一次出題與開口；只記自己的回應，不以音量或速度判完成。"
+      },
+      "keyboardTogglePassed": true,
+      "progressUnchanged": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "shots": [
+        {
+          "stage": 0,
+          "file": "1440-light-stage0.png",
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "cards": []
+          }
+        }
+      ],
+      "errors": [],
+      "preparation": {
+        "height": 1395.9375,
+        "timeRows": 7,
+        "openTimeRows": 7,
+        "openReference": 2,
+        "allText": "STAGE 1家長備課課表這一關只給家長看：先掌握 30 分鐘節奏、素材和提示，再讓孩子開始暖身。30 分鐘帶課地圖今天怎麼帶孩子學15 分鐘 唱跳暖身 ＋ 15 分鐘 主課與任務今天誰一起上課？勾選今天參與的孩子，兩堂課共用這份名單；已留下的紀錄會保留。哥哥弟弟姊姊長名字版面驗證妹妹今天 4 位孩子參與01 本節學習目標跟身體歌指認四個部位，再輪流當小老師下指令。本週目標用 TPR 動作把 body parts 與 action verbs 連在一起。重點單字kneestoesheadshoulders練習句型Show me knees, then point to toes.02 素材與準備暖身影片 ↗If I Were A Ghost | Kids Hallowen Song主課影片 ↗Head Shoulders Knees & Toes (Sing It)單字圖卡與發音 ↗knees · toes · head · shoulders帶課提醒：主課直接唱出head、shoulders、knees、toes。先慢慢指自己或圖卡，聽清楚再做；歌曲速度較快時可暫停逐一說，不要求彎腰碰腳趾。小老師出題先一個部位、再兩個部位，家人普通音量回應。實作用品怎麼準備圖卡與影片已在本課備妥。找物或實作時，依任務說明選用家中現成物品，並留出做動作的空間。03 分齡帶法較小的孩子先選 knees 或 toes 圖卡，指出位置並跟說一個詞；輪到當小老師時可以舉手指卡，請家人回答，不必一次給兩個指令。較大的孩子先用本課句型請家人指出膝蓋、再指出腳趾，觀察對方是否依序完成；接著換用 head 或 shoulders 出一題，輪到回答時自己指認。04 任務完成標準輪流出題【身體動起來・小老師】完成 3 次「問答」：knees / toes / head完成標準：只有孩子真的完成 3 次指定的「問答」才按完成；大人示範不算，答錯後提示再完成可以算。開口任務【身體動起來・小老師】至少開口一次：Show me knees, then point to toes.完成標準：孩子有主動發出目標單字或句型即可；4 歲只說最後一個關鍵字也算，6 歲鼓勵完整句。帶課時間表0–4唱跳開機｜小老師播放假扮角色暖身的機器人或貓段，先聽聲音，再用手勢和普通音量模仿；孩子不喜歡其他角色時不強迫觀看。 帶課提醒：暖身的目標是喚醒身體與注意力，不要求唱準或一次跟完。4–8第二輪跟唱回播選定短段，大人發聲、孩子回應，再交換；不需要尖叫或把聲音越拉越高才算參與。8–12暫停模仿挑戰停音樂，每人選一個喜歡的角色手勢當領隊，家人跟做，最後放慢並讓聲音休息。12–15暖身收束喝水，開啟四張身體圖卡。先指自己的頭與肩，預告今天聽身體歌後輪流當小老師。15–20正式素材｜四個身體部位與兩步口令。播放〈Head Shoulders Knees & Toes (Sing It)〉一輪，跟著歌詞指出head、shoulders、knees、toes；跟不上就停片慢指，不比快。20–25回看＋開口先各問knees與toes，再練Show me knees, then point to toes.；孩子熟悉後換head或shoulders，觀察家人是否依序完成。25–30輪流出題完成knees、toes、head三次問答，每人另輪到一次出題與開口；只記自己的回應，不以音量或速度判完成。"
+      },
+      "keyboardTogglePassed": true,
+      "progressUnchanged": true,
+      "pass": true
+    }
+  ],
+  "flowCases": [
+    {
+      "case": "preparation-keyboard",
+      "passed": true
+    }
+  ]
+}

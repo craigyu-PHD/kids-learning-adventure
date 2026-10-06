@@ -1,0 +1,3096 @@
+{
+  "status": "PASS",
+  "files": 514,
+  "uniqueTexts": 257,
+  "sentenceUses": 180,
+  "vocabularyUses": 721,
+  "publicBytes": 12224099,
+  "elapsedSeconds": 14.643797333999828,
+  "checks": [
+    {
+      "file": "86cb411152120c4b-af-heart-slow-780175617249.m4a",
+      "decodedSeconds": 2.575,
+      "decodedPeak": 0.3565673828125,
+      "decodedRms": 0.046435561823875524
+    },
+    {
+      "file": "86cb411152120c4b-af-heart-standard-0e4e33510299.m4a",
+      "decodedSeconds": 2.375,
+      "decodedPeak": 0.33221435546875,
+      "decodedRms": 0.04574915638498919
+    },
+    {
+      "file": "2cf24dba5fb0a30e-af-heart-slow-0a2a5f410c37.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.26898193359375,
+      "decodedRms": 0.04233716503423405
+    },
+    {
+      "file": "2cf24dba5fb0a30e-af-heart-standard-c035e038808d.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.283172607421875,
+      "decodedRms": 0.043579011160199715
+    },
+    {
+      "file": "56ccc4dcfc96534b-af-heart-slow-1353ec7a4d60.m4a",
+      "decodedSeconds": 1.625,
+      "decodedPeak": 0.3544921875,
+      "decodedRms": 0.03999567984377622
+    },
+    {
+      "file": "56ccc4dcfc96534b-af-heart-standard-24664a717073.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.363037109375,
+      "decodedRms": 0.04118063755353229
+    },
+    {
+      "file": "b49f425a7e1f9cff-af-heart-slow-1888fa37489d.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.46258544921875,
+      "decodedRms": 0.0402647202690415
+    },
+    {
+      "file": "b49f425a7e1f9cff-af-heart-standard-2d87b6826b54.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.43817138671875,
+      "decodedRms": 0.04097970299739857
+    },
+    {
+      "file": "844347e54f00c4b9-af-heart-slow-078af707b687.m4a",
+      "decodedSeconds": 1.65,
+      "decodedPeak": 0.389068603515625,
+      "decodedRms": 0.047668559315637
+    },
+    {
+      "file": "844347e54f00c4b9-af-heart-standard-5c760daec77f.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.357940673828125,
+      "decodedRms": 0.047974332494273686
+    },
+    {
+      "file": "12fe96123c1b0628-af-heart-slow-c7e93245aade.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.305084228515625,
+      "decodedRms": 0.04620585269657747
+    },
+    {
+      "file": "12fe96123c1b0628-af-heart-standard-74c4d086b803.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.330352783203125,
+      "decodedRms": 0.046919843435539454
+    },
+    {
+      "file": "8f434346648f6b96-af-heart-slow-4f9a71231d8a.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.267578125,
+      "decodedRms": 0.03885530144378711
+    },
+    {
+      "file": "8f434346648f6b96-af-heart-standard-98049db4bceb.m4a",
+      "decodedSeconds": 1.225,
+      "decodedPeak": 0.2637939453125,
+      "decodedRms": 0.04002280761182363
+    },
+    {
+      "file": "3c3b31e0b51c72a1-af-heart-slow-79e1bd797b31.m4a",
+      "decodedSeconds": 2.3,
+      "decodedPeak": 0.38427734375,
+      "decodedRms": 0.04731608815964009
+    },
+    {
+      "file": "3c3b31e0b51c72a1-af-heart-standard-d55dd3178255.m4a",
+      "decodedSeconds": 2.125,
+      "decodedPeak": 0.351898193359375,
+      "decodedRms": 0.046856848218473725
+    },
+    {
+      "file": "0b4bd77cec705cf5-af-heart-slow-f51e17443a43.m4a",
+      "decodedSeconds": 1.2,
+      "decodedPeak": 0.346527099609375,
+      "decodedRms": 0.044586226648024675
+    },
+    {
+      "file": "0b4bd77cec705cf5-af-heart-standard-c6d6e67865c1.m4a",
+      "decodedSeconds": 1.125,
+      "decodedPeak": 0.372100830078125,
+      "decodedRms": 0.04442537991809854
+    },
+    {
+      "file": "d34a569ab7aaa54d-af-heart-slow-ddcd1da0d8f6.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.449554443359375,
+      "decodedRms": 0.04577217749670343
+    },
+    {
+      "file": "d34a569ab7aaa54d-af-heart-standard-9a23d6745ae7.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.3680419921875,
+      "decodedRms": 0.04582721423625282
+    },
+    {
+      "file": "bcb9dae6ea88dbf2-af-heart-slow-6b8662bbea0b.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.316741943359375,
+      "decodedRms": 0.044102176604415
+    },
+    {
+      "file": "bcb9dae6ea88dbf2-af-heart-standard-90e94a9ef1f3.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.305999755859375,
+      "decodedRms": 0.0434302850854584
+    },
+    {
+      "file": "6fe8ecbc1deafa51-af-heart-slow-a468aa3b8b11.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.311309814453125,
+      "decodedRms": 0.04000515906211922
+    },
+    {
+      "file": "6fe8ecbc1deafa51-af-heart-standard-9b4e84730a85.m4a",
+      "decodedSeconds": 1.275,
+      "decodedPeak": 0.3060302734375,
+      "decodedRms": 0.04116158118847518
+    },
+    {
+      "file": "33f86dded83b20db-af-heart-slow-c767217835b2.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.4163818359375,
+      "decodedRms": 0.046452829196688104
+    },
+    {
+      "file": "33f86dded83b20db-af-heart-standard-c4128d19e717.m4a",
+      "decodedSeconds": 2.4,
+      "decodedPeak": 0.408599853515625,
+      "decodedRms": 0.04714566543916138
+    },
+    {
+      "file": "5b63babd79ec35de-af-heart-slow-cc76275d5b3d.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.52618408203125,
+      "decodedRms": 0.04542999574565083
+    },
+    {
+      "file": "5b63babd79ec35de-af-heart-standard-360f9c6d1f11.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.43780517578125,
+      "decodedRms": 0.045082259545074346
+    },
+    {
+      "file": "2ca7948453a09931-af-heart-slow-5a001ae2c73c.m4a",
+      "decodedSeconds": 1.925,
+      "decodedPeak": 0.3936767578125,
+      "decodedRms": 0.046668084510949684
+    },
+    {
+      "file": "2ca7948453a09931-af-heart-standard-0e893da160a0.m4a",
+      "decodedSeconds": 1.8,
+      "decodedPeak": 0.371124267578125,
+      "decodedRms": 0.046878209974121295
+    },
+    {
+      "file": "cf4d560049473a33-af-heart-slow-288e3aa65bb2.m4a",
+      "decodedSeconds": 2.425,
+      "decodedPeak": 0.3681640625,
+      "decodedRms": 0.046179630484958725
+    },
+    {
+      "file": "cf4d560049473a33-af-heart-standard-d731e57fce32.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.35870361328125,
+      "decodedRms": 0.0466260722928113
+    },
+    {
+      "file": "f13bd7d3295c2ca5-af-heart-slow-de17b505c7ce.m4a",
+      "decodedSeconds": 2.275,
+      "decodedPeak": 0.358612060546875,
+      "decodedRms": 0.04596071536352546
+    },
+    {
+      "file": "f13bd7d3295c2ca5-af-heart-standard-7046fe6e44aa.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.380645751953125,
+      "decodedRms": 0.04597099204495009
+    },
+    {
+      "file": "26dc5e5265eddbbc-af-heart-slow-66d079e5df3c.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.39178466796875,
+      "decodedRms": 0.04677913224090288
+    },
+    {
+      "file": "26dc5e5265eddbbc-af-heart-standard-2f0957ae0c8b.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.368621826171875,
+      "decodedRms": 0.04706322891414283
+    },
+    {
+      "file": "8a798890fe938171-af-heart-slow-8de1a3756f9e.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.376739501953125,
+      "decodedRms": 0.045685751667991346
+    },
+    {
+      "file": "8a798890fe938171-af-heart-standard-7e0549440d20.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.374542236328125,
+      "decodedRms": 0.04550683517508631
+    },
+    {
+      "file": "9390298f3fb0c5b1-af-heart-slow-24d28fc1601f.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.257171630859375,
+      "decodedRms": 0.042704844743527676
+    },
+    {
+      "file": "9390298f3fb0c5b1-af-heart-standard-be1ef828bba8.m4a",
+      "decodedSeconds": 1.225,
+      "decodedPeak": 0.245574951171875,
+      "decodedRms": 0.041920262540024865
+    },
+    {
+      "file": "bbff7b98d6da7061-af-heart-slow-502f6de97540.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.4346923828125,
+      "decodedRms": 0.04972997902067859
+    },
+    {
+      "file": "bbff7b98d6da7061-af-heart-standard-33117629664a.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.450408935546875,
+      "decodedRms": 0.049294080770249764
+    },
+    {
+      "file": "2cd8b2f8debfdb78-af-heart-slow-9f4bf9f17d92.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.38482666015625,
+      "decodedRms": 0.046208885529176055
+    },
+    {
+      "file": "2cd8b2f8debfdb78-af-heart-standard-a0b6d668320d.m4a",
+      "decodedSeconds": 2.125,
+      "decodedPeak": 0.328369140625,
+      "decodedRms": 0.04606599174207344
+    },
+    {
+      "file": "76e1164b8618fb42-af-heart-slow-138023a8d054.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.309967041015625,
+      "decodedRms": 0.04614471657725571
+    },
+    {
+      "file": "76e1164b8618fb42-af-heart-standard-f9b9fa3e11ab.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.303253173828125,
+      "decodedRms": 0.04646992713420485
+    },
+    {
+      "file": "0e2b5770333bde3e-af-heart-slow-80836d5cf9d8.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.352935791015625,
+      "decodedRms": 0.045504178634064314
+    },
+    {
+      "file": "0e2b5770333bde3e-af-heart-standard-d66d22629849.m4a",
+      "decodedSeconds": 2.0,
+      "decodedPeak": 0.340606689453125,
+      "decodedRms": 0.04552478542217569
+    },
+    {
+      "file": "8a39178d327e72a9-af-heart-slow-7b0219905d6c.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.441650390625,
+      "decodedRms": 0.04403033877042853
+    },
+    {
+      "file": "8a39178d327e72a9-af-heart-standard-472206a7ddb9.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.451263427734375,
+      "decodedRms": 0.04476689273769671
+    },
+    {
+      "file": "4ba3e8e3765f2970-af-heart-slow-c4d2062b46d8.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.401824951171875,
+      "decodedRms": 0.044730474658058225
+    },
+    {
+      "file": "4ba3e8e3765f2970-af-heart-standard-47bcbfceb434.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.3980712890625,
+      "decodedRms": 0.045605224951615404
+    },
+    {
+      "file": "b1f51a511f1da0cd-af-heart-slow-d878730016bd.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.35015869140625,
+      "decodedRms": 0.04420018651243491
+    },
+    {
+      "file": "b1f51a511f1da0cd-af-heart-standard-d328565574e3.m4a",
+      "decodedSeconds": 1.2,
+      "decodedPeak": 0.346038818359375,
+      "decodedRms": 0.044495183063016225
+    },
+    {
+      "file": "ba4788b226aa8dc2-af-heart-slow-91c224994134.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.327056884765625,
+      "decodedRms": 0.04128766585777353
+    },
+    {
+      "file": "ba4788b226aa8dc2-af-heart-standard-197536b2fdd2.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.299285888671875,
+      "decodedRms": 0.04213731710182997
+    },
+    {
+      "file": "16477688c0e00699-af-heart-slow-689156b60951.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.30047607421875,
+      "decodedRms": 0.040914829641624344
+    },
+    {
+      "file": "16477688c0e00699-af-heart-standard-963851665cdc.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.34088134765625,
+      "decodedRms": 0.04250768308259
+    },
+    {
+      "file": "1a91aaec33c4d8c1-af-heart-slow-48d2aa0cf830.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.428253173828125,
+      "decodedRms": 0.047048060433154876
+    },
+    {
+      "file": "1a91aaec33c4d8c1-af-heart-standard-2eba8fcb8c3d.m4a",
+      "decodedSeconds": 1.925,
+      "decodedPeak": 0.329864501953125,
+      "decodedRms": 0.04720463756432774
+    },
+    {
+      "file": "525eca1d5089dbdc-af-heart-slow-b526a085d871.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.3072509765625,
+      "decodedRms": 0.04319719897679569
+    },
+    {
+      "file": "525eca1d5089dbdc-af-heart-standard-ce4db7f03a22.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.328338623046875,
+      "decodedRms": 0.04421449407995637
+    },
+    {
+      "file": "0a3f13c673af2389-af-heart-slow-32b1f5375c59.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.343963623046875,
+      "decodedRms": 0.04581458563432457
+    },
+    {
+      "file": "0a3f13c673af2389-af-heart-standard-eb7408c9919f.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.377471923828125,
+      "decodedRms": 0.046320595702842506
+    },
+    {
+      "file": "11808312b4fc3ba8-af-heart-slow-1d2df2f507ca.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.535888671875,
+      "decodedRms": 0.0443049595095058
+    },
+    {
+      "file": "11808312b4fc3ba8-af-heart-standard-2d89bb82d786.m4a",
+      "decodedSeconds": 1.975,
+      "decodedPeak": 0.465667724609375,
+      "decodedRms": 0.044770865144555
+    },
+    {
+      "file": "c685a2c9bab235cc-af-heart-slow-d11bbd31d4a7.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.269989013671875,
+      "decodedRms": 0.04205867778695745
+    },
+    {
+      "file": "c685a2c9bab235cc-af-heart-standard-e16f9371b0b4.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.271514892578125,
+      "decodedRms": 0.042262722802809106
+    },
+    {
+      "file": "dbbbb69c04a0b504-af-heart-slow-b020e9742318.m4a",
+      "decodedSeconds": 2.1,
+      "decodedPeak": 0.32611083984375,
+      "decodedRms": 0.04590790433362314
+    },
+    {
+      "file": "dbbbb69c04a0b504-af-heart-standard-953a2b96ebec.m4a",
+      "decodedSeconds": 1.875,
+      "decodedPeak": 0.417144775390625,
+      "decodedRms": 0.046762332684271525
+    },
+    {
+      "file": "cbcac38c8874eb8f-af-heart-slow-e7fcea662ee3.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.493896484375,
+      "decodedRms": 0.04609593924059859
+    },
+    {
+      "file": "cbcac38c8874eb8f-af-heart-standard-1ae3ec6356df.m4a",
+      "decodedSeconds": 2.3,
+      "decodedPeak": 0.46453857421875,
+      "decodedRms": 0.04565966276338623
+    },
+    {
+      "file": "822516c3bd50978c-af-heart-slow-eb50e3759eac.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.5367431640625,
+      "decodedRms": 0.047563432557330136
+    },
+    {
+      "file": "822516c3bd50978c-af-heart-standard-a7d4a8c5040f.m4a",
+      "decodedSeconds": 1.9,
+      "decodedPeak": 0.459228515625,
+      "decodedRms": 0.04720170267140553
+    },
+    {
+      "file": "45eb030d1cb3e7d4-af-heart-slow-07e1bade6efa.m4a",
+      "decodedSeconds": 1.925,
+      "decodedPeak": 0.334503173828125,
+      "decodedRms": 0.04650102249337205
+    },
+    {
+      "file": "45eb030d1cb3e7d4-af-heart-standard-41c3a7aa7be7.m4a",
+      "decodedSeconds": 1.75,
+      "decodedPeak": 0.319732666015625,
+      "decodedRms": 0.04659285244171132
+    },
+    {
+      "file": "f65951bb113840df-af-heart-slow-bb235971134d.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.386474609375,
+      "decodedRms": 0.04525438565775895
+    },
+    {
+      "file": "f65951bb113840df-af-heart-standard-5c984e455685.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.3492431640625,
+      "decodedRms": 0.045653331584092564
+    },
+    {
+      "file": "7f783956dec19b03-af-heart-slow-e8bc0cf4e9e3.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.375640869140625,
+      "decodedRms": 0.04588924974919877
+    },
+    {
+      "file": "7f783956dec19b03-af-heart-standard-59678ab603f7.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.358795166015625,
+      "decodedRms": 0.04539302307159994
+    },
+    {
+      "file": "dc43f73869e7b295-af-heart-slow-63f1cc65f478.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.3055419921875,
+      "decodedRms": 0.04805071591801554
+    },
+    {
+      "file": "dc43f73869e7b295-af-heart-standard-5604c88310f2.m4a",
+      "decodedSeconds": 2.15,
+      "decodedPeak": 0.378204345703125,
+      "decodedRms": 0.048520607881447374
+    },
+    {
+      "file": "6efffdbc6b59c8af-af-heart-slow-862d09983135.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.288238525390625,
+      "decodedRms": 0.04339058028530365
+    },
+    {
+      "file": "6efffdbc6b59c8af-af-heart-standard-72ea440e4415.m4a",
+      "decodedSeconds": 2.375,
+      "decodedPeak": 0.267547607421875,
+      "decodedRms": 0.04229280017470817
+    },
+    {
+      "file": "9f2e6d33a3717ee8-af-heart-slow-532022087a95.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.32135009765625,
+      "decodedRms": 0.04098980837294254
+    },
+    {
+      "file": "9f2e6d33a3717ee8-af-heart-standard-8e918fa29063.m4a",
+      "decodedSeconds": 1.2,
+      "decodedPeak": 0.337310791015625,
+      "decodedRms": 0.042129909904701536
+    },
+    {
+      "file": "8293bf8fdcb04a38-af-heart-slow-dbaa31768a6f.m4a",
+      "decodedSeconds": 1.65,
+      "decodedPeak": 0.420745849609375,
+      "decodedRms": 0.0450256184537736
+    },
+    {
+      "file": "8293bf8fdcb04a38-af-heart-standard-c486834c4d21.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.42364501953125,
+      "decodedRms": 0.045889138547948044
+    },
+    {
+      "file": "5240d1bda203e433-af-heart-slow-6486d5aa2b84.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.26995849609375,
+      "decodedRms": 0.0415168261069535
+    },
+    {
+      "file": "5240d1bda203e433-af-heart-standard-8d943b754025.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.287750244140625,
+      "decodedRms": 0.04173991384675595
+    },
+    {
+      "file": "bfb299e96fd90505-af-heart-slow-9d2ed02d6501.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.325897216796875,
+      "decodedRms": 0.04236379501709794
+    },
+    {
+      "file": "bfb299e96fd90505-af-heart-standard-26b4536dc4aa.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.319488525390625,
+      "decodedRms": 0.043316479513161386
+    },
+    {
+      "file": "7f18faf1051df7f0-af-heart-slow-5bc356304c31.m4a",
+      "decodedSeconds": 2.15,
+      "decodedPeak": 0.28900146484375,
+      "decodedRms": 0.045435336830470664
+    },
+    {
+      "file": "7f18faf1051df7f0-af-heart-standard-e160ec664168.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.540863037109375,
+      "decodedRms": 0.04549512967719477
+    },
+    {
+      "file": "9b473845f684444f-af-heart-slow-037578a7a029.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.338104248046875,
+      "decodedRms": 0.042858351325620506
+    },
+    {
+      "file": "9b473845f684444f-af-heart-standard-7eafacd76930.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.37518310546875,
+      "decodedRms": 0.044448887660654794
+    },
+    {
+      "file": "4cd0e21a9a0795a1-af-heart-slow-34e3d9a2a414.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.341094970703125,
+      "decodedRms": 0.04213852285760791
+    },
+    {
+      "file": "4cd0e21a9a0795a1-af-heart-standard-9069e0802b40.m4a",
+      "decodedSeconds": 1.2,
+      "decodedPeak": 0.368377685546875,
+      "decodedRms": 0.0427546474210707
+    },
+    {
+      "file": "6c45cb72a36e63d5-af-heart-slow-23b2961f26b8.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.315277099609375,
+      "decodedRms": 0.04297228381946214
+    },
+    {
+      "file": "6c45cb72a36e63d5-af-heart-standard-0c90ff9ed727.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.3140869140625,
+      "decodedRms": 0.042749309666618905
+    },
+    {
+      "file": "6bdaf554e42029bd-af-heart-slow-1b7aaea62730.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.37408447265625,
+      "decodedRms": 0.04602331921444867
+    },
+    {
+      "file": "6bdaf554e42029bd-af-heart-standard-3070db5fc040.m4a",
+      "decodedSeconds": 1.225,
+      "decodedPeak": 0.3843994140625,
+      "decodedRms": 0.04642914407721042
+    },
+    {
+      "file": "ffdbdd92a346f7a2-af-heart-slow-1b640aee6a82.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.365447998046875,
+      "decodedRms": 0.04695479447963967
+    },
+    {
+      "file": "ffdbdd92a346f7a2-af-heart-standard-f136c9dcf8d0.m4a",
+      "decodedSeconds": 1.9,
+      "decodedPeak": 0.360198974609375,
+      "decodedRms": 0.04665140876960509
+    },
+    {
+      "file": "fef349da4695b3e5-af-heart-slow-0eadfe48c61f.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.35406494140625,
+      "decodedRms": 0.04598421751909525
+    },
+    {
+      "file": "fef349da4695b3e5-af-heart-standard-12d489bf9f4d.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.464630126953125,
+      "decodedRms": 0.046587999080753555
+    },
+    {
+      "file": "3a2c5fa099fdd00d-af-heart-slow-c3f36e09382c.m4a",
+      "decodedSeconds": 2.0,
+      "decodedPeak": 0.4130859375,
+      "decodedRms": 0.046494012231293284
+    },
+    {
+      "file": "3a2c5fa099fdd00d-af-heart-standard-96482f13d161.m4a",
+      "decodedSeconds": 1.9,
+      "decodedPeak": 0.49212646484375,
+      "decodedRms": 0.04610657014218503
+    },
+    {
+      "file": "ed716b0714821f21-af-heart-slow-9b1f85111660.m4a",
+      "decodedSeconds": 2.225,
+      "decodedPeak": 0.42724609375,
+      "decodedRms": 0.04562781433696676
+    },
+    {
+      "file": "ed716b0714821f21-af-heart-standard-1b56e805e4c1.m4a",
+      "decodedSeconds": 2.15,
+      "decodedPeak": 0.453216552734375,
+      "decodedRms": 0.045386374998695536
+    },
+    {
+      "file": "9718d90292fddf5d-af-heart-slow-fa67c4ba6139.m4a",
+      "decodedSeconds": 2.825,
+      "decodedPeak": 0.39093017578125,
+      "decodedRms": 0.04882515568496025
+    },
+    {
+      "file": "9718d90292fddf5d-af-heart-standard-614c78a0c15a.m4a",
+      "decodedSeconds": 2.575,
+      "decodedPeak": 0.386474609375,
+      "decodedRms": 0.04831968661789437
+    },
+    {
+      "file": "bf0455376fabfdf3-af-heart-slow-b3f9592a89e2.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.529815673828125,
+      "decodedRms": 0.04563365664839265
+    },
+    {
+      "file": "bf0455376fabfdf3-af-heart-standard-c32d140a13eb.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.39923095703125,
+      "decodedRms": 0.04510655894557558
+    },
+    {
+      "file": "1273e58cba427b10-af-heart-slow-4b5e72846dd1.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.47039794921875,
+      "decodedRms": 0.04452284243648795
+    },
+    {
+      "file": "1273e58cba427b10-af-heart-standard-260bf4bf2f1e.m4a",
+      "decodedSeconds": 1.925,
+      "decodedPeak": 0.484527587890625,
+      "decodedRms": 0.04508449563438724
+    },
+    {
+      "file": "0229f77c530b43cd-af-heart-slow-fc071fc52017.m4a",
+      "decodedSeconds": 3.2,
+      "decodedPeak": 0.39361572265625,
+      "decodedRms": 0.0476384381359637
+    },
+    {
+      "file": "0229f77c530b43cd-af-heart-standard-a805a2a1bd78.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.3704833984375,
+      "decodedRms": 0.04683869314829511
+    },
+    {
+      "file": "4af2a35841f3f4f9-af-heart-slow-a2c31ab79433.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.399261474609375,
+      "decodedRms": 0.047468581289448565
+    },
+    {
+      "file": "4af2a35841f3f4f9-af-heart-standard-06ba0e6f8ba3.m4a",
+      "decodedSeconds": 2.425,
+      "decodedPeak": 0.47137451171875,
+      "decodedRms": 0.04693617984463946
+    },
+    {
+      "file": "0a96f1960786d85f-af-heart-slow-db128c5be6ea.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.550323486328125,
+      "decodedRms": 0.04510732396921922
+    },
+    {
+      "file": "0a96f1960786d85f-af-heart-standard-b2b960d9c86f.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.54962158203125,
+      "decodedRms": 0.04584331911561754
+    },
+    {
+      "file": "c405760daf9bc32b-af-heart-slow-be83fa91d794.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.308258056640625,
+      "decodedRms": 0.04311612649469181
+    },
+    {
+      "file": "c405760daf9bc32b-af-heart-standard-a7c9de2de89b.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.2930908203125,
+      "decodedRms": 0.043366302293726934
+    },
+    {
+      "file": "489f719cadf91909-af-heart-slow-716eb1df383d.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.3955078125,
+      "decodedRms": 0.04233006014401229
+    },
+    {
+      "file": "489f719cadf91909-af-heart-standard-fbe3c1979a37.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.403106689453125,
+      "decodedRms": 0.043725383320540524
+    },
+    {
+      "file": "45c9a6614fccd4f9-af-heart-slow-1654a3759d84.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.315216064453125,
+      "decodedRms": 0.03958336077147999
+    },
+    {
+      "file": "45c9a6614fccd4f9-af-heart-standard-ec6ba7d1dae4.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.29754638671875,
+      "decodedRms": 0.041045840420336675
+    },
+    {
+      "file": "228bb50efce148f8-af-heart-slow-086acd641d4d.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.404388427734375,
+      "decodedRms": 0.04732392976276716
+    },
+    {
+      "file": "228bb50efce148f8-af-heart-standard-f3ebef5a0e67.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.377044677734375,
+      "decodedRms": 0.046900834535801524
+    },
+    {
+      "file": "1d00135b25b77215-af-heart-slow-6d40b47d2361.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.308013916015625,
+      "decodedRms": 0.04454463030633589
+    },
+    {
+      "file": "1d00135b25b77215-af-heart-standard-9b35a841f81f.m4a",
+      "decodedSeconds": 2.15,
+      "decodedPeak": 0.448089599609375,
+      "decodedRms": 0.04458420642168426
+    },
+    {
+      "file": "3383175abbd8305f-af-heart-slow-01c48f5e51ab.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.565093994140625,
+      "decodedRms": 0.04681924526450323
+    },
+    {
+      "file": "3383175abbd8305f-af-heart-standard-628ca1672e62.m4a",
+      "decodedSeconds": 2.3,
+      "decodedPeak": 0.66192626953125,
+      "decodedRms": 0.04655332725141387
+    },
+    {
+      "file": "a69bf8e747b1bf2a-af-heart-slow-b7321f7ed447.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.38641357421875,
+      "decodedRms": 0.047674061269841805
+    },
+    {
+      "file": "a69bf8e747b1bf2a-af-heart-standard-194fa88556dc.m4a",
+      "decodedSeconds": 2.275,
+      "decodedPeak": 0.37652587890625,
+      "decodedRms": 0.0470377137574111
+    },
+    {
+      "file": "5d7f10f5ecfed9ea-af-heart-slow-e403feeef638.m4a",
+      "decodedSeconds": 2.1,
+      "decodedPeak": 0.394317626953125,
+      "decodedRms": 0.046221153018362986
+    },
+    {
+      "file": "5d7f10f5ecfed9ea-af-heart-standard-13f8ddd1a787.m4a",
+      "decodedSeconds": 1.975,
+      "decodedPeak": 0.38116455078125,
+      "decodedRms": 0.04617506012984343
+    },
+    {
+      "file": "6f333480a321a9ba-af-heart-slow-8872edaee9cf.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.55401611328125,
+      "decodedRms": 0.046524506954421625
+    },
+    {
+      "file": "6f333480a321a9ba-af-heart-standard-09f058412d49.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.626007080078125,
+      "decodedRms": 0.04649673087150292
+    },
+    {
+      "file": "3cd1ccf02a75e54f-af-heart-slow-97f6b5d35c3d.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.47296142578125,
+      "decodedRms": 0.042897089507688384
+    },
+    {
+      "file": "3cd1ccf02a75e54f-af-heart-standard-fdfbe3023eb0.m4a",
+      "decodedSeconds": 2.05,
+      "decodedPeak": 0.3779296875,
+      "decodedRms": 0.04223715224009493
+    },
+    {
+      "file": "e571221949d932c4-af-heart-slow-3e3d54e5bfd7.m4a",
+      "decodedSeconds": 2.675,
+      "decodedPeak": 0.342620849609375,
+      "decodedRms": 0.04494387781464977
+    },
+    {
+      "file": "e571221949d932c4-af-heart-standard-b0b80124b4ee.m4a",
+      "decodedSeconds": 2.525,
+      "decodedPeak": 0.40045166015625,
+      "decodedRms": 0.04512885597338568
+    },
+    {
+      "file": "09346d35771deb0a-af-heart-slow-6a8a9b1b0999.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.38494873046875,
+      "decodedRms": 0.046978758560195406
+    },
+    {
+      "file": "09346d35771deb0a-af-heart-standard-4478ac1ccbb4.m4a",
+      "decodedSeconds": 2.1,
+      "decodedPeak": 0.3946533203125,
+      "decodedRms": 0.046705870882917826
+    },
+    {
+      "file": "652032125ab3a98c-af-heart-slow-e2b3bdbd59a0.m4a",
+      "decodedSeconds": 2.025,
+      "decodedPeak": 0.388153076171875,
+      "decodedRms": 0.04666839374939409
+    },
+    {
+      "file": "652032125ab3a98c-af-heart-standard-d887a8cf1769.m4a",
+      "decodedSeconds": 1.825,
+      "decodedPeak": 0.530029296875,
+      "decodedRms": 0.04589972655160325
+    },
+    {
+      "file": "77af778b51abd4a3-af-heart-slow-06c901450d38.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.2799072265625,
+      "decodedRms": 0.03860060658929292
+    },
+    {
+      "file": "77af778b51abd4a3-af-heart-standard-4d98931a45b0.m4a",
+      "decodedSeconds": 1.2,
+      "decodedPeak": 0.281463623046875,
+      "decodedRms": 0.03880277277593452
+    },
+    {
+      "file": "cd6357efdd966de8-af-heart-slow-9efad8329915.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.313629150390625,
+      "decodedRms": 0.04221460058000677
+    },
+    {
+      "file": "cd6357efdd966de8-af-heart-standard-847accb3b18b.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.331634521484375,
+      "decodedRms": 0.04284677416761567
+    },
+    {
+      "file": "7a5179eecc0fe187-af-heart-slow-6122251eef04.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.331085205078125,
+      "decodedRms": 0.04418100625501674
+    },
+    {
+      "file": "7a5179eecc0fe187-af-heart-standard-db65f0f7d708.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.387420654296875,
+      "decodedRms": 0.045800653281180895
+    },
+    {
+      "file": "b474a99a2705e23c-af-heart-slow-598396508469.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.368408203125,
+      "decodedRms": 0.042270349480853155
+    },
+    {
+      "file": "b474a99a2705e23c-af-heart-standard-257736e79cbc.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.386138916015625,
+      "decodedRms": 0.042997142715615604
+    },
+    {
+      "file": "5f5cbabee6279a6c-af-heart-slow-d772d10912d6.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.36297607421875,
+      "decodedRms": 0.04575877809531497
+    },
+    {
+      "file": "5f5cbabee6279a6c-af-heart-standard-a688a3323423.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.5181884765625,
+      "decodedRms": 0.045379949782369734
+    },
+    {
+      "file": "59928206edeeab03-af-heart-slow-d1d7cbad4e0b.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.373565673828125,
+      "decodedRms": 0.047915038494818596
+    },
+    {
+      "file": "59928206edeeab03-af-heart-standard-2d4f533a29a2.m4a",
+      "decodedSeconds": 2.475,
+      "decodedPeak": 0.32745361328125,
+      "decodedRms": 0.04764006956180607
+    },
+    {
+      "file": "3830a7954d8f9fec-af-heart-slow-794c0a13cbdb.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.482452392578125,
+      "decodedRms": 0.043418717792033594
+    },
+    {
+      "file": "3830a7954d8f9fec-af-heart-standard-609807d757b7.m4a",
+      "decodedSeconds": 2.375,
+      "decodedPeak": 0.457275390625,
+      "decodedRms": 0.04221999978826943
+    },
+    {
+      "file": "6cc68160d87c1442-af-heart-slow-fdaaa837a7bc.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.446319580078125,
+      "decodedRms": 0.04362070392347646
+    },
+    {
+      "file": "6cc68160d87c1442-af-heart-standard-6bcdbf08c682.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.3975830078125,
+      "decodedRms": 0.04337294937180862
+    },
+    {
+      "file": "43e738cd9ed1f536-af-heart-slow-b3e860104533.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.511962890625,
+      "decodedRms": 0.04716997591381918
+    },
+    {
+      "file": "43e738cd9ed1f536-af-heart-standard-8378bc771163.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.429443359375,
+      "decodedRms": 0.04681569543759278
+    },
+    {
+      "file": "e58213cb908af3a0-af-heart-slow-3f73a9296476.m4a",
+      "decodedSeconds": 2.75,
+      "decodedPeak": 0.304290771484375,
+      "decodedRms": 0.04655594864792746
+    },
+    {
+      "file": "e58213cb908af3a0-af-heart-standard-7fcf3836838e.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.290802001953125,
+      "decodedRms": 0.04642965633960351
+    },
+    {
+      "file": "e47bc261b6a010ca-af-heart-slow-060c6b75141c.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.32745361328125,
+      "decodedRms": 0.04632097448424136
+    },
+    {
+      "file": "e47bc261b6a010ca-af-heart-standard-c3a09f6b0dfd.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.316192626953125,
+      "decodedRms": 0.04727298573550984
+    },
+    {
+      "file": "296b807d044de6dd-af-heart-slow-bba1c63c62b3.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.38336181640625,
+      "decodedRms": 0.04732081090060991
+    },
+    {
+      "file": "296b807d044de6dd-af-heart-standard-a55530bde72b.m4a",
+      "decodedSeconds": 2.275,
+      "decodedPeak": 0.318817138671875,
+      "decodedRms": 0.04731039474816895
+    },
+    {
+      "file": "d984890d2d62ef97-af-heart-slow-a80719410cbd.m4a",
+      "decodedSeconds": 3.025,
+      "decodedPeak": 0.425262451171875,
+      "decodedRms": 0.04901017298623412
+    },
+    {
+      "file": "d984890d2d62ef97-af-heart-standard-b4a9d1a3bde6.m4a",
+      "decodedSeconds": 2.75,
+      "decodedPeak": 0.320220947265625,
+      "decodedRms": 0.04881145985897194
+    },
+    {
+      "file": "aae5793c76314ab5-af-heart-slow-2c1af5117b34.m4a",
+      "decodedSeconds": 2.15,
+      "decodedPeak": 0.3690185546875,
+      "decodedRms": 0.04567143534693279
+    },
+    {
+      "file": "aae5793c76314ab5-af-heart-standard-70fe044eaa23.m4a",
+      "decodedSeconds": 1.975,
+      "decodedPeak": 0.427825927734375,
+      "decodedRms": 0.04587780957814345
+    },
+    {
+      "file": "8b5b9db0c13db242-af-heart-slow-ac1f3e50969e.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.371368408203125,
+      "decodedRms": 0.0414079890015853
+    },
+    {
+      "file": "8b5b9db0c13db242-af-heart-standard-1cef4e516b6e.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.35418701171875,
+      "decodedRms": 0.04188602849067799
+    },
+    {
+      "file": "04efaf080f5a3e74-af-heart-slow-1185942fee49.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.406524658203125,
+      "decodedRms": 0.04555606312648972
+    },
+    {
+      "file": "04efaf080f5a3e74-af-heart-standard-6513cfe01a3e.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.38739013671875,
+      "decodedRms": 0.04637136105206286
+    },
+    {
+      "file": "7692c3ad3540bb80-af-heart-slow-7cc8a6c419d7.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.315155029296875,
+      "decodedRms": 0.04471307272117326
+    },
+    {
+      "file": "7692c3ad3540bb80-af-heart-standard-f5247a5af30f.m4a",
+      "decodedSeconds": 1.275,
+      "decodedPeak": 0.34222412109375,
+      "decodedRms": 0.047067878463867036
+    },
+    {
+      "file": "3fc4ccfe745870e2-af-heart-slow-3a24c5c3f005.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.3365478515625,
+      "decodedRms": 0.04051754337804352
+    },
+    {
+      "file": "3fc4ccfe745870e2-af-heart-standard-9c6ec393d8e4.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.32171630859375,
+      "decodedRms": 0.04167856184388535
+    },
+    {
+      "file": "184f54c54d7fd4c7-af-heart-slow-59f4f244762f.m4a",
+      "decodedSeconds": 2.9,
+      "decodedPeak": 0.3001708984375,
+      "decodedRms": 0.04735537467150599
+    },
+    {
+      "file": "184f54c54d7fd4c7-af-heart-standard-702a16787e82.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.29974365234375,
+      "decodedRms": 0.047421597673434505
+    },
+    {
+      "file": "0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "decodedSeconds": 2.075,
+      "decodedPeak": 0.442352294921875,
+      "decodedRms": 0.04760875088542802
+    },
+    {
+      "file": "0bbcec063d033238-af-heart-standard-4ddb06d8da5b.m4a",
+      "decodedSeconds": 1.875,
+      "decodedPeak": 0.506927490234375,
+      "decodedRms": 0.047089330080253525
+    },
+    {
+      "file": "681ff6dc74b64ec3-af-heart-slow-aa51945304fd.m4a",
+      "decodedSeconds": 2.875,
+      "decodedPeak": 0.309814453125,
+      "decodedRms": 0.04656008641902103
+    },
+    {
+      "file": "681ff6dc74b64ec3-af-heart-standard-e592254949f8.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.332916259765625,
+      "decodedRms": 0.04629195774034509
+    },
+    {
+      "file": "f6c70df1dab0f72d-af-heart-slow-e45329ac2583.m4a",
+      "decodedSeconds": 2.175,
+      "decodedPeak": 0.376190185546875,
+      "decodedRms": 0.04805587695287454
+    },
+    {
+      "file": "f6c70df1dab0f72d-af-heart-standard-46b535c97553.m4a",
+      "decodedSeconds": 1.925,
+      "decodedPeak": 0.368743896484375,
+      "decodedRms": 0.04844290635603937
+    },
+    {
+      "file": "fdd3c384a18c8268-af-heart-slow-8e0fc6c95f93.m4a",
+      "decodedSeconds": 2.825,
+      "decodedPeak": 0.4146728515625,
+      "decodedRms": 0.04779077754603003
+    },
+    {
+      "file": "fdd3c384a18c8268-af-heart-standard-8abdaaca2ecf.m4a",
+      "decodedSeconds": 2.575,
+      "decodedPeak": 0.38507080078125,
+      "decodedRms": 0.04730755478526624
+    },
+    {
+      "file": "07631ce9c783f76a-af-heart-slow-16fb152ec1b1.m4a",
+      "decodedSeconds": 2.1,
+      "decodedPeak": 0.321380615234375,
+      "decodedRms": 0.04852072472341655
+    },
+    {
+      "file": "07631ce9c783f76a-af-heart-standard-814304fcc5fe.m4a",
+      "decodedSeconds": 2.0,
+      "decodedPeak": 0.3184814453125,
+      "decodedRms": 0.048437549345250276
+    },
+    {
+      "file": "f4126cb646fdd78e-af-heart-slow-93aa830db436.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.347320556640625,
+      "decodedRms": 0.04628845122198116
+    },
+    {
+      "file": "f4126cb646fdd78e-af-heart-standard-c62f850657dc.m4a",
+      "decodedSeconds": 2.025,
+      "decodedPeak": 0.3392333984375,
+      "decodedRms": 0.0464419061885239
+    },
+    {
+      "file": "9cc41915d7fdaf83-af-heart-slow-f804b5bb678d.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.368896484375,
+      "decodedRms": 0.0466505058476658
+    },
+    {
+      "file": "9cc41915d7fdaf83-af-heart-standard-6c3542d28e2f.m4a",
+      "decodedSeconds": 2.225,
+      "decodedPeak": 0.375,
+      "decodedRms": 0.04659266334932879
+    },
+    {
+      "file": "34958c1fea706020-af-heart-slow-30eac6cabc4b.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.38555908203125,
+      "decodedRms": 0.0464356997146792
+    },
+    {
+      "file": "34958c1fea706020-af-heart-standard-fcd585717631.m4a",
+      "decodedSeconds": 2.275,
+      "decodedPeak": 0.35205078125,
+      "decodedRms": 0.04596355177630455
+    },
+    {
+      "file": "263c4bc52a5f5340-af-heart-slow-2b44f2ed2e5c.m4a",
+      "decodedSeconds": 1.9,
+      "decodedPeak": 0.4708251953125,
+      "decodedRms": 0.04715260485975079
+    },
+    {
+      "file": "263c4bc52a5f5340-af-heart-standard-ae4634993306.m4a",
+      "decodedSeconds": 1.725,
+      "decodedPeak": 0.4537353515625,
+      "decodedRms": 0.04689862267404492
+    },
+    {
+      "file": "3a7bd3e2360a3d29-af-heart-slow-49241bd7bd52.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.326904296875,
+      "decodedRms": 0.03979098866623302
+    },
+    {
+      "file": "3a7bd3e2360a3d29-af-heart-standard-7ae0fff70f49.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.54254150390625,
+      "decodedRms": 0.04129461161881581
+    },
+    {
+      "file": "b493d48364afe44d-af-heart-slow-e0a49288ff0c.m4a",
+      "decodedSeconds": 1.65,
+      "decodedPeak": 0.380157470703125,
+      "decodedRms": 0.045111934345962196
+    },
+    {
+      "file": "b493d48364afe44d-af-heart-standard-986bf7c2c1f4.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.327239990234375,
+      "decodedRms": 0.04583312157879918
+    },
+    {
+      "file": "9ed1515819dec61f-af-heart-slow-dc671c12d0ec.m4a",
+      "decodedSeconds": 1.675,
+      "decodedPeak": 0.361175537109375,
+      "decodedRms": 0.04220858580964856
+    },
+    {
+      "file": "9ed1515819dec61f-af-heart-standard-798aa09dbdaf.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.368194580078125,
+      "decodedRms": 0.04304301629987352
+    },
+    {
+      "file": "0f4168490e38b844-af-heart-slow-aa26c9e26658.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.32183837890625,
+      "decodedRms": 0.04569492063803427
+    },
+    {
+      "file": "0f4168490e38b844-af-heart-standard-d94b11525415.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.3450927734375,
+      "decodedRms": 0.045969445794905375
+    },
+    {
+      "file": "cdb700373d13ed61-af-heart-slow-8db42b2da2b2.m4a",
+      "decodedSeconds": 2.675,
+      "decodedPeak": 0.384002685546875,
+      "decodedRms": 0.04467466471185917
+    },
+    {
+      "file": "cdb700373d13ed61-af-heart-standard-5aaa6e8a0963.m4a",
+      "decodedSeconds": 2.575,
+      "decodedPeak": 0.466888427734375,
+      "decodedRms": 0.044978937000206866
+    },
+    {
+      "file": "89d1a0ac1a00e56d-af-heart-slow-c10fb54157de.m4a",
+      "decodedSeconds": 1.85,
+      "decodedPeak": 0.330902099609375,
+      "decodedRms": 0.048184528010156116
+    },
+    {
+      "file": "89d1a0ac1a00e56d-af-heart-standard-103fad9853ce.m4a",
+      "decodedSeconds": 1.725,
+      "decodedPeak": 0.33514404296875,
+      "decodedRms": 0.04906295759809694
+    },
+    {
+      "file": "3a67f5a1bcd471be-af-heart-slow-c7be0f43e762.m4a",
+      "decodedSeconds": 2.75,
+      "decodedPeak": 0.49267578125,
+      "decodedRms": 0.04350994788272505
+    },
+    {
+      "file": "3a67f5a1bcd471be-af-heart-standard-e820ec59b945.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.5003662109375,
+      "decodedRms": 0.043543158227357534
+    },
+    {
+      "file": "5e2083c7a4aef94b-af-heart-slow-cc4910e91c6a.m4a",
+      "decodedSeconds": 2.525,
+      "decodedPeak": 0.58612060546875,
+      "decodedRms": 0.043515321838908744
+    },
+    {
+      "file": "5e2083c7a4aef94b-af-heart-standard-a454fd7abed4.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.518310546875,
+      "decodedRms": 0.04330406220313125
+    },
+    {
+      "file": "948a870f44cf42bc-af-heart-slow-12a940e181db.m4a",
+      "decodedSeconds": 3.25,
+      "decodedPeak": 0.305023193359375,
+      "decodedRms": 0.04802881230880168
+    },
+    {
+      "file": "948a870f44cf42bc-af-heart-standard-5a10ca97ac3a.m4a",
+      "decodedSeconds": 2.95,
+      "decodedPeak": 0.320587158203125,
+      "decodedRms": 0.048239665571499744
+    },
+    {
+      "file": "2108f1997155aeea-af-heart-slow-953fb163d76d.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.293365478515625,
+      "decodedRms": 0.04554872829717572
+    },
+    {
+      "file": "2108f1997155aeea-af-heart-standard-ffdfb0bb9878.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.27532958984375,
+      "decodedRms": 0.045160227473227794
+    },
+    {
+      "file": "d88403c56f4ca723-af-heart-slow-871a13a08273.m4a",
+      "decodedSeconds": 1.975,
+      "decodedPeak": 0.313385009765625,
+      "decodedRms": 0.044423044868047636
+    },
+    {
+      "file": "d88403c56f4ca723-af-heart-standard-c99e8b8cc319.m4a",
+      "decodedSeconds": 1.825,
+      "decodedPeak": 0.33538818359375,
+      "decodedRms": 0.045028305918728924
+    },
+    {
+      "file": "d12a5cee72d005d2-af-heart-slow-c2092f8abcfb.m4a",
+      "decodedSeconds": 3.275,
+      "decodedPeak": 0.4561767578125,
+      "decodedRms": 0.046469302492288735
+    },
+    {
+      "file": "d12a5cee72d005d2-af-heart-standard-c56bdb37e2fd.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.463897705078125,
+      "decodedRms": 0.04649007463068251
+    },
+    {
+      "file": "e2eadd40afc3128c-af-heart-slow-c585e5930942.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.33721923828125,
+      "decodedRms": 0.04546673040329845
+    },
+    {
+      "file": "e2eadd40afc3128c-af-heart-standard-6dc0e097164e.m4a",
+      "decodedSeconds": 2.4,
+      "decodedPeak": 0.332550048828125,
+      "decodedRms": 0.045686867263347135
+    },
+    {
+      "file": "a03fc7125204e914-af-heart-slow-95f500539f30.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.32861328125,
+      "decodedRms": 0.04684316955234328
+    },
+    {
+      "file": "a03fc7125204e914-af-heart-standard-3dd78803c9bb.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.30230712890625,
+      "decodedRms": 0.0461774867686637
+    },
+    {
+      "file": "5e9562c786d9ca04-af-heart-slow-ed951747b4c9.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.326690673828125,
+      "decodedRms": 0.045136778980071915
+    },
+    {
+      "file": "5e9562c786d9ca04-af-heart-standard-3d0d7909f004.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.332000732421875,
+      "decodedRms": 0.04600659330094497
+    },
+    {
+      "file": "7f5d1618e7d28cc7-af-heart-slow-f572e5768817.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.302398681640625,
+      "decodedRms": 0.040890557770061245
+    },
+    {
+      "file": "7f5d1618e7d28cc7-af-heart-standard-6d12c762a9d5.m4a",
+      "decodedSeconds": 1.2,
+      "decodedPeak": 0.295318603515625,
+      "decodedRms": 0.0415081833473585
+    },
+    {
+      "file": "c2333a7e3a607935-af-heart-slow-bc187e49969c.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.4813232421875,
+      "decodedRms": 0.04510116365199467
+    },
+    {
+      "file": "c2333a7e3a607935-af-heart-standard-dd18ed531ae6.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.438629150390625,
+      "decodedRms": 0.046227821227747296
+    },
+    {
+      "file": "7b9e10dfed0288d6-af-heart-slow-da15513eab06.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.38702392578125,
+      "decodedRms": 0.043402917068695465
+    },
+    {
+      "file": "7b9e10dfed0288d6-af-heart-standard-aa9ef7e00ba6.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.4219970703125,
+      "decodedRms": 0.04464489378720111
+    },
+    {
+      "file": "2d1c098c85959b8c-af-heart-slow-c7979e0526fc.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.366241455078125,
+      "decodedRms": 0.045514643806860176
+    },
+    {
+      "file": "2d1c098c85959b8c-af-heart-standard-5808e41d23e1.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.3935546875,
+      "decodedRms": 0.045632388224773904
+    },
+    {
+      "file": "554f4d3dafc80844-af-heart-slow-83247797226c.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.3878173828125,
+      "decodedRms": 0.04518942490724732
+    },
+    {
+      "file": "554f4d3dafc80844-af-heart-standard-2b950d2b5926.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.4107666015625,
+      "decodedRms": 0.04531541554009983
+    },
+    {
+      "file": "18e1dd392168f601-af-heart-slow-71195d1595db.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.304718017578125,
+      "decodedRms": 0.03852121214824958
+    },
+    {
+      "file": "18e1dd392168f601-af-heart-standard-91107f90da71.m4a",
+      "decodedSeconds": 1.15,
+      "decodedPeak": 0.3665771484375,
+      "decodedRms": 0.039416775229577886
+    },
+    {
+      "file": "a52514252adf8606-af-heart-slow-09bf9bca4db9.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.38372802734375,
+      "decodedRms": 0.043058887662941636
+    },
+    {
+      "file": "a52514252adf8606-af-heart-standard-654ef71697b0.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.396759033203125,
+      "decodedRms": 0.04316185661708416
+    },
+    {
+      "file": "01ea5ddd3be5477a-af-heart-slow-fcadfbea9627.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.33380126953125,
+      "decodedRms": 0.03918741391102424
+    },
+    {
+      "file": "01ea5ddd3be5477a-af-heart-standard-8b410d528f57.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.311248779296875,
+      "decodedRms": 0.040871590910583414
+    },
+    {
+      "file": "c6e56444c08c643c-af-heart-slow-bd5f23cda3ca.m4a",
+      "decodedSeconds": 2.825,
+      "decodedPeak": 0.355133056640625,
+      "decodedRms": 0.047470833818884305
+    },
+    {
+      "file": "c6e56444c08c643c-af-heart-standard-ac6321a66cd8.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.361297607421875,
+      "decodedRms": 0.04763961138975272
+    },
+    {
+      "file": "395bd92e6e4ab7d8-af-heart-slow-0f75194576ac.m4a",
+      "decodedSeconds": 3.35,
+      "decodedPeak": 0.54888916015625,
+      "decodedRms": 0.048125068947350025
+    },
+    {
+      "file": "395bd92e6e4ab7d8-af-heart-standard-faa7f592bda3.m4a",
+      "decodedSeconds": 3.175,
+      "decodedPeak": 0.62939453125,
+      "decodedRms": 0.04761059309121351
+    },
+    {
+      "file": "b11c51c2bedecec9-af-heart-slow-cc1c95bc88d4.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.3607177734375,
+      "decodedRms": 0.04566626499747414
+    },
+    {
+      "file": "b11c51c2bedecec9-af-heart-standard-c6799fdea3e6.m4a",
+      "decodedSeconds": 2.025,
+      "decodedPeak": 0.34222412109375,
+      "decodedRms": 0.04504822400952058
+    },
+    {
+      "file": "bbd90a5dcb96f483-af-heart-slow-65a1d1523115.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.299530029296875,
+      "decodedRms": 0.045341611347088445
+    },
+    {
+      "file": "bbd90a5dcb96f483-af-heart-standard-bf0d5b0edf87.m4a",
+      "decodedSeconds": 2.175,
+      "decodedPeak": 0.29229736328125,
+      "decodedRms": 0.04468233283884694
+    },
+    {
+      "file": "ac248b24c5c6bf70-af-heart-slow-30133d60d62d.m4a",
+      "decodedSeconds": 2.4,
+      "decodedPeak": 0.490631103515625,
+      "decodedRms": 0.04919683308688378
+    },
+    {
+      "file": "ac248b24c5c6bf70-af-heart-standard-e4781256df81.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.4185791015625,
+      "decodedRms": 0.04898771568985312
+    },
+    {
+      "file": "29b9ed6089755dd0-af-heart-slow-46879618c1e2.m4a",
+      "decodedSeconds": 3.375,
+      "decodedPeak": 0.5467529296875,
+      "decodedRms": 0.047347657682299225
+    },
+    {
+      "file": "29b9ed6089755dd0-af-heart-standard-281fabfe0eba.m4a",
+      "decodedSeconds": 3.125,
+      "decodedPeak": 0.52252197265625,
+      "decodedRms": 0.046851553393843275
+    },
+    {
+      "file": "9992a59f13a6cec2-af-heart-slow-21dda51ff0f8.m4a",
+      "decodedSeconds": 3.475,
+      "decodedPeak": 0.402923583984375,
+      "decodedRms": 0.04795270340225281
+    },
+    {
+      "file": "9992a59f13a6cec2-af-heart-standard-c10769b61a01.m4a",
+      "decodedSeconds": 3.175,
+      "decodedPeak": 0.334197998046875,
+      "decodedRms": 0.04796959805890284
+    },
+    {
+      "file": "b1bc3d3a9b0e0a69-af-heart-slow-8e9aef53017a.m4a",
+      "decodedSeconds": 3.475,
+      "decodedPeak": 0.376312255859375,
+      "decodedRms": 0.04628985295195791
+    },
+    {
+      "file": "b1bc3d3a9b0e0a69-af-heart-standard-081a7b508912.m4a",
+      "decodedSeconds": 3.175,
+      "decodedPeak": 0.392730712890625,
+      "decodedRms": 0.04630722932955005
+    },
+    {
+      "file": "af7b1ec761e1a40e-af-heart-slow-dc2a87a63b66.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.3006591796875,
+      "decodedRms": 0.0451154064748309
+    },
+    {
+      "file": "af7b1ec761e1a40e-af-heart-standard-448c698e942c.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.291534423828125,
+      "decodedRms": 0.04461055547928793
+    },
+    {
+      "file": "4ea140588150773c-af-heart-slow-3644a53e80f0.m4a",
+      "decodedSeconds": 1.5,
+      "decodedPeak": 0.340850830078125,
+      "decodedRms": 0.04334996364054922
+    },
+    {
+      "file": "4ea140588150773c-af-heart-standard-878ab6053133.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.321380615234375,
+      "decodedRms": 0.044997864466702085
+    },
+    {
+      "file": "c5052532c2206140-af-heart-slow-7b9453aa77bc.m4a",
+      "decodedSeconds": 0.925,
+      "decodedPeak": 0.342376708984375,
+      "decodedRms": 0.04088788818507593
+    },
+    {
+      "file": "c5052532c2206140-af-heart-standard-5d25208ee27e.m4a",
+      "decodedSeconds": 0.85,
+      "decodedPeak": 0.333770751953125,
+      "decodedRms": 0.04008549324257243
+    },
+    {
+      "file": "0d4fc4a78d3706ed-af-heart-slow-b3cfbea9e0a0.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.407012939453125,
+      "decodedRms": 0.04126195574329375
+    },
+    {
+      "file": "0d4fc4a78d3706ed-af-heart-standard-9ca45a92638b.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.446258544921875,
+      "decodedRms": 0.04291027598016619
+    },
+    {
+      "file": "3d7eb3d3dab17ee5-af-heart-slow-e65409b8940f.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.3026123046875,
+      "decodedRms": 0.04101493487665116
+    },
+    {
+      "file": "3d7eb3d3dab17ee5-af-heart-standard-279d9835abc1.m4a",
+      "decodedSeconds": 1.225,
+      "decodedPeak": 0.308807373046875,
+      "decodedRms": 0.04171258880877915
+    },
+    {
+      "file": "191eab674f382fda-af-heart-slow-bb29381e5b4e.m4a",
+      "decodedSeconds": 3.075,
+      "decodedPeak": 0.33184814453125,
+      "decodedRms": 0.0452504055924341
+    },
+    {
+      "file": "191eab674f382fda-af-heart-standard-8b46e1afa646.m4a",
+      "decodedSeconds": 2.8,
+      "decodedPeak": 0.303985595703125,
+      "decodedRms": 0.04475000842753743
+    },
+    {
+      "file": "b7cd6e1a3f872660-af-heart-slow-fe7676120a6c.m4a",
+      "decodedSeconds": 3.0,
+      "decodedPeak": 0.34234619140625,
+      "decodedRms": 0.046301263386437974
+    },
+    {
+      "file": "b7cd6e1a3f872660-af-heart-standard-e4491a701188.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.347381591796875,
+      "decodedRms": 0.04558093906225575
+    },
+    {
+      "file": "72c4fb3e0a458368-af-heart-slow-45df2d334acc.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.382720947265625,
+      "decodedRms": 0.04867131357954261
+    },
+    {
+      "file": "72c4fb3e0a458368-af-heart-standard-2a360fc7aa7c.m4a",
+      "decodedSeconds": 2.75,
+      "decodedPeak": 0.37933349609375,
+      "decodedRms": 0.048318190245268705
+    },
+    {
+      "file": "2eaf7d0c0da6c156-af-heart-slow-c97c967515ae.m4a",
+      "decodedSeconds": 3.7,
+      "decodedPeak": 0.5396728515625,
+      "decodedRms": 0.04727719293860389
+    },
+    {
+      "file": "2eaf7d0c0da6c156-af-heart-standard-3ffc751a4523.m4a",
+      "decodedSeconds": 3.35,
+      "decodedPeak": 0.416259765625,
+      "decodedRms": 0.04739082181100712
+    },
+    {
+      "file": "61b594504c7f9b4f-af-heart-slow-8d016fb16cff.m4a",
+      "decodedSeconds": 3.375,
+      "decodedPeak": 0.36712646484375,
+      "decodedRms": 0.04686433639191177
+    },
+    {
+      "file": "61b594504c7f9b4f-af-heart-standard-9eebf0d7575c.m4a",
+      "decodedSeconds": 3.075,
+      "decodedPeak": 0.380767822265625,
+      "decodedRms": 0.04622921162820444
+    },
+    {
+      "file": "bc4b7311db9cfbff-af-heart-slow-df76df079386.m4a",
+      "decodedSeconds": 3.275,
+      "decodedPeak": 0.3436279296875,
+      "decodedRms": 0.04943179366979398
+    },
+    {
+      "file": "bc4b7311db9cfbff-af-heart-standard-e39bdbc8bf1b.m4a",
+      "decodedSeconds": 3.1,
+      "decodedPeak": 0.3231201171875,
+      "decodedRms": 0.04946323075124559
+    },
+    {
+      "file": "cc4997b1fda44d97-af-heart-slow-1cae4a23b7e5.m4a",
+      "decodedSeconds": 2.7,
+      "decodedPeak": 0.447601318359375,
+      "decodedRms": 0.049940992602562025
+    },
+    {
+      "file": "cc4997b1fda44d97-af-heart-standard-21e9854a7bdf.m4a",
+      "decodedSeconds": 2.475,
+      "decodedPeak": 0.422576904296875,
+      "decodedRms": 0.04939411874209969
+    },
+    {
+      "file": "68a1705f68e2c233-af-heart-slow-3d48f7a2a681.m4a",
+      "decodedSeconds": 2.525,
+      "decodedPeak": 0.437225341796875,
+      "decodedRms": 0.045942707132958095
+    },
+    {
+      "file": "68a1705f68e2c233-af-heart-standard-9d1f109f0e0e.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.39154052734375,
+      "decodedRms": 0.04640177679496125
+    },
+    {
+      "file": "b2f62d6eeab45253-af-heart-slow-45d10a4e6adb.m4a",
+      "decodedSeconds": 3.275,
+      "decodedPeak": 0.332122802734375,
+      "decodedRms": 0.04701936099491205
+    },
+    {
+      "file": "b2f62d6eeab45253-af-heart-standard-2f7ed598a051.m4a",
+      "decodedSeconds": 3.125,
+      "decodedPeak": 0.328399658203125,
+      "decodedRms": 0.04646635529827004
+    },
+    {
+      "file": "87b07bfa06ebb4e7-af-heart-slow-720a7a2eab5f.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.37957763671875,
+      "decodedRms": 0.04752246575968396
+    },
+    {
+      "file": "87b07bfa06ebb4e7-af-heart-standard-c4facc074b8b.m4a",
+      "decodedSeconds": 2.4,
+      "decodedPeak": 0.383392333984375,
+      "decodedRms": 0.04729551102568607
+    },
+    {
+      "file": "116f54c41d0405db-af-heart-slow-5f59fc1a6c93.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.383514404296875,
+      "decodedRms": 0.04230833719119713
+    },
+    {
+      "file": "116f54c41d0405db-af-heart-standard-d7d7caf392e3.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.3873291015625,
+      "decodedRms": 0.043895334169609626
+    },
+    {
+      "file": "c58dd0a3760008c9-af-heart-slow-ea1064b8e8a0.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.408782958984375,
+      "decodedRms": 0.0450690315622297
+    },
+    {
+      "file": "c58dd0a3760008c9-af-heart-standard-e01d3009fb20.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.433624267578125,
+      "decodedRms": 0.04633735491932304
+    },
+    {
+      "file": "2b2961a431b23c90-af-heart-slow-89d5864691b0.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.29779052734375,
+      "decodedRms": 0.041295746957636895
+    },
+    {
+      "file": "2b2961a431b23c90-af-heart-standard-1967290be95b.m4a",
+      "decodedSeconds": 1.25,
+      "decodedPeak": 0.302276611328125,
+      "decodedRms": 0.04281303388642365
+    },
+    {
+      "file": "04e027e4990a203f-af-heart-slow-9eebb183805d.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.38031005859375,
+      "decodedRms": 0.044133407041219846
+    },
+    {
+      "file": "04e027e4990a203f-af-heart-standard-4d86737223da.m4a",
+      "decodedSeconds": 1.3,
+      "decodedPeak": 0.37109375,
+      "decodedRms": 0.04394120757379369
+    },
+    {
+      "file": "6b93d759a1254597-af-heart-slow-53f18693fcec.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.3134765625,
+      "decodedRms": 0.047542047369246145
+    },
+    {
+      "file": "6b93d759a1254597-af-heart-standard-df876c6995d3.m4a",
+      "decodedSeconds": 2.175,
+      "decodedPeak": 0.31976318359375,
+      "decodedRms": 0.04708007656416557
+    },
+    {
+      "file": "a109a21742ccb708-af-heart-slow-34ccc0562e74.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.4249267578125,
+      "decodedRms": 0.048562913752838735
+    },
+    {
+      "file": "a109a21742ccb708-af-heart-standard-c3a2a205b93c.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.4378662109375,
+      "decodedRms": 0.047819380489120246
+    },
+    {
+      "file": "0fb332bf2b104663-af-heart-slow-cc72d50f8e3e.m4a",
+      "decodedSeconds": 2.525,
+      "decodedPeak": 0.373138427734375,
+      "decodedRms": 0.04725584288650931
+    },
+    {
+      "file": "0fb332bf2b104663-af-heart-standard-3e0f3ea7ddfb.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.395233154296875,
+      "decodedRms": 0.047485721573969436
+    },
+    {
+      "file": "86a96d8d84e7eec8-af-heart-slow-665bc2f15928.m4a",
+      "decodedSeconds": 2.7,
+      "decodedPeak": 0.3807373046875,
+      "decodedRms": 0.0479475725879064
+    },
+    {
+      "file": "86a96d8d84e7eec8-af-heart-standard-6da7e9c6794d.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.37713623046875,
+      "decodedRms": 0.047777694349618136
+    },
+    {
+      "file": "effd844e8a9060b7-af-heart-slow-c25d5a4ca3b5.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.3450927734375,
+      "decodedRms": 0.046226447264035915
+    },
+    {
+      "file": "effd844e8a9060b7-af-heart-standard-4ef6064a5c9e.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.35357666015625,
+      "decodedRms": 0.04607401770624219
+    },
+    {
+      "file": "f7480843a148135a-af-heart-slow-756123fba602.m4a",
+      "decodedSeconds": 2.675,
+      "decodedPeak": 0.3751220703125,
+      "decodedRms": 0.045961103589241846
+    },
+    {
+      "file": "f7480843a148135a-af-heart-standard-d030587f55ce.m4a",
+      "decodedSeconds": 2.525,
+      "decodedPeak": 0.32171630859375,
+      "decodedRms": 0.045451837563731494
+    },
+    {
+      "file": "57422dcbb464139a-af-heart-slow-6052e7ecb439.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.336761474609375,
+      "decodedRms": 0.04787408208850312
+    },
+    {
+      "file": "57422dcbb464139a-af-heart-standard-1125e9abe665.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.361297607421875,
+      "decodedRms": 0.047818001527653815
+    },
+    {
+      "file": "50cd011a8b842b55-af-heart-slow-c75433557df6.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.372894287109375,
+      "decodedRms": 0.04656590177492563
+    },
+    {
+      "file": "50cd011a8b842b55-af-heart-standard-0e244db1615c.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.3463134765625,
+      "decodedRms": 0.04653697590533718
+    },
+    {
+      "file": "4b9201c931d82b19-af-heart-slow-364ef2ab9faf.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.4012451171875,
+      "decodedRms": 0.04705927811332532
+    },
+    {
+      "file": "4b9201c931d82b19-af-heart-standard-eb3c900276f3.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.437164306640625,
+      "decodedRms": 0.04725131345251334
+    },
+    {
+      "file": "25446939623f5ea7-af-heart-slow-4aba48c20944.m4a",
+      "decodedSeconds": 2.8,
+      "decodedPeak": 0.29840087890625,
+      "decodedRms": 0.04501252140413536
+    },
+    {
+      "file": "25446939623f5ea7-af-heart-standard-98c6d04a7243.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.306396484375,
+      "decodedRms": 0.04512768144250732
+    },
+    {
+      "file": "dc9c5edb8b2d479e-af-heart-slow-e32dde027b6e.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.39080810546875,
+      "decodedRms": 0.040062881655127995
+    },
+    {
+      "file": "dc9c5edb8b2d479e-af-heart-standard-778abe1bf8c7.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.382965087890625,
+      "decodedRms": 0.04196531877577058
+    },
+    {
+      "file": "c06b0cfe0cc5e900-af-heart-slow-76010a325f68.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.299224853515625,
+      "decodedRms": 0.042480040209273706
+    },
+    {
+      "file": "c06b0cfe0cc5e900-af-heart-standard-adc50db51c44.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.3040771484375,
+      "decodedRms": 0.04352892537997294
+    },
+    {
+      "file": "27756f050e14a1cb-af-heart-slow-a8537aa2d8c3.m4a",
+      "decodedSeconds": 1.525,
+      "decodedPeak": 0.368011474609375,
+      "decodedRms": 0.041401580835288325
+    },
+    {
+      "file": "27756f050e14a1cb-af-heart-standard-bb0366be0f54.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.36663818359375,
+      "decodedRms": 0.0442624334323281
+    },
+    {
+      "file": "05f514fae7ca5710-af-heart-slow-7c4d72adfa7e.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.375579833984375,
+      "decodedRms": 0.0412529701975162
+    },
+    {
+      "file": "05f514fae7ca5710-af-heart-standard-341222b2c6a9.m4a",
+      "decodedSeconds": 1.35,
+      "decodedPeak": 0.386505126953125,
+      "decodedRms": 0.040954636715558615
+    },
+    {
+      "file": "c4c8498e89a71270-af-heart-slow-a8d3f1dd44b8.m4a",
+      "decodedSeconds": 2.225,
+      "decodedPeak": 0.528106689453125,
+      "decodedRms": 0.04755265270133839
+    },
+    {
+      "file": "c4c8498e89a71270-af-heart-standard-a87ec6ef7dcc.m4a",
+      "decodedSeconds": 2.1,
+      "decodedPeak": 0.659149169921875,
+      "decodedRms": 0.047212430200843016
+    },
+    {
+      "file": "08fb772de7eded09-af-heart-slow-ac62cda814c3.m4a",
+      "decodedSeconds": 2.425,
+      "decodedPeak": 0.3203125,
+      "decodedRms": 0.04529396031255849
+    },
+    {
+      "file": "08fb772de7eded09-af-heart-standard-866ca2f65e88.m4a",
+      "decodedSeconds": 2.15,
+      "decodedPeak": 0.27423095703125,
+      "decodedRms": 0.04486975512927298
+    },
+    {
+      "file": "3b7873ed135172d9-af-heart-slow-b626c2b13ed3.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.401580810546875,
+      "decodedRms": 0.04472998134025317
+    },
+    {
+      "file": "3b7873ed135172d9-af-heart-standard-5cd681e5d614.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.364776611328125,
+      "decodedRms": 0.044421108631412104
+    },
+    {
+      "file": "0f4d71a075b06fb0-af-heart-slow-97573a9df2dd.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.36456298828125,
+      "decodedRms": 0.045737653396450834
+    },
+    {
+      "file": "0f4d71a075b06fb0-af-heart-standard-4e1e5359a2bb.m4a",
+      "decodedSeconds": 2.175,
+      "decodedPeak": 0.3939208984375,
+      "decodedRms": 0.04636082982501597
+    },
+    {
+      "file": "3558a84dff5a6f56-af-heart-slow-2259462ac2c6.m4a",
+      "decodedSeconds": 2.4,
+      "decodedPeak": 0.44873046875,
+      "decodedRms": 0.04607009372730631
+    },
+    {
+      "file": "3558a84dff5a6f56-af-heart-standard-87570bf9e728.m4a",
+      "decodedSeconds": 2.275,
+      "decodedPeak": 0.45733642578125,
+      "decodedRms": 0.045982550247356646
+    },
+    {
+      "file": "5c52a94bfaccf938-af-heart-slow-a6cbf58af8de.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.322845458984375,
+      "decodedRms": 0.04494108043834798
+    },
+    {
+      "file": "5c52a94bfaccf938-af-heart-standard-e2f522b3cc06.m4a",
+      "decodedSeconds": 2.375,
+      "decodedPeak": 0.3408203125,
+      "decodedRms": 0.04463174015195058
+    },
+    {
+      "file": "8d31fafea50c1af9-af-heart-slow-e86b7e509c21.m4a",
+      "decodedSeconds": 2.05,
+      "decodedPeak": 0.403564453125,
+      "decodedRms": 0.044941848989401234
+    },
+    {
+      "file": "8d31fafea50c1af9-af-heart-standard-59d453bce255.m4a",
+      "decodedSeconds": 1.95,
+      "decodedPeak": 0.470367431640625,
+      "decodedRms": 0.04529894489473616
+    },
+    {
+      "file": "2c9902a83a5886d4-af-heart-slow-78fb3dbe979a.m4a",
+      "decodedSeconds": 2.275,
+      "decodedPeak": 0.39312744140625,
+      "decodedRms": 0.04533775724643027
+    },
+    {
+      "file": "2c9902a83a5886d4-af-heart-standard-0e833c03f0fd.m4a",
+      "decodedSeconds": 2.1,
+      "decodedPeak": 0.445343017578125,
+      "decodedRms": 0.045517701949321455
+    },
+    {
+      "file": "9100a6cd770905e4-af-heart-slow-75ce481fc3e0.m4a",
+      "decodedSeconds": 2.375,
+      "decodedPeak": 0.5419921875,
+      "decodedRms": 0.046975731493689214
+    },
+    {
+      "file": "9100a6cd770905e4-af-heart-standard-4b3902242692.m4a",
+      "decodedSeconds": 2.2,
+      "decodedPeak": 0.48583984375,
+      "decodedRms": 0.04693881372496587
+    },
+    {
+      "file": "74929f44a0492336-af-heart-slow-c780ae3b3c86.m4a",
+      "decodedSeconds": 2.825,
+      "decodedPeak": 0.27410888671875,
+      "decodedRms": 0.046796067682232524
+    },
+    {
+      "file": "74929f44a0492336-af-heart-standard-41f966bad23d.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.2965087890625,
+      "decodedRms": 0.04628086765426128
+    },
+    {
+      "file": "5fc6f989f57228d0-af-heart-slow-cda40b7d10a8.m4a",
+      "decodedSeconds": 1.675,
+      "decodedPeak": 0.330413818359375,
+      "decodedRms": 0.04369560749973819
+    },
+    {
+      "file": "5fc6f989f57228d0-af-heart-standard-13b82e478c3c.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.317413330078125,
+      "decodedRms": 0.04419573596140702
+    },
+    {
+      "file": "82739604e631aad5-af-heart-slow-a34a900a76a4.m4a",
+      "decodedSeconds": 1.725,
+      "decodedPeak": 0.339752197265625,
+      "decodedRms": 0.04465956842264788
+    },
+    {
+      "file": "82739604e631aad5-af-heart-standard-639e0538edba.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.330169677734375,
+      "decodedRms": 0.045101927185364
+    },
+    {
+      "file": "df47aaff3786fc88-af-heart-slow-f4ab255aa0af.m4a",
+      "decodedSeconds": 1.725,
+      "decodedPeak": 0.338348388671875,
+      "decodedRms": 0.04275003367723576
+    },
+    {
+      "file": "df47aaff3786fc88-af-heart-standard-56ae09989cd6.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.434906005859375,
+      "decodedRms": 0.042721747400986644
+    },
+    {
+      "file": "3617450fbf681943-af-heart-slow-1004bfe3d226.m4a",
+      "decodedSeconds": 1.725,
+      "decodedPeak": 0.366180419921875,
+      "decodedRms": 0.044527125837963026
+    },
+    {
+      "file": "3617450fbf681943-af-heart-standard-18ed0ce5ba5e.m4a",
+      "decodedSeconds": 1.575,
+      "decodedPeak": 0.365966796875,
+      "decodedRms": 0.0455982290344116
+    },
+    {
+      "file": "e28ca1f7e9684c82-af-heart-slow-fd37d4683fde.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.556488037109375,
+      "decodedRms": 0.04648107143984654
+    },
+    {
+      "file": "e28ca1f7e9684c82-af-heart-standard-391b3cf7cc48.m4a",
+      "decodedSeconds": 2.4,
+      "decodedPeak": 0.45855712890625,
+      "decodedRms": 0.045635822076656236
+    },
+    {
+      "file": "f29196fe8fe2a5cd-af-heart-slow-d886dd568cdf.m4a",
+      "decodedSeconds": 2.95,
+      "decodedPeak": 0.617767333984375,
+      "decodedRms": 0.04889587384228598
+    },
+    {
+      "file": "f29196fe8fe2a5cd-af-heart-standard-17ac0618ff05.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.577239990234375,
+      "decodedRms": 0.04819592227189607
+    },
+    {
+      "file": "7add938c3bf65d3b-af-heart-slow-d39b5df86b88.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.349517822265625,
+      "decodedRms": 0.04388265734417115
+    },
+    {
+      "file": "7add938c3bf65d3b-af-heart-standard-d83fc7c39822.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.30963134765625,
+      "decodedRms": 0.043373755514920696
+    },
+    {
+      "file": "cd0ff2a4e2b5736e-af-heart-slow-d4591a9c3695.m4a",
+      "decodedSeconds": 3.55,
+      "decodedPeak": 0.55047607421875,
+      "decodedRms": 0.046120397470190054
+    },
+    {
+      "file": "cd0ff2a4e2b5736e-af-heart-standard-344f57d255ed.m4a",
+      "decodedSeconds": 3.275,
+      "decodedPeak": 0.5367431640625,
+      "decodedRms": 0.046802557692891364
+    },
+    {
+      "file": "7abc25e21817daec-af-heart-slow-4d62ed75f49b.m4a",
+      "decodedSeconds": 3.825,
+      "decodedPeak": 0.4161376953125,
+      "decodedRms": 0.04768674122644605
+    },
+    {
+      "file": "7abc25e21817daec-af-heart-standard-bf87ec9405e8.m4a",
+      "decodedSeconds": 3.55,
+      "decodedPeak": 0.44000244140625,
+      "decodedRms": 0.04731817940081082
+    },
+    {
+      "file": "ff05dec8cf74f000-af-heart-slow-0b3a498eaef3.m4a",
+      "decodedSeconds": 2.75,
+      "decodedPeak": 0.3486328125,
+      "decodedRms": 0.044137152079389674
+    },
+    {
+      "file": "ff05dec8cf74f000-af-heart-standard-7ecc7cb580af.m4a",
+      "decodedSeconds": 2.525,
+      "decodedPeak": 0.355743408203125,
+      "decodedRms": 0.044461100014627906
+    },
+    {
+      "file": "93fb3ba5033e56ca-af-heart-slow-33133f9c24dd.m4a",
+      "decodedSeconds": 2.8,
+      "decodedPeak": 0.4066162109375,
+      "decodedRms": 0.04302352450978825
+    },
+    {
+      "file": "93fb3ba5033e56ca-af-heart-standard-490ee52d56e6.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.30999755859375,
+      "decodedRms": 0.042338615473278274
+    },
+    {
+      "file": "b1ec0dbeb2615543-af-heart-slow-007a90621dfb.m4a",
+      "decodedSeconds": 3.25,
+      "decodedPeak": 0.47528076171875,
+      "decodedRms": 0.04752285596036711
+    },
+    {
+      "file": "b1ec0dbeb2615543-af-heart-standard-389de5ec39fa.m4a",
+      "decodedSeconds": 3.075,
+      "decodedPeak": 0.339080810546875,
+      "decodedRms": 0.04699183831897373
+    },
+    {
+      "file": "759cbd5cdb17d5af-af-heart-slow-6a507ad5dac7.m4a",
+      "decodedSeconds": 2.7,
+      "decodedPeak": 0.315948486328125,
+      "decodedRms": 0.04545996518287311
+    },
+    {
+      "file": "759cbd5cdb17d5af-af-heart-standard-4e9715156e90.m4a",
+      "decodedSeconds": 2.55,
+      "decodedPeak": 0.31292724609375,
+      "decodedRms": 0.04491856464253029
+    },
+    {
+      "file": "ff33f33c4c3869c6-af-heart-slow-339fef646b04.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.5648193359375,
+      "decodedRms": 0.042685911578538537
+    },
+    {
+      "file": "ff33f33c4c3869c6-af-heart-standard-3578e9f23541.m4a",
+      "decodedSeconds": 2.8,
+      "decodedPeak": 0.5008544921875,
+      "decodedRms": 0.042760371073
+    },
+    {
+      "file": "ded09500f176d494-af-heart-slow-0da7a0b52267.m4a",
+      "decodedSeconds": 4.25,
+      "decodedPeak": 0.4942626953125,
+      "decodedRms": 0.04673961076579229
+    },
+    {
+      "file": "ded09500f176d494-af-heart-standard-cb3049b32053.m4a",
+      "decodedSeconds": 3.9,
+      "decodedPeak": 0.45965576171875,
+      "decodedRms": 0.046134984880679776
+    },
+    {
+      "file": "9450b5dfc684ec30-af-heart-slow-79a55755fb8a.m4a",
+      "decodedSeconds": 2.875,
+      "decodedPeak": 0.395233154296875,
+      "decodedRms": 0.04576752423146736
+    },
+    {
+      "file": "9450b5dfc684ec30-af-heart-standard-1242262ef895.m4a",
+      "decodedSeconds": 2.675,
+      "decodedPeak": 0.360443115234375,
+      "decodedRms": 0.045724030082799974
+    },
+    {
+      "file": "6946ac92f6a21efc-af-heart-slow-e2d16451203f.m4a",
+      "decodedSeconds": 3.1,
+      "decodedPeak": 0.36273193359375,
+      "decodedRms": 0.04510659231328474
+    },
+    {
+      "file": "6946ac92f6a21efc-af-heart-standard-8a6a6ef8dd3b.m4a",
+      "decodedSeconds": 2.75,
+      "decodedPeak": 0.331085205078125,
+      "decodedRms": 0.044752230147458126
+    },
+    {
+      "file": "7246afdfe599033e-af-heart-slow-384cc6418eb6.m4a",
+      "decodedSeconds": 4.525,
+      "decodedPeak": 0.637908935546875,
+      "decodedRms": 0.04689886200656146
+    },
+    {
+      "file": "7246afdfe599033e-af-heart-standard-26eda20a0aa1.m4a",
+      "decodedSeconds": 4.15,
+      "decodedPeak": 0.671478271484375,
+      "decodedRms": 0.04692791585716731
+    },
+    {
+      "file": "a644dd79b7c839e9-af-heart-slow-651d521f5cb7.m4a",
+      "decodedSeconds": 3.625,
+      "decodedPeak": 0.401336669921875,
+      "decodedRms": 0.04611449183826519
+    },
+    {
+      "file": "a644dd79b7c839e9-af-heart-standard-6713b400e3e7.m4a",
+      "decodedSeconds": 3.375,
+      "decodedPeak": 0.32147216796875,
+      "decodedRms": 0.045354222780403075
+    },
+    {
+      "file": "650cbd1156c9fbc3-af-heart-slow-16f77ee4a28c.m4a",
+      "decodedSeconds": 3.5,
+      "decodedPeak": 0.38946533203125,
+      "decodedRms": 0.045187540163613954
+    },
+    {
+      "file": "650cbd1156c9fbc3-af-heart-standard-ea428f7c1215.m4a",
+      "decodedSeconds": 3.175,
+      "decodedPeak": 0.3558349609375,
+      "decodedRms": 0.04550369807259696
+    },
+    {
+      "file": "2ca24c9392423766-af-heart-slow-6bf93441ac05.m4a",
+      "decodedSeconds": 3.45,
+      "decodedPeak": 0.625732421875,
+      "decodedRms": 0.047699115852039946
+    },
+    {
+      "file": "2ca24c9392423766-af-heart-standard-60bcaa48488a.m4a",
+      "decodedSeconds": 3.325,
+      "decodedPeak": 0.410430908203125,
+      "decodedRms": 0.04716189143810671
+    },
+    {
+      "file": "5d489b84d4db8552-af-heart-slow-081090db2810.m4a",
+      "decodedSeconds": 3.225,
+      "decodedPeak": 0.439361572265625,
+      "decodedRms": 0.047066830384127525
+    },
+    {
+      "file": "5d489b84d4db8552-af-heart-standard-3774cde95361.m4a",
+      "decodedSeconds": 3.025,
+      "decodedPeak": 0.41473388671875,
+      "decodedRms": 0.04694868788480274
+    },
+    {
+      "file": "748b0dda58787072-af-heart-slow-3295447d6423.m4a",
+      "decodedSeconds": 3.6,
+      "decodedPeak": 0.535888671875,
+      "decodedRms": 0.04774562930125338
+    },
+    {
+      "file": "748b0dda58787072-af-heart-standard-51d1f4b5f980.m4a",
+      "decodedSeconds": 3.4,
+      "decodedPeak": 0.511444091796875,
+      "decodedRms": 0.047524784009232116
+    },
+    {
+      "file": "ab15db3546e1475f-af-heart-slow-7adabec7df74.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.43780517578125,
+      "decodedRms": 0.04849013560044162
+    },
+    {
+      "file": "ab15db3546e1475f-af-heart-standard-8186cb982c65.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.4881591796875,
+      "decodedRms": 0.04800150273932726
+    },
+    {
+      "file": "e8548669f9f7f927-af-heart-slow-e32d905c87af.m4a",
+      "decodedSeconds": 2.95,
+      "decodedPeak": 0.341339111328125,
+      "decodedRms": 0.04979105699151026
+    },
+    {
+      "file": "e8548669f9f7f927-af-heart-standard-be430b32e0a4.m4a",
+      "decodedSeconds": 2.7,
+      "decodedPeak": 0.329376220703125,
+      "decodedRms": 0.049905451441514585
+    },
+    {
+      "file": "169b7c6d96aa5edf-af-heart-slow-3c3d6a362f99.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.374755859375,
+      "decodedRms": 0.04882427920317615
+    },
+    {
+      "file": "169b7c6d96aa5edf-af-heart-standard-29c66600e15c.m4a",
+      "decodedSeconds": 2.35,
+      "decodedPeak": 0.398529052734375,
+      "decodedRms": 0.049175249818684943
+    },
+    {
+      "file": "cf366a248d810300-af-heart-slow-a6a1f6fb8e0f.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.478118896484375,
+      "decodedRms": 0.047438658820319377
+    },
+    {
+      "file": "cf366a248d810300-af-heart-standard-115879eb4940.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.5086669921875,
+      "decodedRms": 0.04639155361249865
+    },
+    {
+      "file": "1134250ace187b49-af-heart-slow-6179724d0f45.m4a",
+      "decodedSeconds": 3.275,
+      "decodedPeak": 0.384307861328125,
+      "decodedRms": 0.04646640886663104
+    },
+    {
+      "file": "1134250ace187b49-af-heart-standard-a7a42e7e9cca.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.3631591796875,
+      "decodedRms": 0.04613574950283211
+    },
+    {
+      "file": "bfb1d86f38d541ce-af-heart-slow-b64bb4403dcb.m4a",
+      "decodedSeconds": 2.825,
+      "decodedPeak": 0.3519287109375,
+      "decodedRms": 0.04596018080348551
+    },
+    {
+      "file": "bfb1d86f38d541ce-af-heart-standard-5e061e281c92.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.340606689453125,
+      "decodedRms": 0.0463200355376846
+    },
+    {
+      "file": "8c35aaa56df63810-af-heart-slow-f2ad720cf8f2.m4a",
+      "decodedSeconds": 3.3,
+      "decodedPeak": 0.33526611328125,
+      "decodedRms": 0.05040830976712622
+    },
+    {
+      "file": "8c35aaa56df63810-af-heart-standard-e934cadf65f5.m4a",
+      "decodedSeconds": 3.0,
+      "decodedPeak": 0.3331298828125,
+      "decodedRms": 0.05041820077280133
+    },
+    {
+      "file": "cb10f9b799fa5a51-af-heart-slow-6a3bcce50a60.m4a",
+      "decodedSeconds": 3.075,
+      "decodedPeak": 0.348480224609375,
+      "decodedRms": 0.04937945998530587
+    },
+    {
+      "file": "cb10f9b799fa5a51-af-heart-standard-0fd8453c9ced.m4a",
+      "decodedSeconds": 2.875,
+      "decodedPeak": 0.36126708984375,
+      "decodedRms": 0.049551272752475936
+    },
+    {
+      "file": "13bcfb8a0e322d59-af-heart-slow-09a0385f5bc6.m4a",
+      "decodedSeconds": 3.25,
+      "decodedPeak": 0.428955078125,
+      "decodedRms": 0.04889765725502393
+    },
+    {
+      "file": "13bcfb8a0e322d59-af-heart-standard-dfbc62b2e5d3.m4a",
+      "decodedSeconds": 2.925,
+      "decodedPeak": 0.4188232421875,
+      "decodedRms": 0.0480254027260944
+    },
+    {
+      "file": "9328c7ed54b7eb16-af-heart-slow-7f4ed91948a5.m4a",
+      "decodedSeconds": 3.725,
+      "decodedPeak": 0.377716064453125,
+      "decodedRms": 0.04614230220917135
+    },
+    {
+      "file": "9328c7ed54b7eb16-af-heart-standard-1c334adb74ac.m4a",
+      "decodedSeconds": 3.4,
+      "decodedPeak": 0.358428955078125,
+      "decodedRms": 0.04660697505929209
+    },
+    {
+      "file": "2510a5e92caf720a-af-heart-slow-91d2d9d80053.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.350006103515625,
+      "decodedRms": 0.045915772446046874
+    },
+    {
+      "file": "2510a5e92caf720a-af-heart-standard-b340bbc7936e.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.4024658203125,
+      "decodedRms": 0.04521043209137159
+    },
+    {
+      "file": "31fc15942b0c47f6-af-heart-slow-396d707843da.m4a",
+      "decodedSeconds": 1.425,
+      "decodedPeak": 0.33599853515625,
+      "decodedRms": 0.04518611671683645
+    },
+    {
+      "file": "31fc15942b0c47f6-af-heart-standard-27eb15a73dca.m4a",
+      "decodedSeconds": 1.275,
+      "decodedPeak": 0.363677978515625,
+      "decodedRms": 0.04543684109171594
+    },
+    {
+      "file": "47afad612b1f9cc8-af-heart-slow-8caa1f1305a4.m4a",
+      "decodedSeconds": 1.6,
+      "decodedPeak": 0.436004638671875,
+      "decodedRms": 0.04398284066766604
+    },
+    {
+      "file": "47afad612b1f9cc8-af-heart-standard-a0eb354608a1.m4a",
+      "decodedSeconds": 1.45,
+      "decodedPeak": 0.576019287109375,
+      "decodedRms": 0.044630971002837846
+    },
+    {
+      "file": "32ef95219c761cd9-af-heart-slow-bb800b9a3157.m4a",
+      "decodedSeconds": 3.375,
+      "decodedPeak": 0.404998779296875,
+      "decodedRms": 0.04838266969871484
+    },
+    {
+      "file": "32ef95219c761cd9-af-heart-standard-ac734a650e37.m4a",
+      "decodedSeconds": 3.1,
+      "decodedPeak": 0.43072509765625,
+      "decodedRms": 0.04806419537851422
+    },
+    {
+      "file": "2a21fe6d592a19b7-af-heart-slow-137c594879f6.m4a",
+      "decodedSeconds": 1.4,
+      "decodedPeak": 0.410003662109375,
+      "decodedRms": 0.04282876920020393
+    },
+    {
+      "file": "2a21fe6d592a19b7-af-heart-standard-6916686763c1.m4a",
+      "decodedSeconds": 1.25,
+      "decodedPeak": 0.35162353515625,
+      "decodedRms": 0.04321217611839273
+    },
+    {
+      "file": "81db8ebbbbc69c6c-af-heart-slow-05ec45a87d36.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.330963134765625,
+      "decodedRms": 0.0463768142057862
+    },
+    {
+      "file": "81db8ebbbbc69c6c-af-heart-standard-acb3ec371d98.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.3511962890625,
+      "decodedRms": 0.04787224234032699
+    },
+    {
+      "file": "300908b9d3815e2d-af-heart-slow-f72c1666c8fc.m4a",
+      "decodedSeconds": 1.65,
+      "decodedPeak": 0.3564453125,
+      "decodedRms": 0.045878615008485106
+    },
+    {
+      "file": "300908b9d3815e2d-af-heart-standard-920ac8a41dde.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.37799072265625,
+      "decodedRms": 0.046858655854477085
+    },
+    {
+      "file": "9a779bb1342fd79f-af-heart-slow-c667dd9e89d6.m4a",
+      "decodedSeconds": 2.45,
+      "decodedPeak": 0.383575439453125,
+      "decodedRms": 0.04796120330378615
+    },
+    {
+      "file": "9a779bb1342fd79f-af-heart-standard-31304f2a5587.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.37823486328125,
+      "decodedRms": 0.04752524254600988
+    },
+    {
+      "file": "3f49dbbfe051cb20-af-heart-slow-5ba74e5a5e4c.m4a",
+      "decodedSeconds": 1.55,
+      "decodedPeak": 0.336334228515625,
+      "decodedRms": 0.04093046660517664
+    },
+    {
+      "file": "3f49dbbfe051cb20-af-heart-standard-22fdad1ce53c.m4a",
+      "decodedSeconds": 1.375,
+      "decodedPeak": 0.3760986328125,
+      "decodedRms": 0.041306357752942516
+    },
+    {
+      "file": "9e78b43ea00edcac-af-heart-slow-589cd9f1994b.m4a",
+      "decodedSeconds": 1.475,
+      "decodedPeak": 0.24493408203125,
+      "decodedRms": 0.04323508177670069
+    },
+    {
+      "file": "9e78b43ea00edcac-af-heart-standard-7ec6e9d86b1f.m4a",
+      "decodedSeconds": 1.325,
+      "decodedPeak": 0.251007080078125,
+      "decodedRms": 0.04377690431812045
+    },
+    {
+      "file": "f30752f4db264ddb-af-heart-slow-bcd1b85fa9ef.m4a",
+      "decodedSeconds": 3.525,
+      "decodedPeak": 0.45233154296875,
+      "decodedRms": 0.0495930450470157
+    },
+    {
+      "file": "f30752f4db264ddb-af-heart-standard-315c8a27fbb4.m4a",
+      "decodedSeconds": 3.35,
+      "decodedPeak": 0.43072509765625,
+      "decodedRms": 0.04893408184191838
+    },
+    {
+      "file": "2595cf7ee810e78a-af-heart-slow-e66f01b5684c.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.445068359375,
+      "decodedRms": 0.045672612565214585
+    },
+    {
+      "file": "2595cf7ee810e78a-af-heart-standard-ff8a0b12d61f.m4a",
+      "decodedSeconds": 2.475,
+      "decodedPeak": 0.39727783203125,
+      "decodedRms": 0.04499876436277089
+    },
+    {
+      "file": "f307743c016e60b3-af-heart-slow-33489170155b.m4a",
+      "decodedSeconds": 2.5,
+      "decodedPeak": 0.35858154296875,
+      "decodedRms": 0.04831154553650506
+    },
+    {
+      "file": "f307743c016e60b3-af-heart-standard-42284cf53d16.m4a",
+      "decodedSeconds": 2.325,
+      "decodedPeak": 0.3336181640625,
+      "decodedRms": 0.047751587510243484
+    },
+    {
+      "file": "dba67b378c57ef36-af-heart-slow-3040274c31d9.m4a",
+      "decodedSeconds": 2.675,
+      "decodedPeak": 0.385833740234375,
+      "decodedRms": 0.04533169330946332
+    },
+    {
+      "file": "dba67b378c57ef36-af-heart-standard-f7df30cf7a93.m4a",
+      "decodedSeconds": 2.575,
+      "decodedPeak": 0.347808837890625,
+      "decodedRms": 0.04470681393343863
+    },
+    {
+      "file": "39a3ef01becf60b6-af-heart-slow-c708a8e87a59.m4a",
+      "decodedSeconds": 2.425,
+      "decodedPeak": 0.35382080078125,
+      "decodedRms": 0.04446287291997196
+    },
+    {
+      "file": "39a3ef01becf60b6-af-heart-standard-8ce9a12a19c4.m4a",
+      "decodedSeconds": 2.25,
+      "decodedPeak": 0.354095458984375,
+      "decodedRms": 0.04394691341627691
+    },
+    {
+      "file": "05156bf30b94fac4-af-heart-slow-6c719b314022.m4a",
+      "decodedSeconds": 3.65,
+      "decodedPeak": 0.406707763671875,
+      "decodedRms": 0.048173078663551826
+    },
+    {
+      "file": "05156bf30b94fac4-af-heart-standard-0472da9fd21b.m4a",
+      "decodedSeconds": 3.425,
+      "decodedPeak": 0.50628662109375,
+      "decodedRms": 0.04797912165770093
+    },
+    {
+      "file": "74331a4d5f943142-af-heart-slow-d53dd377d768.m4a",
+      "decodedSeconds": 2.575,
+      "decodedPeak": 0.65283203125,
+      "decodedRms": 0.04745859679208263
+    },
+    {
+      "file": "74331a4d5f943142-af-heart-standard-fe44e36ec2a0.m4a",
+      "decodedSeconds": 2.375,
+      "decodedPeak": 0.6121826171875,
+      "decodedRms": 0.04687572362652156
+    },
+    {
+      "file": "c0b840a28ab52a11-af-heart-slow-4130eff61b59.m4a",
+      "decodedSeconds": 2.775,
+      "decodedPeak": 0.376678466796875,
+      "decodedRms": 0.04550413849773891
+    },
+    {
+      "file": "c0b840a28ab52a11-af-heart-standard-5a27731edc8d.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.5958251953125,
+      "decodedRms": 0.045362735286967035
+    },
+    {
+      "file": "cf3505b68efa11b1-af-heart-slow-d23ed25a8174.m4a",
+      "decodedSeconds": 3.2,
+      "decodedPeak": 0.547637939453125,
+      "decodedRms": 0.048942905130496775
+    },
+    {
+      "file": "cf3505b68efa11b1-af-heart-standard-7b34838c61f1.m4a",
+      "decodedSeconds": 2.95,
+      "decodedPeak": 0.64654541015625,
+      "decodedRms": 0.04894200387357319
+    },
+    {
+      "file": "3e47ad04e488769f-af-heart-slow-1b188803035f.m4a",
+      "decodedSeconds": 2.725,
+      "decodedPeak": 0.633758544921875,
+      "decodedRms": 0.050382735421713884
+    },
+    {
+      "file": "3e47ad04e488769f-af-heart-standard-aed8a30af9a4.m4a",
+      "decodedSeconds": 2.6,
+      "decodedPeak": 0.58209228515625,
+      "decodedRms": 0.050217433881918114
+    },
+    {
+      "file": "c74515043cc6eda1-af-heart-slow-38633460618b.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.295196533203125,
+      "decodedRms": 0.04375146237903574
+    },
+    {
+      "file": "c74515043cc6eda1-af-heart-standard-062701e1a1bf.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.440399169921875,
+      "decodedRms": 0.043440525331732614
+    },
+    {
+      "file": "50f75e451c908531-af-heart-slow-860ce8cdb25f.m4a",
+      "decodedSeconds": 3.45,
+      "decodedPeak": 0.33514404296875,
+      "decodedRms": 0.046753689191304744
+    },
+    {
+      "file": "50f75e451c908531-af-heart-standard-c88a64348a0f.m4a",
+      "decodedSeconds": 3.2,
+      "decodedPeak": 0.35638427734375,
+      "decodedRms": 0.046501329274346775
+    },
+    {
+      "file": "dfb2a1d835a0086e-af-heart-slow-e9a966d479d4.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.3721923828125,
+      "decodedRms": 0.045801706659308716
+    },
+    {
+      "file": "dfb2a1d835a0086e-af-heart-standard-8d2e5a1c5d02.m4a",
+      "decodedSeconds": 2.8,
+      "decodedPeak": 0.34234619140625,
+      "decodedRms": 0.04554209041844869
+    },
+    {
+      "file": "4ca6616d4f33ee9a-af-heart-slow-f2b6dc1d4a52.m4a",
+      "decodedSeconds": 3.1,
+      "decodedPeak": 0.345611572265625,
+      "decodedRms": 0.04766907306453386
+    },
+    {
+      "file": "4ca6616d4f33ee9a-af-heart-standard-35d015456b86.m4a",
+      "decodedSeconds": 2.875,
+      "decodedPeak": 0.338348388671875,
+      "decodedRms": 0.04754078932827553
+    },
+    {
+      "file": "36f40310f06c5551-af-heart-slow-7af3b8d1179e.m4a",
+      "decodedSeconds": 4.025,
+      "decodedPeak": 0.403778076171875,
+      "decodedRms": 0.04879178518139524
+    },
+    {
+      "file": "36f40310f06c5551-af-heart-standard-df9528ce25bb.m4a",
+      "decodedSeconds": 3.85,
+      "decodedPeak": 0.384002685546875,
+      "decodedRms": 0.048574178959316976
+    },
+    {
+      "file": "f313de0b149ff5d8-af-heart-slow-43f2ec79ccfc.m4a",
+      "decodedSeconds": 3.825,
+      "decodedPeak": 0.35369873046875,
+      "decodedRms": 0.04660522989240324
+    },
+    {
+      "file": "f313de0b149ff5d8-af-heart-standard-ff91adc3c00d.m4a",
+      "decodedSeconds": 3.5,
+      "decodedPeak": 0.5386962890625,
+      "decodedRms": 0.04650130427628745
+    },
+    {
+      "file": "6ed740a9048a745c-af-heart-slow-3d97b4da1c5a.m4a",
+      "decodedSeconds": 3.25,
+      "decodedPeak": 0.328033447265625,
+      "decodedRms": 0.04883662703966771
+    },
+    {
+      "file": "6ed740a9048a745c-af-heart-standard-dfd725a5ffa1.m4a",
+      "decodedSeconds": 3.1,
+      "decodedPeak": 0.32855224609375,
+      "decodedRms": 0.04880442334135781
+    },
+    {
+      "file": "256842d455c694a9-af-heart-slow-f320bca59d83.m4a",
+      "decodedSeconds": 3.575,
+      "decodedPeak": 0.488525390625,
+      "decodedRms": 0.04863978912241054
+    },
+    {
+      "file": "256842d455c694a9-af-heart-standard-e9185347866f.m4a",
+      "decodedSeconds": 3.3,
+      "decodedPeak": 0.516387939453125,
+      "decodedRms": 0.048684539850791825
+    },
+    {
+      "file": "900fc46f042418b1-af-heart-slow-d5444cacc6d5.m4a",
+      "decodedSeconds": 2.8,
+      "decodedPeak": 0.389007568359375,
+      "decodedRms": 0.046132053113836384
+    },
+    {
+      "file": "900fc46f042418b1-af-heart-standard-b3fce7e8fb7b.m4a",
+      "decodedSeconds": 2.625,
+      "decodedPeak": 0.48626708984375,
+      "decodedRms": 0.046507085403835476
+    },
+    {
+      "file": "d17266af3c60bc70-af-heart-slow-4c5cc229c3f7.m4a",
+      "decodedSeconds": 3.4,
+      "decodedPeak": 0.400360107421875,
+      "decodedRms": 0.04788112640217727
+    },
+    {
+      "file": "d17266af3c60bc70-af-heart-standard-5c888369d2a2.m4a",
+      "decodedSeconds": 3.075,
+      "decodedPeak": 0.403350830078125,
+      "decodedRms": 0.04800512667681651
+    },
+    {
+      "file": "3fd76d52677c1914-af-heart-slow-5361201279dc.m4a",
+      "decodedSeconds": 3.15,
+      "decodedPeak": 0.35430908203125,
+      "decodedRms": 0.0469291295626046
+    },
+    {
+      "file": "3fd76d52677c1914-af-heart-standard-91ede56990c8.m4a",
+      "decodedSeconds": 2.95,
+      "decodedPeak": 0.362884521484375,
+      "decodedRms": 0.04693343415361624
+    },
+    {
+      "file": "6026a4e902f0f512-af-heart-slow-da7a26f36e4b.m4a",
+      "decodedSeconds": 3.025,
+      "decodedPeak": 0.383270263671875,
+      "decodedRms": 0.04850257720420547
+    },
+    {
+      "file": "6026a4e902f0f512-af-heart-standard-a7ddce74bb29.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.44891357421875,
+      "decodedRms": 0.04843224295315207
+    },
+    {
+      "file": "fd7369d4852ef593-af-heart-slow-7b343c31b1d6.m4a",
+      "decodedSeconds": 3.75,
+      "decodedPeak": 0.419769287109375,
+      "decodedRms": 0.048430500313075865
+    },
+    {
+      "file": "fd7369d4852ef593-af-heart-standard-a36483a38441.m4a",
+      "decodedSeconds": 3.45,
+      "decodedPeak": 0.376007080078125,
+      "decodedRms": 0.048195675077486906
+    },
+    {
+      "file": "680ede6711af2853-af-heart-slow-5f805b84ecbb.m4a",
+      "decodedSeconds": 3.825,
+      "decodedPeak": 0.345611572265625,
+      "decodedRms": 0.04934235579350384
+    },
+    {
+      "file": "680ede6711af2853-af-heart-standard-209746fca540.m4a",
+      "decodedSeconds": 3.525,
+      "decodedPeak": 0.326324462890625,
+      "decodedRms": 0.04890339021456875
+    },
+    {
+      "file": "ddad274a1ba95b75-af-heart-slow-f50c849590e3.m4a",
+      "decodedSeconds": 3.65,
+      "decodedPeak": 0.354766845703125,
+      "decodedRms": 0.048849975878803756
+    },
+    {
+      "file": "ddad274a1ba95b75-af-heart-standard-7e09b85a723e.m4a",
+      "decodedSeconds": 3.45,
+      "decodedPeak": 0.34649658203125,
+      "decodedRms": 0.04855789442025963
+    },
+    {
+      "file": "a7fd72698542112c-af-heart-slow-d7a6edc94cb7.m4a",
+      "decodedSeconds": 3.475,
+      "decodedPeak": 0.512847900390625,
+      "decodedRms": 0.05040228736982959
+    },
+    {
+      "file": "a7fd72698542112c-af-heart-standard-bdf59d7d557e.m4a",
+      "decodedSeconds": 3.1,
+      "decodedPeak": 0.55712890625,
+      "decodedRms": 0.05046555507155323
+    },
+    {
+      "file": "e8901fb89ce71af6-af-heart-slow-525436e3a81f.m4a",
+      "decodedSeconds": 3.65,
+      "decodedPeak": 0.5380859375,
+      "decodedRms": 0.04973725820042376
+    },
+    {
+      "file": "e8901fb89ce71af6-af-heart-standard-ee9b7c022bf3.m4a",
+      "decodedSeconds": 3.4,
+      "decodedPeak": 0.425628662109375,
+      "decodedRms": 0.04901294954047549
+    },
+    {
+      "file": "59d0dbd04406fece-af-heart-slow-d7fca9d7ba97.m4a",
+      "decodedSeconds": 3.3,
+      "decodedPeak": 0.574127197265625,
+      "decodedRms": 0.04646304532260145
+    },
+    {
+      "file": "59d0dbd04406fece-af-heart-standard-315b47a2b161.m4a",
+      "decodedSeconds": 3.05,
+      "decodedPeak": 0.387847900390625,
+      "decodedRms": 0.04629006153760741
+    },
+    {
+      "file": "e861367b4d8fb83a-af-heart-slow-37878f8a8d11.m4a",
+      "decodedSeconds": 3.475,
+      "decodedPeak": 0.51904296875,
+      "decodedRms": 0.048413141917716715
+    },
+    {
+      "file": "e861367b4d8fb83a-af-heart-standard-ab323b4be856.m4a",
+      "decodedSeconds": 3.275,
+      "decodedPeak": 0.517608642578125,
+      "decodedRms": 0.048529496144670003
+    },
+    {
+      "file": "ba586fc356bd3537-af-heart-slow-39c6533e6363.m4a",
+      "decodedSeconds": 3.45,
+      "decodedPeak": 0.3719482421875,
+      "decodedRms": 0.04879178258702016
+    },
+    {
+      "file": "ba586fc356bd3537-af-heart-standard-faed28e866c0.m4a",
+      "decodedSeconds": 3.15,
+      "decodedPeak": 0.345733642578125,
+      "decodedRms": 0.04915818151222163
+    },
+    {
+      "file": "60ddd4f156715bab-af-heart-slow-1f7c68d7523b.m4a",
+      "decodedSeconds": 4.6,
+      "decodedPeak": 0.4072265625,
+      "decodedRms": 0.04820972879543654
+    },
+    {
+      "file": "60ddd4f156715bab-af-heart-standard-6e7a7ca71dd0.m4a",
+      "decodedSeconds": 4.3,
+      "decodedPeak": 0.418243408203125,
+      "decodedRms": 0.04767913558400349
+    },
+    {
+      "file": "ba7430aca476f936-af-heart-slow-e0238e2f8048.m4a",
+      "decodedSeconds": 4.075,
+      "decodedPeak": 0.625,
+      "decodedRms": 0.04932816284430765
+    },
+    {
+      "file": "ba7430aca476f936-af-heart-standard-9daa6c4e857b.m4a",
+      "decodedSeconds": 3.825,
+      "decodedPeak": 0.6175537109375,
+      "decodedRms": 0.04907441654475246
+    },
+    {
+      "file": "806543cbdb09fd2a-af-heart-slow-4f83b5cf4753.m4a",
+      "decodedSeconds": 3.825,
+      "decodedPeak": 0.471771240234375,
+      "decodedRms": 0.049925437865012606
+    },
+    {
+      "file": "806543cbdb09fd2a-af-heart-standard-438df1864316.m4a",
+      "decodedSeconds": 3.5,
+      "decodedPeak": 0.486175537109375,
+      "decodedRms": 0.05006457191403217
+    },
+    {
+      "file": "55acef556fab7c0b-af-heart-slow-38ee089adbef.m4a",
+      "decodedSeconds": 3.875,
+      "decodedPeak": 0.371337890625,
+      "decodedRms": 0.0475806685183897
+    },
+    {
+      "file": "55acef556fab7c0b-af-heart-standard-825eae1d844d.m4a",
+      "decodedSeconds": 3.625,
+      "decodedPeak": 0.366607666015625,
+      "decodedRms": 0.04739621104530281
+    },
+    {
+      "file": "155f5a1b9aac5b4f-af-heart-slow-321fb7d33e85.m4a",
+      "decodedSeconds": 2.9,
+      "decodedPeak": 0.35137939453125,
+      "decodedRms": 0.04548796105403801
+    },
+    {
+      "file": "155f5a1b9aac5b4f-af-heart-standard-e6c9ca328105.m4a",
+      "decodedSeconds": 2.65,
+      "decodedPeak": 0.361480712890625,
+      "decodedRms": 0.044227071254981445
+    },
+    {
+      "file": "f85e60b1e7b447ad-af-heart-slow-8089decbe8e1.m4a",
+      "decodedSeconds": 3.375,
+      "decodedPeak": 0.69708251953125,
+      "decodedRms": 0.0480212874406437
+    },
+    {
+      "file": "f85e60b1e7b447ad-af-heart-standard-8f5ce2f010fd.m4a",
+      "decodedSeconds": 3.075,
+      "decodedPeak": 0.6142578125,
+      "decodedRms": 0.0478268963094791
+    },
+    {
+      "file": "837b35358d062849-af-heart-slow-b97b1b701713.m4a",
+      "decodedSeconds": 4.375,
+      "decodedPeak": 0.445556640625,
+      "decodedRms": 0.04916092188743561
+    },
+    {
+      "file": "837b35358d062849-af-heart-standard-1b59a83804ea.m4a",
+      "decodedSeconds": 4.125,
+      "decodedPeak": 0.5540771484375,
+      "decodedRms": 0.0492716161240528
+    },
+    {
+      "file": "84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+      "decodedSeconds": 2.85,
+      "decodedPeak": 0.30609130859375,
+      "decodedRms": 0.047463993316542594
+    },
+    {
+      "file": "84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a",
+      "decodedSeconds": 2.7,
+      "decodedPeak": 0.303070068359375,
+      "decodedRms": 0.047552726386399305
+    }
+  ],
+  "boundary": "Hash, source text, IDs, phonemes presence and decoded waveform checks; not 257-phrase human listening."
+}

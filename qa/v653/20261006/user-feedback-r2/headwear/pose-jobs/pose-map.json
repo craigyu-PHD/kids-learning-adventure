@@ -1,0 +1,322 @@
+[
+  {
+    "avatar": "brother",
+    "skin": "default",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger",
+    "skin": "default",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "default",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "default",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "brother",
+    "skin": "outfit-cadet",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "brother",
+    "skin": "outfit-racer",
+    "scale": 0.9344181388742431,
+    "translate": [
+      39.97497636905052,
+      24.888919941386575
+    ],
+    "renderPose": "outfit-racer"
+  },
+  {
+    "avatar": "brother",
+    "skin": "outfit-mecha",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "brother",
+    "skin": "outfit-ocean",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "brother",
+    "skin": "outfit-mage",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "brother",
+    "skin": "outfit-legend",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "brother",
+    "skin": "sister-bloom-outfit",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger",
+    "skin": "outfit-cadet",
+    "scale": 1.0020152811980851,
+    "translate": [
+      -0.5554661819330704,
+      -11.324024587768577
+    ],
+    "renderPose": "outfit-cadet"
+  },
+  {
+    "avatar": "younger",
+    "skin": "outfit-racer",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger",
+    "skin": "outfit-mecha",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger",
+    "skin": "outfit-ocean",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger",
+    "skin": "outfit-mage",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger",
+    "skin": "outfit-legend",
+    "scale": 1.0020152811980851,
+    "translate": [
+      -1.5554661819330704,
+      -32.32402458776858
+    ],
+    "renderPose": "outfit-legend"
+  },
+  {
+    "avatar": "younger",
+    "skin": "sister-bloom-outfit",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "outfit-cadet",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "outfit-racer",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "outfit-mecha",
+    "scale": 1.0185892553583247,
+    "translate": [
+      -9.991327065687528,
+      -25.155474790164874
+    ],
+    "renderPose": "outfit-mecha"
+  },
+  {
+    "avatar": "sister",
+    "skin": "outfit-ocean",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "outfit-mage",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "outfit-legend",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "sister",
+    "skin": "sister-bloom-outfit",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "outfit-cadet",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "outfit-racer",
+    "scale": 0.9803701754421309,
+    "translate": [
+      4.284888564040784,
+      -3.7290383468535993
+    ],
+    "renderPose": "outfit-racer"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "outfit-mecha",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "outfit-ocean",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "outfit-mage",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "outfit-legend",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  },
+  {
+    "avatar": "younger-sister",
+    "skin": "sister-bloom-outfit",
+    "scale": 1.0,
+    "translate": [
+      0.0,
+      0.0
+    ],
+    "renderPose": "default"
+  }
+]

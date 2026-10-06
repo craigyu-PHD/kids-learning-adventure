@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "git",
+      "-c",
+      "credential.helper=",
+      "ls-remote",
+      "https://github.com/craigyu-PHD/kids-learning-adventure.git",
+      "HEAD"
+    ],
+    "cwd": "/tmp",
+    "exitCode": 0,
+    "stdout": "51ff808af4389dbe4f25c88aebb7f87e78aa073b\tHEAD\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "-c",
+      "credential.helper=",
+      "ls-remote",
+      "origin",
+      "HEAD"
+    ],
+    "cwd": "/Users/yuzikui/Library/CloudStorage/GoogleDrive-craigpop.tw@gmail.com/\u6211\u7684\u96f2\u7aef\u786c\u789f/011-OpenCode/11-\u5152\u7ae5\u7f8e\u8a9e\u6559\u5b78\u7db2\u7ad9",
+    "exitCode": 0,
+    "stdout": "51ff808af4389dbe4f25c88aebb7f87e78aa073b\tHEAD\n",
+    "stderr": ""
+  }
+]

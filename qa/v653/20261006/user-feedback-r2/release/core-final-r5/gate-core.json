@@ -1,0 +1,178 @@
+{
+  "group": "core",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T03:42:54.714121+00:00",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-final-r5/core-source-dependencies.json",
+    "sha256": "9ad57752da9ad5504bb13c98a7a1abec310b10035057d014b98fb24bea5da5ee"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-rebind-r1/rebind.py",
+    "sha256": "7256b06bd5bfdfe324bb8ae0017fe21261c651c21ed0ce24da2e37508d50efaf"
+  },
+  "dependencyRebind": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-final-r5/dependency-rebind-receipt.json",
+    "sha256": "c8fdb37c5c71186981b4dcc7ed3c85db50e98fd7a89ceb8c477bf49fbfeb362b"
+  },
+  "cases": [
+    {
+      "values": {
+        "case": "date"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/0/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/0/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "auth"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/1/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/1/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "state"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/2/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/2/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "structural"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/3/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/3/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "online"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/4/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/4/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "shop_service"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/5/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/5/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "lessonpolicy"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+        "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+      },
+      "bindings": {
+        "case": "/cases/6/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+            "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+          },
+          "pointer": "/cases/6/passed",
+          "equals": true
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Source/service tests only, no compiled browser or family cloud writes",
+    "Online264 within-goal raw carry on unchanged dependencies; no semantic or child ASR acceptance"
+  ]
+}

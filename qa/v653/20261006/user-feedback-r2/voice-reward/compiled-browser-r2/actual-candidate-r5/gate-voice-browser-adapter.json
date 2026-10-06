@@ -1,0 +1,267 @@
+{
+  "group": "voiceBrowser",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:23:17.211889+00:00",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/served-artifacts.json",
+    "sha256": "1946c3574998d87cfcf16d613ce4dcfcccca3fc9fffa350ff70973b835a7b61a"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/run.py",
+    "sha256": "76cfaf1018d12363271d038b83fde0069227f12d24d7cc609240631accd2e054"
+  },
+  "runtimeOperator": "compiled-voice-browser-runner",
+  "cases": [
+    {
+      "values": {
+        "case": "no-preload"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/0/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/0/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "lesson-slow-ended"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/1/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/1/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "rapid-replay"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/2/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/2/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "stage-cancel"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/3/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/3/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "route-cancel"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/4/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/4/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "404-fallback"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/5/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/5/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "rejected-play-fallback"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/6/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/6/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "delayed-fallback"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/7/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/7/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "pagehide-cancel"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/8/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/8/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "settings-slow"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/9/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/9/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "settings-normal"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+        "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+      },
+      "bindings": {
+        "case": "/checks/10/id"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/voice-reward/compiled-browser-r2/actual-candidate-r5/browser-result.json",
+            "sha256": "e44cd5bd9f88eb882a2b6ff093fd779b8d46b103650d0c67da73989a0a102066"
+          },
+          "pointer": "/checks/10/passed",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

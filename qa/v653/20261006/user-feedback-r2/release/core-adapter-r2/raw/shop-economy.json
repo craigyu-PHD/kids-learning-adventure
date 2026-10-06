@@ -1,0 +1,4913 @@
+{
+  "status": "PASS_SERVICE_ECONOMY",
+  "scope": "In-memory isolated synthetic RewardTransaction fixtures; actual production purchase/toggle functions. No browser or family cloud writes.",
+  "total": 256,
+  "passed": 256,
+  "sourcePins": {
+    "src/shopService.ts": "0aae411b7dabe176c2c9ad33b441f87ca1ecdbf11d945ec911a965450ba9a5ad",
+    "src/shopLedger.ts": "a19b63f740c60befcb071a28eb98124ee539078e10fc7a33a5fb388fdb0d1247",
+    "src/rewards.ts": "09cbff0280a3175b97c511a7148d32c6075b09b0a4af43ab5890e52ec94aa1f9",
+    "src/avatarShop.ts": "1642c36fc11a7cc65822b547acb1a8e9075f8cf01e8b076d1ad2e6f38d1a3a9e",
+    "src/cosmetics.ts": "abeebfb02021dbb8381f0036ecf28b76c4556b6f23f8ffcfcd02678fe8326a4b",
+    "src/types.ts": "a0388f14b5a7f8bc3983f11404e27f3ca34c65675cd9a6bdb19b5845f6f6713b",
+    "src/data/avatarAssetManifest.json": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "src/data/worldArtManifest.json": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "rows": [
+    {
+      "avatar": "brother",
+      "itemId": "starter-sun-cap",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "starter-sky-glasses",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "starter-buddy-headphones",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hair-comet",
+      "cost": 60,
+      "earnedCoins": 10000,
+      "coinsAfter": 9940,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hair-wave",
+      "cost": 90,
+      "earnedCoins": 10000,
+      "coinsAfter": 9910,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hair-spike",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hair-cloud",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hair-nebula",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hair-legend",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "outfit-cadet",
+      "cost": 70,
+      "earnedCoins": 10000,
+      "coinsAfter": 9930,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "outfit-racer",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "outfit-mecha",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "outfit-ocean",
+      "cost": 240,
+      "earnedCoins": 10000,
+      "coinsAfter": 9760,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "outfit-mage",
+      "cost": 310,
+      "earnedCoins": 10000,
+      "coinsAfter": 9690,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "outfit-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sunny-explorer-hat",
+      "cost": 80,
+      "earnedCoins": 10000,
+      "coinsAfter": 9920,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hat-rocket",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hat-ocean",
+      "cost": 170,
+      "earnedCoins": 10000,
+      "coinsAfter": 9830,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hat-mage",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hat-crown",
+      "cost": 420,
+      "earnedCoins": 10000,
+      "coinsAfter": 9580,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sky-view-glasses",
+      "cost": 120,
+      "earnedCoins": 10000,
+      "coinsAfter": 9880,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "glasses-racer",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "glasses-star",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "glasses-holo",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "glasses-legend",
+      "cost": 410,
+      "earnedCoins": 10000,
+      "coinsAfter": 9590,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "trail-backpack",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "pack-rocket",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "pack-treasure",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "pack-ocean",
+      "cost": 320,
+      "earnedCoins": 10000,
+      "coinsAfter": 9680,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "pack-legend",
+      "cost": 460,
+      "earnedCoins": 10000,
+      "coinsAfter": 9540,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "hero-cape",
+      "cost": 260,
+      "earnedCoins": 10000,
+      "coinsAfter": 9740,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "cape-sky",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "cape-nebula",
+      "cost": 350,
+      "earnedCoins": 10000,
+      "coinsAfter": 9650,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "cape-ocean",
+      "cost": 370,
+      "earnedCoins": 10000,
+      "coinsAfter": 9630,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "cape-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "story-headphones",
+      "cost": 340,
+      "earnedCoins": 10000,
+      "coinsAfter": 9660,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "phones-sky",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "phones-racer",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "phones-ai",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "phones-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "ship-scout",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "ship-comet",
+      "cost": 330,
+      "earnedCoins": 10000,
+      "coinsAfter": 9670,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "ship-legend",
+      "cost": 560,
+      "earnedCoins": 10000,
+      "coinsAfter": 9440,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "room-starlab",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "room-ocean",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "room-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "robot-sky",
+      "cost": 160,
+      "earnedCoins": 10000,
+      "coinsAfter": 9840,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "robot-mecha",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "robot-legend",
+      "cost": 540,
+      "earnedCoins": 10000,
+      "coinsAfter": 9460,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "card-sky",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "card-nebula",
+      "cost": 270,
+      "earnedCoins": 10000,
+      "coinsAfter": 9730,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "card-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "effect-stars",
+      "cost": 140,
+      "earnedCoins": 10000,
+      "coinsAfter": 9860,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "effect-bubbles",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "effect-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "pet-space-fox",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-starlight-clip",
+      "cost": 75,
+      "earnedCoins": 10000,
+      "coinsAfter": 9925,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-mint-bow",
+      "cost": 95,
+      "earnedCoins": 10000,
+      "coinsAfter": 9905,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-lavender-hat",
+      "cost": 145,
+      "earnedCoins": 10000,
+      "coinsAfter": 9855,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-cat-headphones",
+      "cost": 230,
+      "earnedCoins": 10000,
+      "coinsAfter": 9770,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-heart-glasses",
+      "cost": 155,
+      "earnedCoins": 10000,
+      "coinsAfter": 9845,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-comet-pack",
+      "cost": 275,
+      "earnedCoins": 10000,
+      "coinsAfter": 9725,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-galaxy-cape",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "brother",
+      "itemId": "sister-bloom-outfit",
+      "cost": 325,
+      "earnedCoins": 10000,
+      "coinsAfter": 9675,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "starter-sun-cap",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "starter-sky-glasses",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "starter-buddy-headphones",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hair-comet",
+      "cost": 60,
+      "earnedCoins": 10000,
+      "coinsAfter": 9940,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hair-wave",
+      "cost": 90,
+      "earnedCoins": 10000,
+      "coinsAfter": 9910,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hair-spike",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hair-cloud",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hair-nebula",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hair-legend",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "outfit-cadet",
+      "cost": 70,
+      "earnedCoins": 10000,
+      "coinsAfter": 9930,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "outfit-racer",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "outfit-mecha",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "outfit-ocean",
+      "cost": 240,
+      "earnedCoins": 10000,
+      "coinsAfter": 9760,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "outfit-mage",
+      "cost": 310,
+      "earnedCoins": 10000,
+      "coinsAfter": 9690,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "outfit-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sunny-explorer-hat",
+      "cost": 80,
+      "earnedCoins": 10000,
+      "coinsAfter": 9920,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hat-rocket",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hat-ocean",
+      "cost": 170,
+      "earnedCoins": 10000,
+      "coinsAfter": 9830,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hat-mage",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hat-crown",
+      "cost": 420,
+      "earnedCoins": 10000,
+      "coinsAfter": 9580,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sky-view-glasses",
+      "cost": 120,
+      "earnedCoins": 10000,
+      "coinsAfter": 9880,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "glasses-racer",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "glasses-star",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "glasses-holo",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "glasses-legend",
+      "cost": 410,
+      "earnedCoins": 10000,
+      "coinsAfter": 9590,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "trail-backpack",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "pack-rocket",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "pack-treasure",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "pack-ocean",
+      "cost": 320,
+      "earnedCoins": 10000,
+      "coinsAfter": 9680,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "pack-legend",
+      "cost": 460,
+      "earnedCoins": 10000,
+      "coinsAfter": 9540,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "hero-cape",
+      "cost": 260,
+      "earnedCoins": 10000,
+      "coinsAfter": 9740,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "cape-sky",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "cape-nebula",
+      "cost": 350,
+      "earnedCoins": 10000,
+      "coinsAfter": 9650,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "cape-ocean",
+      "cost": 370,
+      "earnedCoins": 10000,
+      "coinsAfter": 9630,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "cape-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "story-headphones",
+      "cost": 340,
+      "earnedCoins": 10000,
+      "coinsAfter": 9660,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "phones-sky",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "phones-racer",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "phones-ai",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "phones-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "ship-scout",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "ship-comet",
+      "cost": 330,
+      "earnedCoins": 10000,
+      "coinsAfter": 9670,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "ship-legend",
+      "cost": 560,
+      "earnedCoins": 10000,
+      "coinsAfter": 9440,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "room-starlab",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "room-ocean",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "room-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "robot-sky",
+      "cost": 160,
+      "earnedCoins": 10000,
+      "coinsAfter": 9840,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "robot-mecha",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "robot-legend",
+      "cost": 540,
+      "earnedCoins": 10000,
+      "coinsAfter": 9460,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "card-sky",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "card-nebula",
+      "cost": 270,
+      "earnedCoins": 10000,
+      "coinsAfter": 9730,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "card-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "effect-stars",
+      "cost": 140,
+      "earnedCoins": 10000,
+      "coinsAfter": 9860,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "effect-bubbles",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "effect-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "pet-space-fox",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-starlight-clip",
+      "cost": 75,
+      "earnedCoins": 10000,
+      "coinsAfter": 9925,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-mint-bow",
+      "cost": 95,
+      "earnedCoins": 10000,
+      "coinsAfter": 9905,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-lavender-hat",
+      "cost": 145,
+      "earnedCoins": 10000,
+      "coinsAfter": 9855,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-cat-headphones",
+      "cost": 230,
+      "earnedCoins": 10000,
+      "coinsAfter": 9770,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-heart-glasses",
+      "cost": 155,
+      "earnedCoins": 10000,
+      "coinsAfter": 9845,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-comet-pack",
+      "cost": 275,
+      "earnedCoins": 10000,
+      "coinsAfter": 9725,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-galaxy-cape",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger",
+      "itemId": "sister-bloom-outfit",
+      "cost": 325,
+      "earnedCoins": 10000,
+      "coinsAfter": 9675,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "starter-sun-cap",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "starter-sky-glasses",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "starter-buddy-headphones",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hair-comet",
+      "cost": 60,
+      "earnedCoins": 10000,
+      "coinsAfter": 9940,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hair-wave",
+      "cost": 90,
+      "earnedCoins": 10000,
+      "coinsAfter": 9910,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hair-spike",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hair-cloud",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hair-nebula",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hair-legend",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "outfit-cadet",
+      "cost": 70,
+      "earnedCoins": 10000,
+      "coinsAfter": 9930,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "outfit-racer",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "outfit-mecha",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "outfit-ocean",
+      "cost": 240,
+      "earnedCoins": 10000,
+      "coinsAfter": 9760,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "outfit-mage",
+      "cost": 310,
+      "earnedCoins": 10000,
+      "coinsAfter": 9690,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "outfit-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sunny-explorer-hat",
+      "cost": 80,
+      "earnedCoins": 10000,
+      "coinsAfter": 9920,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hat-rocket",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hat-ocean",
+      "cost": 170,
+      "earnedCoins": 10000,
+      "coinsAfter": 9830,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hat-mage",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hat-crown",
+      "cost": 420,
+      "earnedCoins": 10000,
+      "coinsAfter": 9580,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sky-view-glasses",
+      "cost": 120,
+      "earnedCoins": 10000,
+      "coinsAfter": 9880,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "glasses-racer",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "glasses-star",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "glasses-holo",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "glasses-legend",
+      "cost": 410,
+      "earnedCoins": 10000,
+      "coinsAfter": 9590,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "trail-backpack",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "pack-rocket",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "pack-treasure",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "pack-ocean",
+      "cost": 320,
+      "earnedCoins": 10000,
+      "coinsAfter": 9680,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "pack-legend",
+      "cost": 460,
+      "earnedCoins": 10000,
+      "coinsAfter": 9540,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "hero-cape",
+      "cost": 260,
+      "earnedCoins": 10000,
+      "coinsAfter": 9740,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "cape-sky",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "cape-nebula",
+      "cost": 350,
+      "earnedCoins": 10000,
+      "coinsAfter": 9650,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "cape-ocean",
+      "cost": 370,
+      "earnedCoins": 10000,
+      "coinsAfter": 9630,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "cape-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "story-headphones",
+      "cost": 340,
+      "earnedCoins": 10000,
+      "coinsAfter": 9660,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "phones-sky",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "phones-racer",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "phones-ai",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "phones-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "ship-scout",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "ship-comet",
+      "cost": 330,
+      "earnedCoins": 10000,
+      "coinsAfter": 9670,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "ship-legend",
+      "cost": 560,
+      "earnedCoins": 10000,
+      "coinsAfter": 9440,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "room-starlab",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "room-ocean",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "room-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "robot-sky",
+      "cost": 160,
+      "earnedCoins": 10000,
+      "coinsAfter": 9840,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "robot-mecha",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "robot-legend",
+      "cost": 540,
+      "earnedCoins": 10000,
+      "coinsAfter": 9460,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "card-sky",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "card-nebula",
+      "cost": 270,
+      "earnedCoins": 10000,
+      "coinsAfter": 9730,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "card-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "effect-stars",
+      "cost": 140,
+      "earnedCoins": 10000,
+      "coinsAfter": 9860,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "effect-bubbles",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "effect-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "pet-space-fox",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-starlight-clip",
+      "cost": 75,
+      "earnedCoins": 10000,
+      "coinsAfter": 9925,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-mint-bow",
+      "cost": 95,
+      "earnedCoins": 10000,
+      "coinsAfter": 9905,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-lavender-hat",
+      "cost": 145,
+      "earnedCoins": 10000,
+      "coinsAfter": 9855,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-cat-headphones",
+      "cost": 230,
+      "earnedCoins": 10000,
+      "coinsAfter": 9770,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-heart-glasses",
+      "cost": 155,
+      "earnedCoins": 10000,
+      "coinsAfter": 9845,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-comet-pack",
+      "cost": 275,
+      "earnedCoins": 10000,
+      "coinsAfter": 9725,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-galaxy-cape",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "sister",
+      "itemId": "sister-bloom-outfit",
+      "cost": 325,
+      "earnedCoins": 10000,
+      "coinsAfter": 9675,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "starter-sun-cap",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "starter-sky-glasses",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "starter-buddy-headphones",
+      "cost": 0,
+      "earnedCoins": 10000,
+      "coinsAfter": 10000,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hair-comet",
+      "cost": 60,
+      "earnedCoins": 10000,
+      "coinsAfter": 9940,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hair-wave",
+      "cost": 90,
+      "earnedCoins": 10000,
+      "coinsAfter": 9910,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hair-spike",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hair-cloud",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hair-nebula",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hair-legend",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "outfit-cadet",
+      "cost": 70,
+      "earnedCoins": 10000,
+      "coinsAfter": 9930,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "outfit-racer",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "outfit-mecha",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "outfit-ocean",
+      "cost": 240,
+      "earnedCoins": 10000,
+      "coinsAfter": 9760,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "outfit-mage",
+      "cost": 310,
+      "earnedCoins": 10000,
+      "coinsAfter": 9690,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "outfit-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sunny-explorer-hat",
+      "cost": 80,
+      "earnedCoins": 10000,
+      "coinsAfter": 9920,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hat-rocket",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hat-ocean",
+      "cost": 170,
+      "earnedCoins": 10000,
+      "coinsAfter": 9830,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hat-mage",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hat-crown",
+      "cost": 420,
+      "earnedCoins": 10000,
+      "coinsAfter": 9580,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sky-view-glasses",
+      "cost": 120,
+      "earnedCoins": 10000,
+      "coinsAfter": 9880,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "glasses-racer",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "glasses-star",
+      "cost": 190,
+      "earnedCoins": 10000,
+      "coinsAfter": 9810,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "glasses-holo",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "glasses-legend",
+      "cost": 410,
+      "earnedCoins": 10000,
+      "coinsAfter": 9590,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "trail-backpack",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "pack-rocket",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "pack-treasure",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "pack-ocean",
+      "cost": 320,
+      "earnedCoins": 10000,
+      "coinsAfter": 9680,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "pack-legend",
+      "cost": 460,
+      "earnedCoins": 10000,
+      "coinsAfter": 9540,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "hero-cape",
+      "cost": 260,
+      "earnedCoins": 10000,
+      "coinsAfter": 9740,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "cape-sky",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "cape-nebula",
+      "cost": 350,
+      "earnedCoins": 10000,
+      "coinsAfter": 9650,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "cape-ocean",
+      "cost": 370,
+      "earnedCoins": 10000,
+      "coinsAfter": 9630,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "cape-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "story-headphones",
+      "cost": 340,
+      "earnedCoins": 10000,
+      "coinsAfter": 9660,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "phones-sky",
+      "cost": 220,
+      "earnedCoins": 10000,
+      "coinsAfter": 9780,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "phones-racer",
+      "cost": 280,
+      "earnedCoins": 10000,
+      "coinsAfter": 9720,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "phones-ai",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "phones-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "ship-scout",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "ship-comet",
+      "cost": 330,
+      "earnedCoins": 10000,
+      "coinsAfter": 9670,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "ship-legend",
+      "cost": 560,
+      "earnedCoins": 10000,
+      "coinsAfter": 9440,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "room-starlab",
+      "cost": 150,
+      "earnedCoins": 10000,
+      "coinsAfter": 9850,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "room-ocean",
+      "cost": 290,
+      "earnedCoins": 10000,
+      "coinsAfter": 9710,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "room-legend",
+      "cost": 520,
+      "earnedCoins": 10000,
+      "coinsAfter": 9480,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "robot-sky",
+      "cost": 160,
+      "earnedCoins": 10000,
+      "coinsAfter": 9840,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "robot-mecha",
+      "cost": 300,
+      "earnedCoins": 10000,
+      "coinsAfter": 9700,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "robot-legend",
+      "cost": 540,
+      "earnedCoins": 10000,
+      "coinsAfter": 9460,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "card-sky",
+      "cost": 130,
+      "earnedCoins": 10000,
+      "coinsAfter": 9870,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "card-nebula",
+      "cost": 270,
+      "earnedCoins": 10000,
+      "coinsAfter": 9730,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "card-legend",
+      "cost": 480,
+      "earnedCoins": 10000,
+      "coinsAfter": 9520,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "effect-stars",
+      "cost": 140,
+      "earnedCoins": 10000,
+      "coinsAfter": 9860,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "effect-bubbles",
+      "cost": 250,
+      "earnedCoins": 10000,
+      "coinsAfter": 9750,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "effect-legend",
+      "cost": 500,
+      "earnedCoins": 10000,
+      "coinsAfter": 9500,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "pet-space-fox",
+      "cost": 180,
+      "earnedCoins": 10000,
+      "coinsAfter": 9820,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-starlight-clip",
+      "cost": 75,
+      "earnedCoins": 10000,
+      "coinsAfter": 9925,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-mint-bow",
+      "cost": 95,
+      "earnedCoins": 10000,
+      "coinsAfter": 9905,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-lavender-hat",
+      "cost": 145,
+      "earnedCoins": 10000,
+      "coinsAfter": 9855,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-cat-headphones",
+      "cost": 230,
+      "earnedCoins": 10000,
+      "coinsAfter": 9770,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-heart-glasses",
+      "cost": 155,
+      "earnedCoins": 10000,
+      "coinsAfter": 9845,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-comet-pack",
+      "cost": 275,
+      "earnedCoins": 10000,
+      "coinsAfter": 9725,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-galaxy-cape",
+      "cost": 360,
+      "earnedCoins": 10000,
+      "coinsAfter": 9640,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    },
+    {
+      "avatar": "younger-sister",
+      "itemId": "sister-bloom-outfit",
+      "cost": 325,
+      "earnedCoins": 10000,
+      "coinsAfter": 9675,
+      "status": "PASS",
+      "operations": [
+        "purchase",
+        "derived-balance",
+        "retry-purchase",
+        "retry-equip-event",
+        "persist",
+        "unequip",
+        "child-isolation",
+        "insufficient-funds",
+        "unowned-rejection"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "stale equip cannot replace newer same-slot selection",
+      "status": "PASS"
+    },
+    {
+      "name": "cross-child event ID collision",
+      "status": "PASS"
+    },
+    {
+      "name": "cross-item event ID collision",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong slot in existing raw event",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting raw duplicates cannot be hidden by normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "blank event ID rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy grouped slot retry does not rewrite history",
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}

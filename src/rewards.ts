@@ -1,4 +1,4 @@
-import { curriculum } from './data/curriculum';
+import { allPublishedCourseDays as curriculum, courseEggId } from './semesters';
 import { normalizeShopLedgers, spentCoinsFromPurchases } from './shopLedger';
 import type { ChildProgress } from './types';
 
@@ -18,7 +18,7 @@ export function accuracyBonus(correct: number, total: number) {
 }
 
 export const easterEggDays = new Set([7, 18, 36, 54, 72, 90]);
-const validEggIds = new Set(Array.from(easterEggDays, (day) => `egg-day-${day}`));
+const validEggIds = new Set(curriculum.filter(day => easterEggDays.has(day.index)).map(courseEggId));
 
 const missionRewards = new Map<string, { xp: number; coins: number }>();
 const knownBlocks = new Set<string>();

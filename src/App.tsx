@@ -1,16 +1,23 @@
-import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { curriculum } from './data/curriculum';
+import { useSharedLessonStorage } from './useSharedLessonStorage';
+import { dailyExcludedLearners, dailyParticipantIds } from './dailyParticipants';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { canEarnSemesterDay, courseEggId, normalizeSemesterSettings, resolveSemester, resolveSemesterRoute, selectSemester, semesterCourseDate } from './semesters';
 import { normalizeAvatarId } from './components/AvatarHero';
 import AdventureDashboard from './v4/Dashboard';
-import LessonQuest from './v4/LessonQuest';
+import PageLoadBoundary from './components/PageLoadBoundary';
 import type { RewardMoment } from './v4/RewardModal';
 import { playV4Sound } from './v4/sound';
-import { AchievementsPage, SecondaryPageShell, ReportPage, SemesterPage, ShopPage } from './v4/SecondaryViews';
-import ParentSettings from './v4/ParentSettings';
+const LessonQuest = lazy(() => import('./v4/LessonQuest'));
+const ParentSettings = lazy(() => import('./v4/ParentSettings'));
+const SemesterPage = lazy(() => import('./v4/SecondaryViews').then(m => ({ default: m.SemesterPage })));
+const AchievementsPage = lazy(() => import('./v4/SecondaryViews').then(m => ({ default: m.AchievementsPage })));
+const ShopPage = lazy(() => import('./v4/SecondaryViews').then(m => ({ default: m.ShopPage })));
+const ReportPage = lazy(() => import('./v4/SecondaryViews').then(m => ({ default: m.ReportPage })));
+const SecondaryPageShell = lazy(() => import('./v4/SecondaryViews').then(m => ({ default: m.SecondaryPageShell })));
 import { AdminPinDialog, FamilySetupDialog, UserSwitchDialog } from './v4/ParentAccess';
 import { normalizeUserRole } from './v4/caregivers';
 import type { DashboardViewKey } from './v4/Dashboard';
-import { createFamilySession, loadCloudSnapshot, normalizeFamilyPin, saveCloudSnapshot, validFamilyPin } from './cloud';
+import { CloudConflictError, createFamilySession, loadCloudSnapshot, normalizeFamilyPin, resetCloudProgress, saveCloudSnapshot, validFamilyPin } from './cloud';
 import type { FamilySession } from './cloud';
 import {
   accuracyBonus,
@@ -26,10 +33,11 @@ import {
 } from './rewards';
 import { applyNewBadgeUnlocks } from './badges';
 import { mergeProgressMaps, progressEqual } from './stateMerge';
+import { mergeLoadedAttendance, mergeLoadedReflections } from './lessonStateMerge';
+import { lessonBlockCompletionState, lessonMissionCompletionState } from './lessonCompletionPolicy';
 import { purchaseShopItem, toggleShopItem, type ShopActionResult } from './shopService';
 import { visualThemeOptions } from './uiData';
 import {
-  addCourseWeekdaysYmd,
   courseDayAccess,
   fetchTrustedTaipeiDate,
   msUntilNextTaipeiMidnight,
@@ -59,8 +67,21 @@ const ACTIVE_SESSION_KEY = 'star-learning-active-family-session-v40';
 const ACTIVE_PIN_KEY = 'star-learning-active-family-pin-v22';
 const LEGACY_ACTIVE_PIN_KEY = 'star-learning-active-family-pin-v21';
 
-const familyStorageKey = (familyId: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections') =>
-  `star-learning-v40:${familyId}:${kind}`;
+const familyStorageKey = (familyId: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections', resetId = '') => {
+  const legacyKey = `star-learning-v40:${familyId}:${kind}`;
+  return resetId && kind !== 'settings' ? `${legacyKey}:reset:${encodeURIComponent(resetId)}` : legacyKey;
+};
+const progressResetKey = (familyId: string) => `star-learning-v40:${familyId}:progress-reset`;
+function readProgressResetMarker(familyId: string): { id: string; updatedAt: string } {
+  const raw = localStorage.getItem(progressResetKey(familyId));
+  if (!raw) return { id: '', updatedAt: '' };
+  try {
+    const marker = JSON.parse(raw) as { id?: unknown; updatedAt?: unknown };
+    if (typeof marker.id === 'string' && typeof marker.updatedAt === 'string'
+      && /^[a-f0-9-]{36}$/.test(marker.id) && Number.isFinite(Date.parse(marker.updatedAt))) return { id: marker.id, updatedAt: marker.updatedAt };
+  } catch { /* A corrupt marker must not reactivate the pre-reset cache. */ }
+  return { id: 'invalid', updatedAt: '' };
+}
 const legacyV22FamilyStorageKey = (pin: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections') =>
   `star-learning-v22:${pin}:${kind}`;
 const legacyV21FamilyStorageKey = (pin: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections') =>
@@ -80,6 +101,9 @@ const defaultSettings: AppSettings = {
   visualTheme: 'hero',
   voicePreference: 'female',
   voiceRate: 0.78,
+  cursorEffects: true,
+  motionEffects: true,
+  homeDisplayLearnerId: 'child-1',
   semesterStart: '2026-08-31',
   users: [
     { id: 'user-father', name: '爸爸', role: 'father', disabled: false },
@@ -134,11 +158,18 @@ function readLegacyActivePin() {
 }
 
 function writeFamilySnapshotCache(familyId: string, snapshot: CloudSnapshot) {
+  const marker = readProgressResetMarker(familyId);
+  const resetId = snapshot.progressResetId ?? '';
+  if (marker.id && marker.id !== resetId && (!resetId || (marker.updatedAt && Date.parse(snapshot.updatedAt) <= Date.parse(marker.updatedAt)))) {
+    throw new Error('這個家庭已有較新的進度版本；未匯入清除前的舊資料，請重新開啟家庭。');
+  }
   const secureSettings = { ...snapshot.settings, cloudSync: { enabled: true, familyCode: familyId } };
   localStorage.setItem(familyStorageKey(familyId, 'settings'), JSON.stringify(secureSettings));
-  localStorage.setItem(familyStorageKey(familyId, 'progress'), JSON.stringify(snapshot.progress ?? {}));
-  localStorage.setItem(familyStorageKey(familyId, 'attendance'), JSON.stringify(snapshot.attendance ?? {}));
-  localStorage.setItem(familyStorageKey(familyId, 'reflections'), JSON.stringify(snapshot.reflections ?? {}));
+  localStorage.setItem(familyStorageKey(familyId, 'progress', resetId), JSON.stringify(snapshot.progress ?? {}));
+  localStorage.setItem(familyStorageKey(familyId, 'attendance', resetId), JSON.stringify(snapshot.attendance ?? {}));
+  localStorage.setItem(familyStorageKey(familyId, 'reflections', resetId), JSON.stringify(snapshot.reflections ?? {}));
+  // Publish the revision only after the complete cache has been written.
+  if (snapshot.progressResetId) localStorage.setItem(progressResetKey(familyId), JSON.stringify({ id: snapshot.progressResetId, updatedAt: snapshot.updatedAt }));
 }
 
 function migrateLegacyFamilyStorage(pin: string, familyId: string) {
@@ -210,7 +241,12 @@ function normalizeSettings(raw?: Partial<AppSettings> | null): AppSettings {
     voicePreference: raw?.voicePreference === 'male' ? 'male' : 'female',
     voiceId: typeof raw?.voiceId === 'string' ? raw.voiceId.slice(0, 320) : undefined,
     voiceRate: raw?.voiceRate === 0.9 ? 0.9 : 0.78,
-    semesterStart: raw?.semesterStart || defaultSettings.semesterStart,
+    cursorEffects: raw?.cursorEffects !== false,
+    motionEffects: raw?.motionEffects !== false,
+    homeDisplayLearnerId: children.some((child) => !child.disabled && child.id === raw?.homeDisplayLearnerId)
+      ? raw?.homeDisplayLearnerId
+      : children.find((child) => !child.disabled)?.id,
+    ...normalizeSemesterSettings(raw),
     users,
     children,
     cloudSync: {
@@ -220,9 +256,10 @@ function normalizeSettings(raw?: Partial<AppSettings> | null): AppSettings {
   };
 }
 
-function loadFamilyValue<T>(familyId: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections', legacyKey: string, fallback: T): T {
-  const currentKey = familyStorageKey(familyId, kind);
+function loadFamilyValue<T>(familyId: string, kind: 'settings' | 'progress' | 'attendance' | 'reflections', legacyKey: string, fallback: T, resetId = ''): T {
+  const currentKey = familyStorageKey(familyId, kind, resetId);
   if (localStorage.getItem(currentKey)) return safeLoad<T>(currentKey, fallback);
+  if (resetId) return fallback;
   if (familyId === LOCAL_FAMILY_KEY && hasLegacyLocalData()) return safeLoad<T>(legacyKey, fallback);
   return fallback;
 }
@@ -236,9 +273,9 @@ function normalizeProgressMap(raw: AppProgress | undefined, children: ChildProfi
   return next;
 }
 
-function snapshotNow(settings: AppSettings, progress: AppProgress, attendance: AttendanceMap, reflections: ReflectionMap): CloudSnapshot {
+function snapshotNow(settings: AppSettings, progress: AppProgress, attendance: AttendanceMap, reflections: ReflectionMap, resetId = ''): CloudSnapshot {
   const cloudSafeSettings = { ...settings, cloudSync: { enabled: true, familyCode: '' } };
-  return { version: 2, updatedAt: new Date().toISOString(), settings: cloudSafeSettings, progress, attendance, reflections };
+  return { version: 2, updatedAt: new Date().toISOString(), ...(resetId ? { progressResetId: resetId } : {}), settings: cloudSafeSettings, progress, attendance, reflections };
 }
 
 function blockAccuracyReward(progress: ChildProgress, blockId: string) {
@@ -246,13 +283,16 @@ function blockAccuracyReward(progress: ChildProgress, blockId: string) {
   return accuracyBonus(answers.filter((event) => event.correct).length, answers.length);
 }
 
-type OpenFamily = (pin: string, seed?: CloudSnapshot) => Promise<boolean>;
+type OpenFamily = (pin: string, seed?: CloudSnapshot, isCurrent?: () => boolean) => Promise<boolean>;
 
-function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSession }: {
+function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSession, progressResetId, resumeAdminSettings, onAdoptResetSnapshot }: {
   familySession: FamilySession | null;
   onSwitchFamily: () => void;
   onOpenFamily: OpenFamily;
   onRefreshSession: (session: FamilySession) => void;
+  progressResetId: string;
+  resumeAdminSettings: boolean;
+  onAdoptResetSnapshot: (snapshot: CloudSnapshot, initiatedHere: boolean) => Promise<void>;
 }) {
   const familyId = familySession?.familyId ?? LOCAL_FAMILY_KEY;
   const isLocalFamily = !familySession;
@@ -262,10 +302,11 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     return { ...normalized, cloudSync: { enabled: !isLocalFamily, familyCode: isLocalFamily ? '' : familyId } };
   }, [familyId, isLocalFamily]);
   const [settings, setSettings] = useState<AppSettings>(initialSettings);
-  const [progress, setProgress] = useState<AppProgress>(() => normalizeProgressMap(loadFamilyValue<AppProgress>(familyId, 'progress', PROGRESS_KEY, {}), initialSettings.children));
-  const [attendance, setAttendance] = useState<AttendanceMap>(() => loadFamilyValue<AttendanceMap>(familyId, 'attendance', ATTENDANCE_KEY, {}));
-  const [reflections, setReflections] = useState<ReflectionMap>(() => loadFamilyValue<ReflectionMap>(familyId, 'reflections', REFLECTION_KEY, {}));
-  const [view, setView] = useState<'home' | 'semester' | 'achievements' | 'report' | 'shop' | 'settings'>('home');
+  const [progress, setProgress] = useState<AppProgress>(() => normalizeProgressMap(loadFamilyValue<AppProgress>(familyId, 'progress', PROGRESS_KEY, {}, progressResetId), initialSettings.children));
+  const [attendance, setAttendance] = useSharedLessonStorage<AttendanceMap>(familyId, familyStorageKey(familyId, 'attendance', progressResetId), () => loadFamilyValue<AttendanceMap>(familyId, 'attendance', ATTENDANCE_KEY, {}, progressResetId), withFamilyProgressLock);
+  const [reflections, setReflections] = useSharedLessonStorage<ReflectionMap>(familyId, familyStorageKey(familyId, 'reflections', progressResetId), () => loadFamilyValue<ReflectionMap>(familyId, 'reflections', REFLECTION_KEY, {}, progressResetId), withFamilyProgressLock);
+  const [view, setView] = useState<'home' | 'semester' | 'achievements' | 'report' | 'shop' | 'settings'>(resumeAdminSettings ? 'settings' : 'home');
+  const [homeSection, setHomeSection] = useState<'home' | 'today'>(() => window.location.hash === '#today-course' ? 'today' : 'home');
   const [selectedDayId, setSelectedDayId] = useState<string | null>(null);
   const [selectedLessonIndex, setSelectedLessonIndex] = useState<0 | 1 | null>(null);
   const [soundEnabled, setSoundEnabled] = useState(() => localStorage.getItem('little-explorers-v4-sound') !== 'off');
@@ -274,8 +315,10 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   const [cloudReady, setCloudReady] = useState(isLocalFamily);
   const [lastCloudSync, setLastCloudSync] = useState('');
   const [rewardMoment, setRewardMoment] = useState<RewardMoment | null>(null);
-  const [adminUnlocked, setAdminUnlocked] = useState(false);
+  const closeReward = useCallback(() => setRewardMoment(null), []);
+  const [adminUnlocked, setAdminUnlocked] = useState(resumeAdminSettings);
   const [adminPromptOpen, setAdminPromptOpen] = useState(false);
+  const parentAccessAttempt = useRef(0);
   const [adminDestination, setAdminDestination] = useState<'report' | 'settings'>('report');
   const [familySetupOpen, setFamilySetupOpen] = useState(false);
   const activeUserKey = `star-learning-v40:${familyId}:active-user`;
@@ -283,14 +326,30 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   // Adult identity is requested only when the user explicitly enters Parent/Report/Settings flows.
   const [userPromptOpen, setUserPromptOpen] = useState(false);
   const [activeUserId, setActiveUserId] = useState<string | null>(() => sessionStorage.getItem(activeUserKey));
+  useEffect(() => {
+    const syncHomeHash = () => {
+      if (view !== 'home') return;
+      const next = window.location.hash === '#today-course' ? 'today' : 'home';
+      setHomeSection(next);
+      if (next === 'today') window.requestAnimationFrame(() => document.getElementById('today-course')?.focus({ preventScroll: true }));
+    };
+    window.addEventListener('hashchange', syncHomeHash);
+    return () => window.removeEventListener('hashchange', syncHomeHash);
+  }, [view]);
   const [trustedDate, setTrustedDate] = useState<TrustedTaipeiDate>(() => ({
     ymd: taipeiYmd(),
     verified: false,
     source: 'device-fallback',
   }));
   const cloudUpdatedAtRef = useRef('');
-  const progressStorageKey = familyStorageKey(familyId, 'progress');
+  const cloudConflictRetryRef = useRef(false);
+  const progressStorageKey = familyStorageKey(familyId, 'progress', progressResetId);
+  const mounted = useRef(true);
+  const pendingResetOperation = useRef('');
+  useEffect(() => { mounted.current = true; return () => { mounted.current = false; }; }, []);
   const progressRef = useRef(progress);
+  // Compare local edits with the last acknowledged cloud values, including across failed reads.
+  const cloudLessonBaseRef = useRef({ attendance, reflections });
 
   const mutateProgressAtomically = async (mutator: (current: AppProgress) => { next: AppProgress; result: ShopActionResult }) => {
     return withFamilyProgressLock(familyId, async () => {
@@ -356,7 +415,13 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
       entries.forEach((entry) => entry.target.classList.toggle('v4-offscreen', !entry.isIntersecting));
     }, { rootMargin: '120px 0px' });
     const timer = window.setTimeout(() => {
-      document.querySelectorAll('.v5-ai-bot,.v5-hero-character,.v5-rocket-flyby,.v4-chest-visual,.v4-reward-orbit').forEach((element) => observer.observe(element));
+      document.querySelectorAll('.v5-ai-bot,.v5-hero-character,.v5-rocket-flyby,.v4-chest-visual,.v4-reward-orbit').forEach((element) => {
+        // Flybys begin outside the viewport. Pause them with their stationary
+        // header, so an offscreen starting position can still fly into view.
+        const target = element.matches('.v5-rocket-flyby')
+          ? element.closest('.v5-cinematic-header') ?? element : element;
+        observer.observe(target);
+      });
     }, 0);
     return () => { window.clearTimeout(timer); observer.disconnect(); };
   }, [view, selectedDayId, selectedLessonIndex]);
@@ -406,13 +471,18 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     window.addEventListener('storage', onStorage);
     return () => window.removeEventListener('storage', onStorage);
   }, [progressStorageKey, settings.children]);
-  useEffect(() => localStorage.setItem(familyStorageKey(familyId, 'attendance'), JSON.stringify(attendance)), [attendance, familyId]);
-  useEffect(() => localStorage.setItem(familyStorageKey(familyId, 'reflections'), JSON.stringify(reflections)), [reflections, familyId]);
   useEffect(() => {
     if (!isLocalFamily) return;
-    // State has already been loaded synchronously and persisted into the V4 local namespace above.
-    [SETTINGS_KEY, PROGRESS_KEY, ATTENDANCE_KEY, REFLECTION_KEY].forEach((key) => localStorage.removeItem(key));
-  }, [isLocalFamily]);
+    // Remove legacy copies only after the queued family-cache writes have completed.
+    void withFamilyProgressLock(familyId, () => {
+      if (!mounted.current) return;
+      const entries = [[SETTINGS_KEY, 'settings'], [PROGRESS_KEY, 'progress'], [ATTENDANCE_KEY, 'attendance'], [REFLECTION_KEY, 'reflections']] as const;
+      for (const [legacyKey, kind] of entries) {
+        const target = familyStorageKey(familyId, kind, kind === 'settings' ? '' : progressResetId);
+        if (localStorage.getItem(target) !== null) localStorage.removeItem(legacyKey);
+      }
+    });
+  }, [isLocalFamily, familyId, progressResetId]);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -421,6 +491,8 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     root.dataset.voicePreference = settings.voicePreference ?? 'female';
     root.dataset.voiceId = settings.voiceId ?? '';
     root.dataset.voiceRate = String(settings.voiceRate ?? 0.78);
+    root.dataset.cursorEffects = settings.cursorEffects === false ? 'false' : 'true';
+    root.dataset.motionEffects = settings.motionEffects === false ? 'false' : 'true';
     const media = window.matchMedia('(prefers-color-scheme: dark)');
     const sync = () => {
       const dark = settings.theme === 'dark' || (settings.theme === 'system' && media.matches);
@@ -429,16 +501,23 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     sync();
     media.addEventListener('change', sync);
     return () => media.removeEventListener('change', sync);
-  }, [settings.theme, settings.visualTheme]);
+  }, [settings.theme, settings.visualTheme, settings.voicePreference, settings.voiceId, settings.voiceRate, settings.cursorEffects, settings.motionEffects]);
 
-  const applyCloudSnapshot = (snapshot: CloudSnapshot) => {
+  const applyCloudSnapshot = async (snapshot: CloudSnapshot, readBase: { attendance: AttendanceMap; reflections: ReflectionMap }) => {
+    if (!mounted.current) return;
+    if ((snapshot.progressResetId ?? '') !== progressResetId) {
+      setCloudReady(false);
+      await onAdoptResetSnapshot(snapshot, adminUnlocked && pendingResetOperation.current === snapshot.progressResetId);
+      return;
+    }
     const remoteSettings = normalizeSettings(snapshot.settings);
     const nextSettings = { ...remoteSettings, cloudSync: { enabled: true, familyCode: familyId } };
     setCloudReady(false);
     setSettings(nextSettings);
     setProgress((current) => mergeProgressMaps(current, normalizeProgressMap(snapshot.progress, nextSettings.children), nextSettings.children));
-    setAttendance(snapshot.attendance ?? {});
-    setReflections(snapshot.reflections ?? {});
+    setAttendance((current) => mergeLoadedAttendance(readBase.attendance, current, snapshot.attendance ?? {}));
+    setReflections((current) => mergeLoadedReflections(readBase.reflections, current, snapshot.reflections ?? {}));
+    cloudLessonBaseRef.current = { attendance: snapshot.attendance ?? {}, reflections: snapshot.reflections ?? {} };
     cloudUpdatedAtRef.current = snapshot.updatedAt;
     setLastCloudSync(snapshot.updatedAt);
     window.setTimeout(() => setCloudReady(true), 0);
@@ -448,6 +527,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     if (!familySession) return false;
     setCloudStatus('loading');
     setCloudMessage('正在讀取這個家庭的雲端進度…');
+    const readBase = cloudLessonBaseRef.current;
     try {
       const snapshot = await loadCloudSnapshot(familySession);
       if (!snapshot) {
@@ -456,7 +536,8 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
         setCloudMessage('雲端尚無資料，將建立第一份安全副本。');
         return false;
       }
-      if (force || !cloudUpdatedAtRef.current || new Date(snapshot.updatedAt) > new Date(cloudUpdatedAtRef.current)) applyCloudSnapshot(snapshot);
+      const olderThanAcknowledged = cloudUpdatedAtRef.current && new Date(snapshot.updatedAt) < new Date(cloudUpdatedAtRef.current);
+      if (!olderThanAcknowledged && (force || !cloudUpdatedAtRef.current || new Date(snapshot.updatedAt) > new Date(cloudUpdatedAtRef.current))) await applyCloudSnapshot(snapshot, readBase);
       setCloudReady(true);
       setCloudStatus('synced');
       setCloudMessage('已載入這個家庭的最新進度。');
@@ -471,10 +552,11 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   useEffect(() => {
     if (!familySession) return;
     void (async () => {
+      const readBase = cloudLessonBaseRef.current;
       try {
         const snapshot = await loadCloudSnapshot(familySession);
         if (snapshot) {
-          applyCloudSnapshot(snapshot);
+          await applyCloudSnapshot(snapshot, readBase);
           setCloudStatus('synced');
           setCloudMessage('啟動時已讀取雲端進度。');
         } else {
@@ -492,24 +574,42 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const recoverCloudConflict = async (error: unknown) => {
+    if (!(error instanceof CloudConflictError)) return false;
+    setCloudReady(false);
+    if (cloudConflictRetryRef.current) {
+      setCloudStatus('error');
+      setCloudMessage('另一個裝置仍在更新資料。本機進度已保留，請稍後在家長設定重新同步。');
+      return true;
+    }
+    cloudConflictRetryRef.current = true;
+    // The normal save effect uploads the merged state after a successful read.
+    // A second conflict pauses uploads instead of repeatedly fetching and writing.
+    await pullCloud(true);
+    return true;
+  };
+
   useEffect(() => {
     if (!familySession || !cloudReady) return;
     const timer = window.setTimeout(async () => {
       setCloudStatus('saving');
       setCloudMessage('正在儲存最新進度…');
       try {
-        const response = await saveCloudSnapshot(familySession, snapshotNow(settings, progress, attendance, reflections), cloudUpdatedAtRef.current);
+        const response = await saveCloudSnapshot(familySession, snapshotNow(settings, progress, attendance, reflections, progressResetId), cloudUpdatedAtRef.current);
+        cloudLessonBaseRef.current = { attendance, reflections };
         cloudUpdatedAtRef.current = response.updatedAt;
+        cloudConflictRetryRef.current = false;
         setLastCloudSync(response.updatedAt);
         setCloudStatus('synced');
         setCloudMessage('所有裝置可讀取這份最新進度。');
       } catch (error) {
+        if (await recoverCloudConflict(error)) return;
         setCloudStatus('error');
         setCloudMessage(error instanceof Error ? error.message : '雲端儲存失敗；本機資料仍安全保留。');
       }
     }, 1000);
     return () => window.clearTimeout(timer);
-  }, [settings, progress, attendance, reflections, cloudReady, familySession]);
+  }, [settings, progress, attendance, reflections, cloudReady, familySession, progressResetId]);
 
   useEffect(() => {
     if (!familySession) return;
@@ -520,28 +620,51 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
 
   const syncNow = async () => {
     if (!familySession) return;
+    cloudConflictRetryRef.current = false;
+    if (!cloudReady) {
+      await pullCloud();
+      return;
+    }
     setCloudStatus('saving');
     try {
-      const response = await saveCloudSnapshot(familySession, snapshotNow(settings, progress, attendance, reflections), cloudUpdatedAtRef.current);
+      const response = await saveCloudSnapshot(familySession, snapshotNow(settings, progress, attendance, reflections, progressResetId), cloudUpdatedAtRef.current);
+      cloudLessonBaseRef.current = { attendance, reflections };
       cloudUpdatedAtRef.current = response.updatedAt;
+      cloudConflictRetryRef.current = false;
       setLastCloudSync(response.updatedAt);
       setCloudReady(true);
       setCloudStatus('synced');
       setCloudMessage('手動同步完成，已恢復自動同步。');
     } catch (error) {
+      if (await recoverCloudConflict(error)) return;
       setCloudStatus('error');
       setCloudMessage(error instanceof Error ? error.message : '手動同步失敗');
     }
   };
 
+  const resetAllProgress = async (operationId: string) => {
+    if (!adminUnlocked || !familySession) throw new Error('請先以管理者 PIN 解鎖家庭管理。');
+    if (!cloudReady || !cloudUpdatedAtRef.current) throw new Error('請先完成雲端同步，再確認清除進度。');
+    pendingResetOperation.current = operationId;
+    setCloudReady(false);
+    try {
+      const snapshot = await resetCloudProgress(familySession, operationId, cloudUpdatedAtRef.current);
+      if (mounted.current) await onAdoptResetSnapshot(snapshot, true);
+    } catch (error) {
+      // The server may have committed before a response was lost. Read it
+      // before resuming uploads, and keep the same operation ID for retry.
+      if (mounted.current) await pullCloud(true);
+      if (error instanceof CloudConflictError) throw new Error('另一個裝置有新進度；已保留資料並重新同步，請再次確認清除。');
+      throw new Error('尚未確認清除結果；本機資料已保留，請重新同步後再試一次。');
+    }
+  };
+
+  const semester = resolveSemester(settings);
+  const curriculum = semester.days;
   const selectedDay = selectedDayId ? curriculum.find((day) => day.id === selectedDayId) ?? null : null;
   const enabledLearnerIds = settings.children.filter((child) => !child.disabled).map((child) => child.id);
-  // A learner that is added after a day has first been opened must join the
-  // lesson immediately. Older snapshots can contain a two-child attendance
-  // list, which used to silently remove newly added siblings from every game.
-  // Attendance remains in the snapshot for history/migration, but it may no
-  // longer hide an enabled learner from the active lesson experience.
-  const participantIds = (_day: CourseDay) => enabledLearnerIds;
+  // Daily exclusions are explicit. Legacy attendance never controls visibility.
+  const participantIds = (day: CourseDay) => dailyParticipantIds(settings.children, reflections[day.id]);
   const isChildBlockDone = (childId: string, blockId: string) => Boolean(progress[childId]?.completedBlocks.includes(blockId));
   const isChildDayDone = (childId: string, day: CourseDay) => day.blocks.every((block) => isChildBlockDone(childId, block.id));
   const isDayDone = (day: CourseDay) => {
@@ -550,10 +673,19 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   };
 
   const todayKey = trustedDate.ymd;
-  const courseDateKey = (day: CourseDay) => addCourseWeekdaysYmd(settings.semesterStart, day.index - 1);
+  const courseDateKey = (day: CourseDay) => semesterCourseDate(semester, day);
   const accessForDay = (day: CourseDay): CourseDayAccess => courseDayAccess(courseDateKey(day), todayKey);
-  const canEarnToday = (day: CourseDay) => trustedDate.verified && accessForDay(day) === 'today';
-  const challengeSteps = (day: CourseDay) => reflections[day.id]?.dailyChallenge ?? { warmup: false, learn: false };
+  const canEarnToday = (day: CourseDay) => canEarnSemesterDay(semester, day, trustedDate);
+  const selectDailyParticipant = (day: CourseDay, childId: string, selected: boolean) => {
+    if (!canEarnToday(day) || !enabledLearnerIds.includes(childId)) return;
+    setReflections(current => {
+      const reflection = current[day.id] ?? emptyReflection();
+      const excluded = new Set(dailyExcludedLearners(reflection));
+      if (selected) excluded.delete(childId); else excluded.add(childId);
+      return { ...current, [day.id]: { ...reflection, excludedLearnerIds: [...excluded].sort() } };
+    });
+    if (selected) setAttendance(current => current[day.id] && !current[day.id].includes(childId) ? { ...current, [day.id]: [...current[day.id], childId] } : current);
+  };
   const todayDay = curriculum.find((day) => courseDateKey(day) === todayKey);
   const nextDay = curriculum.find((day) => courseDateKey(day) >= todayKey) ?? curriculum[curriculum.length - 1];
   const featuredDay = todayDay ?? nextDay;
@@ -572,26 +704,35 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
       }
       return;
     }
-    const routeDay = curriculum.find((day) => day.id === routeDayId);
+    const route = resolveSemesterRoute(settings, routeDayId, params.get('semester'));
+    const routeDay = route?.day;
+    if (route && route.semester.id !== semester.id) {
+      setSettings(current => selectSemester(current, route.semester.id));
+      return;
+    }
     const validLesson = routeLesson === 1 || routeLesson === 2;
-    if (!routeDay || !validLesson || (accessForDay(routeDay) !== 'today' && !adminUnlocked)) {
+    if (!routeDay || !validLesson || (trustedDate.verified && accessForDay(routeDay) !== 'today' && !adminUnlocked)) {
       window.history.replaceState({}, '', window.location.pathname);
       setSelectedDayId(null);
       setSelectedLessonIndex(null);
       return;
     }
-    if (accessForDay(routeDay) === 'today') {
-      setAttendance((current) => current[routeDay.id] ? current : { ...current, [routeDay.id]: enabledLearnerIds });
+    // Keep a valid deep link pending until the date service answers. An
+    // unverified device date cannot authorize attendance or discard the route.
+    if (!trustedDate.verified) return;
+    if (accessForDay(routeDay) === 'today' && participantIds(routeDay).length) {
+      setAttendance((current) => { const ids = [...new Set([...(current[routeDay.id] ?? []), ...participantIds(routeDay)])]; return JSON.stringify(ids) === JSON.stringify(current[routeDay.id]) ? current : { ...current, [routeDay.id]: ids }; });
     }
     setSelectedDayId(routeDay.id);
     setSelectedLessonIndex((routeLesson - 1) as 0 | 1);
-  }, [trustedDate.verified, trustedDate.ymd, settings.semesterStart, adminUnlocked]);
+  }, [trustedDate.verified, trustedDate.ymd, semester.id, semester.startDate, adminUnlocked]);
 
   const openLesson = (day: CourseDay, lessonIndex: 0 | 1) => {
+    if (!curriculum.includes(day)) return;
     const access = accessForDay(day);
     if (access !== 'today' && !adminUnlocked) return;
-    if (access === 'today') {
-      setAttendance((current) => current[day.id] ? current : { ...current, [day.id]: enabledLearnerIds });
+    if (canEarnToday(day) && participantIds(day).length) {
+      setAttendance((current) => { const ids = [...new Set([...(current[day.id] ?? []), ...participantIds(day)])]; return JSON.stringify(ids) === JSON.stringify(current[day.id]) ? current : { ...current, [day.id]: ids }; });
     }
     window.history.pushState({}, '', `${window.location.pathname}?day=${encodeURIComponent(day.id)}&lesson=${lessonIndex + 1}`);
     setSelectedLessonIndex(lessonIndex);
@@ -599,7 +740,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   };
 
   const recordAnswer = (childId: string, day: CourseDay, block: LessonBlock, stage: number, target: string, answer: string, correct: boolean, confidence?: number) => {
-    if (!canEarnToday(day)) return;
+    if (!canEarnToday(day) || !participantIds(day).includes(childId)) return;
     const createdAt = new Date().toISOString();
     const randomPart = typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
     // Daily review creates learning evidence but intentionally belongs to a
@@ -616,15 +757,11 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const before = normalizeProgress(progress[childId]);
     if (before.completedMissions.includes(mission.id)) return;
     const parentDay = curriculum.find((day) => day.blocks.some((block) => block.missions.some((item) => item.id === mission.id)));
-    if (!parentDay || !canEarnToday(parentDay)) return;
-    const steps = challengeSteps(parentDay);
+    if (!parentDay || !canEarnToday(parentDay) || !participantIds(parentDay).includes(childId)) return;
     const parentBlock = parentDay.blocks.find((block) => block.missions.some((item) => item.id === mission.id));
     const missionIndex = parentBlock?.missions.findIndex((item) => item.id === mission.id) ?? -1;
     const lessonStages = parentBlock ? reflections[parentDay.id]?.lessonStages?.[parentBlock.id] ?? [] : [];
-    const requiredV4Stages = missionIndex === 0 ? [9,0,1,2,3,4] : missionIndex === 1 ? [9,0,1,2,3,4,5] : [];
-    const v4Ready = requiredV4Stages.length > 0 && requiredV4Stages.every((stage) => lessonStages.includes(stage));
-    const legacyReady = steps.warmup && steps.learn;
-    if (!legacyReady && !v4Ready) return;
+    if (!lessonMissionCompletionState(lessonStages, missionIndex).canComplete) return;
     const preview = applyNewBadgeUnlocks(before, { ...before, completedMissions: [...before.completedMissions, mission.id] }, todayKey);
     setProgress((current) => {
       const child = normalizeProgress(current[childId]);
@@ -637,22 +774,17 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(before).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(preview.progress).xp));
     setRewardMoment({
-      id: Date.now(), childName: name, kind: 'mission', xp: mission.xp, coins: mission.coins, stars: 0, gems: 0,
+      id: Date.now(), childId, childName: name, kind: 'mission', xp: mission.xp, coins: mission.coins, stars: 0, gems: 0,
       badgeIds: preview.newBadgeIds,
       levelUp: afterLevel > beforeLevel ? afterLevel : undefined,
     });
   };
 
   const toggleBlock = (childId: string, day: CourseDay, block: LessonBlock) => {
-    if (!canEarnToday(day)) return;
-    const steps = challengeSteps(day);
+    if (!canEarnToday(day) || !participantIds(day).includes(childId)) return;
     const lessonStages = reflections[day.id]?.lessonStages?.[block.id] ?? [];
-    const v4Ready = [9,0,1,2,3,4,5,6].every((stage) => lessonStages.includes(stage));
-    if (!(steps.warmup && steps.learn) && !v4Ready) return;
     const before = normalizeProgress(progress[childId]);
-    if (before.completedBlocks.includes(block.id)) return;
-    const allMissionsDone = block.missions.every((mission) => before.completedMissions.includes(mission.id));
-    if (!allMissionsDone) return;
+    if (!lessonBlockCompletionState(before, block, lessonStages).canComplete) return;
 
     const completionIso = new Date().toISOString();
     const nextBlocksPreview = Array.from(new Set([...before.completedBlocks, block.id]));
@@ -718,6 +850,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(preview.progress).xp));
     setRewardMoment({
       id: Date.now(),
+      childId,
       childName: name,
       kind: willFinishDay ? 'day' : 'lesson',
       xp: BLOCK_REWARD.xp + (accuracyAwarded ? accuracy.xp : 0) + (dayAwarded ? DAILY_COMPLETE_BONUS.xp : 0) + (firstDailyAwarded ? FIRST_DAILY_BONUS.xp : 0),
@@ -745,12 +878,12 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const name = settings.children.find((item) => item.id === childId)?.name ?? '小朋友';
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(child).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(previewProgress).xp));
-    setRewardMoment({ id: Date.now(), childName: name, kind: 'bonus', ...SPECIAL_TASK_BONUS, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
+    setRewardMoment({ id: Date.now(), childId, childName: name, kind: 'bonus', ...SPECIAL_TASK_BONUS, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
   };
 
   const claimEgg = (childId: string, day: CourseDay) => {
     if (!canEarnToday(day) || !easterEggDays.has(day.index)) return;
-    const eggId = `egg-day-${day.index}`;
+    const eggId = courseEggId(day);
     const child = normalizeProgress(progress[childId]);
     if (child.claimedEggs.includes(eggId) || !isChildDayDone(childId, day)) return;
     const createdAt = new Date().toISOString();
@@ -770,7 +903,7 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     const name = settings.children.find((item) => item.id === childId)?.name ?? '小朋友';
     const beforeLevel = Math.min(15, levelFromXp(calculateRewards(child).xp));
     const afterLevel = Math.min(15, levelFromXp(calculateRewards(previewProgress).xp));
-    setRewardMoment({ id: Date.now(), childName: name, kind: 'treasure', xp: EGG_REWARD.xp, coins: EGG_REWARD.coins, stars: 0, gems: 3, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
+    setRewardMoment({ id: Date.now(), childId, childName: name, kind: 'treasure', xp: EGG_REWARD.xp, coins: EGG_REWARD.coins, stars: 0, gems: 3, levelUp: afterLevel > beforeLevel ? afterLevel : undefined });
   };
 
   const unlockCosmetic = async (childId: string, cosmeticId: string): Promise<ShopActionResult> => {
@@ -784,52 +917,46 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
     return mutateProgressAtomically((current) => toggleShopItem(current, childId, avatarId, cosmeticId, `avatar-equip:${childId}:${cosmeticId}:${randomPart}`));
   };
 
-  const requestParentArea = () => {
-    setAdminDestination('report');
-    if (!activeUserId) {
-      setUserPromptOpen(true);
-      return;
-    }
-    if (isLocalFamily) {
-      setFamilySetupOpen(true);
-      return;
-    }
-    if (adminUnlocked) {
-      setView('report');
-      return;
-    }
+  const requestParentDestination = (destination: 'report' | 'settings') => {
+    parentAccessAttempt.current += 1;
+    setAdminDestination(destination);
+    if (!activeUserId) { setUserPromptOpen(true); return; }
+    if (isLocalFamily) { setFamilySetupOpen(true); return; }
+    if (adminUnlocked) { setView(destination); return; }
     setAdminPromptOpen(true);
   };
-
-  const requestSettings = () => {
-    setAdminDestination('settings');
-    if (!activeUserId) {
-      setUserPromptOpen(true);
-      return;
-    }
-    if (isLocalFamily) {
-      setFamilySetupOpen(true);
-      return;
-    }
-    if (adminUnlocked) {
-      setView('settings');
-      return;
-    }
-    setAdminPromptOpen(true);
+  const requestParentArea = () => requestParentDestination('settings');
+  const logoutParent = () => {
+    parentAccessAttempt.current += 1;
+    setAdminUnlocked(false);
+    setActiveUserId(null);
+    sessionStorage.removeItem(activeUserKey);
+    setAdminPromptOpen(false);
+    setUserPromptOpen(false);
+    setFamilySetupOpen(false);
+    setSelectedDayId(null);
+    setSelectedLessonIndex(null);
+    setHomeSection('home');
+    setView('home');
+    window.history.replaceState({}, '', window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const promoteLocalFamily = async (pin: string) => {
     if (!isLocalFamily || !validFamilyPin(pin)) return false;
-    const ok = await onOpenFamily(pin, snapshotNow(settings, progress, attendance, reflections));
-    if (ok) setFamilySetupOpen(false);
+    const attempt = parentAccessAttempt.current;
+    const isCurrent = () => attempt === parentAccessAttempt.current;
+    const ok = await onOpenFamily(pin, snapshotNow(settings, progress, attendance, reflections), isCurrent);
+    if (ok && isCurrent()) setFamilySetupOpen(false);
     return ok;
   };
 
   const unlockAdmin = async (pin: string) => {
     if (!familySession || !validFamilyPin(pin)) return false;
+    const attempt = parentAccessAttempt.current;
     try {
       const refreshed = await createFamilySession(pin);
-      if (refreshed.familyId !== familyId) return false;
+      if (attempt !== parentAccessAttempt.current || refreshed.familyId !== familyId) return false;
       onRefreshSession(refreshed);
       setAdminUnlocked(true);
       setAdminPromptOpen(false);
@@ -854,55 +981,84 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
   const activeUser = activeUserId ? settings.users.find((user) => user.id === activeUserId) : undefined;
   const accessDialogs = <>
     {networkRecovery}
-    {adminPromptOpen && !isLocalFamily && <AdminPinDialog onUnlock={unlockAdmin} onClose={() => setAdminPromptOpen(false)} />}
-    {familySetupOpen && isLocalFamily && <FamilySetupDialog onSetPin={promoteLocalFamily} onClose={() => setFamilySetupOpen(false)} />}
+    {adminPromptOpen && !isLocalFamily && <AdminPinDialog onUnlock={unlockAdmin} onClose={() => { parentAccessAttempt.current += 1; setAdminPromptOpen(false); }} />}
+    {familySetupOpen && isLocalFamily && <FamilySetupDialog onSetPin={promoteLocalFamily} onClose={() => { parentAccessAttempt.current += 1; setFamilySetupOpen(false); }} />}
     {userPromptOpen && <UserSwitchDialog users={settings.users} activeUserId={activeUserId} onActivate={activateUser} onClose={() => setUserPromptOpen(false)} />}
   </>;
 
   const navigateDashboard = (nextView: DashboardViewKey) => {
-    if (nextView === 'report') {
-      requestParentArea();
+    if (nextView === 'parent-logout') { logoutParent(); return; }
+    if (nextView === 'report' || nextView === 'settings') {
+      window.history.replaceState({}, '', window.location.pathname);
+      setHomeSection('home');
+      requestParentDestination(nextView);
       return;
     }
     if (nextView === 'today') {
       setView('home');
-      window.requestAnimationFrame(() => document.getElementById('today-course')?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      setHomeSection('today');
+      window.history.replaceState({}, '', `${window.location.pathname}#today-course`);
+      window.requestAnimationFrame(() => {
+        const target = document.getElementById('today-course');
+        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target?.focus({ preventScroll: true });
+      });
       return;
     }
+    if (nextView === 'home') {
+      setView('home');
+      setHomeSection('home');
+      window.history.replaceState({}, '', window.location.pathname);
+      window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      return;
+    }
+    setHomeSection('home');
+    window.history.replaceState({}, '', window.location.pathname);
     setView(nextView);
   };
+
+  const returnFromLoading = () => {
+    window.history.replaceState({}, '', window.location.pathname);
+    setHomeSection('home');
+    setSelectedLessonIndex(null); setSelectedDayId(null); setView('home');
+  };
+
+  const rewardChild = rewardMoment ? settings.children.find(child => child.id === rewardMoment.childId) : undefined;
+  const rewardProgress = rewardChild ? normalizeProgress(progress[rewardChild.id]) : undefined;
+  const rewardAvatar = rewardChild && rewardProgress ? { id: rewardChild.avatar, xp: calculateRewards(rewardProgress).xp, equippedCosmetics: rewardProgress.equippedCosmetics ?? [] } : undefined;
 
   if (selectedDay && selectedLessonIndex !== null) {
     return (
       <>
         {networkRecovery}
-        <LessonQuest
+        <PageLoadBoundary onHome={returnFromLoading}><LessonQuest
           day={selectedDay}
           lessonIndex={selectedLessonIndex}
           dateKey={courseDateKey(selectedDay)}
           settings={settings}
           progress={progress}
           participants={participantIds(selectedDay)}
+          onSelectParticipant={(childId, selected) => selectDailyParticipant(selectedDay, childId, selected)}
           access={accessForDay(selectedDay)}
           trustedDateVerified={trustedDate.verified}
           reflection={reflections[selectedDay.id] ?? emptyReflection()}
-          onUpdateReflection={(patch) => setReflections((current) => ({ ...current, [selectedDay.id]: { ...(current[selectedDay.id] ?? emptyReflection()), ...patch } }))}
+          onUpdateReflection={(patch) => { if (canEarnToday(selectedDay) && participantIds(selectedDay).length) setReflections((current) => mergeLoadedReflections(reflections, { ...reflections, [selectedDay.id]: { ...(reflections[selectedDay.id] ?? emptyReflection()), ...patch } }, current)); }}
           onToggleMission={toggleMission}
           onAnswer={(childId, target, answer, correct, stage, confidence) => recordAnswer(childId, selectedDay, selectedDay.blocks[selectedLessonIndex], stage, target, answer, correct, confidence)}
           onToggleBlock={(childId, block) => toggleBlock(childId, selectedDay, block)}
           onClaimSpecialBonus={claimSpecialBonus}
           onBack={() => { window.history.replaceState({}, '', window.location.pathname); setSelectedLessonIndex(null); setSelectedDayId(null); }}
-        />
-        {rewardMoment && <Suspense fallback={null}><RewardModal moment={rewardMoment} onClose={() => setRewardMoment(null)} /></Suspense>}
+        /></PageLoadBoundary>
+        {rewardMoment && <Suspense fallback={null}><RewardModal moment={rewardMoment} avatar={rewardAvatar} onClose={closeReward} /></Suspense>}
       </>
     );
   }
 
-  if (view === 'home') {
+  if (view === 'home' || ((view === 'report' || view === 'settings') && !adminUnlocked)) {
     return (
       <>
         <AdventureDashboard
-          activeView={view}
+          activeView={homeSection}
           settings={settings}
           progress={progress}
           trustedDate={trustedDate}
@@ -913,6 +1069,8 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
           isDayDone={isDayDone}
           isChildDayDone={isChildDayDone}
           onOpenLesson={openLesson}
+          participantIds={participantIds}
+          onSelectParticipant={selectDailyParticipant}
           onNavigate={navigateDashboard}
           onParentArea={requestParentArea}
           cloudStatus={cloudStatus}
@@ -923,23 +1081,24 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
             return next;
           })}
           onThemeChange={(visualTheme) => setSettings((current) => ({ ...current, visualTheme }))}
+          onDisplayLearnerChange={(homeDisplayLearnerId) => setSettings((current) => ({ ...current, homeDisplayLearnerId }))}
           onClaimTreasure={claimEgg}
           activeUser={activeUser}
           parentPreviewUnlocked={adminUnlocked}
         />
-        {rewardMoment && <Suspense fallback={null}><RewardModal moment={rewardMoment} onClose={() => setRewardMoment(null)} /></Suspense>}
+        {rewardMoment && <Suspense fallback={null}><RewardModal moment={rewardMoment} avatar={rewardAvatar} onClose={closeReward} /></Suspense>}
         {accessDialogs}
       </>
     );
   }
 
-  if (view === 'semester') return <><SemesterPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} onOpenLesson={openLesson} onNavigate={navigateDashboard} onParentArea={requestParentArea} parentPreviewUnlocked={adminUnlocked} activeUser={activeUser} />{accessDialogs}</>;
-  if (view === 'achievements') return <><AchievementsPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
-  if (view === 'shop') return <><ShopPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} onUnlock={unlockCosmetic} onToggle={toggleCosmetic} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
-  if (view === 'report') return <><ReportPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} isChildDayDone={isChildDayDone} onNavigate={navigateDashboard} onParentArea={requestParentArea} onSettings={requestSettings} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} />{accessDialogs}</>;
+  if (view === 'semester') return <><PageLoadBoundary key={`semester-${semester.id}`} onHome={returnFromLoading}><SemesterPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} courseDateKey={courseDateKey} accessForDay={accessForDay} isDayDone={isDayDone} onOpenLesson={openLesson} onNavigate={navigateDashboard} onParentArea={requestParentArea} parentPreviewUnlocked={adminUnlocked} activeUser={activeUser} /></PageLoadBoundary>{accessDialogs}</>;
+  if (view === 'achievements') return <><PageLoadBoundary key="achievements" onHome={returnFromLoading}><AchievementsPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} /></PageLoadBoundary>{accessDialogs}</>;
+  if (view === 'shop') return <><PageLoadBoundary key="shop" onHome={returnFromLoading}><ShopPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} onUnlock={unlockCosmetic} onToggle={toggleCosmetic} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} /></PageLoadBoundary>{accessDialogs}</>;
+  if (view === 'report') return <><PageLoadBoundary key="report" onHome={returnFromLoading}><ReportPage settings={settings} progress={progress} trustedDate={trustedDate} cloudStatus={cloudStatus} isChildDayDone={isChildDayDone} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked} /></PageLoadBoundary>{accessDialogs}</>;
 
   return (
-    <SecondaryPageShell settings={settings} progress={progress} active="report" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked}>
+    <><PageLoadBoundary key="settings" onHome={returnFromLoading}><SecondaryPageShell settings={settings} progress={progress} active="settings" trustedDate={trustedDate} cloudStatus={cloudStatus} onNavigate={navigateDashboard} onParentArea={requestParentArea} activeUser={activeUser} parentPreviewUnlocked={adminUnlocked}>
       <ParentSettings
         settings={settings}
         setSettings={setSettings}
@@ -948,19 +1107,20 @@ function FamilyApp({ familySession, onSwitchFamily, onOpenFamily, onRefreshSessi
         reflections={reflections}
         setProgress={setProgress}
         setAttendance={setAttendance}
-        setReflections={setReflections}
+        onResetProgress={resetAllProgress}
+        resetCompleted={resumeAdminSettings}
+        progressResetId={progressResetId}
         familyId={familyId}
         cloudStatus={cloudStatus}
         cloudMessage={cloudMessage}
         lastCloudSync={lastCloudSync}
         onSyncNow={syncNow}
-        onPullCloud={() => pullCloud(true)}
+        onPullCloud={() => { cloudConflictRetryRef.current = false; return pullCloud(true); }}
         onSwitchFamily={onSwitchFamily}
         onOpenFamily={onOpenFamily}
         goHome={() => setView('home')}
       />
-      {accessDialogs}
-    </SecondaryPageShell>
+    </SecondaryPageShell></PageLoadBoundary>{accessDialogs}</>
   );
 }
 
@@ -969,6 +1129,34 @@ function App() {
   const [legacyMigrationPin, setLegacyMigrationPin] = useState(() => familySession ? '' : readLegacyActivePin());
   const [migrationError, setMigrationError] = useState('');
   const [migrationAttempted, setMigrationAttempted] = useState(false);
+  const familyKey = familySession?.familyId ?? LOCAL_FAMILY_KEY;
+  const activeFamily = useRef(familyKey);
+  activeFamily.current = familyKey;
+  const [cacheRevision, setCacheRevision] = useState(() => ({ familyId: familyKey, id: readProgressResetMarker(familyKey).id, resumeAdminSettings: false }));
+  const resetId = cacheRevision.familyId === familyKey ? cacheRevision.id : readProgressResetMarker(familyKey).id;
+  useEffect(() => {
+    setCacheRevision({ familyId: familyKey, id: readProgressResetMarker(familyKey).id, resumeAdminSettings: false });
+    const onStorage = (event: StorageEvent) => {
+      if (event.key === progressResetKey(familyKey)) {
+        setCacheRevision({ familyId: familyKey, id: readProgressResetMarker(familyKey).id, resumeAdminSettings: false });
+      }
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, [familyKey]);
+
+  const adoptResetSnapshot = async (snapshot: CloudSnapshot, initiatedHere: boolean) => {
+    if (!snapshot.progressResetId || !/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/.test(snapshot.progressResetId)
+      || !Number.isFinite(Date.parse(snapshot.updatedAt))) throw new Error('家庭進度版本無法確認；未套用舊資料。');
+    await withFamilyProgressLock(familyKey, () => {
+      const marker = readProgressResetMarker(familyKey);
+      if (marker.id !== snapshot.progressResetId) {
+        if (marker.updatedAt && Date.parse(snapshot.updatedAt) <= Date.parse(marker.updatedAt)) throw new Error('較舊的家庭資料未套用；請重新同步。');
+        writeFamilySnapshotCache(familyKey, snapshot);
+      }
+      if (activeFamily.current === familyKey) setCacheRevision({ familyId: familyKey, id: snapshot.progressResetId!, resumeAdminSettings: initiatedHere });
+    });
+  };
 
   const persistSession = (session: FamilySession) => {
     localStorage.setItem(ACTIVE_SESSION_KEY, JSON.stringify(session));
@@ -977,9 +1165,11 @@ function App() {
     setFamilySession(session);
   };
 
-  const enterFamily: OpenFamily = async (pin, seed) => {
+  const enterFamily: OpenFamily = async (pin, seed, isCurrent = () => true) => {
     try {
       const session = await createFamilySession(pin);
+      // A dismissed setup must not migrate data or persist a late session.
+      if (!isCurrent()) return false;
       if (familySession?.familyId === session.familyId && !seed) {
         persistSession(session);
         return false;
@@ -991,6 +1181,7 @@ function App() {
       setMigrationError('');
       return true;
     } catch (error) {
+      if (!isCurrent()) return false;
       setMigrationError(error instanceof Error ? error.message : '家庭安全工作階段建立失敗');
       return false;
     }
@@ -1019,8 +1210,7 @@ function App() {
     return <div className="modal-scrim" role="status" aria-live="polite"><div className="game-modal admin-modal"><span className="eyebrow">SECURITY MIGRATION</span><h2>正在升級家庭安全登入</h2><p>舊版家庭資料仍完整保留；系統正在把明文 PIN 儲存方式轉成 signed family session。</p>{migrationError && <div className="pin-error">{migrationError}</div>}{migrationError && <button className="primary-button full" onClick={() => { setMigrationAttempted(false); setMigrationError(''); }}>重新驗證並升級</button>}</div></div>;
   }
 
-  const familyKey = familySession?.familyId ?? LOCAL_FAMILY_KEY;
-  return <FamilyApp key={familyKey} familySession={familySession} onSwitchFamily={switchFamily} onOpenFamily={enterFamily} onRefreshSession={refreshSession} />;
+  return <FamilyApp key={`${familyKey}:${resetId}`} familySession={familySession} onSwitchFamily={switchFamily} onOpenFamily={enterFamily} onRefreshSession={refreshSession} progressResetId={resetId} resumeAdminSettings={cacheRevision.familyId === familyKey && cacheRevision.resumeAdminSettings} onAdoptResetSnapshot={adoptResetSnapshot} />;
 }
 
 export default App;

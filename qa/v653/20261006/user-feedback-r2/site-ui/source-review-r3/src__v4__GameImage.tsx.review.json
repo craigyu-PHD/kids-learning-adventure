@@ -1,0 +1,18 @@
+{
+  "path": "src/v4/GameImage.tsx",
+  "beforeSHA256": "cb2a72bc0a33f776284eb474d1ae2876379a583e37d41d5f788cd38b6124b045",
+  "afterSHA256": "42566fd670d9827fd72fb2f34fdf136e199090529bb5bc83e7fb00fcd967b2a2",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "沿用已實讀r6完整差異審查，並實讀r1→r2新增差異（r2→r3此檔相同）。showFallbackLabel預設true保持既有呼叫；onFallbackChange由實際resolvedSrc判定，src key remount仍保留；不更動loading或error回退語意。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r3/src__v4__GameImage.tsx.diff",
+    "sha256": "ebdc28695b87e8d709adb0c57769787ba9651ef891b8022145b05c1af9d0dd86"
+  },
+  "observedAt": "2026-10-06T04:01:24.217623+00:00",
+  "scope": "Complete previously read r6→r1 diff plus actually read r1→r3 changes; no git history; source acceptance only",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__GameImage.tsx.review.json",
+    "sha256": "323ede35c41fe2720fa4480d51cf0787ebb71f2786cae2153effccf56123ec99"
+  }
+}

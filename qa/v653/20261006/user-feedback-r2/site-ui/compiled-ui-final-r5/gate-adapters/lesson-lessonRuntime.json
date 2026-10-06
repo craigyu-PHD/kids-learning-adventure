@@ -1,0 +1,2376 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/served-artifacts.json",
+    "sha256": "e36a7805773cb81ee1850d3ef3303b11ae147b936fdc8987fad0a169998a8769"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_lesson.py",
+    "sha256": "a9bccafb99a726820464f3c98130bf6ed71da6aef91c6e525be4d2c7b8c8fe5b"
+  },
+  "observedAt": "2026-10-06T04:28:34.848665+00:00",
+  "group": "lessonRuntime",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/0/width",
+            "/profiles/0/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/0/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/0/shots/7/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/1/width",
+            "/profiles/1/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/1/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/1/shots/7/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/2/width",
+            "/profiles/2/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/2/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/2/shots/7/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/3/width",
+            "/profiles/3/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/3/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/3/shots/7/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/4/width",
+            "/profiles/4/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/4/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/4/shots/7/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/5/width",
+            "/profiles/5/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/5/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/5/shots/7/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/0/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/0/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/0/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "2"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/1/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/1/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/1/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "2-back"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/2/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/2/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/2/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "4"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/3/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/3/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/3/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "5"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/4/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/4/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/4/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "6"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/5/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/5/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/5/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "7"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/6/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/6/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/6/interaction",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "9"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/profiles/6/width",
+            "/profiles/6/theme"
+          ]
+        },
+        "stage": {
+          "transform": "string",
+          "pointer": "/profiles/6/shots/7/stage"
+        }
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/7/healthy",
+          "equals": true
+        },
+        "interaction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/profiles/6/shots/7/interaction",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

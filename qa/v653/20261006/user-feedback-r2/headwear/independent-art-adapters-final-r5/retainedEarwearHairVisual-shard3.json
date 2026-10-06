@@ -1,0 +1,1410 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled_fit_r2.py",
+    "sha256": "5e89a73acc91fcfccebbcbcd2e7e9fbf03c9a0111f2957dd0f3956cb038f935b"
+  },
+  "group": "retainedEarwearHairVisual",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:45:02.915016+00:00",
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/served-artifacts.json",
+    "sha256": "58eddad6290a1e9a805a33c7d8e53e66da241853f7e1cf3c81e51d251d96585e"
+  },
+  "reviewer": "lesson_layout_feedback_r2",
+  "runtimeOperator": "root-compiled-fit",
+  "originalRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/report.json",
+    "sha256": "d372e9ce1b5dd85ce841e94b8666ffd5e8ce7145566f12e9e162b4c9b0e24268"
+  },
+  "reviewRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+    "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+  },
+  "cases": [
+    {
+      "values": {
+        "role": "brother",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/576/values/role",
+        "skin": "/cases/576/values/skin",
+        "itemSet": "/cases/576/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/576/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/default/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "ba68defe699fb5825b7bb19760a4878033c92964452ebba6ef46fbe8fbd15c6e"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/576/images/0/sha256",
+          "equals": "ba68defe699fb5825b7bb19760a4878033c92964452ebba6ef46fbe8fbd15c6e"
+        }
+      ],
+      "reviewNotes": "brother／default；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/577/values/role",
+        "skin": "/cases/577/values/skin",
+        "itemSet": "/cases/577/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/577/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/outfit-cadet/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "c5bc8e5b73a9739f1d53bf92d6b14701db09bd0ae29116c6d7a8af0c454e270a"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/577/images/0/sha256",
+          "equals": "c5bc8e5b73a9739f1d53bf92d6b14701db09bd0ae29116c6d7a8af0c454e270a"
+        }
+      ],
+      "reviewNotes": "brother／outfit-cadet；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/578/values/role",
+        "skin": "/cases/578/values/skin",
+        "itemSet": "/cases/578/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/578/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/outfit-legend/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "608e05b0aa5e2533fed35f35e5badb17b74d4f81ac20bd961df07d7781f0c3b6"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/578/images/0/sha256",
+          "equals": "608e05b0aa5e2533fed35f35e5badb17b74d4f81ac20bd961df07d7781f0c3b6"
+        }
+      ],
+      "reviewNotes": "brother／outfit-legend；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/579/values/role",
+        "skin": "/cases/579/values/skin",
+        "itemSet": "/cases/579/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/579/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/outfit-mage/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "5b29299c7af3e10403f2540164411d63a24ba45e8767cf983382c4f4d7d1668f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/579/images/0/sha256",
+          "equals": "5b29299c7af3e10403f2540164411d63a24ba45e8767cf983382c4f4d7d1668f"
+        }
+      ],
+      "reviewNotes": "brother／outfit-mage；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/580/values/role",
+        "skin": "/cases/580/values/skin",
+        "itemSet": "/cases/580/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/580/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/outfit-mecha/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "b6acc28c75cc56babc75c5e6c2bd4cb890f9e34c3c64fcc7752a7302a90c0c1f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/580/images/0/sha256",
+          "equals": "b6acc28c75cc56babc75c5e6c2bd4cb890f9e34c3c64fcc7752a7302a90c0c1f"
+        }
+      ],
+      "reviewNotes": "brother／outfit-mecha；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/581/values/role",
+        "skin": "/cases/581/values/skin",
+        "itemSet": "/cases/581/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/581/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/outfit-ocean/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "3e2747ff00da93e6f67adfbce5829fb1d4c69136f1f9747e60e49df706233cb3"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/581/images/0/sha256",
+          "equals": "3e2747ff00da93e6f67adfbce5829fb1d4c69136f1f9747e60e49df706233cb3"
+        }
+      ],
+      "reviewNotes": "brother／outfit-ocean；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/582/values/role",
+        "skin": "/cases/582/values/skin",
+        "itemSet": "/cases/582/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/582/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/outfit-racer/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "3b11298a7a7b307bc5af595ae7a7a9d8abc035536d8dad77c084241907288cf1"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/582/images/0/sha256",
+          "equals": "3b11298a7a7b307bc5af595ae7a7a9d8abc035536d8dad77c084241907288cf1"
+        }
+      ],
+      "reviewNotes": "brother／outfit-racer；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/583/values/role",
+        "skin": "/cases/583/values/skin",
+        "itemSet": "/cases/583/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/583/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/brother/sister-bloom-outfit/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "b4a9e1cb8ff2066ed28bc7047b24394ca212449ccfc812cec246095723651195"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/583/images/0/sha256",
+          "equals": "b4a9e1cb8ff2066ed28bc7047b24394ca212449ccfc812cec246095723651195"
+        }
+      ],
+      "reviewNotes": "brother／sister-bloom-outfit；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/584/values/role",
+        "skin": "/cases/584/values/skin",
+        "itemSet": "/cases/584/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/584/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/default/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "483443d7c10faae21c8739e6579f0ec39501ca8cd86fcdc4452fc135d794085c"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/584/images/0/sha256",
+          "equals": "483443d7c10faae21c8739e6579f0ec39501ca8cd86fcdc4452fc135d794085c"
+        }
+      ],
+      "reviewNotes": "younger／default；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/585/values/role",
+        "skin": "/cases/585/values/skin",
+        "itemSet": "/cases/585/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/585/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/outfit-cadet/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "25e8521da0c7155a4e3483df23fc5434987137e4693ac8a9d6f2e6c6ff1a6645"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/585/images/0/sha256",
+          "equals": "25e8521da0c7155a4e3483df23fc5434987137e4693ac8a9d6f2e6c6ff1a6645"
+        }
+      ],
+      "reviewNotes": "younger／outfit-cadet；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/586/values/role",
+        "skin": "/cases/586/values/skin",
+        "itemSet": "/cases/586/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/586/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/outfit-legend/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "00551ca9afbbca39c6c5cf60284f63f5fd5590fb6efe84737f5c2b45ff80bb85"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/586/images/0/sha256",
+          "equals": "00551ca9afbbca39c6c5cf60284f63f5fd5590fb6efe84737f5c2b45ff80bb85"
+        }
+      ],
+      "reviewNotes": "younger／outfit-legend；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/587/values/role",
+        "skin": "/cases/587/values/skin",
+        "itemSet": "/cases/587/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/587/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/outfit-mage/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "78f30c5cc8d47f3af93e8d0e9068aefb54594ffb50cd3ee04d6b6eb0e9129473"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/587/images/0/sha256",
+          "equals": "78f30c5cc8d47f3af93e8d0e9068aefb54594ffb50cd3ee04d6b6eb0e9129473"
+        }
+      ],
+      "reviewNotes": "younger／outfit-mage；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/588/values/role",
+        "skin": "/cases/588/values/skin",
+        "itemSet": "/cases/588/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/588/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/outfit-mecha/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "c82a850ab452926908ab8e01d86285d86c91ed0613453e3a3cd79cd33045f4f2"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/588/images/0/sha256",
+          "equals": "c82a850ab452926908ab8e01d86285d86c91ed0613453e3a3cd79cd33045f4f2"
+        }
+      ],
+      "reviewNotes": "younger／outfit-mecha；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/589/values/role",
+        "skin": "/cases/589/values/skin",
+        "itemSet": "/cases/589/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/589/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/outfit-ocean/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "793d5d6e577f327364851588e5e199ad82660a81b421487a224257c8f0e3e212"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/589/images/0/sha256",
+          "equals": "793d5d6e577f327364851588e5e199ad82660a81b421487a224257c8f0e3e212"
+        }
+      ],
+      "reviewNotes": "younger／outfit-ocean；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/590/values/role",
+        "skin": "/cases/590/values/skin",
+        "itemSet": "/cases/590/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/590/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/outfit-racer/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "587ed0ffff0c5fb1d4dbe39df382412d3a8da60ed4beca037910fb648ae5e81f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/590/images/0/sha256",
+          "equals": "587ed0ffff0c5fb1d4dbe39df382412d3a8da60ed4beca037910fb648ae5e81f"
+        }
+      ],
+      "reviewNotes": "younger／outfit-racer；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/591/values/role",
+        "skin": "/cases/591/values/skin",
+        "itemSet": "/cases/591/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/591/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger/sister-bloom-outfit/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "20bdd5faff3fd252b151feb926486618a0be67fd17ae93c8159012aaf493b465"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/591/images/0/sha256",
+          "equals": "20bdd5faff3fd252b151feb926486618a0be67fd17ae93c8159012aaf493b465"
+        }
+      ],
+      "reviewNotes": "younger／sister-bloom-outfit；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/592/values/role",
+        "skin": "/cases/592/values/skin",
+        "itemSet": "/cases/592/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/592/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/default/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "b21dee7aff56fea1e4823a7d26645ed935bf7a106d61d4cfd75440db8a51912c"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/592/images/0/sha256",
+          "equals": "b21dee7aff56fea1e4823a7d26645ed935bf7a106d61d4cfd75440db8a51912c"
+        }
+      ],
+      "reviewNotes": "sister／default；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/593/values/role",
+        "skin": "/cases/593/values/skin",
+        "itemSet": "/cases/593/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/593/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/outfit-cadet/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "0ef1e097002d1f6ecff9b416061dcbbaaf692e19b1c4044b928516eac00687f1"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/593/images/0/sha256",
+          "equals": "0ef1e097002d1f6ecff9b416061dcbbaaf692e19b1c4044b928516eac00687f1"
+        }
+      ],
+      "reviewNotes": "sister／outfit-cadet；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/594/values/role",
+        "skin": "/cases/594/values/skin",
+        "itemSet": "/cases/594/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/594/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/outfit-legend/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "22335a90306077991e7e8f6f66b357db0639c4fe1f2c16a6a45d26ee9a3c00be"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/594/images/0/sha256",
+          "equals": "22335a90306077991e7e8f6f66b357db0639c4fe1f2c16a6a45d26ee9a3c00be"
+        }
+      ],
+      "reviewNotes": "sister／outfit-legend；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/595/values/role",
+        "skin": "/cases/595/values/skin",
+        "itemSet": "/cases/595/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/595/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/outfit-mage/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "2ccec99f95484bb656e9f1119eda77e7845d2ea159c0dd882b7f582cf79a4fb4"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/595/images/0/sha256",
+          "equals": "2ccec99f95484bb656e9f1119eda77e7845d2ea159c0dd882b7f582cf79a4fb4"
+        }
+      ],
+      "reviewNotes": "sister／outfit-mage；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/596/values/role",
+        "skin": "/cases/596/values/skin",
+        "itemSet": "/cases/596/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/596/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/outfit-mecha/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "b91ffaf755f9c9f136594e477e1ecb7a21b441062afd211c8b30c494de3dd74f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/596/images/0/sha256",
+          "equals": "b91ffaf755f9c9f136594e477e1ecb7a21b441062afd211c8b30c494de3dd74f"
+        }
+      ],
+      "reviewNotes": "sister／outfit-mecha；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/597/values/role",
+        "skin": "/cases/597/values/skin",
+        "itemSet": "/cases/597/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/597/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/outfit-ocean/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "f58a897b495a91d9d397aa0257534245aab0a915bb9389c418657769afaae0db"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/597/images/0/sha256",
+          "equals": "f58a897b495a91d9d397aa0257534245aab0a915bb9389c418657769afaae0db"
+        }
+      ],
+      "reviewNotes": "sister／outfit-ocean；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/598/values/role",
+        "skin": "/cases/598/values/skin",
+        "itemSet": "/cases/598/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/598/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/outfit-racer/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "048ce338fa1eed30d060f986257c6c08519c29f1ae1088e746a36fb92b4e9374"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/598/images/0/sha256",
+          "equals": "048ce338fa1eed30d060f986257c6c08519c29f1ae1088e746a36fb92b4e9374"
+        }
+      ],
+      "reviewNotes": "sister／outfit-racer；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/599/values/role",
+        "skin": "/cases/599/values/skin",
+        "itemSet": "/cases/599/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/599/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/sister/sister-bloom-outfit/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "a5052df52ba819d5a1af625de780c165ce145c23c2a216f60b88731b56c0a067"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/599/images/0/sha256",
+          "equals": "a5052df52ba819d5a1af625de780c165ce145c23c2a216f60b88731b56c0a067"
+        }
+      ],
+      "reviewNotes": "sister／sister-bloom-outfit；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/600/values/role",
+        "skin": "/cases/600/values/skin",
+        "itemSet": "/cases/600/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/600/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/default/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "0ccf54059b07207de6e3cf60a247a6453501db59ebf1cd905ba74bc98e38a4a4"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/600/images/0/sha256",
+          "equals": "0ccf54059b07207de6e3cf60a247a6453501db59ebf1cd905ba74bc98e38a4a4"
+        }
+      ],
+      "reviewNotes": "younger-sister／default；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/601/values/role",
+        "skin": "/cases/601/values/skin",
+        "itemSet": "/cases/601/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/601/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/outfit-cadet/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "abe0538110bab8b1e07e5307b4bb3475eac87a3bebdab84bb2477db287f51f2f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/601/images/0/sha256",
+          "equals": "abe0538110bab8b1e07e5307b4bb3475eac87a3bebdab84bb2477db287f51f2f"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-cadet；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/602/values/role",
+        "skin": "/cases/602/values/skin",
+        "itemSet": "/cases/602/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/602/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/outfit-legend/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "af1bde83c32cb59ad253dabb7ce16322d9e23eb3f9f8054af96d8e55beabc577"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/602/images/0/sha256",
+          "equals": "af1bde83c32cb59ad253dabb7ce16322d9e23eb3f9f8054af96d8e55beabc577"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-legend；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/603/values/role",
+        "skin": "/cases/603/values/skin",
+        "itemSet": "/cases/603/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/603/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/outfit-mage/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "565c7ad7ddf49d887f145deb8cb2b923e4b792594272193335d5c1c648267b1b"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/603/images/0/sha256",
+          "equals": "565c7ad7ddf49d887f145deb8cb2b923e4b792594272193335d5c1c648267b1b"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-mage；唯一目標 phones-legend。目標傳奇耳機搭配星雲髮型：深色金邊頭弧緊貼髮冠外側，藍金圓耳罩與支架位置穩定，四角色的挑染髮絲和耳罩界線可分辨，沒有頭弧懸空。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/604/values/role",
+        "skin": "/cases/604/values/skin",
+        "itemSet": "/cases/604/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/604/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/outfit-mecha/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "8378c4af1ea8db94a8484a04eac2319b673bd7183d8e8ffb44e580cd0db61677"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/604/images/0/sha256",
+          "equals": "8378c4af1ea8db94a8484a04eac2319b673bd7183d8e8ffb44e580cd0db61677"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-mecha；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/605/values/role",
+        "skin": "/cases/605/values/skin",
+        "itemSet": "/cases/605/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/605/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/outfit-ocean/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "e688cf76b91cbed0da71c18feba6e3f7394ca429d641f9f5ee007b24e812818f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/605/images/0/sha256",
+          "equals": "e688cf76b91cbed0da71c18feba6e3f7394ca429d641f9f5ee007b24e812818f"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-ocean；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/606/values/role",
+        "skin": "/cases/606/values/skin",
+        "itemSet": "/cases/606/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/606/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/outfit-racer/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "4b1b495d9a1df76a5c1e0dfd7971f7ccc6b77718561b72ca86b1a0a6acb5b882"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/606/images/0/sha256",
+          "equals": "4b1b495d9a1df76a5c1e0dfd7971f7ccc6b77718561b72ca86b1a0a6acb5b882"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-racer；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+phones-legend"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/607/values/role",
+        "skin": "/cases/607/values/skin",
+        "itemSet": "/cases/607/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/607/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard3/retainedEarwearHairFit/younger-sister/sister-bloom-outfit/hair-nebula+phones-legend/actual-shop-avatar.png",
+          "sha256": "85ac492aa5d0cd83c3d989d248fadbc8ca412ba36ab2f6368f5b8107d845711c"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/607/images/0/sha256",
+          "equals": "85ac492aa5d0cd83c3d989d248fadbc8ca412ba36ab2f6368f5b8107d845711c"
+        }
+      ],
+      "reviewNotes": "younger-sister／sister-bloom-outfit；唯一目標 phones-legend。後四服裝的傳奇耳機維持纖細金邊頭弧及圓形耳罩；髮量較蓬的弟弟仍有清楚頂弧，女性兩側耳罩不被短髮吞沒。"
+    }
+  ]
+}

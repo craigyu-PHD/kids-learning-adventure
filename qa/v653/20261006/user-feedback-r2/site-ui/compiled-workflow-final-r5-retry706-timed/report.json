@@ -1,0 +1,4387 @@
+{
+  "status": "PASS_SELECTED_SCOPE_PENDING_VISUAL",
+  "candidateId": "feedback-r2-a7960962-final-r5",
+  "phase": "matrix",
+  "catalogCount": 64,
+  "fullMatrixCount": 1024,
+  "selectedMatrixCount": 80,
+  "plannedCases": 1,
+  "shardCount": 1024,
+  "shardIndex": 706,
+  "plannedOriginalMatrixIndices": [
+    706
+  ],
+  "freshCasesOnly": true,
+  "cases": [
+    {
+      "item": {
+        "id": "starter-buddy-headphones",
+        "slot": "headphones",
+        "name": "小隊聽力耳機"
+      },
+      "avatar": "younger-sister",
+      "profile": {
+        "id": "mobile-light",
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "originalMatrixIndex": 706,
+      "index": 0,
+      "compiled": {
+        "footer": "Version V6.5.3 · Updated 2026-10-06",
+        "scriptURLs": [
+          "http://127.0.0.1:5196/assets/index-DkO6mlaB.js"
+        ],
+        "manifestOverrides": false,
+        "cssOverrides": false
+      },
+      "ledgerBefore": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "starter-buddy-headphones"
+        ],
+        "equippedCosmetics": [],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-starter-buddy-headphones",
+            "childId": "child-1",
+            "itemId": "starter-buddy-headphones",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "catalog": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+              "cls": "",
+              "visible": true,
+              "width": 768,
+              "height": 768,
+              "rect": {
+                "x": 37,
+                "y": 739.171875,
+                "width": 143,
+                "height": 105,
+                "top": 739.171875,
+                "right": 180,
+                "bottom": 844.171875,
+                "left": 37
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+            "domNatural": [
+              768,
+              768
+            ],
+            "pinnedFileSize": [
+              768,
+              768
+            ],
+            "expectedSHA256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+            "http": {
+              "status": 200,
+              "sha256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+              "bytes": 91346
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+            "status": 200,
+            "sha256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+            "bytes": 91346,
+            "expectedSHA256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-catalog-actual-size.png",
+        "screenshotSHA256": "20aa2c77f79d5d6e5a602ea6a291399e712e5256886fea4afeb3e51311572ad9",
+        "rect": {
+          "x": 37,
+          "y": 739.171875,
+          "width": 143,
+          "height": 105
+        }
+      },
+      "trial": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 108.1875,
+                "y": 93.796875,
+                "width": 173.609375,
+                "height": 303.8125,
+                "top": 93.796875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 108.1875,
+                "y": 137.1875,
+                "width": 173.609375,
+                "height": 260.421875,
+                "top": 137.1875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            },
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 108.1875,
+                "y": 93.796875,
+                "width": 173.609375,
+                "height": 303.8125,
+                "top": 93.796875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "http": {
+              "status": 200,
+              "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+              "bytes": 44986
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "http": {
+              "status": 200,
+              "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+              "bytes": 101836
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "http": {
+              "status": 200,
+              "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+              "bytes": 20784
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "status": 200,
+            "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "bytes": 101836,
+            "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986,
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784,
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-trial.png",
+        "screenshotSHA256": "71ec6fc7cfcfe4f47138e86f837b3c62ba11014014b4b4d87e09fe3b428d9358",
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 511.15625
+        }
+      },
+      "shopBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "natural": [
+            384,
+            576
+          ],
+          "container": {
+            "x": 46,
+            "y": 250.796875,
+            "width": 298,
+            "height": 303.828125,
+            "top": 250.796875,
+            "right": 344,
+            "bottom": 554.625,
+            "left": 46
+          },
+          "imageBox": {
+            "x": 108.1875,
+            "y": 294.1875,
+            "width": 173.609375,
+            "height": 260.421875,
+            "top": 294.1875,
+            "right": 281.796875,
+            "bottom": 554.609375,
+            "left": 108.1875
+          },
+          "painted": {
+            "x": 108.1875,
+            "y": 294.19140625,
+            "width": 173.609375,
+            "height": 260.4140625
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              384,
+              576
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              90,
+              11,
+              328,
+              544
+            ],
+            "paintedAlphaWidth": 107.60164388020833,
+            "paintedAlphaHeight": 240.97342936197916,
+            "normalizedBottom": 0.9444444444444444,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "domNatural": [
+                384,
+                576
+              ],
+              "pinnedFileSize": [
+                384,
+                576
+              ],
+              "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+              "http": {
+                "status": 200,
+                "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+                "bytes": 101836
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "trial": {
+          "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "natural": [
+            384,
+            576
+          ],
+          "container": {
+            "x": 46,
+            "y": 93.796875,
+            "width": 298,
+            "height": 303.828125,
+            "top": 93.796875,
+            "right": 344,
+            "bottom": 397.625,
+            "left": 46
+          },
+          "imageBox": {
+            "x": 108.1875,
+            "y": 137.1875,
+            "width": 173.609375,
+            "height": 260.421875,
+            "top": 137.1875,
+            "right": 281.796875,
+            "bottom": 397.609375,
+            "left": 108.1875
+          },
+          "painted": {
+            "x": 108.1875,
+            "y": 137.19140625,
+            "width": 173.609375,
+            "height": 260.4140625
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [
+            "starter-buddy-headphones"
+          ],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              384,
+              576
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              90,
+              11,
+              328,
+              544
+            ],
+            "paintedAlphaWidth": 107.60164388020833,
+            "paintedAlphaHeight": 240.97342936197916,
+            "normalizedBottom": 0.9444444444444444,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "domNatural": [
+                384,
+                576
+              ],
+              "pinnedFileSize": [
+                384,
+                576
+              ],
+              "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+              "http": {
+                "status": 200,
+                "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+                "bytes": 101836
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "trialAvatar": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 108.1875,
+                "y": 93.796875,
+                "width": 173.609375,
+                "height": 303.8125,
+                "top": 93.796875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 108.1875,
+                "y": 137.1875,
+                "width": 173.609375,
+                "height": 260.421875,
+                "top": 137.1875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            },
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 108.1875,
+                "y": 93.796875,
+                "width": 173.609375,
+                "height": 303.8125,
+                "top": 93.796875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "http": {
+              "status": 200,
+              "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+              "bytes": 44986
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "http": {
+              "status": 200,
+              "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+              "bytes": 101836
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "http": {
+              "status": 200,
+              "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+              "bytes": 20784
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "status": 200,
+            "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "bytes": 101836,
+            "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986,
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784,
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-avatar-actual-size.png",
+        "screenshotSHA256": "b14f8639cc97444e3e8f4188d2abb23e6a89abf004baf93bce11229ce3249695",
+        "rect": {
+          "x": 46,
+          "y": 93.796875,
+          "width": 298,
+          "height": 303.828125
+        }
+      },
+      "cancelPreservesProgress": true,
+      "ledgerAfterEquip": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "starter-buddy-headphones"
+        ],
+        "equippedCosmetics": [
+          "starter-buddy-headphones"
+        ],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-starter-buddy-headphones",
+            "childId": "child-1",
+            "itemId": "starter-buddy-headphones",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [
+          {
+            "id": "avatar-equip:child-1:starter-buddy-headphones:5df73512-1d35-4b19-a1ac-15a4d112e151",
+            "childId": "child-1",
+            "itemId": "starter-buddy-headphones",
+            "slot": "earwear",
+            "action": "equip",
+            "createdAt": "2026-10-06T04:56:43.830Z"
+          }
+        ],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "equipped": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 108.1875,
+                "y": 93.796875,
+                "width": 173.609375,
+                "height": 303.8125,
+                "top": 93.796875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 108.1875,
+                "y": 137.1875,
+                "width": 173.609375,
+                "height": 260.421875,
+                "top": 137.1875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            },
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 108.1875,
+                "y": 93.796875,
+                "width": 173.609375,
+                "height": 303.8125,
+                "top": 93.796875,
+                "right": 281.796875,
+                "bottom": 397.609375,
+                "left": 108.1875
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "http": {
+              "status": 200,
+              "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+              "bytes": 44986
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "http": {
+              "status": 200,
+              "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+              "bytes": 101836
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "http": {
+              "status": 200,
+              "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+              "bytes": 20784
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "status": 200,
+            "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "bytes": 101836,
+            "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986,
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784,
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-equipped.png",
+        "screenshotSHA256": "6719083b5c58bd8cd55f03d1ff4ef96b2d3f45a887833516773b63546a9e55da",
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 511.15625
+        }
+      },
+      "equipBodyComparison": {
+        "paintedSizeDeltaPx": {
+          "width": 0.0,
+          "height": 0.0
+        },
+        "bodyRasterAlphaHeightRatio": 1.0,
+        "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+      },
+      "home": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 60.28125,
+                "y": 737.546875,
+                "width": 51.421875,
+                "height": 90,
+                "top": 737.546875,
+                "right": 111.703125,
+                "bottom": 827.546875,
+                "left": 60.28125
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 750.390625,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 750.390625,
+                "right": 111.703125,
+                "bottom": 827.53125,
+                "left": 60.28125
+              }
+            },
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 60.28125,
+                "y": 737.546875,
+                "width": 51.421875,
+                "height": 90,
+                "top": 737.546875,
+                "right": 111.703125,
+                "bottom": 827.546875,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "http": {
+              "status": 200,
+              "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+              "bytes": 44986
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "http": {
+              "status": 200,
+              "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+              "bytes": 20784
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986,
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784,
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/home-player.png",
+        "screenshotSHA256": "b8027bc50226a497b959b9602b80573e0ae4f294bc82a2c750cbdf70bf726409",
+        "rect": {
+          "x": 32,
+          "y": 728.546875,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 407.546875,
+            "width": 90,
+            "height": 90,
+            "top": 407.546875,
+            "right": 131,
+            "bottom": 497.546875,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 420.390625,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 420.390625,
+            "right": 111.703125,
+            "bottom": 497.53125,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 420.39453125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              45,
+              5,
+              164,
+              272
+            ],
+            "paintedAlphaWidth": 31.870849609375,
+            "paintedAlphaHeight": 71.508544921875,
+            "normalizedBottom": 0.9444444444444444,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "http": {
+                "status": 200,
+                "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+                "bytes": 33380
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "equipped": {
+          "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 737.546875,
+            "width": 90,
+            "height": 90,
+            "top": 737.546875,
+            "right": 131,
+            "bottom": 827.546875,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 750.390625,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 750.390625,
+            "right": 111.703125,
+            "bottom": 827.53125,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 750.39453125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [
+            "starter-buddy-headphones"
+          ],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              45,
+              5,
+              164,
+              272
+            ],
+            "paintedAlphaWidth": 31.870849609375,
+            "paintedAlphaHeight": 71.508544921875,
+            "normalizedBottom": 0.9444444444444444,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "http": {
+                "status": 200,
+                "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+                "bytes": 33380
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "homeReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 60.28125,
+                "y": 737.546875,
+                "width": 51.421875,
+                "height": 90,
+                "top": 737.546875,
+                "right": 111.703125,
+                "bottom": 827.546875,
+                "left": 60.28125
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 750.390625,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 750.390625,
+                "right": 111.703125,
+                "bottom": 827.53125,
+                "left": 60.28125
+              }
+            },
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 60.28125,
+                "y": 737.546875,
+                "width": 51.421875,
+                "height": 90,
+                "top": 737.546875,
+                "right": 111.703125,
+                "bottom": 827.546875,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "http": {
+              "status": 200,
+              "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+              "bytes": 44986
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "http": {
+              "status": 200,
+              "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+              "bytes": 20784
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986,
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784,
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/home-reload.png",
+        "screenshotSHA256": "ae916a953f3361d04133c7f5489abae8f712e64d4b4f1c7107fdefb40ca58522",
+        "rect": {
+          "x": 32,
+          "y": 728.546875,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "achievement": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 54.28125,
+                "y": 473.96875,
+                "width": 59.421875,
+                "height": 104,
+                "top": 473.96875,
+                "right": 113.703125,
+                "bottom": 577.96875,
+                "left": 54.28125
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 54.28125,
+                "y": 488.8125,
+                "width": 59.421875,
+                "height": 89.140625,
+                "top": 488.8125,
+                "right": 113.703125,
+                "bottom": 577.953125,
+                "left": 54.28125
+              }
+            },
+            {
+              "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 54.28125,
+                "y": 473.96875,
+                "width": 59.421875,
+                "height": 104,
+                "top": 473.96875,
+                "right": 113.703125,
+                "bottom": 577.96875,
+                "left": 54.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "http": {
+              "status": 200,
+              "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+              "bytes": 44986
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "http": {
+              "status": 200,
+              "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+              "bytes": 20784
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986,
+            "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+          },
+          {
+            "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784,
+            "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/achievements-avatar.png",
+        "screenshotSHA256": "e3988e4541fc8903f45dbc044c57505c1cdaba74e59991a4a4a90be4d63a0beb",
+        "rect": {
+          "x": 32,
+          "y": 473.96875,
+          "width": 104,
+          "height": 104
+        }
+      },
+      "exactCandidatePaths": {
+        "catalog": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp"
+        ],
+        "trial": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ],
+        "equipped": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ],
+        "home": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ],
+        "homeReload": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ],
+        "achievement": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "exactRolePaths": [
+        "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+        "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+      ],
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "equipmentTransactions": [
+        {
+          "id": "avatar-equip:child-1:starter-buddy-headphones:5df73512-1d35-4b19-a1ac-15a4d112e151",
+          "childId": "child-1",
+          "itemId": "starter-buddy-headphones",
+          "slot": "earwear",
+          "action": "equip",
+          "createdAt": "2026-10-06T04:56:43.830Z"
+        },
+        {
+          "id": "avatar-equip:child-1:starter-buddy-headphones:7e49c951-69e5-4d74-a6fb-e08063a8d93e",
+          "childId": "child-1",
+          "itemId": "starter-buddy-headphones",
+          "slot": "earwear",
+          "action": "unequip",
+          "createdAt": "2026-10-06T04:56:47.138Z"
+        }
+      ],
+      "ledgerScope": "one synthetic cost-zero owned item; actual UI equip + unequip append-only; no real purchase assertion",
+      "visualReview": "NOT_PERFORMED",
+      "contextClosed": true
+    }
+  ],
+  "controls": [],
+  "fallback": [],
+  "browserClosed": true,
+  "visualReview": "NOT_PERFORMED",
+  "scope": "Synthetic preowned cost-zero fixture; real trial/cancel/equip/home/reload/achievement/unequip; no real purchase, cloud auth, or earned rewards",
+  "negativeScope": "Missing asset fail-close plus exact browser byte admission; swapped/stale/wrong-role rejection belongs to QA, not runtime authenticity enforcement",
+  "runnerSHA256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "id": "desktop-light",
+      "width": 1440,
+      "height": 1050,
+      "theme": "light"
+    },
+    {
+      "id": "desktop-dark",
+      "width": 1440,
+      "height": 1050,
+      "theme": "dark"
+    },
+    {
+      "id": "mobile-light",
+      "width": 390,
+      "height": 844,
+      "theme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "theme": "dark"
+    }
+  ],
+  "roles": [
+    "brother",
+    "younger",
+    "sister",
+    "younger-sister"
+  ],
+  "items": [
+    "starter-sun-cap",
+    "starter-buddy-headphones",
+    "hair-nebula",
+    "phones-sky",
+    "sister-cat-headphones"
+  ],
+  "noExtraDecode": true,
+  "sourcePinsSHA256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+  "artifactPinsSHA256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+  "manifestPins": {
+    "avatar": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "world": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "harnessDependencies": {
+    "scripts/qa_v653_full_shop_acceptance.py": "2cc9a9758c2f62c3c4cd04c37c89a63beb8e7793460f205bcd8492e6aaee064f",
+    "scripts/qa_v653_release_smoke.py": "cf12df2f42db0c28c0c8f6c0255cb4fa202318a0219a0549c6103d06526d06d9",
+    "scripts/qa_v653_shop_coverage.py": "338e0a268e615f72a3b24bdcb7bab982b67f9835543b7c9359ef11cb9a0d23ee"
+  },
+  "preservedRunnerDependencies": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run.py": "6454034c5f095c10cdae43b91b00e2b95b0833d626264d8c562905b696cd2888"
+  },
+  "densityCorrection": "width srcset: descriptor equals physical width; positive density-corrected DOM and <=1px aspect tolerance; no decode",
+  "compiledDocuments": {
+    "/": {
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "bytes": 988,
+      "status": 200
+    }
+  },
+  "compiledAssets": {
+    "/assets/index-KC1rU43V.css": {
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "bytes": 493690,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-KC1rU43V.css"
+    },
+    "/assets/index-DkO6mlaB.js": {
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "bytes": 1434192,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-DkO6mlaB.js"
+    },
+    "/assets/SecondaryViews-Bd69SkOV.js": {
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "bytes": 43717,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-Bd69SkOV.js"
+    },
+    "/assets/x-CwjU7BFr.js": {
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "bytes": 143,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/x-CwjU7BFr.js"
+    },
+    "/assets/learningAnalytics-BiVMp2Ug.js": {
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "bytes": 2617,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/learningAnalytics-BiVMp2Ug.js"
+    },
+    "/assets/SecondaryViews-aPwGWhRg.css": {
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "bytes": 30904,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-aPwGWhRg.css"
+    }
+  },
+  "networkErrors": [],
+  "sourceRequests": [],
+  "servedAssets": {
+    "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp": {
+      "status": 200,
+      "sha256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+      "bytes": 91346,
+      "expectedSHA256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413"
+    },
+    "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp": {
+      "status": 200,
+      "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+      "bytes": 101836,
+      "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+    },
+    "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp": {
+      "status": 200,
+      "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+      "bytes": 44986,
+      "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+    },
+    "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp": {
+      "status": 200,
+      "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+      "bytes": 20784,
+      "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+    },
+    "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp": {
+      "status": 200,
+      "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+      "bytes": 33380,
+      "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+    }
+  },
+  "apiBlocks": [],
+  "captures": [
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+            "cls": "",
+            "visible": true,
+            "width": 768,
+            "height": 768,
+            "rect": {
+              "x": 37,
+              "y": 739.171875,
+              "width": 143,
+              "height": 105,
+              "top": 739.171875,
+              "right": 180,
+              "bottom": 844.171875,
+              "left": 37
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+          "domNatural": [
+            768,
+            768
+          ],
+          "pinnedFileSize": [
+            768,
+            768
+          ],
+          "expectedSHA256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+          "http": {
+            "status": 200,
+            "sha256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+            "bytes": 91346
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+          "status": 200,
+          "sha256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+          "bytes": 91346,
+          "expectedSHA256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-catalog-actual-size.png",
+      "screenshotSHA256": "20aa2c77f79d5d6e5a602ea6a291399e712e5256886fea4afeb3e51311572ad9",
+      "rect": {
+        "x": 37,
+        "y": 739.171875,
+        "width": 143,
+        "height": 105
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 108.1875,
+              "y": 93.796875,
+              "width": 173.609375,
+              "height": 303.8125,
+              "top": 93.796875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 108.1875,
+              "y": 137.1875,
+              "width": 173.609375,
+              "height": 260.421875,
+              "top": 137.1875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          },
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 108.1875,
+              "y": 93.796875,
+              "width": 173.609375,
+              "height": 303.8125,
+              "top": 93.796875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "http": {
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+          "http": {
+            "status": 200,
+            "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "bytes": 101836
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "http": {
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "status": 200,
+          "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+          "bytes": 101836,
+          "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "bytes": 44986,
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "bytes": 20784,
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-trial.png",
+      "screenshotSHA256": "71ec6fc7cfcfe4f47138e86f837b3c62ba11014014b4b4d87e09fe3b428d9358",
+      "rect": {
+        "x": 26,
+        "y": -0.234375,
+        "width": 338,
+        "height": 511.15625
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 108.1875,
+              "y": 93.796875,
+              "width": 173.609375,
+              "height": 303.8125,
+              "top": 93.796875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 108.1875,
+              "y": 137.1875,
+              "width": 173.609375,
+              "height": 260.421875,
+              "top": 137.1875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          },
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 108.1875,
+              "y": 93.796875,
+              "width": 173.609375,
+              "height": 303.8125,
+              "top": 93.796875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "http": {
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+          "http": {
+            "status": 200,
+            "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "bytes": 101836
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "http": {
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "status": 200,
+          "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+          "bytes": 101836,
+          "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "bytes": 44986,
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "bytes": 20784,
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-avatar-actual-size.png",
+      "screenshotSHA256": "b14f8639cc97444e3e8f4188d2abb23e6a89abf004baf93bce11229ce3249695",
+      "rect": {
+        "x": 46,
+        "y": 93.796875,
+        "width": 298,
+        "height": 303.828125
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 108.1875,
+              "y": 93.796875,
+              "width": 173.609375,
+              "height": 303.8125,
+              "top": 93.796875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 108.1875,
+              "y": 137.1875,
+              "width": 173.609375,
+              "height": 260.421875,
+              "top": 137.1875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          },
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 108.1875,
+              "y": 93.796875,
+              "width": 173.609375,
+              "height": 303.8125,
+              "top": 93.796875,
+              "right": 281.796875,
+              "bottom": 397.609375,
+              "left": 108.1875
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "http": {
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+          "http": {
+            "status": 200,
+            "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+            "bytes": 101836
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "http": {
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+          "status": 200,
+          "sha256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac",
+          "bytes": 101836,
+          "expectedSHA256": "980bdc00e30f7becc88de0197199691f4349998b0c11cc5670cd676c5b7ae8ac"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "bytes": 44986,
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "bytes": 20784,
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/shop-equipped.png",
+      "screenshotSHA256": "6719083b5c58bd8cd55f03d1ff4ef96b2d3f45a887833516773b63546a9e55da",
+      "rect": {
+        "x": 26,
+        "y": -0.234375,
+        "width": 338,
+        "height": 511.15625
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 60.28125,
+              "y": 737.546875,
+              "width": 51.421875,
+              "height": 90,
+              "top": 737.546875,
+              "right": 111.703125,
+              "bottom": 827.546875,
+              "left": 60.28125
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 750.390625,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 750.390625,
+              "right": 111.703125,
+              "bottom": 827.53125,
+              "left": 60.28125
+            }
+          },
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 60.28125,
+              "y": 737.546875,
+              "width": 51.421875,
+              "height": 90,
+              "top": 737.546875,
+              "right": 111.703125,
+              "bottom": 827.546875,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "http": {
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "http": {
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "bytes": 44986,
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "bytes": 20784,
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/home-player.png",
+      "screenshotSHA256": "b8027bc50226a497b959b9602b80573e0ae4f294bc82a2c750cbdf70bf726409",
+      "rect": {
+        "x": 32,
+        "y": 728.546875,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 60.28125,
+              "y": 737.546875,
+              "width": 51.421875,
+              "height": 90,
+              "top": 737.546875,
+              "right": 111.703125,
+              "bottom": 827.546875,
+              "left": 60.28125
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 750.390625,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 750.390625,
+              "right": 111.703125,
+              "bottom": 827.53125,
+              "left": 60.28125
+            }
+          },
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 60.28125,
+              "y": 737.546875,
+              "width": 51.421875,
+              "height": 90,
+              "top": 737.546875,
+              "right": 111.703125,
+              "bottom": 827.546875,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "http": {
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "http": {
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "bytes": 44986,
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "bytes": 20784,
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/home-reload.png",
+      "screenshotSHA256": "ae916a953f3361d04133c7f5489abae8f712e64d4b4f1c7107fdefb40ca58522",
+      "rect": {
+        "x": 32,
+        "y": 728.546875,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-back avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 54.28125,
+              "y": 473.96875,
+              "width": 59.421875,
+              "height": 104,
+              "top": 473.96875,
+              "right": 113.703125,
+              "bottom": 577.96875,
+              "left": 54.28125
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 54.28125,
+              "y": 488.8125,
+              "width": 59.421875,
+              "height": 89.140625,
+              "top": 488.8125,
+              "right": 113.703125,
+              "bottom": 577.953125,
+              "left": 54.28125
+            }
+          },
+          {
+            "src": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-front avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 54.28125,
+              "y": 473.96875,
+              "width": 59.421875,
+              "height": 104,
+              "top": 473.96875,
+              "right": 113.703125,
+              "bottom": 577.96875,
+              "left": 54.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "http": {
+            "status": 200,
+            "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+            "bytes": 44986
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "http": {
+            "status": 200,
+            "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+            "bytes": 20784
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+          "bytes": 44986,
+          "expectedSHA256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437"
+        },
+        {
+          "path": "/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+          "status": 200,
+          "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+          "bytes": 20784,
+          "expectedSHA256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/mobile-light/younger-sister/starter-buddy-headphones/achievements-avatar.png",
+      "screenshotSHA256": "e3988e4541fc8903f45dbc044c57505c1cdaba74e59991a4a4a90be4d63a0beb",
+      "rect": {
+        "x": 32,
+        "y": 473.96875,
+        "width": 104,
+        "height": 104
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 407.546875,
+          "width": 90,
+          "height": 90,
+          "top": 407.546875,
+          "right": 131,
+          "bottom": 497.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 407.546875,
+          "width": 90,
+          "height": 90,
+          "top": 407.546875,
+          "right": 131,
+          "bottom": 497.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": 156.765625,
+          "width": 338,
+          "height": 531.453125,
+          "top": 156.765625,
+          "right": 364,
+          "bottom": 688.21875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 250.796875,
+          "width": 298,
+          "height": 303.828125,
+          "top": 250.796875,
+          "right": 344,
+          "bottom": 554.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 37,
+          "y": 739.171875,
+          "width": 143,
+          "height": 105,
+          "top": 739.171875,
+          "right": 180,
+          "bottom": 844.171875,
+          "left": 37
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+            "complete": true,
+            "natural": [
+              768,
+              768
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 46,
+          "y": -0.203125,
+          "width": 298,
+          "height": 303.828125,
+          "top": -0.203125,
+          "right": 344,
+          "bottom": 303.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 511.15625,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 510.921875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 46,
+          "y": 93.796875,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.796875,
+          "right": 344,
+          "bottom": 397.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 46,
+          "y": 93.796875,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.796875,
+          "right": 344,
+          "bottom": 397.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 531.21875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 93.796875,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.796875,
+          "right": 344,
+          "bottom": 397.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 46,
+          "y": -0.203125,
+          "width": 298,
+          "height": 303.828125,
+          "top": -0.203125,
+          "right": 344,
+          "bottom": 303.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 511.15625,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 510.921875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 46,
+          "y": 93.796875,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.796875,
+          "right": 344,
+          "bottom": 397.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 41,
+          "y": 753.859375,
+          "width": 90,
+          "height": 90,
+          "top": 753.859375,
+          "right": 131,
+          "bottom": 843.859375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.546875,
+          "width": 260,
+          "height": 115,
+          "top": 728.546875,
+          "right": 292,
+          "bottom": 843.546875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 41,
+          "y": 737.546875,
+          "width": 90,
+          "height": 90,
+          "top": 737.546875,
+          "right": 131,
+          "bottom": 827.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 41,
+          "y": 753.546875,
+          "width": 90,
+          "height": 90,
+          "top": 753.546875,
+          "right": 131,
+          "bottom": 843.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.546875,
+          "width": 260,
+          "height": 115,
+          "top": 728.546875,
+          "right": 292,
+          "bottom": 843.546875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 32,
+          "y": 473.96875,
+          "width": 104,
+          "height": 104,
+          "top": 473.96875,
+          "right": 136,
+          "bottom": 577.96875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "starter-buddy-headphones"
+        ],
+        "rect": {
+          "x": 32,
+          "y": 473.96875,
+          "width": 104,
+          "height": 104,
+          "top": 473.96875,
+          "right": 136,
+          "bottom": 577.96875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "starter-buddy-headphones",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.859375,
+          "width": 90,
+          "height": 90,
+          "top": 753.859375,
+          "right": 131,
+          "bottom": 843.859375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.546875,
+          "width": 90,
+          "height": 90,
+          "top": 753.546875,
+          "right": 131,
+          "bottom": 843.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    }
+  ]
+}

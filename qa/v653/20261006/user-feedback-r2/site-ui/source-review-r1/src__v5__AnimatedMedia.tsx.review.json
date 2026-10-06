@@ -1,0 +1,14 @@
+{
+  "path": "src/v5/AnimatedMedia.tsx",
+  "beforeSHA256": "784d1dbaf3a0a410a437508e5c4d1cbdd2ee1c8e13ec93abd952b8c8f608fc9d",
+  "afterSHA256": "67f52c530bedcd9a2bd6ca56a7777348735b17c535ba12e254259f4f1ce2c27d",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。新增預設 false 的 fitContainer，僅 opt-in 改 inline 100% width/height；其他 size、observer、poster、reduced-motion 路徑保持。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v5__AnimatedMedia.tsx.diff",
+    "sha256": "a15616417c4667176e1238e05aa27364f6e6201c8ae05556f9babc6a6327df7b"
+  },
+  "observedAt": "2026-10-06T03:21:01.076771+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

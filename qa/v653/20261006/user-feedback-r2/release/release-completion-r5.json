@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "status": "DONE_DEPLOYED_BOUNDED_POSTCHECK_ACCEPTED",
+  "completedAt": "2026-10-06T06:26:09.395558+00:00",
+  "version": "6.5.3",
+  "candidate": "feedback-r2-candidate-r5",
+  "publicUrl": "https://kids-learning-adventure-chi.vercel.app/",
+  "deployment": {
+    "id": "dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2",
+    "url": "https://kids-learning-adventure-d9bx5w8wb-kui-yus-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/kui-yus-projects/kids-learning-adventure/7wRjYuurvZvf8vJvu2KubpyGjUP2",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2"
+  },
+  "stageRoot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5",
+  "evidence": {
+    "releaseIndex": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/assembly-final-r5-r3gate/release-index.json",
+      "sha256": "7ec766228f0603780e69d223cdfd93f5ae40f7121115c6896d632e6b7bc58d12"
+    },
+    "finalAdmission": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/gate-final-output-recovery-r5-r2/admission.json",
+      "sha256": "fc9228b44f79600f5ab2281133059f70d7879ab834bc3c50851df8e72edd8b0f"
+    },
+    "originalFinalOutputFailure": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/gate-final-output-r5-r3-result.json",
+      "sha256": "bc02610c14e4a67443ec4f0af209fb5b4855fd05668d60aa71cd22884bc7c111"
+    },
+    "recoveryProcess": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/gate-final-output-recovery-r5-r2/process.json",
+      "sha256": "0efdeda7dd14073e837cd8cdf1d522a761e50009dfc8b5056f71259a2d4748e9"
+    },
+    "compilerSource": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+      "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+    },
+    "publicPins": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/public-pins-final-r5.json",
+      "sha256": "7bd98f97cdd95a519670b159d354524bcc456073e5b51483bf70407f4db35d41"
+    },
+    "artifactPins": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+      "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+    },
+    "vercelOutput": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/vercel-output-r5/output-receipt.json",
+      "sha256": "ee3cddae1a415352662ef7e2d83118887b414c2811a3d6f9dd079108c0f627b7"
+    },
+    "actualNormalBuild": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/actual-vercel-build-r5-retry2/builder-record.json",
+      "sha256": "a413d6fa5f256d45e3deffced9a441d9df3b8315fa15b308da5cf337a419d807"
+    },
+    "deployment": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/actual-deploy-r5/record.json",
+      "sha256": "b0846fa2888c05458cb99fa6421ff9af994f488e71493177a88801d85fa7d120"
+    },
+    "deploymentReady": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/actual-deploy-r5/ready-receipt.json",
+      "sha256": "709e60f4a6d3b0c8bd48db08d83fe7f831fe329ed17df25a85607f1fada5d7c6"
+    },
+    "httpsRuntime": {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/postdeploy-public-alias-r5/report.json",
+      "sha256": "651fb07b92d6f6667803ce99705d81573f817b9b7ca983e089fd88eef10ab5a5"
+    },
+    "httpsProcess": {
+      "path": "qa/v653/20261006/user-feedback-r2/site-ui/postdeploy-public-alias-r5.process.json",
+      "sha256": "3b16459a51042035dba80ab43dfde297557ffe7573665f46b2178b3f90b4251a"
+    },
+    "httpsIndependentVisual": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/postdeploy-independent-visual-r5/review.json",
+      "sha256": "45256a52f0c465b0c10f2e5b841f69772d6ecf3754b98bd880c593a0d2dae35a"
+    },
+    "rootSixImages": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/postdeploy-root-visual-r5.json",
+      "sha256": "abe8943266f4282a2b4bfdcaffdaa59a572f77e957c5679c18ccd22642a42029"
+    },
+    "apiPublicCheck": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/production-api-r5.json",
+      "sha256": "ee5c847fe6350c9200d58f73893633933c39d8657cb3013c6f58fa5019af85a0"
+    },
+    "localPromotion": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/local-promotion-r5/receipt.json",
+      "sha256": "48c396144f9607d7357217991f72fb1dd901db9da3c245179a2a35a8f17372b4"
+    },
+    "localPostPromotion": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/post-promotion-runtime-r5/report-refs.json",
+      "sha256": "a5e9d6658b122fa72372754e52beeb183e839f9f9cc229d09948046eac3ab167"
+    },
+    "localVisual": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/post-promotion-independent-visual-r5/review.json",
+      "sha256": "df11ce91cf0a3697bfc581316eaaa6ce2bd76b8aa5aeffa7b9f8db8e07e46f36"
+    },
+    "frozenClosure": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/closure-final-r5-r3gate-r2.json",
+      "sha256": "9f919978badd1a483408dea08374d3c75b715675aa038759ed4c6be20144ae0c"
+    },
+    "sourceAndGit": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/git-state-postdeploy-r5.json",
+      "sha256": "f6017605a1b06306f07b445f20cf7c0a941a831e794278a67e8981675dd2cd66"
+    },
+    "directDiffCheck": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/direct-file-diff-check-final-r5.json",
+      "sha256": "27fd5941a5c08dd39f71a4278021f88465f034a432d3ad9a34b6aa0f0e713ffe"
+    },
+    "temporaryCleanup": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/temporary-server-cleanup-r5.json",
+      "sha256": "69d61a015651b4fa27a8aeb9f8d029c001957377b5f8d5e5562c526857c44a01"
+    },
+    "humanReport": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/修復與發布報告.md",
+      "sha256": "1563e1886d62b4914d3d5ae77fed8cc632c56c2b1807ea43183686c1d4495fdb"
+    }
+  },
+  "counts": {
+    "compilerSources": 115,
+    "publishedPublic": 4424,
+    "compiledFiles": 4438,
+    "newAssetLineage": 686,
+    "sourceProofFiles": 877,
+    "headwearFit": 608,
+    "headwearIndependentVisual": 608,
+    "uiIndependentImages": 104,
+    "selectedWorkflowPass": 80,
+    "selectedShopLifecyclePass": 1024,
+    "finalOutputChecks": 56740,
+    "negativeControls": 24,
+    "localPostPromotion": 13,
+    "httpsFunctionalCases": 15,
+    "httpsIndependentVisualCases": 15,
+    "httpsRawPng": 71,
+    "httpsUniqueStaticHttp": 441,
+    "httpsAfterStaticHttp": 14,
+    "sameStageBodyComparisons": 37,
+    "verifiedIndependentReviewRefs": 371
+  },
+  "slowSpeechSelectedByUser": true,
+  "manifestSHA256": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+  "bodySizeObserved": {
+    "widthDeltaPx": 0,
+    "heightDeltaPx": 0,
+    "bodyAlphaHeightRatio": 1
+  },
+  "protectedCore": "Curriculum90/180/360, immutable ledgers, family namespace, trusted-date and migration retained",
+  "limitations": [
+    "T01 physical iPhone Safari/Android Chrome, child holdout audio and two independent adult annotators absent",
+    "Not all videos watched or all514 samples manually heard",
+    "Synthetic isolated families; no real family cloud or actual-price purchase verification in this round",
+    "HTTP441 and15HTTPS scenarios do not represent online all4438 artifacts or all1024/allskin matrix",
+    "Mixed32 body comparisons preserve runner output; missing baseline-before objects prevent independent reconstruction",
+    "Full historical git diff timed out; direct changed26-file diff check passed"
+  ],
+  "preservedFailures": "Original runtime/retry/build/no-op-stage/recovery-order failures retained unchanged",
+  "noCommitPush": true,
+  "computerRestarted": false,
+  "driveCacheCleared": false,
+  "oldQaReviewFolder": "Preserved because unique or unsaved contents are not excluded"
+}

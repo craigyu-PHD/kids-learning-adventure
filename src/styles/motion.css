@@ -1,9 +1,208 @@
-/* Motion tokens are centralized so new interactions do not introduce
- * indefinite decorative animation. */
+/* V6.4 motion ownership.
+ * All decorative motion must be bounded, pausable and independent from state writes. */
+
+/* M07 — correct answer: target surface + one character nod + three local stars. */
+.v4-quick-check article.correct :is(.avatar-renderer,.avatar-photo-hero) {
+  animation:v64AnswerNod 600ms cubic-bezier(.2,.8,.25,1) both;
+  transform-origin:50% 82%;
+}
+.v6-answer-win { position:relative; overflow:visible; }
+.v64-answer-stars { position:absolute; inset:0; pointer-events:none; }
+.v64-answer-stars i {
+  position:absolute; left:50%; top:45%; width:7px; height:7px;
+  background:#ffd83d; box-shadow:0 0 8px rgba(255,200,35,.7);
+  clip-path:polygon(50% 0,62% 34%,100% 50%,62% 64%,50% 100%,38% 64%,0 50%,38% 34%);
+  opacity:0; animation:v64AnswerStar 620ms ease-out both;
+}
+.v64-answer-stars i:nth-child(1){--star-x:-34px;--star-y:-24px;animation-delay:20ms}
+.v64-answer-stars i:nth-child(2){--star-x:7px;--star-y:-34px;animation-delay:70ms}
+.v64-answer-stars i:nth-child(3){--star-x:38px;--star-y:-17px;animation-delay:110ms}
+@keyframes v64AnswerNod {
+  0%,100%{transform:translateY(0) rotate(0)}
+  38%{transform:translateY(2px) rotate(1.5deg)}
+  68%{transform:translateY(-2px) rotate(-1deg)}
+}
+@keyframes v64AnswerStar {
+  0%{opacity:0;transform:translate(0,0) scale(.35) rotate(0)}
+  24%{opacity:1}
+  100%{opacity:0;transform:translate(var(--star-x),var(--star-y)) scale(1.1) rotate(95deg)}
+}
+
+/* M10 — reward particles are one ceremony, never an infinite CPU loop. */
+.v4-reward-particles i {
+  animation-duration:1.6s !important;
+  animation-iteration-count:1 !important;
+  animation-fill-mode:both !important;
+}
+
+/* M13 — ship docks once, then idles at <=4px on a five-second rhythm. */
+.v63-ship-art {
+  animation:
+    v64ShipDock 600ms cubic-bezier(.18,.82,.28,1) 1 both,
+    v64ShipIdle 5s ease-in-out 600ms infinite !important;
+}
+@keyframes v64ShipDock {
+  from{opacity:.15;transform:translateY(16px) scale(.97) rotate(-2deg)}
+  to{opacity:1;transform:translateY(0) scale(1) rotate(-1deg)}
+}
+@keyframes v64ShipIdle {
+  0%,100%{transform:translateY(0) rotate(-1deg)}
+  50%{transform:translateY(-4px) rotate(-1deg)}
+}
+
+/* M15 — three equipped bases each own one low-density ambient language. */
+.v4-shell { position:relative; isolation:isolate; }
+.v4-shell > :is(.v4-adventure-header,.v4-main-navigation,.v4-dashboard-grid,.v4-status-bar) { position:relative; z-index:1; }
+.v64-room-ambient {
+  position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none;
+  contain:layout paint; opacity:.72;
+}
+.v64-room-ambient i { position:absolute; display:block; }
+.v64-room-ambient i:nth-child(1){left:4%;top:25%}
+.v64-room-ambient i:nth-child(2){left:9%;top:62%}
+.v64-room-ambient i:nth-child(3){left:18%;top:84%}
+.v64-room-ambient i:nth-child(4){right:5%;top:31%}
+.v64-room-ambient i:nth-child(5){right:11%;top:68%}
+.v64-room-ambient i:nth-child(6){right:19%;top:88%}
+.v64-room-ambient.room-starlab i {
+  width:8px;height:8px;border-radius:2px;background:#bff7ff;
+  box-shadow:0 0 0 4px rgba(82,224,255,.08),0 0 14px rgba(82,224,255,.62);
+  animation:v64StarlabSignal 8s ease-in-out infinite;
+  animation-delay:calc((var(--ambient-index,0)) * -720ms);
+}
+.v64-room-ambient.room-starlab i:nth-child(1){--ambient-index:1}.v64-room-ambient.room-starlab i:nth-child(2){--ambient-index:2}.v64-room-ambient.room-starlab i:nth-child(3){--ambient-index:3}.v64-room-ambient.room-starlab i:nth-child(4){--ambient-index:4}.v64-room-ambient.room-starlab i:nth-child(5){--ambient-index:5}.v64-room-ambient.room-starlab i:nth-child(6){--ambient-index:6}
+.v64-room-ambient.room-ocean i {
+  width:12px;height:12px;border:1.5px solid rgba(222,252,255,.78);border-radius:50%;
+  background:rgba(112,225,255,.08);box-shadow:inset 2px 2px 4px rgba(255,255,255,.45);
+  animation:v64OceanBubble 9s ease-in infinite;
+  animation-delay:calc((var(--ambient-index,0)) * -1.15s);
+}
+.v64-room-ambient.room-ocean i:nth-child(1){--ambient-index:1}.v64-room-ambient.room-ocean i:nth-child(2){--ambient-index:2}.v64-room-ambient.room-ocean i:nth-child(3){--ambient-index:3}.v64-room-ambient.room-ocean i:nth-child(4){--ambient-index:4}.v64-room-ambient.room-ocean i:nth-child(5){--ambient-index:5}.v64-room-ambient.room-ocean i:nth-child(6){--ambient-index:6}
+.v64-room-ambient.room-legend i {
+  width:9px;height:9px;border-radius:50%;background:#ffe98c;
+  box-shadow:0 0 0 1px rgba(255,226,103,.75),0 0 16px rgba(255,195,45,.52);
+  animation:v64LegendNav 7s ease-in-out infinite;
+}
+.v64-room-ambient.room-legend i:nth-child(n+5){display:none}
+.v64-room-ambient.room-legend i:nth-child(1){animation-delay:-.7s}.v64-room-ambient.room-legend i:nth-child(2){animation-delay:-2.1s}.v64-room-ambient.room-legend i:nth-child(3){animation-delay:-3.5s}.v64-room-ambient.room-legend i:nth-child(4){animation-delay:-4.9s}
+@keyframes v64StarlabSignal { 0%,70%,100%{opacity:.22;transform:scale(.8)} 76%{opacity:1;transform:scale(1.15)} 84%{opacity:.45;transform:scale(.92)} }
+@keyframes v64OceanBubble { 0%{opacity:0;transform:translateY(80px) scale(.65)} 18%{opacity:.72} 82%{opacity:.52} 100%{opacity:0;transform:translateY(-105px) scale(1.12)} }
+@keyframes v64LegendNav { 0%,100%{opacity:.2;transform:scale(.7)} 48%{opacity:.9;transform:scale(1.05)} 58%{opacity:.42;box-shadow:0 0 0 12px rgba(255,213,74,0),0 0 16px rgba(255,195,45,.42)} }
+
+/* M16 — collectible cards get a short 300ms sheen; touch has an explicit replay control. */
+.v63-card-tilt { overflow:hidden; outline:none; }
+.v63-card-tilt::after,
+.v64-card-touch-sheen {
+  content:""; position:absolute; z-index:7; inset:-18% -45%; pointer-events:none;
+  background:linear-gradient(110deg,transparent 34%,rgba(255,255,255,.12) 43%,rgba(255,255,255,.76) 50%,rgba(255,255,255,.14) 57%,transparent 66%);
+  transform:translateX(-115%); opacity:0;
+}
+.v63-card-tilt:hover::after,
+.v63-card-tilt:focus-visible::after { animation:v64CardSheen 300ms ease-out 1 both; }
+.v63-card-tilt:focus-visible { box-shadow:0 0 0 3px #8fe9ff,0 20px 32px rgba(0,12,42,.42); }
+.v64-card-touch-sheen { animation:v64CardSheen 300ms ease-out 1 both; }
+.v64-card-effect-replay {
+  position:absolute; right:8px; bottom:4px; z-index:12; min-height:44px; padding:0 14px;
+  border:1px solid rgba(255,255,255,.52); border-radius:999px;
+  background:rgba(4,30,77,.78); color:#fff; font-size:13px; font-weight:850;
+}
+@keyframes v64CardSheen { 0%{opacity:0;transform:translateX(-115%)} 18%{opacity:.9} 100%{opacity:0;transform:translateX(115%)} }
+
+/* M06 — purchase/equip confirmation gives the whole preview one short response. */
+.v6-shop-feedback.success ~ .v6-shop-wallet-row { animation:v64ShopWalletConfirm 420ms ease-out 1 both; }
+@keyframes v64ShopWalletConfirm { 0%,100%{transform:scale(1)} 45%{transform:scale(1.025)} }
+
+/* M05 — only after the full preview has decoded: one 200ms ring, old pulses are replaced. */
+.v64-preview-decode-ring {
+  position:absolute; z-index:14; inset:12%; border-radius:28px; pointer-events:none;
+  border:2px solid rgba(116,235,255,.84); box-shadow:0 0 0 0 rgba(74,210,255,.28),inset 0 0 18px rgba(116,235,255,.12);
+  opacity:0; animation:v64PreviewDecodeRing 200ms ease-out 1 both;
+}
+@keyframes v64PreviewDecodeRing {
+  0%{opacity:.85;transform:scale(.985);box-shadow:0 0 0 0 rgba(74,210,255,.32),inset 0 0 18px rgba(116,235,255,.14)}
+  100%{opacity:0;transform:scale(1.012);box-shadow:0 0 0 8px rgba(74,210,255,0),inset 0 0 18px rgba(116,235,255,0)}
+}
+
+/* M06 — reserve the heading label line so confirmation never covers equipped artwork. */
+.v63-stage-heading > .v64-stage-mode { min-height:22px; line-height:20px; }
+.v63-stage-heading > .v64-shop-confirm-stamp { display:inline-block; color:#f2fff8; letter-spacing:0; }
+.v64-shop-confirm-stamp {
+  position:relative; z-index:16; transform:none;
+  padding:0 10px; border-radius:999px; display:inline-block;
+  background:rgba(8,86,71,.92); color:#f2fff8; border:1px solid rgba(194,255,221,.72);
+  box-shadow:0 8px 22px rgba(0,55,49,.24); font-size:13px; font-weight:900; white-space:nowrap;
+  animation:v64ShopConfirmStamp 480ms ease-out 1 both; pointer-events:none;
+}
+@keyframes v64ShopConfirmStamp {
+  0%{opacity:0;transform:translateY(6px) scale(.96)}
+  28%{opacity:1;transform:translateY(0) scale(1.02)}
+  78%{opacity:1;transform:translateY(0) scale(1)}
+  100%{opacity:0;transform:translateY(-3px) scale(.99)}
+}
+
+/* M09/M12 — one level transition and one resolved-character evolution reveal. */
+.v64-level-transition {
+  display:grid; grid-template-columns:auto minmax(120px,1fr) auto; align-items:center; gap:10px;
+  width:min(100%,360px); margin:10px auto 4px; padding:8px 12px; border-radius:14px;
+  background:rgba(34,82,160,.08); border:1px solid rgba(90,166,255,.28);
+}
+.v64-level-transition>span,.v64-level-transition>strong { font-size:14px; font-weight:900; color:var(--text,#163557); }
+.v64-level-transition>i { height:9px; border-radius:999px; overflow:hidden; background:rgba(47,109,193,.12); }
+.v64-level-transition>i>b { display:block; width:100%; height:100%; border-radius:inherit; background:linear-gradient(90deg,#4ca8ff,#7a63ef,#ffd45e); transform-origin:left center; animation:v64LevelProgress 900ms cubic-bezier(.2,.8,.25,1) 1 both; }
+.v64-level-transition>small { grid-column:1/-1; text-align:center; font-size:12px; color:var(--muted,#5d7184); }
+.v64-evolution-reveal { animation:v64EvolutionReveal 800ms cubic-bezier(.2,.8,.25,1) 1 both; pointer-events:none; }
+.v64-reward-with-learner .v4-reward-skip { z-index:20; }
+@keyframes v64LevelProgress { from{transform:scaleX(0)} to{transform:scaleX(1)} }
+@keyframes v64EvolutionReveal {
+  0%{opacity:.3;filter:brightness(1.35) drop-shadow(0 0 0 rgba(102,212,255,0));transform:scale(.96)}
+  44%{opacity:1;filter:brightness(1.16) drop-shadow(0 0 18px rgba(102,212,255,.7));transform:scale(1.025)}
+  100%{opacity:1;filter:none;transform:scale(1)}
+}
+
+/* M19 — vocabulary flips image↔word in 200ms; speech remains user-triggered. */
+.v4-word-grid .v64-word-flip { position:relative; perspective:900px; overflow:visible; }
+.v64-word-flip-stage { position:relative; display:block; width:100%; min-height:124px; transform-style:preserve-3d; transition:transform 200ms ease-out; }
+.v64-word-flip.revealed .v64-word-flip-stage { transform:rotateY(180deg); }
+.v64-word-face { position:absolute; inset:0; display:grid; place-items:center; backface-visibility:hidden; border-radius:inherit; }
+.v64-word-face.image-face { transform:rotateY(0); }
+.v64-word-face.word-face { transform:rotateY(180deg); padding:12px; background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(230,245,255,.96)); }
+.v64-word-face.word-face strong { font-size:clamp(20px,2vw,30px); line-height:1.18; color:#153f72; text-align:center; }
+.v64-word-accessible-copy { position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
+
+/* User setting and OS reduced-motion both shut down decorative/controller motion. */
+:root[data-motion-effects='false'] :is(
+  .v4-quick-check article.correct :is(.avatar-renderer,.avatar-photo-hero),
+  .v64-answer-stars i,
+  .v4-reward-particles i,
+  .v63-ship-art,
+  .v64-room-ambient i,
+  .v63-card-tilt::after,
+  .v64-card-touch-sheen,
+  .v6-shop-feedback.success ~ .v6-shop-wallet-row,
+  .v64-shop-confirm-stamp,
+  .v64-preview-decode-ring,
+  .v64-level-transition>i>b,
+  .v64-evolution-reveal
+) { animation:none !important; }
+:root[data-motion-effects='false'] .v64-word-flip-stage { transition:none !important; }
+:root[data-motion-effects='false'] .v64-room-ambient { display:none; }
+
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-  }
+  *,*::before,*::after { scroll-behavior:auto !important; }
+  :is(
+    .v4-quick-check article.correct :is(.avatar-renderer,.avatar-photo-hero),
+    .v64-answer-stars i,
+    .v4-reward-particles i,
+    .v63-ship-art,
+    .v64-room-ambient i,
+    .v63-card-tilt::after,
+    .v64-card-touch-sheen,
+    .v6-shop-feedback.success ~ .v6-shop-wallet-row,
+    .v64-shop-confirm-stamp,
+    .v64-preview-decode-ring,
+    .v64-level-transition>i>b,
+    .v64-evolution-reveal
+  ) { animation:none !important; }
+  .v64-word-flip-stage { transition:none !important; }
+  .v64-room-ambient { display:none; }
 }

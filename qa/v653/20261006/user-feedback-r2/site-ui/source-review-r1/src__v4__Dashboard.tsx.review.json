@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/Dashboard.tsx",
+  "beforeSHA256": "7f82588a29aef6b5acc32a9a9137288a486255ff4b03dc27a6336db568c40720",
+  "afterSHA256": "9df08a69654a96cce65a946efe9a45ee6dc89e8461873aba6a26e66d122f6f3c",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。主要 CTA 僅新增圖示/標籤 span 與 aria-hidden，既有日期、選人、resume/reward 分支未變。小光以 opt-in fitContainer 顯示媒體；中文提示前先取消共用英文音訊。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__Dashboard.tsx.diff",
+    "sha256": "a5a71225f089e94796fb73976627327325a428eee91893378b6387b8b0852eca"
+  },
+  "observedAt": "2026-10-06T03:21:01.070986+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

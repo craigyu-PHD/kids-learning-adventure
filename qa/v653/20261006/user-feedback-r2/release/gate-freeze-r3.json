@@ -1,0 +1,51 @@
+{
+  "status": "GATE_R3_PERFORMANCE_FROZEN_NOT_RELEASE_ADMISSION",
+  "files": {
+    "scripts/qa_v653_feedback_release.py": "73bb1f8fa71d6610ff2a4c4b76f3f0b3da47d6b54bf710f5fdfb2373c72ad71e",
+    "scripts/prebuild_v653.py": "54380c986a959abd5fc5854098f6439c158afde62c90356557a68aa2bd8fc16a"
+  },
+  "priorFreeze": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-freeze-r2.json",
+    "sha256": "5d07ee6776ef7304334cd2a3e3532060dbcb7e5a088948dbab93ca586a877245"
+  },
+  "archivedOriginals": {
+    "scripts/qa_v653_feedback_release.py": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/gate-validator-r2-frozen.py",
+      "sha256": "9ea11d7f49d77b5110f83e0e3b3ec174272c7c3a684de71cba092aaf7f5d0803"
+    },
+    "scripts/prebuild_v653.py": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/gate-prebuild-r2-frozen.py",
+      "sha256": "d8aa74b109aece6030c594b732e176dc97ec027c0bb4460e1bccf96181aac82f"
+    }
+  },
+  "contract": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-contract-r2-final.json",
+    "sha256": "600e8d93572a5189517482cf76a605ebb2e2c364dd2689205d4f7f61584b8926"
+  },
+  "schema": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-schema-r2.json",
+    "sha256": "789c416f2f32453b956ebe0fa6e7afb617dc12dce6f911c967cd0778394c65e1"
+  },
+  "semanticReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-independent-r4/acceptance.json",
+    "sha256": "bb6245d665c92ad6155eb1185beebd367627a88d3855a96f79dad8c0a33fb95a"
+  },
+  "rootReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/root-native-snapshot-review-r4.json",
+    "sha256": "a7f386b859d7a58ee186a9724feab56f751a9c1e959fb8a2515bb0512d504ca3"
+  },
+  "unitEquivalence": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/native-controls.json",
+    "sha256": "9af08fc29584e3cce1705606b42028fd20792e95bb249fab5dfb8d79d2c4a7f9"
+  },
+  "subcontractEquivalence": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/gate-json-cache-proposal-r4/final-comparison.json",
+    "sha256": "8907082256f306fda3fbe6b00db7d836571e0bb519b717fd57c895e83d4f8522"
+  },
+  "changes": [
+    "Gate.read uses verified process-local marshal snapshots; every read returns fresh native JSON objects; incompatible restore falls back to original decoder.",
+    "All other validator AST including every predicate, negative control and matrix is exactly R2.",
+    "Only feedback prebuild timeout is 3600 seconds so complete controls may finish; original older branches remain byte identical."
+  ],
+  "boundary": "Performance implementation only; no release admission, runtime promotion or deployment claimed."
+}

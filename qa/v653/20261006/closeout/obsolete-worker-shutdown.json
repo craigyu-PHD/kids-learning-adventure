@@ -1,0 +1,47 @@
+{
+  "time": "2026-10-06T06:47:20.438959+00:00",
+  "rows": [
+    {
+      "pid": 66291,
+      "confirmedObsoleteTaskWorker": true,
+      "sentSIGTERM": true
+    },
+    {
+      "pid": 66292,
+      "confirmedObsoleteTaskWorker": true,
+      "sentSIGTERM": true
+    },
+    {
+      "pid": 66293,
+      "confirmedObsoleteTaskWorker": true,
+      "sentSIGTERM": true
+    },
+    {
+      "pid": 66296,
+      "confirmedObsoleteTaskWorker": true,
+      "sentSIGTERM": true
+    }
+  ],
+  "postCheck": [
+    {
+      "pid": 66291,
+      "stillExists": false,
+      "stat": ""
+    },
+    {
+      "pid": 66292,
+      "stillExists": false,
+      "stat": ""
+    },
+    {
+      "pid": 66293,
+      "stillExists": false,
+      "stat": ""
+    },
+    {
+      "pid": 66296,
+      "stillExists": false,
+      "stat": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "path": "src/data/avatarAssetManifest.json",
+  "beforeSHA256": "8a508d93e6d2ea29530f1b9a4012b2c63cb729c9758976f6adc921dabce3002a",
+  "afterSHA256": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+  "decision": "ACCEPT",
+  "reviewer": "headwear_feedback_r2-source-review",
+  "reason": "核對 r6 原件、完整差異、32角色/服裝閉合及資產lineage。非 accessories 區段完全相同；只指定5件新美術與4件 retained-ear Nebula 配對有變。後4件只增加 requiredHairstyleFits/hairstyleSplitVariants，原 front/catalog/default/skin 欄位與bytes保留；每件4角色8skin。五件 slot/supportedAvatars 不變，無 body縮放或第二套state。接受同源候選metadata，視覺及fresh compiled fit/workflow仍須各自證據。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/final-source-reviews-r2/src__data__avatarAssetManifest.json.diff",
+    "sha256": "20960a661ab841ad369b06b2f1093d3473e8040b5d76f60e2c63021e50559ee1"
+  }
+}

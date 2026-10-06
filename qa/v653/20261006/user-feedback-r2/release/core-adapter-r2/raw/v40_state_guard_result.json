@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "identicalTransactionDedupe": true,
+  "conflictingTransactionRejected": true,
+  "immutableRemoteEventProtected": true,
+  "allFourOmittedLedgersRejected": true,
+  "omittedLearnerRejected": true,
+  "staleBaseRejected": true,
+  "familyCodeSanitized": true
+}

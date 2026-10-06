@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "baseURL": "http://127.0.0.1:5196/",
+  "observedAt": "2026-10-06T04:28:33.934520+00:00",
+  "files": {
+    "assets/LessonQuest-D241cfb4.js": "fea25abc225c9c60285eee043d6161dbcc714547ff249538ad4fc9b2cffc3daf",
+    "assets/LessonQuest-uWYxmINz.css": "952919de894c04fe648e7957ebfce6edd33a29dc62bde08e8a89889da2bd30aa",
+    "assets/ParentSettings-BLm0wnd1.js": "7053eedf3d742db2922c0d9bb73db7fc710777ead08fcafc753d1284b1d47aad",
+    "assets/ParentSettings-C7cwrLWi.css": "a0018f5bdda9c46b73fb16bf5b31011d147df77ab0575dc055ea0d0f56121692",
+    "assets/RewardModal-CKewRLYL.js": "70a5c28ab14fcc6b291557179a2ef0c27d84dd63ecae8c2fb2083b845d20a4d5",
+    "assets/SecondaryViews-Bd69SkOV.js": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+    "assets/SecondaryViews-aPwGWhRg.css": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+    "assets/index-DkO6mlaB.js": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+    "assets/index-KC1rU43V.css": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+    "assets/learningAnalytics-BiVMp2Ug.js": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+    "assets/mic-BPfc-ykm.js": "63a9ee7a411a80c548c9ca26fc48e7512ba759dff78aa0cb93e833ca2caac065",
+    "assets/reward-CnWJ6mFt.css": "8692177aef4c1e3011d8761b9510e13873c2395e418522314740bc6feac067af",
+    "assets/x-CwjU7BFr.js": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+    "index.html": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb"
+  },
+  "method": "actual localhost HTTP GET; not a claim every lazy chunk executed"
+}

@@ -1,0 +1,1264 @@
+{
+  "scope": "Compiled 1024px fallback with real external thumbnail failure; synthetic empty completion state",
+  "profiles": [
+    {
+      "width": 390,
+      "theme": "light",
+      "captures": [
+        {
+          "name": "fallback-390-light-0",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-390-light-0.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 20,
+                  "y": -498,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 88.390625,
+                  "bottom": -434,
+                  "left": 20
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 90.390625,
+                  "y": -498,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 158.796875,
+                  "bottom": -434,
+                  "left": 90.390625
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 160.796875,
+                  "y": -498,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 229.1875,
+                  "bottom": -434,
+                  "left": 160.796875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 231.1875,
+                  "y": -498,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 299.59375,
+                  "bottom": -434,
+                  "left": 231.1875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 301.59375,
+                  "y": -498,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 370,
+                  "bottom": -434,
+                  "left": 301.59375
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 130,
+              "y": 411.390625,
+              "width": 218,
+              "height": 56,
+              "top": 411.390625,
+              "right": 348,
+              "bottom": 467.390625,
+              "left": 130
+            },
+            "card": {
+              "x": 32,
+              "y": 311.453125,
+              "width": 326,
+              "height": 220.9375,
+              "top": 311.453125,
+              "right": 358,
+              "bottom": 532.390625,
+              "left": 32
+            },
+            "image": {
+              "x": 42,
+              "y": 400.921875,
+              "width": 80,
+              "height": 80,
+              "top": 400.921875,
+              "right": 122,
+              "bottom": 480.921875,
+              "left": 42
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "lines": [
+              {
+                "x": 139,
+                "y": 420.390625,
+                "width": 196,
+                "height": 17,
+                "top": 420.390625,
+                "right": 335,
+                "bottom": 437.390625,
+                "left": 139
+              },
+              {
+                "x": 139,
+                "y": 441.390625,
+                "width": 42,
+                "height": 17,
+                "top": 441.390625,
+                "right": 181,
+                "bottom": 458.390625,
+                "left": 139
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        },
+        {
+          "name": "fallback-390-light-1",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-390-light-1.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 20,
+                  "y": -740,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 88.390625,
+                  "bottom": -676,
+                  "left": 20
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 90.390625,
+                  "y": -740,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 158.796875,
+                  "bottom": -676,
+                  "left": 90.390625
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 160.796875,
+                  "y": -740,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 229.1875,
+                  "bottom": -676,
+                  "left": 160.796875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 231.1875,
+                  "y": -740,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 299.59375,
+                  "bottom": -676,
+                  "left": 231.1875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 301.59375,
+                  "y": -740,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 370,
+                  "bottom": -676,
+                  "left": 301.59375
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 130,
+              "y": 421.078125,
+              "width": 218,
+              "height": 56,
+              "top": 421.078125,
+              "right": 348,
+              "bottom": 477.078125,
+              "left": 130
+            },
+            "card": {
+              "x": 32,
+              "y": 302.390625,
+              "width": 326,
+              "height": 239.6875,
+              "top": 302.390625,
+              "right": 358,
+              "bottom": 542.078125,
+              "left": 32
+            },
+            "image": {
+              "x": 42,
+              "y": 401.234375,
+              "width": 80,
+              "height": 80,
+              "top": 401.234375,
+              "right": 122,
+              "bottom": 481.234375,
+              "left": 42
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "lines": [
+              {
+                "x": 139,
+                "y": 430.078125,
+                "width": 196,
+                "height": 17,
+                "top": 430.078125,
+                "right": 335,
+                "bottom": 447.078125,
+                "left": 139
+              },
+              {
+                "x": 139,
+                "y": 451.078125,
+                "width": 42,
+                "height": 17,
+                "top": 451.078125,
+                "right": 181,
+                "bottom": 468.078125,
+                "left": 139
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        }
+      ],
+      "errors": [],
+      "lessonTitle": "DAY 14 · LESSON 1 · English\n小老師｜我來問身體部位\n\n本堂重點：跟身體歌指認四個部位，再輪流當小老師下指令。",
+      "ledgerUnchanged": true,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "captures": [
+        {
+          "name": "fallback-390-dark-0",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-390-dark-0.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 20,
+                  "y": -498,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 88.390625,
+                  "bottom": -434,
+                  "left": 20
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 90.390625,
+                  "y": -498,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 158.796875,
+                  "bottom": -434,
+                  "left": 90.390625
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 160.796875,
+                  "y": -498,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 229.1875,
+                  "bottom": -434,
+                  "left": 160.796875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 231.1875,
+                  "y": -498,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 299.59375,
+                  "bottom": -434,
+                  "left": 231.1875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 301.59375,
+                  "y": -498,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -498,
+                  "right": 370,
+                  "bottom": -434,
+                  "left": 301.59375
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 130,
+              "y": 411.390625,
+              "width": 218,
+              "height": 56,
+              "top": 411.390625,
+              "right": 348,
+              "bottom": 467.390625,
+              "left": 130
+            },
+            "card": {
+              "x": 32,
+              "y": 311.453125,
+              "width": 326,
+              "height": 220.9375,
+              "top": 311.453125,
+              "right": 358,
+              "bottom": 532.390625,
+              "left": 32
+            },
+            "image": {
+              "x": 42,
+              "y": 400.921875,
+              "width": 80,
+              "height": 80,
+              "top": 400.921875,
+              "right": 122,
+              "bottom": 480.921875,
+              "left": 42
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "lines": [
+              {
+                "x": 139,
+                "y": 420.390625,
+                "width": 196,
+                "height": 17,
+                "top": 420.390625,
+                "right": 335,
+                "bottom": 437.390625,
+                "left": 139
+              },
+              {
+                "x": 139,
+                "y": 441.390625,
+                "width": 42,
+                "height": 17,
+                "top": 441.390625,
+                "right": 181,
+                "bottom": 458.390625,
+                "left": 139
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        },
+        {
+          "name": "fallback-390-dark-1",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-390-dark-1.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 20,
+                  "y": -740,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 88.390625,
+                  "bottom": -676,
+                  "left": 20
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 90.390625,
+                  "y": -740,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 158.796875,
+                  "bottom": -676,
+                  "left": 90.390625
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 160.796875,
+                  "y": -740,
+                  "width": 68.390625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 229.1875,
+                  "bottom": -676,
+                  "left": 160.796875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 231.1875,
+                  "y": -740,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 299.59375,
+                  "bottom": -676,
+                  "left": 231.1875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 301.59375,
+                  "y": -740,
+                  "width": 68.40625,
+                  "height": 64,
+                  "top": -740,
+                  "right": 370,
+                  "bottom": -676,
+                  "left": 301.59375
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 130,
+              "y": 421.078125,
+              "width": 218,
+              "height": 56,
+              "top": 421.078125,
+              "right": 348,
+              "bottom": 477.078125,
+              "left": 130
+            },
+            "card": {
+              "x": 32,
+              "y": 302.390625,
+              "width": 326,
+              "height": 239.6875,
+              "top": 302.390625,
+              "right": 358,
+              "bottom": 542.078125,
+              "left": 32
+            },
+            "image": {
+              "x": 42,
+              "y": 401.234375,
+              "width": 80,
+              "height": 80,
+              "top": 401.234375,
+              "right": 122,
+              "bottom": 481.234375,
+              "left": 42
+            },
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "lines": [
+              {
+                "x": 139,
+                "y": 430.078125,
+                "width": 196,
+                "height": 17,
+                "top": 430.078125,
+                "right": 335,
+                "bottom": 447.078125,
+                "left": 139
+              },
+              {
+                "x": 139,
+                "y": 451.078125,
+                "width": 42,
+                "height": 17,
+                "top": 451.078125,
+                "right": 181,
+                "bottom": 468.078125,
+                "left": 139
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        }
+      ],
+      "errors": [],
+      "lessonTitle": "DAY 14 · LESSON 1 · English\n小老師｜我來問身體部位\n\n本堂重點：跟身體歌指認四個部位，再輪流當小老師下指令。",
+      "ledgerUnchanged": true,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "captures": [
+        {
+          "name": "fallback-1440-light-0",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-1440-light-0.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 24,
+                  "y": -681,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 297.59375,
+                  "bottom": -629,
+                  "left": 24
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 303.59375,
+                  "y": -681,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 577.1875,
+                  "bottom": -629,
+                  "left": 303.59375
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 583.1875,
+                  "y": -681,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 856.796875,
+                  "bottom": -629,
+                  "left": 583.1875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 862.796875,
+                  "y": -681,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 1136.390625,
+                  "bottom": -629,
+                  "left": 862.796875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 1142.390625,
+                  "y": -681,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 1416,
+                  "bottom": -629,
+                  "left": 1142.390625
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 405.203125,
+              "y": 679.171875,
+              "width": 494.34375,
+              "height": 35,
+              "top": 679.171875,
+              "right": 899.546875,
+              "bottom": 714.171875,
+              "left": 405.203125
+            },
+            "card": {
+              "x": 391.203125,
+              "y": 210.453125,
+              "width": 522.34375,
+              "height": 579.71875,
+              "top": 210.453125,
+              "right": 913.546875,
+              "bottom": 790.171875,
+              "left": 391.203125
+            },
+            "image": {
+              "x": 405.203125,
+              "y": 262.453125,
+              "width": 494.34375,
+              "height": 308.953125,
+              "top": 262.453125,
+              "right": 899.546875,
+              "bottom": 571.40625,
+              "left": 405.203125
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "lines": [
+              {
+                "x": 414.203125,
+                "y": 688.171875,
+                "width": 238,
+                "height": 17,
+                "top": 688.171875,
+                "right": 652.203125,
+                "bottom": 705.171875,
+                "left": 414.203125
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        },
+        {
+          "name": "fallback-1440-light-1",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-1440-light-1.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 24,
+                  "y": -1273,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 297.59375,
+                  "bottom": -1221,
+                  "left": 24
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 303.59375,
+                  "y": -1273,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 577.1875,
+                  "bottom": -1221,
+                  "left": 303.59375
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 583.1875,
+                  "y": -1273,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 856.796875,
+                  "bottom": -1221,
+                  "left": 583.1875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 862.796875,
+                  "y": -1273,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 1136.390625,
+                  "bottom": -1221,
+                  "left": 862.796875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 1142.390625,
+                  "y": -1273,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 1416,
+                  "bottom": -1221,
+                  "left": 1142.390625
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 405.203125,
+              "y": 678.890625,
+              "width": 494.34375,
+              "height": 35,
+              "top": 678.890625,
+              "right": 899.546875,
+              "bottom": 713.890625,
+              "left": 405.203125
+            },
+            "card": {
+              "x": 391.203125,
+              "y": 210.171875,
+              "width": 522.34375,
+              "height": 579.71875,
+              "top": 210.171875,
+              "right": 913.546875,
+              "bottom": 789.890625,
+              "left": 391.203125
+            },
+            "image": {
+              "x": 405.203125,
+              "y": 262.171875,
+              "width": 494.34375,
+              "height": 308.953125,
+              "top": 262.171875,
+              "right": 899.546875,
+              "bottom": 571.125,
+              "left": 405.203125
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "lines": [
+              {
+                "x": 414.203125,
+                "y": 687.890625,
+                "width": 238,
+                "height": 17,
+                "top": 687.890625,
+                "right": 652.203125,
+                "bottom": 704.890625,
+                "left": 414.203125
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        }
+      ],
+      "errors": [],
+      "lessonTitle": "DAY 14 · LESSON 1 · English\n小老師｜我來問身體部位\n\n本堂重點：跟身體歌指認四個部位，再輪流當小老師下指令。",
+      "ledgerUnchanged": true,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "captures": [
+        {
+          "name": "fallback-1440-dark-0",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-1440-dark-0.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 24,
+                  "y": -681,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 297.59375,
+                  "bottom": -629,
+                  "left": 24
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 303.59375,
+                  "y": -681,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 577.1875,
+                  "bottom": -629,
+                  "left": 303.59375
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 583.1875,
+                  "y": -681,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 856.796875,
+                  "bottom": -629,
+                  "left": 583.1875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 862.796875,
+                  "y": -681,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 1136.390625,
+                  "bottom": -629,
+                  "left": 862.796875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 1142.390625,
+                  "y": -681,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -681,
+                  "right": 1416,
+                  "bottom": -629,
+                  "left": 1142.390625
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 405.203125,
+              "y": 679.171875,
+              "width": 494.34375,
+              "height": 35,
+              "top": 679.171875,
+              "right": 899.546875,
+              "bottom": 714.171875,
+              "left": 405.203125
+            },
+            "card": {
+              "x": 391.203125,
+              "y": 210.453125,
+              "width": 522.34375,
+              "height": 579.71875,
+              "top": 210.453125,
+              "right": 913.546875,
+              "bottom": 790.171875,
+              "left": 391.203125
+            },
+            "image": {
+              "x": 405.203125,
+              "y": 262.453125,
+              "width": 494.34375,
+              "height": 308.953125,
+              "top": 262.453125,
+              "right": 899.546875,
+              "bottom": 571.40625,
+              "left": 405.203125
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "lines": [
+              {
+                "x": 414.203125,
+                "y": 688.171875,
+                "width": 238,
+                "height": 17,
+                "top": 688.171875,
+                "right": 652.203125,
+                "bottom": 705.171875,
+                "left": 414.203125
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        },
+        {
+          "name": "fallback-1440-dark-1",
+          "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/fallback-1440-dark-1.png",
+          "ready": true,
+          "health": {
+            "overflow": 0,
+            "broken": [],
+            "smallButtons": [],
+            "navigation": [
+              {
+                "id": "home",
+                "text": "首頁",
+                "box": {
+                  "x": 24,
+                  "y": -1273,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 297.59375,
+                  "bottom": -1221,
+                  "left": 24
+                }
+              },
+              {
+                "id": "semester",
+                "text": "學習日曆",
+                "box": {
+                  "x": 303.59375,
+                  "y": -1273,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 577.1875,
+                  "bottom": -1221,
+                  "left": 303.59375
+                }
+              },
+              {
+                "id": "achievements",
+                "text": "成就獎勵",
+                "box": {
+                  "x": 583.1875,
+                  "y": -1273,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 856.796875,
+                  "bottom": -1221,
+                  "left": 583.1875
+                }
+              },
+              {
+                "id": "shop",
+                "text": "寶物商店",
+                "box": {
+                  "x": 862.796875,
+                  "y": -1273,
+                  "width": 273.59375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 1136.390625,
+                  "bottom": -1221,
+                  "left": 862.796875
+                }
+              },
+              {
+                "id": "parent-login",
+                "text": "家長登入",
+                "box": {
+                  "x": 1142.390625,
+                  "y": -1273,
+                  "width": 273.609375,
+                  "height": 52,
+                  "top": -1273,
+                  "right": 1416,
+                  "bottom": -1221,
+                  "left": 1142.390625
+                }
+              }
+            ]
+          },
+          "image": {
+            "src": "/assets/v5/themes/space-hero-v2.webp",
+            "natural": [
+              1024,
+              1024
+            ],
+            "alt": "影片封面暫時無法載入，仍可開啟課程",
+            "byteProof": {
+              "status": 200,
+              "sha256": "adba06b2913a21a5ae5c224ccb4337c8af51ac6f02e99c9edf24fcb3c982410c"
+            }
+          },
+          "labelGeometry": {
+            "label": {
+              "x": 405.203125,
+              "y": 678.890625,
+              "width": 494.34375,
+              "height": 35,
+              "top": 678.890625,
+              "right": 899.546875,
+              "bottom": 713.890625,
+              "left": 405.203125
+            },
+            "card": {
+              "x": 391.203125,
+              "y": 210.171875,
+              "width": 522.34375,
+              "height": 579.71875,
+              "top": 210.171875,
+              "right": 913.546875,
+              "bottom": 789.890625,
+              "left": 391.203125
+            },
+            "image": {
+              "x": 405.203125,
+              "y": 262.171875,
+              "width": 494.34375,
+              "height": 308.953125,
+              "top": 262.171875,
+              "right": 899.546875,
+              "bottom": 571.125,
+              "left": 405.203125
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 1000
+            },
+            "lines": [
+              {
+                "x": 414.203125,
+                "y": 687.890625,
+                "width": 238,
+                "height": 17,
+                "top": 687.890625,
+                "right": 652.203125,
+                "bottom": 704.890625,
+                "left": 414.203125
+              }
+            ],
+            "insideCard": true,
+            "insideViewport": true,
+            "noImageOverlap": true,
+            "noTextClip": true
+          }
+        }
+      ],
+      "errors": [],
+      "lessonTitle": "DAY 14 · LESSON 1 · English\n小老師｜我來問身體部位\n\n本堂重點：跟身體歌指認四個部位，再輪流當小老師下指令。",
+      "ledgerUnchanged": true,
+      "pass": true,
+      "contextClosed": true
+    }
+  ],
+  "browserClosed": true,
+  "flowCases": [
+    {
+      "case": "thumbnail-fallback",
+      "passed": true
+    }
+  ]
+}

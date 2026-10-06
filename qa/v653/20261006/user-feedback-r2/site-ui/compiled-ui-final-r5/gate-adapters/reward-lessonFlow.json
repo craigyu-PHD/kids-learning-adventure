@@ -1,0 +1,90 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/served-artifacts.json",
+    "sha256": "1d12595b6043962a33bf30809547a193b2b64337b4ad8729885420ebc971990d"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_reward.py",
+    "sha256": "57882f3ff87cc8db1c2f7084430b774ed05a46d3ad82d2d3a596f4be6fc7b260"
+  },
+  "observedAt": "2026-10-06T04:30:09.128019+00:00",
+  "group": "lessonFlow",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "case": "mission-wrong-right"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/result.json",
+        "sha256": "dc1ddeb52424225f76f38b41402fd1ec67153d996504ded1ceeb6619df51f866"
+      },
+      "bindings": {
+        "case": "/flowCases/0/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/result.json",
+            "sha256": "dc1ddeb52424225f76f38b41402fd1ec67153d996504ded1ceeb6619df51f866"
+          },
+          "pointer": "/flowCases/0/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "reward-idempotency"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/result.json",
+        "sha256": "dc1ddeb52424225f76f38b41402fd1ec67153d996504ded1ceeb6619df51f866"
+      },
+      "bindings": {
+        "case": "/flowCases/1/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/result.json",
+            "sha256": "dc1ddeb52424225f76f38b41402fd1ec67153d996504ded1ceeb6619df51f866"
+          },
+          "pointer": "/flowCases/1/passed",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "case": "360x560-badge"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/result.json",
+        "sha256": "dc1ddeb52424225f76f38b41402fd1ec67153d996504ded1ceeb6619df51f866"
+      },
+      "bindings": {
+        "case": "/flowCases/2/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/reward/result.json",
+            "sha256": "dc1ddeb52424225f76f38b41402fd1ec67153d996504ded1ceeb6619df51f866"
+          },
+          "pointer": "/flowCases/2/passed",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,808 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/served-artifacts.json",
+    "sha256": "53e80283c26487846748372e363fe84bc8494ea92a633c36e1993d40d43b3d15"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_site.py",
+    "sha256": "e2e5da8c52dc6226d96bd62ed961c27d718ba5e546bc003ed7e8c82b70e59e7d"
+  },
+  "observedAt": "2026-10-06T04:27:17.105235+00:00",
+  "group": "siteCTA",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/0/width",
+            "/primary/0/theme"
+          ]
+        },
+        "world": "/primary/0/world",
+        "state": "/primary/0/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/0/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/0/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/0/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "mecha",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/1/width",
+            "/primary/1/theme"
+          ]
+        },
+        "world": "/primary/1/world",
+        "state": "/primary/1/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/1/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/1/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/1/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "racing",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/2/width",
+            "/primary/2/theme"
+          ]
+        },
+        "world": "/primary/2/world",
+        "state": "/primary/2/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/2/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/2/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/2/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "tank",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/3/width",
+            "/primary/3/theme"
+          ]
+        },
+        "world": "/primary/3/world",
+        "state": "/primary/3/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/3/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/3/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/3/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "creature",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/4/width",
+            "/primary/4/theme"
+          ]
+        },
+        "world": "/primary/4/world",
+        "state": "/primary/4/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/4/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/4/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/4/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "world": "hero",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/5/width",
+            "/primary/5/theme"
+          ]
+        },
+        "world": "/primary/5/world",
+        "state": "/primary/5/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/5/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/5/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/5/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "hero",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/6/width",
+            "/primary/6/theme"
+          ]
+        },
+        "world": "/primary/6/world",
+        "state": "/primary/6/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/6/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/6/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/6/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "mecha",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/7/width",
+            "/primary/7/theme"
+          ]
+        },
+        "world": "/primary/7/world",
+        "state": "/primary/7/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/7/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/7/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/7/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "racing",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/8/width",
+            "/primary/8/theme"
+          ]
+        },
+        "world": "/primary/8/world",
+        "state": "/primary/8/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/8/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/8/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/8/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "tank",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/9/width",
+            "/primary/9/theme"
+          ]
+        },
+        "world": "/primary/9/world",
+        "state": "/primary/9/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/9/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/9/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/9/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "creature",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/10/width",
+            "/primary/10/theme"
+          ]
+        },
+        "world": "/primary/10/world",
+        "state": "/primary/10/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/10/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/10/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/10/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "world": "hero",
+        "state": "start"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/11/width",
+            "/primary/11/theme"
+          ]
+        },
+        "world": "/primary/11/world",
+        "state": "/primary/11/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/11/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/11/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/11/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "selected0"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/12/width",
+            "/primary/12/theme"
+          ]
+        },
+        "world": "/primary/12/world",
+        "state": "/primary/12/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/12/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/12/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/12/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "midLesson"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/13/width",
+            "/primary/13/theme"
+          ]
+        },
+        "world": "/primary/13/world",
+        "state": "/primary/13/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/13/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/13/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/13/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "allDone"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/14/width",
+            "/primary/14/theme"
+          ]
+        },
+        "world": "/primary/14/world",
+        "state": "/primary/14/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/14/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/14/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/14/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "missingtrusteddate"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/primary/15/width",
+            "/primary/15/theme"
+          ]
+        },
+        "world": "/primary/15/world",
+        "state": "/primary/15/fixtureState"
+      },
+      "checks": {
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/15/healthy",
+          "equals": true
+        },
+        "correctAction": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/15/correctAction",
+          "equals": true
+        },
+        "ledgerUnchanged": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/primary/15/ledgerUnchanged",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

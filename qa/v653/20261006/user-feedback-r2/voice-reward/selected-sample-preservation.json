@@ -1,0 +1,57 @@
+{
+  "before": {
+    "text": "I can take three steps.",
+    "textSha256": "0bbcec063d033238a655f6cb07acc06c3445c14062cbb2e17478269eafef3dca",
+    "uses": [
+      {
+        "dayId": "day-27",
+        "blockId": "w6d2b1",
+        "kind": "sentence",
+        "sourceText": "Adventure 53: I can take three steps."
+      }
+    ],
+    "mode": "slow",
+    "synthesisSpeed": 0.9,
+    "voice": "af_heart",
+    "file": "0bbcec063d033238-af-heart-slow-fb8e31d7e503.m4a",
+    "audioSha256": "fb8e31d7e503a97badf6be499e8c549e39b8a458fc4d471eedfc74fa2a6c0b28",
+    "wav": "qa/v653/20261006/user-feedback-r2/voice-reward/source-wav/0bbcec063d033238a655f6cb07acc06c3445c14062cbb2e17478269eafef3dca-slow.wav",
+    "wavSha256": "fdb3a2a3472d95fe027829bb12a7e0ef403b20a5042ee291f8de143ab5dd8ad0",
+    "seconds": 2.075,
+    "peak": 0.42265230417251587,
+    "rms": 0.0477084219455719,
+    "phonemes": [
+      "ˌI kæn tˈAk θɹˈi stˈɛps."
+    ],
+    "renderedText": "I can take three steps.",
+    "bytes": 22127
+  },
+  "after": {
+    "text": "I can take three steps.",
+    "textSha256": "0bbcec063d033238a655f6cb07acc06c3445c14062cbb2e17478269eafef3dca",
+    "uses": [
+      {
+        "dayId": "day-27",
+        "blockId": "w6d2b1",
+        "kind": "sentence",
+        "sourceText": "Adventure 53: I can take three steps."
+      }
+    ],
+    "mode": "slow",
+    "synthesisSpeed": 0.9,
+    "voice": "af_heart",
+    "file": "0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+    "audioSha256": "8f85105b31677beeb67331bcbf1827d96c74bfd86d021e0595331c9d24e4d128",
+    "wav": "qa/v653/20261006/user-feedback-r2/voice-reward/kokoro-af-heart-1-speed-0.9.wav",
+    "wavSha256": "c9941183a59873a499b3ded2f99c323652aef80db92f82a4d99725447eebc9fa",
+    "seconds": 2.075,
+    "peak": 0.455795019865036,
+    "rms": 0.047719042748212814,
+    "phonemes": [
+      "ˌI kæn tˈAk θɹˈi stˈɛps."
+    ],
+    "renderedText": "I can take three steps.",
+    "bytes": 22187,
+    "selectionEvidence": "User selected slow sample 1 via root on 2026-10-06; exact original source WAV retained"
+  }
+}

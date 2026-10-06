@@ -1,0 +1,160 @@
+--- published-r6/src/styles/components/lesson.css
++++ feedback/src/styles/components/lesson.css
+@@ -248,3 +248,157 @@
+ /* Keep earned resources readable inside narrow reward cards. */
+ .v4-quest-shell .v4-reward-values { flex-wrap:wrap; }
+ .v4-quest-shell .v4-reward-values > span { white-space:nowrap; max-width:100%; }
++
++/* V6.5.3 feedback R2: natural-height teaching content owns its layout here.
++ * New timetable/card lanes avoid historical fixed-height dashboard rules. */
++.v4-quest-shell {
++  --lesson-ink:#203952;
++  --lesson-soft:#f2f7fc;
++  --lesson-surface:#fff;
++  --lesson-line:#cbddea;
++  --lesson-question:#edf5ff;
++  --lesson-question-line:#2773be;
++}
++.dark .v4-quest-shell {
++  --lesson-ink:#f3f6ff;
++  --lesson-soft:#29334e;
++  --lesson-surface:#222b43;
++  --lesson-line:#536581;
++  --lesson-question:#273e60;
++  --lesson-question-line:#72d6ff;
++}
++.v4-quest-shell .v653-preparation-stage { gap:16px; }
++.v653-preparation-stage .v4-lesson-preflight { display:grid; grid-template-columns:minmax(0,1fr); width:100%; margin:0; padding:18px; gap:16px; background:var(--lesson-soft); box-shadow:none; }
++.v653-preparation-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 20px; }
++.v653-preparation-heading span { font-size:13px; font-weight:800; color:var(--lesson-muted,#526780); }
++.v653-preparation-heading h2 { margin:3px 0 0; font-size:22px; color:var(--lesson-ink); }
++.v653-preparation-heading p { margin:0; font-size:14px; line-height:1.6; }
++.v653-preparation-heading p span { margin-inline:6px; }
++.v653-preparation-stage .v64-daily-participants { margin:0; }
++.v653-preparation-stage .v64-daily-participants>div { grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr)); grid-auto-flow:row; grid-auto-columns:auto; overflow:visible; }
++.v4-quest-shell .v653-preparation-summary { gap:12px; margin:0; grid-template-columns:repeat(2,minmax(0,1fr)); }
++.v4-quest-shell .v653-preparation-summary>article { padding:16px; background:var(--lesson-surface); border:1px solid var(--lesson-line); border-radius:16px; color:var(--lesson-ink); }
++.v4-quest-shell .v653-preparation-summary h3 { display:flex; align-items:center; gap:8px; margin:0 0 10px; font-size:17px; }
++.v653-preparation-summary h3>span { display:grid; place-items:center; width:28px; height:28px; border-radius:9px; color:var(--lesson-accent,#075bc7); background:var(--lesson-soft); font-size:12px; }
++.v4-quest-shell .v653-preparation-summary p { font-size:14px; line-height:1.55; margin:8px 0; }
++.v4-quest-shell .v653-preparation-summary .v653-preparation-focus { font-size:18px; line-height:1.45; color:var(--lesson-ink); font-weight:800; }
++.v653-preparation-summary dl { display:grid; gap:10px; margin:12px 0 0; }
++.v653-preparation-summary dl>div { display:grid; grid-template-columns:82px minmax(0,1fr); gap:8px; align-items:start; }
++.v653-preparation-summary dt { font-size:13px; font-weight:800; color:var(--lesson-muted,#526780); line-height:1.6; }
++.v653-preparation-summary dd { margin:0; font-size:14px; line-height:1.6; overflow-wrap:anywhere; }
++.v653-word-chip { display:inline-block; margin:0 5px 5px 0; padding:3px 8px; border-radius:8px; background:var(--lesson-soft); color:var(--lesson-ink); font-weight:700; }
++.v4-quest-shell .v653-preparation-summary .v64-preparation-materials { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
++.v4-quest-shell .v653-preparation-summary .v64-preparation-materials button { height:100%; min-height:68px; padding:10px; background:var(--lesson-soft); border-color:var(--lesson-line); }
++.v4-quest-shell .v653-preparation-summary .v64-preparation-materials b { font-size:14px; line-height:1.5; }
++.v4-quest-shell .v653-preparation-summary .v64-preparation-materials span { font-size:12px; line-height:1.5; color:var(--lesson-muted,#526780); }
++.v653-preparation-summary details { border-top:1px solid var(--lesson-line); }
++.v4-quest-shell .v653-preparation-summary summary { padding:10px 0; min-height:44px; font-size:14px; font-weight:750; }
++.v653-teaching-plan { min-width:0; }
++.v653-teaching-plan>h3 { margin:0 0 10px; font-size:18px; color:var(--lesson-ink); }
++.v653-teaching-timeline { display:grid; gap:0; border:1px solid var(--lesson-line); border-radius:16px; background:var(--lesson-surface); overflow:hidden; }
++
++/* The 3:2 viewport and both faces share one size; the illustration cannot
++ * inherit a larger fixed height from the legacy large-display rules. */
++.v4-quest-shell .v653-word-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
++.v4-quest-shell .v653-word-grid .v64-word-flip { min-width:0; min-height:0; padding:10px; gap:10px; border:1px solid var(--lesson-line); border-radius:18px; background:var(--lesson-surface); box-shadow:0 4px 12px #1234560a; align-content:start; }
++.v4-quest-shell .v653-word-grid .v653-word-stage { display:block; width:100%; min-height:0; aspect-ratio:3/2; border-radius:12px; }
++.v4-quest-shell .v653-word-grid .v64-word-face { display:grid; overflow:hidden; }
++.v4-quest-shell .v653-word-grid .v4-vocab-image { display:block; width:100%; height:100%; min-height:0; max-height:100%; background:#f2f7fc; border-radius:12px; }
++.v4-quest-shell .v653-word-grid .v4-vocab-image img { width:100%; height:100%; max-height:100%; object-fit:contain; background:transparent; border-radius:12px; }
++.v4-quest-shell .v653-word-grid .word-face strong { font-size:clamp(18px,2vw,32px); line-height:1.2; overflow-wrap:anywhere; text-transform:none; color:#123c70; }
++.v4-quest-shell .v653-word-grid .v653-word-action { font-size:14px; min-height:32px; line-height:1.4; justify-content:center; color:var(--lesson-accent,#075bc7); }
++.v4-quest-shell .v653-word-grid .v653-word-action svg { width:18px; height:18px; flex:none; }
++
++/* A question is the primary reading target; timing and follow-up are distinct. */
++.v4-quest-shell .v6-pause-grid { grid-template-columns:minmax(0,1fr); gap:14px; }
++.v4-quest-shell .v6-pause-grid article { display:grid; grid-template-columns:36px minmax(0,1fr); align-items:start; gap:14px; min-height:0; padding:18px; border:1px solid var(--lesson-line); border-radius:18px; background:var(--lesson-surface); box-shadow:none; }
++.v4-quest-shell .v6-pause-grid article>b { position:static; width:36px; height:36px; font-size:16px; border-radius:12px; }
++.v4-quest-shell .v6-pause-grid article>div>span { padding:0; font-size:13px; color:var(--lesson-muted,#526780); }
++.v4-quest-shell .v6-pause-grid article h3 { margin:4px 0 12px; font-size:18px; color:var(--lesson-ink); }
++.v653-question-box { padding:14px 16px; border-left:4px solid var(--lesson-question-line); border-radius:0 12px 12px 0; background:var(--lesson-question); }
++.v4-quest-shell .v6-pause-grid .v653-question-box>span { display:flex; gap:6px; padding:0; align-items:center; color:var(--lesson-accent,#075bc7); font-size:13px; }
++.v653-question-box>span svg { width:18px; height:18px; }
++.v4-quest-shell .v6-pause-grid .v653-question-box strong { display:block; padding:6px 0 0; background:transparent; color:var(--lesson-ink); font-size:clamp(20px,1.6vw,26px); line-height:1.5; }
++.v4-quest-shell .v6-pause-grid article p { margin:12px 0 0; font-size:14px; line-height:1.6; max-width:none; }
++.v6-pause-grid article p>b { display:block; margin-bottom:2px; color:var(--lesson-ink); }
++
++.v4-quest-shell .v4-mission-focus { padding:16px; gap:12px; grid-template-columns:52px minmax(0,1fr); border-radius:18px; }
++.v4-quest-shell .v4-mission-number { width:48px; height:56px; border-radius:14px; font-size:24px; }
++.v4-quest-shell .v4-mission-focus p { margin-top:10px; padding-top:10px; border-top:1px solid var(--lesson-line); font-size:16px; line-height:1.55; }
++.v4-quest-shell .v4-mission-focus p strong { color:var(--lesson-ink); font-size:14px; }
++.v4-quest-shell .v653-quick-check { padding:16px; border-radius:18px; }
++.v653-quick-check>div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
++.v653-answer-card { display:grid; grid-template-columns:82px minmax(0,1fr); gap:12px; align-items:center; padding:12px; border:1px solid var(--lesson-line); border-radius:14px; background:var(--lesson-surface); }
++.v4-quest-shell .v653-answer-card .v4-quick-check-learner { min-height:0; grid-template-rows:auto; padding-right:10px; }
++.v653-answer-card .v4-quick-check-learner .avatar-renderer { --avatar-renderer-size:64px; }
++.v4-quest-shell .v653-answer-card .v4-quick-check-answer { display:grid; gap:6px; min-width:0; }
++.v653-answer-card.correct { border-color:#54a87a; background:var(--lesson-soft); }
++.v653-answer-card.wrong { border-color:#c77559; }
++.v4-quest-shell .v4-quick-check-answer .v6-answer-win { font-size:14px; padding:8px; }
++.v4-quest-shell .v4-mission-learners button { min-height:80px; padding:10px 12px; }
++.v4-quest-shell .v4-mission-learners small { font-size:14px; line-height:1.4; }
++.v4-quest-shell .v4-repeat-hero { gap:12px; }
++.v4-quest-shell .v4-repeat-hero>div:first-child { padding:18px; border-radius:18px; }
++.v4-quest-shell .v4-age-tips { gap:10px; }
++.v4-quest-shell .v4-age-tips article { padding:14px; border-radius:16px; }
++.v4-quest-shell .v4-age-tips span { font-size:14px; }
++.v4-quest-shell .v4-age-tips p { font-size:16px; line-height:1.55; }
++@media (min-width:1180px) {
++  .v653-preparation-stage .v4-lesson-preflight { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:18px; align-items:start; }
++  .v653-preparation-heading,.v653-preparation-stage .v64-daily-participants { grid-column:1/-1; }
++  .v4-quest-shell .v653-preparation-summary { grid-template-columns:minmax(0,1fr); }
++}
++@media (max-width:1000px) { .v653-quick-check>div { grid-template-columns:minmax(0,1fr); } }
++@media (max-width:760px) {
++  .v653-preparation-stage .v4-lesson-preflight { padding:12px; }
++  .v4-quest-shell .v653-preparation-summary { grid-template-columns:minmax(0,1fr); }
++  .v4-quest-shell .v653-word-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
++  .v4-quest-shell .v653-word-grid .v64-word-flip { padding:7px; }
++  .v4-quest-shell .v6-pause-grid article { grid-template-columns:28px minmax(0,1fr); gap:8px; padding:12px; }
++  .v4-quest-shell .v6-pause-grid article>b { width:28px; height:28px; font-size:14px; border-radius:8px; }
++  .v653-question-box { padding:10px; }
++  .v4-quest-shell .v4-mission-focus { grid-template-columns:minmax(0,1fr); }
++  .v4-quest-shell .v4-mission-number { display:flex; align-items:center; justify-content:center; width:max-content; height:32px; gap:6px; padding:0 10px; font-size:16px; }
++  .v4-quest-shell .v653-quick-check { padding:12px; }
++}
++@media (max-width:400px) {
++  .v4-quest-shell .v653-preparation-summary .v64-preparation-materials { grid-template-columns:minmax(0,1fr); }
++  .v653-preparation-summary dl>div { grid-template-columns:minmax(0,1fr); gap:2px; }
++  .v653-answer-card { grid-template-columns:minmax(0,1fr); }
++  .v4-quest-shell .v653-answer-card .v4-quick-check-learner { display:flex; justify-content:start; gap:8px; border:0; padding:0; }
++}
++.v653-answer-card .v4-quick-check-answer button { border:1px solid var(--lesson-line); border-radius:12px; background:var(--lesson-soft); color:var(--lesson-ink); font-weight:800; cursor:pointer; }
++.v653-answer-card .v4-quick-check-answer button:disabled { cursor:default; }
++.v653-answer-card .v4-quick-check-answer>small { color:var(--lesson-muted,#526780); }
++.v4-quest-shell .v653-word-grid .v64-word-flip:focus-visible,
++.v653-answer-card button:focus-visible { outline:3px solid var(--lesson-accent,#075bc7); outline-offset:3px; }
++/* Give the name a full text lane instead of wrapping it beside a narrow avatar. */
++.v4-quest-shell .v653-answer-card { grid-template-columns:minmax(0,1fr); }
++.v4-quest-shell .v653-answer-card .v4-quick-check-learner { display:grid; grid-template-columns:52px minmax(0,1fr); grid-template-rows:auto auto; justify-items:start; gap:0 10px; border:0; padding:0; }
++.v653-answer-card .v4-quick-check-learner .avatar-renderer { grid-row:1/span 2; --avatar-renderer-size:52px; }
++.v653-answer-card .v4-quick-check-learner strong { align-self:end; }
++.v653-answer-card .v4-quick-check-learner>span { grid-column:2; align-self:start; }
++.dark .v4-quest-shell .v6-pause-grid .v653-question-box strong { background:transparent; color:var(--lesson-ink); }
++
++/* Mobile preparation shows the whole timetable at a glance. Native details
++ * retains every instruction and keyboard access; wide screens start expanded. */
++.v4-quest-shell .v653-preparation-summary>.v653-preparation-section { padding:0 16px; min-width:0; border:1px solid var(--lesson-line); border-radius:16px; background:var(--lesson-surface); color:var(--lesson-ink); }
++.v4-quest-shell .v653-preparation-summary>.v653-preparation-section>summary { min-height:54px; margin:0; padding:12px 0; font-size:17px; line-height:1.5; font-weight:800; }
++.v653-preparation-section>summary>span { display:inline-grid; place-items:center; width:28px; height:28px; margin-right:7px; border-radius:9px; font-size:12px; background:var(--lesson-soft); color:var(--lesson-accent,#075bc7); }
++.v653-preparation-section>div { padding-bottom:14px; }
++.v653-teaching-timeline>details+details { border-top:1px solid var(--lesson-line); }
++.v653-teaching-timeline>details>summary { position:relative; display:grid; grid-template-columns:68px minmax(0,1fr) 16px; align-items:center; gap:10px; min-height:60px; padding:12px 16px; cursor:pointer; list-style:none; }
++.v653-teaching-timeline>details>summary::-webkit-details-marker { display:none; }
++.v653-teaching-timeline>details>summary::after { content:'＋'; color:var(--lesson-accent,#075bc7); font-size:18px; font-weight:800; }
++.v653-teaching-timeline>details[open]>summary::after { content:'−'; }
++.v653-teaching-timeline>details>summary>b { padding:5px; border-radius:8px; font-size:14px; line-height:1.5; text-align:center; background:var(--lesson-soft); color:var(--lesson-accent,#075bc7); }
++.v653-teaching-timeline>details>summary>strong { color:var(--lesson-ink); font-size:16px; line-height:1.5; }
++.v653-teaching-timeline>details>div { padding:0 16px 14px; }
++.v653-teaching-timeline>details p { margin:0; color:var(--lesson-muted,#526780); font-size:14px; line-height:1.6; }
++.v653-teaching-timeline>details span { display:flex; gap:7px; align-items:start; margin-top:7px; font-size:13px; line-height:1.5; color:var(--lesson-ink); }
++.v653-teaching-timeline>details span svg { flex:none; width:16px; height:18px; }
++.v653-teaching-timeline>details>summary:focus-visible { outline:3px solid var(--lesson-accent,#075bc7); outline-offset:-3px; border-radius:8px; }
++@media (min-width:1180px) {
++  .v653-teaching-timeline>details>div { padding-left:94px; }
++  .v653-teaching-timeline>details p { font-size:16px; }
++}

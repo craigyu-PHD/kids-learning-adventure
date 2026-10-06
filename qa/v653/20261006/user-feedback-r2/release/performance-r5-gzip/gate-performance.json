@@ -1,0 +1,10 @@
+{
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "lighthouse": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/performance-r5-gzip/lighthouse.report.json",
+    "sha256": "205d2d34e0ae4aa8a0914a59bc0e7435bd27ae9191eb6cc246827d9a8364b83c"
+  }
+}

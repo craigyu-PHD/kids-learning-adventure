@@ -1,0 +1,40 @@
+{
+  "status": "DONE_DEPLOYED_BOUNDED_POSTCHECK_ACCEPTED",
+  "updatedAt": "2026-10-06T06:26:09.395558+00:00",
+  "publicUrl": "https://kids-learning-adventure-chi.vercel.app/",
+  "deploymentId": "dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2",
+  "version": "6.5.3",
+  "completion": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/release-completion-r5.json",
+    "sha256": "84fab3f50b656c87546e231867701d9dcd275da9621655611e17951adf684dfa"
+  },
+  "report": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/修復與發布報告.md",
+    "sha256": "1563e1886d62b4914d3d5ae77fed8cc632c56c2b1807ea43183686c1d4495fdb"
+  },
+  "stageRoot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5",
+  "branch": "main",
+  "head": "51ff808af4389dbe4f25c88aebb7f87e78aa073b",
+  "dirtyTrackedRowsPreserved": 118,
+  "remainingInThisBatch": [],
+  "externalLimitations": [
+    "T01 physical iPhone Safari/Android Chrome, child holdout audio and two independent adult annotators absent",
+    "Not all videos watched or all514 samples manually heard",
+    "Synthetic isolated families; no real family cloud or actual-price purchase verification in this round",
+    "HTTP441 and15HTTPS scenarios do not represent online all4438 artifacts or all1024/allskin matrix",
+    "Mixed32 body comparisons preserve runner output; missing baseline-before objects prevent independent reconstruction",
+    "Full historical git diff timed out; direct changed26-file diff check passed"
+  ],
+  "resume": "This batch is complete. Continue only on concrete new feedback or newly available external evidence; preserve accepted assets and immutable QA originals.",
+  "temporaryServersStopped": [
+    5189,
+    5190,
+    5192,
+    5193,
+    5194,
+    5195,
+    5196
+  ],
+  "original5178Preserved": true,
+  "commitPush": false
+}

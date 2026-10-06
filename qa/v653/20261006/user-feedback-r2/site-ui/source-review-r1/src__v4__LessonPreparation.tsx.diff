@@ -1,0 +1,73 @@
+--- published-r6/src/v4/LessonPreparation.tsx
++++ feedback/src/v4/LessonPreparation.tsx
+@@ -2,36 +2,45 @@
+ import { lessonInstructionText } from '../lessonInstructionText';
+ 
+ /** Present the existing lesson content before teaching; no progress writes. */
+-export default function LessonPreparation({ day, block, onInspect }: {
++export default function LessonPreparation({ day, block, onInspect, expanded }: {
+   day: CourseDay;
+   block: LessonBlock;
+   onInspect: (stage: number) => void;
++  expanded: boolean;
+ }) {
+-  return <section className="v64-preparation-summary" aria-label="本節目標、素材與分齡準備">
++  return <section className="v64-preparation-summary v653-preparation-summary" aria-label="本節目標、素材與分齡準備">
++    <article className="v653-preparation-goals">
++      <h3><span>01</span> 本節學習目標</h3>
++      <p className="v653-preparation-focus">{block.videoFocus}</p>
++      <dl>
++        <div><dt>本週目標</dt><dd>{day.bigIdea}</dd></div>
++        <div><dt>重點單字</dt><dd>{block.vocabulary.map(word => <span className="v653-word-chip" key={word}>{lessonInstructionText(word)}</span>)}</dd></div>
++        <div><dt>練習句型</dt><dd>{lessonInstructionText(block.sentence)}</dd></div>
++      </dl>
++    </article>
++    <details className="v653-preparation-section" open={expanded}>
++      <summary><span>02</span> 素材與準備</summary>
++      <div>
++      <div className="v64-preparation-materials">
++        <button type="button" onClick={() => onInspect(1)}><b>暖身影片 <span aria-hidden="true">↗</span></b><span>{block.warmup.title}</span></button>
++        <button type="button" onClick={() => onInspect(3)}><b>主課影片 <span aria-hidden="true">↗</span></b><span>{block.video.title}</span></button>
++        <button type="button" onClick={() => onInspect(2)}><b>單字圖卡與發音 <span aria-hidden="true">↗</span></b><span>{block.vocabulary.map(lessonInstructionText).join(' · ')}</span></button>
++      </div>
++      <p><b>帶課提醒：</b>{lessonInstructionText(block.caregiverTip)}</p>
++      <details className="v653-preparation-note"><summary>實作用品怎麼準備</summary><p>圖卡與影片已在本課備妥。找物或實作時，依任務說明選用家中現成物品，並留出做動作的空間。</p></details>
++      </div>
++    </details>
++    <details className="v653-preparation-section" open={expanded}>
++      <summary><span>03</span> 分齡帶法</summary>
++      <div>
++      <dl>
++        <div><dt>較小的孩子</dt><dd>{lessonInstructionText(block.younger)}</dd></div>
++        <div><dt>較大的孩子</dt><dd>{lessonInstructionText(block.older)}</dd></div>
++      </dl>
++      </div>
++    </details>
+     <article>
+-      <h3>本節要學什麼</h3>
+-      <p><b>教學焦點：</b>{block.videoFocus}</p>
+-      <p><b>本週目標：</b>{day.bigIdea}</p>
+-      <p><b>單字：</b>{block.vocabulary.map(lessonInstructionText).join('、')}</p>
+-      <p><b>句型：</b>{lessonInstructionText(block.sentence)}</p>
+-    </article>
+-    <article>
+-      <h3>素材與準備</h3>
+-      <div className="v64-preparation-materials">
+-        <button type="button" onClick={() => onInspect(1)}><b>查看暖身影片</b><span>{block.warmup.title}</span></button>
+-        <button type="button" onClick={() => onInspect(3)}><b>查看主課影片</b><span>{block.video.title}</span></button>
+-        <button type="button" onClick={() => onInspect(2)}><b>查看單字圖卡與發音</b><span>{block.vocabulary.map(lessonInstructionText).join(' · ')}</span></button>
+-      </div>
+-      <p><b>本課準備提醒：</b>{lessonInstructionText(block.caregiverTip)}</p>
+-      <p>圖卡與影片已在本課備妥。找物或實作時，依下方任務說明選用家中現成物品，並留出做動作的空間。</p>
+-    </article>
+-    <article>
+-      <h3>分齡帶法</h3>
+-      <p><b>較小的孩子：</b>{lessonInstructionText(block.younger)}</p>
+-      <p><b>較大的孩子：</b>{lessonInstructionText(block.older)}</p>
+-    </article>
+-    <article>
+-      <h3>完成標準先看</h3>
++      <h3><span>04</span> 任務完成標準</h3>
+       {block.missions.map(mission => <details key={mission.id}>
+         <summary>{mission.title}</summary>
+         <p>{lessonInstructionText(mission.prompt)}</p>

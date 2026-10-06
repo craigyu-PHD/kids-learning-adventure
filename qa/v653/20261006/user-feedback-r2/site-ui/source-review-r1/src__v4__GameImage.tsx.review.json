@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/GameImage.tsx",
+  "beforeSHA256": "cb2a72bc0a33f776284eb474d1ae2876379a583e37d41d5f788cd38b6124b045",
+  "afterSHA256": "f3066bee6612ab2dc44e1ae99acb9e4eb49e94741c1bedd1d2a3a559d6e8e312",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。僅 fallback 由同一作品 128px thumb 改 1024px master；錯誤處理與 alt 保持。Compiled 4-profile 清晰度與 label 實測仍待新 build。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__GameImage.tsx.diff",
+    "sha256": "22f145d9d6031aeb656540d622f9bdeb2914ed2e181e2f70d8409b992d5ce64e"
+  },
+  "observedAt": "2026-10-06T03:21:01.076189+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

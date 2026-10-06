@@ -1,0 +1,54 @@
+/* Shared action finish. Navigation, choices and destructive actions retain
+   their own semantics; these are the prominent next-step controls. */
+:root .v4-shell :is(.v4-lesson-content > button,
+  .v4-semester-actions > button:not(.history):not(.teaser),
+  .v4-shop-grid > article > button,
+  .v6-shop-feedback button,
+  .v64-load-more,.v6-clear-preview,.v6-reward-replay) {
+  min-height:46px;
+  border-radius:16px;
+  line-height:1.35;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  box-shadow:0 3px 10px color-mix(in srgb,var(--world-action,#315aca) 12%,transparent);
+  transition:box-shadow 160ms ease,filter 160ms ease,transform 160ms ease;
+}
+:root .v4-shell :is(.v4-lesson-content > button,
+  .v4-semester-actions > button:not(.history):not(.teaser),
+  .v4-shop-grid > article > button,
+  .v6-shop-feedback button,
+  .v64-load-more,.v6-clear-preview,.v6-reward-replay):not(:disabled):hover {
+  filter:brightness(1.04);
+  transform:translateY(-1px);
+  box-shadow:0 5px 14px color-mix(in srgb,var(--world-action,#315aca) 17%,transparent);
+}
+:root .v4-shell :is(.v4-lesson-content > button,
+  .v4-semester-actions > button:not(.history):not(.teaser),
+  .v4-shop-grid > article > button,
+  .v6-shop-feedback button,
+  .v64-load-more,.v6-clear-preview,.v6-reward-replay):not(:disabled):active {
+  transform:translateY(0);
+  filter:brightness(.97);
+}
+:root .v4-shell :is(.v4-lesson-content > button,
+  .v4-semester-actions > button,.v4-shop-grid > article > button,
+  .v6-shop-feedback button,.v64-load-more,.v6-clear-preview):focus-visible {
+  outline:3px solid var(--home-accent,#126ac7);
+  outline-offset:4px;
+}
+:root .v4-shell :is(.v4-lesson-content > button,.v4-shop-grid > article > button):disabled {
+  box-shadow:none;
+  transform:none;
+}
+@media (prefers-reduced-motion:reduce) {
+  :root .v4-shell :is(.v4-lesson-content > button,
+    .v4-semester-actions > button,.v4-shop-grid > article > button,
+    .v6-shop-feedback button,.v64-load-more,.v6-clear-preview,.v6-reward-replay) {
+    transition:none;
+  }
+  :root .v4-shell :is(.v4-lesson-content > button,
+    .v4-semester-actions > button,.v4-shop-grid > article > button,
+    .v6-shop-feedback button,.v64-load-more,.v6-clear-preview,.v6-reward-replay):hover {
+    transform:none;
+  }
+}

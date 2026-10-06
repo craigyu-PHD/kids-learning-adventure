@@ -1,0 +1,2637 @@
+{
+  "status": "PASS_SELECTED_SCOPE_PENDING_VISUAL",
+  "candidateId": "feedback-r2-a7960962-final-r5",
+  "phase": "matrix",
+  "catalogCount": 64,
+  "fullMatrixCount": 1024,
+  "selectedMatrixCount": 128,
+  "plannedCases": 1,
+  "shardCount": 1024,
+  "shardIndex": 1007,
+  "plannedOriginalMatrixIndices": [
+    1007
+  ],
+  "freshCasesOnly": true,
+  "cases": [
+    {
+      "item": {
+        "id": "robot-mecha",
+        "slot": "robot",
+        "name": "小光機甲裝甲"
+      },
+      "avatar": "younger-sister",
+      "profile": {
+        "id": "mobile-dark",
+        "width": 390,
+        "height": 844,
+        "theme": "dark"
+      },
+      "originalMatrixIndex": 1007,
+      "index": 0,
+      "compiled": {
+        "footer": "Version V6.5.3 · Updated 2026-10-06",
+        "scriptURLs": [
+          "http://127.0.0.1:5196/assets/index-DkO6mlaB.js"
+        ],
+        "manifestOverrides": false,
+        "cssOverrides": false
+      },
+      "ledgerBefore": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "robot-mecha"
+        ],
+        "equippedCosmetics": [],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-robot-mecha",
+            "childId": "child-1",
+            "itemId": "robot-mecha",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "catalog": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/robot/robot-mecha.webp",
+              "cls": "",
+              "visible": true,
+              "width": 1254,
+              "height": 1254,
+              "rect": {
+                "x": 210,
+                "y": 739.171875,
+                "width": 143,
+                "height": 105,
+                "top": 739.171875,
+                "right": 353,
+                "bottom": 844.171875,
+                "left": 210
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/robot/robot-mecha.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "domNatural": [
+              1254,
+              1254
+            ],
+            "pinnedFileSize": [
+              1254,
+              1254
+            ],
+            "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "http": {
+              "status": 200,
+              "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+              "bytes": 962536
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "status": 200,
+            "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "bytes": 962536,
+            "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/shop-catalog-actual-size.png",
+        "screenshotSHA256": "61a7943eedf1a2a929503b6c6b7bb9fe10398cc2d1b1beffaf00897e06aeec07",
+        "rect": {
+          "x": 210,
+          "y": 739.171875,
+          "width": 143,
+          "height": 105
+        }
+      },
+      "trial": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/robot/robot-mecha.webp",
+              "cls": "v63-robot-art",
+              "visible": true,
+              "width": 1254,
+              "height": 1254,
+              "rect": {
+                "x": 53,
+                "y": 114.59375,
+                "width": 284,
+                "height": 240,
+                "top": 114.59375,
+                "right": 337,
+                "bottom": 354.59375,
+                "left": 53
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 66.5625,
+                "y": 448.09375,
+                "width": 54.84375,
+                "height": 82.28125,
+                "top": 448.09375,
+                "right": 121.40625,
+                "bottom": 530.375,
+                "left": 66.5625
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/robot/robot-mecha.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "domNatural": [
+              1254,
+              1254
+            ],
+            "pinnedFileSize": [
+              1254,
+              1254
+            ],
+            "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "http": {
+              "status": 200,
+              "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+              "bytes": 962536
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          },
+          {
+            "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "status": 200,
+            "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "bytes": 962536,
+            "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/shop-trial.png",
+        "screenshotSHA256": "ad94328502190cd6ec9f02552d1076290c84ab07d833d237739e632c7ed0795c",
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 598.625
+        }
+      },
+      "cancelPreservesProgress": true,
+      "ledgerAfterEquip": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "robot-mecha"
+        ],
+        "equippedCosmetics": [
+          "robot-mecha"
+        ],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-robot-mecha",
+            "childId": "child-1",
+            "itemId": "robot-mecha",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [
+          {
+            "id": "avatar-equip:child-1:robot-mecha:503c8453-ad50-4fd7-b825-f13c5f86356e",
+            "childId": "child-1",
+            "itemId": "robot-mecha",
+            "slot": "robot",
+            "action": "equip",
+            "createdAt": "2026-10-06T04:59:00.128Z"
+          }
+        ],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "equipped": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world/robot/robot-mecha.webp",
+              "cls": "v63-robot-art",
+              "visible": true,
+              "width": 1254,
+              "height": 1254,
+              "rect": {
+                "x": 53,
+                "y": 118.1875,
+                "width": 284,
+                "height": 240,
+                "top": 118.1875,
+                "right": 337,
+                "bottom": 358.1875,
+                "left": 53
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 66.5625,
+                "y": 451.6875,
+                "width": 54.84375,
+                "height": 82.28125,
+                "top": 451.6875,
+                "right": 121.40625,
+                "bottom": 533.96875,
+                "left": 66.5625
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world/robot/robot-mecha.webp",
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "domNatural": [
+              1254,
+              1254
+            ],
+            "pinnedFileSize": [
+              1254,
+              1254
+            ],
+            "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "http": {
+              "status": 200,
+              "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+              "bytes": 962536
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          },
+          {
+            "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "status": 200,
+            "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "bytes": 962536,
+            "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/shop-equipped.png",
+        "screenshotSHA256": "9eb57322ed29c10bff054c372585b5255d17459d48de8731284e2183920aa149",
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 602.21875
+        }
+      },
+      "home": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 810.390625,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 810.390625,
+                "right": 111.703125,
+                "bottom": 887.53125,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-player.png",
+        "screenshotSHA256": "65f455f8c58ffabac009085fc01e6b1ecfa8c13376bd1c69b69bf9c281176f26",
+        "rect": {
+          "x": 32,
+          "y": 728.546875,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 407.546875,
+            "width": 90,
+            "height": 90,
+            "top": 407.546875,
+            "right": 131,
+            "bottom": 497.546875,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 420.390625,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 420.390625,
+            "right": 111.703125,
+            "bottom": 497.53125,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 420.39453125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              45,
+              5,
+              164,
+              272
+            ],
+            "paintedAlphaWidth": 31.870849609375,
+            "paintedAlphaHeight": 71.508544921875,
+            "normalizedBottom": 0.9444444444444444,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "http": {
+                "status": 200,
+                "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+                "bytes": 33380
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "equipped": {
+          "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 737.546875,
+            "width": 90,
+            "height": 90,
+            "top": 737.546875,
+            "right": 131,
+            "bottom": 827.546875,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 750.390625,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 750.390625,
+            "right": 111.703125,
+            "bottom": 827.53125,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 750.39453125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              45,
+              5,
+              164,
+              272
+            ],
+            "paintedAlphaWidth": 31.870849609375,
+            "paintedAlphaHeight": 71.508544921875,
+            "normalizedBottom": 0.9444444444444444,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "http": {
+                "status": 200,
+                "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+                "bytes": 33380
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "homeWorld": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+              "cls": "v6-ai-robot-art",
+              "visible": true,
+              "width": 384,
+              "height": 384,
+              "rect": {
+                "x": 30,
+                "y": 785.5625,
+                "width": 54,
+                "height": 58,
+                "top": 785.5625,
+                "right": 84,
+                "bottom": 843.5625,
+                "left": 30
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/robot/robot-mecha-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "domNatural": [
+              384,
+              384
+            ],
+            "pinnedFileSize": [
+              384,
+              384
+            ],
+            "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+            "http": {
+              "status": 200,
+              "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+              "bytes": 125092
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "status": 200,
+            "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+            "bytes": 125092,
+            "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-world-inline.png",
+        "screenshotSHA256": "5d153d7fccb0b54b0814cdea0bf7d9f10b3b6eaf780b443898932fd566c348c6",
+        "rect": {
+          "x": 30,
+          "y": 785.5625,
+          "width": 54,
+          "height": 58
+        }
+      },
+      "homeReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 651.390625,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 651.390625,
+                "right": 111.703125,
+                "bottom": 728.53125,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-reload.png",
+        "screenshotSHA256": "65f455f8c58ffabac009085fc01e6b1ecfa8c13376bd1c69b69bf9c281176f26",
+        "rect": {
+          "x": 32,
+          "y": 629.546875,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeWorldReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+              "cls": "v6-ai-robot-art",
+              "visible": true,
+              "width": 384,
+              "height": 384,
+              "rect": {
+                "x": 30,
+                "y": 785.5625,
+                "width": 54,
+                "height": 58,
+                "top": 785.5625,
+                "right": 84,
+                "bottom": 843.5625,
+                "left": 30
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/world-display/robot/robot-mecha-384.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "domNatural": [
+              384,
+              384
+            ],
+            "pinnedFileSize": [
+              384,
+              384
+            ],
+            "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+            "http": {
+              "status": 200,
+              "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+              "bytes": 125092
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "status": 200,
+            "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+            "bytes": 125092,
+            "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-world-reload.png",
+        "screenshotSHA256": "5d153d7fccb0b54b0814cdea0bf7d9f10b3b6eaf780b443898932fd566c348c6",
+        "rect": {
+          "x": 30,
+          "y": 785.5625,
+          "width": 54,
+          "height": 58
+        }
+      },
+      "achievement": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 54.28125,
+                "y": 488.8125,
+                "width": 59.421875,
+                "height": 89.140625,
+                "top": 488.8125,
+                "right": 113.703125,
+                "bottom": 577.953125,
+                "left": 54.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "http": {
+              "status": 200,
+              "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+              "bytes": 33380
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380,
+            "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/achievements-avatar.png",
+        "screenshotSHA256": "8b402e6ce264d433016eb3a56ec9652a3bfe71bc2d708b4b5c1f9aff42fc254d",
+        "rect": {
+          "x": 32,
+          "y": 473.96875,
+          "width": 104,
+          "height": 104
+        }
+      },
+      "exactCandidatePaths": {
+        "trial": [
+          "/assets/v6.4/world/robot/robot-mecha.webp"
+        ],
+        "homeWorld": [
+          "/assets/v6.4/world-display/robot/robot-mecha-384.webp"
+        ],
+        "homeWorldReload": [
+          "/assets/v6.4/world-display/robot/robot-mecha-384.webp"
+        ]
+      },
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "equipmentTransactions": [
+        {
+          "id": "avatar-equip:child-1:robot-mecha:503c8453-ad50-4fd7-b825-f13c5f86356e",
+          "childId": "child-1",
+          "itemId": "robot-mecha",
+          "slot": "robot",
+          "action": "equip",
+          "createdAt": "2026-10-06T04:59:00.128Z"
+        },
+        {
+          "id": "avatar-equip:child-1:robot-mecha:fbfab364-a3c4-468e-8d0d-ae6721f41e2c",
+          "childId": "child-1",
+          "itemId": "robot-mecha",
+          "slot": "robot",
+          "action": "unequip",
+          "createdAt": "2026-10-06T04:59:02.727Z"
+        }
+      ],
+      "ledgerScope": "one synthetic cost-zero owned item; actual UI equip + unequip append-only; no real purchase assertion",
+      "visualReview": "NOT_PERFORMED",
+      "contextClosed": true
+    }
+  ],
+  "controls": [],
+  "fallback": [],
+  "browserClosed": true,
+  "visualReview": "NOT_PERFORMED",
+  "scope": "Synthetic preowned cost-zero fixture; real trial/cancel/equip/home/reload/achievement/unequip; no real purchase, cloud auth, or earned rewards",
+  "negativeScope": "Missing asset fail-close plus exact browser byte admission; swapped/stale/wrong-role rejection belongs to QA, not runtime authenticity enforcement",
+  "runnerSHA256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "id": "desktop-light",
+      "width": 1440,
+      "height": 1050,
+      "theme": "light"
+    },
+    {
+      "id": "desktop-dark",
+      "width": 1440,
+      "height": 1050,
+      "theme": "dark"
+    },
+    {
+      "id": "mobile-light",
+      "width": 390,
+      "height": 844,
+      "theme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "theme": "dark"
+    }
+  ],
+  "roles": [
+    "brother",
+    "younger",
+    "sister",
+    "younger-sister"
+  ],
+  "items": [
+    "ship-scout",
+    "ship-comet",
+    "ship-legend",
+    "room-starlab",
+    "room-ocean",
+    "room-legend",
+    "robot-sky",
+    "robot-mecha"
+  ],
+  "noExtraDecode": true,
+  "sourcePinsSHA256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+  "artifactPinsSHA256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+  "manifestPins": {
+    "avatar": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "world": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "harnessDependencies": {
+    "scripts/qa_v653_full_shop_acceptance.py": "2cc9a9758c2f62c3c4cd04c37c89a63beb8e7793460f205bcd8492e6aaee064f",
+    "scripts/qa_v653_release_smoke.py": "cf12df2f42db0c28c0c8f6c0255cb4fa202318a0219a0549c6103d06526d06d9",
+    "scripts/qa_v653_shop_coverage.py": "338e0a268e615f72a3b24bdcb7bab982b67f9835543b7c9359ef11cb9a0d23ee"
+  },
+  "preservedRunnerDependencies": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run.py": "6454034c5f095c10cdae43b91b00e2b95b0833d626264d8c562905b696cd2888"
+  },
+  "densityCorrection": "width srcset: descriptor equals physical width; positive density-corrected DOM and <=1px aspect tolerance; no decode",
+  "compiledDocuments": {
+    "/": {
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "bytes": 988,
+      "status": 200
+    }
+  },
+  "compiledAssets": {
+    "/assets/index-KC1rU43V.css": {
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "bytes": 493690,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-KC1rU43V.css"
+    },
+    "/assets/index-DkO6mlaB.js": {
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "bytes": 1434192,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-DkO6mlaB.js"
+    },
+    "/assets/SecondaryViews-Bd69SkOV.js": {
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "bytes": 43717,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-Bd69SkOV.js"
+    },
+    "/assets/x-CwjU7BFr.js": {
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "bytes": 143,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/x-CwjU7BFr.js"
+    },
+    "/assets/learningAnalytics-BiVMp2Ug.js": {
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "bytes": 2617,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/learningAnalytics-BiVMp2Ug.js"
+    },
+    "/assets/SecondaryViews-aPwGWhRg.css": {
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "bytes": 30904,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-aPwGWhRg.css"
+    }
+  },
+  "networkErrors": [],
+  "sourceRequests": [],
+  "servedAssets": {
+    "/assets/v6.4/world/robot/robot-mecha.webp": {
+      "status": 200,
+      "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+      "bytes": 962536,
+      "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+    },
+    "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp": {
+      "status": 200,
+      "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+      "bytes": 33380,
+      "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+    },
+    "/assets/v6.4/world-display/robot/robot-mecha-384.webp": {
+      "status": 200,
+      "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+      "bytes": 125092,
+      "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1"
+    }
+  },
+  "apiBlocks": [],
+  "captures": [
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "cls": "",
+            "visible": true,
+            "width": 1254,
+            "height": 1254,
+            "rect": {
+              "x": 210,
+              "y": 739.171875,
+              "width": 143,
+              "height": 105,
+              "top": 739.171875,
+              "right": 353,
+              "bottom": 844.171875,
+              "left": 210
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/robot/robot-mecha.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+          "domNatural": [
+            1254,
+            1254
+          ],
+          "pinnedFileSize": [
+            1254,
+            1254
+          ],
+          "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+          "http": {
+            "status": 200,
+            "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "bytes": 962536
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+          "status": 200,
+          "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+          "bytes": 962536,
+          "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/shop-catalog-actual-size.png",
+      "screenshotSHA256": "61a7943eedf1a2a929503b6c6b7bb9fe10398cc2d1b1beffaf00897e06aeec07",
+      "rect": {
+        "x": 210,
+        "y": 739.171875,
+        "width": 143,
+        "height": 105
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "cls": "v63-robot-art",
+            "visible": true,
+            "width": 1254,
+            "height": 1254,
+            "rect": {
+              "x": 53,
+              "y": 114.59375,
+              "width": 284,
+              "height": 240,
+              "top": 114.59375,
+              "right": 337,
+              "bottom": 354.59375,
+              "left": 53
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 66.5625,
+              "y": 448.09375,
+              "width": 54.84375,
+              "height": 82.28125,
+              "top": 448.09375,
+              "right": 121.40625,
+              "bottom": 530.375,
+              "left": 66.5625
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/robot/robot-mecha.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+          "domNatural": [
+            1254,
+            1254
+          ],
+          "pinnedFileSize": [
+            1254,
+            1254
+          ],
+          "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+          "http": {
+            "status": 200,
+            "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "bytes": 962536
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        },
+        {
+          "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+          "status": 200,
+          "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+          "bytes": 962536,
+          "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/shop-trial.png",
+      "screenshotSHA256": "ad94328502190cd6ec9f02552d1076290c84ab07d833d237739e632c7ed0795c",
+      "rect": {
+        "x": 26,
+        "y": -0.234375,
+        "width": 338,
+        "height": 598.625
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world/robot/robot-mecha.webp",
+            "cls": "v63-robot-art",
+            "visible": true,
+            "width": 1254,
+            "height": 1254,
+            "rect": {
+              "x": 53,
+              "y": 118.1875,
+              "width": 284,
+              "height": 240,
+              "top": 118.1875,
+              "right": 337,
+              "bottom": 358.1875,
+              "left": 53
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 66.5625,
+              "y": 451.6875,
+              "width": 54.84375,
+              "height": 82.28125,
+              "top": 451.6875,
+              "right": 121.40625,
+              "bottom": 533.96875,
+              "left": 66.5625
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world/robot/robot-mecha.webp",
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+          "domNatural": [
+            1254,
+            1254
+          ],
+          "pinnedFileSize": [
+            1254,
+            1254
+          ],
+          "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+          "http": {
+            "status": 200,
+            "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+            "bytes": 962536
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        },
+        {
+          "path": "/assets/v6.4/world/robot/robot-mecha.webp",
+          "status": 200,
+          "sha256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324",
+          "bytes": 962536,
+          "expectedSHA256": "abf0345c0e79f692f340bc20406748fc4e52525920c00628ed6f32a38f92c324"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/shop-equipped.png",
+      "screenshotSHA256": "9eb57322ed29c10bff054c372585b5255d17459d48de8731284e2183920aa149",
+      "rect": {
+        "x": 26,
+        "y": -0.234375,
+        "width": 338,
+        "height": 602.21875
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 810.390625,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 810.390625,
+              "right": 111.703125,
+              "bottom": 887.53125,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-player.png",
+      "screenshotSHA256": "65f455f8c58ffabac009085fc01e6b1ecfa8c13376bd1c69b69bf9c281176f26",
+      "rect": {
+        "x": 32,
+        "y": 728.546875,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "cls": "v6-ai-robot-art",
+            "visible": true,
+            "width": 384,
+            "height": 384,
+            "rect": {
+              "x": 30,
+              "y": 785.5625,
+              "width": 54,
+              "height": 58,
+              "top": 785.5625,
+              "right": 84,
+              "bottom": 843.5625,
+              "left": 30
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/robot/robot-mecha-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+          "domNatural": [
+            384,
+            384
+          ],
+          "pinnedFileSize": [
+            384,
+            384
+          ],
+          "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+          "http": {
+            "status": 200,
+            "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+            "bytes": 125092
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+          "status": 200,
+          "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+          "bytes": 125092,
+          "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-world-inline.png",
+      "screenshotSHA256": "5d153d7fccb0b54b0814cdea0bf7d9f10b3b6eaf780b443898932fd566c348c6",
+      "rect": {
+        "x": 30,
+        "y": 785.5625,
+        "width": 54,
+        "height": 58
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 651.390625,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 651.390625,
+              "right": 111.703125,
+              "bottom": 728.53125,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-reload.png",
+      "screenshotSHA256": "65f455f8c58ffabac009085fc01e6b1ecfa8c13376bd1c69b69bf9c281176f26",
+      "rect": {
+        "x": 32,
+        "y": 629.546875,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "cls": "v6-ai-robot-art",
+            "visible": true,
+            "width": 384,
+            "height": 384,
+            "rect": {
+              "x": 30,
+              "y": 785.5625,
+              "width": 54,
+              "height": 58,
+              "top": 785.5625,
+              "right": 84,
+              "bottom": 843.5625,
+              "left": 30
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/world-display/robot/robot-mecha-384.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+          "domNatural": [
+            384,
+            384
+          ],
+          "pinnedFileSize": [
+            384,
+            384
+          ],
+          "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+          "http": {
+            "status": 200,
+            "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+            "bytes": 125092
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+          "status": 200,
+          "sha256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1",
+          "bytes": 125092,
+          "expectedSHA256": "b260ecd2585ce87b3767a265be75cc43869432c100052a3b697a799183b243a1"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/home-world-reload.png",
+      "screenshotSHA256": "5d153d7fccb0b54b0814cdea0bf7d9f10b3b6eaf780b443898932fd566c348c6",
+      "rect": {
+        "x": 30,
+        "y": 785.5625,
+        "width": 54,
+        "height": 58
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 54.28125,
+              "y": 488.8125,
+              "width": 59.421875,
+              "height": 89.140625,
+              "top": 488.8125,
+              "right": 113.703125,
+              "bottom": 577.953125,
+              "left": 54.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "http": {
+            "status": 200,
+            "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+            "bytes": 33380
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3",
+          "bytes": 33380,
+          "expectedSHA256": "1d79a1a16e158fe3d210e60678d20d1839bb46c699223cc25a2c0fccf2d652c3"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry1007-timed/mobile-dark/younger-sister/robot-mecha/achievements-avatar.png",
+      "screenshotSHA256": "8b402e6ce264d433016eb3a56ec9652a3bfe71bc2d708b4b5c1f9aff42fc254d",
+      "rect": {
+        "x": 32,
+        "y": 473.96875,
+        "width": 104,
+        "height": 104
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 376.859375,
+          "width": 90,
+          "height": 90,
+          "top": 376.859375,
+          "right": 131,
+          "bottom": 466.859375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 407.546875,
+          "width": 90,
+          "height": 90,
+          "top": 407.546875,
+          "right": 131,
+          "bottom": 497.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 531.21875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 93.796875,
+          "width": 298,
+          "height": 303.828125,
+          "top": 93.796875,
+          "right": 344,
+          "bottom": 397.625,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 210,
+          "y": 739.171875,
+          "width": 143,
+          "height": 105,
+          "top": 739.171875,
+          "right": 353,
+          "bottom": 844.171875,
+          "left": 210
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+            "complete": true,
+            "natural": [
+              1254,
+              1254
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 598.625,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 598.390625,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+            "complete": true,
+            "natural": [
+              1254,
+              1254
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 531.21875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.234375,
+          "width": 338,
+          "height": 602.21875,
+          "top": -0.234375,
+          "right": 364,
+          "bottom": 601.984375,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world/robot/robot-mecha.webp",
+            "complete": true,
+            "natural": [
+              1254,
+              1254
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.859375,
+          "width": 260,
+          "height": 115,
+          "top": 728.859375,
+          "right": 292,
+          "bottom": 843.859375,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 737.546875,
+          "width": 90,
+          "height": 90,
+          "top": 737.546875,
+          "right": 131,
+          "bottom": 827.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 30,
+          "y": 785.5625,
+          "width": 54,
+          "height": 58,
+          "top": 785.5625,
+          "right": 84,
+          "bottom": 843.5625,
+          "left": 30
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              384
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 629.546875,
+          "width": 260,
+          "height": 115,
+          "top": 629.546875,
+          "right": 292,
+          "bottom": 744.546875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 30,
+          "y": 785.5625,
+          "width": 54,
+          "height": 58,
+          "top": 785.5625,
+          "right": 84,
+          "bottom": 843.5625,
+          "left": 30
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/world-display/robot/robot-mecha-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              384
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 473.96875,
+          "width": 104,
+          "height": 104,
+          "top": 473.96875,
+          "right": 136,
+          "bottom": 577.96875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "robot-mecha",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.859375,
+          "width": 90,
+          "height": 90,
+          "top": 753.859375,
+          "right": 131,
+          "bottom": 843.859375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.546875,
+          "width": 90,
+          "height": 90,
+          "top": 753.546875,
+          "right": 131,
+          "bottom": 843.546875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger-sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    }
+  ]
+}

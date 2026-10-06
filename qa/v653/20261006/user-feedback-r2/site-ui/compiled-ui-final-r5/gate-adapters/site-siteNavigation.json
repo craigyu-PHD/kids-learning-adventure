@@ -1,0 +1,246 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/served-artifacts.json",
+    "sha256": "53e80283c26487846748372e363fe84bc8494ea92a633c36e1993d40d43b3d15"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_site.py",
+    "sha256": "e2e5da8c52dc6226d96bd62ed961c27d718ba5e546bc003ed7e8c82b70e59e7d"
+  },
+  "observedAt": "2026-10-06T04:27:17.105235+00:00",
+  "group": "siteNavigation",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "profile": "390-light"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/navigation/0/width",
+            "/navigation/0/theme"
+          ]
+        }
+      },
+      "checks": {
+        "allRoutes": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/0/allRoutes",
+          "equals": true
+        },
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/0/healthy",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/navigation/1/width",
+            "/navigation/1/theme"
+          ]
+        }
+      },
+      "checks": {
+        "allRoutes": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/1/allRoutes",
+          "equals": true
+        },
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/1/healthy",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-light"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/navigation/2/width",
+            "/navigation/2/theme"
+          ]
+        }
+      },
+      "checks": {
+        "allRoutes": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/2/allRoutes",
+          "equals": true
+        },
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/2/healthy",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "820-dark"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/navigation/3/width",
+            "/navigation/3/theme"
+          ]
+        }
+      },
+      "checks": {
+        "allRoutes": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/3/allRoutes",
+          "equals": true
+        },
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/3/healthy",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/navigation/4/width",
+            "/navigation/4/theme"
+          ]
+        }
+      },
+      "checks": {
+        "allRoutes": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/4/allRoutes",
+          "equals": true
+        },
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/4/healthy",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+        "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+      },
+      "bindings": {
+        "profile": {
+          "transform": "join",
+          "separator": "-",
+          "pointers": [
+            "/navigation/5/width",
+            "/navigation/5/theme"
+          ]
+        }
+      },
+      "checks": {
+        "allRoutes": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/5/allRoutes",
+          "equals": true
+        },
+        "healthy": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+            "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+          },
+          "pointer": "/navigation/5/healthy",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "path": "src/styles/components/lesson.css",
+  "beforeSHA256": "a7fa499aa296302d6f5a16b95aa9cc3f945d3f493348f27b14d896e56547059f",
+  "afterSHA256": "d9c4e0a4376c5d8efe8f54ce95a0f7fd5feff59086ded19b68ffd1c6458d539a",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取新增 154 行。使用範圍 selector、自然高度與 grid minmax，未加 !important。手機資訊透過 details 收起而非截字，答案學習者另給完整文字欄；新版 selector 不再繼承舊 article 固定版面。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__components__lesson.css.diff",
+    "sha256": "997c96f7a56e6baf37b399fbe879c4db72366650529c393d991407c15d6bc045"
+  },
+  "observedAt": "2026-10-06T03:21:01.069542+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

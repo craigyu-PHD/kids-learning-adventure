@@ -1,0 +1,12 @@
+{
+  "path": "src/components/AvatarRenderer.tsx",
+  "beforeSHA256": "5a14fd21a264ad9fc5bf1740290bcb5f5b2f91cdd7b8ae486c378294933bdd8e",
+  "afterSHA256": "6fafde362751a83abebeb9949d0b1933934b3d44a2c4c46e95a4feb21fe05765",
+  "decision": "ACCEPT",
+  "reviewer": "root-code-review",
+  "reason": "Reviewed actual published-r6 diff. Supplies selected hairstyle to existing registry; detects an unavailable selected earwear pair via effect and existing preview error callback. Applies the decoded same-key headwear mask to earwear split-back only, preserving front cups, backpack layering and existing rig body geometry. No family state, rewards, curriculum, body scaling or avatar fallback changes. Compiled lifecycle, missing-pair and body-size checks remain required.",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/root-source-reviews/AvatarRenderer.tsx.diff",
+    "sha256": "8a286fafb4d7a40256f129df1d533350d4a60c85bfce7f34cbb1c3ad92da9a51"
+  }
+}

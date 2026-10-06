@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/LessonQuest.tsx",
+  "beforeSHA256": "b9aeb4e419e1590575a8c36f87bb427beb9a4ba8709903bada4a78285cfa02e0",
+  "afterSHA256": "d12286e97f66a09fc041ec9db5424d0d02f8b4ee3552f74d5ea09ff0517e1af6",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。備課時段與內容來自原教案；小螢幕第一時段展開，其餘可操作。字卡兩面共用容器，提問與答案欄分層，未改 mission/reward callbacks 或課程 ID。block/stage cleanup 使用共用取消語音。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__LessonQuest.tsx.diff",
+    "sha256": "0526b4293e336b39c813d9843987512c4c43d89d7756c4066b02a2cce643b870"
+  },
+  "observedAt": "2026-10-06T03:21:01.068758+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

@@ -1,0 +1,40 @@
+--- published-r6/src/styles/components/speaking.css
++++ feedback/src/styles/components/speaking.css
+@@ -89,3 +89,37 @@
+   .speaking-practice-recording { grid-template-columns:1fr; }
+   .speaking-practice-learners button { width:100%; }
+ }
++
++/* Keep one learner's recording, confirmation and feedback together. */
++.v4-quest-shell .speaking-practice { margin-top:0; padding:16px; border-radius:18px; }
++.v4-quest-shell .speaking-practice>header { flex-wrap:wrap; gap:6px 16px; }
++.v4-quest-shell .speaking-practice>p { margin:10px 0; font-size:14px; line-height:1.6; max-width:none; }
++.v4-quest-shell .speaking-practice-controls { gap:8px; }
++.v4-quest-shell .speaking-practice-learners { grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:12px; margin-top:12px; }
++.v4-quest-shell .speaking-practice-learners article { grid-template-columns:minmax(0,1fr); gap:10px; min-height:0; padding:14px; align-content:start; }
++.v4-quest-shell .speaking-practice-child-copy { display:flex; flex-wrap:wrap; gap:5px 12px; align-items:baseline; }
++.v4-quest-shell .speaking-practice-actions { grid-column:1; justify-content:flex-start; gap:8px; }
++.v4-quest-shell .speaking-practice-actions>button { flex:1 1 140px; min-width:0; padding:10px 12px; min-height:48px; border-radius:12px; box-shadow:none; font-size:14px; }
++.v4-quest-shell .speaking-practice-recording { min-width:0; grid-template-columns:minmax(0,1fr); }
++.v4-quest-shell .speaking-practice-recording audio { min-width:0; max-width:100%; }
++.v4-quest-shell .speaking-practice-recording>div { min-width:0; }
++.v4-quest-shell .speaking-practice footer { margin-top:12px; padding-top:12px; border-top:1px solid var(--lesson-line,#cbddea); }
++.dark .v4-quest-shell .speaking-practice h3,
++.dark .v4-quest-shell .speaking-practice-child-copy strong { color:var(--night-text); }
++.dark .v4-quest-shell .speaking-practice-learners article>small,
++.dark .v4-quest-shell .speaking-practice-recording { background:var(--night-control); border-color:var(--night-border); color:var(--night-text); }
++.dark .v4-quest-shell .speaking-practice-recording>div { color:var(--night-muted); }
++.dark .v4-quest-shell .speaking-practice-actions .speech-recognition-optional { background:#334561; border-color:#718cad; color:#d7edff; }
++.dark .v4-quest-shell .speaking-practice-actions .recording { background:#ad263b; color:#fff; }
++@media (prefers-reduced-motion:reduce) {
++  .v4-quest-shell .speaking-practice button:hover { transform:none; }
++}
++@media (min-width:761px) {
++  .v4-quest-shell .speaking-practice-learners { grid-template-columns:repeat(2,minmax(0,1fr)); }
++}
++@media (max-width:760px) {
++  .v4-quest-shell .speaking-practice-learners { grid-template-columns:minmax(0,1fr); }
++}
++/* Optional recognition remains visually secondary to the recording action. */
++.v4-quest-shell .speaking-practice .speaking-practice-actions .speech-recognition-optional { background:#edf5ff; color:#234866; border:1px solid #a7cdec; box-shadow:none; }
++.dark .v4-quest-shell .speaking-practice .speaking-practice-actions .speech-recognition-optional { background:#334561; color:#d7edff; border-color:#718cad; }

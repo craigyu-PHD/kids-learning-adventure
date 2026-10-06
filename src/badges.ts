@@ -1,4 +1,4 @@
-import { curriculum } from './data/curriculum';
+import { allPublishedCourseDays as curriculum } from './semesters';
 import type { ChildProgress } from './types';
 
 export type BadgeCategory = 'streak' | 'speaking' | 'listening' | 'learning' | 'adventure' | 'special';
@@ -45,8 +45,8 @@ const missionKinds = new Map<string, string>();
 const dayTopics = new Map<string, Set<string>>();
 const dayIndexById = new Map<string, number>();
 
-for (const day of curriculum) {
-  dayIndexById.set(day.id, day.index);
+for (const [index, day] of curriculum.entries()) {
+  dayIndexById.set(day.id, index + 1);
   const topics = new Set<string>();
   for (const block of day.blocks) {
     for (const topic of block.requiredVideoTopics ?? []) topics.add(topic);

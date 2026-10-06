@@ -1,0 +1,1544 @@
+{
+  "status": "PASS_STATIC_BYTES_DIMENSIONS_RETAINED_FRONT_AND_CATALOG_METADATA",
+  "assetCount": 170,
+  "totalNewAssetBytes": 7712494,
+  "retainedPairs": 128,
+  "retainedOriginalMetadata": [
+    "story-headphones",
+    "phones-racer",
+    "phones-ai",
+    "phones-legend"
+  ],
+  "assets": [
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
+      "bytes": 37664,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
+      "bytes": 17950,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
+      "bytes": 39766,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
+      "bytes": 44858,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
+      "bytes": 20692,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
+      "bytes": 50216,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
+      "bytes": 33942,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
+      "bytes": 16186,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
+      "bytes": 35740,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
+      "bytes": 37724,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
+      "bytes": 18286,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
+      "bytes": 39952,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--outfit-racer.webp",
+      "bytes": 33916,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--outfit-racer.webp",
+      "bytes": 16646,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--outfit-racer.webp",
+      "bytes": 36116,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--outfit-cadet.webp",
+      "bytes": 44766,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-cadet.webp",
+      "bytes": 20828,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 50598,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--outfit-legend.webp",
+      "bytes": 44646,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-legend.webp",
+      "bytes": 20938,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--outfit-legend.webp",
+      "bytes": 50522,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--outfit-mecha.webp",
+      "bytes": 34962,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--outfit-mecha.webp",
+      "bytes": 16914,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 36736,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--outfit-racer.webp",
+      "bytes": 36542,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--outfit-racer.webp",
+      "bytes": 17722,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 38586,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
+      "bytes": 20820,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
+      "bytes": 24120,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
+      "bytes": 18684,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+      "bytes": 20784,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--outfit-racer.webp",
+      "bytes": 18954,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-cadet.webp",
+      "bytes": 24262,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-legend.webp",
+      "bytes": 24368,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--outfit-mecha.webp",
+      "bytes": 19108,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--outfit-racer.webp",
+      "bytes": 20310,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
+      "bytes": 19306,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
+      "bytes": 45964,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
+      "bytes": 22834,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
+      "bytes": 58238,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
+      "bytes": 17806,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
+      "bytes": 41382,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
+      "bytes": 19930,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
+      "bytes": 45488,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--outfit-racer.webp",
+      "bytes": 17986,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--outfit-racer.webp",
+      "bytes": 41426,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-cadet.webp",
+      "bytes": 22754,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 58562,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-legend.webp",
+      "bytes": 22948,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--outfit-legend.webp",
+      "bytes": 58578,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--outfit-mecha.webp",
+      "bytes": 18586,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 42348,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--outfit-racer.webp",
+      "bytes": 19264,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 44490,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
+      "bytes": 60812,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp",
+      "bytes": 110,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
+      "bytes": 132384,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp",
+      "bytes": 1220,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
+      "bytes": 129954,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp",
+      "bytes": 1890,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
+      "bytes": 145868,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp",
+      "bytes": 720,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer.webp",
+      "bytes": 52868,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer--body-mask.webp",
+      "bytes": 110,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet.webp",
+      "bytes": 132204,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet--body-mask.webp",
+      "bytes": 1834,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend.webp",
+      "bytes": 132870,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend--body-mask.webp",
+      "bytes": 1800,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha.webp",
+      "bytes": 133624,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha--body-mask.webp",
+      "bytes": 4208,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer.webp",
+      "bytes": 139942,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer--body-mask.webp",
+      "bytes": 2982,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
+      "bytes": 62888,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
+      "bytes": 614,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp",
+      "bytes": 590,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
+      "bytes": 76566,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
+      "bytes": 644,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp",
+      "bytes": 616,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
+      "bytes": 57598,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
+      "bytes": 576,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp",
+      "bytes": 548,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
+      "bytes": 60904,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
+      "bytes": 596,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp",
+      "bytes": 570,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer.webp",
+      "bytes": 56054,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--under-mask.webp",
+      "bytes": 580,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--body-mask.webp",
+      "bytes": 556,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet.webp",
+      "bytes": 77216,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--under-mask.webp",
+      "bytes": 626,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--body-mask.webp",
+      "bytes": 598,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend.webp",
+      "bytes": 76498,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--under-mask.webp",
+      "bytes": 628,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--body-mask.webp",
+      "bytes": 602,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha.webp",
+      "bytes": 58826,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--under-mask.webp",
+      "bytes": 576,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--body-mask.webp",
+      "bytes": 550,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer.webp",
+      "bytes": 59524,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--under-mask.webp",
+      "bytes": 608,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--body-mask.webp",
+      "bytes": 578,
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
+      "bytes": 43834,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--outfit-racer.webp",
+      "bytes": 39898,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
+      "bytes": 39284,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--outfit-mecha.webp",
+      "bytes": 40520,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
+      "bytes": 52182,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--outfit-cadet.webp",
+      "bytes": 52334,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--outfit-legend.webp",
+      "bytes": 52180,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
+      "bytes": 43862,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--outfit-racer.webp",
+      "bytes": 42680,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
+      "bytes": 44710,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--outfit-racer.webp",
+      "bytes": 40112,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
+      "bytes": 40264,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--outfit-mecha.webp",
+      "bytes": 41590,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
+      "bytes": 53294,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-cadet.webp",
+      "bytes": 53216,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-legend.webp",
+      "bytes": 53456,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+      "bytes": 44986,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--outfit-racer.webp",
+      "bytes": 43430,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
+      "bytes": 48652,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--outfit-racer.webp",
+      "bytes": 43874,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
+      "bytes": 42882,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 44026,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
+      "bytes": 67710,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 67676,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-legend.webp",
+      "bytes": 67696,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
+      "bytes": 47450,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 46008,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--brother.webp",
+      "bytes": 176696,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--younger.webp",
+      "bytes": 241862,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--sister.webp",
+      "bytes": 237128,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--younger-sister.webp",
+      "bytes": 231394,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-sun-cap--brother.webp",
+      "bytes": 115564,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+      "bytes": 91346,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/phones-sky--brother.webp",
+      "bytes": 79888,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/sister-cat-headphones--brother.webp",
+      "bytes": 89034,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
+      "bytes": 49690,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
+      "bytes": 62924,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
+      "bytes": 45088,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
+      "bytes": 49842,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--outfit-racer.webp",
+      "bytes": 44534,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 63186,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--outfit-legend.webp",
+      "bytes": 63432,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 46304,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 48234,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
+      "bytes": 43604,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
+      "bytes": 55980,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
+      "bytes": 39216,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
+      "bytes": 43694,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--outfit-racer.webp",
+      "bytes": 39272,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 56478,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--outfit-legend.webp",
+      "bytes": 56396,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 40334,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 42504,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
+      "bytes": 42056,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
+      "bytes": 53068,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
+      "bytes": 38066,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
+      "bytes": 42010,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--outfit-racer.webp",
+      "bytes": 37914,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 53384,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--outfit-legend.webp",
+      "bytes": 53114,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 39072,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 40814,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
+      "bytes": 51054,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
+      "bytes": 65156,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
+      "bytes": 45942,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
+      "bytes": 50754,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--outfit-racer.webp",
+      "bytes": 45802,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--outfit-cadet.webp",
+      "bytes": 65992,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--outfit-legend.webp",
+      "bytes": 65482,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--outfit-mecha.webp",
+      "bytes": 46846,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--outfit-racer.webp",
+      "bytes": 49694,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ]
+}

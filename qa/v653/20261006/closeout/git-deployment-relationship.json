@@ -1,0 +1,60 @@
+{
+  "keys": [
+    "accountId",
+    "alias",
+    "autoAssignCustomDomains",
+    "autoAssignCustomDomainsUpdatedBy",
+    "autoExposeSystemEnvs",
+    "avatar",
+    "buildCommand",
+    "createdAt",
+    "creator",
+    "crons",
+    "defaultResourceConfig",
+    "deploymentExpiration",
+    "devCommand",
+    "directoryListing",
+    "enableExternalRewriteCaching",
+    "env",
+    "features",
+    "framework",
+    "gitComments",
+    "gitForkProtection",
+    "gitLFS",
+    "gitProviderOptions",
+    "hasDeployments",
+    "id",
+    "installCommand",
+    "lastAliasRequest",
+    "lastRollbackTarget",
+    "latestDeployments",
+    "live",
+    "name",
+    "nodeVersion",
+    "oidcTokenConfig",
+    "outputDirectory",
+    "productionDeploymentsFastLane",
+    "protectedSourcemaps",
+    "protectionBypass",
+    "resourceConfig",
+    "rootDirectory",
+    "sandbox",
+    "serverlessFunctionRegion",
+    "sourceFilesOutsideRootDirectory",
+    "speedInsights",
+    "ssoProtection",
+    "targets",
+    "updatedAt",
+    "webAnalytics"
+  ],
+  "gitConnectionFields": {
+    "gitProviderOptions": {
+      "createDeployments": "enabled"
+    }
+  },
+  "production": {
+    "id": "dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2",
+    "url": "kids-learning-adventure-d9bx5w8wb-kui-yus-projects.vercel.app",
+    "readyState": "READY"
+  }
+}

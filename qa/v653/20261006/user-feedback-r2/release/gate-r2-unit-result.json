@@ -1,0 +1,138 @@
+{
+  "status": "PASS_GATE_R2_UNIT_CONTROLS_NOT_RELEASE_ADMISSION",
+  "checks": [
+    {
+      "check": "new gate syntax",
+      "pass": true
+    },
+    {
+      "check": "phones-racer only exact new pair metadata accepted",
+      "pass": true
+    },
+    {
+      "check": "phones-ai only exact new pair metadata accepted",
+      "pass": true
+    },
+    {
+      "check": "story-headphones only exact new pair metadata accepted",
+      "pass": true
+    },
+    {
+      "check": "phones-legend only exact new pair metadata accepted",
+      "pass": true
+    },
+    {
+      "check": "reject catalog change",
+      "pass": true
+    },
+    {
+      "check": "reject renderer change",
+      "pass": true
+    },
+    {
+      "check": "reject extra unrelated metadata",
+      "pass": true
+    },
+    {
+      "check": "reject other hairstyle",
+      "pass": true
+    },
+    {
+      "check": "reject missing required fit",
+      "pass": true
+    },
+    {
+      "check": "reject missing role",
+      "pass": true
+    },
+    {
+      "check": "reject missing skin",
+      "pass": true
+    },
+    {
+      "check": "reject missing front",
+      "pass": true
+    },
+    {
+      "check": "reject replaced front",
+      "pass": true
+    },
+    {
+      "check": "reject old back pretending new",
+      "pass": true
+    },
+    {
+      "check": "reject changed retained front bytes",
+      "pass": true
+    },
+    {
+      "check": "original 480/80/1024 unchanged",
+      "pass": true
+    },
+    {
+      "check": "retainedEarwearHairFit 128 exact unique cases",
+      "pass": true
+    },
+    {
+      "check": "retainedEarwearHairVisual 128 exact unique cases",
+      "pass": true
+    },
+    {
+      "check": "published six-function/source-map shape accepted by helper",
+      "pass": true
+    },
+    {
+      "check": "reject handler swap",
+      "pass": true
+    },
+    {
+      "check": "reject API source changed",
+      "pass": true
+    },
+    {
+      "check": "reject function config changed",
+      "pass": true
+    },
+    {
+      "check": "reject missing function file inventory",
+      "pass": true
+    },
+    {
+      "check": "reject swapped function file hash",
+      "pass": true
+    },
+    {
+      "check": "prebuild dist check accepts absent not-yet-built Vercel output",
+      "pass": true
+    },
+    {
+      "check": "final-output absent receipt fails",
+      "pass": true
+    },
+    {
+      "check": "prebuild incomplete actual index stays FAIL",
+      "pass": true
+    },
+    {
+      "check": "final-output incomplete actual index stays FAIL",
+      "pass": true
+    },
+    {
+      "check": "historical prebuild branch byte preservation",
+      "pass": true
+    },
+    {
+      "check": "npm prebuild explicitly uses nondeployable phase",
+      "pass": true
+    }
+  ],
+  "counts": {
+    "passed": 31
+  },
+  "limitations": [
+    "No full current candidate index available",
+    "Full 15 prebuild index and 9 final-output receipt negative controls require a passing actual baseline; not run yet",
+    "Published r6 functions read only for helper-shape controls; not fresh candidate evidence",
+    "Synthetic tiny dist fixture is unit-only, never an admission fixture"
+  ]
+}

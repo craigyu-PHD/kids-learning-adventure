@@ -1,0 +1,3663 @@
+{
+  "status": "PASS_SELECTED_SCOPE_PENDING_VISUAL",
+  "candidateId": "feedback-r2-a7960962-final-r5",
+  "phase": "matrix",
+  "catalogCount": 64,
+  "fullMatrixCount": 1024,
+  "selectedMatrixCount": 128,
+  "plannedCases": 1,
+  "shardCount": 1024,
+  "shardIndex": 400,
+  "plannedOriginalMatrixIndices": [
+    400
+  ],
+  "freshCasesOnly": true,
+  "cases": [
+    {
+      "item": {
+        "id": "hat-rocket",
+        "slot": "hat",
+        "name": "火箭隊長帽"
+      },
+      "avatar": "sister",
+      "profile": {
+        "id": "desktop-dark",
+        "width": 1440,
+        "height": 1050,
+        "theme": "dark"
+      },
+      "originalMatrixIndex": 400,
+      "index": 0,
+      "compiled": {
+        "footer": "本機模式\n今日日期已確認\n完整教案與影片\n下一關，就比上一關更厲害。\nVersion V6.5.3 · Updated 2026-10-06",
+        "scriptURLs": [
+          "http://127.0.0.1:5196/assets/index-DkO6mlaB.js"
+        ],
+        "manifestOverrides": false,
+        "cssOverrides": false
+      },
+      "ledgerBefore": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "hat-rocket"
+        ],
+        "equippedCosmetics": [],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-hat-rocket",
+            "childId": "child-1",
+            "itemId": "hat-rocket",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "catalog": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+              "cls": "",
+              "visible": true,
+              "width": 1254,
+              "height": 1254,
+              "rect": {
+                "x": 1126.328125,
+                "y": 573.96875,
+                "width": 252.65625,
+                "height": 189.484375,
+                "top": 573.96875,
+                "right": 1378.984375,
+                "bottom": 763.453125,
+                "left": 1126.328125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+            "domNatural": [
+              1254,
+              1254
+            ],
+            "pinnedFileSize": [
+              1254,
+              1254
+            ],
+            "expectedSHA256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+            "http": {
+              "status": 200,
+              "sha256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+              "bytes": 995410
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+            "bytes": 995410,
+            "expectedSHA256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-catalog-actual-size.png",
+        "screenshotSHA256": "c0fcdd898b38063dff17936cdf00b6d9f67f17ec440ba82a1efd07a97abb308d",
+        "rect": {
+          "x": 1126.328125,
+          "y": 573.96875,
+          "width": 252.65625,
+          "height": 189.484375
+        }
+      },
+      "trial": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 158,
+                "y": 523.015625,
+                "width": 216,
+                "height": 324,
+                "top": 523.015625,
+                "right": 374,
+                "bottom": 847.015625,
+                "left": 158
+              }
+            },
+            {
+              "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 158,
+                "y": 469.015625,
+                "width": 216,
+                "height": 378,
+                "top": 469.015625,
+                "right": 374,
+                "bottom": 847.015625,
+                "left": 158
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "http": {
+              "status": 200,
+              "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+              "bytes": 98430
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "http": {
+              "status": 200,
+              "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+              "bytes": 201124
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "status": 200,
+            "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "bytes": 98430,
+            "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+            "status": 200,
+            "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+            "bytes": 5914,
+            "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124,
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-trial.png",
+        "screenshotSHA256": "d31abc9e00d6c98a84a514b7001a7b5ff7bb00b536e0cc4861592e29b5654cb5",
+        "rect": {
+          "x": 46,
+          "y": 365.78125,
+          "width": 440,
+          "height": 594.53125
+        }
+      },
+      "shopBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "natural": [
+            384,
+            576
+          ],
+          "container": {
+            "x": 66,
+            "y": 469.015625,
+            "width": 400,
+            "height": 378,
+            "top": 469.015625,
+            "right": 466,
+            "bottom": 847.015625,
+            "left": 66
+          },
+          "imageBox": {
+            "x": 158,
+            "y": 523.015625,
+            "width": 216,
+            "height": 324,
+            "top": 523.015625,
+            "right": 374,
+            "bottom": 847.015625,
+            "left": 158
+          },
+          "painted": {
+            "x": 158,
+            "y": 523.015625,
+            "width": 216,
+            "height": 324
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              384,
+              576
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              84,
+              11,
+              298,
+              555
+            ],
+            "paintedAlphaWidth": 120.375,
+            "paintedAlphaHeight": 306.0,
+            "normalizedBottom": 0.9635416666666666,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "domNatural": [
+                384,
+                576
+              ],
+              "pinnedFileSize": [
+                384,
+                576
+              ],
+              "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+              "http": {
+                "status": 200,
+                "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+                "bytes": 98430
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "trial": {
+          "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "natural": [
+            384,
+            576
+          ],
+          "container": {
+            "x": 66,
+            "y": 469.015625,
+            "width": 400,
+            "height": 378,
+            "top": 469.015625,
+            "right": 466,
+            "bottom": 847.015625,
+            "left": 66
+          },
+          "imageBox": {
+            "x": 158,
+            "y": 523.015625,
+            "width": 216,
+            "height": 324,
+            "top": 523.015625,
+            "right": 374,
+            "bottom": 847.015625,
+            "left": 158
+          },
+          "painted": {
+            "x": 158,
+            "y": 523.015625,
+            "width": 216,
+            "height": 324
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [
+            "hat-rocket"
+          ],
+          "mask": "url(\"http://127.0.0.1:5196/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png\")",
+          "rasterBody": {
+            "size": [
+              384,
+              576
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              84,
+              11,
+              298,
+              555
+            ],
+            "paintedAlphaWidth": 120.375,
+            "paintedAlphaHeight": 306.0,
+            "normalizedBottom": 0.9635416666666666,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "domNatural": [
+                384,
+                576
+              ],
+              "pinnedFileSize": [
+                384,
+                576
+              ],
+              "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+              "http": {
+                "status": 200,
+                "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+                "bytes": 98430
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0,
+            "height": 0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "trialAvatar": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 158,
+                "y": 523.015625,
+                "width": 216,
+                "height": 324,
+                "top": 523.015625,
+                "right": 374,
+                "bottom": 847.015625,
+                "left": 158
+              }
+            },
+            {
+              "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 158,
+                "y": 469.015625,
+                "width": 216,
+                "height": 378,
+                "top": 469.015625,
+                "right": 374,
+                "bottom": 847.015625,
+                "left": 158
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "http": {
+              "status": 200,
+              "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+              "bytes": 98430
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "http": {
+              "status": 200,
+              "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+              "bytes": 201124
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "status": 200,
+            "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "bytes": 98430,
+            "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+            "status": 200,
+            "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+            "bytes": 5914,
+            "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124,
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-avatar-actual-size.png",
+        "screenshotSHA256": "e0b16ec747ffe956dc790fd73ce178a9f69e96f7c584d42ac1b60631cda8b432",
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378
+        }
+      },
+      "cancelPreservesProgress": true,
+      "ledgerAfterEquip": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "hat-rocket"
+        ],
+        "equippedCosmetics": [
+          "hat-rocket"
+        ],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-hat-rocket",
+            "childId": "child-1",
+            "itemId": "hat-rocket",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [
+          {
+            "id": "avatar-equip:child-1:hat-rocket:a81298e1-82cd-4e0f-98af-8735644d78b2",
+            "childId": "child-1",
+            "itemId": "hat-rocket",
+            "slot": "headwear",
+            "action": "equip",
+            "createdAt": "2026-10-06T04:58:53.302Z"
+          }
+        ],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "equipped": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+              "visible": true,
+              "width": 384,
+              "height": 576,
+              "rect": {
+                "x": 158,
+                "y": 523.015625,
+                "width": 216,
+                "height": 324,
+                "top": 523.015625,
+                "right": 374,
+                "bottom": 847.015625,
+                "left": 158
+              }
+            },
+            {
+              "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 158,
+                "y": 469.015625,
+                "width": 216,
+                "height": 378,
+                "top": 469.015625,
+                "right": 374,
+                "bottom": 847.015625,
+                "left": 158
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "domNatural": [
+              384,
+              576
+            ],
+            "pinnedFileSize": [
+              384,
+              576
+            ],
+            "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "http": {
+              "status": 200,
+              "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+              "bytes": 98430
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "http": {
+              "status": 200,
+              "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+              "bytes": 201124
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "status": 200,
+            "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "bytes": 98430,
+            "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+            "status": 200,
+            "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+            "bytes": 5914,
+            "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124,
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-equipped.png",
+        "screenshotSHA256": "4bcd59a705537b61948f763512a093345456be85f91a8c92276f2f431a47c475",
+        "rect": {
+          "x": 46,
+          "y": 365.78125,
+          "width": 440,
+          "height": 594.53125
+        }
+      },
+      "equipBodyComparison": {
+        "paintedSizeDeltaPx": {
+          "width": 0,
+          "height": 0
+        },
+        "bodyRasterAlphaHeightRatio": 1.0,
+        "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+      },
+      "home": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 83.28125,
+                "y": 590.71875,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 590.71875,
+                "right": 134.703125,
+                "bottom": 667.859375,
+                "left": 83.28125
+              }
+            },
+            {
+              "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 83.28125,
+                "y": 577.875,
+                "width": 51.421875,
+                "height": 90,
+                "top": 577.875,
+                "right": 134.703125,
+                "bottom": 667.875,
+                "left": 83.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "http": {
+              "status": 200,
+              "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+              "bytes": 201124
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+            "status": 200,
+            "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+            "bytes": 5914,
+            "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124,
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/home-player.png",
+        "screenshotSHA256": "88180b33f2a750a4da5f07f222770333dfed381befa8451d20ac609b6d8643a0",
+        "rect": {
+          "x": 47,
+          "y": 552.875,
+          "width": 271.203125,
+          "height": 177.796875
+        }
+      },
+      "homeBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 64,
+            "y": 577.875,
+            "width": 90,
+            "height": 90,
+            "top": 577.875,
+            "right": 154,
+            "bottom": 667.875,
+            "left": 64
+          },
+          "imageBox": {
+            "x": 83.28125,
+            "y": 590.71875,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 590.71875,
+            "right": 134.703125,
+            "bottom": 667.859375,
+            "left": 83.28125
+          },
+          "painted": {
+            "x": 83.28125,
+            "y": 590.72265625,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              42,
+              5,
+              149,
+              278
+            ],
+            "paintedAlphaWidth": 28.656982421875,
+            "paintedAlphaHeight": 73.115478515625,
+            "normalizedBottom": 0.9652777777777778,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "http": {
+                "status": 200,
+                "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+                "bytes": 31708
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "equipped": {
+          "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 64,
+            "y": 577.875,
+            "width": 90,
+            "height": 90,
+            "top": 577.875,
+            "right": 154,
+            "bottom": 667.875,
+            "left": 64
+          },
+          "imageBox": {
+            "x": 83.28125,
+            "y": 590.71875,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 590.71875,
+            "right": 134.703125,
+            "bottom": 667.859375,
+            "left": 83.28125
+          },
+          "painted": {
+            "x": 83.28125,
+            "y": 590.72265625,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [
+            "hat-rocket"
+          ],
+          "mask": "url(\"http://127.0.0.1:5196/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png\")",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              42,
+              5,
+              149,
+              278
+            ],
+            "paintedAlphaWidth": 28.656982421875,
+            "paintedAlphaHeight": 73.115478515625,
+            "normalizedBottom": 0.9652777777777778,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "http": {
+                "status": 200,
+                "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+                "bytes": 31708
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "homeReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 83.28125,
+                "y": 590.71875,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 590.71875,
+                "right": 134.703125,
+                "bottom": 667.859375,
+                "left": 83.28125
+              }
+            },
+            {
+              "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 83.28125,
+                "y": 577.875,
+                "width": 51.421875,
+                "height": 90,
+                "top": 577.875,
+                "right": 134.703125,
+                "bottom": 667.875,
+                "left": 83.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "http": {
+              "status": 200,
+              "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+              "bytes": 201124
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+            "status": 200,
+            "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+            "bytes": 5914,
+            "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124,
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/home-reload.png",
+        "screenshotSHA256": "88180b33f2a750a4da5f07f222770333dfed381befa8451d20ac609b6d8643a0",
+        "rect": {
+          "x": 47,
+          "y": 552.875,
+          "width": 271.203125,
+          "height": 177.796875
+        }
+      },
+      "achievement": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 66.28125,
+                "y": 497.625,
+                "width": 59.421875,
+                "height": 89.140625,
+                "top": 497.625,
+                "right": 125.703125,
+                "bottom": 586.765625,
+                "left": 66.28125
+              }
+            },
+            {
+              "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+              "visible": true,
+              "width": 1024,
+              "height": 1792,
+              "rect": {
+                "x": 66.28125,
+                "y": 482.78125,
+                "width": 59.421875,
+                "height": 104,
+                "top": 482.78125,
+                "right": 125.703125,
+                "bottom": 586.78125,
+                "left": 66.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "http": {
+              "status": 200,
+              "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+              "bytes": 31708
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "domNatural": [
+              1024,
+              1792
+            ],
+            "pinnedFileSize": [
+              1024,
+              1792
+            ],
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "http": {
+              "status": 200,
+              "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+              "bytes": 201124
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708,
+            "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+            "status": 200,
+            "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+            "bytes": 5914,
+            "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+          },
+          {
+            "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124,
+            "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/achievements-avatar.png",
+        "screenshotSHA256": "7928aee36b9303baced9cfebd333d3f714bbaa16f9883a1f3d48a33d6823d7e0",
+        "rect": {
+          "x": 44,
+          "y": 482.78125,
+          "width": 104,
+          "height": 104
+        }
+      },
+      "exactCandidatePaths": {
+        "catalog": [
+          "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp"
+        ],
+        "trial": [
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp"
+        ],
+        "equipped": [
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp"
+        ],
+        "home": [
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp"
+        ],
+        "homeReload": [
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp"
+        ],
+        "achievement": [
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp"
+        ]
+      },
+      "exactRolePaths": [
+        "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp"
+      ],
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "equipmentTransactions": [
+        {
+          "id": "avatar-equip:child-1:hat-rocket:a81298e1-82cd-4e0f-98af-8735644d78b2",
+          "childId": "child-1",
+          "itemId": "hat-rocket",
+          "slot": "headwear",
+          "action": "equip",
+          "createdAt": "2026-10-06T04:58:53.302Z"
+        },
+        {
+          "id": "avatar-equip:child-1:hat-rocket:96cae53e-4d93-403b-a085-27490fac5ba9",
+          "childId": "child-1",
+          "itemId": "hat-rocket",
+          "slot": "headwear",
+          "action": "unequip",
+          "createdAt": "2026-10-06T04:58:56.193Z"
+        }
+      ],
+      "ledgerScope": "one synthetic cost-zero owned item; actual UI equip + unequip append-only; no real purchase assertion",
+      "visualReview": "NOT_PERFORMED",
+      "contextClosed": true
+    }
+  ],
+  "controls": [],
+  "fallback": [],
+  "browserClosed": true,
+  "visualReview": "NOT_PERFORMED",
+  "scope": "Synthetic preowned cost-zero fixture; real trial/cancel/equip/home/reload/achievement/unequip; no real purchase, cloud auth, or earned rewards",
+  "negativeScope": "Missing asset fail-close plus exact browser byte admission; swapped/stale/wrong-role rejection belongs to QA, not runtime authenticity enforcement",
+  "runnerSHA256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "id": "desktop-light",
+      "width": 1440,
+      "height": 1050,
+      "theme": "light"
+    },
+    {
+      "id": "desktop-dark",
+      "width": 1440,
+      "height": 1050,
+      "theme": "dark"
+    },
+    {
+      "id": "mobile-light",
+      "width": 390,
+      "height": 844,
+      "theme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "theme": "dark"
+    }
+  ],
+  "roles": [
+    "brother",
+    "younger",
+    "sister",
+    "younger-sister"
+  ],
+  "items": [
+    "hat-rocket",
+    "hat-ocean",
+    "hat-mage",
+    "hat-crown",
+    "sky-view-glasses",
+    "glasses-racer",
+    "glasses-star",
+    "glasses-holo"
+  ],
+  "noExtraDecode": true,
+  "sourcePinsSHA256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+  "artifactPinsSHA256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+  "manifestPins": {
+    "avatar": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "world": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "harnessDependencies": {
+    "scripts/qa_v653_full_shop_acceptance.py": "2cc9a9758c2f62c3c4cd04c37c89a63beb8e7793460f205bcd8492e6aaee064f",
+    "scripts/qa_v653_release_smoke.py": "cf12df2f42db0c28c0c8f6c0255cb4fa202318a0219a0549c6103d06526d06d9",
+    "scripts/qa_v653_shop_coverage.py": "338e0a268e615f72a3b24bdcb7bab982b67f9835543b7c9359ef11cb9a0d23ee"
+  },
+  "preservedRunnerDependencies": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run.py": "6454034c5f095c10cdae43b91b00e2b95b0833d626264d8c562905b696cd2888"
+  },
+  "densityCorrection": "width srcset: descriptor equals physical width; positive density-corrected DOM and <=1px aspect tolerance; no decode",
+  "compiledDocuments": {
+    "/": {
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "bytes": 988,
+      "status": 200
+    }
+  },
+  "compiledAssets": {
+    "/assets/index-KC1rU43V.css": {
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "bytes": 493690,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-KC1rU43V.css"
+    },
+    "/assets/index-DkO6mlaB.js": {
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "bytes": 1434192,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-DkO6mlaB.js"
+    },
+    "/assets/SecondaryViews-Bd69SkOV.js": {
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "bytes": 43717,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-Bd69SkOV.js"
+    },
+    "/assets/x-CwjU7BFr.js": {
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "bytes": 143,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/x-CwjU7BFr.js"
+    },
+    "/assets/learningAnalytics-BiVMp2Ug.js": {
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "bytes": 2617,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/learningAnalytics-BiVMp2Ug.js"
+    },
+    "/assets/SecondaryViews-aPwGWhRg.css": {
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "bytes": 30904,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-aPwGWhRg.css"
+    }
+  },
+  "networkErrors": [],
+  "sourceRequests": [],
+  "servedAssets": {
+    "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp": {
+      "status": 200,
+      "sha256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+      "bytes": 995410,
+      "expectedSHA256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587"
+    },
+    "/assets/v6.4/avatar-display/sister/base-body-384.webp": {
+      "status": 200,
+      "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+      "bytes": 98430,
+      "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+    },
+    "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png": {
+      "status": 200,
+      "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+      "bytes": 5914,
+      "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+    },
+    "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp": {
+      "status": 200,
+      "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+      "bytes": 201124,
+      "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+    },
+    "/assets/v6.4/avatar-display/sister/base-body-192.webp": {
+      "status": 200,
+      "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+      "bytes": 31708,
+      "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+    }
+  },
+  "apiBlocks": [],
+  "captures": [
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+            "cls": "",
+            "visible": true,
+            "width": 1254,
+            "height": 1254,
+            "rect": {
+              "x": 1126.328125,
+              "y": 573.96875,
+              "width": 252.65625,
+              "height": 189.484375,
+              "top": 573.96875,
+              "right": 1378.984375,
+              "bottom": 763.453125,
+              "left": 1126.328125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+          "domNatural": [
+            1254,
+            1254
+          ],
+          "pinnedFileSize": [
+            1254,
+            1254
+          ],
+          "expectedSHA256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+          "http": {
+            "status": 200,
+            "sha256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+            "bytes": 995410
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587",
+          "bytes": 995410,
+          "expectedSHA256": "902b740925c50f724096150e035a25e1e04e013f5e24e614e035ceca15f9a587"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-catalog-actual-size.png",
+      "screenshotSHA256": "c0fcdd898b38063dff17936cdf00b6d9f67f17ec440ba82a1efd07a97abb308d",
+      "rect": {
+        "x": 1126.328125,
+        "y": 573.96875,
+        "width": 252.65625,
+        "height": 189.484375
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 158,
+              "y": 523.015625,
+              "width": 216,
+              "height": 324,
+              "top": 523.015625,
+              "right": 374,
+              "bottom": 847.015625,
+              "left": 158
+            }
+          },
+          {
+            "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 158,
+              "y": 469.015625,
+              "width": 216,
+              "height": 378,
+              "top": 469.015625,
+              "right": 374,
+              "bottom": 847.015625,
+              "left": 158
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+          "http": {
+            "status": 200,
+            "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "bytes": 98430
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "http": {
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "status": 200,
+          "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+          "bytes": 98430,
+          "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "status": 200,
+          "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+          "bytes": 5914,
+          "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "bytes": 201124,
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-trial.png",
+      "screenshotSHA256": "d31abc9e00d6c98a84a514b7001a7b5ff7bb00b536e0cc4861592e29b5654cb5",
+      "rect": {
+        "x": 46,
+        "y": 365.78125,
+        "width": 440,
+        "height": 594.53125
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 158,
+              "y": 523.015625,
+              "width": 216,
+              "height": 324,
+              "top": 523.015625,
+              "right": 374,
+              "bottom": 847.015625,
+              "left": 158
+            }
+          },
+          {
+            "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 158,
+              "y": 469.015625,
+              "width": 216,
+              "height": 378,
+              "top": 469.015625,
+              "right": 374,
+              "bottom": 847.015625,
+              "left": 158
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+          "http": {
+            "status": 200,
+            "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "bytes": 98430
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "http": {
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "status": 200,
+          "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+          "bytes": 98430,
+          "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "status": 200,
+          "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+          "bytes": 5914,
+          "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "bytes": 201124,
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-avatar-actual-size.png",
+      "screenshotSHA256": "e0b16ec747ffe956dc790fd73ce178a9f69e96f7c584d42ac1b60631cda8b432",
+      "rect": {
+        "x": 66,
+        "y": 469.015625,
+        "width": 400,
+        "height": 378
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+            "visible": true,
+            "width": 384,
+            "height": 576,
+            "rect": {
+              "x": 158,
+              "y": 523.015625,
+              "width": 216,
+              "height": 324,
+              "top": 523.015625,
+              "right": 374,
+              "bottom": 847.015625,
+              "left": 158
+            }
+          },
+          {
+            "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 158,
+              "y": 469.015625,
+              "width": 216,
+              "height": 378,
+              "top": 469.015625,
+              "right": 374,
+              "bottom": 847.015625,
+              "left": 158
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "domNatural": [
+            384,
+            576
+          ],
+          "pinnedFileSize": [
+            384,
+            576
+          ],
+          "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+          "http": {
+            "status": 200,
+            "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+            "bytes": 98430
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "http": {
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-384.webp",
+          "status": 200,
+          "sha256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4",
+          "bytes": 98430,
+          "expectedSHA256": "7508fccc487bd8b4957ecb60938397ade43abbf6eb923c402b22d61655007bb4"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "status": 200,
+          "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+          "bytes": 5914,
+          "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "bytes": 201124,
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/shop-equipped.png",
+      "screenshotSHA256": "4bcd59a705537b61948f763512a093345456be85f91a8c92276f2f431a47c475",
+      "rect": {
+        "x": 46,
+        "y": 365.78125,
+        "width": 440,
+        "height": 594.53125
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 83.28125,
+              "y": 590.71875,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 590.71875,
+              "right": 134.703125,
+              "bottom": 667.859375,
+              "left": 83.28125
+            }
+          },
+          {
+            "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 83.28125,
+              "y": 577.875,
+              "width": 51.421875,
+              "height": 90,
+              "top": 577.875,
+              "right": 134.703125,
+              "bottom": 667.875,
+              "left": 83.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "http": {
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "status": 200,
+          "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+          "bytes": 5914,
+          "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "bytes": 201124,
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/home-player.png",
+      "screenshotSHA256": "88180b33f2a750a4da5f07f222770333dfed381befa8451d20ac609b6d8643a0",
+      "rect": {
+        "x": 47,
+        "y": 552.875,
+        "width": 271.203125,
+        "height": 177.796875
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 83.28125,
+              "y": 590.71875,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 590.71875,
+              "right": 134.703125,
+              "bottom": 667.859375,
+              "left": 83.28125
+            }
+          },
+          {
+            "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 83.28125,
+              "y": 577.875,
+              "width": 51.421875,
+              "height": 90,
+              "top": 577.875,
+              "right": 134.703125,
+              "bottom": 667.875,
+              "left": 83.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "http": {
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "status": 200,
+          "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+          "bytes": 5914,
+          "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "bytes": 201124,
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/home-reload.png",
+      "screenshotSHA256": "88180b33f2a750a4da5f07f222770333dfed381befa8451d20ac609b6d8643a0",
+      "rect": {
+        "x": 47,
+        "y": 552.875,
+        "width": 271.203125,
+        "height": 177.796875
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-hair-mask-active avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 66.28125,
+              "y": 497.625,
+              "width": 59.421875,
+              "height": 89.140625,
+              "top": 497.625,
+              "right": 125.703125,
+              "bottom": 586.765625,
+              "left": 66.28125
+            }
+          },
+          {
+            "src": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "cls": "avatar-wearable-layer avatar-wearable-aligned slot-headwear avatar-rig-extended-layer",
+            "visible": true,
+            "width": 1024,
+            "height": 1792,
+            "rect": {
+              "x": 66.28125,
+              "y": 482.78125,
+              "width": 59.421875,
+              "height": 104,
+              "top": 482.78125,
+              "right": 125.703125,
+              "bottom": 586.78125,
+              "left": 66.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "http": {
+            "status": 200,
+            "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+            "bytes": 31708
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "domNatural": [
+            1024,
+            1792
+          ],
+          "pinnedFileSize": [
+            1024,
+            1792
+          ],
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "http": {
+            "status": 200,
+            "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+            "bytes": 201124
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/sister/base-body-192.webp",
+          "status": 200,
+          "sha256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0",
+          "bytes": 31708,
+          "expectedSHA256": "bdd571d2cd5048f500cbcaae130bcc4fc3871447e8af13270e0ba61078a675a0"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime-masks/sister/hat-rocket--base--shape-hairVisibilityMask-20260927-r2.png",
+          "status": 200,
+          "sha256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680",
+          "bytes": 5914,
+          "expectedSHA256": "fa3ca02e6a051087110431a7de4dd2882e152fbc930643fc92b732319f544680"
+        },
+        {
+          "path": "/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+          "status": 200,
+          "sha256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9",
+          "bytes": 201124,
+          "expectedSHA256": "6c432c79a8eb92977b0313b5c6e8652544d20e375c45e0b0e18f5569ea7bfff9"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry400-timed/desktop-dark/sister/hat-rocket/achievements-avatar.png",
+      "screenshotSHA256": "7928aee36b9303baced9cfebd333d3f714bbaa16f9883a1f3d48a33d6823d7e0",
+      "rect": {
+        "x": 44,
+        "y": 482.78125,
+        "width": 104,
+        "height": 104
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 365.78125,
+          "width": 440,
+          "height": 614.828125,
+          "top": 365.78125,
+          "right": 486,
+          "bottom": 980.609375,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 1126.328125,
+          "y": 573.96875,
+          "width": 252.65625,
+          "height": 189.484375,
+          "top": 573.96875,
+          "right": 1378.984375,
+          "bottom": 763.453125,
+          "left": 1126.328125
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/catalog/hat-rocket--eye-level-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1254,
+              1254
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 365.78125,
+          "width": 440,
+          "height": 594.53125,
+          "top": 365.78125,
+          "right": 486,
+          "bottom": 960.3125,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 365.78125,
+          "width": 440,
+          "height": 614.828125,
+          "top": 365.78125,
+          "right": 486,
+          "bottom": 980.609375,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 365.78125,
+          "width": 440,
+          "height": 594.53125,
+          "top": 365.78125,
+          "right": 486,
+          "bottom": 960.3125,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 66,
+          "y": 469.015625,
+          "width": 400,
+          "height": 378,
+          "top": 469.015625,
+          "right": 466,
+          "bottom": 847.015625,
+          "left": 66
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 47,
+          "y": 552.875,
+          "width": 271.203125,
+          "height": 177.796875,
+          "top": 552.875,
+          "right": 318.203125,
+          "bottom": 730.671875,
+          "left": 47
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 47,
+          "y": 552.875,
+          "width": 271.203125,
+          "height": 177.796875,
+          "top": 552.875,
+          "right": 318.203125,
+          "bottom": 730.671875,
+          "left": 47
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": true
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 44,
+          "y": 482.78125,
+          "width": 104,
+          "height": 104,
+          "top": 482.78125,
+          "right": 148,
+          "bottom": 586.78125,
+          "left": 44
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [
+          "hat-rocket"
+        ],
+        "rect": {
+          "x": 44,
+          "y": 482.78125,
+          "width": 104,
+          "height": 104,
+          "top": 482.78125,
+          "right": 148,
+          "bottom": 586.78125,
+          "left": 44
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.2/runtime/sister/hat-rocket--shape-native-20260927-r2.webp",
+            "complete": true,
+            "natural": [
+              1024,
+              1792
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": {
+        "id": "hat-rocket",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 64,
+          "y": 577.875,
+          "width": 90,
+          "height": 90,
+          "top": 577.875,
+          "right": 154,
+          "bottom": 667.875,
+          "left": 64
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/sister/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    }
+  ]
+}

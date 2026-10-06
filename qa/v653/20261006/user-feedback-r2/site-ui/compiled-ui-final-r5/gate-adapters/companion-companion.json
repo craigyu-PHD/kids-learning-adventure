@@ -1,0 +1,208 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/served-artifacts.json",
+    "sha256": "cf9555625650097607c01ef39ec67dc18d91fb2b5f9e9eb5c33f3d55ea4d2c13"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_companion.py",
+    "sha256": "23c3d5cc3977f35c3a91fc007b7b477fb11a90d1eeacda81c63f87b72fe3d93c"
+  },
+  "observedAt": "2026-10-06T04:30:55.049701+00:00",
+  "group": "companion",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "profile": "390-light"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+        "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+      },
+      "bindings": {
+        "profile": "/companionCases/0/profile"
+      },
+      "checks": {
+        "crop": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/0/crop",
+          "equals": true
+        },
+        "click": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/0/click",
+          "equals": true
+        },
+        "reducedMotion": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/0/reducedMotion",
+          "equals": true
+        },
+        "equippedRobotRoom": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/0/equippedRobotRoom",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "390-dark"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+        "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+      },
+      "bindings": {
+        "profile": "/companionCases/1/profile"
+      },
+      "checks": {
+        "crop": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/1/crop",
+          "equals": true
+        },
+        "click": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/1/click",
+          "equals": true
+        },
+        "reducedMotion": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/1/reducedMotion",
+          "equals": true
+        },
+        "equippedRobotRoom": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/1/equippedRobotRoom",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-light"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+        "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+      },
+      "bindings": {
+        "profile": "/companionCases/2/profile"
+      },
+      "checks": {
+        "crop": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/2/crop",
+          "equals": true
+        },
+        "click": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/2/click",
+          "equals": true
+        },
+        "reducedMotion": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/2/reducedMotion",
+          "equals": true
+        },
+        "equippedRobotRoom": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/2/equippedRobotRoom",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "profile": "1440-dark"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+        "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+      },
+      "bindings": {
+        "profile": "/companionCases/3/profile"
+      },
+      "checks": {
+        "crop": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/3/crop",
+          "equals": true
+        },
+        "click": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/3/click",
+          "equals": true
+        },
+        "reducedMotion": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/3/reducedMotion",
+          "equals": true
+        },
+        "equippedRobotRoom": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/result.json",
+            "sha256": "700ae6843011ae469cb3668f60f69ffd2d6a0d450a7bf2b5b09e79bba5ecb168"
+          },
+          "pointer": "/companionCases/3/equippedRobotRoom",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

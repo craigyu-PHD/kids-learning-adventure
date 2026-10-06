@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "strict TypeScript current sources",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

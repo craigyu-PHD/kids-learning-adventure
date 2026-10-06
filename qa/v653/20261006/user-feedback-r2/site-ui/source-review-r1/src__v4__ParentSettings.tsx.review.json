@@ -1,0 +1,14 @@
+{
+  "path": "src/v4/ParentSettings.tsx",
+  "beforeSHA256": "5ff9092b961597c100f85a0c995de965ce7b9ce7b955ff7a7c8ff3eb691a0fda",
+  "afterSHA256": "3b638ef50ca3a2bc754ddbabf6cd1eb9ff1be71f36b327f0632e973af76ecce1",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。離開設定時取消英文音訊；語速數值與設定寫入保持 0.78/0.9；文案解釋預製女聲與裝置聲線。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__v4__ParentSettings.tsx.diff",
+    "sha256": "d598cd3f9d1de585a739da91f0e9ed56154d6c6870167d47396f118583672761"
+  },
+  "observedAt": "2026-10-06T03:21:01.074620+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

@@ -1,0 +1,874 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "siteVisual report fresh",
+      "pass": true
+    },
+    {
+      "check": "siteVisual minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "siteVisual exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "siteVisual timestamp",
+      "pass": true
+    },
+    {
+      "check": "siteVisual same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "siteVisual observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "siteVisual independent reviewer",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual unique observation {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteVisual dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteVisual raw identity {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteVisual check coverage {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual asserted accepted {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image required {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual image bytes {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual reviewed image hash coverage {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual actual reviewed image hash {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual meaningful review {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteVisual exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

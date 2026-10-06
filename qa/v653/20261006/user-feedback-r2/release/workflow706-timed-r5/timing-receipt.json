@@ -1,0 +1,51 @@
+{
+  "events": [
+    {
+      "originalRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-shard1/report.json",
+        "sha256": "023043967b9c7fe8770343d0eaf9455c44ba3defcfb2b2e7bb6d61d02dad4d40"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-workflow-final-r5-retry706-timed/report.json",
+        "sha256": "3fe82c1116b11000a3d9b548e037b3cba2b1deec1c241bf2187137654905d2f9"
+      },
+      "originalCompletedAt": "2026-10-06T04:31:32.840065+00:00",
+      "retryStartedAt": "2026-10-06T04:56:35.811683+00:00",
+      "retryCompletedAt": "2026-10-06T04:56:51.768743+00:00",
+      "evidence": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/release/runtime-jobs-r5-fit-workflow-controls/jobs.json",
+          "sha256": "87f7620bc3e2a46efdab8a5204128eceef877d2789873d11fb6d5e08b3c0585f"
+        },
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/release/workflow706-timed-r5/process-receipt.json",
+          "sha256": "8b3edf156deffdab42c74670f0ff108b7e67a03c9e88c8fe89ddf1f478ab61a3"
+        }
+      ],
+      "timeAssertions": {
+        "originalCompletedAt": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/runtime-jobs-r5-fit-workflow-controls/jobs.json",
+            "sha256": "87f7620bc3e2a46efdab8a5204128eceef877d2789873d11fb6d5e08b3c0585f"
+          },
+          "pointer": "/jobs/5/completedAt"
+        },
+        "retryStartedAt": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/workflow706-timed-r5/process-receipt.json",
+            "sha256": "8b3edf156deffdab42c74670f0ff108b7e67a03c9e88c8fe89ddf1f478ab61a3"
+          },
+          "pointer": "/startedAt"
+        },
+        "retryCompletedAt": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/workflow706-timed-r5/process-receipt.json",
+            "sha256": "8b3edf156deffdab42c74670f0ff108b7e67a03c9e88c8fe89ddf1f478ab61a3"
+          },
+          "pointer": "/completedAt"
+        }
+      }
+    }
+  ],
+  "scope": "Actual subprocess timestamps, no filesystem-time inference"
+}

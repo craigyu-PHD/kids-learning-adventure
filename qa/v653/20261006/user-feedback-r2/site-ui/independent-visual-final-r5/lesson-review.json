@@ -1,0 +1,794 @@
+{
+  "status": "PASS",
+  "group": "lessonVisual",
+  "reviewer": "voice_reward_feedback_r2",
+  "runtimeOperator": "lesson_layout_feedback_r2",
+  "cases": [
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage0.png",
+          "sha256": "74fe070f7a8e2ef2d63f16933fd8e91f0f64c667b5096655d1c191b29c16bf4e"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage2.png",
+          "sha256": "ab733d45672991786a5ecefb85463b41e7b817db12897a04ab302925fc67d3bd"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage2-back.png",
+          "sha256": "8642eacbd46e866345141e5af905c672028d033c615138ad2123ee39a5bd4b58"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage4.png",
+          "sha256": "9cb9dc00365287f6fb5250e867eb551f7c63fdf83ce256083738420df8ed3e4e"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage5.png",
+          "sha256": "bd52e10ae45a8b46381518c32b80a6b78160e703427e1ca2d5eb801e8baf72c4"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage6.png",
+          "sha256": "810122774b34e3ff797c67929538a95f726a3b9575de258fcbcdd2ae8822edd8"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage7.png",
+          "sha256": "70db7947f4c414e9b0870464838341ff797296f9e4c83a12db66cd84a142c885"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "360-light",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/360-light-stage9.png",
+          "sha256": "606a7e067e11e9f99e810631d34f922ae6fe405be722fb789228cad7ece1a5cc"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage0.png",
+          "sha256": "a09ec7fef55732aa90563643fb49e304c8f79c79c9691daf6aab555c0f55a9a5"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage2.png",
+          "sha256": "9070bc76278e09d91c866f5c47778bbd71700c34170b94c01bbf4eae4e912e3b"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage2-back.png",
+          "sha256": "7bfd486ae64908c9757a00bfc513ac7e69a6c6a606a6d7d09e5be98f7d94cc68"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage4.png",
+          "sha256": "e73142629751c46e9652595f15a67a5bff1e234af9450034eb0d5555a6db683a"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage5.png",
+          "sha256": "82e41e9fa18c9985e3347f18425ed961e2f4c3e3ae78a520391a254befa39b93"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage6.png",
+          "sha256": "64402bc9e7c342865fc3078cdaa43c01df4a322023d8043988e46fcf4af3e4df"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage7.png",
+          "sha256": "a5bd92ce6ad53eff408e495412da1d0971d9d23042f04f44bc059b065f033baa"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-light-stage9.png",
+          "sha256": "bd4a5ae97a607a610058b0bb5b39551917d3379aec891e117c39927025bce603"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage0.png",
+          "sha256": "22bb1b2a451e6b8cd2e11e0694d4cac9f7a8a99cdf02206207daab8550da3115"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage2.png",
+          "sha256": "eec2be755af7a9c40db8cd65ef14ce7c467fa4d24d1bac33724596348b01ff09"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage2-back.png",
+          "sha256": "ecac02d3f1b76a1102309d1d9db83b91501b39cd8f545c49a30b9c7056c6378c"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage4.png",
+          "sha256": "447afb202058d7f90e02e4e78db6ef4c88a4a4f9d989a87e30edf84b98593856"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage5.png",
+          "sha256": "4bd9fab77da0f34219a97308d3683cc933810a195f65e6182a32ab8d545fec1e"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage6.png",
+          "sha256": "733f166fb33cea3f2cdf2ce3773a67165eaf6a83ae5a27774597eff9d1ab4d92"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage7.png",
+          "sha256": "2a183b7623ff6c7eaf2db981f8bc198ddf4772daa3c8c37dafde042e8a998c00"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "820-light",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/820-light-stage9.png",
+          "sha256": "8a0e12474957d71572931f764fe6a689f84ee9bc188d3ebfe7285cb22e7d4609"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage0.png",
+          "sha256": "618c918e716046a6c2c0ff7adc9c0600e8fd152b0192890fc79bf4dc72d4bfdb"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage2.png",
+          "sha256": "332a6eeb98f87dc3b5923f744ee55d4183089f9651369c730931206ecaec2dd3"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage2-back.png",
+          "sha256": "fdd387b803a5f3b908715d4e174f9f674d23fff626ea14ce895f9288cbf0a397"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage4.png",
+          "sha256": "bb78dd6e508fc64a709bcedd12545ddcac45e70349811d6686cfe683eab28672"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage5.png",
+          "sha256": "7c70c8cd46e9f5c0cc73dc14d27c3d3eba926f29b78b67681040a95e1975c21c"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage6.png",
+          "sha256": "27e84ec73cbe6cdacc54f6c25ca3467fed95bc92b3b4be1ecba241afc4d794d1"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage7.png",
+          "sha256": "ed1f34f714b9fb1b091909864961de0481cf960141e14822a17df33e6f1c5b42"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-light-stage9.png",
+          "sha256": "6abc051ce9de4f20eee963defba74af682142928cf42b014cb715b933e452974"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage0.png",
+          "sha256": "70ca4b3db99dbff6c11bad5fc1e5781cb0735c523594a10f9d133e08b54fe48e"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage2.png",
+          "sha256": "3e08a709d8a40435a7be6b38216e7f7a3d96c8df1901d7f2c9a07336aea3cdd5"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage2-back.png",
+          "sha256": "d1c8c94f11a575274b1a876db3b7f75c45e13a0f2936ffab08f78cb3a900bcfe"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage4.png",
+          "sha256": "0b6cd27fd198cf05b2bc01201d612d0e1963a6e8ce25f35f0e34fc4c2fe91ca8"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage5.png",
+          "sha256": "e2909ba133463feb42639f62469dc9812d5cb52ebe6c69e601bececdaa3739f5"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage6.png",
+          "sha256": "03020aaf2ff2d18e0e758fa56efa3b04d56258ccfc576bebf1e169dd09fb7fef"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage7.png",
+          "sha256": "590db2562218f4667b67296109e1beb98b6f3265a3bb02a72feb5fe4ba480c31"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/390-dark-stage9.png",
+          "sha256": "a3e02e5b0a889940f41fec8e7b7cff3807587feb9bbd0e8ea33443ab436d614d"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage0.png",
+          "sha256": "8b304eea5c43f4b7d5b423f9413446faec3b6ae6a60ed711a85d4fe823903674"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage2.png",
+          "sha256": "c80280702eefb509c69e099f2fb16c7aa2b0b7c467d0e00856995e14ffb6918a"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage2-back.png",
+          "sha256": "4d1749367da9c1344d79d3574ca632c92cd66ca1b14abf45b2f7ae6ead2ac975"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage4.png",
+          "sha256": "457eca85457b1f7552104ce0626830ee685f7afd002e5ab0f846e1e9d9bd4857"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage5.png",
+          "sha256": "a25027dab26b62f4b6386f44d0916c2f55f7c7ef5326b7ffae76db1cfbf81fed"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage6.png",
+          "sha256": "4cb541b3defbc9d5f8a2db1523cef9b51acc51a21f4913c7412092543f2c6693"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage7.png",
+          "sha256": "4de1b2bc1c06eb8152c31998f5490c52866ee55fc91792d5af6f081da2ded62e"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 夜間背景與文字可清楚區分。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/1440-dark-stage9.png",
+          "sha256": "b287b82b2f9bb74c336c00b1483d617b433f873f97955a23cb278be5610f0f95"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "0"
+      },
+      "accepted": true,
+      "reviewNotes": "備課目標、四名孩子、時段與展開控制清楚，長名字完整，沒有省略號。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage0.png",
+          "sha256": "6961867b66e2ec83b42ca21ec4b19034a84c79f9cd534802a565395e73a6180c"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "2"
+      },
+      "accepted": true,
+      "reviewNotes": "四张教材插畫各自完整，圖卡不越界，錄音入口明確。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage2.png",
+          "sha256": "5ad6b8e279ebeafb713f5dfb0fb45d4ea14dfd9cdaebfa6f6d54453b49a595e2"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "2-back"
+      },
+      "accepted": true,
+      "reviewNotes": "knees、toes、head、shoulders 四個單字完整置中，翻面操作文字可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage2-back.png",
+          "sha256": "53b08d7819383b4166cfbad43d48e06bce2567af6b739d7a763515773251656d"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "4"
+      },
+      "accepted": true,
+      "reviewNotes": "三個本節問題獨立突出，問題與接著一起做提示不重疊，長句可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage4.png",
+          "sha256": "0048bd11c3bf3d09be6ccd0dfa13a1d0f9fb0f9042da81785ae060e07f8da648"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "5"
+      },
+      "accepted": true,
+      "reviewNotes": "句型完整，四名孩子錄音／選用辨識／照顧者確認分組清楚；長名與目標詞不擠壓，私隱說明完整。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage5.png",
+          "sha256": "75a88a4f31535db445dad1e296ad76ab249483c6b2e85cde6beb62a3582171c2"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "6"
+      },
+      "accepted": true,
+      "reviewNotes": "任務完成標準與答題區層級清楚，四名孩子及所有選項完整，獎勵資源與名字分開。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage6.png",
+          "sha256": "ec51d62808960682c1274a7fe6a0d712c1b524ae7af231093d2a1bb7d876a124"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "7"
+      },
+      "accepted": true,
+      "reviewNotes": "開口任務句型、完成標準與四名孩子選項可讀，沒有裁切或重疊。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage7.png",
+          "sha256": "db4ba26bc4e7928444f80a4a91340e57813a77568831e2a7e58736d34d48a1fe"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "2560-light",
+        "stage": "9"
+      },
+      "accepted": true,
+      "reviewNotes": "三枚徽章清楚，XP／Coins／Stars 分別完整，重新觀看按鈕與加碼獎勵名單可讀。 淺色卡片與內文對比清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/2560-light-stage9.png",
+          "sha256": "ad6fcbcbb66dc9154de09b3dced2db66926156c7dfdf40c249c1b05fd9581835"
+        }
+      ]
+    }
+  ],
+  "instruction": "Actual image inspection required; accepted remains null until independent reviewer writes separate review raw.",
+  "reviewedAt": "2026-10-06T04:38:55.708523+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "branch": "codex/checkpoint-v6.5.3-20261006",
+  "baseCommit": "51ff808af4389dbe4f25c88aebb7f87e78aa073b",
+  "status": "PLAN_NOT_COMPLETION_RECEIPT",
+  "method": "Git exact ref transaction; no checkout/reset/worktree source mutation",
+  "version": "6.5.3",
+  "tag": "v6.5.3",
+  "productionDeployment": "dpl_7wRjYuurvZvf8vJvu2KubpyGjUP2",
+  "doNotPushMain": true,
+  "doNotDeploy": true,
+  "previousIndexWasEmpty": true,
+  "historicalWorktreeMissingFilesWillNotBeStaged": true
+}

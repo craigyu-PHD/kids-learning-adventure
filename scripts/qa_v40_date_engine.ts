@@ -30,7 +30,7 @@ const result = {
   newDayUnlocks: true,
   futureStaysLocked: true,
 };
-const qaDir = path.resolve(import.meta.dirname, '..', '.qa');
+const qaDir = path.resolve(process.env.LITTLE_EXPLORERS_QA_OUTPUT_DIR ?? path.resolve(import.meta.dirname, '..', '.qa'));
 fs.mkdirSync(qaDir, { recursive: true });
 fs.writeFileSync(path.join(qaDir, 'v40_date_engine_result.json'), JSON.stringify(result, null, 2));
 console.log(JSON.stringify(result, null, 2));

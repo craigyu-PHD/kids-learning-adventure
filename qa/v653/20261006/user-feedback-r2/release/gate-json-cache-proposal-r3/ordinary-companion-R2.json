@@ -1,0 +1,182 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "companion report fresh",
+      "pass": true
+    },
+    {
+      "check": "companion minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "companion exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "companion timestamp",
+      "pass": true
+    },
+    {
+      "check": "companion same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "companion observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "companion actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "companion unique observation {\"profile\": \"390-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "companion dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "companion raw identity {\"profile\": \"390-light\"} profile",
+      "pass": true
+    },
+    {
+      "check": "companion check coverage {\"profile\": \"390-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted crop {\"profile\": \"390-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted click {\"profile\": \"390-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted reducedMotion {\"profile\": \"390-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted equippedRobotRoom {\"profile\": \"390-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion unique observation {\"profile\": \"390-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "companion dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "companion raw identity {\"profile\": \"390-dark\"} profile",
+      "pass": true
+    },
+    {
+      "check": "companion check coverage {\"profile\": \"390-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted crop {\"profile\": \"390-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted click {\"profile\": \"390-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted reducedMotion {\"profile\": \"390-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted equippedRobotRoom {\"profile\": \"390-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion unique observation {\"profile\": \"1440-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "companion dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "companion raw identity {\"profile\": \"1440-light\"} profile",
+      "pass": true
+    },
+    {
+      "check": "companion check coverage {\"profile\": \"1440-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted crop {\"profile\": \"1440-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted click {\"profile\": \"1440-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted reducedMotion {\"profile\": \"1440-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted equippedRobotRoom {\"profile\": \"1440-light\"}",
+      "pass": true
+    },
+    {
+      "check": "companion unique observation {\"profile\": \"1440-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "companion dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "companion raw identity {\"profile\": \"1440-dark\"} profile",
+      "pass": true
+    },
+    {
+      "check": "companion check coverage {\"profile\": \"1440-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted crop {\"profile\": \"1440-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted click {\"profile\": \"1440-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted reducedMotion {\"profile\": \"1440-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion asserted equippedRobotRoom {\"profile\": \"1440-dark\"}",
+      "pass": true
+    },
+    {
+      "check": "companion exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,45 @@
+"""Card Home ratio regression: actual local UI, isolated family APIs."""
+import argparse,copy,json,hashlib,traceback
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+from qa_v653_shop_coverage import ROOT,BASE,URL,KEY,TIME,DECODE,pins
+ap=argparse.ArgumentParser();ap.add_argument('--attempt',required=True);ap.add_argument('--limit',type=int,default=64);ap.add_argument('--negative',choices=['stale','wrong-sku','missing']);args=ap.parse_args();OUT=BASE/'cards'/args.attempt;OUT.mkdir(parents=True,exist_ok=False)
+store=json.loads((ROOT/'qa/v653/20261005/lessons/default-storage.json').read_text());settings=json.loads(store['star-learning-v40:__local__:settings']);blank=json.loads(store[KEY]);srcpins=lambda:{**pins(),'src/worldArtAssets.ts':hashlib.sha256((ROOT/'src/worldArtAssets.ts').read_bytes()).hexdigest(),'src/styles/components/dashboard.css':hashlib.sha256((ROOT/'src/styles/components/dashboard.css').read_bytes()).hexdigest()};candidate=ROOT/'qa/v653/20261005/blender/cards/native-r5-candidate/candidate-world-manifest.json';candidate_text=candidate.read_text();manifest=json.loads(candidate_text);native=next(r for r in manifest['records'] if r['itemId']=='card-sky');native_assets={v['path']:v['sha256'] for v in [native['source'],native['delivery'],*native['displayVariants']]};assert all(hashlib.sha256((ROOT/k).read_bytes()).hexdigest()==v for k,v in native_assets.items());expected={r['itemId']:{'/'+v['path'].removeprefix('public/'):v['sha256'] for v in [r['delivery'],*r.get('displayVariants',[])]} for r in manifest['records'] if r['slot']=='card'};report={'sourcePins':srcpins(),'candidateManifestSHA256':hashlib.sha256(candidate.read_bytes()).hexdigest(),'candidateAssets':native_assets,'negative':args.negative,'cases':[]};save=lambda:(OUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));save()
+with sync_playwright() as p:
+ b=p.chromium.launch();c=b.new_context(viewport={'width':1440,'height':1050},reduced_motion='reduce',service_workers='block');c.route_web_socket('**',lambda w:None);c.route('**/api/**',lambda r:r.fulfill(status=200,json=TIME) if r.request.url.endswith(('/api/time','/api/server-time')) else r.fulfill(status=503,body='isolated'));c.route('**/src/data/worldArtManifest.json*',lambda r:r.fulfill(status=200,content_type='application/javascript',body='export default '+candidate_text+';'))
+ if args.negative:
+  def corrupt(r):
+   if args.negative=='missing':r.fulfill(status=404,body='intentional missing card layer')
+   else:r.fulfill(status=200,content_type='image/webp',body=(ROOT/('public/assets/v6.4/world/card/card-sky.webp' if args.negative=='stale' else 'public/assets/v6.4/world/card/card-nebula.webp')).read_bytes())
+  c.route('**/assets/v6.5.3/**/card-sky*',corrupt)
+ page=c.new_page();page.set_default_timeout(12000);errors=[];page.on('pageerror',lambda e:errors.append(str(e)));page.goto(URL,wait_until='domcontentloaded');stop=False
+ served_js=c.request.get(URL+'src/v4/Dashboard.tsx').text();served_css=c.request.get(URL+'src/styles/components/dashboard.css').text();assert 'v653-lesson-collectible' in served_js and 'v653-lesson-collectible' in served_css,'Vite serves pre-edit module cache';report['servedModuleSHA256']={'Dashboard.tsx':hashlib.sha256(served_js.encode()).hexdigest(),'dashboard.css':hashlib.sha256(served_css.encode()).hexdigest()}
+ for avatar in ['brother','younger','sister','younger-sister']:
+  for width in [1440,390]:
+   for mode in ['light','dark']:
+    for item in ['card-sky','card-nebula','card-legend',None]:
+     if len(report['cases'])>=args.limit:stop=True;break
+     name=f'{avatar}--{width}--{mode}--{item or "none"}';row={'name':name,'status':'RUNNING'};start=len(errors)
+     try:
+      assert srcpins()==report['sourcePins'],'source drift';page.set_viewport_size({'width':width,'height':1050 if width==1440 else 844});s=copy.deepcopy(settings);s['children'][0].update(avatar=avatar,name=avatar);s.update(homeDisplayLearnerId='child-1',theme=mode);store['star-learning-v40:__local__:settings']=json.dumps(s);progress=copy.deepcopy(blank)
+      if item:progress['child-1'].update(unlockedCosmetics=[item],equippedCosmetics=[],purchaseTransactions=[{'id':'fixture-'+item,'childId':'child-1','itemId':item,'cost':0,'createdAt':'2026-09-02T00:00:00.000Z','source':'purchase'}])
+      store[KEY]=json.dumps(progress);store['little-explorers-v4-sound']='off';page.evaluate('(s)=>{localStorage.clear();sessionStorage.clear();for(const[k,v]of Object.entries(s))localStorage.setItem(k,v)}',store);page.reload(wait_until='domcontentloaded');page.locator('.v4-dashboard-grid').wait_for()
+      if item:
+       page.get_by_role('button',name='寶物商店',exact=True).first.click();page.locator('#shop-learner-tab-child-1').click();page.get_by_role('tab',name='卡面',exact=True).click();card=page.locator(f'article[data-item-id="{item}"]');before=page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY);card.locator('.v6-preview-button').click();stage=page.locator('.v63-equipment-stage');stage.scroll_into_view_if_needed();stage.evaluate(DECODE);card.locator('.v6-preview-button').click();assert page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY)==before;card.get_by_role('button',name='立即使用',exact=True).click();page.wait_for_function('([k,i])=>JSON.parse(localStorage.getItem(k))["child-1"].equippedCosmetics.includes(i)',arg=[KEY,item]);page.get_by_role('button',name='首頁',exact=True).first.click()
+      page.locator('.v4-dashboard-grid').wait_for();state=page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY);cards=page.locator('.v4-lesson-card');assert cards.count()==2
+      for index in [0,1]:
+       cards.nth(index).scroll_into_view_if_needed();cards.nth(index).locator('.v4-lesson-thumb .v4-smart-image.loaded img').wait_for(state='visible');cards.nth(index).evaluate(DECODE)
+      first=cards.first;first.scroll_into_view_if_needed();first.locator('.v4-lesson-thumb .v4-smart-image.loaded img').wait_for(state='visible');first.evaluate(DECODE);row['dom']=first.evaluate('e=>({borderImage:getComputedStyle(e).borderImageSource,rounding:getComputedStyle(e).borderTopLeftRadius,image:[...e.querySelectorAll(".v653-lesson-collectible")].map(i=>({src:i.currentSrc,nw:i.naturalWidth,nh:i.naturalHeight,fit:getComputedStyle(i).objectFit,rect:i.getBoundingClientRect().toJSON()})),cta:e.querySelector("button").getBoundingClientRect().toJSON(),font:getComputedStyle(e.querySelector("h3")).fontSize,thumb:e.querySelector(".v4-lesson-thumb").getBoundingClientRect().toJSON()})');first.screenshot(path=str(OUT/(name+'.png')),animations='disabled');row['overflow']=page.evaluate('Math.max(0,document.documentElement.scrollWidth-innerWidth)');row['broken']=page.evaluate('[...document.images].filter(i=>i.currentSrc&&i.complete&&!i.naturalWidth).map(i=>i.currentSrc)');assert row['dom']['borderImage']=='none','full card still stretched as border-image'
+      if item:
+       assert len(row['dom']['image'])==1;im=row['dom']['image'][0];assert abs(im['rect']['width']/im['rect']['height']-2/3)<.01;assert abs(im['nw']/im['nh']-2/3)<.01;assert im['fit']=='contain';assert im['rect']['width']>=40;response=c.request.get(im['src']);assert response.status==200;from urllib.parse import urlsplit,unquote
+       local=ROOT/'public'/unquote(urlsplit(im['src']).path.lstrip('/'));assert hashlib.sha256(response.body()).hexdigest()==hashlib.sha256(local.read_bytes()).hexdigest();row['assetSHA256']=hashlib.sha256(response.body()).hexdigest();response.dispose();loaded=page.evaluate('async u=>{const r=await fetch(u), b=await r.arrayBuffer();return [...new Uint8Array(await crypto.subtle.digest("SHA-256",b))].map(v=>v.toString(16).padStart(2,"0")).join("")}',im['src']);row['browserAssetSHA256']=loaded;path=urlsplit(im['src']).path;assert path in expected[item],('wrong SKU/source path',path);assert loaded==expected[item][path],('stale/wrong SKU bytes',loaded,expected[item][path])
+      else:assert not row['dom']['image']
+      assert row['overflow']==0;assert not row['broken'];assert row['dom']['cta']['height']>=44;assert float(row['dom']['font'].removesuffix('px'))>=14;page.reload(wait_until='domcontentloaded');page.locator('.v4-dashboard-grid').wait_for();assert page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY)==state;page.get_by_role('button',name='成就獎勵',exact=True).first.click();page.locator('#achievement-tab-child-1').click();page.locator('#achievement-panel header .avatar-renderer').evaluate(DECODE);assert page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY)==state;assert not errors[start:];assert srcpins()==report['sourcePins'];row.update(status='PASS_FUNCTIONAL_PENDING_VISUAL',cancelEquipReloadAchievement=True)
+     except Exception as e:row.update(status='FAIL',error=str(e),traceback=traceback.format_exc())
+     report['cases'].append(row);save();print(name,row['status'],row.get('error',''),flush=True)
+     if row['status']=='FAIL':stop=True;break
+    if stop:break
+   if stop:break
+  if stop:break
+ b.close()
+report['sourcePinsAfter']=srcpins();save()

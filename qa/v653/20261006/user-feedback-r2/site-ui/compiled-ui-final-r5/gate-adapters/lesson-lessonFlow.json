@@ -1,0 +1,46 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/served-artifacts.json",
+    "sha256": "e36a7805773cb81ee1850d3ef3303b11ae147b936fdc8987fad0a169998a8769"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_lesson.py",
+    "sha256": "a9bccafb99a726820464f3c98130bf6ed71da6aef91c6e525be4d2c7b8c8fe5b"
+  },
+  "observedAt": "2026-10-06T04:28:34.848665+00:00",
+  "group": "lessonFlow",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "case": "speaking-four-children"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+        "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+      },
+      "bindings": {
+        "case": "/flowCases/0/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/lesson/result.json",
+            "sha256": "8badb68a2959e14282888e0d25317f3f618850fc6121210d443ca5824e072341"
+          },
+          "pointer": "/flowCases/0/passed",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

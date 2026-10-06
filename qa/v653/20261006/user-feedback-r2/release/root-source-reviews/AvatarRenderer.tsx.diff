@@ -1,0 +1,56 @@
+--- published-r6/src/components/AvatarRenderer.tsx
++++ feedback-r2/src/components/AvatarRenderer.tsx
+@@ -125,7 +125,7 @@
+       .filter((item) => !item.visualSlot || !activeOcclusions.has(item.visualSlot))
+       .sort((a, b) => (a.zLayer ?? 50) - (b.zLayer ?? 50));
+   const wearableLayers = wearableItems.flatMap((item) => {
+-    const layers = avatarAccessoryLayerSet(item.id, id, skin?.id, wearableItems.find(wearable => wearable.visualSlot === 'headwear')?.id);
++    const layers = avatarAccessoryLayerSet(item.id, id, skin?.id, wearableItems.find(wearable => wearable.visualSlot === 'headwear')?.id, wearableItems.find(wearable => wearable.visualSlot === 'hair')?.id);
+     const retryPath = (path: string | undefined) => path && imageRetry
+       ? `${path}${path.includes('?') ? '&' : '?'}previewRetry=${imageRetry}` : path;
+     return layers ? [{ item, layers: { ...layers, overlay: retryPath(layers.overlay), back: retryPath(layers.back), front: retryPath(layers.front),
+@@ -163,7 +163,7 @@
+   const detailKey = (detail: typeof details[number]) => JSON.stringify([id, requestedFullSkin, detail]);
+   const [mountedDetails, setMountedDetails] = useState<Record<string, HTMLImageElement>>({});
+   const hasCoveredLayer = wearableLayers.some(({ item, layers }) =>
+-    item.visualSlot === 'hair' || (item.visualSlot === 'earwear' && !layers.foreground));
++    item.visualSlot === 'hair' || (item.visualSlot === 'earwear' && (layers.renderer === 'split-overlay' || !layers.foreground)));
+   const hasFacewear = wearableLayers.some(({ item }) => item.visualSlot === 'face');
+   const hatDetail = candidateDetails.find(detail => detail.underHeadwearVisibilityMask);
+   const underHeadwearMaskPath = hasCoveredLayer && hatDetail?.underHeadwearVisibilityMask;
+@@ -172,6 +172,13 @@
+   const [decodedHeadwearMask, setDecodedHeadwearMask] = useState('');
+   const wearableError = useRef(onWearableError);
+   wearableError.current = onWearableError;
++  const missingEarwear = wearableItems.filter(item => item.visualSlot === 'earwear'
++    && !wearableLayers.some(layer => layer.item.id === item.id)).map(item => item.id);
++  const missingEarwearKey = JSON.stringify([id, skin?.id, wearableItems.find(item => item.visualSlot === 'hair')?.id, imageRetry, missingEarwear]);
++  useEffect(() => {
++    const missing = (JSON.parse(missingEarwearKey) as [string, string | null, string | null, number, string[]])[4];
++    if (missing.length) wearableError.current?.();
++  }, [missingEarwearKey]);
+   const failedDetailsKey = JSON.stringify([...detailReadiness.failed]);
+   useEffect(() => {
+     if ((JSON.parse(failedDetailsKey) as string[]).length) wearableError.current?.();
+@@ -217,6 +224,12 @@
+     top: activeRigFrame.bodyTop - padding * activeRigFrame.scale,
+     width: activeRigFrame.bodyWidth, height: activeRigFrame.bodyHeight + padding * activeRigFrame.scale,
+   } : undefined;
++  const underHeadwearLayerMask = (padding: number): CSSProperties | undefined =>
++    hatDetail && activeDetailIds.has(hatDetail.itemId) && underHeadwearMaskPath && decodedHeadwearMask === maskKey ? {
++      maskImage: `url("${underHeadwearMaskPath}")`, maskMode: 'luminance', maskRepeat: 'no-repeat',
++      maskPosition: 'center bottom',
++      maskSize: activeRigFrame ? `100% ${(1536 + maskPadding) / (1536 + padding) * 100}%` : 'contain',
++    } : undefined;
+   const rendererStyle = activeRigFrame ? {
+     ...style,
+     '--avatar-rig-body-left': `${activeRigFrame.bodyLeft}px`,
+@@ -298,7 +311,7 @@
+       data-rig-scene={activeRigFrame ? 'extended-detail' : undefined}
+     >
+       {visibleLayers.map(({ item, layers }) => layers.renderer === 'split-overlay' && layers.back ? (
+-        <SafeWearableLayer key={`${item.id}:back:${layers.back}`} itemId={item.id} className={`avatar-wearable-layer avatar-wearable-back${activeRigFrame ? layers.canvasTopPadding ? ' avatar-rig-extended-layer' : ' avatar-rig-body-layer' : ''}`} style={detailFrameStyle(layers.canvasTopPadding ?? 0)} src={layers.back} eager={eager} visible={splitReady(layers.back, layers.front, layers.canvasTopPadding)} expectedHeight={layers.canvasTopPadding !== undefined ? 1536 + layers.canvasTopPadding : undefined} onReady={() => markSplitLayer(layers.back!, true)} onFailure={() => { markSplitLayer(layers.back!, false); onWearableError?.(); }} />
++        <SafeWearableLayer key={`${item.id}:back:${layers.back}`} itemId={item.id} className={`avatar-wearable-layer avatar-wearable-back${activeRigFrame ? layers.canvasTopPadding ? ' avatar-rig-extended-layer' : ' avatar-rig-body-layer' : ''}`} style={{ ...detailFrameStyle(layers.canvasTopPadding ?? 0), ...(item.visualSlot === 'earwear' ? underHeadwearLayerMask(layers.canvasTopPadding ?? 0) : {}) }} src={layers.back} eager={eager} visible={splitReady(layers.back, layers.front, layers.canvasTopPadding)} expectedHeight={layers.canvasTopPadding !== undefined ? 1536 + layers.canvasTopPadding : undefined} onReady={() => markSplitLayer(layers.back!, true)} onFailure={() => { markSplitLayer(layers.back!, false); onWearableError?.(); }} />
+       ) : null)}
+       {imageSrc && <img
+         key={imageSrc}

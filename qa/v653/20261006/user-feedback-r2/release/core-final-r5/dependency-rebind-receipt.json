@@ -1,0 +1,31 @@
+{
+  "status": "PASS_UNCHANGED_EXECUTED_CORE_DEPENDENCIES",
+  "observedAt": "2026-10-06T04:22:54.587746+00:00",
+  "newCompilerSources": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "executionDependencies": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-final-r5/core-source-dependencies.json",
+    "sha256": "9ad57752da9ad5504bb13c98a7a1abec310b10035057d014b98fb24bea5da5ee"
+  },
+  "originalRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-adapter-r2/core-raw.json",
+    "sha256": "803071fe83a3a070e0f77f83b450fadca2854b2b519ba80edf45924b5dbd1ab3"
+  },
+  "dependencyContract": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-rebind-r1/dependency-contract.json",
+    "sha256": "77408412ad9e716573bfde640d00c919b6326ae61e6d137afff1ad4b7b51597d"
+  },
+  "exactUnchangedDependencies": 29,
+  "runnerDependencies": {
+    "scripts/curriculum_video_policy.ts": "b2f987c590a44e420276cb6e80e6a763499ef6315006aefb9e7ba16e20834f61",
+    "scripts/qa_v40_date_engine.ts": "ccb0a4ce230f11073bfad3ab02273cb887e05bf826e7476b66e7257472cae662",
+    "scripts/qa_v40_family_auth.ts": "6c367c489d23101d23fba9f02a5d45113d5237e746f4078584147e56f2f6889f",
+    "scripts/qa_v40_state_guard.ts": "7e23f13a4c4394578f7ee2b7e03d74135b9e692c10ba22af064f0596dd4149c9",
+    "scripts/qa_v653_shop_economy.ts": "d983a0ce57e5325b77dc8e3a5a33bcab74f2ccc7030734e77a83b9c2f79d0ddf",
+    "scripts/qa_v65_lesson_policy.ts": "dbca799be2050812f56178f6bb4f8fb8d96869cd0c1f26b2ca992249404c5030",
+    "scripts/validate_curriculum.ts": "5dc0ecf64731df60a64208f0bd821f6b8b7d0a57f31bbf59ca46801e60329e63"
+  },
+  "scope": "Original service/online observations remain unmodified. New compile is not attributed to these source/service tests."
+}

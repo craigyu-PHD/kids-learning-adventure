@@ -1,0 +1,51 @@
+{
+  "events": [
+    {
+      "originalRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-part5/report.json",
+        "sha256": "770ad9056181e7d2be6cded6c0569b7440eaaed770610237f749ebaa452e4144"
+      },
+      "retryRaw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry750-timed/report.json",
+        "sha256": "72f5d0da16e40b27a25500ad41b472206232e3bdfb80abadbdb39568acd437ea"
+      },
+      "originalCompletedAt": "2026-10-06T04:57:53.486284+00:00",
+      "retryStartedAt": "2026-10-06T04:58:50.258538+00:00",
+      "retryCompletedAt": "2026-10-06T04:58:57.045002+00:00",
+      "evidence": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/release/runtime-jobs-r5-shop/jobs.json",
+          "sha256": "f418d863c9ccb050c6a623420f990a65e0b4010f9f554612768726dff9114729"
+        },
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-750/process-receipt.json",
+          "sha256": "023e283695a3d8c642f039f813f3dd8c2892ece3d49886970ed3c79fdb41e926"
+        }
+      ],
+      "timeAssertions": {
+        "originalCompletedAt": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/runtime-jobs-r5-shop/jobs.json",
+            "sha256": "f418d863c9ccb050c6a623420f990a65e0b4010f9f554612768726dff9114729"
+          },
+          "pointer": "/jobs/5/completedAt"
+        },
+        "retryStartedAt": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-750/process-receipt.json",
+            "sha256": "023e283695a3d8c642f039f813f3dd8c2892ece3d49886970ed3c79fdb41e926"
+          },
+          "pointer": "/startedAt"
+        },
+        "retryCompletedAt": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/release/shop-failures-timed-r5/case-750/process-receipt.json",
+            "sha256": "023e283695a3d8c642f039f813f3dd8c2892ece3d49886970ed3c79fdb41e926"
+          },
+          "pointer": "/completedAt"
+        }
+      }
+    }
+  ],
+  "scope": "Actual subprocess UTC timestamps; original FAIL preserved; exactly one retry, no filesystem-time inference"
+}

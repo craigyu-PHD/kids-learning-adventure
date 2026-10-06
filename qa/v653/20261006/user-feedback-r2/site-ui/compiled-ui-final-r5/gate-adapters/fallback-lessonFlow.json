@@ -1,0 +1,46 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/served-artifacts.json",
+    "sha256": "d487beeb0d9abfa00bc8d78217b7ed94beea102d24c1ea567f8f7a6f5396304b"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-r1/run_fallback_r5.py",
+    "sha256": "d2f7f763d47a5173b6ae890938770585be928de8fd7d69ff0e68dd39e63bfca4"
+  },
+  "observedAt": "2026-10-06T04:31:34.042817+00:00",
+  "group": "lessonFlow",
+  "mode": "fresh",
+  "status": "PASS",
+  "cases": [
+    {
+      "values": {
+        "case": "thumbnail-fallback"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/result.json",
+        "sha256": "58f7d7fe02345d94f07627a4f67072fe52e136ca4f6e53293befe06f73b5da52"
+      },
+      "bindings": {
+        "case": "/flowCases/0/case"
+      },
+      "checks": {
+        "passed": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/fallback/result.json",
+            "sha256": "58f7d7fe02345d94f07627a4f67072fe52e136ca4f6e53293befe06f73b5da52"
+          },
+          "pointer": "/flowCases/0/passed",
+          "equals": true
+        }
+      }
+    }
+  ]
+}

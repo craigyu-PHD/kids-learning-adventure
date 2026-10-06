@@ -1,0 +1,14 @@
+{
+  "path": "src/styles/components/dashboard.css",
+  "beforeSHA256": "29221fe8c6f016dcadbc681f13e15ba0449dc006aa76a1038ee72b28af027253",
+  "afterSHA256": "7a84cafeb8a92060cdcab17f69aa3c5cd4dffc5fcec8b3af2bb1c042b7bb512a",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "完整讀取差異。CTA 去除重底座，改 64/68px 控制項、44px 圖示區及可換行標籤，night 文案保留對比，沿用既有減少動態區段。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__components__dashboard.css.diff",
+    "sha256": "1128b05d8a64674ec9b8318dcf4d9a486c3d994de85a2ac313816ff137ffce9a"
+  },
+  "observedAt": "2026-10-06T03:21:01.072409+00:00",
+  "scope": "Source diff acceptance against read cached published r6 bytes; not compiled runtime/visual release acceptance"
+}

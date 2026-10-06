@@ -1,0 +1,53 @@
+--- published-r6/src/styles/responsive.css
++++ candidate-r5/src/styles/responsive.css
+@@ -244,21 +244,14 @@
+   }
+ }
+ 
+-/* Keep the child-first Home action in the first short-phone viewport without
+-   removing the learner selector or its warning copy. The selector becomes a
+-   compact horizontal scroller at 360px and below; wider phones retain the
+-   stacked layout with a single-line explanatory hint. */
++/* The selector's full-width explanation stays readable below its title and
++   horizontally scrollable child buttons, including on short phones. */
+ @media (max-width: 600px) {
+   .v65-home-display-selector { gap:6px !important; padding:7px 9px !important; }
+   .v65-home-display-selector > div:first-child > strong {
+-    overflow:hidden;
+-    text-overflow:ellipsis;
+-    white-space:nowrap;
+-  }
+-  .v65-home-display-selector > div:first-child > small {
+-    overflow:hidden;
+-    text-overflow:ellipsis;
+-    white-space:nowrap;
++    overflow:visible;
++    text-overflow:clip;
++    white-space:normal;
+   }
+   .v64-daily-participants > div {
+     display:grid;
+@@ -282,12 +275,6 @@
+   }
+ }
+ @media (max-width: 360px) {
+-  .v65-home-display-selector {
+-    flex-direction:row !important;
+-    align-items:center !important;
+-  }
+-  .v65-home-display-selector > div:first-child { flex:0 0 112px; }
+-  .v65-home-display-selector > div:last-child { flex:1 1 auto; min-width:0; }
+   .v53-date-strip { height:44px !important; margin-bottom:6px !important; padding-inline:9px !important; gap:5px !important; }
+   .v53-date-strip span { font-size:13px !important; }
+   .v53-date-strip strong { font-size:17px !important; padding-left:5px !important; }
+@@ -310,8 +297,8 @@
+ .v4-stage-map button small { font-size:var(--lesson-nav-label-size,12px) !important; font-weight:800 !important; }
+ .v4-stage-map button.done>span { background:var(--lesson-done-bg,#20C968) !important; }
+ .v4-stage-map button.active { background:var(--lesson-active-bg,linear-gradient(160deg,#EAFBFF,#E9E4FF)) !important; border-color:var(--lesson-active-border,#0866D5) !important; box-shadow:0 0 0 3px rgba(16,188,235,.16),0 10px 18px rgba(71,72,214,.15) !important; }
+-.v4-repeat-hero button,.v4-quest-controls button.primary { min-height:54px !important; border-radius:18px !important; padding-inline:21px !important; font-size:var(--lesson-action-size,16px) !important; box-shadow:0 8px 0 color-mix(in srgb,var(--v4-theme-accent-2) 55%,#063A86),0 13px 22px rgba(7,91,199,.18) !important; }
+-.v4-repeat-hero button:active,.v4-quest-controls button.primary:active { transform:translateY(3px); box-shadow:0 4px 0 color-mix(in srgb,var(--v4-theme-accent-2) 55%,#063A86),0 7px 12px rgba(7,91,199,.14) !important; }
++.v4-repeat-hero button,.v4-quest-controls button.primary { min-height:54px !important; border-radius:18px !important; padding-inline:21px !important; font-size:var(--lesson-action-size,16px) !important; box-shadow:0 4px 12px rgba(7,91,199,.15) !important; }
++.v4-repeat-hero button:active,.v4-quest-controls button.primary:active { transform:translateY(1px); box-shadow:0 2px 7px rgba(7,91,199,.12) !important; }
+ @media (max-width:760px) { .v4-stage-map button { min-height:74px !important; } .v4-stage-map button small { font-size:var(--lesson-small-size,11px) !important; } }
+ 
+ /* ── Family-scale dashboard ───────────────────────────────────────────────

@@ -1,0 +1,2425 @@
+--- published-r6/src/data/avatarAssetManifest.json
++++ candidate-r2/src/data/avatarAssetManifest.json
+@@ -1109,217 +1109,227 @@
+         "younger-sister"
+       ],
+       "variants": {
+-        "brother": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-        "younger": "public/assets/v6.4/runtime/younger/hair-nebula.webp",
+-        "sister": "public/assets/v6.4/runtime/sister/hair-nebula.webp",
+-        "younger-sister": "public/assets/v6.4/runtime/younger-sister/hair-nebula.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp"
+       },
+       "defaultSkinDetails": {
+         "brother": {
+-          "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
+           "canvasTopPadding": 256,
+-          "evidence": {
+-            "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-            "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-          }
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
+         },
+         "younger": {
+-          "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--detail.png",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
+           "canvasTopPadding": 256,
+-          "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--hair-visibility-mask.png"
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp"
+         },
+         "sister": {
+-          "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--detail.png",
+-          "canvasTopPadding": 0,
+-          "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--hair-visibility-mask.png"
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++          "canvasTopPadding": 256,
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
+         },
+         "younger-sister": {
+-          "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--detail.png",
+-          "canvasTopPadding": 0
+-        }
+-      },
+-      "catalogPath": "public/assets/v6.5.2/catalog/hairstyles/hair-nebula.webp",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++          "canvasTopPadding": 256,
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
++        }
++      },
++      "catalogPath": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--brother.webp",
++      "catalogVariants": {
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--brother.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--younger.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--sister.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--younger-sister.webp"
++      },
+       "skinDetails": {
+         "brother": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
++          },
++          "outfit-racer": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
++          },
++          "outfit-mage": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
+-          },
+-          "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
+-          },
+-          "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/hair-nebula--closed-fringe-native-20260927-r1.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-nebula-brother-refit/integration-delta.json",
+-              "sha256": "bdf6351111d79fa0423ddfb9ae9c0b62396738e14e11ad4d70938244ab6a04a0"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp"
+           }
+         },
+         "younger": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--outfit-cadet--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--outfit-cadet--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet--body-mask.webp"
++          },
++          "outfit-racer": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--outfit-mecha--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--outfit-mecha--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--outfit-ocean--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--outfit-ocean--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp"
++          },
++          "outfit-mage": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--outfit-legend--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--outfit-legend--hair-visibility-mask.png"
+-          },
+-          "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--outfit-mage--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--outfit-mage--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--sister-bloom-outfit--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--sister-bloom-outfit--hair-visibility-mask.png"
+-          },
+-          "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/hair-nebula--outfit-cadet--detail.png",
+-            "canvasTopPadding": 256,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/hair-nebula--outfit-cadet--hair-visibility-mask.png",
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-racer-hair-repair/integration-delta.json",
+-              "sha256": "10d834bf665fa3f3051e1482a2786c9602fc07f5e419b8a75a42049582d493aa"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp"
+           }
+         },
+         "sister": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--outfit-cadet--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--outfit-cadet--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
++          },
++          "outfit-racer": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--outfit-mecha--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--outfit-mecha--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--outfit-ocean--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--outfit-ocean--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
++          },
++          "outfit-mage": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--outfit-legend--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--outfit-legend--hair-visibility-mask.png"
+-          },
+-          "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--outfit-mage--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--outfit-mage--hair-visibility-mask.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--sister-bloom-outfit--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--sister-bloom-outfit--hair-visibility-mask.png"
+-          },
+-          "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/hair-nebula--outfit-cadet--detail.png",
+-            "canvasTopPadding": 0,
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/hair-nebula--outfit-cadet--hair-visibility-mask.png",
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-racer-hair-repair/integration-delta.json",
+-              "sha256": "10d834bf665fa3f3051e1482a2786c9602fc07f5e419b8a75a42049582d493aa"
+-            }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp"
+           }
+         },
+         "younger-sister": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--outfit-cadet--detail.png",
+-            "canvasTopPadding": 0
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
++          },
++          "outfit-racer": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--outfit-mecha--detail.png",
+-            "canvasTopPadding": 0
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--outfit-ocean--detail.png",
+-            "canvasTopPadding": 0
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
++          },
++          "outfit-mage": {
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--outfit-legend--detail.png",
+-            "canvasTopPadding": 0
+-          },
+-          "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--outfit-mage--detail.png",
+-            "canvasTopPadding": 0
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--sister-bloom-outfit--detail.png",
+-            "canvasTopPadding": 0
+-          },
+-          "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/hair-nebula--outfit-cadet--detail.png",
+-            "canvasTopPadding": 0,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-racer-hair-repair/integration-delta.json",
+-              "sha256": "10d834bf665fa3f3051e1482a2786c9602fc07f5e419b8a75a42049582d493aa"
+-            }
+-          }
+-        }
+-      },
+-      "catalogVariants": {
+-        "brother": "public/assets/v6.5.2/catalog/hair-nebula--brother--closed-fringe-native-20260927-r1.webp",
+-        "younger": "public/assets/v6.5.2/catalog/hair-nebula--younger--20260927.webp",
+-        "sister": "public/assets/v6.5.2/catalog/hair-nebula--sister--20260927.webp",
+-        "younger-sister": "public/assets/v6.5.2/catalog/hair-nebula--younger-sister--20260927.webp"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp"
++          }
++        }
++      },
++      "skinVariants": {
++        "brother": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp"
++        },
++        "younger": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp"
++        },
++        "sister": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp"
++        },
++        "younger-sister": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp"
++        }
+       }
+     },
+     {
+@@ -1999,344 +2009,255 @@
+         "younger-sister"
+       ],
+       "variants": {
+-        "brother": "public/assets/v6.4/runtime/brother/starter-sun-cap.webp",
+-        "younger": "public/assets/v6.4/runtime/younger/starter-sun-cap.webp",
+-        "sister": "public/assets/v6.4/runtime/sister/starter-sun-cap.webp",
+-        "younger-sister": "public/assets/v6.4/runtime/younger-sister/starter-sun-cap.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp"
+       },
+       "defaultSkinDetails": {
+         "brother": {
+-          "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-          "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
+           "canvasTopPadding": 256,
+-          "evidence": {
+-            "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-            "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-          },
+-          "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--underHeadwear-20260927.png"
++          "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+         },
+         "younger": {
+-          "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-          "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
+           "canvasTopPadding": 256,
+-          "evidence": {
+-            "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-            "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-          },
+-          "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--underHeadwear-20260927.png"
++          "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp"
+         },
+         "sister": {
+-          "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-          "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
+           "canvasTopPadding": 256,
+-          "evidence": {
+-            "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-            "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-          },
+-          "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--underHeadwear-20260927.png"
++          "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+         },
+         "younger-sister": {
+-          "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-          "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
++          "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
+           "canvasTopPadding": 256,
+-          "evidence": {
+-            "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-            "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-          },
+-          "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--underHeadwear-20260927.png"
+-        }
+-      },
+-      "catalogPath": "public/assets/v6.5.2/catalog/starter-sun-cap--native-20260927.webp",
++          "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++          "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
++        }
++      },
++      "catalogPath": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-sun-cap--brother.webp",
+       "skinDetails": {
+         "brother": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--outfit-cadet--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+           },
+           "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--outfit-racer--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--outfit-mecha--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--outfit-ocean--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+           },
+           "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--outfit-mage--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--outfit-legend--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/brother/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/brother/starter-sun-cap--sister-bloom-outfit--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp"
+           }
+         },
+         "younger": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--outfit-cadet--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--body-mask.webp"
+           },
+           "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--outfit-racer--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--outfit-mecha--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--outfit-ocean--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp"
+           },
+           "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--outfit-mage--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--outfit-legend--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger/starter-sun-cap--sister-bloom-outfit--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp"
+           }
+         },
+         "sister": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--outfit-cadet--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+           },
+           "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--outfit-racer--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--outfit-mecha--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--outfit-ocean--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+           },
+           "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--outfit-mage--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--outfit-legend--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/sister/starter-sun-cap--sister-bloom-outfit--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp"
+           }
+         },
+         "younger-sister": {
+           "outfit-cadet": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--outfit-cadet--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
+           },
+           "outfit-racer": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--outfit-racer--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--body-mask.webp"
+           },
+           "outfit-mecha": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--outfit-mecha--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
+           },
+           "outfit-ocean": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--outfit-ocean--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
+           },
+           "outfit-mage": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--outfit-mage--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
+           },
+           "outfit-legend": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--outfit-legend--underHeadwear-20260927.png"
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
+           },
+           "sister-bloom-outfit": {
+-            "overlay": "public/assets/v6.5.2/runtime/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "hairVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--base--native-20260927.webp",
+-            "canvasTopPadding": 256,
+-            "evidence": {
+-              "path": "qa/v652/astra/20260927-starter-rocket-native-fix/audit.json",
+-              "sha256": "95a761180f972a68c62036918d9b684d1c34bec2fe2ba97f2a759ef9580cfd8a"
+-            },
+-            "underHeadwearVisibilityMask": "public/assets/v6.5.2/runtime-masks/younger-sister/starter-sun-cap--sister-bloom-outfit--underHeadwear-20260927.png"
+-          }
+-        }
+-      }
++            "overlay": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++            "canvasTopPadding": 256,
++            "underHeadwearVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
++            "hairVisibilityMask": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp"
++          }
++        }
++      },
++      "skinVariants": {
++        "brother": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp"
++        },
++        "younger": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp"
++        },
++        "sister": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp"
++        },
++        "younger-sister": {
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp"
++        }
++      },
++      "catalogVariants": {}
+     },
+     {
+       "id": "sunny-explorer-hat",
+@@ -4114,96 +4035,240 @@
+         "sister",
+         "younger-sister"
+       ],
+-      "catalogPath": "public/assets/v6.5.3/catalog/starter-buddy-headphones--native.webp",
++      "catalogPath": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+       "canvasTopPadding": 256,
+       "backVariants": {
+-        "brother": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp",
+-        "younger": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--back.webp",
+-        "sister": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp",
+-        "younger-sister": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp"
+       },
+       "frontVariants": {
+-        "brother": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp",
+-        "younger": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--front.webp",
+-        "sister": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp",
+-        "younger-sister": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
+       },
+       "skinBackVariants": {
+         "brother": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--outfit-racer--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp"
+         },
+         "younger": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--outfit-cadet--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--outfit-legend--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp"
+         },
+         "sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--outfit-mecha--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp"
+         },
+         "younger-sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--outfit-racer--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp"
+         }
+       },
+       "skinFrontVariants": {
+         "brother": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--outfit-racer--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/brother/starter-buddy-headphones--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
+         },
+         "younger": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--outfit-cadet--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--outfit-legend--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger/starter-buddy-headphones--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
+         },
+         "sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--outfit-mecha--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/sister/starter-buddy-headphones--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
+         },
+         "younger-sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--outfit-racer--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/starter-buddy-headphones--native--default--front.webp"
+-        }
+-      }
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++        }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--outfit-racer.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-cadet.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-legend.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--outfit-mecha.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--outfit-racer.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp"
++            }
++          }
++        }
++      },
++      "catalogVariants": {}
+     },
+     {
+       "id": "story-headphones",
+@@ -4304,6 +4369,149 @@
+           "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+           "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
+         }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--outfit-cadet--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--outfit-legend--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--outfit-mecha--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp"
++            }
++          }
++        }
+       }
+     },
+     {
+@@ -4316,96 +4524,240 @@
+         "sister",
+         "younger-sister"
+       ],
+-      "catalogPath": "public/assets/v6.5.3/catalog/phones-sky--native.webp",
++      "catalogPath": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/phones-sky--brother.webp",
+       "canvasTopPadding": 256,
+       "backVariants": {
+-        "brother": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp",
+-        "younger": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--back.webp",
+-        "sister": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp",
+-        "younger-sister": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp"
+       },
+       "frontVariants": {
+-        "brother": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp",
+-        "younger": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--front.webp",
+-        "sister": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp",
+-        "younger-sister": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
+       },
+       "skinBackVariants": {
+         "brother": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/brother/phones-sky--native--outfit-racer--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp"
+         },
+         "younger": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger/phones-sky--native--outfit-cadet--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger/phones-sky--native--outfit-legend--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp"
+         },
+         "sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/sister/phones-sky--native--outfit-mecha--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp"
+         },
+         "younger-sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--outfit-racer--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp"
+         }
+       },
+       "skinFrontVariants": {
+         "brother": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/brother/phones-sky--native--outfit-racer--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/brother/phones-sky--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
+         },
+         "younger": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger/phones-sky--native--outfit-cadet--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger/phones-sky--native--outfit-legend--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger/phones-sky--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
+         },
+         "sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/sister/phones-sky--native--outfit-mecha--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/sister/phones-sky--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
+         },
+         "younger-sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--outfit-racer--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/phones-sky--native--default--front.webp"
+-        }
+-      }
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++        }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--outfit-racer.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-cadet.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-legend.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--outfit-mecha.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--outfit-racer.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp"
++            }
++          }
++        }
++      },
++      "catalogVariants": {}
+     },
+     {
+       "id": "phones-racer",
+@@ -4506,6 +4858,149 @@
+           "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+           "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
+         }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--outfit-cadet--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--outfit-legend--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--outfit-mecha--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp"
++            }
++          }
++        }
+       }
+     },
+     {
+@@ -4607,6 +5102,149 @@
+           "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+           "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
+         }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--outfit-cadet--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--outfit-legend--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--outfit-mecha--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp"
++            }
++          }
++        }
+       }
+     },
+     {
+@@ -4708,6 +5346,149 @@
+           "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+           "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
+         }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--outfit-cadet--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--outfit-legend--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--outfit-mecha--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--outfit-racer--front.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp"
++            }
++          }
++        }
+       }
+     },
+     {
+@@ -4720,96 +5501,240 @@
+         "sister",
+         "younger-sister"
+       ],
+-      "catalogPath": "public/assets/v6.5.3/catalog/sister-cat-headphones--native.webp",
++      "catalogPath": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/sister-cat-headphones--brother.webp",
+       "canvasTopPadding": 256,
+       "backVariants": {
+-        "brother": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp",
+-        "younger": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--back.webp",
+-        "sister": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp",
+-        "younger-sister": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp"
+       },
+       "frontVariants": {
+-        "brother": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp",
+-        "younger": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--front.webp",
+-        "sister": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp",
+-        "younger-sister": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp"
++        "brother": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
++        "younger": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
++        "sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
++        "younger-sister": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
+       },
+       "skinBackVariants": {
+         "brother": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--outfit-racer--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp"
+         },
+         "younger": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--outfit-cadet--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--outfit-legend--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp"
+         },
+         "sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--outfit-mecha--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp"
+         },
+         "younger-sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--outfit-racer--back.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--back.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp"
+         }
+       },
+       "skinFrontVariants": {
+         "brother": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--outfit-racer--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/brother/sister-cat-headphones--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
+         },
+         "younger": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--outfit-cadet--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--outfit-legend--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger/sister-cat-headphones--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-cadet.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-legend.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
+         },
+         "sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--outfit-mecha--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/sister/sister-cat-headphones--native--default--front.webp"
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--outfit-mecha.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
+         },
+         "younger-sister": {
+-          "outfit-cadet": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-racer": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--outfit-racer--front.webp",
+-          "outfit-mecha": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-ocean": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-mage": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp",
+-          "outfit-legend": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp",
+-          "sister-bloom-outfit": "public/assets/v6.5.3/runtime/younger-sister/sister-cat-headphones--native--default--front.webp"
+-        }
+-      }
++          "outfit-cadet": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
++          "outfit-racer": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--outfit-racer.webp",
++          "outfit-mecha": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
++          "outfit-ocean": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
++          "outfit-mage": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
++          "outfit-legend": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
++          "sister-bloom-outfit": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++        }
++      },
++      "requiredHairstyleFits": [
++        "hair-nebula"
++      ],
++      "hairstyleSplitVariants": {
++        "hair-nebula": {
++          "brother": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--outfit-racer.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp"
++            }
++          },
++          "younger": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--outfit-cadet.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-cadet.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--outfit-legend.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-legend.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp"
++            }
++          },
++          "sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--outfit-mecha.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--outfit-mecha.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp"
++            }
++          },
++          "younger-sister": {
++            "default": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-cadet": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-racer": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--outfit-racer.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--outfit-racer.webp"
++            },
++            "outfit-mecha": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-ocean": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-mage": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            },
++            "outfit-legend": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            },
++            "sister-bloom-outfit": {
++              "back": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
++              "front": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp"
++            }
++          }
++        }
++      },
++      "catalogVariants": {}
+     },
+     {
+       "id": "trail-backpack",

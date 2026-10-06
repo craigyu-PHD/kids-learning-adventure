@@ -1,0 +1,18 @@
+{
+  "path": "src/styles/components/dashboard.css",
+  "beforeSHA256": "29221fe8c6f016dcadbc681f13e15ba0449dc006aa76a1038ee72b28af027253",
+  "afterSHA256": "e4ae400103e747bc10f4b3a726877102c4162110db9131179d1ed67c66e6dd1e",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "實讀r3→r4：selector改grid兩欄、fullwidth small14px自然換行；role=group選擇器取代last-child以符合DOM；button寬度受容器限制且姓名自然換行。既有主題明暗狀態保留。r4真pilot完整hint和長名均通過；首屏CTA失敗由Dashboard移位修正，待r5實測。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r5/src__styles__components__dashboard.css.diff",
+    "sha256": "fbd21ccea8d36104261cec619a377054257ea781d03982bdb6bfb764eebb5245"
+  },
+  "observedAt": "2026-10-06T04:22:29.205617+00:00",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r3/src__styles__components__dashboard.css.review.json",
+    "sha256": "ba8fe09572fa7a263577d0403813e706b71e3e5aee3d5648e519e55e2a508628"
+  },
+  "scope": "Source change acceptance, runtime and independent visual gate separate"
+}

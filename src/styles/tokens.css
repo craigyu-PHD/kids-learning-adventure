@@ -70,3 +70,19 @@
   --font-english: 'Nunito', 'Noto Sans TC', sans-serif;
   --font-game:    'Fredoka', 'Nunito', sans-serif;
 }
+
+/* Night Adventure surfaces. Feature owners opt into these without changing
+   image colours, rarity artwork, dimensions or the existing light palette. */
+:root {
+  --night-bg: #171a32;
+  --night-surface: #222742;
+  --night-raised: #2b3150;
+  --night-control: #343b5d;
+  --night-border: #657396;
+  --night-text: #f8faff;
+  --night-muted: #b6bfda;
+  --night-sky: #72d6ff;
+  --night-purple: #d2baff;
+  --night-gold: #ffd966;
+  --night-mint: #68e0ae;
+}

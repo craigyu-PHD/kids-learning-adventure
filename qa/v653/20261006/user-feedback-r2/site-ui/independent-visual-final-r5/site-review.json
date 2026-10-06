@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "group": "siteVisual",
+  "reviewer": "voice_reward_feedback_r2",
+  "runtimeOperator": "lesson_layout_feedback_r2",
+  "cases": [
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-start.png",
+          "sha256": "51b2070f3405719d62669e66d444262c5b820ee1333523ccd36fb11cd7d93ffe"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "mecha",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-mecha-start.png",
+          "sha256": "5922898dff56c1b89ba1db81aff70eacca60078add1f5454e8b997b830db0992"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "racing",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-racing-start.png",
+          "sha256": "176347ef6087d6171f5468b723517714f78e7fa5cdad7efcb3fab835d5181898"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "tank",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-tank-start.png",
+          "sha256": "29f25131648f547c13e400e55f55694f5eb0e1a4a2114a6c8b93ceef2a658df1"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "creature",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-creature-start.png",
+          "sha256": "059f65e80cab7ebe121a076e332d270e52ca40a22ddf076a68e815312fd43714"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-dark",
+        "world": "hero",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 主題配色一致，起始任務CTA清楚。 夜間文字與按鈕有足夠視覺區別。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-dark-hero-start.png",
+          "sha256": "e160008ce74893b302ef6a18de6b1ecfdcf23260457317e7d6d2d5a10d767b16"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "hero",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 桌機三欄內文、資源與日曆均可讀。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-hero-start.png",
+          "sha256": "eacb0ad9ff7e5907818a20d6e032c4c103f048aace11c7c3f12d6da4f0448cd8"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "mecha",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 桌機三欄內文、資源與日曆均可讀。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-mecha-start.png",
+          "sha256": "dab88ac060871d951d23ca802648c6349c6d5234ee0fd0568678393b43f89e33"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "racing",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 桌機三欄內文、資源與日曆均可讀。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-racing-start.png",
+          "sha256": "35288df04f69f01ec2a6ac10b8de1949fd15c5f34a8d8c825721abd6dc6f8f2a"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "tank",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 桌機三欄內文、資源與日曆均可讀。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-tank-start.png",
+          "sha256": "3d76dffd0b2c0f77a965b6b171aee886a5bcfa2d45334e0cdd149e767e1d8860"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-light",
+        "world": "creature",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 桌機三欄內文、資源與日曆均可讀。 主題配色一致，起始任務CTA清楚。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-light-creature-start.png",
+          "sha256": "de4a36bc3aa428352b049a49021fb161c2d8533acbc418cbdb617c2abfcd0805"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "1440-dark",
+        "world": "hero",
+        "state": "start"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 桌機三欄內文、資源與日曆均可讀。 主題配色一致，起始任務CTA清楚。 夜間文字與按鈕有足夠視覺區別。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-1440-dark-hero-start.png",
+          "sha256": "33ed1252da0b067ccc05bb435e2c4fe3e468d361abcb7db68eccf7225aad79c5"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "selected0"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 未選孩子提示清楚，checkbox為空。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-selected0.png",
+          "sha256": "48f3daad87bf34e11d942ee0ce6f5d1e481003c33c235109e4679202c36f1043"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "midLesson"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 CTA顯示繼續第2節，第一堂完成狀態一致。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-midLesson.png",
+          "sha256": "b82d54c72e348877b71219bea00683d6ed58d7521b9a327a443d5551bd7a341b"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "allDone"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 CTA顯示今天收穫，兩堂與今日收穫均已完成。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-allDone.png",
+          "sha256": "194f0058247dfb9f3be3abf22c3a05130001f1a018951063bb173f417f5b6070"
+        }
+      ]
+    },
+    {
+      "values": {
+        "profile": "390-light",
+        "world": "hero",
+        "state": "missingtrusteddate"
+      },
+      "accepted": true,
+      "reviewNotes": "首頁展示孩子與上課名單的說明全文可讀；主CTA文字與箭頭完整，明顯優於次要入口，版面無遮擋。 手機說明沒有省略號，CTA已移到今日主題卡上方。 可信時間警示和重新確認連線全文完整，參與者停用。",
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/primary-390-light-hero-missingtrusteddate.png",
+          "sha256": "d253824d4b7b23c4259e086211b0c390e3b146a2dcf521b32be37ba7e0a456ad"
+        }
+      ]
+    }
+  ],
+  "instruction": "Actual image inspection required; accepted remains null until independent reviewer writes separate review raw.",
+  "observedAt": "2026-10-06T04:31:03.054992+00:00",
+  "method": "16張r5實際PNG逐張view_image目視；原始輸出非首屏專用，560px首屏另由selector-prep-pilot-r3證明。",
+  "scope": "本組只接受所列實際畫面的視覺可讀性，功能由runtime raw驗證。",
+  "compiledBinding": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/compiled-binding.json",
+    "sha256": "5894cd57956e53644aa1d1f34cd4ae01131b4efbb4276a6cb3319074549ff512"
+  },
+  "runtimeRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/site/result.json",
+    "sha256": "98ea74017928e69effd3374d5055835aa3d12ff31550f3460f14a1fb4f22f8b8"
+  }
+}

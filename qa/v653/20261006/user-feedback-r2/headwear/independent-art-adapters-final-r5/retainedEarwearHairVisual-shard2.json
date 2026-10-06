@@ -1,0 +1,1410 @@
+{
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled_fit_r2.py",
+    "sha256": "5e89a73acc91fcfccebbcbcd2e7e9fbf03c9a0111f2957dd0f3956cb038f935b"
+  },
+  "group": "retainedEarwearHairVisual",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:45:02.915016+00:00",
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/served-artifacts.json",
+    "sha256": "6924923dbf3812bd59ae1ac238389c414c4c95f9b6dacfc434f1e9f4b795546c"
+  },
+  "reviewer": "lesson_layout_feedback_r2",
+  "runtimeOperator": "root-compiled-fit",
+  "originalRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+    "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+  },
+  "reviewRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+    "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+  },
+  "cases": [
+    {
+      "values": {
+        "role": "brother",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/424/values/role",
+        "skin": "/cases/424/values/skin",
+        "itemSet": "/cases/424/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/424/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/default/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "672250b3907d9bc4130a961a1a322e80653769573818af0973b7e3880e32b8b2"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/424/images/0/sha256",
+          "equals": "672250b3907d9bc4130a961a1a322e80653769573818af0973b7e3880e32b8b2"
+        }
+      ],
+      "reviewNotes": "brother／default；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/425/values/role",
+        "skin": "/cases/425/values/skin",
+        "itemSet": "/cases/425/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/425/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/outfit-cadet/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "cd01188220f5b88298b88ee5b880505b96a1893301cbb04437b73a0aac88007b"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/425/images/0/sha256",
+          "equals": "cd01188220f5b88298b88ee5b880505b96a1893301cbb04437b73a0aac88007b"
+        }
+      ],
+      "reviewNotes": "brother／outfit-cadet；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/426/values/role",
+        "skin": "/cases/426/values/skin",
+        "itemSet": "/cases/426/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/426/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/outfit-legend/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "5b73930a589fdb2ae85c786a74fdb78f00b2299359d88dd48820cfd1573bfd65"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/426/images/0/sha256",
+          "equals": "5b73930a589fdb2ae85c786a74fdb78f00b2299359d88dd48820cfd1573bfd65"
+        }
+      ],
+      "reviewNotes": "brother／outfit-legend；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/427/values/role",
+        "skin": "/cases/427/values/skin",
+        "itemSet": "/cases/427/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/427/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/outfit-mage/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "c17ba9f9482523bc8ea1587d1d75e921f2193bb1bdf35c27da0798b4f07a32a0"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/427/images/0/sha256",
+          "equals": "c17ba9f9482523bc8ea1587d1d75e921f2193bb1bdf35c27da0798b4f07a32a0"
+        }
+      ],
+      "reviewNotes": "brother／outfit-mage；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/428/values/role",
+        "skin": "/cases/428/values/skin",
+        "itemSet": "/cases/428/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/428/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/outfit-mecha/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "cdca36f6b1a522a9c478719d7c0b13720c1cfd85eda881d07dbdcf5da0268f4f"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/428/images/0/sha256",
+          "equals": "cdca36f6b1a522a9c478719d7c0b13720c1cfd85eda881d07dbdcf5da0268f4f"
+        }
+      ],
+      "reviewNotes": "brother／outfit-mecha；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/429/values/role",
+        "skin": "/cases/429/values/skin",
+        "itemSet": "/cases/429/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/429/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/outfit-ocean/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "841da2f0faff69116a5635f5e4527c7641825e0987bb61f28eed770a95bf0f69"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/429/images/0/sha256",
+          "equals": "841da2f0faff69116a5635f5e4527c7641825e0987bb61f28eed770a95bf0f69"
+        }
+      ],
+      "reviewNotes": "brother／outfit-ocean；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/430/values/role",
+        "skin": "/cases/430/values/skin",
+        "itemSet": "/cases/430/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/430/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/outfit-racer/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "6cc11e6af83d50fa2a53d68375b85af990e1d21f76d8f72ecc92bdedf3879e10"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/430/images/0/sha256",
+          "equals": "6cc11e6af83d50fa2a53d68375b85af990e1d21f76d8f72ecc92bdedf3879e10"
+        }
+      ],
+      "reviewNotes": "brother／outfit-racer；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/431/values/role",
+        "skin": "/cases/431/values/skin",
+        "itemSet": "/cases/431/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/431/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/brother/sister-bloom-outfit/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "9f54722424ce2262d75f49fda741b762d7170a7806bb90dfce8b563cafacf4f4"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/431/images/0/sha256",
+          "equals": "9f54722424ce2262d75f49fda741b762d7170a7806bb90dfce8b563cafacf4f4"
+        }
+      ],
+      "reviewNotes": "brother／sister-bloom-outfit；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/432/values/role",
+        "skin": "/cases/432/values/skin",
+        "itemSet": "/cases/432/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/432/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/default/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "9332e627ae78dfc907b74e47b8d84e8ddde75668fda679a25b8d95a26a9ee0fc"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/432/images/0/sha256",
+          "equals": "9332e627ae78dfc907b74e47b8d84e8ddde75668fda679a25b8d95a26a9ee0fc"
+        }
+      ],
+      "reviewNotes": "younger／default；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/433/values/role",
+        "skin": "/cases/433/values/skin",
+        "itemSet": "/cases/433/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/433/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/outfit-cadet/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "3bcadfd674c2200712f8332fe65d643c175890d4aca575172fa813663f55298b"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/433/images/0/sha256",
+          "equals": "3bcadfd674c2200712f8332fe65d643c175890d4aca575172fa813663f55298b"
+        }
+      ],
+      "reviewNotes": "younger／outfit-cadet；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/434/values/role",
+        "skin": "/cases/434/values/skin",
+        "itemSet": "/cases/434/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/434/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/outfit-legend/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "36f90b0474512a8ceb102fddfcb25e3ff22c295e7e3a7e67f619c96ceadfca8b"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/434/images/0/sha256",
+          "equals": "36f90b0474512a8ceb102fddfcb25e3ff22c295e7e3a7e67f619c96ceadfca8b"
+        }
+      ],
+      "reviewNotes": "younger／outfit-legend；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/435/values/role",
+        "skin": "/cases/435/values/skin",
+        "itemSet": "/cases/435/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/435/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/outfit-mage/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "b186b497f110efdca14cd57336e1560327a072bbc945761abed56c8f913d8be8"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/435/images/0/sha256",
+          "equals": "b186b497f110efdca14cd57336e1560327a072bbc945761abed56c8f913d8be8"
+        }
+      ],
+      "reviewNotes": "younger／outfit-mage；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/436/values/role",
+        "skin": "/cases/436/values/skin",
+        "itemSet": "/cases/436/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/436/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/outfit-mecha/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "6dde41938297859711cdf6a064b6dc15ddc4efeefc8989044dc2175d8a8fdfa7"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/436/images/0/sha256",
+          "equals": "6dde41938297859711cdf6a064b6dc15ddc4efeefc8989044dc2175d8a8fdfa7"
+        }
+      ],
+      "reviewNotes": "younger／outfit-mecha；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/437/values/role",
+        "skin": "/cases/437/values/skin",
+        "itemSet": "/cases/437/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/437/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/outfit-ocean/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "343f2eeafdc35fc9e30411faf3379a216da0cf69cf8713fe66a610673a5e94d8"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/437/images/0/sha256",
+          "equals": "343f2eeafdc35fc9e30411faf3379a216da0cf69cf8713fe66a610673a5e94d8"
+        }
+      ],
+      "reviewNotes": "younger／outfit-ocean；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/438/values/role",
+        "skin": "/cases/438/values/skin",
+        "itemSet": "/cases/438/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/438/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/outfit-racer/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "b9b107818a1248826e743570d5370d703fd9f1fc3b5ed3a2e868a4d8be20dcac"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/438/images/0/sha256",
+          "equals": "b9b107818a1248826e743570d5370d703fd9f1fc3b5ed3a2e868a4d8be20dcac"
+        }
+      ],
+      "reviewNotes": "younger／outfit-racer；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/439/values/role",
+        "skin": "/cases/439/values/skin",
+        "itemSet": "/cases/439/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/439/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger/sister-bloom-outfit/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "b572b167a141dadfb210b402a3457d459c66502f5c874f8a2d9638065f01a8a0"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/439/images/0/sha256",
+          "equals": "b572b167a141dadfb210b402a3457d459c66502f5c874f8a2d9638065f01a8a0"
+        }
+      ],
+      "reviewNotes": "younger／sister-bloom-outfit；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/440/values/role",
+        "skin": "/cases/440/values/skin",
+        "itemSet": "/cases/440/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/440/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/default/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "bb7bb2427228694cd40ce81d8e0de4ed0fa06c5b0158c9dbe5aeff41513f2485"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/440/images/0/sha256",
+          "equals": "bb7bb2427228694cd40ce81d8e0de4ed0fa06c5b0158c9dbe5aeff41513f2485"
+        }
+      ],
+      "reviewNotes": "sister／default；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/441/values/role",
+        "skin": "/cases/441/values/skin",
+        "itemSet": "/cases/441/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/441/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/outfit-cadet/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "811e28d7bc6a6c596a02bd35f3e2c811b0f48b140e38c621e96c2d69c7ff092c"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/441/images/0/sha256",
+          "equals": "811e28d7bc6a6c596a02bd35f3e2c811b0f48b140e38c621e96c2d69c7ff092c"
+        }
+      ],
+      "reviewNotes": "sister／outfit-cadet；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/442/values/role",
+        "skin": "/cases/442/values/skin",
+        "itemSet": "/cases/442/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/442/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/outfit-legend/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "04a7a5c416e8db97e5f0ef752b54067276c9ab1f7b079c8633894c7af8f9ef6a"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/442/images/0/sha256",
+          "equals": "04a7a5c416e8db97e5f0ef752b54067276c9ab1f7b079c8633894c7af8f9ef6a"
+        }
+      ],
+      "reviewNotes": "sister／outfit-legend；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/443/values/role",
+        "skin": "/cases/443/values/skin",
+        "itemSet": "/cases/443/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/443/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/outfit-mage/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "4221458cfe7c13acdfa4506c7b377a0fb670c246d66ce7be0b556ced8ccf6cbf"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/443/images/0/sha256",
+          "equals": "4221458cfe7c13acdfa4506c7b377a0fb670c246d66ce7be0b556ced8ccf6cbf"
+        }
+      ],
+      "reviewNotes": "sister／outfit-mage；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/444/values/role",
+        "skin": "/cases/444/values/skin",
+        "itemSet": "/cases/444/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/444/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/outfit-mecha/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "30e3b56fef64136fefdf25ef26e032e9647319be6dbb2e016354084407b3ccbd"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/444/images/0/sha256",
+          "equals": "30e3b56fef64136fefdf25ef26e032e9647319be6dbb2e016354084407b3ccbd"
+        }
+      ],
+      "reviewNotes": "sister／outfit-mecha；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/445/values/role",
+        "skin": "/cases/445/values/skin",
+        "itemSet": "/cases/445/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/445/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/outfit-ocean/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "7aa6bd8e262fd900bc17f102c517df9744a35a7aa860e241ab6bcd1ea8ac5e59"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/445/images/0/sha256",
+          "equals": "7aa6bd8e262fd900bc17f102c517df9744a35a7aa860e241ab6bcd1ea8ac5e59"
+        }
+      ],
+      "reviewNotes": "sister／outfit-ocean；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/446/values/role",
+        "skin": "/cases/446/values/skin",
+        "itemSet": "/cases/446/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/446/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/outfit-racer/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "5c6edb83bfc4dca499768bb75594b792751441ddea7ef7cf2171fda3662ac005"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/446/images/0/sha256",
+          "equals": "5c6edb83bfc4dca499768bb75594b792751441ddea7ef7cf2171fda3662ac005"
+        }
+      ],
+      "reviewNotes": "sister／outfit-racer；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/447/values/role",
+        "skin": "/cases/447/values/skin",
+        "itemSet": "/cases/447/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/447/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/sister/sister-bloom-outfit/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "185e87d25d4a1f4d2c38add1c98c0b4a37abb184bce7052b0ecca945d87ba51a"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/447/images/0/sha256",
+          "equals": "185e87d25d4a1f4d2c38add1c98c0b4a37abb184bce7052b0ecca945d87ba51a"
+        }
+      ],
+      "reviewNotes": "sister／sister-bloom-outfit；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/448/values/role",
+        "skin": "/cases/448/values/skin",
+        "itemSet": "/cases/448/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/448/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/default/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "61eba75b3f47347496e0d4e79ed3348c37492676dd433363c09989667e559273"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/448/images/0/sha256",
+          "equals": "61eba75b3f47347496e0d4e79ed3348c37492676dd433363c09989667e559273"
+        }
+      ],
+      "reviewNotes": "younger-sister／default；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/449/values/role",
+        "skin": "/cases/449/values/skin",
+        "itemSet": "/cases/449/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/449/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/outfit-cadet/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "7f0b197f8df250acfdfc5033f318a7b68feea60a4b1edcd1c40810b7f56a4adc"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/449/images/0/sha256",
+          "equals": "7f0b197f8df250acfdfc5033f318a7b68feea60a4b1edcd1c40810b7f56a4adc"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-cadet；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/450/values/role",
+        "skin": "/cases/450/values/skin",
+        "itemSet": "/cases/450/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/450/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/outfit-legend/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "9a5ad72a7abc65b85d4e4db03c28f7c7a37144be111056f75f8b1b37699d1266"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/450/images/0/sha256",
+          "equals": "9a5ad72a7abc65b85d4e4db03c28f7c7a37144be111056f75f8b1b37699d1266"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-legend；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/451/values/role",
+        "skin": "/cases/451/values/skin",
+        "itemSet": "/cases/451/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/451/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/outfit-mage/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "a2ed37e2e8829cfae8e51eafd1450c77f31042a6fe8426650eec1f1bed353fef"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/451/images/0/sha256",
+          "equals": "a2ed37e2e8829cfae8e51eafd1450c77f31042a6fe8426650eec1f1bed353fef"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-mage；唯一目標 story-headphones。目標故事耳機搭配星雲髮型：紫色金邊頭弧清楚位於髮冠外緣，圓耳罩金色外環及垂直接頭保持形狀；四角色臉部與挑染髮絲清楚，沒有錯誤帽狀輪廓。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/452/values/role",
+        "skin": "/cases/452/values/skin",
+        "itemSet": "/cases/452/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/452/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/outfit-mecha/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "39be072c3bd0c37985269d90a89b777ac174b1b3fd4d4a9d25554c146cfe2b87"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/452/images/0/sha256",
+          "equals": "39be072c3bd0c37985269d90a89b777ac174b1b3fd4d4a9d25554c146cfe2b87"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-mecha；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/453/values/role",
+        "skin": "/cases/453/values/skin",
+        "itemSet": "/cases/453/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/453/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/outfit-ocean/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "4b994cca850dc3279d53b05bb5a58ec22b01c8c1fb5be4efe25cad0080912d4b"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/453/images/0/sha256",
+          "equals": "4b994cca850dc3279d53b05bb5a58ec22b01c8c1fb5be4efe25cad0080912d4b"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-ocean；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/454/values/role",
+        "skin": "/cases/454/values/skin",
+        "itemSet": "/cases/454/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/454/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/outfit-racer/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "e843a4397fc84ac47f726a40f7f27b36aff337406c7d270fc125e03532609640"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/454/images/0/sha256",
+          "equals": "e843a4397fc84ac47f726a40f7f27b36aff337406c7d270fc125e03532609640"
+        }
+      ],
+      "reviewNotes": "younger-sister／outfit-racer；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+        "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+      },
+      "bindings": {
+        "role": "/cases/455/values/role",
+        "skin": "/cases/455/values/skin",
+        "itemSet": "/cases/455/values/itemSet"
+      },
+      "checks": {
+        "accepted": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/455/accepted",
+          "equals": true
+        }
+      },
+      "images": [
+        {
+          "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/retainedEarwearHairFit/younger-sister/sister-bloom-outfit/hair-nebula+story-headphones/actual-shop-avatar.png",
+          "sha256": "ac681c2340851e165ae83804a632f97ef98f5e00cdad57c0c5051284b42ff0fe"
+        }
+      ],
+      "imageAssertions": [
+        {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/independent-compiled-art-final-r5-astrareview.json",
+            "sha256": "7c4bbba00bf71a52b8ff592584b9e8247692b4a60e81dd88ffc19979015ce7fc"
+          },
+          "pointer": "/cases/455/images/0/sha256",
+          "equals": "ac681c2340851e165ae83804a632f97ef98f5e00cdad57c0c5051284b42ff0fe"
+        }
+      ],
+      "reviewNotes": "younger-sister／sister-bloom-outfit；唯一目標 story-headphones。後四服裝故事耳機的紫金弧與兩側耳罩穩定，弟弟髮冠上弧可讀、兩名女孩短髮側緣與耳罩分明；未見耳機扭曲或頭部被服裝縮小。"
+    }
+  ]
+}

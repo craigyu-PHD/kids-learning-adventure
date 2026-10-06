@@ -1,0 +1,678 @@
+{
+  "status": "PASS_SUBCONTRACT_ONLY",
+  "checks": [
+    {
+      "check": "siteCTA report fresh",
+      "pass": true
+    },
+    {
+      "check": "siteCTA minimum dependencies",
+      "pass": true
+    },
+    {
+      "check": "siteCTA exact tested dependencies",
+      "pass": true
+    },
+    {
+      "check": "siteCTA timestamp",
+      "pass": true
+    },
+    {
+      "check": "siteCTA same compiled artifact",
+      "pass": true
+    },
+    {
+      "check": "siteCTA observed after compilation",
+      "pass": true
+    },
+    {
+      "check": "siteCTA actual served compiled bytes",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"mecha\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"racing\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"tank\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"1440-light\", \"state\": \"start\", \"world\": \"creature\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"1440-dark\", \"state\": \"start\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"selected0\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"midLesson\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"allDone\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA unique observation {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw separate from adapter",
+      "pass": true
+    },
+    {
+      "check": "siteCTA dimensions are raw-bound",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"} profile",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"} world",
+      "pass": true
+    },
+    {
+      "check": "siteCTA raw identity {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"} state",
+      "pass": true
+    },
+    {
+      "check": "siteCTA check coverage {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted healthy {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted correctAction {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA asserted ledgerUnchanged {\"profile\": \"390-light\", \"state\": \"missingtrusteddate\", \"world\": \"hero\"}",
+      "pass": true
+    },
+    {
+      "check": "siteCTA exact raw coverage",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

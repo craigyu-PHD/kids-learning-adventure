@@ -1,0 +1,13 @@
+{
+  "status": "PASS_UNIT_ONLY",
+  "checks": [
+    {
+      "check": "missing QA / absent final output cannot authorize deploy",
+      "pass": true
+    },
+    {
+      "check": "physical function directories absent are rejected",
+      "pass": true
+    }
+  ]
+}

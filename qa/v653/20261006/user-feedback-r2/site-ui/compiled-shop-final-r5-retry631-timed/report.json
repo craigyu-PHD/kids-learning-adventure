@@ -1,0 +1,2681 @@
+{
+  "status": "PASS_SELECTED_SCOPE_PENDING_VISUAL",
+  "candidateId": "feedback-r2-a7960962-final-r5",
+  "phase": "matrix",
+  "catalogCount": 64,
+  "fullMatrixCount": 1024,
+  "selectedMatrixCount": 128,
+  "plannedCases": 1,
+  "shardCount": 1024,
+  "shardIndex": 631,
+  "plannedOriginalMatrixIndices": [
+    631
+  ],
+  "freshCasesOnly": true,
+  "cases": [
+    {
+      "item": {
+        "id": "pet-space-fox",
+        "slot": "pet",
+        "name": "太空狐狸"
+      },
+      "avatar": "younger",
+      "profile": {
+        "id": "mobile-light",
+        "width": 390,
+        "height": 844,
+        "theme": "light"
+      },
+      "originalMatrixIndex": 631,
+      "index": 0,
+      "compiled": {
+        "footer": "Version V6.5.3 · Updated 2026-10-06",
+        "scriptURLs": [
+          "http://127.0.0.1:5196/assets/index-DkO6mlaB.js"
+        ],
+        "manifestOverrides": false,
+        "cssOverrides": false
+      },
+      "ledgerBefore": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "pet-space-fox"
+        ],
+        "equippedCosmetics": [],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-pet-space-fox",
+            "childId": "child-1",
+            "itemId": "pet-space-fox",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "catalog": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/world/pet/pet-space-fox.webp",
+              "cls": "",
+              "visible": true,
+              "width": 1200,
+              "height": 1400,
+              "rect": {
+                "x": 37,
+                "y": 738.984375,
+                "width": 143,
+                "height": 105,
+                "top": 738.984375,
+                "right": 180,
+                "bottom": 843.984375,
+                "left": 37
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/world/pet/pet-space-fox.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/world/pet/pet-space-fox.webp",
+            "domNatural": [
+              1200,
+              1400
+            ],
+            "pinnedFileSize": [
+              1200,
+              1400
+            ],
+            "expectedSHA256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+            "http": {
+              "status": 200,
+              "sha256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+              "bytes": 583712
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world/pet/pet-space-fox.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.5.3/world/pet/pet-space-fox.webp",
+            "status": 200,
+            "sha256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+            "bytes": 583712,
+            "expectedSHA256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/shop-catalog-actual-size.png",
+        "screenshotSHA256": "82a130b28e3760f785103bcc1949b582b38b4b79d3496ac683c6053c2151d5d6",
+        "rect": {
+          "x": 37,
+          "y": 738.984375,
+          "width": 143,
+          "height": 105
+        }
+      },
+      "trial": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "cls": "v653-pet-art",
+              "visible": true,
+              "width": 384,
+              "height": 448,
+              "rect": {
+                "x": 45,
+                "y": 107.40625,
+                "width": 180,
+                "height": 210,
+                "top": 107.40625,
+                "right": 225,
+                "bottom": 317.40625,
+                "left": 45
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 261.703125,
+                "y": 188.734375,
+                "width": 60.5625,
+                "height": 90.84375,
+                "top": 188.734375,
+                "right": 322.265625,
+                "bottom": 279.578125,
+                "left": 261.703125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "domNatural": [
+              384,
+              448
+            ],
+            "pinnedFileSize": [
+              384,
+              448
+            ],
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "http": {
+              "status": 200,
+              "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+              "bytes": 67570
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "http": {
+              "status": 200,
+              "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "bytes": 36220
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220,
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+          },
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570,
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/shop-trial.png",
+        "screenshotSHA256": "20a4f6937ff81978823e76109f08c78571aec7ab3565134c0423a8e3325b6ff0",
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 465
+        }
+      },
+      "cancelPreservesProgress": true,
+      "ledgerAfterEquip": {
+        "completedDays": [],
+        "completedBlocks": [],
+        "completedMissions": [],
+        "claimedEggs": [],
+        "unlockedCosmetics": [
+          "pet-space-fox"
+        ],
+        "equippedCosmetics": [
+          "pet-space-fox"
+        ],
+        "purchaseTransactions": [
+          {
+            "id": "fixture-owned-pet-space-fox",
+            "childId": "child-1",
+            "itemId": "pet-space-fox",
+            "cost": 0,
+            "createdAt": "2026-09-02T00:00:00.000Z",
+            "source": "purchase"
+          }
+        ],
+        "equipmentTransactions": [
+          {
+            "id": "avatar-equip:child-1:pet-space-fox:4dbf70db-8da4-450a-9cee-feb1c44dbe58",
+            "childId": "child-1",
+            "itemId": "pet-space-fox",
+            "slot": "pet",
+            "action": "equip",
+            "createdAt": "2026-10-06T04:59:06.545Z"
+          }
+        ],
+        "badgeUnlocks": {},
+        "completionTimestamps": {},
+        "rewardTransactions": [],
+        "answerEvents": []
+      },
+      "equipped": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "cls": "v653-pet-art",
+              "visible": true,
+              "width": 384,
+              "height": 448,
+              "rect": {
+                "x": 45,
+                "y": 111,
+                "width": 180,
+                "height": 210,
+                "top": 111,
+                "right": 225,
+                "bottom": 321,
+                "left": 45
+              }
+            },
+            {
+              "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 261.703125,
+                "y": 192.328125,
+                "width": 60.5625,
+                "height": 90.84375,
+                "top": 192.328125,
+                "right": 322.265625,
+                "bottom": 283.171875,
+                "left": 261.703125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "domNatural": [
+              384,
+              448
+            ],
+            "pinnedFileSize": [
+              384,
+              448
+            ],
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "http": {
+              "status": 200,
+              "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+              "bytes": 67570
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          },
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "http": {
+              "status": 200,
+              "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "bytes": 36220
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220,
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+          },
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570,
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/shop-equipped.png",
+        "screenshotSHA256": "69f0163469c1deb764d81d6b1282446bdaa57e034ac3d9d9846c8fe795637d5b",
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 468.59375
+        }
+      },
+      "home": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 810.203125,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 810.203125,
+                "right": 111.703125,
+                "bottom": 887.34375,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "http": {
+              "status": 200,
+              "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "bytes": 36220
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220,
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-player.png",
+        "screenshotSHA256": "9c4bb67a1fd0feaa2c4ae1ac2b09a12efb75001594d8a21800b94349af6de2f5",
+        "rect": {
+          "x": 32,
+          "y": 729.359375,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeBody": {
+        "before": {
+          "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 406.359375,
+            "width": 90,
+            "height": 90,
+            "top": 406.359375,
+            "right": 131,
+            "bottom": 496.359375,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 419.203125,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 419.203125,
+            "right": 111.703125,
+            "bottom": 496.34375,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 419.20703125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              23,
+              5,
+              153,
+              276
+            ],
+            "paintedAlphaWidth": 34.81689453125,
+            "paintedAlphaHeight": 72.579833984375,
+            "normalizedBottom": 0.9583333333333334,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "http": {
+                "status": 200,
+                "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+                "bytes": 36220
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "equipped": {
+          "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "natural": [
+            192,
+            288
+          ],
+          "container": {
+            "x": 41,
+            "y": 738.359375,
+            "width": 90,
+            "height": 90,
+            "top": 738.359375,
+            "right": 131,
+            "bottom": 828.359375,
+            "left": 41
+          },
+          "imageBox": {
+            "x": 60.28125,
+            "y": 751.203125,
+            "width": 51.421875,
+            "height": 77.140625,
+            "top": 751.203125,
+            "right": 111.703125,
+            "bottom": 828.34375,
+            "left": 60.28125
+          },
+          "painted": {
+            "x": 60.28125,
+            "y": 751.20703125,
+            "width": 51.421875,
+            "height": 77.1328125
+          },
+          "skin": "default",
+          "artMode": "runtime",
+          "rig": "extended-detail",
+          "objectFit": "contain",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "rendered": [],
+          "mask": "none",
+          "rasterBody": {
+            "size": [
+              192,
+              288
+            ],
+            "alphaThreshold": 16,
+            "alphaBounds": [
+              23,
+              5,
+              153,
+              276
+            ],
+            "paintedAlphaWidth": 34.81689453125,
+            "paintedAlphaHeight": 72.579833984375,
+            "normalizedBottom": 0.9583333333333334,
+            "limit": "Body image only; CSS hair/headwear masks and fitted anatomy are not measured by alpha extent."
+          },
+          "naturalDimensionProof": [
+            {
+              "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "domNatural": [
+                192,
+                288
+              ],
+              "pinnedFileSize": [
+                192,
+                288
+              ],
+              "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "http": {
+                "status": 200,
+                "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+                "bytes": 36220
+              },
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "dimensionsValid": true,
+              "aspectMatches": true,
+              "responsiveSelections": [
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                },
+                {
+                  "srcset": "",
+                  "sizes": "",
+                  "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                  "selectedDescriptors": []
+                }
+              ],
+              "validation": [
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                },
+                {
+                  "densityCorrected": false,
+                  "dimensionsExact": true,
+                  "aspectMatches": true
+                }
+              ]
+            }
+          ]
+        },
+        "comparison": {
+          "paintedSizeDeltaPx": {
+            "width": 0.0,
+            "height": 0.0
+          },
+          "bodyRasterAlphaHeightRatio": 1.0,
+          "scope": "CSS painted scale plus actual body-image alpha extent. Masks, anatomy and pose still require image review."
+        }
+      },
+      "homeWorld": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "cls": "v653-pet-art",
+              "visible": true,
+              "width": 384,
+              "height": 448,
+              "rect": {
+                "x": 36,
+                "y": 689.390625,
+                "width": 120,
+                "height": 140,
+                "top": 689.390625,
+                "right": 156,
+                "bottom": 829.390625,
+                "left": 36
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "domNatural": [
+              384,
+              448
+            ],
+            "pinnedFileSize": [
+              384,
+              448
+            ],
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "http": {
+              "status": 200,
+              "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+              "bytes": 67570
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570,
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-world-inline.png",
+        "screenshotSHA256": "7b6b8148656b1d4ba1c978085dd53da77410baab1fb9db40adeb2b975422f598",
+        "rect": {
+          "x": 21,
+          "y": 674.390625,
+          "width": 348,
+          "height": 170
+        }
+      },
+      "homeReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 60.28125,
+                "y": 810.203125,
+                "width": 51.421875,
+                "height": 77.140625,
+                "top": 810.203125,
+                "right": 111.703125,
+                "bottom": 887.34375,
+                "left": 60.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "http": {
+              "status": 200,
+              "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "bytes": 36220
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220,
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-reload.png",
+        "screenshotSHA256": "dc4a82a1ec843acce8061320152ed77cd5d0af534cf29aab07e6aed77207a926",
+        "rect": {
+          "x": 32,
+          "y": 729.359375,
+          "width": 260,
+          "height": 115
+        }
+      },
+      "homeWorldReload": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "cls": "v653-pet-art",
+              "visible": true,
+              "width": 384,
+              "height": 448,
+              "rect": {
+                "x": 36,
+                "y": 689.390625,
+                "width": 120,
+                "height": 140,
+                "top": 689.390625,
+                "right": 156,
+                "bottom": 829.390625,
+                "left": 36
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "domNatural": [
+              384,
+              448
+            ],
+            "pinnedFileSize": [
+              384,
+              448
+            ],
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "http": {
+              "status": 200,
+              "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+              "bytes": 67570
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570,
+            "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-world-reload.png",
+        "screenshotSHA256": "7b6b8148656b1d4ba1c978085dd53da77410baab1fb9db40adeb2b975422f598",
+        "rect": {
+          "x": 21,
+          "y": 674.390625,
+          "width": 348,
+          "height": 170
+        }
+      },
+      "achievement": {
+        "proof": {
+          "images": [
+            {
+              "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "cls": "avatar-renderer-skin avatar-rig-body-layer",
+              "visible": true,
+              "width": 192,
+              "height": 288,
+              "rect": {
+                "x": 54.28125,
+                "y": 479.625,
+                "width": 59.421875,
+                "height": 89.140625,
+                "top": 479.625,
+                "right": 113.703125,
+                "bottom": 568.765625,
+                "left": 54.28125
+              }
+            }
+          ],
+          "urls": [
+            "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+          ]
+        },
+        "naturalDimensionProof": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "domNatural": [
+              192,
+              288
+            ],
+            "pinnedFileSize": [
+              192,
+              288
+            ],
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "http": {
+              "status": 200,
+              "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+              "bytes": 36220
+            },
+            "densityCorrected": false,
+            "dimensionsExact": true,
+            "dimensionsValid": true,
+            "aspectMatches": true,
+            "responsiveSelections": [
+              {
+                "srcset": "",
+                "sizes": "",
+                "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+                "selectedDescriptors": []
+              }
+            ],
+            "validation": [
+              {
+                "densityCorrected": false,
+                "dimensionsExact": true,
+                "aspectMatches": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220,
+            "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+          }
+        ],
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "errors": []
+        },
+        "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/achievements-avatar.png",
+        "screenshotSHA256": "b12f2f638578b64a0ef138f317c7eb6f5cd88e5a8aaf4c098776098e062b4ad4",
+        "rect": {
+          "x": 32,
+          "y": 464.78125,
+          "width": 104,
+          "height": 104
+        }
+      },
+      "exactCandidatePaths": {
+        "trial": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+        ],
+        "homeWorld": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+        ],
+        "homeWorldReload": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+        ]
+      },
+      "status": "PASS_FUNCTIONAL_PENDING_VISUAL",
+      "equipmentTransactions": [
+        {
+          "id": "avatar-equip:child-1:pet-space-fox:4dbf70db-8da4-450a-9cee-feb1c44dbe58",
+          "childId": "child-1",
+          "itemId": "pet-space-fox",
+          "slot": "pet",
+          "action": "equip",
+          "createdAt": "2026-10-06T04:59:06.545Z"
+        },
+        {
+          "id": "avatar-equip:child-1:pet-space-fox:a07f03b3-6fd3-4c24-8134-0cb4b963d30a",
+          "childId": "child-1",
+          "itemId": "pet-space-fox",
+          "slot": "pet",
+          "action": "unequip",
+          "createdAt": "2026-10-06T04:59:08.728Z"
+        }
+      ],
+      "ledgerScope": "one synthetic cost-zero owned item; actual UI equip + unequip append-only; no real purchase assertion",
+      "visualReview": "NOT_PERFORMED",
+      "contextClosed": true
+    }
+  ],
+  "controls": [],
+  "fallback": [],
+  "browserClosed": true,
+  "visualReview": "NOT_PERFORMED",
+  "scope": "Synthetic preowned cost-zero fixture; real trial/cancel/equip/home/reload/achievement/unequip; no real purchase, cloud auth, or earned rewards",
+  "negativeScope": "Missing asset fail-close plus exact browser byte admission; swapped/stale/wrong-role rejection belongs to QA, not runtime authenticity enforcement",
+  "runnerSHA256": "802362699696cee7bd63a3a20ea9aaacea3ebd455e5af52c8f1dfe227bf5d951",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "id": "desktop-light",
+      "width": 1440,
+      "height": 1050,
+      "theme": "light"
+    },
+    {
+      "id": "desktop-dark",
+      "width": 1440,
+      "height": 1050,
+      "theme": "dark"
+    },
+    {
+      "id": "mobile-light",
+      "width": 390,
+      "height": 844,
+      "theme": "light"
+    },
+    {
+      "id": "mobile-dark",
+      "width": 390,
+      "height": 844,
+      "theme": "dark"
+    }
+  ],
+  "roles": [
+    "brother",
+    "younger",
+    "sister",
+    "younger-sister"
+  ],
+  "items": [
+    "robot-legend",
+    "card-sky",
+    "card-nebula",
+    "card-legend",
+    "effect-stars",
+    "effect-bubbles",
+    "effect-legend",
+    "pet-space-fox"
+  ],
+  "noExtraDecode": true,
+  "sourcePinsSHA256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1",
+  "artifactPinsSHA256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b",
+  "manifestPins": {
+    "avatar": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+    "world": "50579bb6ee962d5456345cd0f7a4d8868398545ca492afb430acd5e72b945e6d"
+  },
+  "harnessDependencies": {
+    "scripts/qa_v653_full_shop_acceptance.py": "2cc9a9758c2f62c3c4cd04c37c89a63beb8e7793460f205bcd8492e6aaee064f",
+    "scripts/qa_v653_release_smoke.py": "cf12df2f42db0c28c0c8f6c0255cb4fa202318a0219a0549c6103d06526d06d9",
+    "scripts/qa_v653_shop_coverage.py": "338e0a268e615f72a3b24bdcb7bab982b67f9835543b7c9359ef11cb9a0d23ee"
+  },
+  "preservedRunnerDependencies": {
+    "qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-r1/run.py": "6454034c5f095c10cdae43b91b00e2b95b0833d626264d8c562905b696cd2888"
+  },
+  "densityCorrection": "width srcset: descriptor equals physical width; positive density-corrected DOM and <=1px aspect tolerance; no decode",
+  "compiledDocuments": {
+    "/": {
+      "sha256": "e2ac3edb4c471a4d2c6f2ad63752eb25029442c56671719fcfb59f9467f465bb",
+      "bytes": 988,
+      "status": 200
+    }
+  },
+  "compiledAssets": {
+    "/assets/index-KC1rU43V.css": {
+      "sha256": "aa5759b3a6832830b173cba55b251ca9c1451f21bee755ecc33384724c05ba32",
+      "bytes": 493690,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-KC1rU43V.css"
+    },
+    "/assets/index-DkO6mlaB.js": {
+      "sha256": "d224d18c94d044ef34d3ed0d34675acd83aacf1e9894170573102084613ae673",
+      "bytes": 1434192,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/index-DkO6mlaB.js"
+    },
+    "/assets/SecondaryViews-Bd69SkOV.js": {
+      "sha256": "6ee6b64fdc9232b78261623107e4e52625d67369c81912caa38ae240fcfbc95d",
+      "bytes": 43717,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-Bd69SkOV.js"
+    },
+    "/assets/x-CwjU7BFr.js": {
+      "sha256": "ac3fa008e10f742f2b7a9e4d33970ac0049392230d8585fb6b09d89a21386a68",
+      "bytes": 143,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/x-CwjU7BFr.js"
+    },
+    "/assets/learningAnalytics-BiVMp2Ug.js": {
+      "sha256": "6d24be5f0d56cb2a070375ba7c5b395cc9ce6be39777a5694af4d00b7d2d0ca2",
+      "bytes": 2617,
+      "status": 200,
+      "resourceType": "script",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/learningAnalytics-BiVMp2Ug.js"
+    },
+    "/assets/SecondaryViews-aPwGWhRg.css": {
+      "sha256": "abec9c939b8b884c25bd7ac71656cf4eed48defc723668e4477f65acba57c6f5",
+      "bytes": 30904,
+      "status": 200,
+      "resourceType": "stylesheet",
+      "localArtifact": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/dist/assets/SecondaryViews-aPwGWhRg.css"
+    }
+  },
+  "networkErrors": [],
+  "sourceRequests": [],
+  "servedAssets": {
+    "/assets/v6.5.3/world/pet/pet-space-fox.webp": {
+      "status": 200,
+      "sha256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+      "bytes": 583712,
+      "expectedSHA256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561"
+    },
+    "/assets/v6.4/avatar-display/younger/base-body-192.webp": {
+      "status": 200,
+      "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+      "bytes": 36220,
+      "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+    },
+    "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp": {
+      "status": 200,
+      "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+      "bytes": 67570,
+      "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+    }
+  },
+  "apiBlocks": [],
+  "captures": [
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/world/pet/pet-space-fox.webp",
+            "cls": "",
+            "visible": true,
+            "width": 1200,
+            "height": 1400,
+            "rect": {
+              "x": 37,
+              "y": 738.984375,
+              "width": 143,
+              "height": 105,
+              "top": 738.984375,
+              "right": 180,
+              "bottom": 843.984375,
+              "left": 37
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/world/pet/pet-space-fox.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/world/pet/pet-space-fox.webp",
+          "domNatural": [
+            1200,
+            1400
+          ],
+          "pinnedFileSize": [
+            1200,
+            1400
+          ],
+          "expectedSHA256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+          "http": {
+            "status": 200,
+            "sha256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+            "bytes": 583712
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world/pet/pet-space-fox.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.5.3/world/pet/pet-space-fox.webp",
+          "status": 200,
+          "sha256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561",
+          "bytes": 583712,
+          "expectedSHA256": "a52bad457176c9ba3858aeb7fd99c9dc88681dfac99bb9f1420584a1c1338561"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/shop-catalog-actual-size.png",
+      "screenshotSHA256": "82a130b28e3760f785103bcc1949b582b38b4b79d3496ac683c6053c2151d5d6",
+      "rect": {
+        "x": 37,
+        "y": 738.984375,
+        "width": 143,
+        "height": 105
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "cls": "v653-pet-art",
+            "visible": true,
+            "width": 384,
+            "height": 448,
+            "rect": {
+              "x": 45,
+              "y": 107.40625,
+              "width": 180,
+              "height": 210,
+              "top": 107.40625,
+              "right": 225,
+              "bottom": 317.40625,
+              "left": 45
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 261.703125,
+              "y": 188.734375,
+              "width": 60.5625,
+              "height": 90.84375,
+              "top": 188.734375,
+              "right": 322.265625,
+              "bottom": 279.578125,
+              "left": 261.703125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "domNatural": [
+            384,
+            448
+          ],
+          "pinnedFileSize": [
+            384,
+            448
+          ],
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "http": {
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "http": {
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "status": 200,
+          "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "bytes": 36220,
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+        },
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "status": 200,
+          "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "bytes": 67570,
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/shop-trial.png",
+      "screenshotSHA256": "20a4f6937ff81978823e76109f08c78571aec7ab3565134c0423a8e3325b6ff0",
+      "rect": {
+        "x": 26,
+        "y": -0.421875,
+        "width": 338,
+        "height": 465
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "cls": "v653-pet-art",
+            "visible": true,
+            "width": 384,
+            "height": 448,
+            "rect": {
+              "x": 45,
+              "y": 111,
+              "width": 180,
+              "height": 210,
+              "top": 111,
+              "right": 225,
+              "bottom": 321,
+              "left": 45
+            }
+          },
+          {
+            "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 261.703125,
+              "y": 192.328125,
+              "width": 60.5625,
+              "height": 90.84375,
+              "top": 192.328125,
+              "right": 322.265625,
+              "bottom": 283.171875,
+              "left": 261.703125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "domNatural": [
+            384,
+            448
+          ],
+          "pinnedFileSize": [
+            384,
+            448
+          ],
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "http": {
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        },
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "http": {
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "status": 200,
+          "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "bytes": 36220,
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+        },
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "status": 200,
+          "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "bytes": 67570,
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/shop-equipped.png",
+      "screenshotSHA256": "69f0163469c1deb764d81d6b1282446bdaa57e034ac3d9d9846c8fe795637d5b",
+      "rect": {
+        "x": 26,
+        "y": -0.421875,
+        "width": 338,
+        "height": 468.59375
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 810.203125,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 810.203125,
+              "right": 111.703125,
+              "bottom": 887.34375,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "http": {
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "status": 200,
+          "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "bytes": 36220,
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-player.png",
+      "screenshotSHA256": "9c4bb67a1fd0feaa2c4ae1ac2b09a12efb75001594d8a21800b94349af6de2f5",
+      "rect": {
+        "x": 32,
+        "y": 729.359375,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "cls": "v653-pet-art",
+            "visible": true,
+            "width": 384,
+            "height": 448,
+            "rect": {
+              "x": 36,
+              "y": 689.390625,
+              "width": 120,
+              "height": 140,
+              "top": 689.390625,
+              "right": 156,
+              "bottom": 829.390625,
+              "left": 36
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "domNatural": [
+            384,
+            448
+          ],
+          "pinnedFileSize": [
+            384,
+            448
+          ],
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "http": {
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "status": 200,
+          "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "bytes": 67570,
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-world-inline.png",
+      "screenshotSHA256": "7b6b8148656b1d4ba1c978085dd53da77410baab1fb9db40adeb2b975422f598",
+      "rect": {
+        "x": 21,
+        "y": 674.390625,
+        "width": 348,
+        "height": 170
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 60.28125,
+              "y": 810.203125,
+              "width": 51.421875,
+              "height": 77.140625,
+              "top": 810.203125,
+              "right": 111.703125,
+              "bottom": 887.34375,
+              "left": 60.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "http": {
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "status": 200,
+          "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "bytes": 36220,
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-reload.png",
+      "screenshotSHA256": "dc4a82a1ec843acce8061320152ed77cd5d0af534cf29aab07e6aed77207a926",
+      "rect": {
+        "x": 32,
+        "y": 729.359375,
+        "width": 260,
+        "height": 115
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "cls": "v653-pet-art",
+            "visible": true,
+            "width": 384,
+            "height": 448,
+            "rect": {
+              "x": 36,
+              "y": 689.390625,
+              "width": 120,
+              "height": 140,
+              "top": 689.390625,
+              "right": 156,
+              "bottom": 829.390625,
+              "left": 36
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "domNatural": [
+            384,
+            448
+          ],
+          "pinnedFileSize": [
+            384,
+            448
+          ],
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "http": {
+            "status": 200,
+            "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+            "bytes": 67570
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+          "status": 200,
+          "sha256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750",
+          "bytes": 67570,
+          "expectedSHA256": "3b96022170e2cbdf1d8f8ae7547ecb87cf007cee634aecacc9e3083e2c800750"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/home-world-reload.png",
+      "screenshotSHA256": "7b6b8148656b1d4ba1c978085dd53da77410baab1fb9db40adeb2b975422f598",
+      "rect": {
+        "x": 21,
+        "y": 674.390625,
+        "width": 348,
+        "height": 170
+      }
+    },
+    {
+      "proof": {
+        "images": [
+          {
+            "src": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "cls": "avatar-renderer-skin avatar-rig-body-layer",
+            "visible": true,
+            "width": 192,
+            "height": 288,
+            "rect": {
+              "x": 54.28125,
+              "y": 479.625,
+              "width": 59.421875,
+              "height": 89.140625,
+              "top": 479.625,
+              "right": 113.703125,
+              "bottom": 568.765625,
+              "left": 54.28125
+            }
+          }
+        ],
+        "urls": [
+          "/assets/v6.4/avatar-display/younger/base-body-192.webp"
+        ]
+      },
+      "naturalDimensionProof": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "domNatural": [
+            192,
+            288
+          ],
+          "pinnedFileSize": [
+            192,
+            288
+          ],
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "http": {
+            "status": 200,
+            "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+            "bytes": 36220
+          },
+          "densityCorrected": false,
+          "dimensionsExact": true,
+          "dimensionsValid": true,
+          "aspectMatches": true,
+          "responsiveSelections": [
+            {
+              "srcset": "",
+              "sizes": "",
+              "currentSrc": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+              "selectedDescriptors": []
+            }
+          ],
+          "validation": [
+            {
+              "densityCorrected": false,
+              "dimensionsExact": true,
+              "aspectMatches": true
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "/assets/v6.4/avatar-display/younger/base-body-192.webp",
+          "status": 200,
+          "sha256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0",
+          "bytes": 36220,
+          "expectedSHA256": "17c47a057c5d4666d3f04aab3b2512fbe174a550c461784f88da6b63eadb6ff0"
+        }
+      ],
+      "health": {
+        "overflow": 0,
+        "broken": [],
+        "errors": []
+      },
+      "screenshot": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-shop-final-r5-retry631-timed/mobile-light/younger/pet-space-fox/achievements-avatar.png",
+      "screenshotSHA256": "b12f2f638578b64a0ef138f317c7eb6f5cd88e5a8aaf4c098776098e062b4ad4",
+      "rect": {
+        "x": 32,
+        "y": 464.78125,
+        "width": 104,
+        "height": 104
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 2,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 406.359375,
+          "width": 90,
+          "height": 90,
+          "top": 406.359375,
+          "right": 131,
+          "bottom": 496.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 406.359375,
+          "width": 90,
+          "height": 90,
+          "top": 406.359375,
+          "right": 131,
+          "bottom": 496.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": 156.578125,
+          "width": 338,
+          "height": 531.453125,
+          "top": 156.578125,
+          "right": 364,
+          "bottom": 688.03125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 46,
+          "y": 250.609375,
+          "width": 298,
+          "height": 303.828125,
+          "top": 250.609375,
+          "right": 344,
+          "bottom": 554.4375,
+          "left": 46
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 37,
+          "y": 738.984375,
+          "width": 143,
+          "height": 105,
+          "top": 738.984375,
+          "right": 180,
+          "bottom": 843.984375,
+          "left": 37
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/world/pet/pet-space-fox.webp",
+            "complete": true,
+            "natural": [
+              1200,
+              1400
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 465,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 464.578125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "complete": true,
+            "natural": [
+              384,
+              448
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 531.453125,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 531.03125,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-384.webp",
+            "complete": true,
+            "natural": [
+              384,
+              576
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 26,
+          "y": -0.421875,
+          "width": 338,
+          "height": 468.59375,
+          "top": -0.421875,
+          "right": 364,
+          "bottom": 468.171875,
+          "left": 26
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "complete": true,
+            "natural": [
+              384,
+              448
+            ]
+          },
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.671875,
+          "width": 260,
+          "height": 115,
+          "top": 728.671875,
+          "right": 292,
+          "bottom": 843.671875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 738.359375,
+          "width": 90,
+          "height": 90,
+          "top": 738.359375,
+          "right": 131,
+          "bottom": 828.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 21,
+          "y": 674.390625,
+          "width": 348,
+          "height": 170,
+          "top": 674.390625,
+          "right": 369,
+          "bottom": 844.390625,
+          "left": 21
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "complete": true,
+            "natural": [
+              384,
+              448
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 728.671875,
+          "width": 260,
+          "height": 115,
+          "top": 728.671875,
+          "right": 292,
+          "bottom": 843.671875,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 21,
+          "y": 674.390625,
+          "width": 348,
+          "height": 170,
+          "top": 674.390625,
+          "right": 369,
+          "bottom": 844.390625,
+          "left": 21
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.5.3/world-display/pet/pet-space-fox-384--lossless.webp",
+            "complete": true,
+            "natural": [
+              384,
+              448
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 32,
+          "y": 464.78125,
+          "width": 104,
+          "height": 104,
+          "top": 464.78125,
+          "right": 136,
+          "bottom": 568.78125,
+          "left": 32
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": {
+        "id": "pet-space-fox",
+        "present": false
+      },
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 753.671875,
+          "width": 90,
+          "height": 90,
+          "top": 753.671875,
+          "right": 131,
+          "bottom": 843.671875,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    },
+    {
+      "status": "READY_SAME_ROOT_TWO_RAF",
+      "attempts": 1,
+      "expectation": null,
+      "last": {
+        "ready": true,
+        "attached": true,
+        "rendered": [],
+        "rect": {
+          "x": 41,
+          "y": 754.359375,
+          "width": 90,
+          "height": 90,
+          "top": 754.359375,
+          "right": 131,
+          "bottom": 844.359375,
+          "left": 41
+        },
+        "images": [
+          {
+            "src": "http://127.0.0.1:5196/assets/v6.4/avatar-display/younger/base-body-192.webp",
+            "complete": true,
+            "natural": [
+              192,
+              288
+            ]
+          }
+        ],
+        "stable": true
+      }
+    }
+  ]
+}

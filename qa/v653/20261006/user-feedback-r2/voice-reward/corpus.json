@@ -1,0 +1,6959 @@
+{
+  "curriculumSha256": "d5eacb63e60c944535a84b94ec884a8d5b027644b704c4e2a0192ad58e8f810c",
+  "formatterSha256": "1773c5e7bb84c2948987c101519f65d021daba81036d37d77a81757f17e2999f",
+  "days": 90,
+  "blocks": 180,
+  "entries": [
+    {
+      "text": "Hello! May I have a turn, please?",
+      "textSha256": "86cb411152120c4bb22cf3e3744491a70b47de3b44d99df62f95e878e0ac334d",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 1: Hello! May I have a turn, please?"
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "textSha256": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b1",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b2",
+          "kind": "vocabulary",
+          "sourceText": "hello"
+        }
+      ]
+    },
+    {
+      "text": "please",
+      "textSha256": "56ccc4dcfc96534b06fc0c08a301be24f13b491484d5d984953cc0dba9bbb89a",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b2",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b2",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b2",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b2",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b2",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b1",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b2",
+          "kind": "vocabulary",
+          "sourceText": "please"
+        }
+      ]
+    },
+    {
+      "text": "bye",
+      "textSha256": "b49f425a7e1f9cff3856329ada223f2f9d368f15a00cf48df16ca95986137fe8",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b1",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bye"
+        }
+      ]
+    },
+    {
+      "text": "thank you",
+      "textSha256": "844347e54f00c4b97fe4736909730faaf8365292b076ea5a1378ebd1b0fd3bbb",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b1",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b2",
+          "kind": "vocabulary",
+          "sourceText": "thank you"
+        }
+      ]
+    },
+    {
+      "text": "Hi! Come and play with me.",
+      "textSha256": "12fe96123c1b06287b09bdc72d8efce48a2bfdc467c3b22126dd62d9312b4eca",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 2: Hi! Come and play with me."
+        }
+      ]
+    },
+    {
+      "text": "hi",
+      "textSha256": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4",
+      "uses": [
+        {
+          "dayId": "day-1",
+          "blockId": "w1d1b2",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b2",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b2",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b1",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b2",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b2",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        },
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b2",
+          "kind": "vocabulary",
+          "sourceText": "hi"
+        }
+      ]
+    },
+    {
+      "text": "My family can play with me.",
+      "textSha256": "3c3b31e0b51c72a1ef0b95adc54d8e9f143ecc80c2486e1dcd17cb9ddb491183",
+      "uses": [
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 3: My family can play with me."
+        }
+      ]
+    },
+    {
+      "text": "brother",
+      "textSha256": "0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af",
+      "uses": [
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b1",
+          "kind": "vocabulary",
+          "sourceText": "brother"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b1",
+          "kind": "vocabulary",
+          "sourceText": "brother"
+        },
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b2",
+          "kind": "vocabulary",
+          "sourceText": "brother"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b1",
+          "kind": "vocabulary",
+          "sourceText": "brother"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b2",
+          "kind": "vocabulary",
+          "sourceText": "brother"
+        }
+      ]
+    },
+    {
+      "text": "family",
+      "textSha256": "d34a569ab7aaa54dacd715ae64953455d86b768846cd0085ef4e9e7471489b7b",
+      "uses": [
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b1",
+          "kind": "vocabulary",
+          "sourceText": "family"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b1",
+          "kind": "vocabulary",
+          "sourceText": "family"
+        },
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b2",
+          "kind": "vocabulary",
+          "sourceText": "family"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b1",
+          "kind": "vocabulary",
+          "sourceText": "family"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b2",
+          "kind": "vocabulary",
+          "sourceText": "family"
+        }
+      ]
+    },
+    {
+      "text": "mom",
+      "textSha256": "bcb9dae6ea88dbf28c262998e6661ec60f32a760faa5aef96745b39c38dbf235",
+      "uses": [
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b1",
+          "kind": "vocabulary",
+          "sourceText": "mom"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b1",
+          "kind": "vocabulary",
+          "sourceText": "mom"
+        },
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b2",
+          "kind": "vocabulary",
+          "sourceText": "mom"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b1",
+          "kind": "vocabulary",
+          "sourceText": "mom"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b2",
+          "kind": "vocabulary",
+          "sourceText": "mom"
+        }
+      ]
+    },
+    {
+      "text": "dad",
+      "textSha256": "6fe8ecbc1deafa51c2ecf088cf364eba1ceba9032ffbe2621e771b90ea93153d",
+      "uses": [
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b1",
+          "kind": "vocabulary",
+          "sourceText": "dad"
+        },
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b1",
+          "kind": "vocabulary",
+          "sourceText": "dad"
+        },
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b2",
+          "kind": "vocabulary",
+          "sourceText": "dad"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b1",
+          "kind": "vocabulary",
+          "sourceText": "dad"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b2",
+          "kind": "vocabulary",
+          "sourceText": "dad"
+        }
+      ]
+    },
+    {
+      "text": "Bye! Thank you for playing with me.",
+      "textSha256": "33f86dded83b20dbe6e59a7a9c7031a92efc92dd976699410974e4d6ccbdf958",
+      "uses": [
+        {
+          "dayId": "day-2",
+          "blockId": "w1d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 4: Bye! Thank you for playing with me."
+        }
+      ]
+    },
+    {
+      "text": "My mom and dad are in my family.",
+      "textSha256": "5b63babd79ec35de91151ca32d859185ed2b0b7c014cfc5d7f9e1f0217fc4d9f",
+      "uses": [
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 5: My mom and dad are in my family."
+        }
+      ]
+    },
+    {
+      "text": "Thank you for the toy.",
+      "textSha256": "2ca7948453a099319ffbccd6ec667af1dc25412c89a359c34cf490a8ec8df3e7",
+      "uses": [
+        {
+          "dayId": "day-3",
+          "blockId": "w1d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 6: Thank you for the toy."
+        }
+      ]
+    },
+    {
+      "text": "Thank you for waiting. Bye!",
+      "textSha256": "cf4d560049473a337860e2fdb9eea20e1aa09fad0bb0a655e8569650c4923600",
+      "uses": [
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 7: Thank you for waiting. Bye!"
+        }
+      ]
+    },
+    {
+      "text": "Where is it? It is here.",
+      "textSha256": "f13bd7d3295c2ca550aaeeae1e1b796c94129fbc61db60a3852b9aa1a7fe33d7",
+      "uses": [
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 8: Where is it? It is here."
+        }
+      ]
+    },
+    {
+      "text": "Where is it?",
+      "textSha256": "26dc5e5265eddbbce41e20d3fc0c594a8f2053f4e2ef1109a2327339a51f458d",
+      "uses": [
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b2",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b1",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b1",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b2",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b1",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b1",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b1",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b2",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b2",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b1",
+          "kind": "vocabulary",
+          "sourceText": "where-is-it"
+        }
+      ]
+    },
+    {
+      "text": "yes",
+      "textSha256": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
+      "uses": [
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b2",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b1",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b1",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b2",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b1",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b1",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b1",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b2",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b2",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b1",
+          "kind": "vocabulary",
+          "sourceText": "yes"
+        }
+      ]
+    },
+    {
+      "text": "no",
+      "textSha256": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59",
+      "uses": [
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b2",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b1",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b1",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b2",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b1",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b1",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b1",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b2",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b2",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b1",
+          "kind": "vocabulary",
+          "sourceText": "no"
+        }
+      ]
+    },
+    {
+      "text": "What is it?",
+      "textSha256": "bbff7b98d6da70612cb94badd2dde68a4dbe1107104b55f330a2225c8ebf55b2",
+      "uses": [
+        {
+          "dayId": "day-4",
+          "blockId": "w1d4b2",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b1",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b1",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b2",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b1",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b1",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b1",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b2",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b2",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b1",
+          "kind": "vocabulary",
+          "sourceText": "what-is-it"
+        }
+      ]
+    },
+    {
+      "text": "Thank you for helping me today.",
+      "textSha256": "2cd8b2f8debfdb7875fde0ae8933b2a49cfba9339227b527602cbf37b6f77ae7",
+      "uses": [
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 9: Thank you for helping me today."
+        }
+      ]
+    },
+    {
+      "text": "Hello! We can share this toy.",
+      "textSha256": "76e1164b8618fb4251eca78b63dc50484d271928ebfa8041ab3750a28d6bac3c",
+      "uses": [
+        {
+          "dayId": "day-5",
+          "blockId": "w1d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 10: Hello! We can share this toy."
+        }
+      ]
+    },
+    {
+      "text": "This is my blue circle.",
+      "textSha256": "0e2b5770333bde3efa4db8ff0b0830e0059f8dcccdf15087a6780b061d5bbb17",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 11: This is my blue circle."
+        }
+      ]
+    },
+    {
+      "text": "circle",
+      "textSha256": "8a39178d327e72a92d3b9800e55c5e95930f7ef61605464fe8cb43899abd1367",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b1",
+          "kind": "vocabulary",
+          "sourceText": "circle"
+        },
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b2",
+          "kind": "vocabulary",
+          "sourceText": "circle"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b2",
+          "kind": "vocabulary",
+          "sourceText": "circle"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b2",
+          "kind": "vocabulary",
+          "sourceText": "circle"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b2",
+          "kind": "vocabulary",
+          "sourceText": "circle"
+        }
+      ]
+    },
+    {
+      "text": "square",
+      "textSha256": "4ba3e8e3765f2970eb37fae535353dd623d40a0507848c3c1dd240a5a7eb995e",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b1",
+          "kind": "vocabulary",
+          "sourceText": "square"
+        },
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b2",
+          "kind": "vocabulary",
+          "sourceText": "square"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b2",
+          "kind": "vocabulary",
+          "sourceText": "square"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b2",
+          "kind": "vocabulary",
+          "sourceText": "square"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b2",
+          "kind": "vocabulary",
+          "sourceText": "square"
+        }
+      ]
+    },
+    {
+      "text": "red",
+      "textSha256": "b1f51a511f1da0cd348b8f8598db32e61cb963e5fc69e2b41485bf99590ed75a",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b2",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b2",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b1",
+          "kind": "vocabulary",
+          "sourceText": "red"
+        }
+      ]
+    },
+    {
+      "text": "green",
+      "textSha256": "ba4788b226aa8dc2e6dc74248bb9f618cfa8c959e0c26c147be48f6839a0b088",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b2",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b2",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b1",
+          "kind": "vocabulary",
+          "sourceText": "green"
+        }
+      ]
+    },
+    {
+      "text": "blue",
+      "textSha256": "16477688c0e00699c6cfa4497a3612d7e83c532062b64b250fed8908128ed548",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b2",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b2",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b2",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b2",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b1",
+          "kind": "vocabulary",
+          "sourceText": "blue"
+        }
+      ]
+    },
+    {
+      "text": "This circle belongs here.",
+      "textSha256": "1a91aaec33c4d8c11dbef424dc5ab9ec625a5c1b353f83f5120cfc3325bbf1e9",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 12: This circle belongs here."
+        }
+      ]
+    },
+    {
+      "text": "star",
+      "textSha256": "525eca1d5089dbdcbb6700d910c5e0bc23fbaa23ee026c0e224c2b45490e5f29",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b2",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b2",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b2",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b2",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        },
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b1",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b2",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b1",
+          "kind": "vocabulary",
+          "sourceText": "star"
+        }
+      ]
+    },
+    {
+      "text": "triangle",
+      "textSha256": "0a3f13c673af2389ecb9576de99764a56b808071862d4ba81083519d9fdba28f",
+      "uses": [
+        {
+          "dayId": "day-6",
+          "blockId": "w2d1b2",
+          "kind": "vocabulary",
+          "sourceText": "triangle"
+        },
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b2",
+          "kind": "vocabulary",
+          "sourceText": "triangle"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b2",
+          "kind": "vocabulary",
+          "sourceText": "triangle"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b2",
+          "kind": "vocabulary",
+          "sourceText": "triangle"
+        }
+      ]
+    },
+    {
+      "text": "I found something yellow.",
+      "textSha256": "11808312b4fc3ba8a2651760b14f1d9de139b88409e8136022f5b8a55cd94fed",
+      "uses": [
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 13: I found something yellow."
+        }
+      ]
+    },
+    {
+      "text": "yellow",
+      "textSha256": "c685a2c9bab235ccdd2ab0ea92281a521c8aaf37895493d080070ea00fc7f5d7",
+      "uses": [
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b1",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b1",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b1",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b1",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b2",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b1",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b2",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b1",
+          "kind": "vocabulary",
+          "sourceText": "yellow"
+        }
+      ]
+    },
+    {
+      "text": "What color is your star?",
+      "textSha256": "dbbbb69c04a0b50472e92705070dd2093d438cd02f9632b8a49d4dc536e2bb12",
+      "uses": [
+        {
+          "dayId": "day-7",
+          "blockId": "w2d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 14: What color is your star?"
+        }
+      ]
+    },
+    {
+      "text": "I made green with blue and yellow.",
+      "textSha256": "cbcac38c8874eb8fd4acb5d5e417d44c124838bd32003385339cdf1fb298ee90",
+      "uses": [
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 15: I made green with blue and yellow."
+        }
+      ]
+    },
+    {
+      "text": "I can match this star.",
+      "textSha256": "822516c3bd50978cd06f2df3cb3fa81408a8945b5c2e04548e2ee64f0cf1c51e",
+      "uses": [
+        {
+          "dayId": "day-8",
+          "blockId": "w2d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 16: I can match this star."
+        }
+      ]
+    },
+    {
+      "text": "My leaf is red.",
+      "textSha256": "45eb030d1cb3e7d41e2063f304fb693d4231b0c743e08efac4c8e87b04018948",
+      "uses": [
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 17: My leaf is red."
+        }
+      ]
+    },
+    {
+      "text": "This square has four sides.",
+      "textSha256": "f65951bb113840dfc8b2c1f41bcff987ae2b110e880f430c6d5c3a34950e6517",
+      "uses": [
+        {
+          "dayId": "day-9",
+          "blockId": "w2d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 18: This square has four sides."
+        }
+      ]
+    },
+    {
+      "text": "This rainbow has a yellow stripe.",
+      "textSha256": "7f783956dec19b0307387239608dedbb37ffdb6c6f53b8abde2531f9d8a421e2",
+      "uses": [
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 19: This rainbow has a yellow stripe."
+        }
+      ]
+    },
+    {
+      "text": "Green is my favorite color.",
+      "textSha256": "dc43f73869e7b29518bb963c30f0859f42114529087dab8349dc03e925b4ace9",
+      "uses": [
+        {
+          "dayId": "day-10",
+          "blockId": "w2d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 20: Green is my favorite color."
+        }
+      ]
+    },
+    {
+      "text": "My head is above my shoulders.",
+      "textSha256": "6efffdbc6b59c8afaa9812a63b63e02a582ab59855fe8b83c740a9f66299a44e",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 21: My head is above my shoulders."
+        }
+      ]
+    },
+    {
+      "text": "head",
+      "textSha256": "9f2e6d33a3717ee826353a404ba4618d1aeeb6879ad7936bce8ed5f46814924d",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b1",
+          "kind": "vocabulary",
+          "sourceText": "head"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b1",
+          "kind": "vocabulary",
+          "sourceText": "head"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b1",
+          "kind": "vocabulary",
+          "sourceText": "head"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b1",
+          "kind": "vocabulary",
+          "sourceText": "head"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b1",
+          "kind": "vocabulary",
+          "sourceText": "head"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b2",
+          "kind": "vocabulary",
+          "sourceText": "head"
+        }
+      ]
+    },
+    {
+      "text": "shoulders",
+      "textSha256": "8293bf8fdcb04a38d53c4d2426784bb74589571f41b141a0b472ce532e55d09f",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b1",
+          "kind": "vocabulary",
+          "sourceText": "shoulders"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b1",
+          "kind": "vocabulary",
+          "sourceText": "shoulders"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b1",
+          "kind": "vocabulary",
+          "sourceText": "shoulders"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b1",
+          "kind": "vocabulary",
+          "sourceText": "shoulders"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b1",
+          "kind": "vocabulary",
+          "sourceText": "shoulders"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b2",
+          "kind": "vocabulary",
+          "sourceText": "shoulders"
+        }
+      ]
+    },
+    {
+      "text": "knees",
+      "textSha256": "5240d1bda203e433eda57e00490765b09006a319396f0fb7e2a3d3f22c58eb4d",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b1",
+          "kind": "vocabulary",
+          "sourceText": "knees"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b1",
+          "kind": "vocabulary",
+          "sourceText": "knees"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b1",
+          "kind": "vocabulary",
+          "sourceText": "knees"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b1",
+          "kind": "vocabulary",
+          "sourceText": "knees"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b1",
+          "kind": "vocabulary",
+          "sourceText": "knees"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b2",
+          "kind": "vocabulary",
+          "sourceText": "knees"
+        }
+      ]
+    },
+    {
+      "text": "toes",
+      "textSha256": "bfb299e96fd90505c8d083adb9447c606d1257ef1d98828b2d677d5539dbc310",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b1",
+          "kind": "vocabulary",
+          "sourceText": "toes"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b1",
+          "kind": "vocabulary",
+          "sourceText": "toes"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b1",
+          "kind": "vocabulary",
+          "sourceText": "toes"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b1",
+          "kind": "vocabulary",
+          "sourceText": "toes"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b1",
+          "kind": "vocabulary",
+          "sourceText": "toes"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b2",
+          "kind": "vocabulary",
+          "sourceText": "toes"
+        }
+      ]
+    },
+    {
+      "text": "I stop when I hear stop.",
+      "textSha256": "7f18faf1051df7f010f005aec15efa54c672a800c622fbebb0d8e936dcf09fbd",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 22: I stop when I hear stop."
+        }
+      ]
+    },
+    {
+      "text": "turn",
+      "textSha256": "9b473845f684444f80a26586ae298d2ba491752cc70b893cc653d943b6fa2ac2",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b1",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b2",
+          "kind": "vocabulary",
+          "sourceText": "turn"
+        }
+      ]
+    },
+    {
+      "text": "go",
+      "textSha256": "4cd0e21a9a0795a14ec9aa5f0e7d1abff0492565770e43eafdf1e3e8afed1f33",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b1",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b2",
+          "kind": "vocabulary",
+          "sourceText": "go"
+        }
+      ]
+    },
+    {
+      "text": "stop",
+      "textSha256": "6c45cb72a36e63d522aa54ed8adbd7a29a989474f2f77e0458af8800564ef3cb",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b1",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b2",
+          "kind": "vocabulary",
+          "sourceText": "stop"
+        }
+      ]
+    },
+    {
+      "text": "jump",
+      "textSha256": "6bdaf554e42029bd0dbee9471eb48a5f3626213c9859a58120a61c62ace4c968",
+      "uses": [
+        {
+          "dayId": "day-11",
+          "blockId": "w3d1b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b1",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b1",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b2",
+          "kind": "vocabulary",
+          "sourceText": "jump"
+        }
+      ]
+    },
+    {
+      "text": "My knees can bend.",
+      "textSha256": "ffdbdd92a346f7a2532f239f0635ccfbd5a58dfbdf949ae9865f2bcf8327905c",
+      "uses": [
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 23: My knees can bend."
+        }
+      ]
+    },
+    {
+      "text": "I jump once, then stop.",
+      "textSha256": "fef349da4695b3e5e8f5a916b6ca2c722e95277f08d89d375119442f04f2e031",
+      "uses": [
+        {
+          "dayId": "day-12",
+          "blockId": "w3d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 24: I jump once, then stop."
+        }
+      ]
+    },
+    {
+      "text": "I can point to my head.",
+      "textSha256": "3a2c5fa099fdd00dfdcc213391f4dbf691da433af2a7a2d26bff98ef5166a237",
+      "uses": [
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 25: I can point to my head."
+        }
+      ]
+    },
+    {
+      "text": "I can turn and then stop.",
+      "textSha256": "ed716b0714821f2117f05d3396c0669fa7d05fffec7f30f755c6ab6d573aa20f",
+      "uses": [
+        {
+          "dayId": "day-13",
+          "blockId": "w3d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 26: I can turn and then stop."
+        }
+      ]
+    },
+    {
+      "text": "Show me knees, then point to toes.",
+      "textSha256": "9718d90292fddf5d4166b334abc7b01bf6f2606e9e60f2465c8eb640c3323985",
+      "uses": [
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 27: Show me knees, then point to toes."
+        }
+      ]
+    },
+    {
+      "text": "I stop and point to my knees.",
+      "textSha256": "bf0455376fabfdf373fc639e819398116c7260a5684ef043ac1df257e5aeabfd",
+      "uses": [
+        {
+          "dayId": "day-14",
+          "blockId": "w3d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 28: I stop and point to my knees."
+        }
+      ]
+    },
+    {
+      "text": "These are my shoulders.",
+      "textSha256": "1273e58cba427b10bbea8f0f28e56e3ece2efd3e13e8f03a0b79b7c6c870fe73",
+      "uses": [
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 29: These are my shoulders."
+        }
+      ]
+    },
+    {
+      "text": "First turn, next go, and finally stop.",
+      "textSha256": "0229f77c530b43cd8353b139aa67c1fb671a0413f438b5779c25f165a35846aa",
+      "uses": [
+        {
+          "dayId": "day-15",
+          "blockId": "w3d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 30: First turn, next go, and finally stop."
+        }
+      ]
+    },
+    {
+      "text": "I feel tired. I need a rest.",
+      "textSha256": "4af2a35841f3f4f9e0cf76ebe1979ccc2e5dc71d2b4d1f32135b91715a22b77a",
+      "uses": [
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 31: I feel tired. I need a rest."
+        }
+      ]
+    },
+    {
+      "text": "angry",
+      "textSha256": "0a96f1960786d85f9e1270916fbb29224da7fb649ef6adb322124ef7e5000a68",
+      "uses": [
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b1",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b1",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b2",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b2",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b1",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b1",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b2",
+          "kind": "vocabulary",
+          "sourceText": "angry"
+        }
+      ]
+    },
+    {
+      "text": "tired",
+      "textSha256": "c405760daf9bc32b76f4a57e9c823c39de4645e3ba3dea73d671eee07e152b5d",
+      "uses": [
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b1",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b1",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b2",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b2",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b1",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b1",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b2",
+          "kind": "vocabulary",
+          "sourceText": "tired"
+        }
+      ]
+    },
+    {
+      "text": "happy",
+      "textSha256": "489f719cadf919094ddb38e7654de153ac33c02febb5de91e5345cbe372cf4a0",
+      "uses": [
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b1",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b1",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b2",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b2",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b1",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b1",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b2",
+          "kind": "vocabulary",
+          "sourceText": "happy"
+        }
+      ]
+    },
+    {
+      "text": "sad",
+      "textSha256": "45c9a6614fccd4f9592d8283a4f25bff84076fd43ee9f90eaa07746ebbed02ca",
+      "uses": [
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b1",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b1",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        },
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b2",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        },
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b2",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        },
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b1",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        },
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b2",
+          "kind": "vocabulary",
+          "sourceText": "sad"
+        }
+      ]
+    },
+    {
+      "text": "My family listens to me.",
+      "textSha256": "228bb50efce148f83406f6b6fc025a21f65445d1d8ad4a4e1caf42df95d11d0d",
+      "uses": [
+        {
+          "dayId": "day-16",
+          "blockId": "w4d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 32: My family listens to me."
+        }
+      ]
+    },
+    {
+      "text": "I feel happy at the party.",
+      "textSha256": "1d00135b25b772158eb4a12ec069576f6d7e4a9c4d424b0cac9a39dd2a1fb5af",
+      "uses": [
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 33: I feel happy at the party."
+        }
+      ]
+    },
+    {
+      "text": "I feel sad. Can you listen?",
+      "textSha256": "3383175abbd8305f56ca640bc452c5df9167585f78931d7cbc11f327aa9790fd",
+      "uses": [
+        {
+          "dayId": "day-17",
+          "blockId": "w4d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 34: I feel sad. Can you listen?"
+        }
+      ]
+    },
+    {
+      "text": "My family is special to me.",
+      "textSha256": "a69bf8e747b1bf2aef00dd7d1463928dde171e263e579ab9324cfc49320b8ff2",
+      "uses": [
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 35: My family is special to me."
+        }
+      ]
+    },
+    {
+      "text": "Two people feel happy.",
+      "textSha256": "5d7f10f5ecfed9ea7da391dac6b0ec3fb98ec264927b86ce56becd5b106026ce",
+      "uses": [
+        {
+          "dayId": "day-18",
+          "blockId": "w4d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 36: Two people feel happy."
+        }
+      ]
+    },
+    {
+      "text": "I feel angry. I need a moment.",
+      "textSha256": "6f333480a321a9ba80f606be9d1b04591f25f8c6941905d723c9335f5f1974d2",
+      "uses": [
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 37: I feel angry. I need a moment."
+        }
+      ]
+    },
+    {
+      "text": "I am part of my family.",
+      "textSha256": "3cd1ccf02a75e54fa85a7f15dcbbd7be2611ef29024ebcc2ac63e56559801f22",
+      "uses": [
+        {
+          "dayId": "day-19",
+          "blockId": "w4d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 38: I am part of my family."
+        }
+      ]
+    },
+    {
+      "text": "I feel happy when we play together.",
+      "textSha256": "e571221949d932c46dee2cffc0009696decfc0113fe75b6cea5f056679edb6b9",
+      "uses": [
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 39: I feel happy when we play together."
+        }
+      ]
+    },
+    {
+      "text": "Thank you for listening to me.",
+      "textSha256": "09346d35771deb0a0a56b7a8a3671736ec298e0ac46bc8c3ee0f69b9bc2bd35d",
+      "uses": [
+        {
+          "dayId": "day-20",
+          "blockId": "w4d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 40: Thank you for listening to me."
+        }
+      ]
+    },
+    {
+      "text": "I see three cats.",
+      "textSha256": "652032125ab3a98ce85bb68cef404ee5d1e7dfbc20e5c38bc97b5fdcd5602eab",
+      "uses": [
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 41: I see three cats."
+        }
+      ]
+    },
+    {
+      "text": "cat",
+      "textSha256": "77af778b51abd4a3c51c5ddd97204a9c3ae614ebccb75a606c3b6865aed6744e",
+      "uses": [
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b1",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b1",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b1",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b1",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b2",
+          "kind": "vocabulary",
+          "sourceText": "cat"
+        }
+      ]
+    },
+    {
+      "text": "dog",
+      "textSha256": "cd6357efdd966de8c0cb2f876cc89ec74ce35f0968e11743987084bd42fb8944",
+      "uses": [
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b1",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b1",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b1",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b1",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b2",
+          "kind": "vocabulary",
+          "sourceText": "dog"
+        }
+      ]
+    },
+    {
+      "text": "bird",
+      "textSha256": "7a5179eecc0fe18760ba615f92603372ae3fe302860098a019e15927551fee3b",
+      "uses": [
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b1",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b1",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b1",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b1",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bird"
+        }
+      ]
+    },
+    {
+      "text": "fish",
+      "textSha256": "b474a99a2705e23cf905a484ec6d14ef58b56bbe62e9292783466ec363b5072d",
+      "uses": [
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b1",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b1",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b1",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b1",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b1",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b1",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        },
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b2",
+          "kind": "vocabulary",
+          "sourceText": "fish"
+        }
+      ]
+    },
+    {
+      "text": "I see a fish in the water.",
+      "textSha256": "5f5cbabee6279a6c69603897d78f3c5edc99d7f78c4979bda64bc5c72a4bf7f8",
+      "uses": [
+        {
+          "dayId": "day-21",
+          "blockId": "w5d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 42: I see a fish in the water."
+        }
+      ]
+    },
+    {
+      "text": "Where is it? It is under the cloth.",
+      "textSha256": "59928206edeeab030cfa7363460b1d958f5a0385652f9bf618f24235f1aaf806",
+      "uses": [
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 43: Where is it? It is under the cloth."
+        }
+      ]
+    },
+    {
+      "text": "I see three animals on the bus.",
+      "textSha256": "3830a7954d8f9fecb71d5f8740fcc5351121b3f6913b495dbea05a2a592a4da7",
+      "uses": [
+        {
+          "dayId": "day-22",
+          "blockId": "w5d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 44: I see three animals on the bus."
+        }
+      ]
+    },
+    {
+      "text": "A cat and a dog have four legs.",
+      "textSha256": "6cc68160d87c1442196a90bfdc05c15a5062ca6a52825b7b044ac2437dccfaf4",
+      "uses": [
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 45: A cat and a dog have four legs."
+        }
+      ]
+    },
+    {
+      "text": "I hear a dog. I see a fish swimming.",
+      "textSha256": "43e738cd9ed1f53684712f535e1f3c74de537f0bfd47ea3bd07c258f537f9a6c",
+      "uses": [
+        {
+          "dayId": "day-23",
+          "blockId": "w5d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 46: I hear a dog. I see a fish swimming."
+        }
+      ]
+    },
+    {
+      "text": "Where is it? Look behind the box.",
+      "textSha256": "e58213cb908af3a0d1a4e9e87b29d5ee864052b4a5b6d006b6be8b71ddd59406",
+      "uses": [
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 47: Where is it? Look behind the box."
+        }
+      ]
+    },
+    {
+      "text": "Is it a cat? Yes, it is.",
+      "textSha256": "e47bc261b6a010cae31421e4171e4d1004f62ed6461d825cadf5f1afcddfc684",
+      "uses": [
+        {
+          "dayId": "day-24",
+          "blockId": "w5d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 48: Is it a cat? Yes, it is."
+        }
+      ]
+    },
+    {
+      "text": "I have a pet. It is a cat.",
+      "textSha256": "296b807d044de6ddc41303ecf7e2bf9a327ba4ec594faf3572a1ff4ac25a85b5",
+      "uses": [
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 49: I have a pet. It is a cat."
+        }
+      ]
+    },
+    {
+      "text": "A dog can walk, and a fish can swim.",
+      "textSha256": "d984890d2d62ef9757c66101251a5f7de287a6dd2dd736d6c2f2b6fedffbfca7",
+      "uses": [
+        {
+          "dayId": "day-25",
+          "blockId": "w5d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 50: A dog can walk, and a fish can swim."
+        }
+      ]
+    },
+    {
+      "text": "I can count four blocks.",
+      "textSha256": "aae5793c76314ab5924c0a302df0190f5af07371ce00134e48692367dcad4b1b",
+      "uses": [
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 51: I can count four blocks."
+        }
+      ]
+    },
+    {
+      "text": "three",
+      "textSha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "uses": [
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b1",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b1",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b1",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b1",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b1",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b1",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b2",
+          "kind": "vocabulary",
+          "sourceText": "three"
+        }
+      ]
+    },
+    {
+      "text": "four",
+      "textSha256": "04efaf080f5a3e74e1c29d1ca6a48569382cbbcd324e8d59d2b83ef21c039f00",
+      "uses": [
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b1",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b1",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b1",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b1",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b1",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b1",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b2",
+          "kind": "vocabulary",
+          "sourceText": "four"
+        }
+      ]
+    },
+    {
+      "text": "one",
+      "textSha256": "7692c3ad3540bb803c020b3aee66cd8887123234ea0c6e7143c0add73ff431ed",
+      "uses": [
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b1",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b1",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b1",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b1",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b1",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b1",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b2",
+          "kind": "vocabulary",
+          "sourceText": "one"
+        }
+      ]
+    },
+    {
+      "text": "two",
+      "textSha256": "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3",
+      "uses": [
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b1",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b1",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b1",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b1",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b1",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b1",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        },
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b2",
+          "kind": "vocabulary",
+          "sourceText": "two"
+        }
+      ]
+    },
+    {
+      "text": "Four blocks and one block make five.",
+      "textSha256": "184f54c54d7fd4c7cc587bfa416ddaf88df4c169a60bba7f81d2d7c85a983408",
+      "uses": [
+        {
+          "dayId": "day-26",
+          "blockId": "w6d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 52: Four blocks and one block make five."
+        }
+      ]
+    },
+    {
+      "text": "I can take three steps.",
+      "textSha256": "0bbcec063d033238a655f6cb07acc06c3445c14062cbb2e17478269eafef3dca",
+      "uses": [
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 53: I can take three steps."
+        }
+      ]
+    },
+    {
+      "text": "Clap twice, then tap three times.",
+      "textSha256": "681ff6dc74b64ec3e5948c4618474f4eac3d4e1ea0f5c8dc7a23ae699859326e",
+      "uses": [
+        {
+          "dayId": "day-27",
+          "blockId": "w6d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 54: Clap twice, then tap three times."
+        }
+      ]
+    },
+    {
+      "text": "Three dogs are still here.",
+      "textSha256": "f6c70df1dab0f72da0c22a2c67e5b8e514173289d38465b2c00ca6bee9ab4613",
+      "uses": [
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 55: Three dogs are still here."
+        }
+      ]
+    },
+    {
+      "text": "One bear and two bears make three.",
+      "textSha256": "fdd3c384a18c8268d62e48f7c4aefad888fa1c3fc8d9a976803bbd1a7dd1193c",
+      "uses": [
+        {
+          "dayId": "day-28",
+          "blockId": "w6d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 56: One bear and two bears make three."
+        }
+      ]
+    },
+    {
+      "text": "How many ducks came back?",
+      "textSha256": "07631ce9c783f76a12aba536bb98dc8e47811ec3b3a629e9174b82778750c42a",
+      "uses": [
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 57: How many ducks came back?"
+        }
+      ]
+    },
+    {
+      "text": "Please give me three cups.",
+      "textSha256": "f4126cb646fdd78e9df7923ba12f04c35afdce2b305e9c83543160cbafada8d3",
+      "uses": [
+        {
+          "dayId": "day-29",
+          "blockId": "w6d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 58: Please give me three cups."
+        }
+      ]
+    },
+    {
+      "text": "I can count and stop at four.",
+      "textSha256": "9cc41915d7fdaf83f5dae141d4ef0419d1ce0a372fdcb80497171cc13d972c4f",
+      "uses": [
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 59: I can count and stop at four."
+        }
+      ]
+    },
+    {
+      "text": "We have four toys altogether.",
+      "textSha256": "34958c1fea7060203dc79cb7f203f79a6493c3106b3e54b1af017630264394e4",
+      "uses": [
+        {
+          "dayId": "day-30",
+          "blockId": "w6d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 60: We have four toys altogether."
+        }
+      ]
+    },
+    {
+      "text": "Do you like apples?",
+      "textSha256": "263c4bc52a5f5340a12203cd23f996a02e91e465795809c3459f67e64e1a530a",
+      "uses": [
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 61: Do you like apples?"
+        }
+      ]
+    },
+    {
+      "text": "apple",
+      "textSha256": "3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b",
+      "uses": [
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b2",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b2",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b2",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b2",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b1",
+          "kind": "vocabulary",
+          "sourceText": "apple"
+        }
+      ]
+    },
+    {
+      "text": "banana",
+      "textSha256": "b493d48364afe44d11c0165cf470a4164d1e2609911ef998be868d46ade3de4e",
+      "uses": [
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b2",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b2",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b2",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b2",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b1",
+          "kind": "vocabulary",
+          "sourceText": "banana"
+        }
+      ]
+    },
+    {
+      "text": "pizza",
+      "textSha256": "9ed1515819dec61fd361d5fdabb57f41ecce1a5fe1fe263b98c0d6943b9b232e",
+      "uses": [
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b2",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b2",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b2",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b2",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b1",
+          "kind": "vocabulary",
+          "sourceText": "pizza"
+        }
+      ]
+    },
+    {
+      "text": "water",
+      "textSha256": "0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501",
+      "uses": [
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b2",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b2",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b2",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b2",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        },
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b1",
+          "kind": "vocabulary",
+          "sourceText": "water"
+        }
+      ]
+    },
+    {
+      "text": "I like bananas and drink water.",
+      "textSha256": "cdb700373d13ed61f2341a3690ee02acff05acad8ea2b1080115d9377d247e31",
+      "uses": [
+        {
+          "dayId": "day-31",
+          "blockId": "w7d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 62: I like bananas and drink water."
+        }
+      ]
+    },
+    {
+      "text": "Do you like pizza?",
+      "textSha256": "89d1a0ac1a00e56d1ae0288634608ca87152e529dcf81e180f167d200756ff0b",
+      "uses": [
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 63: Do you like pizza?"
+        }
+      ]
+    },
+    {
+      "text": "I have two apples and one banana.",
+      "textSha256": "3a67f5a1bcd471becf8591f5b58f61b9bc51aeed0b14507128189b1720d5bbcc",
+      "uses": [
+        {
+          "dayId": "day-32",
+          "blockId": "w7d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 64: I have two apples and one banana."
+        }
+      ]
+    },
+    {
+      "text": "Apples and bananas are fruit.",
+      "textSha256": "5e2083c7a4aef94b20be333fb7d827c0adb606ef40c58ff0efa57992b81bd733",
+      "uses": [
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 65: Apples and bananas are fruit."
+        }
+      ]
+    },
+    {
+      "text": "We can clap two, three, or four times.",
+      "textSha256": "948a870f44cf42bc6708477e9912067353957fa0a28bb60ac30827265596cb9c",
+      "uses": [
+        {
+          "dayId": "day-33",
+          "blockId": "w7d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 66: We can clap two, three, or four times."
+        }
+      ]
+    },
+    {
+      "text": "May I have some water, please?",
+      "textSha256": "2108f1997155aeeabbf1f980ff91f196ba74f082b6cbe6fe563e4ddc1dd51a37",
+      "uses": [
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 67: May I have some water, please?"
+        }
+      ]
+    },
+    {
+      "text": "Would you like a banana?",
+      "textSha256": "d88403c56f4ca7239f9adddfab26ac318bb92ebd79341af87f2ab12851d12659",
+      "uses": [
+        {
+          "dayId": "day-34",
+          "blockId": "w7d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 68: Would you like a banana?"
+        }
+      ]
+    },
+    {
+      "text": "I like apples, but I do not like bananas.",
+      "textSha256": "d12a5cee72d005d2f5a17ae7274fd19fc98cbb1f196180e5c5a78258be8c9cef",
+      "uses": [
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 69: I like apples, but I do not like bananas."
+        }
+      ]
+    },
+    {
+      "text": "A banana and some water, please.",
+      "textSha256": "e2eadd40afc3128cab73b112c89ab17dc00ce87d6549e789cd5a26eb07e5b438",
+      "uses": [
+        {
+          "dayId": "day-35",
+          "blockId": "w7d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 70: A banana and some water, please."
+        }
+      ]
+    },
+    {
+      "text": "It is cloudy, but I feel hot.",
+      "textSha256": "a03fc7125204e914081b0a324041eb37d3a73af4481a282ab1393915b46bef60",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 71: It is cloudy, but I feel hot."
+        }
+      ]
+    },
+    {
+      "text": "cloudy",
+      "textSha256": "5e9562c786d9ca040985788bfdd906e5cdaa64560afe6ec2d5660449944972f9",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b1",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b2",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b2",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b1",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b1",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b2",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b1",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b1",
+          "kind": "vocabulary",
+          "sourceText": "cloudy"
+        }
+      ]
+    },
+    {
+      "text": "hot",
+      "textSha256": "7f5d1618e7d28cc7bf32788672be04c24877d9a8911f65fef8e3e013c9cbc373",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b1",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b2",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b2",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b1",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b1",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b2",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hot"
+        }
+      ]
+    },
+    {
+      "text": "sunny",
+      "textSha256": "c2333a7e3a607935c67c1e6f6810395decc9f66f592b812aaada7db94ba215d6",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b1",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b2",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b2",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b1",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b2",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b1",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b1",
+          "kind": "vocabulary",
+          "sourceText": "sunny"
+        }
+      ]
+    },
+    {
+      "text": "rainy",
+      "textSha256": "7b9e10dfed0288d691f7de746a218238c7c9a2d614745c366dea971cae091753",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b1",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b2",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b2",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b1",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b1",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b2",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b1",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b1",
+          "kind": "vocabulary",
+          "sourceText": "rainy"
+        }
+      ]
+    },
+    {
+      "text": "I choose a jacket when I feel cold.",
+      "textSha256": "2d1c098c85959b8c3666e5de138ace9c469dab9f43fb9f06de52f1b6cab9f16e",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 72: I choose a jacket when I feel cold."
+        }
+      ]
+    },
+    {
+      "text": "jacket",
+      "textSha256": "554f4d3dafc80844871aa1654e0a7af8c15ff07f5b6a53b5a7de79324747c6dc",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b2",
+          "kind": "vocabulary",
+          "sourceText": "jacket"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b1",
+          "kind": "vocabulary",
+          "sourceText": "jacket"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b1",
+          "kind": "vocabulary",
+          "sourceText": "jacket"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b2",
+          "kind": "vocabulary",
+          "sourceText": "jacket"
+        }
+      ]
+    },
+    {
+      "text": "hat",
+      "textSha256": "18e1dd392168f601d0e568612a2bf40e6555c033e033b580ae6627d8aeee1150",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b2",
+          "kind": "vocabulary",
+          "sourceText": "hat"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b1",
+          "kind": "vocabulary",
+          "sourceText": "hat"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b1",
+          "kind": "vocabulary",
+          "sourceText": "hat"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b2",
+          "kind": "vocabulary",
+          "sourceText": "hat"
+        }
+      ]
+    },
+    {
+      "text": "shirt",
+      "textSha256": "a52514252adf86066966790e947f72ef6ea6690a6852d5bb5480ee2eeb663395",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b2",
+          "kind": "vocabulary",
+          "sourceText": "shirt"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b1",
+          "kind": "vocabulary",
+          "sourceText": "shirt"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b1",
+          "kind": "vocabulary",
+          "sourceText": "shirt"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b2",
+          "kind": "vocabulary",
+          "sourceText": "shirt"
+        }
+      ]
+    },
+    {
+      "text": "shoes",
+      "textSha256": "01ea5ddd3be5477ac3eae2366fa12064615c485a541682db3e62d283241055a6",
+      "uses": [
+        {
+          "dayId": "day-36",
+          "blockId": "w8d1b2",
+          "kind": "vocabulary",
+          "sourceText": "shoes"
+        },
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b1",
+          "kind": "vocabulary",
+          "sourceText": "shoes"
+        },
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b1",
+          "kind": "vocabulary",
+          "sourceText": "shoes"
+        },
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b2",
+          "kind": "vocabulary",
+          "sourceText": "shoes"
+        }
+      ]
+    },
+    {
+      "text": "One clap, two taps, three steps.",
+      "textSha256": "c6e56444c08c643c99238484f1b5ab05ad967706bf92e4b2a5f5db3199a86041",
+      "uses": [
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 73: One clap, two taps, three steps."
+        }
+      ]
+    },
+    {
+      "text": "On a rainy day, I put on my raincoat last.",
+      "textSha256": "395bd92e6e4ab7d83c4a83783a9f90d9b5fb14ea9863aaec16d008669f58528f",
+      "uses": [
+        {
+          "dayId": "day-37",
+          "blockId": "w8d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 74: On a rainy day, I put on my raincoat last."
+        }
+      ]
+    },
+    {
+      "text": "My shoes go on my feet.",
+      "textSha256": "b11c51c2bedecec9b6a0a50b8f5a145c4ca8b831e795976d4286c958b345d4a4",
+      "uses": [
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 75: My shoes go on my feet."
+        }
+      ]
+    },
+    {
+      "text": "We counted three sunny days.",
+      "textSha256": "bbd90a5dcb96f4838c615e776bfc4b8ea4900ed199eb20302ad1b261ee1acc70",
+      "uses": [
+        {
+          "dayId": "day-38",
+          "blockId": "w8d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 76: We counted three sunny days."
+        }
+      ]
+    },
+    {
+      "text": "Can you find your hat and shoes?",
+      "textSha256": "ac248b24c5c6bf70358febd9350e9b5ea5849482be65bbd98a51f40a20c8c6dc",
+      "uses": [
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 77: Can you find your hat and shoes?"
+        }
+      ]
+    },
+    {
+      "text": "We have two sunny days and three rainy days.",
+      "textSha256": "29b9ed6089755dd05929d1fd5c9af2a36f4ebb51afaa64c1674df780f641d2a2",
+      "uses": [
+        {
+          "dayId": "day-39",
+          "blockId": "w8d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 78: We have two sunny days and three rainy days."
+        }
+      ]
+    },
+    {
+      "text": "I like sunny days, even when it is not hot.",
+      "textSha256": "9992a59f13a6cec2f1beda4470e852c1b7ee858e5f5d28ffe77faf826fd6b5e6",
+      "uses": [
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 79: I like sunny days, even when it is not hot."
+        }
+      ]
+    },
+    {
+      "text": "I pack my shirt, jacket, and hat for the trip.",
+      "textSha256": "b1bc3d3a9b0e0a69e19b6f8a9b9de5669718eb992f7a16f7d0f16df55b607e02",
+      "uses": [
+        {
+          "dayId": "day-40",
+          "blockId": "w8d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 80: I pack my shirt, jacket, and hat for the trip."
+        }
+      ]
+    },
+    {
+      "text": "My bed is where I rest at home.",
+      "textSha256": "af7b1ec761e1a40e5e9273bb032c50908846f4b8234dd961bc85e7789534b954",
+      "uses": [
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 81: My bed is where I rest at home."
+        }
+      ]
+    },
+    {
+      "text": "home",
+      "textSha256": "4ea140588150773ce3aace786aeef7f4049ce100fa649c94fbbddb960f1da942",
+      "uses": [
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b1",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b2",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b1",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b1",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b2",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b1",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b2",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b2",
+          "kind": "vocabulary",
+          "sourceText": "home"
+        }
+      ]
+    },
+    {
+      "text": "bed",
+      "textSha256": "c5052532c2206140dfdc3b0d756cce0831ac00fd978f2bfd150858e7ee217a8c",
+      "uses": [
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b1",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b2",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b1",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b1",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b2",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b1",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b2",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bed"
+        }
+      ]
+    },
+    {
+      "text": "table",
+      "textSha256": "0d4fc4a78d3706edccafb665a8b2fdd9309e82c78625bb0f2b8e7bb9e1c4d21c",
+      "uses": [
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b1",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b2",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b1",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b1",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b2",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b1",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b2",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b2",
+          "kind": "vocabulary",
+          "sourceText": "table"
+        }
+      ]
+    },
+    {
+      "text": "chair",
+      "textSha256": "3d7eb3d3dab17ee509a6911e0feb928eb46e956adcada792493614bfb97a7a9c",
+      "uses": [
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b1",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b2",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b1",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b1",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b2",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b1",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b2",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        },
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b2",
+          "kind": "vocabulary",
+          "sourceText": "chair"
+        }
+      ]
+    },
+    {
+      "text": "We put our toys away before bedtime.",
+      "textSha256": "191eab674f382fda8d14d271a1b1e535ab07e7e0fb3d9631b843713b29dc6a07",
+      "uses": [
+        {
+          "dayId": "day-41",
+          "blockId": "w9d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 82: We put our toys away before bedtime."
+        }
+      ]
+    },
+    {
+      "text": "There is a table and a chair in my home.",
+      "textSha256": "b7cd6e1a3f872660900bbe99bd4147ccf7cc6b9b2687fc4a1cdfb8fcf1d12270",
+      "uses": [
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 83: There is a table and a chair in my home."
+        }
+      ]
+    },
+    {
+      "text": "We look at the shape and check our answer.",
+      "textSha256": "72c4fb3e0a458368712beed1a086074d54a861c82ba89b103cf8aa340633c858",
+      "uses": [
+        {
+          "dayId": "day-42",
+          "blockId": "w9d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 84: We look at the shape and check our answer."
+        }
+      ]
+    },
+    {
+      "text": "At home, we keep the table ready for activities.",
+      "textSha256": "2eaf7d0c0da6c15609f07e922374a71a9d9428ac02c7586547586017d56469e6",
+      "uses": [
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 85: At home, we keep the table ready for activities."
+        }
+      ]
+    },
+    {
+      "text": "We say the words softly before bedtime.",
+      "textSha256": "61b594504c7f9b4f4cb4fc17942bca08fb028ebd9b8e0e8d143b9fdc8f5622d7",
+      "uses": [
+        {
+          "dayId": "day-43",
+          "blockId": "w9d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 86: We say the words softly before bedtime."
+        }
+      ]
+    },
+    {
+      "text": "Please sit on the chair when we read at the table.",
+      "textSha256": "bc4b7311db9cfbff61fab9d02929faf5a00c12afab493821f1cf9287a36f1f0d",
+      "uses": [
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 87: Please sit on the chair when we read at the table."
+        }
+      ]
+    },
+    {
+      "text": "Can you find the toy beside the chair?",
+      "textSha256": "cc4997b1fda44d976a7aa69ce142f63db2dd8743136a7c28a0d84b470139b623",
+      "uses": [
+        {
+          "dayId": "day-44",
+          "blockId": "w9d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 88: Can you find the toy beside the chair?"
+        }
+      ]
+    },
+    {
+      "text": "Is it a toy? Yes, it is.",
+      "textSha256": "68a1705f68e2c2338da12f4a99cbc02d72f4040b8afc677e1e8e808648d2ce44",
+      "uses": [
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 89: Is it a toy? Yes, it is."
+        }
+      ]
+    },
+    {
+      "text": "We leave the table and chair ready for tomorrow.",
+      "textSha256": "b2f62d6eeab452533b0602b1d6f63214fb22a0cff87db595b75edb4309f0a4a0",
+      "uses": [
+        {
+          "dayId": "day-45",
+          "blockId": "w9d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 90: We leave the table and chair ready for tomorrow."
+        }
+      ]
+    },
+    {
+      "text": "We wait our turn to get on the train.",
+      "textSha256": "87b07bfa06ebb4e7b13b5f379b6b6cf2205e4743675d3d55ba5e40dd5206e48e",
+      "uses": [
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 91: We wait our turn to get on the train."
+        }
+      ]
+    },
+    {
+      "text": "train",
+      "textSha256": "116f54c41d0405dbb10e7b04ebc31e262a5b8c85c1233fcf36eaee344d91ae58",
+      "uses": [
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b1",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b2",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b2",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b1",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b2",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b1",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b1",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b2",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b2",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b2",
+          "kind": "vocabulary",
+          "sourceText": "train"
+        }
+      ]
+    },
+    {
+      "text": "rocket",
+      "textSha256": "c58dd0a3760008c901839e21a0a5ae6cc92e3765513823ca9553e6ef5f733b36",
+      "uses": [
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b1",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b1",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b1",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b1",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b1",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b1",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b2",
+          "kind": "vocabulary",
+          "sourceText": "rocket"
+        }
+      ]
+    },
+    {
+      "text": "car",
+      "textSha256": "2b2961a431b23c9007efe270c1d7eb79c19d4192d7cd2d924176eb0b19e7d2a1",
+      "uses": [
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b1",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b2",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b2",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b1",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b2",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b1",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b1",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b2",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b2",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b2",
+          "kind": "vocabulary",
+          "sourceText": "car"
+        }
+      ]
+    },
+    {
+      "text": "bus",
+      "textSha256": "04e027e4990a203f4899f7e87c2d5ff6b9019e9565795619a59ce06c099560d4",
+      "uses": [
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b1",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b2",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b2",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b1",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b2",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b1",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b1",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b2",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b2",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        },
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b2",
+          "kind": "vocabulary",
+          "sourceText": "bus"
+        }
+      ]
+    },
+    {
+      "text": "We wait until the bus stops.",
+      "textSha256": "6b93d759a1254597cee2806aa650daf7bf524c4cf53d46f6c62eae635dc51870",
+      "uses": [
+        {
+          "dayId": "day-46",
+          "blockId": "w10d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 92: We wait until the bus stops."
+        }
+      ]
+    },
+    {
+      "text": "Watch me turn, then stop with me.",
+      "textSha256": "a109a21742ccb7087f04367c31747cf01facf1ffdfd2c87f4ebae6bec14f593b",
+      "uses": [
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 93: Watch me turn, then stop with me."
+        }
+      ]
+    },
+    {
+      "text": "Let us count the wheels we can see.",
+      "textSha256": "0fb332bf2b104663ccab86e70a251d07a8dc9e522d9630f0b949ac07790af026",
+      "uses": [
+        {
+          "dayId": "day-47",
+          "blockId": "w10d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 94: Let us count the wheels we can see."
+        }
+      ]
+    },
+    {
+      "text": "This truck helps keep our town clean.",
+      "textSha256": "86a96d8d84e7eec8d720a1362f72e07f2dabdd7737b0d8780a60ae4fdfa5c2bb",
+      "uses": [
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 95: This truck helps keep our town clean."
+        }
+      ]
+    },
+    {
+      "text": "My rocket is ready to go.",
+      "textSha256": "effd844e8a9060b7cc1989f77239e6fd5ae603e2dac47fd77c2af4582d2afdbe",
+      "uses": [
+        {
+          "dayId": "day-48",
+          "blockId": "w10d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 96: My rocket is ready to go."
+        }
+      ]
+    },
+    {
+      "text": "The train slows down at the station.",
+      "textSha256": "f7480843a148135a172d0dc98a5831dd5ca81256d21608798848311100ec80ef",
+      "uses": [
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 97: The train slows down at the station."
+        }
+      ]
+    },
+    {
+      "text": "Listen, then tell me when to stop.",
+      "textSha256": "57422dcbb464139a36aeba1bb5be9ea93eef66cd86159115b654fc86cc34c805",
+      "uses": [
+        {
+          "dayId": "day-49",
+          "blockId": "w10d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 98: Listen, then tell me when to stop."
+        }
+      ]
+    },
+    {
+      "text": "I choose the yellow car for our trip.",
+      "textSha256": "50cd011a8b842b55a96da7a6e9c6bb3c3d28d0d273b453bc404386decd896816",
+      "uses": [
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 99: I choose the yellow car for our trip."
+        }
+      ]
+    },
+    {
+      "text": "Our bus goes from home to the park.",
+      "textSha256": "4b9201c931d82b19959c41f1a3c898b9d7310f8765b268471e21abc66eeee8c3",
+      "uses": [
+        {
+          "dayId": "day-50",
+          "blockId": "w10d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 100: Our bus goes from home to the park."
+        }
+      ]
+    },
+    {
+      "text": "Trees and flowers grow under the sky.",
+      "textSha256": "25446939623f5ea7543f4e5ff28c55716a7b25832463db79d2027a56de70af1c",
+      "uses": [
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 101: Trees and flowers grow under the sky."
+        }
+      ]
+    },
+    {
+      "text": "tree",
+      "textSha256": "dc9c5edb8b2d479e697b4b0b8ab874f32b325138598ce9e7b759eb8292110622",
+      "uses": [
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b1",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b2",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b2",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b1",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b2",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b1",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b1",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b2",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b1",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b1",
+          "kind": "vocabulary",
+          "sourceText": "tree"
+        }
+      ]
+    },
+    {
+      "text": "flower",
+      "textSha256": "c06b0cfe0cc5e900c57784484094331f095bf441995c3c31ea6c75691c786c35",
+      "uses": [
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b1",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b2",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b2",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b1",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b2",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b1",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b1",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b2",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b1",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b1",
+          "kind": "vocabulary",
+          "sourceText": "flower"
+        }
+      ]
+    },
+    {
+      "text": "sun",
+      "textSha256": "27756f050e14a1cb1c1ee867f0eace9ea4d9fcb81b8bee089469f1ebd5fd7b17",
+      "uses": [
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b1",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b2",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b2",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b1",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b2",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b1",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b2",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sun"
+        }
+      ]
+    },
+    {
+      "text": "sky",
+      "textSha256": "05f514fae7ca5710f9e9289a20a5c9b372af781bfc94dd23d9cb8a044122460f",
+      "uses": [
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b1",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b2",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b2",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b1",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b2",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b1",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b2",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        },
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b1",
+          "kind": "vocabulary",
+          "sourceText": "sky"
+        }
+      ]
+    },
+    {
+      "text": "I can see light and shade.",
+      "textSha256": "c4c8498e89a71270c1a951d1e58db58ced649cae8a5faf654ee32da3c97476a8",
+      "uses": [
+        {
+          "dayId": "day-51",
+          "blockId": "w11d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 102: I can see light and shade."
+        }
+      ]
+    },
+    {
+      "text": "Let us check the weather outside.",
+      "textSha256": "08fb772de7eded09be3f048c91367042108d2533add917fb928d6dd40e7fffd1",
+      "uses": [
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 103: Let us check the weather outside."
+        }
+      ]
+    },
+    {
+      "text": "These two trees are different sizes.",
+      "textSha256": "3b7873ed135172d9c0fd2595d167a4ea3f307d63a7e7327c854132808d72851c",
+      "uses": [
+        {
+          "dayId": "day-52",
+          "blockId": "w11d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 104: These two trees are different sizes."
+        }
+      ]
+    },
+    {
+      "text": "Trees and flowers are plants.",
+      "textSha256": "0f4d71a075b06fb0316fd4e05a47a2db5ce4fe1c90e290093567a74ed76f9eeb",
+      "uses": [
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 105: Trees and flowers are plants."
+        }
+      ]
+    },
+    {
+      "text": "I can hear birds in the trees.",
+      "textSha256": "3558a84dff5a6f560e428fd88c4714bdc79aef1288d10383214e70162c40c356",
+      "uses": [
+        {
+          "dayId": "day-53",
+          "blockId": "w11d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 106: I can hear birds in the trees."
+        }
+      ]
+    },
+    {
+      "text": "The sun and stars are in the sky.",
+      "textSha256": "5c52a94bfaccf938058f517b3405add942e9071508ec6fa756c0f835236d3416",
+      "uses": [
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 107: The sun and stars are in the sky."
+        }
+      ]
+    },
+    {
+      "text": "I see rain outside.",
+      "textSha256": "8d31fafea50c1af97fd84af55b1b869c6e877c2ca99312ecf505ab52a5c177ae",
+      "uses": [
+        {
+          "dayId": "day-54",
+          "blockId": "w11d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 108: I see rain outside."
+        }
+      ]
+    },
+    {
+      "text": "I like trees and flowers.",
+      "textSha256": "2c9902a83a5886d49c6541722714942c1a82eadc63faed922813cb8223c46a22",
+      "uses": [
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 109: I like trees and flowers."
+        }
+      ]
+    },
+    {
+      "text": "I found three things in nature.",
+      "textSha256": "9100a6cd770905e412e949b0e079e96461b6620dea4303984b222e2138a13e8e",
+      "uses": [
+        {
+          "dayId": "day-55",
+          "blockId": "w11d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 110: I found three things in nature."
+        }
+      ]
+    },
+    {
+      "text": "C is for cat, and D is for dog.",
+      "textSha256": "74929f44a04923365a94a8b351ebe73fd84515f7f0a932eef0f628d3e8e4d40a",
+      "uses": [
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 111: C is for cat, and D is for dog."
+        }
+      ]
+    },
+    {
+      "text": "C for cat",
+      "textSha256": "5fc6f989f57228d0a4b58e9c6b1b729d2549135e032e8d89ab5a893290ab2328",
+      "uses": [
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b1",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b2",
+          "kind": "vocabulary",
+          "sourceText": "c-cat"
+        }
+      ]
+    },
+    {
+      "text": "D for dog",
+      "textSha256": "82739604e631aad515675cfac17f6afedb0b9907b387560aafbb0213a2a86166",
+      "uses": [
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b1",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b2",
+          "kind": "vocabulary",
+          "sourceText": "d-dog"
+        }
+      ]
+    },
+    {
+      "text": "A for apple",
+      "textSha256": "df47aaff3786fc88e0fa9fb35df969455b8529786ce00c494321f68fc865c401",
+      "uses": [
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b1",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b2",
+          "kind": "vocabulary",
+          "sourceText": "a-apple"
+        }
+      ]
+    },
+    {
+      "text": "B for ball",
+      "textSha256": "3617450fbf6819436869dba04cbec3514a221625265f8469deca7d650a9beda4",
+      "uses": [
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b1",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        },
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b2",
+          "kind": "vocabulary",
+          "sourceText": "b-ball"
+        }
+      ]
+    },
+    {
+      "text": "I can point to A and then to B.",
+      "textSha256": "e28ca1f7e9684c8201f575f6a3efd219f08116b62c2e5f0aeb537064d57081e3",
+      "uses": [
+        {
+          "dayId": "day-56",
+          "blockId": "w12d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 112: I can point to A and then to B."
+        }
+      ]
+    },
+    {
+      "text": "I can say a letter and show its picture.",
+      "textSha256": "f29196fe8fe2a5cd5f4d5bb6226e72d5f8e9a7790777de43caf692cc6f022535",
+      "uses": [
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 113: I can say a letter and show its picture."
+        }
+      ]
+    },
+    {
+      "text": "Let us count five letters in a row.",
+      "textSha256": "7add938c3bf65d3b41210f21d9e760e2399432c3e0e2ae9773ac1b1958ae86b2",
+      "uses": [
+        {
+          "dayId": "day-57",
+          "blockId": "w12d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 114: Let us count five letters in a row."
+        }
+      ]
+    },
+    {
+      "text": "Cats and dogs are animals; apples are fruit.",
+      "textSha256": "cd0ff2a4e2b5736eb153744c27fb5e6e6da452a0dda076bc5fcc66b19dae7ea3",
+      "uses": [
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 115: Cats and dogs are animals; apples are fruit."
+        }
+      ]
+    },
+    {
+      "text": "The words sound different, but the picture is the same.",
+      "textSha256": "7abc25e21817daecef6bd7ccf56e3a8b745e2c89096db7fbf9e9ac5fbb936fb6",
+      "uses": [
+        {
+          "dayId": "day-58",
+          "blockId": "w12d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 116: The words sound different, but the picture is the same."
+        }
+      ]
+    },
+    {
+      "text": "Which picture starts with the letter A?",
+      "textSha256": "ff05dec8cf74f000b09127ef189dc9a5f3c5e0ec9495afee0b0f2c851bd9dc6f",
+      "uses": [
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 117: Which picture starts with the letter A?"
+        }
+      ]
+    },
+    {
+      "text": "I found the letter L in the word ball.",
+      "textSha256": "93fb3ba5033e56ca4f75db470df03182d7a003ba3aa9b6effbefe157f6c27134",
+      "uses": [
+        {
+          "dayId": "day-59",
+          "blockId": "w12d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 118: I found the letter L in the word ball."
+        }
+      ]
+    },
+    {
+      "text": "I can match a familiar letter to its picture.",
+      "textSha256": "b1ec0dbeb261554316d2ca9b8a7d777179bad8cfdc339706e723fa0758a6a60c",
+      "uses": [
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 119: I can match a familiar letter to its picture."
+        }
+      ]
+    },
+    {
+      "text": "We can take turns naming our letters.",
+      "textSha256": "759cbd5cdb17d5af8ad522d0f8473a3ac7932073bf78d31a2db150b38915886d",
+      "uses": [
+        {
+          "dayId": "day-60",
+          "blockId": "w12d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 120: We can take turns naming our letters."
+        }
+      ]
+    },
+    {
+      "text": "I can find N and R in the letter row.",
+      "textSha256": "ff33f33c4c3869c6fe26daf73f83600708f670006713c9b374c18bb2dc339265",
+      "uses": [
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 121: I can find N and R in the letter row."
+        }
+      ]
+    },
+    {
+      "text": "We can take turns pointing to N, O, P, Q, and R.",
+      "textSha256": "ded09500f176d494e430bd8da8f7b1b69f3100f988bb78157bdfff53a2f56bac",
+      "uses": [
+        {
+          "dayId": "day-61",
+          "blockId": "w13d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 122: We can take turns pointing to N, O, P, Q, and R."
+        }
+      ]
+    },
+    {
+      "text": "I can clap once when I hear my letter.",
+      "textSha256": "9450b5dfc684ec30ae4423d3b1844cbef8e079758852d0df06f3683d6aeda106",
+      "uses": [
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 123: I can clap once when I hear my letter."
+        }
+      ]
+    },
+    {
+      "text": "There are five letters from S to W.",
+      "textSha256": "6946ac92f6a21efcbb26aa722cec84bdef10a23edfdd09443c591facef8173e3",
+      "uses": [
+        {
+          "dayId": "day-62",
+          "blockId": "w13d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 124: There are five letters from S to W."
+        }
+      ]
+    },
+    {
+      "text": "An apple is food, a ball is a toy, and a cat is an animal.",
+      "textSha256": "7246afdfe599033e773d19ccb4c91455f92d2277578865a7630bf1ab66764bd5",
+      "uses": [
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 125: An apple is food, a ball is a toy, and a cat is an animal."
+        }
+      ]
+    },
+    {
+      "text": "A ball is a toy; cats and dogs are animals.",
+      "textSha256": "a644dd79b7c839e90a7ffc2878aaf36e75129fc8d9daf1a8595471684e5bc6bc",
+      "uses": [
+        {
+          "dayId": "day-63",
+          "blockId": "w13d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 126: A ball is a toy; cats and dogs are animals."
+        }
+      ]
+    },
+    {
+      "text": "Which one is food: a cat, a dog, or an apple?",
+      "textSha256": "650cbd1156c9fbc304f60d07fd485ae7eebb7e1c7ca2f11be22964fb1e4aee4c",
+      "uses": [
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 127: Which one is food: a cat, a dog, or an apple?"
+        }
+      ]
+    },
+    {
+      "text": "A comes before B, and B comes before D.",
+      "textSha256": "2ca24c93924237663e840701155c9ddafe7abff7b7abc68bcb6554a25d3bd224",
+      "uses": [
+        {
+          "dayId": "day-64",
+          "blockId": "w13d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 128: A comes before B, and B comes before D."
+        }
+      ]
+    },
+    {
+      "text": "I can try again when a letter is new to me.",
+      "textSha256": "5d489b84d4db8552df8ff1b611115e601b53041cd84a93389dc5ca91488bc3d4",
+      "uses": [
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 129: I can try again when a letter is new to me."
+        }
+      ]
+    },
+    {
+      "text": "We can share the alphabet one small group at a time.",
+      "textSha256": "748b0dda58787072e7421caf709e13efc644ca00a2b07878271a84f65d2c6fa2",
+      "uses": [
+        {
+          "dayId": "day-65",
+          "blockId": "w13d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 130: We can share the alphabet one small group at a time."
+        }
+      ]
+    },
+    {
+      "text": "Is it in your hand? Yes, it is.",
+      "textSha256": "ab15db3546e1475fd192d7cc46bc9fa49a4af036c7ae50ac7f00f6799b849dec",
+      "uses": [
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 131: Is it in your hand? Yes, it is."
+        }
+      ]
+    },
+    {
+      "text": "Hello, my friend. Please play with me.",
+      "textSha256": "e8548669f9f7f927308b46197f3b675337c04d2aa7ba3adb62aa6e3b6cd68017",
+      "uses": [
+        {
+          "dayId": "day-66",
+          "blockId": "w14d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 132: Hello, my friend. Please play with me."
+        }
+      ]
+    },
+    {
+      "text": "Here is my thumb. Can you see it?",
+      "textSha256": "169b7c6d96aa5edfd339a778a57fd78fa3e453f56171bc91c1f0fb98ac5d852a",
+      "uses": [
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 133: Here is my thumb. Can you see it?"
+        }
+      ]
+    },
+    {
+      "text": "No, thank you. I like something else.",
+      "textSha256": "cf366a248d810300978cb5e4bf52ec1c4bfe61183bd821fcbfb5daff3ef87c5a",
+      "uses": [
+        {
+          "dayId": "day-67",
+          "blockId": "w14d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 134: No, thank you. I like something else."
+        }
+      ]
+    },
+    {
+      "text": "A bird has two legs, and a cat has four.",
+      "textSha256": "1134250ace187b49a796b068b6f46f509342490f33af71116ac975c0e4aac24f",
+      "uses": [
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 135: A bird has two legs, and a cat has four."
+        }
+      ]
+    },
+    {
+      "text": "Where is it? Is it here or over there?",
+      "textSha256": "bfb1d86f38d541ce6a56e0a4d6f5fa5469b71d26d8c4818ac4b177bfc013b513",
+      "uses": [
+        {
+          "dayId": "day-68",
+          "blockId": "w14d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 136: Where is it? Is it here or over there?"
+        }
+      ]
+    },
+    {
+      "text": "Hello! Please sit here. Thank you for coming.",
+      "textSha256": "8c35aaa56df638109e0005074aad1b4cb36c020b2ccc7c4507906978eda1a4b0",
+      "uses": [
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 137: Hello! Please sit here. Thank you for coming."
+        }
+      ]
+    },
+    {
+      "text": "No, it is not there. Let us look here.",
+      "textSha256": "cb10f9b799fa5a511a63178fcb24017faddc755199eb38b8934a77f4eb52954c",
+      "uses": [
+        {
+          "dayId": "day-69",
+          "blockId": "w14d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 138: No, it is not there. Let us look here."
+        }
+      ]
+    },
+    {
+      "text": "Thank you for helping me. Bye! See you soon.",
+      "textSha256": "13bcfb8a0e322d593eaa8bc48364960840fcdcc7f19b3cb2f15baa9ce93986ab",
+      "uses": [
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 139: Thank you for helping me. Bye! See you soon."
+        }
+      ]
+    },
+    {
+      "text": "A cat and a dog have paws; a fish has fins.",
+      "textSha256": "9328c7ed54b7eb164a25d582faf1f3a2794eb56b945efbf68d1ebf469d61d288",
+      "uses": [
+        {
+          "dayId": "day-70",
+          "blockId": "w14d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 140: A cat and a dog have paws; a fish has fins."
+        }
+      ]
+    },
+    {
+      "text": "A shark is a fish that lives in the ocean.",
+      "textSha256": "2510a5e92caf720a8b7406b716cce0c14d0ba1a0e052f52cb1af1ee4ce0f7271",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 141: A shark is a fish that lives in the ocean."
+        }
+      ]
+    },
+    {
+      "text": "shark",
+      "textSha256": "31fc15942b0c47f6c6408dd933a830b25dae3d9a0262dafe64d12e4492207e47",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b1",
+          "kind": "vocabulary",
+          "sourceText": "shark"
+        },
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b2",
+          "kind": "vocabulary",
+          "sourceText": "shark"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b1",
+          "kind": "vocabulary",
+          "sourceText": "shark"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b2",
+          "kind": "vocabulary",
+          "sourceText": "shark"
+        }
+      ]
+    },
+    {
+      "text": "ocean",
+      "textSha256": "47afad612b1f9cc8fd0ab7ba2360845d7b932a9d88e6b704e1f5804295c6ee97",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b1",
+          "kind": "vocabulary",
+          "sourceText": "ocean"
+        },
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b2",
+          "kind": "vocabulary",
+          "sourceText": "ocean"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b1",
+          "kind": "vocabulary",
+          "sourceText": "ocean"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b2",
+          "kind": "vocabulary",
+          "sourceText": "ocean"
+        }
+      ]
+    },
+    {
+      "text": "This dinosaur is big, and that one is small.",
+      "textSha256": "32ef95219c761cd99679661b16e25eb0c058e46e5590de4f076fb51135e65fa8",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 142: This dinosaur is big, and that one is small."
+        }
+      ]
+    },
+    {
+      "text": "big",
+      "textSha256": "2a21fe6d592a19b7de898b50eb53c429608de1a66f3e9f62da19714a770553d1",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b2",
+          "kind": "vocabulary",
+          "sourceText": "big"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b1",
+          "kind": "vocabulary",
+          "sourceText": "big"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b2",
+          "kind": "vocabulary",
+          "sourceText": "big"
+        }
+      ]
+    },
+    {
+      "text": "small",
+      "textSha256": "81db8ebbbbc69c6c6ad4a6aa92b76e0c08af547da236b9e2c9dbe1d8285a8130",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b2",
+          "kind": "vocabulary",
+          "sourceText": "small"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b1",
+          "kind": "vocabulary",
+          "sourceText": "small"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b2",
+          "kind": "vocabulary",
+          "sourceText": "small"
+        }
+      ]
+    },
+    {
+      "text": "dinosaur",
+      "textSha256": "300908b9d3815e2d3ba5f5534fda3bf44c8d3baaed7e7ca55fdf83a6ecad5854",
+      "uses": [
+        {
+          "dayId": "day-71",
+          "blockId": "w15d1b2",
+          "kind": "vocabulary",
+          "sourceText": "dinosaur"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b1",
+          "kind": "vocabulary",
+          "sourceText": "dinosaur"
+        },
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b2",
+          "kind": "vocabulary",
+          "sourceText": "dinosaur"
+        }
+      ]
+    },
+    {
+      "text": "The rocket goes up into space.",
+      "textSha256": "9a779bb1342fd79fc1663b5b128e8ec9b4a26f30b199dfdf1cd27e71f99f7c24",
+      "uses": [
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 143: The rocket goes up into space."
+        }
+      ]
+    },
+    {
+      "text": "space",
+      "textSha256": "3f49dbbfe051cb20cc038923424fedf8d18307cc805e1520e4168e9360e2eb38",
+      "uses": [
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b1",
+          "kind": "vocabulary",
+          "sourceText": "space"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b2",
+          "kind": "vocabulary",
+          "sourceText": "space"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b1",
+          "kind": "vocabulary",
+          "sourceText": "space"
+        }
+      ]
+    },
+    {
+      "text": "moon",
+      "textSha256": "9e78b43ea00edcac8299e0cc8df7f6f913078171335f733a21d5d911b6999132",
+      "uses": [
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b1",
+          "kind": "vocabulary",
+          "sourceText": "moon"
+        },
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b2",
+          "kind": "vocabulary",
+          "sourceText": "moon"
+        },
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b1",
+          "kind": "vocabulary",
+          "sourceText": "moon"
+        }
+      ]
+    },
+    {
+      "text": "One fish, two fish, three fish swim in the sea.",
+      "textSha256": "f30752f4db264ddb69480070b2d937302cedc954d99e4c830085676a4ba7e2fc",
+      "uses": [
+        {
+          "dayId": "day-72",
+          "blockId": "w15d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 144: One fish, two fish, three fish swim in the sea."
+        }
+      ]
+    },
+    {
+      "text": "Dinosaurs can be big or small.",
+      "textSha256": "2595cf7ee810e78a14e8caf6de9506800a961800d016ff84cdaa1cd3e3dda60c",
+      "uses": [
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 145: Dinosaurs can be big or small."
+        }
+      ]
+    },
+    {
+      "text": "The moon and stars are in space.",
+      "textSha256": "f307743c016e60b3d22d3738e9f37f0f5f8a3072fa67d447352e182a356abdef",
+      "uses": [
+        {
+          "dayId": "day-73",
+          "blockId": "w15d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 146: The moon and stars are in space."
+        }
+      ]
+    },
+    {
+      "text": "The boat goes up and down on the waves.",
+      "textSha256": "dba67b378c57ef36e7c0da5599c7cec36a263b5b8dd73a701ed6d9de382f5165",
+      "uses": [
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 147: The boat goes up and down on the waves."
+        }
+      ]
+    },
+    {
+      "text": "My toy dinosaur can jump.",
+      "textSha256": "39a3ef01becf60b67f8a461b4d6d69ea27bcad77485b6f01cd195aea0e6393b2",
+      "uses": [
+        {
+          "dayId": "day-74",
+          "blockId": "w15d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 148: My toy dinosaur can jump."
+        }
+      ]
+    },
+    {
+      "text": "The sun is a star, and the moon is not a planet.",
+      "textSha256": "05156bf30b94fac4c0dee36cbfddff0199a21fa5b5871d6cb06c39877f13053a",
+      "uses": [
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 149: The sun is a star, and the moon is not a planet."
+        }
+      ]
+    },
+    {
+      "text": "I can see a shark swimming in the sea.",
+      "textSha256": "74331a4d5f943142ff3d44005455e3f834d7b12cd49156e7e21dcc6d5e39c655",
+      "uses": [
+        {
+          "dayId": "day-75",
+          "blockId": "w15d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 150: I can see a shark swimming in the sea."
+        }
+      ]
+    },
+    {
+      "text": "I can find yellow, green, and red.",
+      "textSha256": "c0b840a28ab52a11346982b36779b1d42170730c189fa939df3aeede3430b6e0",
+      "uses": [
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 151: I can find yellow, green, and red."
+        }
+      ]
+    },
+    {
+      "text": "I can show four fingers, then one finger.",
+      "textSha256": "cf3505b68efa11b1615f81606d63f68462610fbf223e06a19501560dccb0c790",
+      "uses": [
+        {
+          "dayId": "day-76",
+          "blockId": "w16d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 152: I can show four fingers, then one finger."
+        }
+      ]
+    },
+    {
+      "text": "Can you see me? Yes, I can!",
+      "textSha256": "3e47ad04e488769f29ae5e340ceb6cc97e7a0ccf625e74bb5d6432e5d4c61ccc",
+      "uses": [
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 153: Can you see me? Yes, I can!"
+        }
+      ]
+    },
+    {
+      "text": "I see a dog, a bird, and a fish.",
+      "textSha256": "c74515043cc6eda10b99cb7c3e9357d4d4a920e8f7142c8695f016f6ec116258",
+      "uses": [
+        {
+          "dayId": "day-77",
+          "blockId": "w16d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 154: I see a dog, a bird, and a fish."
+        }
+      ]
+    },
+    {
+      "text": "I eat pizza and apples, and I drink water.",
+      "textSha256": "50f75e451c908531a21378eaa929510775a341155c899a0dfb83be9d89b68407",
+      "uses": [
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 155: I eat pizza and apples, and I drink water."
+        }
+      ]
+    },
+    {
+      "text": "These are my toes, and this is my head.",
+      "textSha256": "dfb2a1d835a0086ea1a037166223e7507d5ad00f724af9621ee309d5e4f9875e",
+      "uses": [
+        {
+          "dayId": "day-78",
+          "blockId": "w16d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 156: These are my toes, and this is my head."
+        }
+      ]
+    },
+    {
+      "text": "It is cloudy now, and it may rain later.",
+      "textSha256": "4ca6616d4f33ee9a416d7a03e5d5bb6f86a9f8a0c6fcc21eb1375c1fb1e0a4da",
+      "uses": [
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 157: It is cloudy now, and it may rain later."
+        }
+      ]
+    },
+    {
+      "text": "The bus goes on the road, and the train goes on the tracks.",
+      "textSha256": "36f40310f06c55514ff6055bfb633bb60853992a7e3ca9f8d10787ecb7446e54",
+      "uses": [
+        {
+          "dayId": "day-79",
+          "blockId": "w16d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 158: The bus goes on the road, and the train goes on the tracks."
+        }
+      ]
+    },
+    {
+      "text": "I can see the sun in the sky and a tree on the ground.",
+      "textSha256": "f313de0b149ff5d8b53835ad02725a4a1404f3ecfaf85cd25eadc9df85ba5793",
+      "uses": [
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 159: I can see the sun in the sky and a tree on the ground."
+        }
+      ]
+    },
+    {
+      "text": "Hello! May I have it, please? Thank you. Bye!",
+      "textSha256": "6ed740a9048a745c58678e82c3c930d26f4f152efc452e4721ec19b3f8792af0",
+      "uses": [
+        {
+          "dayId": "day-80",
+          "blockId": "w16d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 160: Hello! May I have it, please? Thank you. Bye!"
+        }
+      ]
+    },
+    {
+      "text": "Hello! Please help me find the animal. Thank you!",
+      "textSha256": "256842d455c694a98c5d18cc238846e52d70bcbb54c33f35d295c4452e312add",
+      "uses": [
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 161: Hello! Please help me find the animal. Thank you!"
+        }
+      ]
+    },
+    {
+      "text": "I like red. What color do you like?",
+      "textSha256": "900fc46f042418b1f23ae8369b3c5f841baebec40008166dadda979a7affd31f",
+      "uses": [
+        {
+          "dayId": "day-81",
+          "blockId": "w17d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 162: I like red. What color do you like?"
+        }
+      ]
+    },
+    {
+      "text": "Thank you for finding colors with me. Bye!",
+      "textSha256": "d17266af3c60bc70fb4644991a70ae1ceae4b135fc15cdb62a27578216d27293",
+      "uses": [
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 163: Thank you for finding colors with me. Bye!"
+        }
+      ]
+    },
+    {
+      "text": "Hi! Thank you for playing with me. Goodbye!",
+      "textSha256": "3fd76d52677c19143f5f9ba4f36a3ac8f353f8dfff1f224ade952c5afa2277ca",
+      "uses": [
+        {
+          "dayId": "day-82",
+          "blockId": "w17d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 164: Hi! Thank you for playing with me. Goodbye!"
+        }
+      ]
+    },
+    {
+      "text": "Hello! Can you please help me find my toy?",
+      "textSha256": "6026a4e902f0f5125deb222e2267fe790c759cac7a789632f2af2606d4b05276",
+      "uses": [
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 165: Hello! Can you please help me find my toy?"
+        }
+      ]
+    },
+    {
+      "text": "Please take a turn. Thank you! Now it is my turn.",
+      "textSha256": "fd7369d4852ef593ceb5b0836a8651add26d057b2d262afa5098730356f4d8cc",
+      "uses": [
+        {
+          "dayId": "day-83",
+          "blockId": "w17d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 166: Please take a turn. Thank you! Now it is my turn."
+        }
+      ]
+    },
+    {
+      "text": "Thank you for listening. Hello, cat! Goodbye, dog!",
+      "textSha256": "680ede6711af285312706832140423436986b514f706f3bbb05fde4dab0d8dac",
+      "uses": [
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 167: Thank you for listening. Hello, cat! Goodbye, dog!"
+        }
+      ]
+    },
+    {
+      "text": "Hi, reindeer! Thank you for singing. Bye, snowman!",
+      "textSha256": "ddad274a1ba95b75f9a8fc3f8dbaef005e3cfb2a11f65b30c048026ac7867c16",
+      "uses": [
+        {
+          "dayId": "day-84",
+          "blockId": "w17d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 168: Hi, reindeer! Thank you for singing. Bye, snowman!"
+        }
+      ]
+    },
+    {
+      "text": "Hello! Please sing with me. I like singing with you.",
+      "textSha256": "a7fd72698542112cb320de80321c097a9f16ad04bac609446b0dfe1b5abddaea",
+      "uses": [
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 169: Hello! Please sing with me. I like singing with you."
+        }
+      ]
+    },
+    {
+      "text": "A robot, please. Thank you! Goodbye, everyone.",
+      "textSha256": "e8901fb89ce71af6e6543e835fe4791258482ae3082a5a3c47ddf9f7dd101e5e",
+      "uses": [
+        {
+          "dayId": "day-85",
+          "blockId": "w17d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 170: A robot, please. Thank you! Goodbye, everyone."
+        }
+      ]
+    },
+    {
+      "text": "I found yellow! Can you find green and red?",
+      "textSha256": "59d0dbd04406fecebe909245c0682e0a634ef97db265b2fc028dfb9feda6b20e",
+      "uses": [
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 171: I found yellow! Can you find green and red?"
+        }
+      ]
+    },
+    {
+      "text": "Show me four fingers. Now show me one and two.",
+      "textSha256": "e861367b4d8fb83a7598348f38e036b89be441d32deb6e8c44092facd2a402b4",
+      "uses": [
+        {
+          "dayId": "day-86",
+          "blockId": "w18d1b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 172: Show me four fingers. Now show me one and two."
+        }
+      ]
+    },
+    {
+      "text": "Hello! Your name, please? Thank you for telling me.",
+      "textSha256": "ba586fc356bd3537c7a51fd0e952c19ec549146d194e5ab97575e802a78a6ec9",
+      "uses": [
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 173: Hello! Your name, please? Thank you for telling me."
+        }
+      ]
+    },
+    {
+      "text": "A dog has legs. A bird has wings. A fish has fins.",
+      "textSha256": "60ddd4f156715bab800af6ddaa8d847ed4bf76f147dd40047f249b92401df230",
+      "uses": [
+        {
+          "dayId": "day-87",
+          "blockId": "w18d2b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 174: A dog has legs. A bird has wings. A fish has fins."
+        }
+      ]
+    },
+    {
+      "text": "Pizza is food. Water is a drink. An apple is fruit.",
+      "textSha256": "ba7430aca476f936b6a91ba832145d19f6a916da91acd67e4c324c5654e82451",
+      "uses": [
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 175: Pizza is food. Water is a drink. An apple is fruit."
+        }
+      ]
+    },
+    {
+      "text": "Stop here, please. Jump once, then turn slowly.",
+      "textSha256": "806543cbdb09fd2a2a7a9c544b7accdcc5c2f953d9d2a5a6ebbba9520f520a94",
+      "uses": [
+        {
+          "dayId": "day-88",
+          "blockId": "w18d3b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 176: Stop here, please. Jump once, then turn slowly."
+        }
+      ]
+    },
+    {
+      "text": "Is it sunny or rainy? Let us look outside together.",
+      "textSha256": "55acef556fab7c0b4b7a860d08c5137b30a26afa27a93f2fae40e9b0c48bad06",
+      "uses": [
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 177: Is it sunny or rainy? Let us look outside together."
+        }
+      ]
+    },
+    {
+      "text": "The bus and car stop at the red light.",
+      "textSha256": "155f5a1b9aac5b4fcdedfc0817f13ed9e0a70c2d5980affeab513ab426251805",
+      "uses": [
+        {
+          "dayId": "day-89",
+          "blockId": "w18d4b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 178: The bus and car stop at the red light."
+        }
+      ]
+    },
+    {
+      "text": "The sun is in the sky. I can point to a tree.",
+      "textSha256": "f85e60b1e7b447ad2f3d68ad0c33826e7cf7052254b278c24c8caf17e1fddf6a",
+      "uses": [
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b1",
+          "kind": "sentence",
+          "sourceText": "Adventure 179: The sun is in the sky. I can point to a tree."
+        }
+      ]
+    },
+    {
+      "text": "Hello, everyone! Please watch me clap. Thank you, and goodbye!",
+      "textSha256": "837b35358d06284945be9122bfbce478a2d09dc39b7129a25dd417c564d6b969",
+      "uses": [
+        {
+          "dayId": "day-90",
+          "blockId": "w18d5b2",
+          "kind": "sentence",
+          "sourceText": "Adventure 180: Hello, everyone! Please watch me clap. Thank you, and goodbye!"
+        }
+      ]
+    },
+    {
+      "text": "Hello! Let us learn English together.",
+      "textSha256": "84f1ce1399cb0615c99540afc3fb52d77137b92de69e65821c30cc6dde712706",
+      "uses": [
+        {
+          "kind": "settings-preview"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2902 @@
+{
+  "status": "FROZEN_CANDIDATE_PENDING_COMPILED_608_AND_SHOP_ACCEPTANCE",
+  "namespace": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1",
+  "manifestSHA256": "a79609622d468a7a6a06edab0d456382523588adea25dd36c459b58e7f59f538",
+  "builderSHA256": "a3c7048b4300aa904b1786d1b47e8b76df3a43547b94bf0abc71aa547a9efd22",
+  "poseMapSHA256": "4ef6bb468edca8fba818ad5122b80531025df9730c59b952bff56e045b9ddbad",
+  "items": [
+    "phones-sky",
+    "starter-buddy-headphones",
+    "sister-cat-headphones",
+    "hair-nebula",
+    "starter-sun-cap"
+  ],
+  "sources": [
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--default.webp",
+      "sha256": "b5e74affbf239b1b0f14570c40d7c1f2b9fca05f9ea7fd5d53b9465cc5fb4fda",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/brother--default--back.png",
+      "sourcePNGSHA256": "b61aa70019cf79dd56b91dcfa187ac2273c6145fdc7534adf11a159f3dc21324",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/brother--default--back.blend",
+      "nativeBlendSHA256": "8620d36f911d293ed089f7a963d578360ca6a1de1cd06e571dd10a688e8eda9e"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--default.webp",
+      "sha256": "6fd828fade9d29753f3e2454edc2abd8ab7b6792ef3084d17630a782cb628238",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/brother--default--front.png",
+      "sourcePNGSHA256": "704c0e3050f3feba232b17af9bc611ac2b9c6137b83ee56b2a8a33400f9567a0",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/brother--default--front.blend",
+      "nativeBlendSHA256": "a8239ceaca1a883d30e54d2eb9912a0b032dd11de727950ccdb6042cc8c745cf"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--default.webp",
+      "sha256": "4da9a9725f491c73da807ce9b4bef2059051c7d6b62131e5036b8f4cf0865a96",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/brother--default--back.png",
+      "sourcePNGSHA256": "f4c13706f8ae8f4722e487c61d8971031af9d8f6cefab49789401c6fc3b5ee4a",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/brother--default--back.blend",
+      "nativeBlendSHA256": "a0b1fd0806ce0aea7bc3c9aecdffad8fb5952da4aac334a81d58825e4a5e4406"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--default.webp",
+      "sha256": "641519600bbb4c8bf38fd4a1eae634f5369fcc078446b709da07a815be7a71f6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger--default--back.png",
+      "sourcePNGSHA256": "042623e34534204206e6d9d0822d2247eec1597ce703c6d61ec85672d11eed7c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger--default--back.blend",
+      "nativeBlendSHA256": "e67a797a1b7bc84e240638f65b7da88d6f45a358f0eb1cf885d5616c2965c6be"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--default.webp",
+      "sha256": "eb1d0bd44c60237ce87d373bda7c0df861b34930cfc544993e78e5f42f987e0b",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger--default--front.png",
+      "sourcePNGSHA256": "7285a43bf30eac714f3e5f49a8b9baa05d97334b3aad5a6780adf39e7744a304",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger--default--front.blend",
+      "nativeBlendSHA256": "ed8507397e5eb8b0f31509f60678267415993a59127c363f0a5ddb2b5b1d635d"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--default.webp",
+      "sha256": "b26cb0de9092039cd7431ca84c63ad86d21d46507ae244a5e7e7bbb44f71f49f",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/younger--default--back.png",
+      "sourcePNGSHA256": "4dd0e8001baa6bc036945a4bbca7e96fa03d2f54af5c5bccc6f0e6b210ecb8f3",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/younger--default--back.blend",
+      "nativeBlendSHA256": "ac7c45a443e19296c303bc3826115ee7723627d88584410ed0bca5049a5ae73e"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--default.webp",
+      "sha256": "85b555a55bd1cffce7a6c17292a796264985987ca06812aa09c5c34002178367",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/sister--default--back.png",
+      "sourcePNGSHA256": "1aadbd8e73aaf5788c8e98bda9e3456ec82d590d261a5b19f3122f08dbce3ef6",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/sister--default--back.blend",
+      "nativeBlendSHA256": "366a73fb16acf1350f28da56ebf492c71399dc6c74d2451874608a51c3a5a868"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--default.webp",
+      "sha256": "f56817c800ebaf886da5351b2d58b0af788bc3aa111e9e79e367043d7065adcf",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/sister--default--front.png",
+      "sourcePNGSHA256": "1fc38e8b83de76e0eee74c484d70d02be2407f288e2f12cf873aeef97a741a4e",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/sister--default--front.blend",
+      "nativeBlendSHA256": "03e61b9484cb0f2de053c78b3ac9fb384c8f643e1007a1b6956505398ecdcede"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--default.webp",
+      "sha256": "57de4a1467afee05fc54c09a70ead7e815e1c60055bf923f60462634fd2f276d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/sister--default--back.png",
+      "sourcePNGSHA256": "f8c5f45c5cea66f33d37b6b5131e13b971c1054b41065ebb21e8b759215d178d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/sister--default--back.blend",
+      "nativeBlendSHA256": "cdfccdfad54c3821b187d8130795985e85915e43e53ed41db6e42aea1490d426"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--default.webp",
+      "sha256": "c5efe7ef1870464a3d4ca9c2847866bcaf5e2898ca97c4709a254e0732973b52",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger-sister--default--back.png",
+      "sourcePNGSHA256": "ba0af49313ecdc752d46857a3517f23a23f6c5bba09af60415b0d0ed4cb7d144",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "3d0827cdfac540b6762fcc305f8a04a4e62c8c0d15e1bf6e50ad801f21d58d50"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--default.webp",
+      "sha256": "aa2624f695aa3f5eb3069b28b073c0e8cf62534aa875ec4d99278fea8e495938",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger-sister--default--front.png",
+      "sourcePNGSHA256": "80f55f8ac466123c157c4f16989c7537458e2a9b25fc956c343d917309ab9a55",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-r2/younger-sister--default--front.blend",
+      "nativeBlendSHA256": "9e85bb38fa28973b0315b99cc835cd8e8e6a4f8b3053e78226d84ef5def13d45"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--default.webp",
+      "sha256": "e2d18bd268b3525a1f075b831f746fc5fda4363ca52bdb415d9daa3e610dcf50",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/younger-sister--default--back.png",
+      "sourcePNGSHA256": "b49e5e56989035206da840dd7e8bbb5d284c3a7bdadcbde6be3a83c9c8d9e078",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-sky-nebula-r3/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "6d4b0fd58b9b73a5c7103d1700d62f5840765cdd2c0e3f3689d668d5c58397d0"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/brother--outfit-racer.webp",
+      "sha256": "62eec09cc782b1eedad2273df681345a300388dbb7d178d055fea4fc9c37521a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "fc29db5fee3d0613def663f9f8ffe1014892bc83ba0d1ab823c47a5bb7c22ea8",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "2760e78dbe0b1bc8dbedb879d0bb89dad79febc0b0f8b2282e46865b0912dd36"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/brother--outfit-racer.webp",
+      "sha256": "c444d550d431b03c32bca3f811945196e83f9dc9441a62f4a159baccf1b227fc",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/brother--outfit-racer.png",
+      "sourcePNGSHA256": "4ee07e3d140fca20bb04f50420fd277825583edfb54a1e981b738415d369fce4",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "1ccaf8f99c1614e23b7a4d100cf20580af3092dc6b63f78331d5cac1b99fead6"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/brother--outfit-racer.webp",
+      "sha256": "0335c4d329ee66d04bab2f77a4a722d1a45389812f660c9dc1ec5b4671ac73c9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "ffcd53979edcf985ed6604057704ce6f9dd7cc660efdcfc2d04c417b4678f717",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "922a4bb202daa365c75db4a1341740dc3621ce43b37fca0792e657573d435a7d"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--outfit-cadet.webp",
+      "sha256": "ee91a0f839f394bf103319e4be95ab5b22b621e197408cbdaa779ad876ca7aa2",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "2174b3d56dfc5c704768bc033df972621290a81e17c47b01741d295414ac6c9c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "8261cf4f1a2ec75f9f2f109238285642c4a6a6c690d8bd28d9c4aa2b5b1c69c0"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-cadet.webp",
+      "sha256": "1ea34ef3e6407c9e045ff38813095b33680ae7da0902110afb2ec50ad8464e2a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "d1329bef0f75d5ca524170117d6636ed7332a44958602f156f094192cc1b70ca",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "0a1f5d2a9d782c5fc5239d3c77b226679208fbf56fde9d7b11b7133374f03794"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "0d80c96594bb941d3cb2aae324e38a977712dd6a257d55f582a44ce79f95f957",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "244bc84b0d1e9071171dd1974b2208920a6839c33d0ea9cc3fdc818bc8fd0c35",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "3bed492cddf51a201f536e0dc46fb7164ce65f5f9c954e9f1e54201bad25957b"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger--outfit-legend.webp",
+      "sha256": "ab765c435dbc3ffa429899a37500736a0d050a76293388858d88d135fb60b17e",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "13b20dc23c191fdc0f20d3ee39d61522bf9906716a5ccc23cb650e6bf91269e5",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "1d18f81fe4e021d0556ba58be820ee8f8607464fbcaf7f6f7731a85e3bd74bcd"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger--outfit-legend.webp",
+      "sha256": "cd306e1fc8431400666f15c1bb6e483cd8a41bb31b27907150aa4e7a2520adf9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/younger--outfit-legend.png",
+      "sourcePNGSHA256": "e90693c47784eda61378b032dd4d77b832df07988370f5cad148238cfa81fcc1",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "0f1d7dfcbf8c066221b37754746378e979c22f0f60a73e689782db4f99cb207e"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger--outfit-legend.webp",
+      "sha256": "067f819eabd277e9cb785be834b152a2797c450cb1a7aad6d784486c4caee107",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "72bd208d4c89e6a3499ad297df4fb8ed2f4d51f604e3954d5dd1c51cc338dcdd",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "586451f3e604e0a0fa3c22c74e51b8c3af3a5bb393b6b53d2f4f7b2f9a8f39c6"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/sister--outfit-mecha.webp",
+      "sha256": "0c22fcbc80a1d75c60cf449127d8cd8f9c7043e7a8143e38deabf0e3da0c5eeb",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "04b19a495f8b77b905b2691151e6a0e01f288fd724b7ec05d0803ecccc8160a6",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "1fe57cece413685538bf1f5f2b991342f20107a2a54cb83a30b924f3aea2c960"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/sister--outfit-mecha.webp",
+      "sha256": "262006bea73c1a46a8c5e539ac5af7b41e83658172d6e5822e4dc9cd6b28c668",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "919cc1edf55e1e87b03d545479110161e79217570e7909b7e35310f60e466a23",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "9073cf7a1f99363dc82a55e73b58565991403a98856f50033a17df8c0e9b8b46"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "5827b036770cf550419b11ef366cf3f09a53454ac1ec4a81bfbac19df056f5a8",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "1dd7f395081f6d1d41a25e11536f12a7c012845d7dd549261c6c8e6458ef727f",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "53bb967da285af37fc17d85e8c3890b65502b423ad7a5511705c7857080bae20"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-back/younger-sister--outfit-racer.webp",
+      "sha256": "3ec178f4e730571a8fcbf9aa5daccfc485b77fbcfb673c85428e0d6d2ecc67c1",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "cc92439c70084fe01d1fdb86dcd4fe57ca4fb362beb28ea9b3b2ee30ebdfb12e",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "716a44d7e221c83fcc982c3db61636aa29da4d6618c1249d62ef8a830c52b110"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-front/younger-sister--outfit-racer.webp",
+      "sha256": "fa567cf77516ba9b5daa3ebcd1f72c7e9272b66c4a1df6dbfd3020604a12f570",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "dfa4679bf841acaed0510f26055928b1a410b291aa9534a3ea017b60b38a70f7",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-front/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "1809783df4cce6bede6d4f7b8f7995aab406d233c547ee1e714388fa0d132147"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/phones-sky-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "d1157de83b15abf8d55a9a114b045788c0f833177abe6383027513cbcdcd2e02",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "479780b01f4efd0abe7fdcfe05f5762b65c3f46b7ef5a9580088a1ea8d80a1ec",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/phones-sky-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "b9b87791bceb081abc016d07536722529983afbdc76c42bd5bcfb13ec1be8c08"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--default.webp",
+      "sha256": "395f38aa63e080f1547210abca18dd5e8e78d6dffc81d4681dbd1e180e6b9a9d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/brother--default--front.png",
+      "sourcePNGSHA256": "8cb1b31eedfa2918ede741dfdb5fc08f16c14548d1a529964de6ffe98c096254",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/brother--default--front.blend",
+      "nativeBlendSHA256": "961bbd97e180ba7c840622ccac496886d76f272178239fb17bb4040dde5d4758"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--default.webp",
+      "sha256": "49ea89f96a6f1054423a61940e89a073f616e2737efe6417ebb4a168095bddd3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/younger--default--front.png",
+      "sourcePNGSHA256": "72433cbbc4678fc70913f691a2a0868ec48123e14a8c72d368f8bdac4c3c6eed",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/younger--default--front.blend",
+      "nativeBlendSHA256": "013ba243e8841d5bb094d80e7c3cd7e619177bfa2bf562cff7bcb0a8d0e0bce1"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--default.webp",
+      "sha256": "432e069aba776b3b57f39e05e237802963e7bdce34b9588142ff2e699601de7d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/sister--default--front.png",
+      "sourcePNGSHA256": "79cb4af69a8915d139adde16dd18f40c588e2e73a23e7cbb6100c6d8be8f68df",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/sister--default--front.blend",
+      "nativeBlendSHA256": "e6d354cf4c5c7050b88fccdb799b870c9377c295f8b94351f9d5f9a7ea85a93f"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--default.webp",
+      "sha256": "e85b0e18b6444d5385757abeadb7b7ddd810b461b58e47cffcdfe925f5cc091f",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/younger-sister--default--front.png",
+      "sourcePNGSHA256": "abfa80c6bd3dadc39913ed2da52114b0b234552c9c8b68650637081592387b48",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/starter-buddy-headphones-r2/younger-sister--default--front.blend",
+      "nativeBlendSHA256": "2abcb5e3e01a6ee7a70483c4f7870817d1200060ce31626b0d6286aded79622b"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/brother--outfit-racer.webp",
+      "sha256": "140794acfd316d9594018d164099cd780a6e641584c2012976e638a32a76544c",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/brother--outfit-racer.png",
+      "sourcePNGSHA256": "6d14ff40dcd7750120dbd9cc505000eab4f6c39cb647d42cf83fd237f0f8958a",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "ac3a8b0a1fbb734bd6899738d90e12073200ae5264741e1148f7914480dfb8e5"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-cadet.webp",
+      "sha256": "3ac2d169cbe3d2bf7b4c8279aed97cd8d3e708e020e86ac7ddf5fa97c0acfdfc",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "ccf5f0d0d6c73d9ae02d6c76fe1a10cdb32b3b0b6f6448a438830021c1440742",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "44fef03821dc680858de88bffdd98ac06a246332feb415644650cf92b886c8a9"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger--outfit-legend.webp",
+      "sha256": "648385f07b97184ab2627ad1421e13576ceeb14a13be97eb8da523f0619b2023",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/younger--outfit-legend.png",
+      "sourcePNGSHA256": "7e9dbee6422fcb4e01a485b56a6bde6a744e239bc2f7590d009de6f3c54f87b1",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "6d32b6d054d3f176f8ad0528f79738fd60db4999d366175564a32ecfaabfe6b3"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/sister--outfit-mecha.webp",
+      "sha256": "76ca84cd76e8f78c5e1e2b94a0ef3574d90e74e313f98192b1fc68d9078866bc",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "d82507fe0fae4590b29a7400064fff3ef5c7360183fecc92a45c87bce0ed4cce",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "728b2d10f41e1ecf34f379d2d6ab53ce97e0fe25434e78c526daf0f44ef12bfa"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-buddy-headphones-front/younger-sister--outfit-racer.webp",
+      "sha256": "f245603b49fc3163de18e65f4be82cbd6ec98eb49efd1cab3c7ecac07a4e88c0",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "5967ba3e8913c7f626d04d226d73277aa1940ae477ce4c409663046f5884d431",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-buddy-headphones-front/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "7fd5460acd3f4c297030451391666f877852a63d6af1bca3a11f5f270c2808f1"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--default.webp",
+      "sha256": "1f2d6885d30c371a650cafd64129d63f7a345522830b09bf3c16f5f939d9ec34",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/brother--default--front.png",
+      "sourcePNGSHA256": "7e3620f8c2382f23e8a3e899acb12b86220b25b61230b791479138b0307aca71",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/brother--default--front.blend",
+      "nativeBlendSHA256": "ac5f0fba58feb5cf16ff950bb0729f4988090c3effbf938b09d675c1b7b3c796"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--default.webp",
+      "sha256": "7bc756d0614efd0954a13eeb48a4824a336e9e1bdddfe76be1d023cefc4736f2",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/brother--default--back.png",
+      "sourcePNGSHA256": "82c267c69356f6b523a50d87c37b7624e6f7634091990bf51f23833ae5bd0788",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/brother--default--back.blend",
+      "nativeBlendSHA256": "dad91c71077c0f0d42e5938a9379c6ddc700d5e7ad485ca411bf86c9b8e490c8"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--default.webp",
+      "sha256": "d2f9ded0310f39a73e781f7e8997c671ee62fdff4fe2ecd4a7cc36583f163ad4",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/younger--default--front.png",
+      "sourcePNGSHA256": "be45603ea62e37871a208739b7ed17d1d5641a61839cee7728f09f260c5b649d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/younger--default--front.blend",
+      "nativeBlendSHA256": "472b48b04f76fed297964dc31a5b4a765a826517a45755ef9b1a21f33ab7de60"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--default.webp",
+      "sha256": "5028cb005f8f2cb70c18e294a67b5c9a0eab83f0f117ec9fd800d2e5489b50af",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/younger--default--back.png",
+      "sourcePNGSHA256": "dbb95cada4244025b118dfe7c3eb31ae7781489a21d47b186e6cdf96c36b3808",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/younger--default--back.blend",
+      "nativeBlendSHA256": "31cceb335b178add493aa6fe917c27e5df70464092cfc83bb1abdc86f033aa2c"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--default.webp",
+      "sha256": "6c852a51420a1b616f88ccb393bfbe76de50d9e2ac4e09e65e73532d06426448",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/sister--default--front.png",
+      "sourcePNGSHA256": "d0fbdad7f939df1561e7b3c805d48c9545b45fe23048129d6974a4c0b9139aa7",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/sister--default--front.blend",
+      "nativeBlendSHA256": "87585b9d084df2cdce87c49ff1cf467e7a5a6e81ab3a9bc10517a7519c6c00c4"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--default.webp",
+      "sha256": "b9b3994e3a8e21c50173c565e269eb1570bbe8b6da156270b14e28901325a6d2",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/sister--default--back.png",
+      "sourcePNGSHA256": "9f574796b9877390a6e71dadb0c9899591fadc5bbc6045d6589f8e9cea287d44",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/sister--default--back.blend",
+      "nativeBlendSHA256": "4f6a879c5eb5b73ad5f0d876db8c959ec3385760097fa74cac166bd0bba0cd8a"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--default.webp",
+      "sha256": "8972f5c863ab51961f6b1ffd3776c996265c5a3eaacdb9f6d89959c16af6a938",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/younger-sister--default--front.png",
+      "sourcePNGSHA256": "11e638dc271e6ab9dab5dafe45fc37de068ede0ba3af43d64fea0f25a68ef322",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-r1/younger-sister--default--front.blend",
+      "nativeBlendSHA256": "94008b8d2bd5447ea7c53f677a22532517082bee5b1da6a4f39e5448eb56510b"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--default.webp",
+      "sha256": "01428e2179483560e1f241a281c182ed6093f4e02c8199abebf2125b9f086c52",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/younger-sister--default--back.png",
+      "sourcePNGSHA256": "eef721eaf44a9654e6cbac5991e0b5e2476ec0e9339f8e76ecc9a2060b9ac197",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sister-cat-headphones-nebula-r3/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "e690a5da18dd6a75c928489209251bb9ef25895d71fe2c3fc911ad14b50feb4e"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/brother--outfit-racer.webp",
+      "sha256": "37c91429fc66d34aaf8ad13354b9764d784309832af2f4b16a0bd388360ac9fd",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/brother--outfit-racer.png",
+      "sourcePNGSHA256": "eaed43c335126fc7038edb94941364b342e5e3f712776107225a95b8cce94dfa",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "71ee8f9b87c39ccce7629d72f3164f909799524be22784642e644292f0057eeb"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/brother--outfit-racer.webp",
+      "sha256": "b41bb1f81c71f174218543bfef6890322fe9bff3be2c3e84d80f07eb7cbaaf86",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "8236142061a961e09fb39110a89d5ec89d30e6a6e3e58f13bd7f68e8e747c77a",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "690da6c2ad87ccb70193973770aff9e5fd562b0bc3377c4b2cffe35e5cd935b4"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-cadet.webp",
+      "sha256": "2ef18f66e87d86fc2a894719ab35657d0161e4068f8727d93adf4c27933f7e0c",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "df05733780ce6b6b4e004c62cf795a5b5069b8a1e9a82f39f98a93f15b979ded",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "c7bd1b5d94696977a653e61596168eba9f98d944008d10d86899f265981c6999"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "13ffd7f8b5e5e6e5b4b5c74fc09963c746645f100b9f2d78b13932782692a80d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "386df633b0bd231555dd5da965e0dc581aced9e4b58eb6b9377404ea6f2ec3f4",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "80c85d7cca4dc5a1bf5bcbf6f1c667c26c723555e57c964858e021f465ccc238"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger--outfit-legend.webp",
+      "sha256": "0d334611450c8094fd1858ef008811bb2d88282d3992df88b308e1cc8c4c63f5",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/younger--outfit-legend.png",
+      "sourcePNGSHA256": "cca4521e7aa2ca03e38bb52b86d95a70e6cdb6f66607177356a9e9d659056663",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "e6388e18c489bab2325dfb7abf76397eceb789fe0d1c97efca29c88a5ce18a93"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger--outfit-legend.webp",
+      "sha256": "dd2a4932380691699200c789138be7810b380c301744b50914bdcb9e261c9c7a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "72763655ee40a56df3f5d7e713fc193a1f68b31eab14ab8566d6fc565535ffaf",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "737aa3d22908eb3d036f6ca24df83334d1aa3737021fd08639905c513a1b6774"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/sister--outfit-mecha.webp",
+      "sha256": "e17ab5477da66137fe6ea39f3fa38ac0b2226a9f362fa9ed93fa749efcc80cc4",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "9cfcbdf2c90cc38a15b6889437dd45fe2cee996fd8c5b2e71c14c5028764cd41",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "1263ddca4c50b054e53dbd4616cbf2881beed7705226c9c4955384705adbca5b"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "08bf1119303ab11cf538485fd5867c1b1854ad811bca7c563c8e9b6049c3ede6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "8b551bbb04d6ef6f2523d1ae708e1ae22f084357e88ab8a04e3884014b7f505d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "ea3b1f388c5bf9993275cfa6f4f8f6926fceee57455579d6d1bff0947f00c520"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-front/younger-sister--outfit-racer.webp",
+      "sha256": "ad75b7de5291d3eb2e7b4f4abf6b6bfda524044292b0d017a75f594f497ddd61",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "5b8007f504c67b51a54328779f8dec974531c142d60d34ab17f5803d226ec141",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-front/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "2cb6c16a56561f3f4d9084da2c7e01feb8b4c6e8390c1453811902f5b57f0872"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/sister-cat-headphones-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "7f89dc4800cd1b0e0cfa71f022dcd7671820f4d58a16c6ee0b3fbdc70e675b6c",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "36689623482e1bd5dda76e5887cf8a36bacd54d3d5102f5b5c36bdd6d463ce63",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/sister-cat-headphones-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "f48aca29357712002fb826b2e833c83ce5634a0da77de203fdd115bce6d40b8e"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default.webp",
+      "sha256": "6fe480d24db17dccae786b88c94ea6c6c346bb401df9ccdd0fb29ae422169f13",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/soft-nebula-r9/brother.png",
+      "sourcePNGSHA256": "4877bbc1e62e322ce4c47e6cdb6ded9435e6618ba5e71698e960e578dfb5e2ed",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/soft-nebula-r9/brother.blend",
+      "nativeBlendSHA256": "a39c5776063986695d5e0c8d7c63a361ddda412638cfa4f476eb2b63040c3ba8"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--default--body-mask.webp",
+      "sha256": "758dd3897dc17e7cbe765a3ec9196aebe3f35ccdd4c8d3fca547883342838925",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-brother--default-body.png",
+      "sourcePNGSHA256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default.webp",
+      "sha256": "cbcdf0ad182f6f55a8b533383a24fe3993d7083620f7747827820dea1951244e",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger.png",
+      "sourcePNGSHA256": "ae6797a0f1e9bf311345b840930c39fde7ba484553f54869776bd82ef1f38bfa",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger.blend",
+      "nativeBlendSHA256": "78f267bfb8e780f45ca15520c3453848657d53ff7c1bdffd1fe2f1c7fa0866bb"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--default--body-mask.webp",
+      "sha256": "0791ec8c440272d82f86bcc538e1cc66e9f204c7024be150ddebe4aabfc89633",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger--default-body.png",
+      "sourcePNGSHA256": "77c09a997b3506f2d1f65ff2910ee203f69ebd41597756da8bf53bb31aa555cc",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default.webp",
+      "sha256": "6b9443a63fbe26bf9240f2ff6f8ebf0875efd22a5c4c4a8db41adcde8a9cf972",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/sister.png",
+      "sourcePNGSHA256": "53f12340cf627849381f5a7d1e4714704b1e088d9baabe6c0963e0922288993e",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/sister.blend",
+      "nativeBlendSHA256": "e5676213db0c4ed21caeb486e4d504669561711d613e6039c0a2afe00da62a27"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--default--body-mask.webp",
+      "sha256": "dff6bddd16036c87d3e3f260a4498051b65eff1f0e655258c0d20978913f0359",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-sister--default-body.png",
+      "sourcePNGSHA256": "9669871c47cce7cc210fb66af8a3069614c2686ecbbf352bf6158edadbb368e3",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default.webp",
+      "sha256": "833d5b1445d9287877345e671c74be83a3e1fabcd9d4cd1cc96394d7b59aff60",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger-sister.png",
+      "sourcePNGSHA256": "1b2e8e68c2d9c4f3fac7a57c0fd656034a91afa8bc316b6587e428825514edb0",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/fitted-nebula-r3/younger-sister.blend",
+      "nativeBlendSHA256": "e9a999673e345af34239c017b476149ad8298f6b9ce24684c18ff541a1b6ef9b"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--default--body-mask.webp",
+      "sha256": "fd2c97a381f90df7af57fe68748864302b36ef08e548cb00fba6303c20bf2ca0",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger-sister--default-body.png",
+      "sourcePNGSHA256": "68abba04d58dee3505acf17255121dcdd8a45bcd025801c4677913119793a758",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer.webp",
+      "sha256": "e94a479177075c5745b271143653128736c9e064d152d6b39e23279276998ac3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/brother--outfit-racer.png",
+      "sourcePNGSHA256": "7e91771da02a9a70c8bc3db8ccdc263ad9477dd7a49078c2a6527a95578e51fd",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "30a540a3b93e04fe7426dfcfffbe7487b9428e63893244f27faf4862e13805b8"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/brother--outfit-racer--body-mask.webp",
+      "sha256": "758dd3897dc17e7cbe765a3ec9196aebe3f35ccdd4c8d3fca547883342838925",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-brother--outfit-racer-body.png",
+      "sourcePNGSHA256": "8682d2c5465215e8ba249d6021eac23b81bda96869cba924218a7b2e15290d43",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet.webp",
+      "sha256": "dd4d3961c56f2dd6930983622d7accaf6c49a2450386114b57f63260c435eeaa",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "e8fcdab396061f9cbaeea3f45a81708f69e3e81a21ec2e3da55a8a49b96223ac",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "18cbb827c1cc42ec36378c0e19e6d838947c09c7faf71b8740147339ce6fa7dd"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-cadet--body-mask.webp",
+      "sha256": "57be51d78783daae1c2fae70a6b3b5da9bc2ccb3eb8eb1e7bdeac5b1021a2007",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger--outfit-cadet-body.png",
+      "sourcePNGSHA256": "23e9ffa5c775f0c4de2969049dc5afc98ac353d8b60a03ccf68d21d493b3876b",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend.webp",
+      "sha256": "1660e393e3b1fb6aec388a44afa4348718c06041491941c137a352d96dd018ac",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/younger--outfit-legend.png",
+      "sourcePNGSHA256": "86916fea390ec1ac835c0f29dcdb14c0e7be6fa8add9333d0dd381c3be6feb9b",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "c24a83f587cd5f38c9eaf95ddaacce56e191a8420ff09428814de984c37dfbb8"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger--outfit-legend--body-mask.webp",
+      "sha256": "70eca7d74db39d0d7810df1487ac93ae46d77b3fd19360fc36082839979f36b3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger--outfit-legend-body.png",
+      "sourcePNGSHA256": "92ebd48b85d4e7fa6f5530eaa3de64cfa6a6d2fd23f5a34de495d466460b7a18",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha.webp",
+      "sha256": "bd5c3cfab54a5f056b3e1c656c29a3343907881021c14446ec5ac34f0ab69208",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "c61ff1af505348de631105ade840af5bbfe407aeea65395256f8767cea6e7d8d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "be28e31c0335ea139e57199d62979fb3af542775a348702b6f777a3817a65fe6"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/sister--outfit-mecha--body-mask.webp",
+      "sha256": "7a753fc51eb9c7351970235925b252f148eb5d320739e9a9ec33dcae27788c19",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-sister--outfit-mecha-body.png",
+      "sourcePNGSHA256": "c4b680dfafa4cc21d27f7bdd1a6861c394e52544e0cfb2d9b1e0deb52645e890",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer.webp",
+      "sha256": "0b5feb49dc29b928d9f04b187f019b0ca29829f8804e4a7126f6f4e6779063fb",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "ca3f3f61785469368ea5af6de0af08f4a0641c8068e2d7ef8400e24b8362be22",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/hair-nebula/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "e76d9d256ebbffa29a31f5e7d915e481c3668521f6fcc107040dfc144fa2392a"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/hair-nebula/younger-sister--outfit-racer--body-mask.webp",
+      "sha256": "85e1ad0414a1d31a8809a7c24a3e7b3267663722abf8465d804b95562f536051",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/hair-nebula-younger-sister--outfit-racer-body.png",
+      "sourcePNGSHA256": "121ce49bacbbcb2d5f90113b9f7c3d0438a4f2953080b44ff33b98863c8c3726",
+      "width": 1024,
+      "height": 1536,
+      "method": "Exact existing face-safe mask projected with native wardrobe rig; no RGB face inference"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default.webp",
+      "sha256": "6753443c4bcf1b1b47c0b12702bb7fc67840935e14d5d24e6d2866a3e9b1eb92",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sun-cap-r5/brother.png",
+      "sourcePNGSHA256": "46de785e72207485a686211d0518cc8b255506c82696063a50d97f2a5adb0ff6",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sun-cap-r5/brother.blend",
+      "nativeBlendSHA256": "5abbc8308a0acc9294fd2d9d4c8f41abe726240ee4f7720dbe30ee4c5b4b0079"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--under-mask.webp",
+      "sha256": "917f42c810fcd34b69d3f4528531528b2c9aa828e3f7acfe798002e57fcd9e56",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--default-under.png",
+      "sourcePNGSHA256": "d945ca40d52820772fd7548ce8d16eb04b7fce9c07e52a5bbdcd9b0b1cff1b7d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--default--body-mask.webp",
+      "sha256": "88a5347ff9663b15d8ffbc25f5e697939914d35415bc88425bffaeea52914acb",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--default-body.png",
+      "sourcePNGSHA256": "0a2f7955c8342d4fd45489861745402d897509d405b4f7f0a59994c180e58861",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default.webp",
+      "sha256": "2c8de9b098dede6aeb80261e908e26e54b1b5373ea193fbe9579bdc527a0a6c4",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger.png",
+      "sourcePNGSHA256": "b4e81d36f6fed59a9789b747130691bde7b723c8e6ef9bbe3c8b7db8895648c2",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger.blend",
+      "nativeBlendSHA256": "3858f88b3b147e2ccd011d9ebdd58a5da22e9a7bff1e707bfc8623b3772411fd"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--under-mask.webp",
+      "sha256": "8aee3f5bfa0cc7d2551448b409c391d1b0d4a3875aafed2b1d06f9df29875897",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--default-under.png",
+      "sourcePNGSHA256": "086fd4b1904b95a8eee246091c4e7da194df8df427aaa70060d089a7846d369c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--default--body-mask.webp",
+      "sha256": "9f038b4d06a57cebc915d98956ca10346eb95b1b6acb4459fc28b9df7ce3348a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--default-body.png",
+      "sourcePNGSHA256": "f6c0a056785846bdd0010ccacabc67d841d134cecc63be67608e2dcba95a1ef9",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default.webp",
+      "sha256": "b21cba5753d962838fb2d1a794c95cbccd0f8e6bc9bc29570cff253dbc60801d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sun-cap-r5/sister.png",
+      "sourcePNGSHA256": "ed4e34d33ebf52070408954fddcaa7b1ebf0e0ce56ec72bdcd539cb547e017cd",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sun-cap-r5/sister.blend",
+      "nativeBlendSHA256": "934534c3a133b92cd6d26a3fa624ff012092015a2282fa07f2cd87dd3d299b67"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--under-mask.webp",
+      "sha256": "8e55ee68f7fee8e5544240d4f2f26ee2cc474b66ddca1ecfbebc8dc99d5d4959",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--default-under.png",
+      "sourcePNGSHA256": "77de3109e87156450e6194b59f681ff1582e1ab3bbdfbd2b5d5b76625cf0427e",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--default--body-mask.webp",
+      "sha256": "d06b97566aab6f32106153ce0723ac9440dcaaf9fdea24363643244ad24cbeed",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--default-body.png",
+      "sourcePNGSHA256": "b204d2577295164b479a8336ae0f9ecedfe46224b5675d0ca8dac1133a240e78",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default.webp",
+      "sha256": "e10391c7d04c823c7fb6a74501b1b2370fefe9ee5fe3facabc81e225318b6d43",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger-sister.png",
+      "sourcePNGSHA256": "f982e6c26344fbbfd4d6c603bfcd5b100c8ecd1c5a43c95a1d6407dde4fc0126",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/sun-cap-r5/younger-sister.blend",
+      "nativeBlendSHA256": "59dceeb498e4a617b721f634aa82689f5cda528f49f64fd342117dbdb0b54f28"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--under-mask.webp",
+      "sha256": "907f3dd4493560fefe574b072313606131d012e727ef53812e08830ec0992f1a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--default-under.png",
+      "sourcePNGSHA256": "02dc38b2cc7bcf2ecc043cec2e521109ced893fa86c2e93588cdbaa8809e736d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--default--body-mask.webp",
+      "sha256": "874440990bf491225a23cc9cb33736b8ea29813fc0421c30025c66f7562608e9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--default-body.png",
+      "sourcePNGSHA256": "860dfc3ba54c4cd80b4068117e8b7589b235b9c7fa3c02cd85e40be307250af7",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer.webp",
+      "sha256": "4bbc41ff43012c27d820579a4e446a41eaa897c33ca0440c5b01934306c3aff6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/brother--outfit-racer.png",
+      "sourcePNGSHA256": "1a966c0630ad02695fbcd0b39675e64f557db09650b2b1d80df0bbb8df10032f",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "df893114ce82d1f09ebf33cc8bfbdca3e8b206b2bc18fc1ea657be2a0fb6618e"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--under-mask.webp",
+      "sha256": "1030621c452da1fe84d9253c16b62cf2f34e7fc0d71dc57bc0ea87c83151a303",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--outfit-racer-under.png",
+      "sourcePNGSHA256": "eb53a0b5c7cbf3ab6732d83950d3184abc33068faf44cd4e75d5a2cc566ec56b",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/brother--outfit-racer--body-mask.webp",
+      "sha256": "89bea779a0e9cd2ce0582c71d4e9ee3fc98aed12860e64199742e3f0e8bc5635",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-brother--outfit-racer-body.png",
+      "sourcePNGSHA256": "2c63e9447fdf41585b267b7a3f24b685b2e03e8eea42ee697f7edf7becd8e5e9",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet.webp",
+      "sha256": "d6154eff628e8ea1ad9a24f1af109ad1119087bef96ceb6f12470971aefb7b62",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "8104a30813c19bac01feeb626c05b380f814d50d57da4345605e394126e69f4c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "1ce8342a57b850a50c2293fac805662930457cea49bfad249df09e2bd5a11e27"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--under-mask.webp",
+      "sha256": "5965a2abe17d7f76d5a5a1ceff4567786b9524138a097569bbd85c6188abfcc6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-cadet-under.png",
+      "sourcePNGSHA256": "cc6f8d8d0110997d3bf64ca3c29ca70761fce3d4aa05eff75ef39c994ee4ce63",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-cadet--body-mask.webp",
+      "sha256": "6bfac98af82073ceb64bbec277ffeeaad870790ee1c4e0d188dd2eaf59a79bb9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-cadet-body.png",
+      "sourcePNGSHA256": "7bf084b0c91e74acf24ed7752379156edbd7765660a55c51f3711838e35e6ab2",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend.webp",
+      "sha256": "4abe49c4215e8c75d73e7125894ff57d90bf9eb70f7848db3d5e7b164012b22a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-legend.png",
+      "sourcePNGSHA256": "63cd80eb7333c5469287a104e7239bc1b150020884c465105be5c7f6ffb7884a",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "af7404bba2d4e2efa860d2c24e70b4fcfd0f6375f42f79ced82dea1f7bdf8aa0"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--under-mask.webp",
+      "sha256": "8d0b58dce24a6225f6be0573ea98b62ba8fc859d5c11df3e2b4bc726d9b475e3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-legend-under.png",
+      "sourcePNGSHA256": "f188ba5013f227bb330bd379560dbf5cbc499c80879b12bdffcec8b80aef8770",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger--outfit-legend--body-mask.webp",
+      "sha256": "c36f2ceabf8e9825dfe48943d0559b76f5202b9e16f7f7cf21746996c2ba4a0f",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger--outfit-legend-body.png",
+      "sourcePNGSHA256": "cbf23f5b3913dd5657c9f1ab316f8ff2fc3b38daaa411247018cc895166882f0",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha.webp",
+      "sha256": "562b40f996905953d27f3f41bc2e1ab661c5ed342e901d426caf6fbe229dcd5d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "6477c49fdbb0704e7e0d74b05a6346aca5904a275ffb48a7042211d43168a42e",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "d279d42a6f96968a7d515854d3a459f2909d4516f857b4ebedc885e13705eb28"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--under-mask.webp",
+      "sha256": "5abbdd6ccc1b9f8835d2fe9cbf3f5f78ea909ecbf12fb5cee24c76f5212c960c",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--outfit-mecha-under.png",
+      "sourcePNGSHA256": "d59a13ac17cb4a6605e92135b6058e8356d8f42bc22befcf6ccb6ac93253a3ec",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/sister--outfit-mecha--body-mask.webp",
+      "sha256": "117e62f62c26d2e5e1e630eb6b2fa9129e690101b5a08a864d85b3b4cf591de1",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-sister--outfit-mecha-body.png",
+      "sourcePNGSHA256": "f0e0c92ce5c876440ecf2fcee28d9c8c0e8feb13dbc75864ea9fb46affeadb2f",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer.webp",
+      "sha256": "528331558c86ca2301424ec9ceef789389d104ba569ed8f86f63f47ca75213f9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "c4a42fcadcd5cfba0b74a9db6f6322a6b8f92887091cbc35e95855ce9c320877",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native Blender render, lossless RGBA WebP encoding",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/pose-projections-r1/starter-sun-cap/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "07daaf38f158cd3400cde132277d44709d8cab1974a76b9f21b6d1387ca253cf"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--under-mask.webp",
+      "sha256": "ce0ecb0cfb3e1058abb162c88f90b01cc7a55d48725861817ad4d8b8814fb2bb",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--outfit-racer-under.png",
+      "sourcePNGSHA256": "28588defcef50dd97f5dfa1e38e50f6b12cffa6bba7fa4fba44d326a012debc5",
+      "width": 1024,
+      "height": 1792,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/starter-sun-cap/younger-sister--outfit-racer--body-mask.webp",
+      "sha256": "e5ebb3cfd427a149647b015895b2538f554fcd74c525fe76ce08d79c2362c43a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/candidate-masks-r1/starter-sun-cap-younger-sister--outfit-racer-body.png",
+      "sourcePNGSHA256": "2d69cd0f2773142c9055743202975de94667d373bc985a6974558f133a62c769",
+      "width": 1024,
+      "height": 1536,
+      "method": "Native brim lower contour; entire region above brim hidden including hat-external headband/cat ears"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--default.webp",
+      "sha256": "9520dfb157fc1125a2425c851e0a57dfbf6c376e5d9863a42033ee333c545777",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/brother--default.png",
+      "sourcePNGSHA256": "88e0e927b0073c96070c307d6c1f6db45f5d4bcce56f28da8106a7c68a3330a3",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/brother--default.blend",
+      "nativeBlendSHA256": "f11968241540cb2d7d7a9e0f2693f038f1215ace38ac9b7aa9dd4319336468fe",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/brother--outfit-racer.webp",
+      "sha256": "ebb616f6c48243285aa256e72df637d6b25f9e8a6ad9a6863956fd4a74aedcd8",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "dfb3f49e44f3a63cabb9c5b344a2aebfa8fdaeb33ae1a21454f99daa0a5e90ca",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "a452d67a2846b8072e4cdbdf27a1c41c6379ad696a538bc24954c4644edbd555",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--default.webp",
+      "sha256": "95e4cc48909f0685c9d2f7fa2c57ed478fc8adf8f7818459e3a796fbc9e1be07",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/sister--default.png",
+      "sourcePNGSHA256": "64d8010c51cf5f34ead1f2484a13f7b286ccb175a5d2bc64ccefab1544aa0fd5",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/sister--default.blend",
+      "nativeBlendSHA256": "cf4c30f0721d797cb57e69cf430a601cfd0801746e567fc26f55ac6a9312a9be",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/sister--outfit-mecha.webp",
+      "sha256": "e9fd58af4516f76d7ea5e8c316bfdefdca51be5ea9b7b595a59d3b1d1c95a6d9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "755abc6b642eb17c133dd8484606560366bb1017cc66022dd1d85a093cceb299",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "61cfd5211d83af4739b04aabd08cd4a1bb3875ce3f999d47d641a2aec406d382",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--default.webp",
+      "sha256": "c0473f7180f0307c19a06b878477a581aadb51ca1a50065c70821b1c5b624e1a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger--default.png",
+      "sourcePNGSHA256": "30da1853d50db23e77af82e76f73528aeea7766ec39f7949dbba572b724139fe",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger--default.blend",
+      "nativeBlendSHA256": "a0726865764ba311178f0949a434e71617552f8a4438de0dff9d154e503902da",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--outfit-cadet.webp",
+      "sha256": "f20c6b5522028f1be22ed32c2f9e2b8eb4e8b54ed92a67dc51f826c11582f22e",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "d25a5dc6c7178e94cff45594b415e4e8ee95d9b0cfdda7657c1b5e83715cf1f3",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "f6d22ecf802751a1ac03e23e445d2cd3d0090c1bbbfa20668dd351bb1e0c023a",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger--outfit-legend.webp",
+      "sha256": "bc9395b357777d9591a289492605654658394fbc5621d5c8a074ca2eda366386",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "fdb00d33347322c56738dd0e43ec8a3cc8d05ea9ba19f0f85b0248a726676a74",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "386bbea4e5f3a8f6e35701e77311219701a84be5fe3cd1fa62accdb494710d45",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.webp",
+      "sha256": "64c95ad4e716ed53fe0614e6f9946687f6c4edd55a4c711f5bde9394cce26408",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.png",
+      "sourcePNGSHA256": "3032ec27fc6c6644b3a28df4fdf60561c2a12dfeed5bf3ea20e1815318d191b9",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger-sister--default.blend",
+      "nativeBlendSHA256": "42859203852bd5749b4f38b0d766e39738791f8c1e6615f83484aec7e1a692b2",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/sister-cat-headphones-back/younger-sister--outfit-racer.webp",
+      "sha256": "704936cbe0f0c6b25368b662f0e1422f39ddd1a797d17511fda070fa344ba53f",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "890daa56b1e93a3319681fe447633873e92cacc5d761c3f71b07a9f0963db5e1",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/sister-cat-headphones-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "11adff62b498298dd4fbf57e34a91eb4b804316b8c149bb4db418dc5fea219d5",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--default.webp",
+      "sha256": "5cd8fbac06659c3ffc4a94c489d27c3e0c47266196b8b5205bf4dd2268836778",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/brother--default.png",
+      "sourcePNGSHA256": "6f5e1754644da70589c8439b45f801b4b4c26cce1562249598a7bade333a5ede",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/brother--default.blend",
+      "nativeBlendSHA256": "faeedfa8e315fa56b9097c0eb2dfa4e2c5cc25ebded1192ce120439ae22f7801",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/brother--outfit-racer.webp",
+      "sha256": "837e97efad73a8afe12e61daa1e5844fb75181ba1d9f918bd0930ff2ed452a31",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "b583ac3806004a167218207b9943a16c3a47dee913ca6172680fd07469d8bdb9",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "f76f1206a932d67fb445b88405ca54a6e9d6231ee522c14b5134a03263204e2b",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--default.webp",
+      "sha256": "ee2ceeb580646b8f4de393b63809ff99f4583d7b6a1b61bf146671dcec9c2339",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/sister--default.png",
+      "sourcePNGSHA256": "de801f0dd89bb598f24921cd5dcfe3e70385a96379a230fc7432a9be3f1150f7",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/sister--default.blend",
+      "nativeBlendSHA256": "01b0670e13c8b4a631e201cb243987c75173ad190b4f2df7249eeb3a71767adc",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/sister--outfit-mecha.webp",
+      "sha256": "9e73f972a366e423d9d17e95841c9ade948ff9269d0f5d48f8719f8021cc193d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "b11321f88c2ab2cf853d5200d591b9aeef14f7019b06d82f732a47e5bce7472e",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "e2f1f085c1aa476787258bf93506fc4e78707f7716aa99a5610d40bdc993479c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--default.webp",
+      "sha256": "3927df7e21a1b6f16659b7c2a6b8c755ea3ab6d8de84f3d0c0c0699fca5594d6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger--default.png",
+      "sourcePNGSHA256": "b4fafaa98562df5143b69ca6ab9f5a7015bc07754a1d6d4997896ee2ee7c3f02",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger--default.blend",
+      "nativeBlendSHA256": "70d8666d7328df102254a0b07cb0031f27e92261e77ddf7b84b60f09d87e1115",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-cadet.webp",
+      "sha256": "136f3f971c950adbcf751b6d7ca58e3494ad5e0b336cb6358f3cca748b692326",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "65ac779a9de10b9a9046f67a286fd06aa310ed093cb353dc1315f43d700235a5",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "d93f3a5fb476f9ca13d8244d032529868175a68b17aa99a3e05cfb95a07bc61c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-legend.webp",
+      "sha256": "9075e7c6f901fb441dc2941deaaf3b117e66b6300ffb557c3bbd01b142505514",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "9736af347aa487dfef3f72d6c7db17a23c95c50760ae1b8778e203624cccf2b2",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "6ab26ce277294cb6feac20425ca98b77b34faadf7e6ee93b58882abc4a4b2f59",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.webp",
+      "sha256": "70b4d92ae1b35a4966f339324dba8647747d499bc33c8b8a32807d90afa0a437",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.png",
+      "sourcePNGSHA256": "deb4812c78168a3e8bc697a702121c43f2e59cdea2ad3a7981ea9ee39479ac10",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger-sister--default.blend",
+      "nativeBlendSHA256": "5bf0056fc5f75abb766580f63e5b2557be503b9a2390bb3f22efe07c8dd2de9d",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-back/younger-sister--outfit-racer.webp",
+      "sha256": "7c1717a16c43ef3976a40827f02fa5e269077eff449d16e0065287531a729daa",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "579202e2849d7e0836388d29c5c326789786fca307bf7b44ce20c5429231afc8",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "68aacff410c71961a82358227dab4dfeee428ab7a971002281023443728d1234",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.webp",
+      "sha256": "b6593c82c81586fb665ffbaf538220b8b8e3ee01a38c7d7bbdc2133f65c59a7e",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.png",
+      "sourcePNGSHA256": "a6cb863be141491474400d62c9b2836fbe0e5153e39b94c6965c6461f5662f36",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--default.blend",
+      "nativeBlendSHA256": "76aeeb2eac2356fd0992a8f2ca25e38deb340afd17c763d2691072fa69fbe65c",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--outfit-racer.webp",
+      "sha256": "edb1b9738bde81f37bbb9ab25b93ca05b1db48cb9e86c40e68465a03485c6ba6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "9412bb318287c3b364336847679b26c4a3eca88ece8cce335c6f8bd80ba138db",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "056ec359b690cff98ea0f6bdf6559d61ee4802f3a313ac58ecd794ad8056ba97",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.webp",
+      "sha256": "50bee9f7894b41f17cb03e331f2cb8da44205b51b4853d72b54ece6b3ebc6fcb",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.png",
+      "sourcePNGSHA256": "d090c42444db3b6c7c124dfbdb433e113331ce5ffeef02cd242cf7b9b9f6ab85",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--default.blend",
+      "nativeBlendSHA256": "ad3aaa337876851379faa95e570fe38427999e4c4575d823a15a1556fbbdd1d8",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "823c744bf2eafc538bf864338f703009b4ac59e2a125f543f86c3a19125a90a9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "abb5868fade46ec834a0c69a112fae1b12f22adcd60685797b35f409cc18656a",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "62aedc1a3e59461b848a10f522c0c9309634839f24abc1c8a6b71e3de7da24bb",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.webp",
+      "sha256": "5537cdcfd6cba9e5225ed934ba4b9cb2e9fb911d8556d531ba55f465eefc3765",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.png",
+      "sourcePNGSHA256": "7b2d4791b93a287872854614e502f45bd4ee0325561c975887c9e63018e1da76",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--default.blend",
+      "nativeBlendSHA256": "92816e40bf21c182c7374fe8d786b945cd3939630140a510b87ccb52d4b57fec",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "62e06d465812538793c18649ee6986bcf6886b66ca4d50ea9eef36a659c39baf",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "cd4bb9020e5a7e5feb194684d11caf5d29d5867b6a3abba275ff50e1348ada46",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "b006371c5e1cf2bafab2492c27ead27e68163ae03cf289b05bec8a7572bf1853",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-legend.webp",
+      "sha256": "1da8c7954a10c9f6618ed64272d9311c2b4c5bab448bc0857754454d47706645",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "38874b29dc9b13205ce62a351d03d1223f34f15063b0d751996a14e68f548714",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "5ff0c257369d74908c36e464fdcc81fd8a8ed991a904f18cd7626c1bcd60c0f5",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.webp",
+      "sha256": "ed37f951d6116a5c7322065dbbdce972c4b3e432f788c027765890c7fc0e3061",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.png",
+      "sourcePNGSHA256": "af6f274299bf5ca1844785eec7b568496e28e50122fb323ceb24323eda416379",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--default.blend",
+      "nativeBlendSHA256": "c8d99d558ac3451be1fd12bca7e37b4812d3d7aeb56299dca11579b3bf1e229a",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "982408e363f8bb0a97dd39b9bf54f2b857fb2f5636e09b79922ea913849a2f32",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "d44d4205925faee9daddccbd55e29e9e88c7c55cebe80524e13919777f5fc56b",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/closed-backs-r4/starter-buddy-headphones-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "52a18d15b0bee59cce0a2aad2b2049e89f9bbf81e90d28e92002a1755799d3e4",
+      "width": 1024,
+      "height": 1792,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--brother.webp",
+      "sha256": "72bd038268d5483f67af33da83888a8c420ebc460d153e95ea17c8e588c790d7",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--brother.png",
+      "sourcePNGSHA256": "c663666a440e559e7ba2d62ef7460797e966d6e7c26948d0b0b9fc3b201dfde4",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--brother.blend",
+      "nativeBlendSHA256": "fdbbbe23533980eb5cc2ec7ea54ab874505960a00814ae31a708dc6afaf676b9",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--younger.webp",
+      "sha256": "5fb31cf48e65bef82402ab7300b246d0dbf755d73f4737763e5a47a3c1509422",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--younger.png",
+      "sourcePNGSHA256": "c31764b9931bad6ee2dbcf7f50f464d4eefa90d89f74f78cfefb1873da0084fc",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--younger.blend",
+      "nativeBlendSHA256": "f34f8387de61c08719a53159c41c18a220c7bdb8e089aa50233aaa6fe8fa74d7",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--sister.webp",
+      "sha256": "743cbfbd8ffebe376d99b1a0434e33db3e4286334ad4e05521e90a84e6853085",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--sister.png",
+      "sourcePNGSHA256": "75cd19455928e3e3d083cf9da8f60ec313a0acc209bb99726da3eb0e21795d9e",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--sister.blend",
+      "nativeBlendSHA256": "56e3ea9ca9f2b4baf75abb0a175a8b7553748ae176134fad48c81c730e80a3ba",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/hair-nebula--younger-sister.webp",
+      "sha256": "876e229bdf92f3b296f05451540c7cc49b21c7e2fa36228b5b4c67a457f79587",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--younger-sister.png",
+      "sourcePNGSHA256": "568da8a08aa621d5fdafcf954be38bdfd843c327eb81ddd18a77d40ab0e6701e",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r1/hair-nebula--younger-sister.blend",
+      "nativeBlendSHA256": "888ca882865caab4fee34f0d67f32f3c0ddb5dbf218be8252d72d0e7c38c12c4",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-sun-cap--brother.webp",
+      "sha256": "409b0168c5bcc5d23e3969dc3ffec0eb6d2f59d0cfec0c5e9f7aa1e39ad786da",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r1/starter-sun-cap--brother.png",
+      "sourcePNGSHA256": "9c8c5156abfc17474d8be559b42ccdbddfa76722b8c7bfebd1254b771d24f816",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r1/starter-sun-cap--brother.blend",
+      "nativeBlendSHA256": "4a1576f6a20031ebc276d31fbdf925523497009d7af1d2398f9f854af9d39aa6",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/starter-buddy-headphones--brother.webp",
+      "sha256": "9fb92368f8e93a9def05167bfe06f2a99454cdfef18dc7da69de129349dea413",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r2/starter-buddy-headphones--brother.png",
+      "sourcePNGSHA256": "f7ab1181e1aa90c980cade2b018a6e755a58acfd46476421740f8b9cf8d399e5",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r2/starter-buddy-headphones--brother.blend",
+      "nativeBlendSHA256": "33203d2f4a7f059f80bc8695a983fc8aa282af5a167f58e254d9d128bbc88d8a",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/phones-sky--brother.webp",
+      "sha256": "598498b4e6c95f2f2375dcc3ffd392210e58760b673b988ea417eb20a95d6c81",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r1/phones-sky--brother.png",
+      "sourcePNGSHA256": "d7d813e62865cdbeab3782436eb45d0bcd9646b2e5924050d30e4db5457a997e",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r1/phones-sky--brother.blend",
+      "nativeBlendSHA256": "175396d12115c88db5376920aab4a4fd9a47d7d01b16ee66231c24812882684d",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/catalog-r2/sister-cat-headphones--brother.webp",
+      "sha256": "b1a010c0cd357b1d04a9add1451216efd39c1f6055081cf8c0859cedeb2f11fd",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/catalog-r2/sister-cat-headphones--brother.png",
+      "sourcePNGSHA256": "a08d8a501f7354b4ea70307efd4bbf3f7958c4b655f5e9bfe525ce74d9241e48",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/catalog-r2/sister-cat-headphones--brother.blend",
+      "nativeBlendSHA256": "bcd51fa9b69f150f693a9a6add7d7337e1300405f36519a276fcd570db9bf0b8",
+      "width": 768,
+      "height": 768,
+      "method": "Whole native mesh/curve sculpture, native camera, lossless RGBA encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--default.webp",
+      "sha256": "4f4e7460b93ccecbd56a720a450d937bbc7776a69af156dc2f4c4234ad9abcaf",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/brother--default--back.png",
+      "sourcePNGSHA256": "c706f0f264824f41a50fd375704ed214c35650539a5570bbbc2515809929f5ef",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/brother--default--back.blend",
+      "nativeBlendSHA256": "3a4f147451f848dea4e5ce26727178f4ded71139b98bafec28d500e4271fc698",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--default.webp",
+      "sha256": "f6015ba51bb62e89775cc96aabdd7cbbc2620b7da9fa177e0dd5b6c1ff152ccd",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/younger--default--back.png",
+      "sourcePNGSHA256": "78d7cddba3cd83067830e13e294d38c409fa149c082de6aade613ab1ea6c7c10",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/younger--default--back.blend",
+      "nativeBlendSHA256": "61964844e759e9445df223e871d1a5bf3fbed7fea95599691e083e7a2d24b8ca",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--default.webp",
+      "sha256": "45efe708ab0a0d35dbff68cffd12f91a3b48ec271561e535af0915dbc14b81b6",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/sister--default--back.png",
+      "sourcePNGSHA256": "8be642bf949ac7ab6faca7589c6dfc89fd11f5e7443e6952e5a956b098c770fe",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/sister--default--back.blend",
+      "nativeBlendSHA256": "96e162d78263ce659fd21819ae39cfb2bc1162510c08bd1a21fb31d92ec1cbf7",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--default.webp",
+      "sha256": "b4a534d8e6afc12ce09f2c0de6054bb2bb9b571964b8193ea4e5d7f1c6252c85",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/younger-sister--default--back.png",
+      "sourcePNGSHA256": "405710f9c8f71092c398381cb7a0771174b92f744f7eca9aa3965134f484c1bc",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/story-headphones-nebula-r1/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "b2f3fcd0902a9f6ea646520f454d5e5f7f6b235e966c4353ce024d033df12556",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/brother--outfit-racer.webp",
+      "sha256": "1f85183e6ee50d223324174fd9cefe2bc89d1d86f9f8ebb2355ccd78ea1d53c8",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "d700bd06a4b255c0b5a736b1bc180bca19a324aa9a79d59f64a0b9f23d89fdd8",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "6447ef9ed6c82dbdb88a73cfc9c36f1402a1d7422357d8bbf9c3d162bbc91e35",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "23818e651147c009178601f6af47ed95bd452eef6fd0e814ce56477023f5baf3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "aa1f5334c4c43d50ac6f9c9d58681ecf1358335994c1b89e61c08e0667207751",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "7509496b8cce7a3cf2180311b075117249d7c12f0ccbd63fdced0f54a4b4298c",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger--outfit-legend.webp",
+      "sha256": "56faa2c18a2e107750d4d9f1c24ed024f1a358b8ce3175e6c0cbd11bbe4997c9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "b282638ba11f5a711365f53f8e52f028e76730d2b565a9aa3fc0be46153b80cc",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "02413566c8b46376eafc4f62e4e4c044764e7e95f168c254ec4c0b0ce621defd",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "7fa1fdb758c2cdeef6e65b83de0fb135647e94dee3901c23d0065688233fd520",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "40b60fccac0b54cd487ff3518baee1190cfb64b1419e5b54f1d143c53d89f905",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "b56c8f386d386ffe00bbc21c7765aec1192e2d7b8a1bcc728a7727465920e225",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/story-headphones-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "ac075e605511391a146215a5d0b74675774fdb4687af85391550bc592e7e79cd",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "2169f92d6391ce2d4a0e7deaf39b75c910b0c2d32ceaf94f9755401f6131424f",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/story-headphones-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "32647fa345020e2cdc9af6bebe7d9b3ea0d8019e6d35cd5cc0188224e38c1ec7",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "story-headphones",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--default.webp",
+      "sha256": "5bcbc85c2bcb0109080d9a4c3b2f20faeaca5ef1949716066ea43f42802ea501",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/brother--default--back.png",
+      "sourcePNGSHA256": "793e4a427c237ab2ab17334a7e3e9b7a15fa6e3b10f608d2b9bdb9b50507b20a",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/brother--default--back.blend",
+      "nativeBlendSHA256": "d564d6e8b3aa8601bd8fb323aa35c42e6732ae109a66038001d6228086b2cb3d",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--default.webp",
+      "sha256": "44435debb6befd2747a679350caff685e15f37bf04d81128afb8a6aace51b2a9",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/younger--default--back.png",
+      "sourcePNGSHA256": "ceba00057b71f6d29519d9c5510ffb3e4420219b4ba0ff7c1656298032ddb938",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/younger--default--back.blend",
+      "nativeBlendSHA256": "bb9eb7a04d910655ef45eaa1579dddd191f930e57912883a4ee4db1b66af77c5",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--default.webp",
+      "sha256": "cd03d17c0c443c65879d3df6b010ef3f5ed7ee74805ede9cc675176abae9e273",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/sister--default--back.png",
+      "sourcePNGSHA256": "46a70a9546a9f13bcb3dd152fa000c5417f2b30fa0d60a615361c3efb7cb9128",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/sister--default--back.blend",
+      "nativeBlendSHA256": "2bf4e9a9f986c20a3f4f82820fe6060777def133fbf86603adf76e154c6af4aa",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--default.webp",
+      "sha256": "0f47fdcedd86625b490a385b56ddca61a4cbc22805999d6a30a15739d849e747",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/younger-sister--default--back.png",
+      "sourcePNGSHA256": "9ac91f4c2594d591c254c493509a3c7f598ba905340c7d4d3e7d0033498e3588",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-racer-nebula-r1/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "2429a2b76ea578a6e4b96999761fb68c1c699b925562241d1fd8aa4eb34398af",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/brother--outfit-racer.webp",
+      "sha256": "afe283a8ea366c581f0a1e975e2aae3da4f1cd0808b6362a6016a8cfb851bcf4",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "e6c008ddcdaf7b6e8cfd48d5a04756c962f0259bf2cbeb8c1351db889041721d",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "91d2401265c66e43af184695a10fdb5612cfe9f7bb305c224245262284a6b522",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "d2a81ca6899b374b64d1538fdb5367124ff43fe73f598baf4d586194ae30ee39",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "a1c08210efa61507de2685feac9fcaf06bd1bc3ab964e50008f28cd842c6f43e",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "d5adcc69794f6be48d68fa61ed17409e5c645d020ecb3918ccb4320a3c3faae4",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger--outfit-legend.webp",
+      "sha256": "c34ee9304f4a7ee6ad2bbe0ce3aed57651673c419aec69bc302339af70ee1a1a",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "d9ac1a491bdb67970d81855b151c80bf4e0e859ad3bdc80861a4587029042521",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "af3a12ea49c6f707a0fe9472932b57ee869c587d1e85795cd767e81f9bf337fc",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "0bbf452be42ec2a789a9ca8e6a58162071ccab82aba010cec4ad199f7a056a0b",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "4e9075632776d27518d18ee9f214a056266e189c7d6ac33159ccb48f509bf3f7",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "f61dfdb0554fcdcb0f094c39831a66adf3685995f09e149ede68b199e157bf67",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-racer-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "a5a1cd1686493113edb1d4acdd5c692c8da45e972e703fa2385a0be3dbee8c81",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "238af39b254b9e9102cfb89ed7f47466ee45af28819182d5817352625cde138d",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-racer-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "9dafc2f68dc26530a4d9aa7b39da61829c76a0c89a5f435e62714723e645f31a",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-racer",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--default.webp",
+      "sha256": "30dbe319d13593cf5eca3065f38fadc4344ec3a3cd10d12c451ed4b9dbc8191d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/brother--default--back.png",
+      "sourcePNGSHA256": "9dfbed87c6d0b47b82f3323ddda5c29b708e314a81b9da760747393bba196870",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/brother--default--back.blend",
+      "nativeBlendSHA256": "940f71614b5de40040387686eb8074a61ccfe3f57fc4519bedd632d5d991601b",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--default.webp",
+      "sha256": "45f28b2c736e1251dc0f32d0cdf56090b7acdf8064f7539ea8f1c01c2d7ad2a1",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/younger--default--back.png",
+      "sourcePNGSHA256": "4f6a85e09f6cc1745984da4868a8af36776c021e1897d0debb1b72f5620d3f70",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/younger--default--back.blend",
+      "nativeBlendSHA256": "fbc449b3a20f75cee5dda046576fc1918bd6b89b286a5911d6bf0c9a60bb86fb",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--default.webp",
+      "sha256": "f4cb8485b71da462af01a314a9c70ea184651236fabb94a7013bc86e8b7274fc",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/sister--default--back.png",
+      "sourcePNGSHA256": "9954d3d3db081b4beee21e27fbca426dc4fcd5acbddcc575ea45d3e54d930f92",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/sister--default--back.blend",
+      "nativeBlendSHA256": "41782ff48d3931f9f3752342f6884a1aa728323bf1d5c4b085614e6aa0a9265b",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--default.webp",
+      "sha256": "e2c12bd9d2c9f588409dc86a3fd6ac74f66cab34ffacde259fd33c26898bc6dd",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/younger-sister--default--back.png",
+      "sourcePNGSHA256": "2f12642c9a847e0a22049a2207b45782bdb2642d26c5beb037ad86f21af04d8d",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-ai-nebula-r1/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "e94083df51733ae4e32d50d2e7c7d3ab9d93e6b1c57973113f5b1ad61795da11",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/brother--outfit-racer.webp",
+      "sha256": "0c8e815ff1f6c7c942de87030a75549f75e70fd03204f94fdb5e9f46b563baf3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "18df7a966c1f14c4dc18da36982aac64d8dd16855f00f54e793a98c21f2dfe79",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "579d5f577b0c766b88440218ac3a5b34ecbe7a44e616f1ae33151cdf4838f415",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "c85e326638f76d3c84f7970d4e94f2f7a1724a99fb4aee232b732864521d655d",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "e4bf7344d6b57f979797ced4483cf15a910e17d1595a504347e49fa91b467bfe",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "2d791925c1a2e53aade44a0110f4f184cf51cfa79f669ab219e86cf701524ff7",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger--outfit-legend.webp",
+      "sha256": "305f01ca60e4c4894dfba2341362a922b790a41c346bf3fda4f83db153e777e3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "33357a00a856b49933b7fa8db8ddd4513021cf853d7e9ca3ad03c65503e3e84f",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "b4c27c03ca7fecf0ed4b355318b0365a130da77aee683143cb3e70cb5b5dace6",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "1a2954349c87b8a82f1b84e47d0b5706bd70b063eba01a91cb11ab95d88711d5",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "d88a98ecf828382e8ff7cbccedb645a1f5608fc1748740ac2127a1f0b688c4d7",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "1dc8646ab0a06126c7c64450df64d86c2fdbd1245ddbab58cbedcf8aeba72cc2",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-ai-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "e348e379c76f6cf4662552004017ca4d4703dbb572e75a3ed5ec556f128a8cf7",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "a06b54507b142eefb3e21dec1cb51c0a4828b33c3ccce176b21d81854e66df30",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-ai-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "c39e015d6418a507a295a403adc9068ff51d86c22f7989bdeced8aa78413db39",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-ai",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--default.webp",
+      "sha256": "68277a2de038315fab1cede05c915b21130ae21933496b02af16c46fcca3cbc0",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/brother--default--back.png",
+      "sourcePNGSHA256": "e38c40e2fe7ff45432fbb0cc878a1001d54d4b6384add883f8b1a600460487f9",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/brother--default--back.blend",
+      "nativeBlendSHA256": "6b95bb8a6936baae40371cecbf3edd3f2fed7ed880810572917d2eeb09d40b9b",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--default.webp",
+      "sha256": "d47c9e670f45b1fdb870b415b109d32959eebe97e4608fc66537835c19886c7f",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/younger--default--back.png",
+      "sourcePNGSHA256": "2eb86c04a9b418db33b7e5693d9f10ee882a3975bee85031624d80d677a8b3f7",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/younger--default--back.blend",
+      "nativeBlendSHA256": "9ecd03a9639a944939bcf28072be13698cdff82042f0a57b27b83a89948f14d5",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--default.webp",
+      "sha256": "285ac1020355f92756da7604295f295e22ea478b72a641fcad979851af5374e3",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/sister--default--back.png",
+      "sourcePNGSHA256": "df83c47eb24cd1b47fa40e9c9a1c2676daa2cd38b7abf80302271e0f5a8c9845",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/sister--default--back.blend",
+      "nativeBlendSHA256": "bbeb425a672f517818708abaa7a7a22b8d905e402c6ddd3f789cc501fc55edc6",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--default.webp",
+      "sha256": "1e494e7bef0a48a048c32771b2610f8aabef4607ebedc74b1b8111396644e159",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/younger-sister--default--back.png",
+      "sourcePNGSHA256": "7653256de282a70abed5b6587f236e0f729ddf2250e93d4969c0d0d6d16040f8",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/phones-legend-nebula-r1/younger-sister--default--back.blend",
+      "nativeBlendSHA256": "ed68323a72fe13f157feef9f7bca2ecd0345bd7d4a7df7ccdb7c6f7715412066",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/brother--outfit-racer.webp",
+      "sha256": "ce5450cced98955622944724efa8d53d02b6525d70d192daf7d8b8429e0958e1",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/brother--outfit-racer.png",
+      "sourcePNGSHA256": "7a2da47ab892607c5518ab8208b3199bfc9400653de21141df357068a51667f4",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/brother--outfit-racer.blend",
+      "nativeBlendSHA256": "6b972484763e2bfa7ff5743df69564c915bc671b186537dd8ebeddeeba34b715",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--outfit-cadet.webp",
+      "sha256": "6d9f44866a64e39f55ac7255e24c96fc25767f74373ee1c90776091b1fd77189",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/younger--outfit-cadet.png",
+      "sourcePNGSHA256": "5a06440548ffb08b49a8bd9479b3f243267ea9133013f6d24913db3e9fe9248d",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/younger--outfit-cadet.blend",
+      "nativeBlendSHA256": "30d3187468679685bb5f60297933d86ccf1a1e71465f1b635919cb90a5ffd78e",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger--outfit-legend.webp",
+      "sha256": "4f4afc88fd1fafcc951631f4b88ae229f41a992871ac7d77a8ad089c95e94048",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/younger--outfit-legend.png",
+      "sourcePNGSHA256": "cdb653f209e9c83d6db57b8aeda873468b1cbe6db5eb34475fdad53081ffb3be",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/younger--outfit-legend.blend",
+      "nativeBlendSHA256": "743f109ca555daf61013a53f1c5a9d8220a882f8fd5d9de1327dfaf686b472c3",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/sister--outfit-mecha.webp",
+      "sha256": "a2de003cd1c029796b52f743b1a07ed6e49944a6083b7fa2f79ea157000b8eca",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/sister--outfit-mecha.png",
+      "sourcePNGSHA256": "cb3faa12e6fb44740f6b163dbc96002da557b8490744ad21587febdc786de540",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/sister--outfit-mecha.blend",
+      "nativeBlendSHA256": "24d901222d41e7eb20c9a26c00a9f6760ad8692dc532ed6599dd47c359852193",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    },
+    {
+      "path": "public/assets/v6.5.3/headwear-feedback-r2-candidate-r1/retained-earwear-nebula-r1/phones-legend-nebula-back/younger-sister--outfit-racer.webp",
+      "sha256": "772c99878145bf268a5227ea7f6cf20cf13d237067c3d3b4fabc1e029d195f13",
+      "sourcePNG": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/younger-sister--outfit-racer.png",
+      "sourcePNGSHA256": "c6287e264e18287e40e31b7d5048c6ad889300a7dc1e9b0e7ad46069479e8e41",
+      "nativeBlend": "art-source/v653/headwear-feedback-r2/other-pose-projections-r1/phones-legend-nebula-back/younger-sister--outfit-racer.blend",
+      "nativeBlendSHA256": "41768e412b2b719dd4b93746de55ae2b6771943f95ceeb96c8fc6678ab7bf9ec",
+      "width": 1024,
+      "height": 1792,
+      "itemId": "phones-legend",
+      "method": "Existing SKU native sculpture with Nebula-fit back arch only; complete native camera rendering and lossless encoding"
+    }
+  ],
+  "notCovered": [
+    "compiled608 actual product homepage",
+    "390/1440 light/night Shop cancel save reload",
+    "full selected-item regression"
+  ],
+  "updateBuilderSHA256": "51adbe6380a1ac731ae757fc763a193059bc5865e907e91aa081eab392987285",
+  "manifestPath": "qa/v653/20261006/user-feedback-r2/headwear/candidate-r1/avatarAssetManifest-final.json",
+  "finalizerSHA256": "dbb36215d85c13142346ef1bcfd74ebf147fe8f138e9a4e2ed6c0a2b58ac6c6b",
+  "retainedFronts": [
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp",
+      "sha256": "81e62ccd8d4766fbbe4d9239c12230c69681396f10e9b9023d6299294093a667",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--outfit-racer--front.webp",
+      "sha256": "02a5da5750ebe6fefc0d77918c2fa691f7074df7a2ec05b1948e2d61917c1a08",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "brother",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/brother/story-headphones--native--default--front.webp",
+      "sha256": "d31b29e459dbe8610ba99e18b20fe46b513844e271d10e21ada8a2c307af23ed",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--outfit-cadet--front.webp",
+      "sha256": "01fec11e291ac7fba0597cced2b854851eea6e646785966a92dd5f8a704e9851",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp",
+      "sha256": "81e62ccd8d4766fbbe4d9239c12230c69681396f10e9b9023d6299294093a667",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp",
+      "sha256": "81e62ccd8d4766fbbe4d9239c12230c69681396f10e9b9023d6299294093a667",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp",
+      "sha256": "81e62ccd8d4766fbbe4d9239c12230c69681396f10e9b9023d6299294093a667",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp",
+      "sha256": "81e62ccd8d4766fbbe4d9239c12230c69681396f10e9b9023d6299294093a667",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--outfit-legend--front.webp",
+      "sha256": "dda980c5757d888bcb06fe7eec6895b0b29c90f92b612246a38f53c288e710c1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger/story-headphones--native--default--front.webp",
+      "sha256": "81e62ccd8d4766fbbe4d9239c12230c69681396f10e9b9023d6299294093a667",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--outfit-mecha--front.webp",
+      "sha256": "82401c353de40652f0ea2eecf6cb95d9101187f0fefba9c98c86323fd4964911",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/sister/story-headphones--native--default--front.webp",
+      "sha256": "62e4ef4a0497608d45b382f1e0a19e5bf5487a86edfd702f2bc205e93d858d4d",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--outfit-racer--front.webp",
+      "sha256": "884d642566c40adbc898b32bfa920fc81b3d2d7d23f0e8f371c0af67d3e3e061",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "story-headphones",
+      "avatar": "younger-sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/story-headphones--native--default--front.webp",
+      "sha256": "97c3f587c5675d05aace52aea51b720df6b548b723a5ef196dbd8bb1a9cf5eac",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp",
+      "sha256": "2493f7f74ae22ee83d2df323a4eea65d710e662dedd73ad016b2043f4999807e",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--outfit-racer--front.webp",
+      "sha256": "f0b40d1c530f51b921da3af53967e9a680c616bd7fbd6d8b4a3d5c0948b2567c",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "brother",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-racer--native--default--front.webp",
+      "sha256": "3677f56cca906582cafdde44c4276e946e897360e82e89c771e284292d6f5880",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--outfit-cadet--front.webp",
+      "sha256": "7e0b3938334fc91f3451900eeb2ced242a5c934e345dd8d6ac01ba3178ce1d9b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp",
+      "sha256": "2493f7f74ae22ee83d2df323a4eea65d710e662dedd73ad016b2043f4999807e",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp",
+      "sha256": "2493f7f74ae22ee83d2df323a4eea65d710e662dedd73ad016b2043f4999807e",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp",
+      "sha256": "2493f7f74ae22ee83d2df323a4eea65d710e662dedd73ad016b2043f4999807e",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp",
+      "sha256": "2493f7f74ae22ee83d2df323a4eea65d710e662dedd73ad016b2043f4999807e",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--outfit-legend--front.webp",
+      "sha256": "0b98245b71efe6e3a5a80d16ba8455147da254b5003adc59e63604d68574e43b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-racer--native--default--front.webp",
+      "sha256": "2493f7f74ae22ee83d2df323a4eea65d710e662dedd73ad016b2043f4999807e",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--outfit-mecha--front.webp",
+      "sha256": "22f59bfbc122776d555341bd93c72b1f1a7f7f5ed4f1b175e247980cdb7144c6",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-racer--native--default--front.webp",
+      "sha256": "7dc70842204700cfe705f7a12bbaeb3d2089f07d09c9da30880c821237ca2a3f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--outfit-racer--front.webp",
+      "sha256": "5410b95f9dbda212a580f46afddc5bf435d3aee332a6e395cffe0dbaaa022479",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-racer",
+      "avatar": "younger-sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-racer--native--default--front.webp",
+      "sha256": "a0861e156eace24309bfd01de76ee0e76befc7f96606547ec9528030e571f48b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp",
+      "sha256": "33be4872d47248a9d55f8d3141cab793278937f27a822d9f639af0aa105685fe",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--outfit-racer--front.webp",
+      "sha256": "4b0bc773dd8e6ebfd65bc45ba69ac24b01a19dc6b70fc07b88a55c50a1c6b3c1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "brother",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-ai--native--default--front.webp",
+      "sha256": "9d2fe09fe1bfed21be0d9b76d1aeaf5d1512142f4964321ed9bb8a4f0d4c192f",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--outfit-cadet--front.webp",
+      "sha256": "566e4ae204da790b724f03d2e1818fd26f79e9769ffee40efc03247eb14d483b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp",
+      "sha256": "33be4872d47248a9d55f8d3141cab793278937f27a822d9f639af0aa105685fe",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp",
+      "sha256": "33be4872d47248a9d55f8d3141cab793278937f27a822d9f639af0aa105685fe",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp",
+      "sha256": "33be4872d47248a9d55f8d3141cab793278937f27a822d9f639af0aa105685fe",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp",
+      "sha256": "33be4872d47248a9d55f8d3141cab793278937f27a822d9f639af0aa105685fe",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--outfit-legend--front.webp",
+      "sha256": "0794eb1d64b2d67a622a6ce8c63da819007523ebd16565a8e0e86eea70ffc527",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-ai--native--default--front.webp",
+      "sha256": "33be4872d47248a9d55f8d3141cab793278937f27a822d9f639af0aa105685fe",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--outfit-mecha--front.webp",
+      "sha256": "a80679f7cd46f45043aecb5f33a327ac2e6d33715fe2272f614e240b790ff0e7",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-ai--native--default--front.webp",
+      "sha256": "becf9262304cb04677f3533946a57afed2d4a00041b0877f0e448a3b902a44ce",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--outfit-racer--front.webp",
+      "sha256": "c918ec6ad1cc44f170b31d39c45769415930e1bc0137929c2f039f9ced1125cd",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-ai",
+      "avatar": "younger-sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-ai--native--default--front.webp",
+      "sha256": "6fcace48af7b36c6e07c98aa01071d471545d4d14cd57434844eeac9dda3fee2",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp",
+      "sha256": "59bdeb641856c94a907b1063cbb3dc9369dee7d01fa3e093e2394a9b4afc8b05",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "default",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--outfit-racer--front.webp",
+      "sha256": "06a55aa8de07bbe6427dad17d87af4fdbeeaa2947af3f700cd29be06104e076b",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "brother",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/brother/phones-legend--native--default--front.webp",
+      "sha256": "457558e054e9fa1ddc69568a554be0b3b8fe44a948ac709e8fb8935618c1bd2a",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--outfit-cadet--front.webp",
+      "sha256": "434ba062c460a4036552ad2f3428cd81ef37c34b07a6ae9cde52a932de3b3ddf",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp",
+      "sha256": "59bdeb641856c94a907b1063cbb3dc9369dee7d01fa3e093e2394a9b4afc8b05",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp",
+      "sha256": "59bdeb641856c94a907b1063cbb3dc9369dee7d01fa3e093e2394a9b4afc8b05",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp",
+      "sha256": "59bdeb641856c94a907b1063cbb3dc9369dee7d01fa3e093e2394a9b4afc8b05",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp",
+      "sha256": "59bdeb641856c94a907b1063cbb3dc9369dee7d01fa3e093e2394a9b4afc8b05",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--outfit-legend--front.webp",
+      "sha256": "379ea32d1d748f79374985615092630319be758ca61fb495df145b73ad1da433",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger/phones-legend--native--default--front.webp",
+      "sha256": "59bdeb641856c94a907b1063cbb3dc9369dee7d01fa3e093e2394a9b4afc8b05",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--outfit-mecha--front.webp",
+      "sha256": "fb8fe204fa5f760550948bac403f7cd2cf814ac4a6508ddf3c46076f4e7bfa13",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/sister/phones-legend--native--default--front.webp",
+      "sha256": "1ab1a8a189aba6b805e6b796134823bc7225b954ae78779dd63129af4e3a75e1",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "outfit-cadet",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "outfit-racer",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--outfit-racer--front.webp",
+      "sha256": "27f44641ccc11b8cd4bed4d568e6451bd2dbd2d47099a235138232d43ef70c73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "outfit-mecha",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "outfit-ocean",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "outfit-mage",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "outfit-legend",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    },
+    {
+      "itemId": "phones-legend",
+      "avatar": "younger-sister",
+      "skin": "sister-bloom-outfit",
+      "path": "public/assets/v6.5.3/runtime/younger-sister/phones-legend--native--default--front.webp",
+      "sha256": "16562f3b2b0357e30c13eefa1497ea5356c53dd35b6a487c9428980fc7dcde73",
+      "mode": "EXACT_ORIGINAL_FRONT_PATH_AND_BYTES_RETAINED"
+    }
+  ]
+}

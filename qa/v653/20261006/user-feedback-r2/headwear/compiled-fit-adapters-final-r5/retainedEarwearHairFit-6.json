@@ -1,0 +1,1638 @@
+{
+  "group": "retainedEarwearHairFit",
+  "mode": "fresh",
+  "status": "PASS",
+  "observedAt": "2026-10-06T04:34:04.489231+00:00",
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled_fit_r2.py",
+    "sha256": "5e89a73acc91fcfccebbcbcd2e7e9fbf03c9a0111f2957dd0f3956cb038f935b"
+  },
+  "artifactPins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/artifact-pins-r5.json",
+    "sha256": "214dd09b5b12cc433dce979d7ac644ac5c006438c77e39f9ab47653162cf945b"
+  },
+  "servedArtifacts": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/served-artifacts.json",
+    "sha256": "6924923dbf3812bd59ae1ac238389c414c4c95f9b6dacfc434f1e9f4b795546c"
+  },
+  "cases": [
+    {
+      "values": {
+        "role": "brother",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/120/role",
+        "skin": "/rows/120/skin",
+        "itemSet": "/rows/120/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/120/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/120/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/120/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/120/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/121/role",
+        "skin": "/rows/121/skin",
+        "itemSet": "/rows/121/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/121/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/121/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/121/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/121/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/122/role",
+        "skin": "/rows/122/skin",
+        "itemSet": "/rows/122/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/122/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/122/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/122/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/122/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/123/role",
+        "skin": "/rows/123/skin",
+        "itemSet": "/rows/123/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/123/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/123/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/123/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/123/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/124/role",
+        "skin": "/rows/124/skin",
+        "itemSet": "/rows/124/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/124/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/124/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/124/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/124/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/125/role",
+        "skin": "/rows/125/skin",
+        "itemSet": "/rows/125/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/125/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/125/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/125/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/125/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/126/role",
+        "skin": "/rows/126/skin",
+        "itemSet": "/rows/126/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/126/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/126/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/126/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/126/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "brother",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/127/role",
+        "skin": "/rows/127/skin",
+        "itemSet": "/rows/127/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/127/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/127/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/127/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/127/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/128/role",
+        "skin": "/rows/128/skin",
+        "itemSet": "/rows/128/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/128/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/128/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/128/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/128/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/129/role",
+        "skin": "/rows/129/skin",
+        "itemSet": "/rows/129/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/129/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/129/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/129/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/129/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/130/role",
+        "skin": "/rows/130/skin",
+        "itemSet": "/rows/130/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/130/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/130/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/130/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/130/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/131/role",
+        "skin": "/rows/131/skin",
+        "itemSet": "/rows/131/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/131/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/131/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/131/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/131/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/132/role",
+        "skin": "/rows/132/skin",
+        "itemSet": "/rows/132/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/132/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/132/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/132/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/132/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/133/role",
+        "skin": "/rows/133/skin",
+        "itemSet": "/rows/133/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/133/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/133/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/133/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/133/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/134/role",
+        "skin": "/rows/134/skin",
+        "itemSet": "/rows/134/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/134/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/134/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/134/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/134/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/135/role",
+        "skin": "/rows/135/skin",
+        "itemSet": "/rows/135/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/135/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/135/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/135/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/135/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/136/role",
+        "skin": "/rows/136/skin",
+        "itemSet": "/rows/136/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/136/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/136/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/136/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/136/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/137/role",
+        "skin": "/rows/137/skin",
+        "itemSet": "/rows/137/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/137/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/137/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/137/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/137/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/138/role",
+        "skin": "/rows/138/skin",
+        "itemSet": "/rows/138/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/138/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/138/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/138/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/138/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/139/role",
+        "skin": "/rows/139/skin",
+        "itemSet": "/rows/139/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/139/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/139/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/139/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/139/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/140/role",
+        "skin": "/rows/140/skin",
+        "itemSet": "/rows/140/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/140/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/140/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/140/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/140/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/141/role",
+        "skin": "/rows/141/skin",
+        "itemSet": "/rows/141/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/141/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/141/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/141/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/141/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/142/role",
+        "skin": "/rows/142/skin",
+        "itemSet": "/rows/142/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/142/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/142/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/142/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/142/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/143/role",
+        "skin": "/rows/143/skin",
+        "itemSet": "/rows/143/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/143/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/143/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/143/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/143/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "default",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/144/role",
+        "skin": "/rows/144/skin",
+        "itemSet": "/rows/144/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/144/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/144/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/144/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/144/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-cadet",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/145/role",
+        "skin": "/rows/145/skin",
+        "itemSet": "/rows/145/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/145/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/145/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/145/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/145/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-legend",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/146/role",
+        "skin": "/rows/146/skin",
+        "itemSet": "/rows/146/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/146/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/146/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/146/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/146/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mage",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/147/role",
+        "skin": "/rows/147/skin",
+        "itemSet": "/rows/147/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/147/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/147/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/147/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/147/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-mecha",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/148/role",
+        "skin": "/rows/148/skin",
+        "itemSet": "/rows/148/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/148/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/148/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/148/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/148/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-ocean",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/149/role",
+        "skin": "/rows/149/skin",
+        "itemSet": "/rows/149/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/149/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/149/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/149/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/149/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "outfit-racer",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/150/role",
+        "skin": "/rows/150/skin",
+        "itemSet": "/rows/150/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/150/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/150/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/150/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/150/frontPreserved",
+          "equals": true
+        }
+      }
+    },
+    {
+      "values": {
+        "role": "younger-sister",
+        "skin": "sister-bloom-outfit",
+        "itemSet": "hair-nebula+story-headphones"
+      },
+      "raw": {
+        "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+        "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+      },
+      "bindings": {
+        "role": "/rows/151/role",
+        "skin": "/rows/151/skin",
+        "itemSet": "/rows/151/itemSet"
+      },
+      "checks": {
+        "sameBodySize": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/151/sameBodySize",
+          "equals": true
+        },
+        "correctLayers": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/151/correctLayers",
+          "equals": true
+        },
+        "noMissingAssets": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/151/noMissingAssets",
+          "equals": true
+        },
+        "frontPreserved": {
+          "ref": {
+            "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+            "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+          },
+          "pointer": "/rows/151/frontPreserved",
+          "equals": true
+        }
+      }
+    }
+  ],
+  "reportScope": "Selected valid actual observations only; original raw top-level status is preserved and not reclassified.",
+  "originalRaw": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-final-r5-shard2/report.json",
+    "sha256": "e2765eb5fbce7069fbf9c8b818763d71c03f219c68e3bd136060675dfb1a3c14"
+  },
+  "originalRawTopLevelStatus": "PASS_FUNCTIONAL_PENDING_INDEPENDENT_VISUAL",
+  "selectionInput": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/compiled-fit-contacts-final-r5/index.json",
+    "sha256": "ec52a3822cd15275d862a4f75e2989dc3d187c23c10339027c741cce624303bb"
+  },
+  "adapterRunner": {
+    "path": "qa/v653/20261006/user-feedback-r2/headwear/assemble_fit_adapters.py",
+    "sha256": "457f94f65dac65d1fdf265ac8b7d5fc11fa59d71f5aba1cfba6537efb22fb355"
+  }
+}

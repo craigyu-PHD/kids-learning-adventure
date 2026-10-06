@@ -1,0 +1,1150 @@
+{
+  "scope": "Companion fit/reaction/reduced-motion and isolated owned room/robot fixture; source candidate UI only, not purchase legitimacy",
+  "base": "http://127.0.0.1:5196/",
+  "profiles": [
+    {
+      "name": "companion-390-light-base",
+      "width": 390,
+      "theme": "light",
+      "mounted": false,
+      "errors": [],
+      "capture": {
+        "name": "companion-390-light-base",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-390-light-base.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 20,
+                "y": -1344,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1344,
+                "right": 88.390625,
+                "bottom": -1280,
+                "left": 20
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 90.390625,
+                "y": -1344,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1344,
+                "right": 158.796875,
+                "bottom": -1280,
+                "left": 90.390625
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 160.796875,
+                "y": -1344,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1344,
+                "right": 229.1875,
+                "bottom": -1280,
+                "left": 160.796875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 231.1875,
+                "y": -1344,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1344,
+                "right": 299.59375,
+                "bottom": -1280,
+                "left": 231.1875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 301.59375,
+                "y": -1344,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1344,
+                "right": 370,
+                "bottom": -1280,
+                "left": 301.59375
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 30,
+          "y": 428.375,
+          "width": 54,
+          "height": 58,
+          "top": 428.375,
+          "right": 84,
+          "bottom": 486.375,
+          "left": 30
+        },
+        "media": {
+          "x": 30,
+          "y": 428.375,
+          "width": 54,
+          "height": 58,
+          "top": 428.375,
+          "right": 84,
+          "bottom": 486.375,
+          "left": 30
+        },
+        "contained": true,
+        "mediaTag": "VIDEO",
+        "poster": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+        "style": "width: 100%; height: 100%; object-fit: contain;",
+        "paused": true,
+        "currentTime": 0,
+        "room": "base",
+        "robot": false,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        },
+        {
+          "state": "resting",
+          "text": "小光\n\n今天有新的冒險喔！兩堂課都在任務區等你。\n\n點小光聽提示"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [
+        {
+          "url": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+          "status": 200
+        }
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": false,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-390-light-mounted",
+      "width": 390,
+      "theme": "light",
+      "mounted": true,
+      "errors": [],
+      "capture": {
+        "name": "companion-390-light-mounted",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-390-light-mounted.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 20,
+                "y": -1374,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1374,
+                "right": 88.390625,
+                "bottom": -1310,
+                "left": 20
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 90.390625,
+                "y": -1374,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1374,
+                "right": 158.796875,
+                "bottom": -1310,
+                "left": 90.390625
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 160.796875,
+                "y": -1374,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1374,
+                "right": 229.1875,
+                "bottom": -1310,
+                "left": 160.796875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 231.1875,
+                "y": -1374,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1374,
+                "right": 299.59375,
+                "bottom": -1310,
+                "left": 231.1875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 301.59375,
+                "y": -1374,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1374,
+                "right": 370,
+                "bottom": -1310,
+                "left": 301.59375
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 44,
+          "y": 405.921875,
+          "width": 54,
+          "height": 58,
+          "top": 405.921875,
+          "right": 98,
+          "bottom": 463.921875,
+          "left": 44
+        },
+        "media": {
+          "x": 44,
+          "y": 405.921875,
+          "width": 54,
+          "height": 58,
+          "top": 405.921875,
+          "right": 98,
+          "bottom": 463.921875,
+          "left": 44
+        },
+        "contained": true,
+        "mediaTag": "IMG",
+        "poster": null,
+        "style": null,
+        "paused": null,
+        "currentTime": null,
+        "room": "room-starlab",
+        "robot": true,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-390-dark-base",
+      "width": 390,
+      "theme": "dark",
+      "mounted": false,
+      "errors": [],
+      "capture": {
+        "name": "companion-390-dark-base",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-390-dark-base.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 20,
+                "y": -1344,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1344,
+                "right": 88.390625,
+                "bottom": -1280,
+                "left": 20
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 90.390625,
+                "y": -1344,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1344,
+                "right": 158.796875,
+                "bottom": -1280,
+                "left": 90.390625
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 160.796875,
+                "y": -1344,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1344,
+                "right": 229.1875,
+                "bottom": -1280,
+                "left": 160.796875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 231.1875,
+                "y": -1344,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1344,
+                "right": 299.59375,
+                "bottom": -1280,
+                "left": 231.1875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 301.59375,
+                "y": -1344,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1344,
+                "right": 370,
+                "bottom": -1280,
+                "left": 301.59375
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 30,
+          "y": 428.375,
+          "width": 54,
+          "height": 58,
+          "top": 428.375,
+          "right": 84,
+          "bottom": 486.375,
+          "left": 30
+        },
+        "media": {
+          "x": 30,
+          "y": 428.375,
+          "width": 54,
+          "height": 58,
+          "top": 428.375,
+          "right": 84,
+          "bottom": 486.375,
+          "left": 30
+        },
+        "contained": true,
+        "mediaTag": "VIDEO",
+        "poster": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+        "style": "width: 100%; height: 100%; object-fit: contain;",
+        "paused": true,
+        "currentTime": 0,
+        "room": "base",
+        "robot": false,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [
+        {
+          "url": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+          "status": 200
+        }
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": false,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-390-dark-mounted",
+      "width": 390,
+      "theme": "dark",
+      "mounted": true,
+      "errors": [],
+      "capture": {
+        "name": "companion-390-dark-mounted",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-390-dark-mounted.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 20,
+                "y": -1374,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1374,
+                "right": 88.390625,
+                "bottom": -1310,
+                "left": 20
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 90.390625,
+                "y": -1374,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1374,
+                "right": 158.796875,
+                "bottom": -1310,
+                "left": 90.390625
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 160.796875,
+                "y": -1374,
+                "width": 68.390625,
+                "height": 64,
+                "top": -1374,
+                "right": 229.1875,
+                "bottom": -1310,
+                "left": 160.796875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 231.1875,
+                "y": -1374,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1374,
+                "right": 299.59375,
+                "bottom": -1310,
+                "left": 231.1875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 301.59375,
+                "y": -1374,
+                "width": 68.40625,
+                "height": 64,
+                "top": -1374,
+                "right": 370,
+                "bottom": -1310,
+                "left": 301.59375
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 44,
+          "y": 405.921875,
+          "width": 54,
+          "height": 58,
+          "top": 405.921875,
+          "right": 98,
+          "bottom": 463.921875,
+          "left": 44
+        },
+        "media": {
+          "x": 44,
+          "y": 405.921875,
+          "width": 54,
+          "height": 58,
+          "top": 405.921875,
+          "right": 98,
+          "bottom": 463.921875,
+          "left": 44
+        },
+        "contained": true,
+        "mediaTag": "IMG",
+        "poster": null,
+        "style": null,
+        "paused": null,
+        "currentTime": null,
+        "room": "room-starlab",
+        "robot": true,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-1440-light-base",
+      "width": 1440,
+      "theme": "light",
+      "mounted": false,
+      "errors": [],
+      "capture": {
+        "name": "companion-1440-light-base",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-1440-light-base.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 24,
+                "y": -327,
+                "width": 273.59375,
+                "height": 52,
+                "top": -327,
+                "right": 297.59375,
+                "bottom": -275,
+                "left": 24
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 303.59375,
+                "y": -327,
+                "width": 273.59375,
+                "height": 52,
+                "top": -327,
+                "right": 577.1875,
+                "bottom": -275,
+                "left": 303.59375
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 583.1875,
+                "y": -327,
+                "width": 273.609375,
+                "height": 52,
+                "top": -327,
+                "right": 856.796875,
+                "bottom": -275,
+                "left": 583.1875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 862.796875,
+                "y": -327,
+                "width": 273.59375,
+                "height": 52,
+                "top": -327,
+                "right": 1136.390625,
+                "bottom": -275,
+                "left": 862.796875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 1142.390625,
+                "y": -327,
+                "width": 273.609375,
+                "height": 52,
+                "top": -327,
+                "right": 1416,
+                "bottom": -275,
+                "left": 1142.390625
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 48,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 116,
+          "bottom": 535.578125,
+          "left": 48
+        },
+        "media": {
+          "x": 48,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 116,
+          "bottom": 535.578125,
+          "left": 48
+        },
+        "contained": true,
+        "mediaTag": "VIDEO",
+        "poster": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+        "style": "width: 100%; height: 100%; object-fit: contain;",
+        "paused": true,
+        "currentTime": 0,
+        "room": "base",
+        "robot": false,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [
+        {
+          "url": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+          "status": 200
+        }
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": false,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-1440-light-mounted",
+      "width": 1440,
+      "theme": "light",
+      "mounted": true,
+      "errors": [],
+      "capture": {
+        "name": "companion-1440-light-mounted",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-1440-light-mounted.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 24,
+                "y": -341,
+                "width": 273.59375,
+                "height": 52,
+                "top": -341,
+                "right": 297.59375,
+                "bottom": -289,
+                "left": 24
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 303.59375,
+                "y": -341,
+                "width": 273.59375,
+                "height": 52,
+                "top": -341,
+                "right": 577.1875,
+                "bottom": -289,
+                "left": 303.59375
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 583.1875,
+                "y": -341,
+                "width": 273.609375,
+                "height": 52,
+                "top": -341,
+                "right": 856.796875,
+                "bottom": -289,
+                "left": 583.1875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 862.796875,
+                "y": -341,
+                "width": 273.59375,
+                "height": 52,
+                "top": -341,
+                "right": 1136.390625,
+                "bottom": -289,
+                "left": 862.796875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 1142.390625,
+                "y": -341,
+                "width": 273.609375,
+                "height": 52,
+                "top": -341,
+                "right": 1416,
+                "bottom": -289,
+                "left": 1142.390625
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 62,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 130,
+          "bottom": 535.578125,
+          "left": 62
+        },
+        "media": {
+          "x": 62,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 130,
+          "bottom": 535.578125,
+          "left": 62
+        },
+        "contained": true,
+        "mediaTag": "IMG",
+        "poster": null,
+        "style": null,
+        "paused": null,
+        "currentTime": null,
+        "room": "room-starlab",
+        "robot": true,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-1440-dark-base",
+      "width": 1440,
+      "theme": "dark",
+      "mounted": false,
+      "errors": [],
+      "capture": {
+        "name": "companion-1440-dark-base",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-1440-dark-base.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 24,
+                "y": -327,
+                "width": 273.59375,
+                "height": 52,
+                "top": -327,
+                "right": 297.59375,
+                "bottom": -275,
+                "left": 24
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 303.59375,
+                "y": -327,
+                "width": 273.59375,
+                "height": 52,
+                "top": -327,
+                "right": 577.1875,
+                "bottom": -275,
+                "left": 303.59375
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 583.1875,
+                "y": -327,
+                "width": 273.609375,
+                "height": 52,
+                "top": -327,
+                "right": 856.796875,
+                "bottom": -275,
+                "left": 583.1875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 862.796875,
+                "y": -327,
+                "width": 273.59375,
+                "height": 52,
+                "top": -327,
+                "right": 1136.390625,
+                "bottom": -275,
+                "left": 862.796875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 1142.390625,
+                "y": -327,
+                "width": 273.609375,
+                "height": 52,
+                "top": -327,
+                "right": 1416,
+                "bottom": -275,
+                "left": 1142.390625
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 48,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 116,
+          "bottom": 535.578125,
+          "left": 48
+        },
+        "media": {
+          "x": 48,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 116,
+          "bottom": 535.578125,
+          "left": 48
+        },
+        "contained": true,
+        "mediaTag": "VIDEO",
+        "poster": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+        "style": "width: 100%; height: 100%; object-fit: contain;",
+        "paused": true,
+        "currentTime": 0,
+        "room": "base",
+        "robot": false,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [
+        {
+          "url": "http://127.0.0.1:5196/assets/v5/animations/robot-idle-poster.webp",
+          "status": 200
+        }
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": false,
+      "pass": true,
+      "contextClosed": true
+    },
+    {
+      "name": "companion-1440-dark-mounted",
+      "width": 1440,
+      "theme": "dark",
+      "mounted": true,
+      "errors": [],
+      "capture": {
+        "name": "companion-1440-dark-mounted",
+        "file": "/Users/yuzikui/.codex/project-runtime/little-explorers-v653-feedback-20261006-r2-candidate-r5/qa/v653/20261006/user-feedback-r2/site-ui/compiled-ui-final-r5/companion/companion-1440-dark-mounted.png",
+        "ready": true,
+        "health": {
+          "overflow": 0,
+          "broken": [],
+          "smallButtons": [],
+          "navigation": [
+            {
+              "id": "home",
+              "text": "首頁",
+              "box": {
+                "x": 24,
+                "y": -341,
+                "width": 273.59375,
+                "height": 52,
+                "top": -341,
+                "right": 297.59375,
+                "bottom": -289,
+                "left": 24
+              }
+            },
+            {
+              "id": "semester",
+              "text": "學習日曆",
+              "box": {
+                "x": 303.59375,
+                "y": -341,
+                "width": 273.59375,
+                "height": 52,
+                "top": -341,
+                "right": 577.1875,
+                "bottom": -289,
+                "left": 303.59375
+              }
+            },
+            {
+              "id": "achievements",
+              "text": "成就獎勵",
+              "box": {
+                "x": 583.1875,
+                "y": -341,
+                "width": 273.609375,
+                "height": 52,
+                "top": -341,
+                "right": 856.796875,
+                "bottom": -289,
+                "left": 583.1875
+              }
+            },
+            {
+              "id": "shop",
+              "text": "寶物商店",
+              "box": {
+                "x": 862.796875,
+                "y": -341,
+                "width": 273.59375,
+                "height": 52,
+                "top": -341,
+                "right": 1136.390625,
+                "bottom": -289,
+                "left": 862.796875
+              }
+            },
+            {
+              "id": "parent-login",
+              "text": "家長登入",
+              "box": {
+                "x": 1142.390625,
+                "y": -341,
+                "width": 273.609375,
+                "height": 52,
+                "top": -341,
+                "right": 1416,
+                "bottom": -289,
+                "left": 1142.390625
+              }
+            }
+          ]
+        }
+      },
+      "geometry": {
+        "button": {
+          "x": 62,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 130,
+          "bottom": 535.578125,
+          "left": 62
+        },
+        "media": {
+          "x": 62,
+          "y": 463.578125,
+          "width": 68,
+          "height": 72,
+          "top": 463.578125,
+          "right": 130,
+          "bottom": 535.578125,
+          "left": 62
+        },
+        "contained": true,
+        "mediaTag": "IMG",
+        "poster": null,
+        "style": null,
+        "paused": null,
+        "currentTime": null,
+        "room": "room-starlab",
+        "robot": true,
+        "reduced": true
+      },
+      "reactionStates": [
+        {
+          "state": "playing",
+          "text": "小光\n\n一起出發！我會陪你完成今天的冒險。\n\n收到！準備出發"
+        }
+      ],
+      "ledgerUnchanged": true,
+      "responses": [],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true,
+      "pass": true,
+      "contextClosed": true
+    }
+  ],
+  "browserClosed": true,
+  "sourceDrift": [],
+  "companionCases": [
+    {
+      "profile": "390-light",
+      "rawRows": [
+        0,
+        1
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true
+    },
+    {
+      "profile": "390-dark",
+      "rawRows": [
+        2,
+        3
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true
+    },
+    {
+      "profile": "1440-light",
+      "rawRows": [
+        4,
+        5
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true
+    },
+    {
+      "profile": "1440-dark",
+      "rawRows": [
+        6,
+        7
+      ],
+      "crop": true,
+      "click": true,
+      "reducedMotion": true,
+      "equippedRobotRoom": true
+    }
+  ]
+}

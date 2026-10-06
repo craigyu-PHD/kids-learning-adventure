@@ -1,0 +1,18 @@
+{
+  "path": "src/styles/responsive.css",
+  "beforeSHA256": "6ff1a05c3147749962af606e3b2c474779aceabae685ba0e26aae91b855d2853",
+  "afterSHA256": "0dc1623d029f3e7b20ceeaa0891a10b57e460eb30c8f80bac3c9129f9ec2abd2",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "實讀r3→r4：只移除selector strong/small ellipsis與360舊flex限制。首頁出席列既有橫向捲動規則保留；備課另以較高specificity精確覆寫。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r5/src__styles__responsive.css.diff",
+    "sha256": "9be2a072c7b89623de05d62b8cf7fad42406e1146d48354fc37333002de78116"
+  },
+  "observedAt": "2026-10-06T04:22:29.208537+00:00",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__responsive.css.review.json",
+    "sha256": "0dde69a5b3b0082d3e2d3acd1387e9262874fc408e1b3fd52c212c112372f8f5"
+  },
+  "scope": "Source change acceptance, runtime and independent visual gate separate"
+}

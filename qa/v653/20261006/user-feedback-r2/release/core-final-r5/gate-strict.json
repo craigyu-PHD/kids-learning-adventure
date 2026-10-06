@@ -1,0 +1,18 @@
+{
+  "assertion": {
+    "ref": {
+      "path": "qa/v653/20261006/user-feedback-r2/release/core-final-r5/strict-record.json",
+      "sha256": "503111cc5e24bef1eeb53b60d37ed4ccf5984f3a38f5b4325b9cdf619e91565b"
+    },
+    "pointer": "/passed",
+    "equals": true
+  },
+  "sourcePins": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/compiler-source-final-r5.json",
+    "sha256": "fc3840dea1a32b1f9eea56101405c10c7768771fd57999d1aa74fd4a1bf76ca1"
+  },
+  "runner": {
+    "path": "qa/v653/20261006/user-feedback-r2/release/core-rebind-r1/rebind.py",
+    "sha256": "7256b06bd5bfdfe324bb8ae0017fe21261c651c21ed0ce24da2e37508d50efaf"
+  }
+}

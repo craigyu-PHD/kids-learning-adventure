@@ -1,0 +1,125 @@
+{
+  "status": "FAIL_FEEDBACK_NOT_READY",
+  "errors": [
+    "sources/public: 'toolPins'",
+    "compiled candidate: 'build'",
+    "required evidence group set",
+    "evidence headwearFit: 'headwearFit'",
+    "evidence headwearVisual: 'headwearVisual'",
+    "evidence headwearWorkflow: 'headwearWorkflow'",
+    "evidence shopRegression: 'shopRegression'",
+    "evidence headwearNegative: 'headwearNegative'",
+    "evidence lessonRuntime: 'lessonRuntime'",
+    "evidence lessonVisual: 'lessonVisual'",
+    "evidence lessonFlow: 'lessonFlow'",
+    "evidence siteCTA: 'siteCTA'",
+    "evidence siteNavigation: 'siteNavigation'",
+    "evidence companion: 'companion'",
+    "evidence siteVisual: 'siteVisual'",
+    "evidence voiceBrowser: 'voiceBrowser'",
+    "evidence core: 'core'",
+    "audio: 'audio'",
+    "performance: 'performance'",
+    "strict TypeScript: 'strict'",
+    "limitations retained"
+  ],
+  "checks": [
+    {
+      "check": "index version/kind",
+      "pass": true
+    },
+    {
+      "check": "sources/public: 'toolPins'",
+      "pass": false
+    },
+    {
+      "check": "compiled candidate: 'build'",
+      "pass": false
+    },
+    {
+      "check": "required evidence group set",
+      "pass": false
+    },
+    {
+      "check": "evidence headwearFit: 'headwearFit'",
+      "pass": false
+    },
+    {
+      "check": "evidence headwearVisual: 'headwearVisual'",
+      "pass": false
+    },
+    {
+      "check": "evidence headwearWorkflow: 'headwearWorkflow'",
+      "pass": false
+    },
+    {
+      "check": "evidence shopRegression: 'shopRegression'",
+      "pass": false
+    },
+    {
+      "check": "evidence headwearNegative: 'headwearNegative'",
+      "pass": false
+    },
+    {
+      "check": "evidence lessonRuntime: 'lessonRuntime'",
+      "pass": false
+    },
+    {
+      "check": "evidence lessonVisual: 'lessonVisual'",
+      "pass": false
+    },
+    {
+      "check": "evidence lessonFlow: 'lessonFlow'",
+      "pass": false
+    },
+    {
+      "check": "evidence siteCTA: 'siteCTA'",
+      "pass": false
+    },
+    {
+      "check": "evidence siteNavigation: 'siteNavigation'",
+      "pass": false
+    },
+    {
+      "check": "evidence companion: 'companion'",
+      "pass": false
+    },
+    {
+      "check": "evidence siteVisual: 'siteVisual'",
+      "pass": false
+    },
+    {
+      "check": "evidence voiceBrowser: 'voiceBrowser'",
+      "pass": false
+    },
+    {
+      "check": "evidence core: 'core'",
+      "pass": false
+    },
+    {
+      "check": "audio: 'audio'",
+      "pass": false
+    },
+    {
+      "check": "performance: 'performance'",
+      "pass": false
+    },
+    {
+      "check": "strict TypeScript: 'strict'",
+      "pass": false
+    },
+    {
+      "check": "limitations retained",
+      "pass": false
+    }
+  ],
+  "limitations": [
+    "No physical mobile acceptance",
+    "No real family cloud writes",
+    "No all-clips human auditory acceptance",
+    "No commit or push"
+  ],
+  "scope": "Read-only same-candidate gate; no deployment, real-account or exhaustive auditory acceptance.",
+  "indexPath": "qa/v653/20261006/user-feedback-r2/release/gate-incomplete-index.json",
+  "indexSHA256": "2a7e04be6966f90f29069901f4bace6e4682a1c0d5dfb0708717a9c1fa7fd347"
+}

@@ -1,0 +1,18 @@
+{
+  "path": "src/styles/components/lesson.css",
+  "beforeSHA256": "a7fa499aa296302d6f5a16b95aa9cc3f945d3f493348f27b14d896e56547059f",
+  "afterSHA256": "68d47451317328aeb7b49d5815d6e99aeaf5490c271be666fc9ad896f862f234",
+  "decision": "ACCEPT",
+  "reviewer": "lesson_layout_feedback_r2-source-review",
+  "reason": "實讀r3→r4：僅在v653-preparation-stage限定participant label/姓名，解除從mobile繼承的ellipsis，保留44px；mobile明確2欄minmax0。原checkbox DOM/event與鍵盤不改。r4四長名360/390明暗真pilot顯示完整且Space切換/ledger不變。",
+  "diff": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r5/src__styles__components__lesson.css.diff",
+    "sha256": "aefe0891a6eda80b58122c45cea55410dd974d8ea4c6e6a0481e65f0b43876fe"
+  },
+  "observedAt": "2026-10-06T04:22:29.211280+00:00",
+  "priorReview": {
+    "path": "qa/v653/20261006/user-feedback-r2/site-ui/source-review-r1/src__styles__components__lesson.css.review.json",
+    "sha256": "1bb6c5f012b74afbe34a3ed6297dc776d5b5fe554dc7d464ee619d87897e85fb"
+  },
+  "scope": "Source change acceptance, runtime and independent visual gate separate"
+}

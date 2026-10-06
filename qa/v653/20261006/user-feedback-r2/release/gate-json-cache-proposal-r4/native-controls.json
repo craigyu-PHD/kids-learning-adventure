@@ -1,0 +1,197 @@
+{
+  "status": "PASS_PROPOSAL_UNIT_EQUIVALENCE_NOT_RELEASE",
+  "checksPerImplementation": {
+    "R2": [
+      {
+        "check": "fresh top containers",
+        "pass": true
+      },
+      {
+        "check": "fresh nested containers",
+        "pass": true
+      },
+      {
+        "check": "fresh native types",
+        "pass": true
+      },
+      {
+        "check": "all JSON value types",
+        "pass": true
+      },
+      {
+        "check": "negative zero preserved",
+        "pass": true
+      },
+      {
+        "check": "false assertion stays false after alias mutation",
+        "pass": true
+      },
+      {
+        "check": "container assertion exact native type",
+        "pass": true
+      },
+      {
+        "check": "bool versus number rejected",
+        "pass": true
+      },
+      {
+        "check": "raw bytes mode preserved",
+        "pass": true
+      },
+      {
+        "check": "new Gate never shares changed aliases",
+        "pass": true
+      },
+      {
+        "check": "wrong SHA first-read rejected",
+        "pass": true
+      },
+      {
+        "check": "wrong changed SHA after warm rejected",
+        "pass": true
+      },
+      {
+        "check": "malformed ref rejected",
+        "pass": true
+      },
+      {
+        "check": "invalid JSON rejected",
+        "pass": true
+      },
+      {
+        "check": "invalid JSON not cached as parsed success",
+        "pass": true
+      },
+      {
+        "check": "new valid SHA produces new snapshot",
+        "pass": true
+      },
+      {
+        "check": "new Gate rejects obsolete SHA after changed bytes",
+        "pass": true
+      },
+      {
+        "check": "original warm byte snapshot semantics preserved",
+        "pass": true
+      },
+      {
+        "check": "nan-list decoder equality preserved",
+        "pass": true
+      },
+      {
+        "check": "nan-dict decoder equality preserved",
+        "pass": true
+      },
+      {
+        "check": "infinity decoder equality preserved",
+        "pass": true
+      },
+      {
+        "check": "surrogate decoder equality preserved",
+        "pass": true
+      }
+    ],
+    "proposed": [
+      {
+        "check": "fresh top containers",
+        "pass": true
+      },
+      {
+        "check": "fresh nested containers",
+        "pass": true
+      },
+      {
+        "check": "fresh native types",
+        "pass": true
+      },
+      {
+        "check": "all JSON value types",
+        "pass": true
+      },
+      {
+        "check": "negative zero preserved",
+        "pass": true
+      },
+      {
+        "check": "false assertion stays false after alias mutation",
+        "pass": true
+      },
+      {
+        "check": "container assertion exact native type",
+        "pass": true
+      },
+      {
+        "check": "bool versus number rejected",
+        "pass": true
+      },
+      {
+        "check": "raw bytes mode preserved",
+        "pass": true
+      },
+      {
+        "check": "new Gate never shares changed aliases",
+        "pass": true
+      },
+      {
+        "check": "wrong SHA first-read rejected",
+        "pass": true
+      },
+      {
+        "check": "wrong changed SHA after warm rejected",
+        "pass": true
+      },
+      {
+        "check": "malformed ref rejected",
+        "pass": true
+      },
+      {
+        "check": "invalid JSON rejected",
+        "pass": true
+      },
+      {
+        "check": "invalid JSON not cached as parsed success",
+        "pass": true
+      },
+      {
+        "check": "new valid SHA produces new snapshot",
+        "pass": true
+      },
+      {
+        "check": "new Gate rejects obsolete SHA after changed bytes",
+        "pass": true
+      },
+      {
+        "check": "original warm byte snapshot semantics preserved",
+        "pass": true
+      },
+      {
+        "check": "nan-list decoder equality preserved",
+        "pass": true
+      },
+      {
+        "check": "nan-list fallback sentinel",
+        "pass": true
+      },
+      {
+        "check": "nan-dict decoder equality preserved",
+        "pass": true
+      },
+      {
+        "check": "nan-dict fallback sentinel",
+        "pass": true
+      },
+      {
+        "check": "infinity decoder equality preserved",
+        "pass": true
+      },
+      {
+        "check": "surrogate decoder equality preserved",
+        "pass": true
+      }
+    ]
+  },
+  "exactFullChecksEqual": true,
+  "R2UnitReplayExact": true,
+  "R2UnitChecks": 31,
+  "snapshotScope": "only same-process internally serialized verified JSON; no external/persisted binary input"
+}

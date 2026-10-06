@@ -1,0 +1,29 @@
+--- published-r6/src/v4/ParentSettings.tsx
++++ feedback/src/v4/ParentSettings.tsx
+@@ -20,7 +20,7 @@
+   ReflectionMap, ThemeMode,
+ } from '../types';
+ import { CaregiverAvatar, hasUserPin, roleLabel, userRoleOptions } from './caregivers';
+-import { availableEnglishVoices, speakEnglish, type EnglishVoiceOption } from './voice';
++import { availableEnglishVoices, cancelEnglishSpeech, speakEnglish, type EnglishVoiceOption } from './voice';
+ 
+ export type V4CloudStatus = 'local' | 'loading' | 'saving' | 'synced' | 'error';
+ 
+@@ -79,6 +79,8 @@
+     return () => media.removeEventListener('change', sync);
+   }, []);
+ 
++  useEffect(() => () => cancelEnglishSpeech(), []);
++
+   useEffect(() => {
+     const refresh = () => setEnglishVoices(availableEnglishVoices());
+     refresh();
+@@ -177,7 +179,7 @@
+       </div>
+     </section>
+ 
+-    <section className="settings-card voice-settings-card"><div className="setting-label"><span className="setting-icon"><Mic size={20} /></span><div><h3>英文示範語音</h3><p>所有課程、題目與句型共用這裡的語音。先選聲線，再選孩子聽得舒服的速度。</p></div></div><div className="segmented-control voice-choice"><button className={settings.voicePreference !== 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'female', voiceId: undefined }))}>自然女聲</button><button className={settings.voicePreference === 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'male', voiceId: undefined }))}>自然男聲</button><button type="button" className="voice-preview-button" onClick={() => speakEnglish('Hello! Let us learn English together.', settings)}>試聽</button></div><div className="segmented-control voice-speed-choice"><button className={settings.voiceRate !== 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.78 }))}>慢速示範</button><button className={settings.voiceRate === 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.9 }))}>標準速度</button></div>{englishVoices.length > 0 ? <label className="voice-select-label">指定裝置語音<select value={settings.voiceId ?? ''} onChange={(event) => setSettings((current) => ({ ...current, voiceId: event.target.value || undefined }))}><option value="">自動挑選最自然的{settings.voicePreference === 'male' ? '男聲' : '女聲'}</option>{englishVoices.map((voice) => <option key={voice.id} value={voice.id}>{voice.label}</option>)}</select></label> : <p className="voice-device-note">正在讀取這台裝置的英文語音；若尚未安裝高品質英文語音，請先在系統的「輔助使用／朗讀內容」下載後重開此頁。</p>}</section>
++    <section className="settings-card voice-settings-card"><div className="setting-label"><span className="setting-icon"><Mic size={20} /></span><div><h3>英文示範語音</h3><p>所有課程、題目與句型共用這裡的語音。先選聲線，再選孩子聽得舒服的速度。</p></div></div><div className="segmented-control voice-choice"><button className={settings.voicePreference !== 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'female', voiceId: undefined }))}>自然女聲</button><button className={settings.voicePreference === 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'male', voiceId: undefined }))}>自然男聲</button><button type="button" className="voice-preview-button" onClick={() => speakEnglish('Hello! Let us learn English together.', settings)}>試聽</button></div><div className="segmented-control voice-speed-choice"><button className={settings.voiceRate !== 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.78 }))}>慢速示範</button><button className={settings.voiceRate === 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.9 }))}>一般語速</button></div>{englishVoices.length > 0 ? <label className="voice-select-label">指定裝置語音<select value={settings.voiceId ?? ''} onChange={(event) => setSettings((current) => ({ ...current, voiceId: event.target.value || undefined }))}><option value="">自動選擇{settings.voicePreference === 'male' ? '男聲' : '女聲'}</option>{englishVoices.map((voice) => <option key={voice.id} value={voice.id}>{voice.label}</option>)}</select></label> : <p className="voice-device-note">女聲示範可直接播放課程音檔。指定裝置語音的選項會在瀏覽器提供聲線後顯示。</p>}</section>
+ 
+     <details className="v65-settings-group advanced" open={advancedOpen} onToggle={(event)=>setAdvancedOpen(event.currentTarget.open)}>
+       <summary><span>學期與冒險主題</span><small>{compactSettings?'點一下展開冒險主題與學期起始日':`冒險主題與 ${resolveSemester(settings).days.length} 天課程排程`}</small></summary>
