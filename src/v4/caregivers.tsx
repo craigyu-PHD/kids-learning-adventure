@@ -1,3 +1,4 @@
+import type { SyntheticEvent } from 'react';
 import type { FamilyUserProfile, FamilyUserRole } from '../types';
 
 export const userRoleOptions: Array<{ id: FamilyUserRole; label: string }> = [
@@ -26,6 +27,19 @@ function caregiverArt(role: FamilyUserRole) {
   return 'avatar-caregiver.webp';
 }
 
+/** Existing V5 artwork, with lossless display variants and the original fallback. */
+export function caregiverImageProps(role: FamilyUserRole) {
+  const file = caregiverArt(role);
+  const base = import.meta.env.BASE_URL;
+  return {
+    src: `${base}assets/v5/characters/caregivers/${file}`,
+    srcSet: [128, 256, 512].map(width =>
+      `${base}assets/v6.4/caregiver-display/${file.replace('.webp', `-${width}.webp`)} ${width}w`)
+      .concat(`${base}assets/v5/characters/caregivers/${file} 1024w`).join(', '),
+    onError: (event: SyntheticEvent<HTMLImageElement>) => { event.currentTarget.removeAttribute('srcset'); },
+  };
+}
+
 export function CaregiverAvatar({ user, size = 64 }: { user: FamilyUserProfile; size?: number }) {
-  return <img className="caregiver-avatar" src={`${import.meta.env.BASE_URL}assets/v5/characters/caregivers/${caregiverArt(user.role)}`} alt={`${user.name}頭像`} width={size} height={size} loading="eager" decoding="async" />;
+  return <img className="caregiver-avatar" {...caregiverImageProps(user.role)} sizes={`${size}px`} alt={`${user.name}頭像`} width={size} height={size} loading="eager" decoding="async" />;
 }

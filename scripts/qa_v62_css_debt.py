@@ -51,12 +51,16 @@ def main() -> int:
     shop = (ROOT / 'src/styles/components/shop.css').read_text(encoding='utf-8')
     if 'max-width:1960px' in responsive or '1880px' in responsive:
         fail('responsive.css reintroduced an obsolete large-screen island/cap')
-    for marker in ['min-width: 2200px', 'min-width: 3200px', 'min-width: 4600px']:
+    # V6.4/T03 contract: ordinary dashboard/lesson/report pages stop scaling at
+    # the shared 1920px reading frame. Ultra-wide expansion is feature-owned by
+    # Shop only, with a bounded 3200px workbench. Do not require historical
+    # dashboard-specific 2200/3200/4600 media queries in layout.css.
+    for marker in ['--v64-content-max: 1920px;', '@media (min-width: 1920px)', 'width: min(var(--v64-content-max), calc(100% - 96px));']:
         if marker not in layout:
-            fail(f'large-display dashboard ownership missing from layout.css: {marker}')
-    for marker in ['min-width:2200px', 'min-width:3200px', 'min-width:4600px']:
+            fail(f'shared 1920px reading-frame ownership missing from layout.css: {marker}')
+    for marker in ['min-width:2200px', 'min-width:2560px', 'min-width:3200px', 'min-width:4600px', ':has(.v6-shop-studio)', 'max-width:3200px']:
         if marker not in shop:
-            fail(f'large-display shop ownership missing from shop.css: {marker}')
+            fail(f'ultra-wide Shop ownership missing from shop.css: {marker}')
     print(f'PASS qa_v62_css_debt: !important {BASELINE_IMPORTANT} -> {important} (-{reduction}); below V6.3={V63_ACCEPTED_IMPORTANT}; legacy layers preserved; wide-screen ownership is feature-owned; direct wearable magic-number selectors=0')
     return 0
 

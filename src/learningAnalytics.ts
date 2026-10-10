@@ -136,7 +136,7 @@ export function buildLearningProfile(events: AnswerEvent[] | undefined, todayYmd
 
   const priority = reviewTargets[0];
   const suggestion = !allEvents.length
-    ? '完成互動 Quick Check 後，系統才會依真實作答提供複習建議。'
+    ? '完成互動練習後，系統才會依真實作答提供複習建議。'
     : priority && priority.incorrect > 0
       ? `建議先複習「${priority.target}」，目前有 ${priority.incorrect} 次答錯紀錄。`
       : '目前作答表現穩定；可在下次課前安排 3–5 題聽力單字複習。';

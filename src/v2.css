@@ -234,7 +234,8 @@ body::before { opacity: .52; background-image: var(--theme-pattern), radial-grad
 .avatar-photo-hero::before { content: ""; position: absolute; inset: -5px; z-index: -2; border-radius: 36%; background: conic-gradient(from 210deg, var(--avatar-primary), var(--avatar-secondary), var(--avatar-accent), var(--avatar-primary)); animation: avatarRing 5.2s linear infinite; }
 .avatar-photo-hero::after { content: ""; position: absolute; inset: 1px; z-index: -1; border-radius: 34%; background: var(--surface); }
 .avatar-photo-hero img { width: calc(100% - 8px); height: calc(100% - 8px); border-radius: 31%; object-fit: cover; display: block; transform: translateZ(0); transition: transform .28s cubic-bezier(.2,.8,.2,1), filter .28s ease; }
-.avatar-photo-hero:hover img { transform: translateY(-2px) scale(1.025); filter: saturate(1.08); }
+/* Layered runtime avatars share one canvas; per-image hover transitions drift when responsive base images remount. */
+.avatar-photo-hero:not(.avatar-renderer):hover img { transform: translateY(-2px) scale(1.025); filter: saturate(1.08); }
 .avatar-photo-glow { position: absolute; inset: 6%; z-index: -1; border-radius: 50%; box-shadow: 0 0 28px color-mix(in srgb, var(--avatar-secondary) 42%, transparent); opacity: .45; }
 @keyframes avatarRing { to { transform: rotate(360deg); } }
 

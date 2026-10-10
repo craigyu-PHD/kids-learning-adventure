@@ -22,6 +22,7 @@ function rendererFor(item: CosmeticDefinition): ShopItem['renderer'] {
 function previewModeFor(item: CosmeticDefinition): ShopItem['previewMode'] {
   if (item.slot === 'spaceship') return 'ship';
   if (item.slot === 'robot') return 'robot';
+  if (item.slot === 'pet') return 'pet';
   if (item.slot === 'card') return 'card';
   if (item.slot === 'effect') return 'effect';
   if (item.slot === 'room') return 'world';

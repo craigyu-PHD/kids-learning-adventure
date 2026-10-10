@@ -6,18 +6,27 @@
 
 /* ── Cinematic header shell ── */
 .v5-cinematic-header::before,
-.v5-cinematic-header::after { content: none !important; }
+.v5-cinematic-header::after { content: none; }
 .v5-cinematic-header { isolation: isolate; overflow: hidden; background: #061d57; }
 
 .v5-hero-bg {
   position: absolute; z-index: 0; inset: 0;
   width: 100%; height: 100%;
-  object-fit: cover; object-position: center;
+  object-fit: contain; object-position: center;
+  background:#061d57;
   pointer-events: none;
 }
 
+/* Environment-only panoramas fill the banner; the four heroes remain separate. */
+.v5-hero-bg.v652-theme-panorama { object-fit:cover; object-position:center 48%; }
+
+.v65-hero-showcase { display:block; left:clamp(360px,30vw,470px); right:auto; width:clamp(480px,43vw,570px); height:150px; }
+.v65-hero-showcase .v6-hero-learner-roster { width:100%; height:100%; display:flex; align-items:end; justify-content:center; gap:0; }
+.v65-hero-showcase .v5-hero-character { position:relative; inset:auto; flex:0 1 126px; width:min(126px,25%); height:146px; }
+.v65-hero-showcase .v6-hero-character-static { bottom:0; animation:none; transform:none; }
+
 .v5-cinematic-header::after {
-  content: "" !important;
+  content: "";
   position: absolute; z-index: 1; inset: 0;
   background: linear-gradient(90deg, rgba(6,29,87,.74), rgba(6,29,87,.08));
   pointer-events: none;
@@ -47,9 +56,9 @@
 
 .v5-cinematic-header .v4-brand-subtitle {
   width: 230px;
-  padding: 4px 12px !important;
-  font-size: 18px !important;
-  line-height: 1.1 !important;
+  padding: 4px 12px;
+  font-size: 18px;
+  line-height: 1.1;
   margin-top: 4px;
   justify-self: start;
   margin-left: 50px;
@@ -59,48 +68,52 @@
 /* ── Hero character layers ── */
 .v5-hero-layers {
   position: absolute; z-index: 3;
-  right: 380px;                /* reduced from 470px to accommodate narrower controls */
-  bottom: 0; left: 390px;
-  min-width: 0 !important; height: 150px !important;
+  right: auto;
+  bottom: 0; left: calc(50% - 288px);
+  width: 676px;
+  min-width: 0; height: 150px;
   pointer-events: none;
 }
 .v5-hero-character {
-  position: absolute !important;
+  position: absolute;
   bottom: -8px;
-  width: 132px !important; height: 142px !important;
+  width: 132px; height: 142px;
   object-fit: contain; background: transparent;
 }
 .v5-hero-character.brother,
 .v5-hero-character.hero-slot-1 { left: 19%; }
 .v5-hero-character.younger,
-.v5-hero-character.hero-slot-2 { left: 42%; width: 120px !important; }
+.v5-hero-character.hero-slot-2 { left: 42%; width: 120px; }
 .v6-hero-character-static {
-  animation: v6HeroLearnerGreeting 4.6s ease-in-out infinite;
+  animation: v64HeroIdle 5.4s ease-in-out infinite;
   transform-origin: 50% 100%;
 }
-.v6-hero-character-static.hero-slot-2 { animation-delay: .6s; }
-@keyframes v6HeroLearnerGreeting {
+.v6-hero-character-static.hero-slot-2 { animation-delay: .7s; }
+@keyframes v64HeroIdle {
   0%, 100% { transform: translateY(0) rotate(0); }
-  44% { transform: translateY(-3px) rotate(-1.1deg); }
-  58% { transform: translateY(-5px) rotate(1.1deg); }
-  72% { transform: translateY(-1px) rotate(0); }
+  50% { transform: translateY(-2px) rotate(.4deg); }
 }
-.v6-hero-parent { position:absolute; bottom:-5px; width:108px; height:122px; object-fit:contain; filter:drop-shadow(0 7px 7px rgba(0,16,55,.32)); }
-.v6-hero-parent { animation:v6FamilyIdle 3.4s ease-in-out infinite alternate; transform-origin:50% 100%; }
-.v6-hero-parent.father { left:3%; animation-delay:.35s; }
-.v6-hero-parent.mother { left:68%; animation-delay:.8s; }
-@keyframes v6FamilyIdle { to { transform:translateY(-4px) rotate(1deg); } }
-
-/* Parent motion is intentionally modest and character-like rather than a
- * generic float: father leans/waves, mother answers with a gentle greeting. */
-.v6-hero-parent.father { animation: v6FatherGreeting 4.8s ease-in-out infinite; }
-.v6-hero-parent.mother { animation: v6MotherGreeting 5.2s ease-in-out infinite .35s; }
-@keyframes v6FatherGreeting { 0%,100% { transform:translateY(0) rotate(0); } 42% { transform:translateY(-2px) rotate(-1.2deg); } 56% { transform:translateY(-5px) rotate(1.4deg); } 70% { transform:translateY(-1px) rotate(0); } }
-@keyframes v6MotherGreeting { 0%,100% { transform:translateY(0) rotate(0); } 35% { transform:translateY(-3px) rotate(1deg); } 52% { transform:translateY(-5px) rotate(-1.4deg); } 67% { transform:translateY(-1px) rotate(0); } }
+.v64-home-arrival .v6-hero-learner-roster {
+  animation: v64HomeArrival 450ms cubic-bezier(.2,.86,.28,1.16) both;
+  transform-origin: 50% 100%;
+}
+.v64-home-arrival .v65-hero-showcase .v6-hero-learner-roster {
+  animation:none;
+  transform:none;
+}
+@keyframes v64HomeArrival {
+  0% { opacity:0; transform:translateY(12px) scale(.985); }
+  72% { opacity:1; transform:translateY(-2px) scale(1.006); }
+  100% { opacity:1; transform:none; }
+}
+.v6-hero-parent { position:absolute; bottom:-5px; width:108px; height:122px; object-fit:contain; filter:drop-shadow(0 7px 7px rgba(0,16,55,.32)); animation:v64FamilyIdle 5.8s ease-in-out infinite; transform-origin:50% 100%; }
+.v6-hero-parent.father { left:3%; animation-delay:.45s; }
+.v6-hero-parent.mother { left:68%; animation-delay:1.15s; }
+@keyframes v64FamilyIdle { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-2px) rotate(-.35deg); } }
 .v5-rocket-flyby {
-  position: absolute !important; z-index: 2;
+  position: absolute; z-index: 2;
   left: -12%; bottom: -6px;
-  width: 106px !important; height: 106px !important;
+  width: var(--header-flyby-size,106px); height: var(--header-flyby-size,106px);
   object-fit: contain; pointer-events: none; background: transparent;
   filter: drop-shadow(0 7px 8px rgba(0,22,70,.32));
   transform-origin: 50% 50%;
@@ -134,7 +147,8 @@
   flex-direction: column;       /* stacked, not horizontal */
   align-items: flex-end;
   justify-content: center;
-  gap: 6px;
+  /* Three control rows total 146px, within the 150px desktop header. */
+  gap: 3px;
   width: 330px;
 }
 
@@ -155,7 +169,7 @@
   box-shadow: 0 5px 14px rgba(0,0,0,.22);
   text-align: left;
 }
-.v53-parent-status .v4-caregiver-avatar { width: 44px !important; height: 44px !important; }
+.v53-parent-status .v4-caregiver-avatar { width: 44px; height: 44px; }
 .v53-parent-status span  { display: grid; min-width: 0; gap: 1px; }
 .v53-parent-status strong,
 .v53-parent-status small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -204,6 +218,8 @@
  * removing the world switcher with the desktop thumbnail row. */
 .v6-mobile-theme-trigger { display:none; min-height:44px; align-items:center; justify-content:center; gap:6px; padding:0 11px; border:1.5px solid rgba(255,255,255,.55); border-radius:14px; color:#fff; background:rgba(6,29,87,.86); font-size:12px; font-weight:800; box-shadow:0 5px 14px rgba(0,0,0,.22); }
 .v6-mobile-theme-trigger svg { width:18px; height:18px; color:#ffd83d; }
+/* Let the mobile theme dialog escape the banner and cover the dashboard. */
+.v4-shell > .v5-cinematic-header:has(.v6-theme-sheet-backdrop) { z-index:80; overflow:visible; }
 .v6-theme-sheet-backdrop { position:fixed; z-index:200; inset:0; display:grid; align-items:end; background:rgba(3,18,54,.52); backdrop-filter:blur(5px); }
 .v6-theme-sheet { width:min(640px,100%); margin:0 auto; padding:18px 18px calc(18px + env(safe-area-inset-bottom)); border:2px solid #99dffa; border-radius:24px 24px 0 0; background:linear-gradient(160deg,#fafdff,#eaf6ff); box-shadow:0 -14px 48px rgba(4,26,78,.3); }
 .v6-theme-sheet header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px; }
@@ -218,12 +234,38 @@
 .v6-theme-sheet>div>button>svg { width:16px; height:16px; color:#20a866; }
 
 /* AI bot */
-.v5-ai-bot { display: block; padding: 0; border: 0; cursor: pointer; background: linear-gradient(145deg,#ddf7ff,#edebff); }
+.v5-ai-bot { display: block; padding: 0; border: 0; cursor: pointer; background: linear-gradient(145deg,#ddf7ff,#edebff); animation:none; transform:none; }
 .v5-ai-bot video,
-.v5-ai-bot img { width: 100% !important; height: 100% !important; object-fit: contain; background: transparent; }
+.v5-ai-bot img { width: 100%; height: 100%; object-fit: contain; background: transparent; }
 .v5-ai-hint { display: block; margin-top: 6px; color: #2b5b86; font-size: 12px; font-weight: 700; }
-.v4-ai-actions { display: none !important; }
+.v4-ai-actions { display: none; }
 
+
+/* ── Large-display frame ownership ────────────────────────────────────────
+ * P02 keeps the global application canvas bounded at 1920px. Extra 4K/5K
+ * width belongs to theme scenery, not to stretched navigation targets. The
+ * existing 1536px cinematic core stays centred inside that bounded frame. */
+@media (min-width: 1920px) {
+  .v4-adventure-header,
+  .v4-main-navigation {
+    --v64-wide-frame: min(1920px, calc(100% - 96px));
+    width: var(--v64-wide-frame);
+  }
+}
+
+@media (min-width: 2200px) {
+  .v5-cinematic-header {
+    --v64-core-inset: max(0px, calc((var(--v64-wide-frame) - 1536px) / 2));
+    padding-left: calc(var(--v64-core-inset) + 20px);
+    padding-right: calc(var(--v64-core-inset) + 20px);
+  }
+  .v5-header-controls { right: calc(var(--v64-core-inset) + 20px); }
+  .v4-main-navigation {
+    --v64-core-inset: max(0px, calc((var(--v64-wide-frame) - 1536px) / 2));
+    padding-left: calc(var(--v64-core-inset) + 14px);
+    padding-right: calc(var(--v64-core-inset) + 14px);
+  }
+}
 
 /* ── Responsive overrides ── */
 
@@ -245,14 +287,14 @@
 }
 
 @media (max-width: 760px) {
-  .v5-cinematic-header { display: grid; grid-template-columns: 1fr 120px !important; }
+  .v5-cinematic-header { display: grid; grid-template-columns: 1fr 120px; }
   .v5-cinematic-header .v4-brand-lockup { min-width: 0; }
-  .v5-cinematic-header .v4-brand-lockup span { display: none !important; }
-  .v5-hero-layers { right: 58px; left: auto; width: 118px; height: 128px !important; }
+  .v5-cinematic-header .v4-brand-lockup span { display: none; }
+  .v5-hero-layers { right: 58px; left: auto; width: 118px; height: 128px; }
   .v5-hero-character { display: none; }
   .v5-hero-character.brother,
-  .v5-hero-character.hero-slot-1 { display: block; left: 0; width: 112px !important; height: 122px !important; }
-  .v5-rocket-flyby { height: 128px !important; }
+  .v5-hero-character.hero-slot-1 { display: block; left: 0; width: 112px; height: 122px; }
+  .v5-rocket-flyby { height: var(--header-flyby-size,128px); }
   .v5-header-controls { top: 10px; right: 10px; transform: none; width: auto; }
   .v6-mobile-theme-trigger { width:44px; min-width:44px; padding:0; font-size:0; }
   .v6-mobile-theme-trigger svg { width:20px; height:20px; }
@@ -264,8 +306,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   .v5-hero-character,
+  .v6-hero-parent,
+  .v64-home-arrival .v6-hero-learner-roster,
   .v5-rocket-flyby,
-  .v5-ai-bot video { animation: none !important; }
+  .v5-ai-bot video { animation: none; }
 }
 
 /* V6.1 narrow-phone containment: the header must never establish a min-content
@@ -273,33 +317,61 @@
    on 390px/360px production viewports without hiding overflow symptoms. */
 @media (max-width:760px) {
   .v5-cinematic-header {
-    width:100% !important;
-    max-width:100vw !important;
-    min-width:0 !important;
-    box-sizing:border-box !important;
-    grid-template-columns:minmax(0,1fr) 96px !important;
+    width:100%;
+    max-width:100vw;
+    min-width:0;
+    box-sizing:border-box;
+    grid-template-columns:minmax(0,1fr) 96px;
   }
-  .v5-cinematic-header > * { min-width:0 !important; }
+  /* The background picture must not consume the logo's first grid cell. */
+  .v5-cinematic-header > picture { position:absolute; inset:0; }
+  .v5-cinematic-header > * { min-width:0; }
   .v5-cinematic-header .v4-brand-lockup {
-    width:auto !important;
-    min-width:0 !important;
-    max-width:calc(100vw - 118px) !important;
+    width:auto;
+    min-width:0;
+    max-width:calc(100vw - 118px);
   }
   .v53-brand-logo {
-    width:min(218px,100%) !important;
-    max-width:100% !important;
-    min-width:0 !important;
+    width:min(218px,100%);
+    max-width:100%;
+    min-width:0;
   }
   .v5-hero-layers {
-    width:96px !important;
-    min-width:0 !important;
-    right:52px !important;
-    left:auto !important;
+    width:96px;
+    min-width:0;
+    right:52px;
+    left:auto;
   }
   .v5-header-controls {
-    width:44px !important;
-    max-width:44px !important;
-    min-width:0 !important;
-    right:8px !important;
+    width:44px;
+    max-width:44px;
+    min-width:0;
+    right:8px;
   }
+}
+
+/* A motion preference keeps an equipped ship visible at its resting position. */
+@media (prefers-reduced-motion: reduce) {
+  .v5-cinematic-header .v6-equipped-header-ship { left:12px; bottom:4px; }
+}
+@media (max-width:760px) and (prefers-reduced-motion: reduce) {
+  .v6-equipped-header-ship { --header-flyby-size:64px; }
+}
+
+/* Keep the logo clear of the caregiver controls on portrait tablets. */
+@media (min-width:761px) and (max-width:1180px) {
+  .v5-cinematic-header { min-height:160px; }
+  .v5-cinematic-header .v4-brand-lockup { position:absolute; left:20px; top:50%; transform:translateY(-50%); }
+}
+
+/* Background art must not consume a grid column. */
+.v5-cinematic-header > .v5-hero-bg-picture { position:absolute; inset:0; }
+
+/* Preserve the wide header frame and core; lay out its existing family cast. */
+@media (min-width:2200px) {
+  .v5-hero-layers { display:grid; grid-template-columns:86px minmax(0,1fr) 86px; column-gap:10px; align-items:end; }
+  .v5-hero-layers .v6-hero-parent { position:relative; inset:auto; width:86px; align-self:end; }
+  .v6-hero-learner-roster { display:flex; align-items:end; justify-content:center; min-width:0; height:100%; gap:8px; }
+  .v6-hero-learner-roster .v5-hero-character { position:relative; inset:auto; flex:1 1 0; min-width:0; max-width:132px; }
+  .v6-hero-more-members { position:absolute; right:70px; top:12px; min-width:32px; height:32px; padding:0 6px; display:grid; place-items:center; border:2px solid #fff; border-radius:999px; background:#A84DF5; color:#fff; font-size:13px; font-weight:800; }
 }

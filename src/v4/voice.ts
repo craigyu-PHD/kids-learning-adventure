@@ -1,20 +1,35 @@
 import type { AppSettings } from "../types";
+import speechManifest from "../data/lessonSpeechManifest.json";
 
 export type EnglishVoiceOption = { id: string; name: string; label: string };
+type VoiceSettings = Pick<AppSettings, "voiceSource" | "voicePreference" | "voiceId" | "voiceRate">;
+let pendingVoiceCleanup: (() => void) | undefined;
+let speechRequest = 0;
+let activeAudio: HTMLAudioElement | undefined;
+let audioCleanup: (() => void) | undefined;
+let lifecycleCleanup: (() => void) | undefined;
+
+// Exact sentence keys and content-addressed assets prevent cross-sentence reuse.
+const renderedSamples: Record<string, { slow: string; standard: string }> = speechManifest.clips;
 
 function isEnglishVoice(voice: SpeechSynthesisVoice) {
-  return /^en(?:-|_)/i.test(voice.lang);
+  return /^en(?:-|_|$)/i.test(voice.lang);
 }
 
 function voiceScore(voice: SpeechSynthesisVoice, preference: "female" | "male") {
   const name = `${voice.name} ${voice.voiceURI}`.toLowerCase();
+  // Quality takes precedence over gender: the legacy Fred/Eddy voices must not
+  // tie with modern conversational voices just because their names match.
   const preferred = preference === "female"
-    ? /ava|samantha|allison|karen|moira|victoria|zira|jenny|aria|serena|female/
-    : /alex|daniel|fred|lee|david|guy|mark|eddy|male/;
-  let score = preferred.test(name) ? 100 : 0;
-  if (/premium|enhanced|natural|neural|online/.test(name)) score += 40;
+    ? /\b(ava|samantha|allison|karen|moira|victoria|zira|jenny|aria|serena|female)\b/
+    : /\b(alex|daniel|lee|david|guy|mark|male)\b/;
+  let score = /premium|enhanced|natural|neural|online/.test(name) ? 400 : 0;
+  if (/google (us|uk) english/.test(name)) score += 300;
+  if (/\b(samantha|alex|ava|daniel)\b/.test(name)) score += 100;
+  if (preferred.test(name)) score += 60;
+  if (/^en[-_]US$/i.test(voice.lang)) score += 25;
   if (voice.default) score += 8;
-  if (/compact|espeak|festival/.test(name)) score -= 80;
+  if (/compact|espeak|festival|\b(fred|eddy|albert|bahh|bells|boing|bubbles|cellos|jester|junior|organ|ralph|trinoids|whisper|wobble|zarvox)\b|bad news|good news/.test(name)) score -= 800;
   return score;
 }
 
@@ -23,18 +38,119 @@ export function availableEnglishVoices(): EnglishVoiceOption[] {
   return window.speechSynthesis.getVoices().filter(isEnglishVoice).sort((a, b) => a.name.localeCompare(b.name)).map((voice) => ({ id: voice.voiceURI, name: voice.name, label: `${voice.name} · ${voice.lang}` }));
 }
 
-export function speakEnglish(text: string, settings?: Pick<AppSettings, "voicePreference" | "voiceId" | "voiceRate">) {
-  if (!("speechSynthesis" in window) || !text.trim()) return;
-  window.speechSynthesis.cancel();
+export function cancelEnglishSpeech() {
+  speechRequest += 1;
+  lifecycleCleanup?.();
+  lifecycleCleanup = undefined;
+  audioCleanup?.();
+  audioCleanup = undefined;
+  if (activeAudio) {
+    activeAudio.pause();
+    activeAudio.removeAttribute("src");
+    activeAudio.load();
+    activeAudio = undefined;
+  }
+  pendingVoiceCleanup?.();
+  pendingVoiceCleanup = undefined;
+  if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+}
+
+export function speakEnglish(text: string, settings?: VoiceSettings) {
+  if (!text.trim()) return;
+  cancelEnglishSpeech();
+  const request = speechRequest;
+  const onHidden = () => cancelEnglishSpeech();
+  const onVisibility = () => { if (document.hidden) cancelEnglishSpeech(); };
+  window.addEventListener('pagehide', onHidden);
+  document.addEventListener('visibilitychange', onVisibility);
+  lifecycleCleanup = () => {
+    window.removeEventListener('pagehide', onHidden);
+    document.removeEventListener('visibilitychange', onVisibility);
+  };
+  const phrase = text.trim().replace(/\s+/g, ' ');
+  const usesDeviceVoice = settings?.voiceSource === 'device';
+  const fallbackSettings: VoiceSettings = usesDeviceVoice ? (settings ?? {}) : { voicePreference: 'female', voiceRate: settings?.voiceRate };
+  const sample = !usesDeviceVoice && Object.hasOwn(renderedSamples, phrase) ? renderedSamples[phrase] : undefined;
+  if (sample) {
+    const audio = new Audio(`${import.meta.env.BASE_URL}assets/v6.5/audio/${settings?.voiceRate === 0.9 ? sample.standard : sample.slow}`);
+    activeAudio = audio;
+    audio.preload = 'auto';
+    audio.playbackRate = 1;
+    let fallbackUsed = false;
+    let timer: number | undefined;
+    const cleanup = () => {
+      window.clearTimeout(timer);
+      audio.onended = null;
+      audio.onerror = null;
+      audio.onplaying = null;
+    };
+    const fallback = () => {
+      if (request !== speechRequest || fallbackUsed) return;
+      fallbackUsed = true;
+      cleanup();
+      audio.pause();
+      audio.removeAttribute('src');
+      audio.load();
+      if (activeAudio === audio) activeAudio = undefined;
+      audioCleanup = undefined;
+      speakSystemEnglish(phrase, fallbackSettings, request);
+    };
+    audioCleanup = cleanup;
+    audio.onplaying = () => window.clearTimeout(timer);
+    audio.onended = () => { if (request !== speechRequest) return; cleanup(); if (activeAudio === audio) activeAudio = undefined; audioCleanup = undefined; };
+    audio.onerror = fallback;
+    timer = window.setTimeout(fallback, 4000);
+    void audio.play().catch(fallback);
+    return;
+  }
+  speakSystemEnglish(phrase, fallbackSettings, request);
+}
+
+function speakSystemEnglish(text: string, settings: VoiceSettings | undefined, request: number) {
+  if (!("speechSynthesis" in window) || request !== speechRequest) return;
+  const synth = window.speechSynthesis;
   const preference = settings?.voicePreference === "male" ? "male" : "female";
-  const voices = window.speechSynthesis.getVoices().filter(isEnglishVoice);
-  const selected = settings?.voiceId ? voices.find((voice) => voice.voiceURI === settings.voiceId) : undefined;
-  const voice = selected ?? [...voices].sort((a, b) => voiceScore(b, preference) - voiceScore(a, preference))[0];
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = voice?.lang || "en-US";
-  utterance.voice = voice ?? null;
-  utterance.rate = settings?.voiceRate === 0.9 ? 0.9 : 0.78;
-  utterance.pitch = preference === "female" ? 1.03 : 0.97;
-  utterance.volume = 1;
-  window.speechSynthesis.speak(utterance);
+  let hasSpoken = false;
+  const speak = () => {
+    if (hasSpoken || request !== speechRequest) return;
+    hasSpoken = true;
+    pendingVoiceCleanup?.();
+    pendingVoiceCleanup = undefined;
+    if (request !== speechRequest) return;
+    const voices = synth.getVoices().filter(isEnglishVoice);
+    const selected = settings?.voiceId ? voices.find((voice) => voice.voiceURI === settings.voiceId) : undefined;
+    const voice = selected ?? [...voices].sort((a, b) => voiceScore(b, preference) - voiceScore(a, preference) || a.name.localeCompare(b.name))[0];
+    const utterance = new SpeechSynthesisUtterance(text.trim());
+    utterance.lang = voice?.lang || "en-US";
+    utterance.voice = voice ?? null;
+    utterance.rate = settings?.voiceRate === 0.9 ? 0.9 : 0.78;
+    // Preserve the chosen voice's prosody instead of shifting pitch by gender.
+    utterance.pitch = 1;
+    utterance.volume = 1;
+    let attemptedFallback = false;
+    utterance.onerror = (event) => {
+      if (attemptedFallback || request !== speechRequest || !voice || !['voice-unavailable', 'language-unavailable', 'synthesis-failed'].includes(event.error)) return;
+      attemptedFallback = true;
+      const fallback = new SpeechSynthesisUtterance(text.trim());
+      fallback.lang = 'en-US';
+      fallback.rate = utterance.rate;
+      fallback.pitch = 1;
+      synth.speak(fallback);
+    };
+    synth.resume();
+    synth.speak(utterance);
+  };
+  if (synth.getVoices().some(isEnglishVoice)) {
+    speak();
+  } else {
+    // Some browsers populate the voice list after the first getVoices call.
+    // A bounded wait still allows the browser's English fallback to speak.
+    const onVoices = () => { if (synth.getVoices().some(isEnglishVoice)) speak(); };
+    const timer = window.setTimeout(speak, 300);
+    synth.addEventListener('voiceschanged', onVoices);
+    pendingVoiceCleanup = () => {
+      window.clearTimeout(timer);
+      synth.removeEventListener('voiceschanged', onVoices);
+    };
+  }
 }

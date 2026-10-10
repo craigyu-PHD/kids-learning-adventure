@@ -24,7 +24,7 @@ for (const historicalLayer of ['styles.css', 'v2.css', 'v22.css', 'v23.css', 'v3
   expect(!main.includes(historicalLayer), `main.tsx must not directly import ${historicalLayer}.`);
   expect(compatibility.includes(historicalLayer), `legacy-compat.css must explicitly own ${historicalLayer}.`);
 }
-for (const layer of ['tokens.css', 'reset.css', 'legacy-compat.css', 'layout.css', 'components/header.css', 'components/dashboard.css', 'components/report.css', 'components/review.css', 'components/speaking.css', 'components/parent.css', 'motion.css', 'accessibility.css', 'responsive.css']) {
+for (const layer of ['tokens.css', 'reset.css', 'legacy-compat.css', 'layout.css', 'components/header.css', 'components/navigation.css', 'components/dashboard.css', 'components/report.css', 'components/review.css', 'components/speaking.css', 'components/parent.css', 'motion.css', 'accessibility.css', 'responsive.css']) {
   expect(styles.includes(layer), `styles/index.css is missing ${layer}.`);
 }
 expect(!app.includes('V4Dashboard') && app.includes('AdventureDashboard'), 'App must use the semantic AdventureDashboard API.');
@@ -37,8 +37,12 @@ for (const selector of ['.v5-hero-bg', '.v5-hero-layers', '.v5-header-controls',
 expect(!parentSettings.includes('V4.0'), 'User-visible parent settings must use the current product version.');
 expect(Boolean(appVersionMatch?.[1]), 'APP_VERSION must exist in the single version source.');
 expect(packageJson.version === appVersionMatch?.[1], 'package version must match APP_VERSION.');
-expect(dashboard.includes("label: '首頁'") && dashboard.includes("label: '今日課程'"), 'V6 navigation must expose the separate Home and Today Course entries.');
-expect(text('src/v4/LessonQuest.tsx').includes('{ title: "家長備課", short: "Prepare"') && text('src/v4/LessonQuest.tsx').includes('家長備課與孩子正式課程十關'), 'V6 must place caregiver preparation at the front of the ten-stage quest.');
+const navigation = dashboard.slice(dashboard.indexOf('export function MainNavigation('), dashboard.indexOf('\nfunction PlayerProfile('));
+const navigationIds = [...navigation.matchAll(/id: '([^']+)'/g)].map(match => match[1]);
+expect(JSON.stringify(navigationIds) === JSON.stringify(['home', 'semester', 'achievements', 'shop', 'report', 'settings', 'parent-login']), 'Navigation must keep Home, Calendar, Achievements and Shop in order, followed by the authenticated parent entries or Parent Login.');
+expect(/parentPreviewUnlocked\s*\?\s*\[[\s\S]*id: 'report'[\s\S]*id: 'settings'[\s\S]*\]\s*:\s*\[\{ id: 'parent-login'/.test(navigation), 'Report and Family Management must appear only in the authenticated parent navigation.');
+expect(app.includes("((view === 'report' || view === 'settings') && !adminUnlocked)"), 'App must guard both parent-only destinations independently of navigation visibility.');
+expect(text('src/v4/LessonQuest.tsx').includes('{ title: "家長備課", short: "備課"') && text('src/v4/LessonQuest.tsx').includes('家長備課與孩子正式課程十關'), 'V6 must place caregiver preparation at the front of the ten-stage quest.');
 for (const rule of ['孩子未來日', '家長 PIN', '今天是唯一', 'append-only', 'assets/v5']) {
   expect(currentSpec.includes(rule), `CURRENT-SPEC.md is missing current rule: ${rule}`);
 }

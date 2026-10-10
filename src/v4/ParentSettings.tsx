@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import '../styles/components/parent.css';
+import { useEffect, useRef, useState } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
 import {
   ArrowLeft, BookOpen, CalendarDays, CheckCircle2, Cloud, CloudOff, Coins,
-  GraduationCap, KeyRound, LogOut, Map, Mic, Monitor, Moon, Plus, RefreshCw, ShieldCheck, Sun,
+  GraduationCap, KeyRound, LogOut, Map, Mic, Monitor, Moon, MousePointer2, Plus, RefreshCw, ShieldCheck, Sparkles, Sun,
   Trash2, Users, Zap,
 } from 'lucide-react';
 import AvatarHero, { avatarName, avatarOptions, normalizeAvatarId } from '../components/AvatarHero';
@@ -11,6 +12,7 @@ import { createUserPinCredential } from '../security';
 import { avatarStageFromXp, calculateRewards, levelFromXp, normalizeProgress } from '../rewards';
 import { visualThemeOptions } from '../uiData';
 import { taipeiYmd } from '../dailyChallenge';
+import { publishedSemesters, resolveSemester, selectSemester, setSelectedSemesterStart } from '../semesters';
 import { contentHealthManifest } from '../generated/contentHealthManifest';
 import { APP_VERSION } from '../generated/appVersion';
 import type {
@@ -18,7 +20,7 @@ import type {
   ReflectionMap, ThemeMode,
 } from '../types';
 import { CaregiverAvatar, hasUserPin, roleLabel, userRoleOptions } from './caregivers';
-import { availableEnglishVoices, speakEnglish, type EnglishVoiceOption } from './voice';
+import { availableEnglishVoices, cancelEnglishSpeech, speakEnglish, type EnglishVoiceOption } from './voice';
 
 export type V4CloudStatus = 'local' | 'loading' | 'saving' | 'synced' | 'error';
 
@@ -30,7 +32,9 @@ type Props = {
   reflections: ReflectionMap;
   setProgress: Dispatch<SetStateAction<AppProgress>>;
   setAttendance: Dispatch<SetStateAction<AttendanceMap>>;
-  setReflections: Dispatch<SetStateAction<ReflectionMap>>;
+  onResetProgress: (operationId: string) => Promise<void>;
+  progressResetId: string;
+  resetCompleted: boolean;
   familyId: string;
   cloudStatus: V4CloudStatus;
   cloudMessage: string;
@@ -47,13 +51,35 @@ function CloudPill({ status }: { status: V4CloudStatus }) {
   return <span className={`cloud-pill cloud-${status}`}>{status === 'local' || status === 'error' ? <CloudOff size={14} /> : <Cloud size={14} />}{label}</span>;
 }
 
-export default function ParentSettings({ settings, setSettings, progress, attendance, reflections, setProgress, setAttendance, setReflections, familyId, cloudStatus, cloudMessage, lastCloudSync, onSyncNow, onPullCloud, onSwitchFamily, onOpenFamily, goHome }: Props) {
+export default function ParentSettings({ settings, setSettings, progress, attendance, reflections, setProgress, setAttendance, onResetProgress, progressResetId, resetCompleted, familyId, cloudStatus, cloudMessage, lastCloudSync, onSyncNow, onPullCloud, onSwitchFamily, onOpenFamily, goHome }: Props) {
   const [confirmReset, setConfirmReset] = useState(false);
+  const [resetting, setResetting] = useState(false);
+  const [resetError, setResetError] = useState('');
+  const resetOperationId = useRef('');
   const [englishVoices, setEnglishVoices] = useState<EnglishVoiceOption[]>([]);
   const [userPinDrafts, setUserPinDrafts] = useState<Record<string, string>>({});
   const [userPinMessages, setUserPinMessages] = useState<Record<string, string>>({});
   const [nextFamilyPin, setNextFamilyPin] = useState('');
   const [pinSwitchError, setPinSwitchError] = useState('');
+  const [compactSettings, setCompactSettings] = useState(() => window.matchMedia('(max-width: 600px)').matches);
+  const desktopSettingsOpen = () => !window.matchMedia('(max-width: 600px)').matches;
+  const [advancedOpen, setAdvancedOpen] = useState(desktopSettingsOpen);
+  const [membersOpen, setMembersOpen] = useState(desktopSettingsOpen);
+  const [syncOpen, setSyncOpen] = useState(desktopSettingsOpen);
+  const [backupOpen, setBackupOpen] = useState(desktopSettingsOpen);
+  const [dangerOpen, setDangerOpen] = useState(desktopSettingsOpen);
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 600px)');
+    const sync = () => {
+      setCompactSettings(media.matches);
+      if (!media.matches) { setAdvancedOpen(true); setMembersOpen(true); setSyncOpen(true); setBackupOpen(true); setDangerOpen(true); }
+    };
+    sync(); media.addEventListener('change', sync);
+    return () => media.removeEventListener('change', sync);
+  }, []);
+
+  useEffect(() => () => cancelEnglishSpeech(), []);
 
   useEffect(() => {
     const refresh = () => setEnglishVoices(availableEnglishVoices());
@@ -107,7 +133,7 @@ export default function ParentSettings({ settings, setSettings, progress, attend
   };
 
   const exportData = () => {
-    const blob = new Blob([JSON.stringify({ version: 2, settings, progress, attendance, reflections }, null, 2)], { type: 'application/json' });
+    const blob = new Blob([JSON.stringify({ version: 2, ...(progressResetId ? { progressResetId } : {}), settings, progress, attendance, reflections }, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
@@ -115,9 +141,16 @@ export default function ParentSettings({ settings, setSettings, progress, attend
     anchor.click();
     URL.revokeObjectURL(url);
   };
-  const resetProgress = () => {
+  const resetProgress = async () => {
+    if (resetting) return;
     if (!confirmReset) { setConfirmReset(true); return; }
-    setProgress({}); setAttendance({}); setReflections({}); setConfirmReset(false);
+    resetOperationId.current ||= crypto.randomUUID();
+    setResetting(true); setResetError('');
+    try {
+      await onResetProgress(resetOperationId.current);
+      setConfirmReset(false); resetOperationId.current = '';
+    } catch (error) { setResetError(error instanceof Error ? error.message : '清除未完成，請重新同步後再試一次。'); }
+    finally { setResetting(false); }
   };
   const openAnotherFamily = async () => {
     const normalized = normalizeFamilyPin(nextFamilyPin);
@@ -138,15 +171,41 @@ export default function ParentSettings({ settings, setSettings, progress, attend
 
     <section className="settings-card"><div className="setting-label"><span className="setting-icon"><Sun size={20} /></span><div><h3>顯示模式</h3><p>明亮、夜間冒險或跟隨裝置系統。</p></div></div><div className="segmented-control">{(['system', 'light', 'dark'] as ThemeMode[]).map((mode) => <button key={mode} className={settings.theme === mode ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, theme: mode }))}>{mode === 'system' ? <Monitor size={17} /> : mode === 'light' ? <Sun size={17} /> : <Moon size={17} />}{mode === 'system' ? '隨系統' : mode === 'light' ? '明亮' : '夜間冒險'}</button>)}</div></section>
 
-    <section className="settings-card voice-settings-card"><div className="setting-label"><span className="setting-icon"><Mic size={20} /></span><div><h3>英文示範語音</h3><p>所有課程、題目與句型共用這裡的語音。先選聲線，再選孩子聽得舒服的速度。</p></div></div><div className="segmented-control voice-choice"><button className={settings.voicePreference !== 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'female', voiceId: undefined }))}>自然女聲</button><button className={settings.voicePreference === 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'male', voiceId: undefined }))}>自然男聲</button><button type="button" className="voice-preview-button" onClick={() => speakEnglish('Hello! Let us learn English together.', settings)}>試聽</button></div><div className="segmented-control voice-speed-choice"><button className={settings.voiceRate !== 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.78 }))}>慢速示範</button><button className={settings.voiceRate === 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.9 }))}>標準速度</button></div>{englishVoices.length > 0 ? <label className="voice-select-label">指定裝置語音<select value={settings.voiceId ?? ''} onChange={(event) => setSettings((current) => ({ ...current, voiceId: event.target.value || undefined }))}><option value="">自動挑選最自然的{settings.voicePreference === 'male' ? '男聲' : '女聲'}</option>{englishVoices.map((voice) => <option key={voice.id} value={voice.id}>{voice.label}</option>)}</select></label> : <p className="voice-device-note">正在讀取這台裝置的英文語音；若尚未安裝高品質英文語音，請先在系統的「輔助使用／朗讀內容」下載後重開此頁。</p>}</section>
+    <section className="settings-card vertical motion-settings-card" aria-label="互動效果設定">
+      <div className="setting-label"><span className="setting-icon"><Sparkles size={20} /></span><div><h3>互動效果</h3><p>游標特效與一般動態可以分開控制；關閉後仍保留完整按鈕、文字、鍵盤焦點與學習功能。</p></div></div>
+      <div className="motion-preference-grid">
+        <div><span><MousePointer2 size={18}/> 主題游標效果</span><div className="segmented-control"><button className={settings.cursorEffects !== false ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, cursorEffects: true }))}>開啟</button><button className={settings.cursorEffects === false ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, cursorEffects: false }))}>關閉</button></div></div>
+        <div><span><Sparkles size={18}/> 一般動態效果</span><div className="segmented-control"><button className={settings.motionEffects !== false ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, motionEffects: true }))}>開啟</button><button className={settings.motionEffects === false ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, motionEffects: false }))}>關閉</button></div></div>
+      </div>
+    </section>
 
+    <section className="settings-card voice-settings-card">
+      <div className="setting-label"><span className="setting-icon"><Mic size={20} /></span><div><h3>英文示範語音</h3><p>課程、題目與句型共用這裡的設定。課程音檔使用固定女聲；也可自行選擇裝置語音。</p></div></div>
+      <div className="segmented-control voice-choice">
+        <button className={settings.voiceSource !== 'device' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceSource: 'recorded' }))}>課程音檔</button>
+        <button className={settings.voiceSource === 'device' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceSource: 'device' }))}>裝置語音</button>
+        <button type="button" className="voice-preview-button" onClick={() => speakEnglish('Hello! Let us learn English together.', settings)}>試聽</button>
+      </div>
+      <div className="segmented-control voice-speed-choice"><button className={settings.voiceRate !== 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.78 }))}>慢速示範</button><button className={settings.voiceRate === 0.9 ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voiceRate: 0.9 }))}>一般語速</button></div>
+      {settings.voiceSource === 'device' ? <>
+        <div className="segmented-control voice-choice"><button className={settings.voicePreference !== 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'female', voiceId: undefined }))}>裝置女聲</button><button className={settings.voicePreference === 'male' ? 'active' : ''} onClick={() => setSettings((current) => ({ ...current, voicePreference: 'male', voiceId: undefined }))}>裝置男聲</button></div>
+        {englishVoices.length > 0 ? <label className="voice-select-label">指定裝置語音<select value={settings.voiceId ?? ''} onChange={(event) => setSettings((current) => ({ ...current, voiceId: event.target.value || undefined }))}><option value="">自動選擇{settings.voicePreference === 'male' ? '男聲' : '女聲'}</option>{englishVoices.map((voice) => <option key={voice.id} value={voice.id}>{voice.label}</option>)}</select></label> : <p className="voice-device-note">此裝置尚未提供可選聲線；播放時使用瀏覽器語音。</p>}
+      </> : <p className="voice-device-note">優先播放課程音檔；音檔無法播放時使用裝置語音備援。</p>}
+    </section>
+
+    <details className="v65-settings-group advanced" open={advancedOpen} onToggle={(event)=>setAdvancedOpen(event.currentTarget.open)}>
+      <summary><span>學期與冒險主題</span><small>{compactSettings?'點一下展開冒險主題與學期起始日':`冒險主題與 ${resolveSemester(settings).days.length} 天課程排程`}</small></summary>
     <section className="settings-card vertical theme-settings-card">
-      <div className="setting-label"><span className="setting-icon"><Map size={20} /></span><div><h3>Theme Skin</h3><p>五套原創 Skin 會同步調整 Header、卡片、按鈕與共享世界裝飾；教材、日期與安全規則保持一致。</p></div></div>
+      <div className="setting-label"><span className="setting-icon"><Map size={20} /></span><div><h3>冒險主題</h3><p>五套原創主題會同步調整 Header、卡片、按鈕與共享世界裝飾；教材、日期與安全規則保持一致。</p></div></div>
       <div className="visual-theme-grid">{visualThemeOptions.map((option) => <button key={option.id} className={`visual-theme-option ${settings.visualTheme === option.id ? 'active' : ''}`} onClick={() => setSettings((current) => ({ ...current, visualTheme: option.id }))}><img className="visual-theme-art" src={`${import.meta.env.BASE_URL}assets/v5/themes/${option.art}`} alt="" aria-hidden="true" /><div><strong>{option.title}</strong><small>{option.subtitle}</small></div>{settings.visualTheme === option.id && <CheckCircle2 size={18} />}</button>)}</div>
     </section>
 
-    <section className="settings-card"><div className="setting-label"><span className="setting-icon"><CalendarDays size={20} /></span><div><h3>學期起始日</h3><p>改日期後，90 個平日課程會自動重新排程，首頁月份日曆也一起更新。</p></div></div><input className="date-input" type="date" value={settings.semesterStart} onChange={(e) => setSettings((current) => ({ ...current, semesterStart: e.target.value }))} /></section>
+    <section className="settings-card"><div className="setting-label"><span className="setting-icon"><CalendarDays size={20} /></span><div><h3>目前學期</h3><p>只列出已開放的學期。切換學期會更新課表與報表，孩子的累積成長與收藏會保留。</p></div></div><select aria-label="目前學期" value={resolveSemester(settings).id} onChange={(event) => setSettings(current => selectSemester(current, event.target.value))}>{publishedSemesters.map(semester => <option key={semester.id} value={semester.id}>{semester.label}</option>)}</select></section>
+    <section className="settings-card"><div className="setting-label"><span className="setting-icon"><CalendarDays size={20} /></span><div><h3>學期起始日</h3><p>{resolveSemester(settings).label} · 改日期後，本學期 {resolveSemester(settings).days.length} 個課程日會重新排程，首頁與日曆同步更新。</p></div></div><input className="date-input" aria-label="學期起始日" type="date" value={resolveSemester(settings).startDate} onChange={(event) => setSettings(current => setSelectedSemesterStart(current, event.target.value))} /></section>
+    </details>
 
+    <details className="v65-settings-group members" open={membersOpen} onToggle={(event)=>setMembersOpen(event.currentTarget.open)}>
+      <summary><span>家庭成員</span><small>{compactSettings?'點一下管理家長帳號與學習者':'家長登入帳號與孩子學習者分開管理'}</small></summary>
     <section className="settings-card vertical user-admin-card">
       <div className="setting-label"><span className="setting-icon"><Users size={20} /></span><div><h3>家長／照顧者登入帳號</h3><p>這些是操作網站的大人帳號，頂部「切換使用者」只會列出這裡的人。爸爸、媽媽或其他照顧者可各自設定 4–6 位 PIN；學習 XP 不會記在大人帳號上。</p></div></div>
       <div className="caregiver-settings-list">{settings.users.map((user) => <div className={`child-setting-card caregiver-setting-card ${user.disabled ? 'is-disabled' : ''}`} key={user.id}>
@@ -160,13 +219,16 @@ export default function ParentSettings({ settings, setSettings, progress, attend
     <section className="settings-card vertical learner-admin-card">
       <div className="setting-label"><span className="setting-icon"><GraduationCap size={20} /></span><div><h3>小小探險隊學習者</h3><p>哥哥、弟弟等孩子只存在於學習者名單；每人分開計算出席、任務、XP、金幣與角色進化，不會出現在頂部登入帳號選單。</p></div></div>
       <div className="children-settings-list v2-children-settings">{settings.children.map((child) => { const rewards = calculateRewards(progress[child.id]); const stage = avatarStageFromXp(rewards.xp); return <div className={`child-setting-card ${child.disabled ? 'is-disabled' : ''}`} key={child.id}>
-        <div className="child-setting-head"><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={94} showStage equippedCosmetics={normalizeProgress(progress[child.id]).equippedCosmetics} /><div className="child-name-editor"><input value={child.name} onChange={(e) => updateChild(child.id, { name: e.target.value })} /><span>學習者 · {avatarName(child.avatar)} · Level {levelFromXp(rewards.xp)} · 進化 {stage}/4</span><div className="child-inline-stats"><span><Zap size={15} /> {rewards.xp} XP</span><span><Coins size={15} /> {rewards.coins}</span></div></div><button className="icon-button danger" onClick={() => removeChild(child.id)} disabled={settings.children.length <= 1} title="刪除學習者"><Trash2 size={17} /></button></div>
+        <div className="child-setting-head"><AvatarHero avatarId={child.avatar} xp={rewards.xp} size={94} equippedCosmetics={normalizeProgress(progress[child.id]).equippedCosmetics} /><div className="child-name-editor"><input value={child.name} onChange={(e) => updateChild(child.id, { name: e.target.value })} /><span>學習者 · {avatarName(child.avatar)} · Level {levelFromXp(rewards.xp)} · 進化 {stage}/4</span><div className="child-inline-stats"><span><Zap size={15} /> {rewards.xp} XP</span><span><Coins size={15} /> {rewards.coins}</span></div></div><button className="icon-button danger" onClick={() => removeChild(child.id)} disabled={settings.children.length <= 1} title="刪除學習者"><Trash2 size={17} /></button></div>
         <div className="user-admin-row"><label className="status-toggle"><input type="checkbox" checked={!child.disabled} onChange={(e) => updateChild(child.id, { disabled: !e.target.checked })} /><span>{child.disabled ? '暫停參與' : '參與學習'}</span></label></div>
         <div className="avatar-choice-grid">{avatarOptions.map((option) => <button key={option.id} className={normalizeAvatarId(child.avatar) === option.id ? 'active' : ''} onClick={() => updateChild(child.id, { avatar: option.id })}><AvatarHero avatarId={option.id} xp={rewards.xp} size={46} /><span>{option.short}</span></button>)}</div>
       </div>; })}</div>
       <button className="secondary-button add-child" onClick={addChild}><Plus size={18} /> 新增學習者</button>
     </section>
+    </details>
 
+    <details className="v65-settings-group sync" open={syncOpen} onToggle={(event)=>setSyncOpen(event.currentTarget.open)}>
+      <summary><span>家庭 PIN 與雲端同步</span><small>{compactSettings?'點一下查看同步狀態與家庭切換':'同步狀態、家庭 PIN 與內容健康度'}</small></summary>
     <section className="settings-card vertical cloud-settings-card pin-profile-card">
       <div className="setting-label"><span className="setting-icon"><KeyRound size={20} /></span><div><h3>家庭 PIN 與雲端同步</h3><p>目前登入的家庭資料會自動存到 Vercel 私有雲端；同一組 PIN 在其他裝置登入，就會讀取同一份進度。</p></div></div>
       <div className="cloud-active-panel">
@@ -174,16 +236,25 @@ export default function ParentSettings({ settings, setSettings, progress, attend
         <div className="family-pin-switcher"><div><strong>新增／切換家庭 PIN</strong><span>新 PIN 會建立新的家庭設定檔；已存在的 PIN 會載入原本那一家。</span></div><div className="family-pin-switch-row"><input type="password" inputMode="numeric" maxLength={6} value={nextFamilyPin} onChange={(e) => { setNextFamilyPin(normalizeFamilyPin(e.target.value)); setPinSwitchError(''); }} onKeyDown={(e) => { if (e.key === 'Enter') void openAnotherFamily(); }} placeholder="例如 0000" /><button className="secondary-button" disabled={!validFamilyPin(nextFamilyPin)} onClick={() => void openAnotherFamily()}><KeyRound size={17} /> 開啟家庭</button></div>{pinSwitchError && <div className="pin-error inline-pin-error">{pinSwitchError}</div>}</div>
         <div className={`cloud-status-box cloud-${cloudStatus}`}><CloudPill status={cloudStatus} /><p>{cloudMessage || '進度變更後會自動同步到這個家庭。'}</p>{lastCloudSync && <small>最近同步：{new Date(lastCloudSync).toLocaleString('zh-TW')}</small>}</div>
         <div className="cloud-actions"><button className="secondary-button" onClick={() => void onSyncNow()}><Cloud size={17} /> 立即儲存</button><button className="secondary-button" onClick={() => void onPullCloud()}><RefreshCw size={17} /> 重新讀取雲端</button><button className="secondary-button danger-outline" onClick={onSwitchFamily}><LogOut size={17} /> 切換家庭</button></div>
-        <p className="cloud-security-note">管理者 PIN 只在驗證瞬間送到安全 API，server 會換發有期限的 signed family session；瀏覽器只保存不可逆 familyId 與 session token，不保存明文 PIN。既有 V2.2 雲端 namespace 仍保持相容。</p>
+        <p className="cloud-security-note">管理者 PIN 僅用於登入驗證，不會以明文儲存在瀏覽器。登入狀態到期後需重新驗證；切換家庭時，各家的學習資料保持獨立。</p>
       </div>
     </section>
 
     <section className="settings-card vertical" aria-label="內容健康度">
-      <div className="setting-label"><span className="setting-icon"><CheckCircle2 size={20} /></span><div><h3>內容健康度</h3><p>由 build-time Gate 驗證的課程與 production 資產清單，不等同於即時網路檢查。</p></div></div>
+      <div className="setting-label"><span className="setting-icon"><CheckCircle2 size={20} /></span><div><h3>內容健康度</h3><p>目前課程與學習素材的整理摘要；影片播放仍受影片平台與網路狀況影響。</p></div></div>
       <div className="content-health-grid">{contentHealthManifest.items.map((item) => <article className={item.status} key={item.id}><span>{item.label}</span><strong>{item.actual} / {item.expected}</strong><small>{item.status === 'pass' ? '已通過' : '需要修正'}</small></article>)}</div>
-      <p className="content-health-note">最近驗證：{contentHealthManifest.checkedOn} · 發布前必須重新執行 `npm run qa:content-health` 與線上影片驗證。</p>
+      <p className="content-health-note">最近整理：{contentHealthManifest.checkedOn} · 同一支影片可用於不同的複習活動。</p>
     </section>
+    </details>
 
-    <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>資料備份與重設</h3><p>可另外匯出完整 V{APP_VERSION} JSON（保留 V1／V2／V2.1／V2.2／V3 相容欄位）。清除進度採兩次確認；若雲端同步開啟，清除後的新狀態也會同步到雲端。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button><button className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={resetProgress}>{confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div></section>
+    <details className="v65-settings-group backup" open={backupOpen} onToggle={(event)=>setBackupOpen(event.currentTarget.open)}>
+      <summary><span>資料備份</span><small>匯出完整學習紀錄，不會修改網站內資料</small></summary>
+      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><BookOpen size={20} /></span><div><h3>匯出學習紀錄</h3><p>可另外匯出完整 V{APP_VERSION} JSON（保留 V1／V2／V2.1／V2.2／V3 相容欄位），方便家長自行保存備份。</p></div></div><div className="data-actions"><button className="secondary-button" onClick={exportData}>匯出完整學習紀錄 JSON</button></div></section>
+    </details>
+
+    <details className="v65-settings-group danger" open={dangerOpen} onToggle={(event)=>setDangerOpen(event.currentTarget.open)}>
+      <summary><span>危險操作</span><small>清除所有學習進度需要再次確認</small></summary>
+      <section className="settings-card vertical"><div className="setting-label"><span className="setting-icon"><Trash2 size={20} /></span><div><h3>清除所有學習進度</h3><p>此操作不會刪除家庭成員與設定；必須連續確認，雲端確認成功後才更新本機。</p></div></div><div className="data-actions"><button type="button" disabled={resetting} aria-busy={resetting} className={`secondary-button danger-outline ${confirmReset ? 'confirming' : ''}`} onClick={() => void resetProgress()}>{resetting ? '正在清除進度…' : confirmReset ? '再按一次確認清除' : '清除所有學習進度'}</button></div>{resetError && <p className="pin-error" role="alert">{resetError}</p>}{resetCompleted && !resetError && <p role="status">上次清除已完成，家庭成員與設定已保留。</p>}</section>
+    </details>
   </div>;
 }

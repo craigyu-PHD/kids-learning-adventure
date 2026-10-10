@@ -53,22 +53,32 @@ export function assertBaseVersion(previous: unknown, baseUpdatedAt?: string | nu
 }
 
 export function assertImmutableEventsCompatible(previous: unknown, next: unknown) {
+  const previousReset = previous && typeof previous === 'object' ? (previous as Record<string, unknown>).progressResetId ?? '' : '';
+  const nextReset = next && typeof next === 'object' ? (next as Record<string, unknown>).progressResetId ?? '' : '';
+  if (typeof nextReset !== 'string' || nextReset !== previousReset) {
+    throw new SnapshotConflictError('Progress was reset; load the current family state before saving');
+  }
   const previousProgress = previous && typeof previous === 'object' && (previous as Record<string, unknown>).progress && typeof (previous as Record<string, unknown>).progress === 'object'
     ? (previous as Record<string, unknown>).progress as Record<string, unknown> : {};
   const nextProgress = next && typeof next === 'object' && (next as Record<string, unknown>).progress && typeof (next as Record<string, unknown>).progress === 'object'
     ? (next as Record<string, unknown>).progress as Record<string, unknown> : {};
-  for (const [childId, rawNextChild] of Object.entries(nextProgress)) {
-    if (!rawNextChild || typeof rawNextChild !== 'object') continue;
-    const rawPreviousChild = previousProgress[childId];
+  // Iterate the stored events, including learners/fields omitted by a client.
+  // An ordinary snapshot save is not an explicit progress deletion command.
+  for (const [childId, rawPreviousChild] of Object.entries(previousProgress)) {
     if (!rawPreviousChild || typeof rawPreviousChild !== 'object') continue;
+    const rawNextChild = nextProgress[childId];
+    const nextChild = rawNextChild && typeof rawNextChild === 'object' ? rawNextChild as Record<string, unknown> : {};
     for (const field of ['rewardTransactions', 'answerEvents', 'purchaseTransactions', 'equipmentTransactions'] as const) {
       const oldEvents = dedupeImmutableEvents((rawPreviousChild as Record<string, unknown>)[field], field) ?? [];
-      const nextEvents = dedupeImmutableEvents((rawNextChild as Record<string, unknown>)[field], field) ?? [];
-      const oldById = new Map(oldEvents.map((event) => [String(event.id), event]));
-      for (const event of nextEvents) {
-        const old = oldById.get(String(event.id));
-        if (old && stableEvent(old) !== stableEvent(event)) {
-          throw new SnapshotConflictError(`${field} event ${String(event.id)} is immutable`);
+      const nextEvents = dedupeImmutableEvents(nextChild[field], field) ?? [];
+      const nextById = new Map(nextEvents.map((event) => [String(event.id), event]));
+      for (const old of oldEvents) {
+        const nextEvent = nextById.get(String(old.id));
+        if (!nextEvent) {
+          throw new SnapshotConflictError(`${field} event ${String(old.id)} cannot be removed by a snapshot save`);
+        }
+        if (stableEvent(old) !== stableEvent(nextEvent)) {
+          throw new SnapshotConflictError(`${field} event ${String(old.id)} is immutable`);
         }
       }
     }

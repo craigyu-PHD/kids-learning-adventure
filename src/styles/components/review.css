@@ -11,5 +11,5 @@
 .daily-review-learner button { min-height: 44px; padding: 0 11px; color: #163A68; font-size: 14px; font-weight: 850; border: 1px solid #BBD9F2; border-radius: 12px; background: #fff; }
 .daily-review-learner button:disabled { color: #28724B; border-color: #9AD7B5; background: #F3FFF8; }
 .daily-review-learner small { color: #617794; font-size: 12px; font-weight: 750; }
-.adaptive-learning-hint { display: block; flex-basis: 100%; color: #3C6F9E !important; }
+.adaptive-learning-hint { display: block; flex-basis: 100%; color: var(--lesson-muted,#3C6F9E) !important; }
 @media (max-width: 700px) { .daily-review-panel article { grid-template-columns: 1fr; } }

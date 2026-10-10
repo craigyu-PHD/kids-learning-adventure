@@ -145,12 +145,12 @@ export type AvatarFineAccessorySlot = "hair" | "headwear" | "earwear" | "face" |
 /** Historical V6.1 grouped slots are accepted only when replaying old immutable events. */
 export type AvatarLegacyAccessorySlot = "head" | "back";
 export type AvatarAccessorySlot = AvatarFineAccessorySlot | AvatarLegacyAccessorySlot;
-export type AvatarWorldSlot = "spaceship" | "room" | "robot" | "card";
+export type AvatarWorldSlot = "spaceship" | "room" | "robot" | "card" | "pet";
 export type AvatarEquipmentSlot = "skin" | AvatarAccessorySlot | AvatarWorldSlot;
 export type AvatarVisualSlot = "skin" | AvatarFineAccessorySlot;
 export type ShopItemKind = "skin" | "accessory" | "world";
 export type ShopItemAvailability = "available" | "unavailable" | "incompatible";
-export type EquipmentPreviewMode = "avatar" | "ship" | "robot" | "card" | "effect" | "world";
+export type EquipmentPreviewMode = "avatar" | "ship" | "robot" | "card" | "effect" | "world" | "pet";
 
 export type ShopItem = {
   id: string;
@@ -242,16 +242,29 @@ export type CloudSyncSettings = {
   familyCode: string;
 };
 
+export type SemesterId = `g${1 | 2 | 3 | 4 | 5 | 6}-s${1 | 2}`;
+
 export type AppSettings = {
   theme: ThemeMode;
   visualTheme: AdventureTheme;
-  /** Preferred natural English narration voice. The browser chooses a matching installed voice. */
+  /** Recorded lesson audio is the default; device speech requires an explicit choice. */
+  voiceSource?: "recorded" | "device";
+  /** Preferred installed English voice when device speech is selected. */
   voicePreference?: "female" | "male";
   /** User-selected installed English voice URI; never a family credential. */
   voiceId?: string;
   /** Deliberately limited child-friendly narration speeds. */
   voiceRate?: 0.78 | 0.9;
+  /** V6.4 optional presentation preferences; missing legacy fields default to enabled. */
+  cursorEffects?: boolean;
+  motionEffects?: boolean;
+  /** V6.5 homepage presentation preference. Separate from caregiver identity and daily participants. */
+  homeDisplayLearnerId?: string;
+  /** Original g1-s1 start date; remains authoritative for legacy clients. */
   semesterStart: string;
+  /** Additive semester selection. Unpublished or unknown values safely resolve to g1-s1. */
+  selectedSemesterId?: SemesterId;
+  semesterStarts?: Partial<Record<SemesterId, string>>;
   /** Adult/caregiver login accounts such as 爸爸、媽媽. */
   users: FamilyUserProfile[];
   /** Learners such as 哥哥、弟弟. */
@@ -275,6 +288,8 @@ export type DayReflection = {
   dailyChallenge?: DailyChallengeSteps;
   /** V4.0 stores idempotent per-lesson stage checkpoints without altering curriculum content. */
   lessonStages?: Record<string, number[]>;
+  /** Optional daily selection; absent on old snapshots, so all enabled children remain included. */
+  excludedLearnerIds?: string[];
 };
 
 export type ReflectionMap = Record<string, DayReflection>;
@@ -283,6 +298,8 @@ export type AttendanceMap = Record<string, string[]>;
 export type CloudSnapshot = {
   version: 2;
   updatedAt: string;
+  /** Server-issued revision for an explicitly confirmed progress reset. */
+  progressResetId?: string;
   settings: AppSettings;
   progress: AppProgress;
   attendance: AttendanceMap;

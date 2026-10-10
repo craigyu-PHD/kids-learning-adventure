@@ -31,8 +31,17 @@ const observedSpeaking = spokenProfile.skills.find((skill) => skill.id === 'spea
 expect(observedSpeaking?.attempts === 1 && observedSpeaking.correct === 1 && observedSpeaking.score !== 100, 'speaking must use isolated real speech telemetry without false mastery.');
 const app = readFileSync(resolve(import.meta.dirname, '../src/App.tsx'), 'utf8');
 const quest = readFileSync(resolve(import.meta.dirname, '../src/v4/LessonQuest.tsx'), 'utf8');
+const recorder = readFileSync(resolve(import.meta.dirname, '../src/speech/recorder.ts'), 'utf8');
 expect(app.includes('stage === -1 ? `review:${block.id}` : stage === -2 ? `speaking:${block.id}` : block.id'), 'review and speaking must have isolated reward sources.');
 expect(quest.includes('<DailyReviewPanel') && quest.includes('onAnswer(childId, target, answer, correct, -1)'), 'daily review must record only isolated review telemetry.');
 expect(quest.includes('<SpeakingPractice') && /onAnswer\(\s*childId,\s*target,\s*transcript,\s*correct,\s*-2,\s*alternative\.confidence,?\s*\)/.test(quest), 'speaking must record only isolated speech telemetry.');
-expect(quest.includes('SpeechRecognition') && quest.includes('麥克風只會在你按下按鈕後啟用') && quest.includes('本站不保存聲音檔'), 'speaking practice must be user-initiated and must not claim to store raw audio.');
+expect(
+  quest.includes('SpeechRecognition')
+    && quest.includes('麥克風只會在你按下錄音或字詞辨識後啟用')
+    && quest.includes('錄音只暫存在這個頁面的記憶體，不會自動上傳或保存')
+    && quest.includes('離頁即釋放')
+    && quest.includes('不能用來判定發音是否標準'),
+  'speaking practice must be user-initiated, page-memory-only, and must not claim pronunciation assessment.',
+);
+expect(!recorder.includes('localStorage') && !recorder.includes('sessionStorage') && !recorder.includes('sendBeacon(') && !recorder.includes('fetch('), 'RecorderController must not persist or upload raw audio.');
 console.log('Learning analytics QA: PASS');

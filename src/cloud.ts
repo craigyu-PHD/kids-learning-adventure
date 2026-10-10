@@ -2,6 +2,13 @@ import type { CloudSnapshot } from './types';
 
 export const PRODUCTION_CLOUD_ORIGIN = 'https://kids-learning-adventure-chi.vercel.app';
 
+export class CloudConflictError extends Error {
+  constructor() {
+    super('雲端已有較新的家庭資料，已停止覆寫；請先重新載入最新進度。');
+    this.name = 'CloudConflictError';
+  }
+}
+
 export type FamilySession = {
   familyId: string;
   token: string;
@@ -83,7 +90,29 @@ export async function saveCloudSnapshot(session: FamilySession, snapshot: CloudS
     body: JSON.stringify(snapshot),
   });
   if (response.status === 401) throw new Error('家庭安全工作階段已失效，請重新輸入管理者 PIN');
-  if (response.status === 409) throw new Error('雲端已有較新的家庭資料，已停止覆寫；請先重新載入最新進度。');
+  if (response.status === 409) throw new CloudConflictError();
   if (!response.ok) throw new Error(`寫入家庭資料失敗（${response.status}）`);
   return parseJsonResponse(response) as Promise<{ ok: boolean; updatedAt: string }>;
+}
+
+/** Only the existing PIN-unlocked, double-confirmed parent action calls this. */
+export async function resetCloudProgress(session: FamilySession, operationId: string, baseUpdatedAt: string): Promise<CloudSnapshot> {
+  if (!validFamilySession(session)) throw new Error('家庭安全工作階段已失效，請重新輸入管理者 PIN');
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 15000);
+  try {
+    const response = await fetch(apiUrl('/api/state'), {
+      method: 'POST', signal: controller.signal,
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', Authorization: `Bearer ${session.token}`, 'X-Family-Base-Updated-At': baseUpdatedAt },
+      body: JSON.stringify({ operation: 'reset-progress', operationId }),
+    });
+    if (response.status === 409) throw new CloudConflictError();
+    if (!response.ok) throw new Error(`清除進度未完成（${response.status}）；原資料已保留。`);
+    const result = await parseJsonResponse(response) as { snapshot?: CloudSnapshot };
+    const snapshot = result.snapshot;
+    if (!snapshot || snapshot.version !== 2 || snapshot.progressResetId !== operationId
+      || !Number.isFinite(Date.parse(snapshot.updatedAt)) || !snapshot.settings || !snapshot.progress
+      || !snapshot.attendance || !snapshot.reflections) throw new Error('無法確認清除結果；請重新同步後再確認。');
+    return snapshot;
+  } finally { clearTimeout(timeout); }
 }

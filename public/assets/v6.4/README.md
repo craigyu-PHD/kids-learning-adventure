@@ -2,7 +2,8 @@
 
 This directory is reserved for V6.4 production art generated through the approved Image Generation pipeline.
 
-- `hero-composites/{avatar}/{item}.webp`: formal full-character Hero Composite.
+- `hero-composites-source/{avatar}/{item}.png`: authoritative full-character Hero Composite master used for Art Acceptance.
+- `hero-composites/{avatar}/{item}.webp`: optional web-delivery derivative generated only from an already accepted PNG master; it is a compression format, never an independent collage or redraw.
 - `world/{slot}/{item}.webp`: formal world-item hero art.
 - `lookbook/`: concept/reference images that may inform the Art Bible but MUST NOT be treated as learner identity masters.
 - Original learner identity masters remain `public/assets/v5/characters/{avatar}/wardrobe/base-body.png` / `.webp`.

@@ -21,7 +21,7 @@ export function legacySlotToEquipmentSlot(slot?: string): AvatarEquipmentSlot {
   if (slot === 'backpack') return 'backpack';
   if (slot === 'cape') return 'cape';
   if (slot === 'effect') return 'effect';
-  if (slot === 'spaceship' || slot === 'room' || slot === 'robot' || slot === 'card') return slot;
+  if (slot === 'spaceship' || slot === 'room' || slot === 'robot' || slot === 'card' || slot === 'pet') return slot;
   return 'hand';
 }
 
@@ -129,7 +129,7 @@ export function equippedAvatarFromProgress(progress?: Partial<ChildProgress> | n
     if (!equipped.has(tx.itemId) || tx.action !== 'equip') continue;
     const slot = effectiveEquipmentSlot(tx.slot, tx.itemId);
     if (slot === 'skin') skinId = tx.itemId;
-    else if (slot === 'spaceship' || slot === 'room' || slot === 'robot' || slot === 'card') world[slot] = tx.itemId;
+    else if (slot === 'spaceship' || slot === 'room' || slot === 'robot' || slot === 'card' || slot === 'pet') world[slot] = tx.itemId;
     else accessories[slot] = tx.itemId;
   }
   return { skinId, accessories, world };

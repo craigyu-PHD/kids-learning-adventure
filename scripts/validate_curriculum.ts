@@ -1,5 +1,7 @@
 import { curriculum } from "../src/data/curriculum";
 import { videos } from "../src/data/videos";
+import { videoReuseReview } from "../src/data/videoReuseReview";
+import { assertChildClip, validateVideoUsePolicy } from "./curriculum_video_policy";
 import type { VideoClip } from "../src/types";
 
 function assert(condition: unknown, message: string): asserts condition {
@@ -19,22 +21,6 @@ const videoMap = new Map(
   Object.values(videos).map((video) => [video.videoId, video]),
 );
 let alignedBlocks = 0;
-
-function canonicalContentTitle(title: string) {
-  const raw = title.replace(/[’]/g, "'").trim().toLowerCase();
-  let base = raw.split(" | ")[0].replace(/\s+/g, " ").trim();
-  if (base.startsWith("super simple abcs phonics song")) {
-    const review = raw.match(/review letters ([a-z]+ through [a-z]+)/)?.[1];
-    return review ? `super simple abcs phonics ${review}` : base;
-  }
-  base = base.replace(/\bfeaturing\b.*$/, "").trim();
-  base = base.replace(/\bwith puppets!?\b.*$/, "").trim();
-  base = base.replace(/#\s*\d+\b/g, "").trim();
-  base = base.replace(/[^a-z0-9\u4e00-\u9fff']+/g, " ");
-  base = base.replace(/\bspin around\b$/, "").trim();
-  base = base.replace(/\bshout hoo ray\b$/, "").trim();
-  return base.replace(/\s+/g, " ").trim();
-}
 
 assert(days.length === 90, `Expected 90 course days, got ${days.length}`);
 assert(
@@ -83,37 +69,15 @@ assert(
   new Set(missions.map((mission) => mission.prompt)).size === missions.length,
   "All 360 mission prompts must be unique",
 );
-assert(
-  new Set(warmupClips.map((clip) => clip.videoId)).size === 180,
-  "All 180 sing-and-move warmups must use unique YouTube IDs",
-);
-assert(
-  new Set(mainClips.map((clip) => clip.videoId)).size === 180,
-  "All 180 main lessons must use unique YouTube IDs",
-);
-assert(
-  new Set(allClips.map((clip) => clip.videoId)).size === 360,
-  "Warmups and main lessons must be fully disjoint: 360 unique YouTube IDs required",
-);
-assert(
-  new Set(allClips.map((clip) => clip.id)).size === 360,
-  "All 360 clip IDs must be unique",
-);
-assert(
-  new Set(warmupClips.map((clip) => canonicalContentTitle(clip.title))).size ===
-    180,
-  "All 180 warmups must use different song/content families, not just different YouTube IDs",
-);
-assert(
-  new Set(mainClips.map((clip) => canonicalContentTitle(clip.title))).size ===
-    180,
-  "All 180 main lessons must use different content families, not just different YouTube IDs",
-);
-assert(
-  new Set(allClips.map((clip) => canonicalContentTitle(clip.title))).size ===
-    360,
-  "Warmups and main lessons must be content-family disjoint across all 360 clips",
-);
+assert(missions.length === 360, `Expected 360 missions, got ${missions.length}`);
+assert(warmupClips.length === 180 && mainClips.length === 180 && allClips.length === 360,
+  "Expected 180 warmup + 180 main explicit assignments");
+assert(new Set(allClips.map(clip => clip.id)).size === 360,
+  "All 360 clip assignment IDs must remain unique even when a video is reused");
+const videoPolicy = validateVideoUsePolicy(blocks.flatMap(block => [
+  { key: `${block.id}:warmup`, clip: block.warmup },
+  { key: `${block.id}:main`, clip: block.video },
+]), videoReuseReview);
 
 for (const day of days) {
   assert(
@@ -164,10 +128,12 @@ for (const day of days) {
         Boolean(block.videoAnchor.caregiverMove.trim()),
       `${block.id}: video anchor must name this exact main video and a caregiver move`,
     );
+    // Legacy field name: teaching vocabulary may include caregiver extensions.
+    // Membership is not proof that these four words appear in the source video.
     assert(
       block.videoAnchor.verifiedWords.length >= 4 &&
         block.videoAnchor.verifiedWords.every((word) => block.vocabulary.includes(word)),
-      `${block.id}: video anchor words must be the actual lesson vocabulary`,
+      `${block.id}: teaching anchor words must belong to this lesson vocabulary (source occurrence is reviewed separately)`,
     );
     assert(
       block.requiredVideoTopics.length > 0,
@@ -175,7 +141,7 @@ for (const day of days) {
     );
     assert(
       block.video.topics.length > 0,
-      `${block.id}: main video has no audited topics`,
+      `${block.id}: main video has no declared topic metadata`,
     );
     for (const prompt of block.pausePrompts) {
       assert(
@@ -223,11 +189,11 @@ for (const day of days) {
 
     assert(
       block.warmup.topics.includes("warmup"),
-      `${block.id}: warmup must carry the warmup audit tag`,
+      `${block.id}: warmup must carry the warmup metadata tag`,
     );
     assert(
       block.warmup.topics.includes("singalong"),
-      `${block.id}: warmup must carry the singalong audit tag`,
+      `${block.id}: warmup must carry the singalong metadata tag`,
     );
 
     for (const clip of [block.warmup, block.video]) {
@@ -241,7 +207,7 @@ for (const day of days) {
       );
       assert(
         Array.isArray(clip.topics) && clip.topics.length > 0,
-        `${clip.id}: audited topic metadata missing`,
+        `${clip.id}: declared topic metadata missing`,
       );
       assert(
         typeof clip.sourceUrl === "string" && clip.sourceUrl.length > 0,
@@ -304,6 +270,7 @@ async function validateYouTubeOnline() {
         author_name?: string;
       };
 
+      assertChildClip(meta.title ?? "", videoId);
       const { response, text } = await fetchText(watchUrl);
       if (!response.ok) throw new Error(`watch HTTP ${response.status}`);
       const duration = Number(
@@ -353,15 +320,18 @@ console.log(
   `SUBJECTS      ${[...subjects.entries()].map(([key, value]) => `${key}:${value}`).join("  ")}`,
 );
 console.log(
-  `VIDEOS        ${new Set(allClips.map((clip) => clip.videoId)).size} unique YouTube IDs (180 warmups + 180 main, zero repeats)`,
+  `VIDEOS        ${videoPolicy.assignmentSlots} explicit assignments (180 warmups + 180 main); ${videoPolicy.uniqueVideoIds} unique YouTube IDs; ${videoPolicy.reusedVideos} reused videos`,
 );
 console.log(
-  `ALIGNMENT     ${alignedBlocks}/${blocks.length} main lesson videos match audited lesson-topic tags`,
+  `METADATA      ${alignedBlocks}/${blocks.length} main lessons match declared topic tags (not semantic review)`,
 );
+
+console.log(`REUSE EVIDENCE ${videoPolicy.reviewedReuseSlots} reused slots have matching lesson/role/video evidence; source/teaching meaning still requires per-slot review`);
+console.log("SEMANTICS     NOT CERTIFIED by structural, topic, evidence-presence or online checks");
 
 if (process.argv.includes("--online")) {
   const count = await validateYouTubeOnline();
   console.log(
-    `ONLINE OK     ${count}/${count} YouTube videos playable and embeddable`,
+    `ONLINE OK     ${count}/${count} unique YouTube IDs playable and embeddable across ${allClips.length} assignment slots (not semantic approval)`,
   );
 }
