@@ -1,0 +1,1037 @@
+{
+  "schema": 1,
+  "voice": "af_heart",
+  "model": "hexgrad/Kokoro-82M v1.0",
+  "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+  "corpusSha256": "4885c7090f46330e0851385691933c8344592d39e2669b2ac082603a6e5b2660",
+  "clips": {
+    "Hello! May I have a turn, please?": {
+      "slow": "86cb411152120c4b-af-heart-slow-780175617249.m4a",
+      "standard": "86cb411152120c4b-af-heart-standard-0e4e33510299.m4a"
+    },
+    "hello": {
+      "slow": "2cf24dba5fb0a30e-af-heart-slow-0a2a5f410c37.m4a",
+      "standard": "2cf24dba5fb0a30e-af-heart-standard-c035e038808d.m4a"
+    },
+    "please": {
+      "slow": "56ccc4dcfc96534b-af-heart-slow-1353ec7a4d60.m4a",
+      "standard": "56ccc4dcfc96534b-af-heart-standard-24664a717073.m4a"
+    },
+    "bye": {
+      "slow": "b49f425a7e1f9cff-af-heart-slow-1888fa37489d.m4a",
+      "standard": "b49f425a7e1f9cff-af-heart-standard-2d87b6826b54.m4a"
+    },
+    "thank you": {
+      "slow": "844347e54f00c4b9-af-heart-slow-078af707b687.m4a",
+      "standard": "844347e54f00c4b9-af-heart-standard-5c760daec77f.m4a"
+    },
+    "Hi! Come and play with me.": {
+      "slow": "12fe96123c1b0628-af-heart-slow-c7e93245aade.m4a",
+      "standard": "12fe96123c1b0628-af-heart-standard-74c4d086b803.m4a"
+    },
+    "hi": {
+      "slow": "8f434346648f6b96-af-heart-slow-4f9a71231d8a.m4a",
+      "standard": "8f434346648f6b96-af-heart-standard-98049db4bceb.m4a"
+    },
+    "My family can play with me.": {
+      "slow": "3c3b31e0b51c72a1-af-heart-slow-79e1bd797b31.m4a",
+      "standard": "3c3b31e0b51c72a1-af-heart-standard-d55dd3178255.m4a"
+    },
+    "brother": {
+      "slow": "0b4bd77cec705cf5-af-heart-slow-f51e17443a43.m4a",
+      "standard": "0b4bd77cec705cf5-af-heart-standard-c6d6e67865c1.m4a"
+    },
+    "family": {
+      "slow": "d34a569ab7aaa54d-af-heart-slow-ddcd1da0d8f6.m4a",
+      "standard": "d34a569ab7aaa54d-af-heart-standard-9a23d6745ae7.m4a"
+    },
+    "mom": {
+      "slow": "bcb9dae6ea88dbf2-af-heart-slow-6b8662bbea0b.m4a",
+      "standard": "bcb9dae6ea88dbf2-af-heart-standard-90e94a9ef1f3.m4a"
+    },
+    "dad": {
+      "slow": "6fe8ecbc1deafa51-af-heart-slow-a468aa3b8b11.m4a",
+      "standard": "6fe8ecbc1deafa51-af-heart-standard-9b4e84730a85.m4a"
+    },
+    "Bye! Thank you for playing with me.": {
+      "slow": "33f86dded83b20db-af-heart-slow-c767217835b2.m4a",
+      "standard": "33f86dded83b20db-af-heart-standard-c4128d19e717.m4a"
+    },
+    "My mom and dad are in my family.": {
+      "slow": "5b63babd79ec35de-af-heart-slow-cc76275d5b3d.m4a",
+      "standard": "5b63babd79ec35de-af-heart-standard-360f9c6d1f11.m4a"
+    },
+    "Thank you for the toy.": {
+      "slow": "2ca7948453a09931-af-heart-slow-5a001ae2c73c.m4a",
+      "standard": "2ca7948453a09931-af-heart-standard-0e893da160a0.m4a"
+    },
+    "Thank you for waiting. Bye!": {
+      "slow": "cf4d560049473a33-af-heart-slow-288e3aa65bb2.m4a",
+      "standard": "cf4d560049473a33-af-heart-standard-d731e57fce32.m4a"
+    },
+    "Where is it? It is here.": {
+      "slow": "f13bd7d3295c2ca5-af-heart-slow-de17b505c7ce.m4a",
+      "standard": "f13bd7d3295c2ca5-af-heart-standard-7046fe6e44aa.m4a"
+    },
+    "Where is it?": {
+      "slow": "26dc5e5265eddbbc-af-heart-slow-66d079e5df3c.m4a",
+      "standard": "26dc5e5265eddbbc-af-heart-standard-2f0957ae0c8b.m4a"
+    },
+    "yes": {
+      "slow": "8a798890fe938171-af-heart-slow-8de1a3756f9e.m4a",
+      "standard": "8a798890fe938171-af-heart-standard-7e0549440d20.m4a"
+    },
+    "no": {
+      "slow": "9390298f3fb0c5b1-af-heart-slow-24d28fc1601f.m4a",
+      "standard": "9390298f3fb0c5b1-af-heart-standard-be1ef828bba8.m4a"
+    },
+    "What is it?": {
+      "slow": "bbff7b98d6da7061-af-heart-slow-502f6de97540.m4a",
+      "standard": "bbff7b98d6da7061-af-heart-standard-33117629664a.m4a"
+    },
+    "Thank you for helping me today.": {
+      "slow": "2cd8b2f8debfdb78-af-heart-slow-9f4bf9f17d92.m4a",
+      "standard": "2cd8b2f8debfdb78-af-heart-standard-a0b6d668320d.m4a"
+    },
+    "Hello! We can share this toy.": {
+      "slow": "76e1164b8618fb42-af-heart-slow-138023a8d054.m4a",
+      "standard": "76e1164b8618fb42-af-heart-standard-f9b9fa3e11ab.m4a"
+    },
+    "This is my blue circle.": {
+      "slow": "0e2b5770333bde3e-af-heart-slow-80836d5cf9d8.m4a",
+      "standard": "0e2b5770333bde3e-af-heart-standard-d66d22629849.m4a"
+    },
+    "circle": {
+      "slow": "8a39178d327e72a9-af-heart-slow-7b0219905d6c.m4a",
+      "standard": "8a39178d327e72a9-af-heart-standard-472206a7ddb9.m4a"
+    },
+    "square": {
+      "slow": "4ba3e8e3765f2970-af-heart-slow-c4d2062b46d8.m4a",
+      "standard": "4ba3e8e3765f2970-af-heart-standard-47bcbfceb434.m4a"
+    },
+    "red": {
+      "slow": "b1f51a511f1da0cd-af-heart-slow-d878730016bd.m4a",
+      "standard": "b1f51a511f1da0cd-af-heart-standard-d328565574e3.m4a"
+    },
+    "green": {
+      "slow": "ba4788b226aa8dc2-af-heart-slow-91c224994134.m4a",
+      "standard": "ba4788b226aa8dc2-af-heart-standard-197536b2fdd2.m4a"
+    },
+    "blue": {
+      "slow": "16477688c0e00699-af-heart-slow-689156b60951.m4a",
+      "standard": "16477688c0e00699-af-heart-standard-963851665cdc.m4a"
+    },
+    "This circle belongs here.": {
+      "slow": "1a91aaec33c4d8c1-af-heart-slow-48d2aa0cf830.m4a",
+      "standard": "1a91aaec33c4d8c1-af-heart-standard-2eba8fcb8c3d.m4a"
+    },
+    "star": {
+      "slow": "525eca1d5089dbdc-af-heart-slow-b526a085d871.m4a",
+      "standard": "525eca1d5089dbdc-af-heart-standard-ce4db7f03a22.m4a"
+    },
+    "triangle": {
+      "slow": "0a3f13c673af2389-af-heart-slow-32b1f5375c59.m4a",
+      "standard": "0a3f13c673af2389-af-heart-standard-eb7408c9919f.m4a"
+    },
+    "I found something yellow.": {
+      "slow": "11808312b4fc3ba8-af-heart-slow-1d2df2f507ca.m4a",
+      "standard": "11808312b4fc3ba8-af-heart-standard-2d89bb82d786.m4a"
+    },
+    "yellow": {
+      "slow": "c685a2c9bab235cc-af-heart-slow-d11bbd31d4a7.m4a",
+      "standard": "c685a2c9bab235cc-af-heart-standard-e16f9371b0b4.m4a"
+    },
+    "What color is your star?": {
+      "slow": "dbbbb69c04a0b504-af-heart-slow-b020e9742318.m4a",
+      "standard": "dbbbb69c04a0b504-af-heart-standard-953a2b96ebec.m4a"
+    },
+    "I made green with blue and yellow.": {
+      "slow": "cbcac38c8874eb8f-af-heart-slow-e7fcea662ee3.m4a",
+      "standard": "cbcac38c8874eb8f-af-heart-standard-1ae3ec6356df.m4a"
+    },
+    "I can match this star.": {
+      "slow": "822516c3bd50978c-af-heart-slow-eb50e3759eac.m4a",
+      "standard": "822516c3bd50978c-af-heart-standard-a7d4a8c5040f.m4a"
+    },
+    "My leaf is red.": {
+      "slow": "45eb030d1cb3e7d4-af-heart-slow-07e1bade6efa.m4a",
+      "standard": "45eb030d1cb3e7d4-af-heart-standard-41c3a7aa7be7.m4a"
+    },
+    "This square has four sides.": {
+      "slow": "f65951bb113840df-af-heart-slow-bb235971134d.m4a",
+      "standard": "f65951bb113840df-af-heart-standard-5c984e455685.m4a"
+    },
+    "This rainbow has a yellow stripe.": {
+      "slow": "7f783956dec19b03-af-heart-slow-e8bc0cf4e9e3.m4a",
+      "standard": "7f783956dec19b03-af-heart-standard-59678ab603f7.m4a"
+    },
+    "Green is my favorite color.": {
+      "slow": "dc43f73869e7b295-af-heart-slow-63f1cc65f478.m4a",
+      "standard": "dc43f73869e7b295-af-heart-standard-5604c88310f2.m4a"
+    },
+    "My head is above my shoulders.": {
+      "slow": "6efffdbc6b59c8af-af-heart-slow-862d09983135.m4a",
+      "standard": "6efffdbc6b59c8af-af-heart-standard-72ea440e4415.m4a"
+    },
+    "head": {
+      "slow": "9f2e6d33a3717ee8-af-heart-slow-532022087a95.m4a",
+      "standard": "9f2e6d33a3717ee8-af-heart-standard-8e918fa29063.m4a"
+    },
+    "shoulders": {
+      "slow": "8293bf8fdcb04a38-af-heart-slow-dbaa31768a6f.m4a",
+      "standard": "8293bf8fdcb04a38-af-heart-standard-c486834c4d21.m4a"
+    },
+    "knees": {
+      "slow": "5240d1bda203e433-af-heart-slow-6486d5aa2b84.m4a",
+      "standard": "5240d1bda203e433-af-heart-standard-8d943b754025.m4a"
+    },
+    "toes": {
+      "slow": "bfb299e96fd90505-af-heart-slow-9d2ed02d6501.m4a",
+      "standard": "bfb299e96fd90505-af-heart-standard-26b4536dc4aa.m4a"
+    },
+    "I stop when I hear stop.": {
+      "slow": "7f18faf1051df7f0-af-heart-slow-5bc356304c31.m4a",
+      "standard": "7f18faf1051df7f0-af-heart-standard-e160ec664168.m4a"
+    },
+    "turn": {
+      "slow": "9b473845f684444f-af-heart-slow-037578a7a029.m4a",
+      "standard": "9b473845f684444f-af-heart-standard-7eafacd76930.m4a"
+    },
+    "go": {
+      "slow": "4cd0e21a9a0795a1-af-heart-slow-34e3d9a2a414.m4a",
+      "standard": "4cd0e21a9a0795a1-af-heart-standard-9069e0802b40.m4a"
+    },
+    "stop": {
+      "slow": "6c45cb72a36e63d5-af-heart-slow-23b2961f26b8.m4a",
+      "standard": "6c45cb72a36e63d5-af-heart-standard-0c90ff9ed727.m4a"
+    },
+    "jump": {
+      "slow": "6bdaf554e42029bd-af-heart-slow-1b7aaea62730.m4a",
+      "standard": "6bdaf554e42029bd-af-heart-standard-3070db5fc040.m4a"
+    },
+    "My knees can bend.": {
+      "slow": "ffdbdd92a346f7a2-af-heart-slow-1b640aee6a82.m4a",
+      "standard": "ffdbdd92a346f7a2-af-heart-standard-f136c9dcf8d0.m4a"
+    },
+    "I jump once, then stop.": {
+      "slow": "fef349da4695b3e5-af-heart-slow-0eadfe48c61f.m4a",
+      "standard": "fef349da4695b3e5-af-heart-standard-12d489bf9f4d.m4a"
+    },
+    "I can point to my head.": {
+      "slow": "3a2c5fa099fdd00d-af-heart-slow-c3f36e09382c.m4a",
+      "standard": "3a2c5fa099fdd00d-af-heart-standard-96482f13d161.m4a"
+    },
+    "I can turn and then stop.": {
+      "slow": "ed716b0714821f21-af-heart-slow-9b1f85111660.m4a",
+      "standard": "ed716b0714821f21-af-heart-standard-1b56e805e4c1.m4a"
+    },
+    "Show me knees, then point to toes.": {
+      "slow": "9718d90292fddf5d-af-heart-slow-fa67c4ba6139.m4a",
+      "standard": "9718d90292fddf5d-af-heart-standard-614c78a0c15a.m4a"
+    },
+    "I stop and point to my knees.": {
+      "slow": "bf0455376fabfdf3-af-heart-slow-b3f9592a89e2.m4a",
+      "standard": "bf0455376fabfdf3-af-heart-standard-c32d140a13eb.m4a"
+    },
+    "These are my shoulders.": {
+      "slow": "1273e58cba427b10-af-heart-slow-4b5e72846dd1.m4a",
+      "standard": "1273e58cba427b10-af-heart-standard-260bf4bf2f1e.m4a"
+    },
+    "First turn, next go, and finally stop.": {
+      "slow": "0229f77c530b43cd-af-heart-slow-fc071fc52017.m4a",
+      "standard": "0229f77c530b43cd-af-heart-standard-a805a2a1bd78.m4a"
+    },
+    "I feel tired. I need a rest.": {
+      "slow": "4af2a35841f3f4f9-af-heart-slow-a2c31ab79433.m4a",
+      "standard": "4af2a35841f3f4f9-af-heart-standard-06ba0e6f8ba3.m4a"
+    },
+    "angry": {
+      "slow": "0a96f1960786d85f-af-heart-slow-db128c5be6ea.m4a",
+      "standard": "0a96f1960786d85f-af-heart-standard-b2b960d9c86f.m4a"
+    },
+    "tired": {
+      "slow": "c405760daf9bc32b-af-heart-slow-be83fa91d794.m4a",
+      "standard": "c405760daf9bc32b-af-heart-standard-a7c9de2de89b.m4a"
+    },
+    "happy": {
+      "slow": "489f719cadf91909-af-heart-slow-716eb1df383d.m4a",
+      "standard": "489f719cadf91909-af-heart-standard-fbe3c1979a37.m4a"
+    },
+    "sad": {
+      "slow": "45c9a6614fccd4f9-af-heart-slow-1654a3759d84.m4a",
+      "standard": "45c9a6614fccd4f9-af-heart-standard-ec6ba7d1dae4.m4a"
+    },
+    "My family listens to me.": {
+      "slow": "228bb50efce148f8-af-heart-slow-086acd641d4d.m4a",
+      "standard": "228bb50efce148f8-af-heart-standard-f3ebef5a0e67.m4a"
+    },
+    "I feel happy at the party.": {
+      "slow": "1d00135b25b77215-af-heart-slow-6d40b47d2361.m4a",
+      "standard": "1d00135b25b77215-af-heart-standard-9b35a841f81f.m4a"
+    },
+    "I feel sad. Can you listen?": {
+      "slow": "3383175abbd8305f-af-heart-slow-01c48f5e51ab.m4a",
+      "standard": "3383175abbd8305f-af-heart-standard-628ca1672e62.m4a"
+    },
+    "My family is special to me.": {
+      "slow": "a69bf8e747b1bf2a-af-heart-slow-b7321f7ed447.m4a",
+      "standard": "a69bf8e747b1bf2a-af-heart-standard-194fa88556dc.m4a"
+    },
+    "Two people feel happy.": {
+      "slow": "5d7f10f5ecfed9ea-af-heart-slow-e403feeef638.m4a",
+      "standard": "5d7f10f5ecfed9ea-af-heart-standard-13f8ddd1a787.m4a"
+    },
+    "I feel angry. I need a moment.": {
+      "slow": "6f333480a321a9ba-af-heart-slow-8872edaee9cf.m4a",
+      "standard": "6f333480a321a9ba-af-heart-standard-09f058412d49.m4a"
+    },
+    "I am part of my family.": {
+      "slow": "3cd1ccf02a75e54f-af-heart-slow-97f6b5d35c3d.m4a",
+      "standard": "3cd1ccf02a75e54f-af-heart-standard-fdfbe3023eb0.m4a"
+    },
+    "I feel happy when we play together.": {
+      "slow": "e571221949d932c4-af-heart-slow-3e3d54e5bfd7.m4a",
+      "standard": "e571221949d932c4-af-heart-standard-b0b80124b4ee.m4a"
+    },
+    "Thank you for listening to me.": {
+      "slow": "09346d35771deb0a-af-heart-slow-6a8a9b1b0999.m4a",
+      "standard": "09346d35771deb0a-af-heart-standard-4478ac1ccbb4.m4a"
+    },
+    "I see three cats.": {
+      "slow": "652032125ab3a98c-af-heart-slow-e2b3bdbd59a0.m4a",
+      "standard": "652032125ab3a98c-af-heart-standard-d887a8cf1769.m4a"
+    },
+    "cat": {
+      "slow": "77af778b51abd4a3-af-heart-slow-06c901450d38.m4a",
+      "standard": "77af778b51abd4a3-af-heart-standard-4d98931a45b0.m4a"
+    },
+    "dog": {
+      "slow": "cd6357efdd966de8-af-heart-slow-9efad8329915.m4a",
+      "standard": "cd6357efdd966de8-af-heart-standard-847accb3b18b.m4a"
+    },
+    "bird": {
+      "slow": "7a5179eecc0fe187-af-heart-slow-6122251eef04.m4a",
+      "standard": "7a5179eecc0fe187-af-heart-standard-db65f0f7d708.m4a"
+    },
+    "fish": {
+      "slow": "b474a99a2705e23c-af-heart-slow-598396508469.m4a",
+      "standard": "b474a99a2705e23c-af-heart-standard-257736e79cbc.m4a"
+    },
+    "I see a fish in the water.": {
+      "slow": "5f5cbabee6279a6c-af-heart-slow-d772d10912d6.m4a",
+      "standard": "5f5cbabee6279a6c-af-heart-standard-a688a3323423.m4a"
+    },
+    "Where is it? It is under the cloth.": {
+      "slow": "59928206edeeab03-af-heart-slow-d1d7cbad4e0b.m4a",
+      "standard": "59928206edeeab03-af-heart-standard-2d4f533a29a2.m4a"
+    },
+    "I see three animals on the bus.": {
+      "slow": "3830a7954d8f9fec-af-heart-slow-794c0a13cbdb.m4a",
+      "standard": "3830a7954d8f9fec-af-heart-standard-609807d757b7.m4a"
+    },
+    "A cat and a dog have four legs.": {
+      "slow": "6cc68160d87c1442-af-heart-slow-fdaaa837a7bc.m4a",
+      "standard": "6cc68160d87c1442-af-heart-standard-6bcdbf08c682.m4a"
+    },
+    "I hear a dog. I see a fish swimming.": {
+      "slow": "43e738cd9ed1f536-af-heart-slow-b3e860104533.m4a",
+      "standard": "43e738cd9ed1f536-af-heart-standard-8378bc771163.m4a"
+    },
+    "Where is it? Look behind the box.": {
+      "slow": "e58213cb908af3a0-af-heart-slow-3f73a9296476.m4a",
+      "standard": "e58213cb908af3a0-af-heart-standard-7fcf3836838e.m4a"
+    },
+    "Is it a cat? Yes, it is.": {
+      "slow": "e47bc261b6a010ca-af-heart-slow-060c6b75141c.m4a",
+      "standard": "e47bc261b6a010ca-af-heart-standard-c3a09f6b0dfd.m4a"
+    },
+    "I have a pet. It is a cat.": {
+      "slow": "296b807d044de6dd-af-heart-slow-bba1c63c62b3.m4a",
+      "standard": "296b807d044de6dd-af-heart-standard-a55530bde72b.m4a"
+    },
+    "A dog can walk, and a fish can swim.": {
+      "slow": "d984890d2d62ef97-af-heart-slow-a80719410cbd.m4a",
+      "standard": "d984890d2d62ef97-af-heart-standard-b4a9d1a3bde6.m4a"
+    },
+    "I can count four blocks.": {
+      "slow": "aae5793c76314ab5-af-heart-slow-2c1af5117b34.m4a",
+      "standard": "aae5793c76314ab5-af-heart-standard-70fe044eaa23.m4a"
+    },
+    "three": {
+      "slow": "8b5b9db0c13db242-af-heart-slow-ac1f3e50969e.m4a",
+      "standard": "8b5b9db0c13db242-af-heart-standard-1cef4e516b6e.m4a"
+    },
+    "four": {
+      "slow": "04efaf080f5a3e74-af-heart-slow-1185942fee49.m4a",
+      "standard": "04efaf080f5a3e74-af-heart-standard-6513cfe01a3e.m4a"
+    },
+    "one": {
+      "slow": "7692c3ad3540bb80-af-heart-slow-7cc8a6c419d7.m4a",
+      "standard": "7692c3ad3540bb80-af-heart-standard-f5247a5af30f.m4a"
+    },
+    "two": {
+      "slow": "3fc4ccfe745870e2-af-heart-slow-3a24c5c3f005.m4a",
+      "standard": "3fc4ccfe745870e2-af-heart-standard-9c6ec393d8e4.m4a"
+    },
+    "Four blocks and one block make five.": {
+      "slow": "184f54c54d7fd4c7-af-heart-slow-59f4f244762f.m4a",
+      "standard": "184f54c54d7fd4c7-af-heart-standard-702a16787e82.m4a"
+    },
+    "I can take three steps.": {
+      "slow": "0bbcec063d033238-af-heart-slow-8f85105b3167.m4a",
+      "standard": "0bbcec063d033238-af-heart-standard-4ddb06d8da5b.m4a"
+    },
+    "Clap twice, then tap three times.": {
+      "slow": "681ff6dc74b64ec3-af-heart-slow-aa51945304fd.m4a",
+      "standard": "681ff6dc74b64ec3-af-heart-standard-e592254949f8.m4a"
+    },
+    "Three dogs are still here.": {
+      "slow": "f6c70df1dab0f72d-af-heart-slow-e45329ac2583.m4a",
+      "standard": "f6c70df1dab0f72d-af-heart-standard-46b535c97553.m4a"
+    },
+    "One bear and two bears make three.": {
+      "slow": "fdd3c384a18c8268-af-heart-slow-8e0fc6c95f93.m4a",
+      "standard": "fdd3c384a18c8268-af-heart-standard-8abdaaca2ecf.m4a"
+    },
+    "How many ducks came back?": {
+      "slow": "07631ce9c783f76a-af-heart-slow-16fb152ec1b1.m4a",
+      "standard": "07631ce9c783f76a-af-heart-standard-814304fcc5fe.m4a"
+    },
+    "Please give me three cups.": {
+      "slow": "f4126cb646fdd78e-af-heart-slow-93aa830db436.m4a",
+      "standard": "f4126cb646fdd78e-af-heart-standard-c62f850657dc.m4a"
+    },
+    "I can count and stop at four.": {
+      "slow": "9cc41915d7fdaf83-af-heart-slow-f804b5bb678d.m4a",
+      "standard": "9cc41915d7fdaf83-af-heart-standard-6c3542d28e2f.m4a"
+    },
+    "We have four toys altogether.": {
+      "slow": "34958c1fea706020-af-heart-slow-30eac6cabc4b.m4a",
+      "standard": "34958c1fea706020-af-heart-standard-fcd585717631.m4a"
+    },
+    "Do you like apples?": {
+      "slow": "263c4bc52a5f5340-af-heart-slow-2b44f2ed2e5c.m4a",
+      "standard": "263c4bc52a5f5340-af-heart-standard-ae4634993306.m4a"
+    },
+    "apple": {
+      "slow": "3a7bd3e2360a3d29-af-heart-slow-49241bd7bd52.m4a",
+      "standard": "3a7bd3e2360a3d29-af-heart-standard-7ae0fff70f49.m4a"
+    },
+    "banana": {
+      "slow": "b493d48364afe44d-af-heart-slow-e0a49288ff0c.m4a",
+      "standard": "b493d48364afe44d-af-heart-standard-986bf7c2c1f4.m4a"
+    },
+    "pizza": {
+      "slow": "9ed1515819dec61f-af-heart-slow-dc671c12d0ec.m4a",
+      "standard": "9ed1515819dec61f-af-heart-standard-798aa09dbdaf.m4a"
+    },
+    "water": {
+      "slow": "0f4168490e38b844-af-heart-slow-aa26c9e26658.m4a",
+      "standard": "0f4168490e38b844-af-heart-standard-d94b11525415.m4a"
+    },
+    "I like bananas and drink water.": {
+      "slow": "cdb700373d13ed61-af-heart-slow-8db42b2da2b2.m4a",
+      "standard": "cdb700373d13ed61-af-heart-standard-5aaa6e8a0963.m4a"
+    },
+    "Do you like pizza?": {
+      "slow": "89d1a0ac1a00e56d-af-heart-slow-c10fb54157de.m4a",
+      "standard": "89d1a0ac1a00e56d-af-heart-standard-103fad9853ce.m4a"
+    },
+    "I have two apples and one banana.": {
+      "slow": "3a67f5a1bcd471be-af-heart-slow-c7be0f43e762.m4a",
+      "standard": "3a67f5a1bcd471be-af-heart-standard-e820ec59b945.m4a"
+    },
+    "Apples and bananas are fruit.": {
+      "slow": "5e2083c7a4aef94b-af-heart-slow-cc4910e91c6a.m4a",
+      "standard": "5e2083c7a4aef94b-af-heart-standard-a454fd7abed4.m4a"
+    },
+    "We can clap two, three, or four times.": {
+      "slow": "948a870f44cf42bc-af-heart-slow-12a940e181db.m4a",
+      "standard": "948a870f44cf42bc-af-heart-standard-5a10ca97ac3a.m4a"
+    },
+    "May I have some water, please?": {
+      "slow": "2108f1997155aeea-af-heart-slow-953fb163d76d.m4a",
+      "standard": "2108f1997155aeea-af-heart-standard-ffdfb0bb9878.m4a"
+    },
+    "Would you like a banana?": {
+      "slow": "d88403c56f4ca723-af-heart-slow-871a13a08273.m4a",
+      "standard": "d88403c56f4ca723-af-heart-standard-c99e8b8cc319.m4a"
+    },
+    "I like apples, but I do not like bananas.": {
+      "slow": "d12a5cee72d005d2-af-heart-slow-c2092f8abcfb.m4a",
+      "standard": "d12a5cee72d005d2-af-heart-standard-c56bdb37e2fd.m4a"
+    },
+    "A banana and some water, please.": {
+      "slow": "e2eadd40afc3128c-af-heart-slow-c585e5930942.m4a",
+      "standard": "e2eadd40afc3128c-af-heart-standard-6dc0e097164e.m4a"
+    },
+    "It is cloudy, but I feel hot.": {
+      "slow": "a03fc7125204e914-af-heart-slow-95f500539f30.m4a",
+      "standard": "a03fc7125204e914-af-heart-standard-3dd78803c9bb.m4a"
+    },
+    "cloudy": {
+      "slow": "5e9562c786d9ca04-af-heart-slow-ed951747b4c9.m4a",
+      "standard": "5e9562c786d9ca04-af-heart-standard-3d0d7909f004.m4a"
+    },
+    "hot": {
+      "slow": "7f5d1618e7d28cc7-af-heart-slow-f572e5768817.m4a",
+      "standard": "7f5d1618e7d28cc7-af-heart-standard-6d12c762a9d5.m4a"
+    },
+    "sunny": {
+      "slow": "c2333a7e3a607935-af-heart-slow-bc187e49969c.m4a",
+      "standard": "c2333a7e3a607935-af-heart-standard-dd18ed531ae6.m4a"
+    },
+    "rainy": {
+      "slow": "7b9e10dfed0288d6-af-heart-slow-da15513eab06.m4a",
+      "standard": "7b9e10dfed0288d6-af-heart-standard-aa9ef7e00ba6.m4a"
+    },
+    "I choose a jacket when I feel cold.": {
+      "slow": "2d1c098c85959b8c-af-heart-slow-c7979e0526fc.m4a",
+      "standard": "2d1c098c85959b8c-af-heart-standard-5808e41d23e1.m4a"
+    },
+    "jacket": {
+      "slow": "554f4d3dafc80844-af-heart-slow-83247797226c.m4a",
+      "standard": "554f4d3dafc80844-af-heart-standard-2b950d2b5926.m4a"
+    },
+    "hat": {
+      "slow": "18e1dd392168f601-af-heart-slow-71195d1595db.m4a",
+      "standard": "18e1dd392168f601-af-heart-standard-91107f90da71.m4a"
+    },
+    "shirt": {
+      "slow": "a52514252adf8606-af-heart-slow-09bf9bca4db9.m4a",
+      "standard": "a52514252adf8606-af-heart-standard-654ef71697b0.m4a"
+    },
+    "shoes": {
+      "slow": "01ea5ddd3be5477a-af-heart-slow-fcadfbea9627.m4a",
+      "standard": "01ea5ddd3be5477a-af-heart-standard-8b410d528f57.m4a"
+    },
+    "One clap, two taps, three steps.": {
+      "slow": "c6e56444c08c643c-af-heart-slow-bd5f23cda3ca.m4a",
+      "standard": "c6e56444c08c643c-af-heart-standard-ac6321a66cd8.m4a"
+    },
+    "On a rainy day, I put on my raincoat last.": {
+      "slow": "395bd92e6e4ab7d8-af-heart-slow-0f75194576ac.m4a",
+      "standard": "395bd92e6e4ab7d8-af-heart-standard-faa7f592bda3.m4a"
+    },
+    "My shoes go on my feet.": {
+      "slow": "b11c51c2bedecec9-af-heart-slow-cc1c95bc88d4.m4a",
+      "standard": "b11c51c2bedecec9-af-heart-standard-c6799fdea3e6.m4a"
+    },
+    "We counted three sunny days.": {
+      "slow": "bbd90a5dcb96f483-af-heart-slow-65a1d1523115.m4a",
+      "standard": "bbd90a5dcb96f483-af-heart-standard-bf0d5b0edf87.m4a"
+    },
+    "Can you find your hat and shoes?": {
+      "slow": "ac248b24c5c6bf70-af-heart-slow-30133d60d62d.m4a",
+      "standard": "ac248b24c5c6bf70-af-heart-standard-e4781256df81.m4a"
+    },
+    "We have two sunny days and three rainy days.": {
+      "slow": "29b9ed6089755dd0-af-heart-slow-46879618c1e2.m4a",
+      "standard": "29b9ed6089755dd0-af-heart-standard-281fabfe0eba.m4a"
+    },
+    "I like sunny days, even when it is not hot.": {
+      "slow": "9992a59f13a6cec2-af-heart-slow-21dda51ff0f8.m4a",
+      "standard": "9992a59f13a6cec2-af-heart-standard-c10769b61a01.m4a"
+    },
+    "I pack my shirt, jacket, and hat for the trip.": {
+      "slow": "b1bc3d3a9b0e0a69-af-heart-slow-8e9aef53017a.m4a",
+      "standard": "b1bc3d3a9b0e0a69-af-heart-standard-081a7b508912.m4a"
+    },
+    "My bed is where I rest at home.": {
+      "slow": "af7b1ec761e1a40e-af-heart-slow-dc2a87a63b66.m4a",
+      "standard": "af7b1ec761e1a40e-af-heart-standard-448c698e942c.m4a"
+    },
+    "home": {
+      "slow": "4ea140588150773c-af-heart-slow-3644a53e80f0.m4a",
+      "standard": "4ea140588150773c-af-heart-standard-878ab6053133.m4a"
+    },
+    "bed": {
+      "slow": "c5052532c2206140-af-heart-slow-7b9453aa77bc.m4a",
+      "standard": "c5052532c2206140-af-heart-standard-5d25208ee27e.m4a"
+    },
+    "table": {
+      "slow": "0d4fc4a78d3706ed-af-heart-slow-b3cfbea9e0a0.m4a",
+      "standard": "0d4fc4a78d3706ed-af-heart-standard-9ca45a92638b.m4a"
+    },
+    "chair": {
+      "slow": "3d7eb3d3dab17ee5-af-heart-slow-e65409b8940f.m4a",
+      "standard": "3d7eb3d3dab17ee5-af-heart-standard-279d9835abc1.m4a"
+    },
+    "We put our toys away before bedtime.": {
+      "slow": "191eab674f382fda-af-heart-slow-bb29381e5b4e.m4a",
+      "standard": "191eab674f382fda-af-heart-standard-8b46e1afa646.m4a"
+    },
+    "There is a table and a chair in my home.": {
+      "slow": "b7cd6e1a3f872660-af-heart-slow-fe7676120a6c.m4a",
+      "standard": "b7cd6e1a3f872660-af-heart-standard-e4491a701188.m4a"
+    },
+    "We look at the shape and check our answer.": {
+      "slow": "72c4fb3e0a458368-af-heart-slow-45df2d334acc.m4a",
+      "standard": "72c4fb3e0a458368-af-heart-standard-2a360fc7aa7c.m4a"
+    },
+    "At home, we keep the table ready for activities.": {
+      "slow": "2eaf7d0c0da6c156-af-heart-slow-c97c967515ae.m4a",
+      "standard": "2eaf7d0c0da6c156-af-heart-standard-3ffc751a4523.m4a"
+    },
+    "We say the words softly before bedtime.": {
+      "slow": "61b594504c7f9b4f-af-heart-slow-8d016fb16cff.m4a",
+      "standard": "61b594504c7f9b4f-af-heart-standard-9eebf0d7575c.m4a"
+    },
+    "Please sit on the chair when we read at the table.": {
+      "slow": "bc4b7311db9cfbff-af-heart-slow-df76df079386.m4a",
+      "standard": "bc4b7311db9cfbff-af-heart-standard-e39bdbc8bf1b.m4a"
+    },
+    "Can you find the toy beside the chair?": {
+      "slow": "cc4997b1fda44d97-af-heart-slow-1cae4a23b7e5.m4a",
+      "standard": "cc4997b1fda44d97-af-heart-standard-21e9854a7bdf.m4a"
+    },
+    "Is it a toy? Yes, it is.": {
+      "slow": "68a1705f68e2c233-af-heart-slow-3d48f7a2a681.m4a",
+      "standard": "68a1705f68e2c233-af-heart-standard-9d1f109f0e0e.m4a"
+    },
+    "We leave the table and chair ready for tomorrow.": {
+      "slow": "b2f62d6eeab45253-af-heart-slow-45d10a4e6adb.m4a",
+      "standard": "b2f62d6eeab45253-af-heart-standard-2f7ed598a051.m4a"
+    },
+    "We wait our turn to get on the train.": {
+      "slow": "87b07bfa06ebb4e7-af-heart-slow-720a7a2eab5f.m4a",
+      "standard": "87b07bfa06ebb4e7-af-heart-standard-c4facc074b8b.m4a"
+    },
+    "train": {
+      "slow": "116f54c41d0405db-af-heart-slow-5f59fc1a6c93.m4a",
+      "standard": "116f54c41d0405db-af-heart-standard-d7d7caf392e3.m4a"
+    },
+    "rocket": {
+      "slow": "c58dd0a3760008c9-af-heart-slow-ea1064b8e8a0.m4a",
+      "standard": "c58dd0a3760008c9-af-heart-standard-e01d3009fb20.m4a"
+    },
+    "car": {
+      "slow": "2b2961a431b23c90-af-heart-slow-89d5864691b0.m4a",
+      "standard": "2b2961a431b23c90-af-heart-standard-1967290be95b.m4a"
+    },
+    "bus": {
+      "slow": "04e027e4990a203f-af-heart-slow-9eebb183805d.m4a",
+      "standard": "04e027e4990a203f-af-heart-standard-4d86737223da.m4a"
+    },
+    "We wait until the bus stops.": {
+      "slow": "6b93d759a1254597-af-heart-slow-53f18693fcec.m4a",
+      "standard": "6b93d759a1254597-af-heart-standard-df876c6995d3.m4a"
+    },
+    "Watch me turn, then stop with me.": {
+      "slow": "a109a21742ccb708-af-heart-slow-34ccc0562e74.m4a",
+      "standard": "a109a21742ccb708-af-heart-standard-c3a2a205b93c.m4a"
+    },
+    "Let us count the wheels we can see.": {
+      "slow": "0fb332bf2b104663-af-heart-slow-cc72d50f8e3e.m4a",
+      "standard": "0fb332bf2b104663-af-heart-standard-3e0f3ea7ddfb.m4a"
+    },
+    "This truck helps keep our town clean.": {
+      "slow": "86a96d8d84e7eec8-af-heart-slow-665bc2f15928.m4a",
+      "standard": "86a96d8d84e7eec8-af-heart-standard-6da7e9c6794d.m4a"
+    },
+    "My rocket is ready to go.": {
+      "slow": "effd844e8a9060b7-af-heart-slow-c25d5a4ca3b5.m4a",
+      "standard": "effd844e8a9060b7-af-heart-standard-4ef6064a5c9e.m4a"
+    },
+    "The train slows down at the station.": {
+      "slow": "f7480843a148135a-af-heart-slow-756123fba602.m4a",
+      "standard": "f7480843a148135a-af-heart-standard-d030587f55ce.m4a"
+    },
+    "Listen, then tell me when to stop.": {
+      "slow": "57422dcbb464139a-af-heart-slow-6052e7ecb439.m4a",
+      "standard": "57422dcbb464139a-af-heart-standard-1125e9abe665.m4a"
+    },
+    "I choose the yellow car for our trip.": {
+      "slow": "50cd011a8b842b55-af-heart-slow-c75433557df6.m4a",
+      "standard": "50cd011a8b842b55-af-heart-standard-0e244db1615c.m4a"
+    },
+    "Our bus goes from home to the park.": {
+      "slow": "4b9201c931d82b19-af-heart-slow-364ef2ab9faf.m4a",
+      "standard": "4b9201c931d82b19-af-heart-standard-eb3c900276f3.m4a"
+    },
+    "Trees and flowers grow under the sky.": {
+      "slow": "25446939623f5ea7-af-heart-slow-4aba48c20944.m4a",
+      "standard": "25446939623f5ea7-af-heart-standard-98c6d04a7243.m4a"
+    },
+    "tree": {
+      "slow": "dc9c5edb8b2d479e-af-heart-slow-e32dde027b6e.m4a",
+      "standard": "dc9c5edb8b2d479e-af-heart-standard-778abe1bf8c7.m4a"
+    },
+    "flower": {
+      "slow": "c06b0cfe0cc5e900-af-heart-slow-76010a325f68.m4a",
+      "standard": "c06b0cfe0cc5e900-af-heart-standard-adc50db51c44.m4a"
+    },
+    "sun": {
+      "slow": "27756f050e14a1cb-af-heart-slow-a8537aa2d8c3.m4a",
+      "standard": "27756f050e14a1cb-af-heart-standard-bb0366be0f54.m4a"
+    },
+    "sky": {
+      "slow": "05f514fae7ca5710-af-heart-slow-7c4d72adfa7e.m4a",
+      "standard": "05f514fae7ca5710-af-heart-standard-341222b2c6a9.m4a"
+    },
+    "I can see light and shade.": {
+      "slow": "c4c8498e89a71270-af-heart-slow-a8d3f1dd44b8.m4a",
+      "standard": "c4c8498e89a71270-af-heart-standard-a87ec6ef7dcc.m4a"
+    },
+    "Let us check the weather outside.": {
+      "slow": "08fb772de7eded09-af-heart-slow-ac62cda814c3.m4a",
+      "standard": "08fb772de7eded09-af-heart-standard-866ca2f65e88.m4a"
+    },
+    "These two trees are different sizes.": {
+      "slow": "3b7873ed135172d9-af-heart-slow-b626c2b13ed3.m4a",
+      "standard": "3b7873ed135172d9-af-heart-standard-5cd681e5d614.m4a"
+    },
+    "Trees and flowers are plants.": {
+      "slow": "0f4d71a075b06fb0-af-heart-slow-97573a9df2dd.m4a",
+      "standard": "0f4d71a075b06fb0-af-heart-standard-4e1e5359a2bb.m4a"
+    },
+    "I can hear birds in the trees.": {
+      "slow": "3558a84dff5a6f56-af-heart-slow-2259462ac2c6.m4a",
+      "standard": "3558a84dff5a6f56-af-heart-standard-87570bf9e728.m4a"
+    },
+    "The sun and stars are in the sky.": {
+      "slow": "5c52a94bfaccf938-af-heart-slow-a6cbf58af8de.m4a",
+      "standard": "5c52a94bfaccf938-af-heart-standard-e2f522b3cc06.m4a"
+    },
+    "I see rain outside.": {
+      "slow": "8d31fafea50c1af9-af-heart-slow-e86b7e509c21.m4a",
+      "standard": "8d31fafea50c1af9-af-heart-standard-59d453bce255.m4a"
+    },
+    "I like trees and flowers.": {
+      "slow": "2c9902a83a5886d4-af-heart-slow-78fb3dbe979a.m4a",
+      "standard": "2c9902a83a5886d4-af-heart-standard-0e833c03f0fd.m4a"
+    },
+    "I found three things in nature.": {
+      "slow": "9100a6cd770905e4-af-heart-slow-75ce481fc3e0.m4a",
+      "standard": "9100a6cd770905e4-af-heart-standard-4b3902242692.m4a"
+    },
+    "C is for cat, and D is for dog.": {
+      "slow": "74929f44a0492336-af-heart-slow-c780ae3b3c86.m4a",
+      "standard": "74929f44a0492336-af-heart-standard-41f966bad23d.m4a"
+    },
+    "C for cat": {
+      "slow": "5fc6f989f57228d0-af-heart-slow-cda40b7d10a8.m4a",
+      "standard": "5fc6f989f57228d0-af-heart-standard-13b82e478c3c.m4a"
+    },
+    "D for dog": {
+      "slow": "82739604e631aad5-af-heart-slow-a34a900a76a4.m4a",
+      "standard": "82739604e631aad5-af-heart-standard-639e0538edba.m4a"
+    },
+    "A for apple": {
+      "slow": "df47aaff3786fc88-af-heart-slow-f4ab255aa0af.m4a",
+      "standard": "df47aaff3786fc88-af-heart-standard-56ae09989cd6.m4a"
+    },
+    "B for ball": {
+      "slow": "3617450fbf681943-af-heart-slow-1004bfe3d226.m4a",
+      "standard": "3617450fbf681943-af-heart-standard-18ed0ce5ba5e.m4a"
+    },
+    "I can point to A and then to B.": {
+      "slow": "e28ca1f7e9684c82-af-heart-slow-fd37d4683fde.m4a",
+      "standard": "e28ca1f7e9684c82-af-heart-standard-391b3cf7cc48.m4a"
+    },
+    "I can say a letter and show its picture.": {
+      "slow": "f29196fe8fe2a5cd-af-heart-slow-d886dd568cdf.m4a",
+      "standard": "f29196fe8fe2a5cd-af-heart-standard-17ac0618ff05.m4a"
+    },
+    "Let us count five letters in a row.": {
+      "slow": "7add938c3bf65d3b-af-heart-slow-d39b5df86b88.m4a",
+      "standard": "7add938c3bf65d3b-af-heart-standard-d83fc7c39822.m4a"
+    },
+    "Cats and dogs are animals; apples are fruit.": {
+      "slow": "cd0ff2a4e2b5736e-af-heart-slow-d4591a9c3695.m4a",
+      "standard": "cd0ff2a4e2b5736e-af-heart-standard-344f57d255ed.m4a"
+    },
+    "The words sound different, but the picture is the same.": {
+      "slow": "7abc25e21817daec-af-heart-slow-4d62ed75f49b.m4a",
+      "standard": "7abc25e21817daec-af-heart-standard-bf87ec9405e8.m4a"
+    },
+    "Which picture starts with the letter A?": {
+      "slow": "ff05dec8cf74f000-af-heart-slow-0b3a498eaef3.m4a",
+      "standard": "ff05dec8cf74f000-af-heart-standard-7ecc7cb580af.m4a"
+    },
+    "I found the letter L in the word ball.": {
+      "slow": "93fb3ba5033e56ca-af-heart-slow-33133f9c24dd.m4a",
+      "standard": "93fb3ba5033e56ca-af-heart-standard-490ee52d56e6.m4a"
+    },
+    "I can match a familiar letter to its picture.": {
+      "slow": "b1ec0dbeb2615543-af-heart-slow-007a90621dfb.m4a",
+      "standard": "b1ec0dbeb2615543-af-heart-standard-389de5ec39fa.m4a"
+    },
+    "We can take turns naming our letters.": {
+      "slow": "759cbd5cdb17d5af-af-heart-slow-6a507ad5dac7.m4a",
+      "standard": "759cbd5cdb17d5af-af-heart-standard-4e9715156e90.m4a"
+    },
+    "I can find N and R in the letter row.": {
+      "slow": "ff33f33c4c3869c6-af-heart-slow-339fef646b04.m4a",
+      "standard": "ff33f33c4c3869c6-af-heart-standard-3578e9f23541.m4a"
+    },
+    "We can take turns pointing to N, O, P, Q, and R.": {
+      "slow": "ded09500f176d494-af-heart-slow-0da7a0b52267.m4a",
+      "standard": "ded09500f176d494-af-heart-standard-cb3049b32053.m4a"
+    },
+    "I can clap once when I hear my letter.": {
+      "slow": "9450b5dfc684ec30-af-heart-slow-79a55755fb8a.m4a",
+      "standard": "9450b5dfc684ec30-af-heart-standard-1242262ef895.m4a"
+    },
+    "There are five letters from S to W.": {
+      "slow": "6946ac92f6a21efc-af-heart-slow-e2d16451203f.m4a",
+      "standard": "6946ac92f6a21efc-af-heart-standard-8a6a6ef8dd3b.m4a"
+    },
+    "An apple is food, a ball is a toy, and a cat is an animal.": {
+      "slow": "7246afdfe599033e-af-heart-slow-384cc6418eb6.m4a",
+      "standard": "7246afdfe599033e-af-heart-standard-26eda20a0aa1.m4a"
+    },
+    "A ball is a toy; cats and dogs are animals.": {
+      "slow": "a644dd79b7c839e9-af-heart-slow-651d521f5cb7.m4a",
+      "standard": "a644dd79b7c839e9-af-heart-standard-6713b400e3e7.m4a"
+    },
+    "Which one is food: a cat, a dog, or an apple?": {
+      "slow": "650cbd1156c9fbc3-af-heart-slow-16f77ee4a28c.m4a",
+      "standard": "650cbd1156c9fbc3-af-heart-standard-ea428f7c1215.m4a"
+    },
+    "A comes before B, and B comes before D.": {
+      "slow": "2ca24c9392423766-af-heart-slow-6bf93441ac05.m4a",
+      "standard": "2ca24c9392423766-af-heart-standard-60bcaa48488a.m4a"
+    },
+    "I can try again when a letter is new to me.": {
+      "slow": "5d489b84d4db8552-af-heart-slow-081090db2810.m4a",
+      "standard": "5d489b84d4db8552-af-heart-standard-3774cde95361.m4a"
+    },
+    "We can share the alphabet one small group at a time.": {
+      "slow": "748b0dda58787072-af-heart-slow-3295447d6423.m4a",
+      "standard": "748b0dda58787072-af-heart-standard-51d1f4b5f980.m4a"
+    },
+    "Is it in your hand? Yes, it is.": {
+      "slow": "ab15db3546e1475f-af-heart-slow-7adabec7df74.m4a",
+      "standard": "ab15db3546e1475f-af-heart-standard-8186cb982c65.m4a"
+    },
+    "Hello, my friend. Please play with me.": {
+      "slow": "e8548669f9f7f927-af-heart-slow-e32d905c87af.m4a",
+      "standard": "e8548669f9f7f927-af-heart-standard-be430b32e0a4.m4a"
+    },
+    "Here is my thumb. Can you see it?": {
+      "slow": "169b7c6d96aa5edf-af-heart-slow-3c3d6a362f99.m4a",
+      "standard": "169b7c6d96aa5edf-af-heart-standard-29c66600e15c.m4a"
+    },
+    "No, thank you. I like something else.": {
+      "slow": "cf366a248d810300-af-heart-slow-a6a1f6fb8e0f.m4a",
+      "standard": "cf366a248d810300-af-heart-standard-115879eb4940.m4a"
+    },
+    "A bird has two legs, and a cat has four.": {
+      "slow": "1134250ace187b49-af-heart-slow-6179724d0f45.m4a",
+      "standard": "1134250ace187b49-af-heart-standard-a7a42e7e9cca.m4a"
+    },
+    "Where is it? Is it here or over there?": {
+      "slow": "bfb1d86f38d541ce-af-heart-slow-b64bb4403dcb.m4a",
+      "standard": "bfb1d86f38d541ce-af-heart-standard-5e061e281c92.m4a"
+    },
+    "Hello! Please sit here. Thank you for coming.": {
+      "slow": "8c35aaa56df63810-af-heart-slow-f2ad720cf8f2.m4a",
+      "standard": "8c35aaa56df63810-af-heart-standard-e934cadf65f5.m4a"
+    },
+    "No, it is not there. Let us look here.": {
+      "slow": "cb10f9b799fa5a51-af-heart-slow-6a3bcce50a60.m4a",
+      "standard": "cb10f9b799fa5a51-af-heart-standard-0fd8453c9ced.m4a"
+    },
+    "Thank you for helping me. Bye! See you soon.": {
+      "slow": "13bcfb8a0e322d59-af-heart-slow-09a0385f5bc6.m4a",
+      "standard": "13bcfb8a0e322d59-af-heart-standard-dfbc62b2e5d3.m4a"
+    },
+    "A cat and a dog have paws; a fish has fins.": {
+      "slow": "9328c7ed54b7eb16-af-heart-slow-7f4ed91948a5.m4a",
+      "standard": "9328c7ed54b7eb16-af-heart-standard-1c334adb74ac.m4a"
+    },
+    "A shark is a fish that lives in the ocean.": {
+      "slow": "2510a5e92caf720a-af-heart-slow-91d2d9d80053.m4a",
+      "standard": "2510a5e92caf720a-af-heart-standard-b340bbc7936e.m4a"
+    },
+    "shark": {
+      "slow": "31fc15942b0c47f6-af-heart-slow-396d707843da.m4a",
+      "standard": "31fc15942b0c47f6-af-heart-standard-27eb15a73dca.m4a"
+    },
+    "ocean": {
+      "slow": "47afad612b1f9cc8-af-heart-slow-8caa1f1305a4.m4a",
+      "standard": "47afad612b1f9cc8-af-heart-standard-a0eb354608a1.m4a"
+    },
+    "This dinosaur is big, and that one is small.": {
+      "slow": "32ef95219c761cd9-af-heart-slow-bb800b9a3157.m4a",
+      "standard": "32ef95219c761cd9-af-heart-standard-ac734a650e37.m4a"
+    },
+    "big": {
+      "slow": "2a21fe6d592a19b7-af-heart-slow-137c594879f6.m4a",
+      "standard": "2a21fe6d592a19b7-af-heart-standard-6916686763c1.m4a"
+    },
+    "small": {
+      "slow": "81db8ebbbbc69c6c-af-heart-slow-05ec45a87d36.m4a",
+      "standard": "81db8ebbbbc69c6c-af-heart-standard-acb3ec371d98.m4a"
+    },
+    "dinosaur": {
+      "slow": "300908b9d3815e2d-af-heart-slow-f72c1666c8fc.m4a",
+      "standard": "300908b9d3815e2d-af-heart-standard-920ac8a41dde.m4a"
+    },
+    "The rocket goes up into space.": {
+      "slow": "9a779bb1342fd79f-af-heart-slow-c667dd9e89d6.m4a",
+      "standard": "9a779bb1342fd79f-af-heart-standard-31304f2a5587.m4a"
+    },
+    "space": {
+      "slow": "3f49dbbfe051cb20-af-heart-slow-5ba74e5a5e4c.m4a",
+      "standard": "3f49dbbfe051cb20-af-heart-standard-22fdad1ce53c.m4a"
+    },
+    "moon": {
+      "slow": "9e78b43ea00edcac-af-heart-slow-589cd9f1994b.m4a",
+      "standard": "9e78b43ea00edcac-af-heart-standard-7ec6e9d86b1f.m4a"
+    },
+    "One fish, two fish, three fish swim in the sea.": {
+      "slow": "f30752f4db264ddb-af-heart-slow-bcd1b85fa9ef.m4a",
+      "standard": "f30752f4db264ddb-af-heart-standard-315c8a27fbb4.m4a"
+    },
+    "Dinosaurs can be big or small.": {
+      "slow": "2595cf7ee810e78a-af-heart-slow-e66f01b5684c.m4a",
+      "standard": "2595cf7ee810e78a-af-heart-standard-ff8a0b12d61f.m4a"
+    },
+    "The moon and stars are in space.": {
+      "slow": "f307743c016e60b3-af-heart-slow-33489170155b.m4a",
+      "standard": "f307743c016e60b3-af-heart-standard-42284cf53d16.m4a"
+    },
+    "The boat goes up and down on the waves.": {
+      "slow": "dba67b378c57ef36-af-heart-slow-3040274c31d9.m4a",
+      "standard": "dba67b378c57ef36-af-heart-standard-f7df30cf7a93.m4a"
+    },
+    "My toy dinosaur can jump.": {
+      "slow": "39a3ef01becf60b6-af-heart-slow-c708a8e87a59.m4a",
+      "standard": "39a3ef01becf60b6-af-heart-standard-8ce9a12a19c4.m4a"
+    },
+    "The sun is a star, and the moon is not a planet.": {
+      "slow": "05156bf30b94fac4-af-heart-slow-6c719b314022.m4a",
+      "standard": "05156bf30b94fac4-af-heart-standard-0472da9fd21b.m4a"
+    },
+    "I can see a shark swimming in the sea.": {
+      "slow": "74331a4d5f943142-af-heart-slow-d53dd377d768.m4a",
+      "standard": "74331a4d5f943142-af-heart-standard-fe44e36ec2a0.m4a"
+    },
+    "I can find yellow, green, and red.": {
+      "slow": "c0b840a28ab52a11-af-heart-slow-4130eff61b59.m4a",
+      "standard": "c0b840a28ab52a11-af-heart-standard-5a27731edc8d.m4a"
+    },
+    "I can show four fingers, then one finger.": {
+      "slow": "cf3505b68efa11b1-af-heart-slow-d23ed25a8174.m4a",
+      "standard": "cf3505b68efa11b1-af-heart-standard-7b34838c61f1.m4a"
+    },
+    "Can you see me? Yes, I can!": {
+      "slow": "3e47ad04e488769f-af-heart-slow-1b188803035f.m4a",
+      "standard": "3e47ad04e488769f-af-heart-standard-aed8a30af9a4.m4a"
+    },
+    "I see a dog, a bird, and a fish.": {
+      "slow": "c74515043cc6eda1-af-heart-slow-38633460618b.m4a",
+      "standard": "c74515043cc6eda1-af-heart-standard-062701e1a1bf.m4a"
+    },
+    "I eat pizza and apples, and I drink water.": {
+      "slow": "50f75e451c908531-af-heart-slow-860ce8cdb25f.m4a",
+      "standard": "50f75e451c908531-af-heart-standard-c88a64348a0f.m4a"
+    },
+    "These are my toes, and this is my head.": {
+      "slow": "dfb2a1d835a0086e-af-heart-slow-e9a966d479d4.m4a",
+      "standard": "dfb2a1d835a0086e-af-heart-standard-8d2e5a1c5d02.m4a"
+    },
+    "It is cloudy now, and it may rain later.": {
+      "slow": "4ca6616d4f33ee9a-af-heart-slow-f2b6dc1d4a52.m4a",
+      "standard": "4ca6616d4f33ee9a-af-heart-standard-35d015456b86.m4a"
+    },
+    "The bus goes on the road, and the train goes on the tracks.": {
+      "slow": "36f40310f06c5551-af-heart-slow-7af3b8d1179e.m4a",
+      "standard": "36f40310f06c5551-af-heart-standard-df9528ce25bb.m4a"
+    },
+    "I can see the sun in the sky and a tree on the ground.": {
+      "slow": "f313de0b149ff5d8-af-heart-slow-43f2ec79ccfc.m4a",
+      "standard": "f313de0b149ff5d8-af-heart-standard-ff91adc3c00d.m4a"
+    },
+    "Hello! May I have it, please? Thank you. Bye!": {
+      "slow": "6ed740a9048a745c-af-heart-slow-3d97b4da1c5a.m4a",
+      "standard": "6ed740a9048a745c-af-heart-standard-dfd725a5ffa1.m4a"
+    },
+    "Hello! Please help me find the animal. Thank you!": {
+      "slow": "256842d455c694a9-af-heart-slow-f320bca59d83.m4a",
+      "standard": "256842d455c694a9-af-heart-standard-e9185347866f.m4a"
+    },
+    "I like red. What color do you like?": {
+      "slow": "900fc46f042418b1-af-heart-slow-d5444cacc6d5.m4a",
+      "standard": "900fc46f042418b1-af-heart-standard-b3fce7e8fb7b.m4a"
+    },
+    "Thank you for finding colors with me. Bye!": {
+      "slow": "d17266af3c60bc70-af-heart-slow-4c5cc229c3f7.m4a",
+      "standard": "d17266af3c60bc70-af-heart-standard-5c888369d2a2.m4a"
+    },
+    "Hi! Thank you for playing with me. Goodbye!": {
+      "slow": "3fd76d52677c1914-af-heart-slow-5361201279dc.m4a",
+      "standard": "3fd76d52677c1914-af-heart-standard-91ede56990c8.m4a"
+    },
+    "Hello! Can you please help me find my toy?": {
+      "slow": "6026a4e902f0f512-af-heart-slow-da7a26f36e4b.m4a",
+      "standard": "6026a4e902f0f512-af-heart-standard-a7ddce74bb29.m4a"
+    },
+    "Please take a turn. Thank you! Now it is my turn.": {
+      "slow": "fd7369d4852ef593-af-heart-slow-7b343c31b1d6.m4a",
+      "standard": "fd7369d4852ef593-af-heart-standard-a36483a38441.m4a"
+    },
+    "Thank you for listening. Hello, cat! Goodbye, dog!": {
+      "slow": "680ede6711af2853-af-heart-slow-5f805b84ecbb.m4a",
+      "standard": "680ede6711af2853-af-heart-standard-209746fca540.m4a"
+    },
+    "Hi, reindeer! Thank you for singing. Bye, snowman!": {
+      "slow": "ddad274a1ba95b75-af-heart-slow-f50c849590e3.m4a",
+      "standard": "ddad274a1ba95b75-af-heart-standard-7e09b85a723e.m4a"
+    },
+    "Hello! Please sing with me. I like singing with you.": {
+      "slow": "a7fd72698542112c-af-heart-slow-d7a6edc94cb7.m4a",
+      "standard": "a7fd72698542112c-af-heart-standard-bdf59d7d557e.m4a"
+    },
+    "A robot, please. Thank you! Goodbye, everyone.": {
+      "slow": "e8901fb89ce71af6-af-heart-slow-525436e3a81f.m4a",
+      "standard": "e8901fb89ce71af6-af-heart-standard-ee9b7c022bf3.m4a"
+    },
+    "I found yellow! Can you find green and red?": {
+      "slow": "59d0dbd04406fece-af-heart-slow-d7fca9d7ba97.m4a",
+      "standard": "59d0dbd04406fece-af-heart-standard-315b47a2b161.m4a"
+    },
+    "Show me four fingers. Now show me one and two.": {
+      "slow": "e861367b4d8fb83a-af-heart-slow-37878f8a8d11.m4a",
+      "standard": "e861367b4d8fb83a-af-heart-standard-ab323b4be856.m4a"
+    },
+    "Hello! Your name, please? Thank you for telling me.": {
+      "slow": "ba586fc356bd3537-af-heart-slow-39c6533e6363.m4a",
+      "standard": "ba586fc356bd3537-af-heart-standard-faed28e866c0.m4a"
+    },
+    "A dog has legs. A bird has wings. A fish has fins.": {
+      "slow": "60ddd4f156715bab-af-heart-slow-1f7c68d7523b.m4a",
+      "standard": "60ddd4f156715bab-af-heart-standard-6e7a7ca71dd0.m4a"
+    },
+    "Pizza is food. Water is a drink. An apple is fruit.": {
+      "slow": "ba7430aca476f936-af-heart-slow-e0238e2f8048.m4a",
+      "standard": "ba7430aca476f936-af-heart-standard-9daa6c4e857b.m4a"
+    },
+    "Stop here, please. Jump once, then turn slowly.": {
+      "slow": "806543cbdb09fd2a-af-heart-slow-4f83b5cf4753.m4a",
+      "standard": "806543cbdb09fd2a-af-heart-standard-438df1864316.m4a"
+    },
+    "Is it sunny or rainy? Let us look outside together.": {
+      "slow": "55acef556fab7c0b-af-heart-slow-38ee089adbef.m4a",
+      "standard": "55acef556fab7c0b-af-heart-standard-825eae1d844d.m4a"
+    },
+    "The bus and car stop at the red light.": {
+      "slow": "155f5a1b9aac5b4f-af-heart-slow-321fb7d33e85.m4a",
+      "standard": "155f5a1b9aac5b4f-af-heart-standard-e6c9ca328105.m4a"
+    },
+    "The sun is in the sky. I can point to a tree.": {
+      "slow": "f85e60b1e7b447ad-af-heart-slow-8089decbe8e1.m4a",
+      "standard": "f85e60b1e7b447ad-af-heart-standard-8f5ce2f010fd.m4a"
+    },
+    "Hello, everyone! Please watch me clap. Thank you, and goodbye!": {
+      "slow": "837b35358d062849-af-heart-slow-b97b1b701713.m4a",
+      "standard": "837b35358d062849-af-heart-standard-1b59a83804ea.m4a"
+    },
+    "Hello! Let us learn English together.": {
+      "slow": "84f1ce1399cb0615-af-heart-slow-9cefa87272f9.m4a",
+      "standard": "84f1ce1399cb0615-af-heart-standard-c19ddc3e777f.m4a"
+    }
+  }
+}

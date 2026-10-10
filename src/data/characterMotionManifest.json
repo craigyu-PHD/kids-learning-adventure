@@ -1,0 +1,3262 @@
+{
+  "schemaVersion": 1,
+  "scope": "Accepted character blink frames. Four default frames keep native-generation lineage; P10 full-skin frames use reviewed same-rig native eye-motion derivation with dual-model eligibility and candidate visual admission. Missing records remain static; never substitute another character or skin.",
+  "records": [
+    {
+      "avatarId": "brother",
+      "skin": "default",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v5/characters/brother/wardrobe/base-body.png",
+        "sha256": "16ddec245f697c8c1a498ea4ee9138055192d8434749d6d29f2abf3898ac52d0"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+        "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+      },
+      "generation": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_042917/brother/blink/native-web/native-ui-execution.json",
+        "sha256": "40c7ce0ccf48e91a7b3ad1272571d8b79670b47006583c1cb98d42878c7cc3ce"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_042917/brother/blink/native-web/png-art-review.json",
+        "sha256": "cd70404bac466e663851d88a80e7ec207f36ba5c0748168ae18ab6b0004f249d"
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/base-blink-192.webp",
+          "sha256": "5627da2dd9f25cfb0e7fd195a314995fd00c1311d4ad1631566f53d950fde5a4",
+          "bytes": 17304,
+          "alphaExact": true,
+          "visibleRgbMAE": 3.3514978725242446
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/base-blink-384.webp",
+          "sha256": "e5bea6d9e4c39fb2c9dd2a0c81221f68274ea5c84d1d158019e5ad2aef8a0c80",
+          "bytes": 41408,
+          "alphaExact": true,
+          "visibleRgbMAE": 2.581968938768239
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/base-blink-1024.webp",
+          "sha256": "1eb4bb4f78d5d068023ad6628d333682d73ffcc34a62d79af9017f02b6cda1d1",
+          "bytes": 156844,
+          "alphaExact": true,
+          "visibleRgbMAE": 1.827022740294679
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "default",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v5/characters/younger/wardrobe/base-body.png",
+        "sha256": "a0afbff169d8ce9fe87cc01e2d9af8fb396093c5c6dd7dbd89ad42f2268e4f8e"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+        "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+      },
+      "generation": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_050515/younger/blink/native-web/native-ui-execution.json",
+        "sha256": "e2bb3ca55da9cebeb87926094d5b86ad9c9d03b51854871894cda72c41314792"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_050515/younger/blink/native-web/png-art-review.json",
+        "sha256": "d56c14a7ca60278981b397b225e5e1bc7381fd76ba8516feec8ef895a4fde452"
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/base-blink-192.webp",
+          "sha256": "a53cd094a9a122b051823bcea0846e09904ad222f60f964825436aa8bfe825bd",
+          "bytes": 18830,
+          "alphaExact": true,
+          "visibleRgbMAE": 3.6149239201743804
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/base-blink-384.webp",
+          "sha256": "67d354333ee4b0701eba7cec3e49f5bdc3edb5ae14d1bd79282833716bd7c70e",
+          "bytes": 45840,
+          "alphaExact": true,
+          "visibleRgbMAE": 2.6889639532486482
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/base-blink-1024.webp",
+          "sha256": "74e6505761aca5f1fe0109e6530fd4feda3242c2f108e1314af02cbed27234c6",
+          "bytes": 167924,
+          "alphaExact": true,
+          "visibleRgbMAE": 1.842733972029905
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "default",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v5/characters/sister/wardrobe/base-body.png",
+        "sha256": "d184dc6539d2e7e74141a56acbbae2ba6c83e95a7f40275ab69c061dab87e13b"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+        "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+      },
+      "generation": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_052626/sister/blink/native-web/native-ui-execution.json",
+        "sha256": "ebed14a4778ea8a98b8129c036a38b3d74df6ad17edb9f6d3d2e649e9c4a073c"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_052626/sister/blink/native-web/png-art-review.json",
+        "sha256": "cb99c747d28824cf5caf659aad4e2c7dd48ac75d0b8d6239f3ecc5c8c6323671"
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/base-blink-192.webp",
+          "sha256": "c8d8fd9a2b32fa897322d81191b6b817e6c2661afadec646181dc5cc888e700d",
+          "bytes": 16282,
+          "alphaExact": true,
+          "visibleRgbMAE": 3.2352368665263347
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/base-blink-384.webp",
+          "sha256": "4544c45cb1dd73b6fd605e3348b9a1efdec60281552e6b60beb01fada846de11",
+          "bytes": 39614,
+          "alphaExact": true,
+          "visibleRgbMAE": 2.4823927739718283
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/base-blink-1024.webp",
+          "sha256": "fb250f71fa8c8218517421dcc5cfc71ce13898a55b5d512595d5029c134d676f",
+          "bytes": 144428,
+          "alphaExact": true,
+          "visibleRgbMAE": 1.7475090239507298
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "default",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v5/characters/younger-sister/wardrobe/base-body.png",
+        "sha256": "dc21d8e9e2a19589db0a91862b1aa48900468aada4aa1e79ef7df25884317e15"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+        "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+      },
+      "generation": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_054721/younger-sister/blink/native-web/native-ui-execution.json",
+        "sha256": "ceb4772234e5aab768fef10e78f32cc31e378ef15cf3f122a797009fa5bcd84c"
+      },
+      "pngReview": {
+        "path": "qa/art-gate/character-motion-attempts/20260909_054721/younger-sister/blink/native-web/png-art-review.json",
+        "sha256": "39923355b691178d9c3d2f3a32c5e9fda6fd7c2f2540009ad18256d0e94bb4b9"
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/base-blink-192.webp",
+          "sha256": "38f58691139af7b2d406a09a2916772f81a5fc059bd99b9adb99b9a0082d2c78",
+          "bytes": 17418,
+          "alphaExact": true,
+          "visibleRgbMAE": 2.999888681093597
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/base-blink-384.webp",
+          "sha256": "b3dd1534541117ccd813beba6ef87d9a28e865ee392a904b334a804a3df9f702",
+          "bytes": 42808,
+          "alphaExact": true,
+          "visibleRgbMAE": 2.36313716326735
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/base-blink-1024.webp",
+          "sha256": "aad4de702cc00facc1c5448770b7cbf9e96a40ffca467eee3fc9ce0453a53236",
+          "bytes": 154070,
+          "alphaExact": true,
+          "visibleRgbMAE": 1.7352505626600265
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "outfit-cadet",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/outfit-cadet.webp",
+        "sha256": "9ee281a6fda5b8d599076eaa7e3ed91bcae1ec5563d271a12db2e39bc91d9072"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/outfit-cadet-blink.png",
+        "sha256": "b1383cd1a9af3c707328c728c737bbd578030139a3a16e4fb37c53f17e11f132"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/outfit-cadet-blink.png",
+          "sha256": "b1383cd1a9af3c707328c728c737bbd578030139a3a16e4fb37c53f17e11f132"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 12523,
+          "changedFraction": 0.007961908976236979,
+          "maskPixels": 12525,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-cadet-blink-192.webp",
+          "sha256": "e2d5e9f5bc22af4a69e8ce16ff67fe7b90187b2cd23b1098870f3fcd173dcd4a",
+          "bytes": 37852,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-cadet-blink-384.webp",
+          "sha256": "6c0847df3e0323063a5b15de90be6b1c3ea4917b8463c3c62802d9fbe9ed163b",
+          "bytes": 117588,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-cadet-blink-1024.webp",
+          "sha256": "779b09b314edc119801d721070fd9f470c88ba9e3b30aabb676af16c9b10ca42",
+          "bytes": 561508,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "outfit-racer",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/outfit-racer.webp",
+        "sha256": "14a958dcb1454b937059b2da05b36e56b96b13d4e4a053614e76f8fb740822f6"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/outfit-racer-blink.png",
+        "sha256": "adac88b474f7b5b92c83e8e71a5da22f7672664b6d4928fc1b564f99afc0674b"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/outfit-racer-blink.png",
+          "sha256": "adac88b474f7b5b92c83e8e71a5da22f7672664b6d4928fc1b564f99afc0674b"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 10994,
+          "changedFraction": 0.006989796956380208,
+          "maskPixels": 11002,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-racer-blink-192.webp",
+          "sha256": "29ebead8993233f7921929efdc5a5fb70deeec75199be2e81b7dd9ae204ceafe",
+          "bytes": 41008,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-racer-blink-384.webp",
+          "sha256": "2e28d767a3d7d3e167187391db375de99f60a2885de25ae156a39d781bac29cd",
+          "bytes": 126114,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-racer-blink-1024.webp",
+          "sha256": "edaa210e1e55c449e498b865546cb299c707920f5439051cb16e68103706da66",
+          "bytes": 504826,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "outfit-mecha",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/outfit-mecha.webp",
+        "sha256": "310ac52c70e81bb5d9dd25eb6d1a98524c37d1ad1914dd6698f2cd8e494d45e9"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/outfit-mecha-blink.png",
+        "sha256": "13e6b610bcf976aea30b454cc48328f0738dc28949680c61b71dfc88af9b911d"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/outfit-mecha-blink.png",
+          "sha256": "13e6b610bcf976aea30b454cc48328f0738dc28949680c61b71dfc88af9b911d"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 12523,
+          "changedFraction": 0.007961908976236979,
+          "maskPixels": 12525,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-mecha-blink-192.webp",
+          "sha256": "6d81a64a1fe4ed520757aab4e5b6cdcd4055c282256a8c7a075e112bfabb8c35",
+          "bytes": 35564,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-mecha-blink-384.webp",
+          "sha256": "d8cf81ad4177022bfbbd824f31212e527c1bc7ac2585f3b4e2e4b0aad3597a2b",
+          "bytes": 104254,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-mecha-blink-1024.webp",
+          "sha256": "a67fdb2633322e06715020fb5be7932d70763f291fa185894790ad5c317a007a",
+          "bytes": 459942,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "outfit-ocean",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/outfit-ocean.webp",
+        "sha256": "b61d8a13a0462b6dd095cc63ae3815244271ef0609f0ded97141c652dfc96150"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/outfit-ocean-blink.png",
+        "sha256": "0dcc573a06e315c47aed914bc3d51889f1cf95952cf67d50245727b7ea9a6277"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/outfit-ocean-blink.png",
+          "sha256": "0dcc573a06e315c47aed914bc3d51889f1cf95952cf67d50245727b7ea9a6277"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 12523,
+          "changedFraction": 0.007961908976236979,
+          "maskPixels": 12525,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-ocean-blink-192.webp",
+          "sha256": "cdcb7cc42700d8f4212a5ce654291c933ce2bba6156e5ad2041e9960d3f71fc5",
+          "bytes": 35546,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-ocean-blink-384.webp",
+          "sha256": "2a983c22cba21da5ba814f71437e2d20ec84e693bdcbe4a42d05b6e063f040e4",
+          "bytes": 104538,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-ocean-blink-1024.webp",
+          "sha256": "bc633a3511189130bb1e62d2d2002507fa4f548169bbd946a484ce0fe160352c",
+          "bytes": 461578,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "outfit-mage",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/outfit-mage.webp",
+        "sha256": "900aa15bfadbc42f18f5bebeb4857664893ad15d69657fdfa5290081cf002603"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/outfit-mage-blink.png",
+        "sha256": "8398c54f321d078504468f18d908cd0832e150815185af3507ead5c4d7271d02"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/outfit-mage-blink.png",
+          "sha256": "8398c54f321d078504468f18d908cd0832e150815185af3507ead5c4d7271d02"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 12523,
+          "changedFraction": 0.007961908976236979,
+          "maskPixels": 12525,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-mage-blink-192.webp",
+          "sha256": "ab485c1dec6dbf06099fef3c2745044ce59768125040f67e9498e0a18ce8371d",
+          "bytes": 35592,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-mage-blink-384.webp",
+          "sha256": "1b1ef1e2cf5081829696fbb49589d37107cc646649f59b72f04a4cba8a467024",
+          "bytes": 104608,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-mage-blink-1024.webp",
+          "sha256": "5ba1c6a1bb1c4aa39b10b2908024b51fe0d0d133100a770ee22437fb45937641",
+          "bytes": 463480,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "outfit-legend",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/outfit-legend.webp",
+        "sha256": "4efe7170dffd0d40ceeca8c2c92bee0fbe546b92d8ed4b08416455122f7303be"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/outfit-legend-blink.png",
+        "sha256": "4ac91c732772c08788561f6b62c4f8f20169af3163da988d52302660c4b52afc"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/outfit-legend-blink.png",
+          "sha256": "4ac91c732772c08788561f6b62c4f8f20169af3163da988d52302660c4b52afc"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 12523,
+          "changedFraction": 0.007961908976236979,
+          "maskPixels": 12525,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-legend-blink-192.webp",
+          "sha256": "67668ba29acecbe8f05b371048a8a00d19f1e5456b847748cdcb98a115364913",
+          "bytes": 36004,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-legend-blink-384.webp",
+          "sha256": "b3c7b43bd7db40fca5d7437814aefdff76deff7a4dacad5e4e36fc070070e0b1",
+          "bytes": 105990,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/outfit-legend-blink-1024.webp",
+          "sha256": "7f1f50270edffbe9300bfa1d7a713bda240bb1fd8becf9ac2a7cf66b38721865",
+          "bytes": 460832,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "brother",
+      "skin": "sister-bloom-outfit",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/brother/sister-bloom-outfit.webp",
+        "sha256": "9bcac0aaa3f55bbaadc77a7dafeeff39b696d90ba26d62edd06b678264aa7366"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/brother/sister-bloom-outfit-blink.png",
+        "sha256": "8c0cdb9318bdf898407f46e409d0385a5f85efbe066c902b4b9e9ce19f7c721f"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/brother/base-blink.png",
+          "sha256": "5e8ac82e16e1837da208822c30392c62c9273f9d7238034cad6ca67df707e43c"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/brother/sister-bloom-outfit-blink.png",
+          "sha256": "8c0cdb9318bdf898407f46e409d0385a5f85efbe066c902b4b9e9ce19f7c721f"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              394,
+              209,
+              487,
+              287
+            ],
+            [
+              541,
+              195,
+              634,
+              275
+            ]
+          ],
+          "changedPixels": 12523,
+          "changedFraction": 0.007961908976236979,
+          "maskPixels": 12525,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3602,
+              "score": 607295,
+              "bbox": [
+                401,
+                216,
+                480,
+                280
+              ]
+            },
+            {
+              "pixels": 3555,
+              "score": 594474,
+              "bbox": [
+                548,
+                202,
+                627,
+                268
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/brother/sister-bloom-outfit-blink-192.webp",
+          "sha256": "3ea132d91086f5501c4a3cde0a3c8f8c621a70747c8c55fc2d8b06b3cda28b61",
+          "bytes": 35438,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/brother/sister-bloom-outfit-blink-384.webp",
+          "sha256": "65130fc1babd19f17f32a6884602bcf7e204be79c84367466ce013c98ae8b4d9",
+          "bytes": 104234,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/brother/sister-bloom-outfit-blink-1024.webp",
+          "sha256": "5e95d9247d13722245d20185994a866e1fe785e8aa01132ec141ab06b317d2fa",
+          "bytes": 463882,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "outfit-cadet",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/outfit-cadet.webp",
+        "sha256": "6fcbbe58bfb30c6e23408ac7ba405243ca7e889db9942e4c76d10d25b92fa05d"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/outfit-cadet-blink.png",
+        "sha256": "29ae3fafc2286c2166c1bdd0693fd77f2d1062da61d158a9edc2438c35ad29ee"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/outfit-cadet-blink.png",
+          "sha256": "29ae3fafc2286c2166c1bdd0693fd77f2d1062da61d158a9edc2438c35ad29ee"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13862,
+          "changedFraction": 0.008813222249348959,
+          "maskPixels": 13868,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-cadet-blink-192.webp",
+          "sha256": "63e9355f30832d1122036e5e1253eaedc30ea63c65949aaa21f761f05899334b",
+          "bytes": 36570,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-cadet-blink-384.webp",
+          "sha256": "6ed318322be4199f1fabdb5b74741ae7551d653470df89be3d9a0d76b7e430db",
+          "bytes": 108576,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-cadet-blink-1024.webp",
+          "sha256": "63e5157811fd5cf6264561c267f90bb514510a1f306934b55b13d588a6078f8b",
+          "bytes": 495184,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "outfit-racer",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/outfit-racer.webp",
+        "sha256": "2124300e72bb1b363cb49bc402207f8edf00e2a227fb5ad8589556cc713e234a"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/outfit-racer-blink.png",
+        "sha256": "fd8b2c33cffbb14e65f45bdd5c101d9035a52089716412ee32ee6b773de7fdfb"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/outfit-racer-blink.png",
+          "sha256": "fd8b2c33cffbb14e65f45bdd5c101d9035a52089716412ee32ee6b773de7fdfb"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13512,
+          "changedFraction": 0.0085906982421875,
+          "maskPixels": 13517,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-racer-blink-192.webp",
+          "sha256": "ff94d76b5928aaa4b31b301a887434592bbdd966f878ebf9b3ea1ff9e3617b79",
+          "bytes": 44214,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-racer-blink-384.webp",
+          "sha256": "4b2153e9bbedb7e1c9e489e80fb28604de493193db396e2458644c48cdf67766",
+          "bytes": 135502,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-racer-blink-1024.webp",
+          "sha256": "e63a14f40bee23ef350577e8372d04d771daa215feab658a9a6baec5457215c9",
+          "bytes": 597358,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "outfit-mecha",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/outfit-mecha.webp",
+        "sha256": "f021661a5428bf2bff20e21e596ae067f7cdecb79868b0c2862303f5c5ff9693"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/outfit-mecha-blink.png",
+        "sha256": "038b3e63596ad53b9a82bd7942633d5bfc0b36f1aa2593a95915edc45e88360b"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/outfit-mecha-blink.png",
+          "sha256": "038b3e63596ad53b9a82bd7942633d5bfc0b36f1aa2593a95915edc45e88360b"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13862,
+          "changedFraction": 0.008813222249348959,
+          "maskPixels": 13868,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-mecha-blink-192.webp",
+          "sha256": "efe253bbaa60b317b41c36d4f4757a629dd0bb9602879844cb6f9ef99e35e47a",
+          "bytes": 37142,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-mecha-blink-384.webp",
+          "sha256": "74b572d41c3bca2cc4ee050dc143d5f8c16c901039b1760f83da89b6133ef722",
+          "bytes": 109786,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-mecha-blink-1024.webp",
+          "sha256": "10c79cacddd9078a1a124769a54bb955a7a62fcfb29da2c3ef69413dcdb77f29",
+          "bytes": 495292,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "outfit-ocean",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/outfit-ocean.webp",
+        "sha256": "47d0abb954f8f1240a17b5f0e8c936a600fd9db2948ad7629addc3d140cbbd79"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/outfit-ocean-blink.png",
+        "sha256": "4ca6afe06394d84a5e634a0eebbda4bb8ee6d92227173807df0ad15855b52645"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/outfit-ocean-blink.png",
+          "sha256": "4ca6afe06394d84a5e634a0eebbda4bb8ee6d92227173807df0ad15855b52645"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13862,
+          "changedFraction": 0.008813222249348959,
+          "maskPixels": 13868,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-ocean-blink-192.webp",
+          "sha256": "13f1dcb000e36740123c7720d872f4312a0ec0830276935bbcf96bc697b98eb7",
+          "bytes": 37250,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-ocean-blink-384.webp",
+          "sha256": "1e8ad7c687299f0dbe93e1a89946676f3df218cd492567f48d1523a02b3858ba",
+          "bytes": 110374,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-ocean-blink-1024.webp",
+          "sha256": "3e1f444687174c00d83c1e09567d28222d0e99ee96dfa61dc423941263284c17",
+          "bytes": 495800,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "outfit-mage",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/outfit-mage.webp",
+        "sha256": "ffb48724196f604daa7a2e040630de22ab7d0bb1af9816111e4b9a81ba458953"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/outfit-mage-blink.png",
+        "sha256": "2b8ee3632911d3b1932c78a3249570d116f4e0e657b12f64c13accf04775d563"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/outfit-mage-blink.png",
+          "sha256": "2b8ee3632911d3b1932c78a3249570d116f4e0e657b12f64c13accf04775d563"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13862,
+          "changedFraction": 0.008813222249348959,
+          "maskPixels": 13868,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-mage-blink-192.webp",
+          "sha256": "bcc9e136f5d3dc454862ccdc586a1c802ffeafdb8ebd9f1d184cb003c6d59029",
+          "bytes": 36936,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-mage-blink-384.webp",
+          "sha256": "557483e6cd4288ecd671539702d2e96d331dac6cd01c960f1188de6bc6f4ff89",
+          "bytes": 109756,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-mage-blink-1024.webp",
+          "sha256": "a7582a5c9e0d76faed31970d56e2a98fa8f8d4eef06a194c5a1df58a7d64b07d",
+          "bytes": 496018,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "outfit-legend",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/outfit-legend.webp",
+        "sha256": "3392c0d38a9600a3495b019d6c84d3d151bdd3ec960935dfca065b128d4c8c0a"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/outfit-legend-blink.png",
+        "sha256": "79f4dbf59d5f893f68c0c646a6bdae37ea9ea9d81c94ea137f561443869a3013"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/outfit-legend-blink.png",
+          "sha256": "79f4dbf59d5f893f68c0c646a6bdae37ea9ea9d81c94ea137f561443869a3013"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13862,
+          "changedFraction": 0.008813222249348959,
+          "maskPixels": 13868,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-legend-blink-192.webp",
+          "sha256": "269df5149914c472ebdeedd9097317ebea9f10e3a28f215b0fd4d4992f4e2c03",
+          "bytes": 37370,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-legend-blink-384.webp",
+          "sha256": "8ef5512995e906a64a61df1395948ebaf506dcef011a6f09e71c35502c2def21",
+          "bytes": 111070,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/outfit-legend-blink-1024.webp",
+          "sha256": "4d60f80308de0ac34275d984b26fc880646689a3fe9a52888fd241e6b1ca7c6d",
+          "bytes": 495702,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger",
+      "skin": "sister-bloom-outfit",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger/sister-bloom-outfit.webp",
+        "sha256": "df276f3c86a28470ce6e963d23a6ddca05ddd6df9eb5db561518b9107d682f7d"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger/sister-bloom-outfit-blink.png",
+        "sha256": "785e019041d08f766bebdcf178d48daa237e390783b262f57abcb5802bac7650"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger/base-blink.png",
+          "sha256": "609c2e95e8e8a793fa3867bbbb7373a33623464efc4c4b578cbe946382c65da4"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger/sister-bloom-outfit-blink.png",
+          "sha256": "785e019041d08f766bebdcf178d48daa237e390783b262f57abcb5802bac7650"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              384,
+              286,
+              482,
+              370
+            ],
+            [
+              552,
+              267,
+              652,
+              352
+            ]
+          ],
+          "changedPixels": 13862,
+          "changedFraction": 0.008813222249348959,
+          "maskPixels": 13868,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 4322,
+              "score": 718446,
+              "bbox": [
+                391,
+                293,
+                475,
+                363
+              ]
+            },
+            {
+              "pixels": 4493,
+              "score": 751375,
+              "bbox": [
+                559,
+                274,
+                645,
+                345
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger/sister-bloom-outfit-blink-192.webp",
+          "sha256": "c64f7a8a7baac87ef800da5f1f5787953fa4cf78d5094eb4c37733b27c0ae54f",
+          "bytes": 37126,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger/sister-bloom-outfit-blink-384.webp",
+          "sha256": "da64853774b6546b7eeb4c4277ad682352f70b3a52818b84a8a74456523ca73a",
+          "bytes": 109404,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger/sister-bloom-outfit-blink-1024.webp",
+          "sha256": "e90cdf42bb4834cf7a9861686363dad4b959ff93276b314bb3a526e30d3c18ac",
+          "bytes": 495590,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "outfit-cadet",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/outfit-cadet.webp",
+        "sha256": "965ba88b1e4324340d3f3be32b27a4964cb26dc7a8a00851c1c903206df1d671"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/outfit-cadet-blink.png",
+        "sha256": "39604f000cd7f0404f1491daf9aff47bb7d890f8d2b160ea10c36805e933c29c"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/outfit-cadet-blink.png",
+          "sha256": "39604f000cd7f0404f1491daf9aff47bb7d890f8d2b160ea10c36805e933c29c"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 10359,
+          "changedFraction": 0.0065860748291015625,
+          "maskPixels": 10365,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-cadet-blink-192.webp",
+          "sha256": "faabb1554c8ecdc14973083c9806ac44b8253263fff64b14aea433247dafb42a",
+          "bytes": 31850,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-cadet-blink-384.webp",
+          "sha256": "c14eb8fbafdc9ea792e99f71f33be222779c3a83bfd84fdfe339823e62735236",
+          "bytes": 93996,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-cadet-blink-1024.webp",
+          "sha256": "2a5e1f037758dc3716a94b561e67b291300a08c1619af77c9aef0fc0b42b6dc9",
+          "bytes": 403994,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "outfit-racer",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/outfit-racer.webp",
+        "sha256": "7786471998f8a1ab2c71b8aa0d3cda15753deb0b607f64f149e75d492fe7347a"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/outfit-racer-blink.png",
+        "sha256": "6425fa821d855527c3e4bf0058f11a417ba05753100a7660275539bf3b6c46f7"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/outfit-racer-blink.png",
+          "sha256": "6425fa821d855527c3e4bf0058f11a417ba05753100a7660275539bf3b6c46f7"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 9650,
+          "changedFraction": 0.006135304768880208,
+          "maskPixels": 9656,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-racer-blink-192.webp",
+          "sha256": "5c17c2478b800c294485fe5ca579152df74dea086fb16c465a7899efcc66bf1c",
+          "bytes": 40804,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-racer-blink-384.webp",
+          "sha256": "b914f21d5b3554a3032d387d4b7fc3f19055ebf5941a001e5e37af52247eb85b",
+          "bytes": 129646,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-racer-blink-1024.webp",
+          "sha256": "429fb50c658beb6340f5074bf1c382e40b6c386596d97b56756b1e57b9a25b11",
+          "bytes": 559350,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "outfit-mecha",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/outfit-mecha.webp",
+        "sha256": "274783308b20c6a49ac2ed37c25847dffc1d8f2f7652076727186b9245252db2"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/outfit-mecha-blink.png",
+        "sha256": "f56682b329c8d27fdfcc7373c65247e5f2c12e538b0c7ee749d454d836bbd1b5"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/outfit-mecha-blink.png",
+          "sha256": "f56682b329c8d27fdfcc7373c65247e5f2c12e538b0c7ee749d454d836bbd1b5"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 10359,
+          "changedFraction": 0.0065860748291015625,
+          "maskPixels": 10365,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-mecha-blink-192.webp",
+          "sha256": "34abce71a63710c61cd1d2d9914fdefc4128b62f761f7e2dac7e63f94155fea0",
+          "bytes": 32240,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-mecha-blink-384.webp",
+          "sha256": "b9748cf5dd118fa6e0055f00aa9be43db89bb9cb71355236fa9af835e7c9f590",
+          "bytes": 94642,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-mecha-blink-1024.webp",
+          "sha256": "37398a381b1d2e29a42878b0b9a6b6e3109c6b6efa095b0312feb8ce68643afd",
+          "bytes": 401406,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "outfit-ocean",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/outfit-ocean.webp",
+        "sha256": "e31d7a2d653aa88e7b99c82ab3072b235aacb721bfe4d128ef60a31bc2b0ec82"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/outfit-ocean-blink.png",
+        "sha256": "c618ccda00da43ca58fdd0f1a4ee49139995aed8144a70b260936e3ed1895712"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/outfit-ocean-blink.png",
+          "sha256": "c618ccda00da43ca58fdd0f1a4ee49139995aed8144a70b260936e3ed1895712"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 10359,
+          "changedFraction": 0.0065860748291015625,
+          "maskPixels": 10365,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-ocean-blink-192.webp",
+          "sha256": "44644799818252e8474a53ef75fb31fecd5882308a5a73a9d1d0d7bcb96b46d4",
+          "bytes": 32210,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-ocean-blink-384.webp",
+          "sha256": "039f2878847499be195803861e20de30b6bd890bd21399cf138a55d3e4eee986",
+          "bytes": 94964,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-ocean-blink-1024.webp",
+          "sha256": "2419daf959ab7bb68898204a719cf3bb84fada3f927e2eaa1676278b44b1dea0",
+          "bytes": 403118,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "outfit-mage",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/outfit-mage.webp",
+        "sha256": "b59391826a58400262331019c120c4615355f1081e8f6934f307b5c28d743033"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/outfit-mage-blink.png",
+        "sha256": "c045875d92f03ac3a9ef4805e8dbc7045437c927e60bd3d34764471673b42989"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/outfit-mage-blink.png",
+          "sha256": "c045875d92f03ac3a9ef4805e8dbc7045437c927e60bd3d34764471673b42989"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 10359,
+          "changedFraction": 0.0065860748291015625,
+          "maskPixels": 10365,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-mage-blink-192.webp",
+          "sha256": "0c247ff932d2b7b0c51975a4951d69b6f81ea55b729c389729eb4208b386652b",
+          "bytes": 32342,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-mage-blink-384.webp",
+          "sha256": "1e4ace758c75e48289fcb473845f9e1b3c6e203cff70e3c5099c515ee93ff223",
+          "bytes": 95000,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-mage-blink-1024.webp",
+          "sha256": "00a3c7c83b47b71d5a96fd4cb1a672933462559eae828d0f457e912d6612771f",
+          "bytes": 404784,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "outfit-legend",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/outfit-legend.webp",
+        "sha256": "f8ad8b03087e3d094ee57e93a1572ab555b75e95bdb50c6ff06e9d5fcf77383d"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/outfit-legend-blink.png",
+        "sha256": "0ba9947fbfa79865e4640971ba87ca3a1368ec15cb40cdb2291c56a928e7b35e"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/outfit-legend-blink.png",
+          "sha256": "0ba9947fbfa79865e4640971ba87ca3a1368ec15cb40cdb2291c56a928e7b35e"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 10359,
+          "changedFraction": 0.0065860748291015625,
+          "maskPixels": 10365,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-legend-blink-192.webp",
+          "sha256": "d0df18a9208f19b21f7b81a78178e13a0fa525b5b4c66727bd95f118fa1afd2f",
+          "bytes": 32820,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-legend-blink-384.webp",
+          "sha256": "1d62a66e7ff269e32987586b7d04a4d90e51acc3b05e37c992684b0ea29462df",
+          "bytes": 96496,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/outfit-legend-blink-1024.webp",
+          "sha256": "ab62f0390895fb0bb2b93c8cf2f8571d41ce44e5fe8ec894de80e1460b68e1c5",
+          "bytes": 403464,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "sister",
+      "skin": "sister-bloom-outfit",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/sister/sister-bloom-outfit.webp",
+        "sha256": "30f5a894c56d636b52d50017a0767a10e028e44b9364290601d5c660c5132339"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/sister/sister-bloom-outfit-blink.png",
+        "sha256": "2c5b735f6c45b270d9d0d28af4e81f64867418990a14fb13b33c96ea159041bc"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/sister/base-blink.png",
+          "sha256": "e8d57f66103696ce309444d2700f1e7a9f24b7fcf932db24e9f84ce0bae8f144"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/sister/sister-bloom-outfit-blink.png",
+          "sha256": "2c5b735f6c45b270d9d0d28af4e81f64867418990a14fb13b33c96ea159041bc"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              430,
+              233,
+              524,
+              301
+            ],
+            [
+              580,
+              219,
+              664,
+              288
+            ]
+          ],
+          "changedPixels": 10359,
+          "changedFraction": 0.0065860748291015625,
+          "maskPixels": 10365,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 2925,
+              "score": 467788,
+              "bbox": [
+                437,
+                240,
+                517,
+                294
+              ]
+            },
+            {
+              "pixels": 2547,
+              "score": 412929,
+              "bbox": [
+                587,
+                226,
+                657,
+                281
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/sister/sister-bloom-outfit-blink-192.webp",
+          "sha256": "9b9bf8ae0fa0ea5e81ca84a5d283fdfed1605357956fa96bf1a239b13ec3686e",
+          "bytes": 32192,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/sister/sister-bloom-outfit-blink-384.webp",
+          "sha256": "f6e44758dfe1bf69011742d06e07cb904aa24d488aa3eb843d03dec075d8b88a",
+          "bytes": 94650,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/sister/sister-bloom-outfit-blink-1024.webp",
+          "sha256": "d71c8135a9bdf8af9fc3810fcdd36c971a9c7b01f4fe729045e74bbf20f3e093",
+          "bytes": 403734,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "outfit-cadet",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/outfit-cadet.webp",
+        "sha256": "a8c15c93a2335b9927bc48d559cd5b64c3d8e800cf233a97efbfcc8c1fadcb6e"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/outfit-cadet-blink.png",
+        "sha256": "69a4f5b1da5dee0437ca634273742ef9b0b5c960bb23c4d4d919866c59922e5b"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/outfit-cadet-blink.png",
+          "sha256": "69a4f5b1da5dee0437ca634273742ef9b0b5c960bb23c4d4d919866c59922e5b"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 13172,
+          "changedFraction": 0.008374532063802084,
+          "maskPixels": 13177,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-cadet-blink-192.webp",
+          "sha256": "6566e5b9770b88ab3683c087964fdb2b361aed497580ba42bced99476327db6a",
+          "bytes": 33702,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-cadet-blink-384.webp",
+          "sha256": "7714dd5b83d0c4e45fccac508fc2a7be98fdc0242c2e84a33a7c34d108111abf",
+          "bytes": 98804,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-cadet-blink-1024.webp",
+          "sha256": "0382b6c9caf71054e81281d5ed7423d40f5928b1c789180373df06d986312921",
+          "bytes": 433470,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "outfit-racer",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/outfit-racer.webp",
+        "sha256": "3ec4e457f79a2776ec4ef4f6b6104c04734c5e2ad4fb25bb44529ac5c9189b56"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/outfit-racer-blink.png",
+        "sha256": "73fa9c32f29967c35ea80a0505236f0cfcf7af43b39cf40e955842a849acf059"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/outfit-racer-blink.png",
+          "sha256": "73fa9c32f29967c35ea80a0505236f0cfcf7af43b39cf40e955842a849acf059"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 10168,
+          "changedFraction": 0.006464640299479167,
+          "maskPixels": 10173,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-racer-blink-192.webp",
+          "sha256": "5dfc797043719dc6134e05f798458893101b8ad88a867ce6c955b8a1e426b985",
+          "bytes": 39568,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-racer-blink-384.webp",
+          "sha256": "2e8a1335dfaaf795258cab00c055a1f0bdc9a2a01b51b71f853181575f457dce",
+          "bytes": 122886,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-racer-blink-1024.webp",
+          "sha256": "7cfac2fc2253f36b3706b187bb043a132df3a6211b548b379037b1a4cb1cc4d5",
+          "bytes": 538628,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "outfit-mecha",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/outfit-mecha.webp",
+        "sha256": "45d0326f84d26877c72e1061a4cf455069262a0e4e50d765426b9a89c1eda1f4"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/outfit-mecha-blink.png",
+        "sha256": "c989e7a7bd860121d2358ab849919ffd010b3509579c746f4b512e1a52b50390"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/outfit-mecha-blink.png",
+          "sha256": "c989e7a7bd860121d2358ab849919ffd010b3509579c746f4b512e1a52b50390"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 13172,
+          "changedFraction": 0.008374532063802084,
+          "maskPixels": 13177,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-mecha-blink-192.webp",
+          "sha256": "088fd6caf893ca4eaebbbd22659c2bde22383a58f619a453f1f3490c8c6f6291",
+          "bytes": 34224,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-mecha-blink-384.webp",
+          "sha256": "f564571ff5f9be3c6f65523852c01632053f2c5b9a26fb51fe25ae100c08d72c",
+          "bytes": 99840,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-mecha-blink-1024.webp",
+          "sha256": "142101772bd279c7906f79a712cd28d546e492ec1827e447445358ac1b8ae45b",
+          "bytes": 432742,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "outfit-ocean",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/outfit-ocean.webp",
+        "sha256": "2eeb5659509b7a81b32f7972e5ef2c229b0dbdae216e9e7042ebd7d8fd7808a5"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/outfit-ocean-blink.png",
+        "sha256": "db24dec26f94d88cf245ecb2a152b2c9af4acfe3d2040c0560e5fb6f807cd3e1"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/outfit-ocean-blink.png",
+          "sha256": "db24dec26f94d88cf245ecb2a152b2c9af4acfe3d2040c0560e5fb6f807cd3e1"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 13172,
+          "changedFraction": 0.008374532063802084,
+          "maskPixels": 13177,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-ocean-blink-192.webp",
+          "sha256": "447512890e6b5ece9e6cec54e36f267dd03fc6990ae40add9e63f0f0993f70e9",
+          "bytes": 34148,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-ocean-blink-384.webp",
+          "sha256": "55e0e3ae4014e9b2ec1fea672f279fad7dd5aba69e4aaa73030a7f6d9f458e63",
+          "bytes": 99700,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-ocean-blink-1024.webp",
+          "sha256": "2f63a184b9d6c0b4d35ab8e71dd48e6eb21aa4d45bdefb087cc60efcca5b94b3",
+          "bytes": 433534,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "outfit-mage",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/outfit-mage.webp",
+        "sha256": "f24cc52ede8805c58c4d1438f69ece761c71974c726135e040c696cb2d0a79ac"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/outfit-mage-blink.png",
+        "sha256": "a69aa951f807cf7449fd403b6bd93a2fde67dd732c79d0c26de587b54a8ca978"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/outfit-mage-blink.png",
+          "sha256": "a69aa951f807cf7449fd403b6bd93a2fde67dd732c79d0c26de587b54a8ca978"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 13172,
+          "changedFraction": 0.008374532063802084,
+          "maskPixels": 13177,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-mage-blink-192.webp",
+          "sha256": "7e112afde8de162eeb30bfab04ed7380abbf823019d081d2ad2e8270cc216689",
+          "bytes": 34148,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-mage-blink-384.webp",
+          "sha256": "e129753b5b3caa7cdbf054b656e34282f453b856ae7d4201dbd88a83127a8a95",
+          "bytes": 99622,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-mage-blink-1024.webp",
+          "sha256": "e8cb9a2913f2a5524909392563f509f7e4a53b7388f5c26231cf0f0900c5bf27",
+          "bytes": 435678,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "outfit-legend",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/outfit-legend.webp",
+        "sha256": "8017e8b77dc40e3aaa838f4ee9e58a8a99d6138bcdcf0876eb880befcf1e1375"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/outfit-legend-blink.png",
+        "sha256": "f5c08a1fd22b1ee229ab2241b40606000ed14fdc2f1cb711c6e759131990e3b8"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/outfit-legend-blink.png",
+          "sha256": "f5c08a1fd22b1ee229ab2241b40606000ed14fdc2f1cb711c6e759131990e3b8"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 13172,
+          "changedFraction": 0.008374532063802084,
+          "maskPixels": 13177,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-legend-blink-192.webp",
+          "sha256": "e20dde4eb7a2050cec23572b5ccaa9b7b805e0ddf2de101e38c78fe015f1c882",
+          "bytes": 34668,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-legend-blink-384.webp",
+          "sha256": "9cf83866530efaf94a4f0055fcda1d5a8601117ad48b850daa19e69dde801822",
+          "bytes": 100872,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/outfit-legend-blink-1024.webp",
+          "sha256": "55c51b6cef93e35054dab6afa088f9ce171f977dfbd03f2e5f938dd174aa460d",
+          "bytes": 433542,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    },
+    {
+      "avatarId": "younger-sister",
+      "skin": "sister-bloom-outfit",
+      "motion": "blink",
+      "master": {
+        "path": "public/assets/v6.4/runtime/younger-sister/sister-bloom-outfit.webp",
+        "sha256": "cf8dcefb433cfe9ede668605433b48c4869c0eb8de2b86cb9f8fcecccc5dc63d"
+      },
+      "source": {
+        "path": "public/assets/v6.4/character-motion-source/younger-sister/sister-bloom-outfit-blink.png",
+        "sha256": "cf646a4c25de0e89effcace20f59b713a301ec7f67784493c19718f6f1e27ee8"
+      },
+      "derivation": {
+        "method": "reviewed-native-open-to-blink-eye-delta-on-same-rig",
+        "defaultBlinkSource": {
+          "path": "public/assets/v6.4/character-motion-source/younger-sister/base-blink.png",
+          "sha256": "ca6ce6a9f59280dd3daf526aef9700112eb6dfcc76bfad8aca3fadf54e41c428"
+        },
+        "eligibility": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/transfer-eligibility-summary.json",
+          "sha256": "21c3264d6267a152fc0a36e0dc59a1ab7b02acdeadfdb2333ac0793aeb2d2334"
+        },
+        "candidateManifest": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidate-manifest.json",
+          "sha256": "420d09e32f8a501508667c0dd9100f51e417d58ff35a6ddfd1059d5fbf54d56b"
+        },
+        "visualAdmission": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/candidate-visual-admission-summary.json",
+          "sha256": "62f11719c199f9d14c07ff7b30fe3425b13a082856ae757ff80a569cdea3ed71"
+        },
+        "sourceCandidate": {
+          "path": "qa/art-gate/attempts/20260916_p10_motion_coverage/derived-candidates/character/younger-sister/sister-bloom-outfit-blink.png",
+          "sha256": "cf646a4c25de0e89effcace20f59b713a301ec7f67784493c19718f6f1e27ee8"
+        },
+        "metrics": {
+          "boxes": [
+            [
+              349,
+              243,
+              450,
+              320
+            ],
+            [
+              510,
+              218,
+              611,
+              300
+            ]
+          ],
+          "changedPixels": 13172,
+          "changedFraction": 0.008374532063802084,
+          "maskPixels": 13177,
+          "outsideMaskChangedPixels": 0,
+          "alphaExact": true,
+          "anchorComponents": [
+            {
+              "pixels": 3520,
+              "score": 541066,
+              "bbox": [
+                356,
+                250,
+                443,
+                313
+              ]
+            },
+            {
+              "pixels": 4034,
+              "score": 621378,
+              "bbox": [
+                517,
+                225,
+                604,
+                293
+              ]
+            }
+          ]
+        }
+      },
+      "displayVariants": [
+        {
+          "width": 192,
+          "height": 288,
+          "path": "public/assets/v6.4/character-motion/younger-sister/sister-bloom-outfit-blink-192.webp",
+          "sha256": "913bd1ceb47cea28802614c8fd1a69d0927b7f0d570975c3fc11fc7266b6b5ad",
+          "bytes": 34018,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 384,
+          "height": 576,
+          "path": "public/assets/v6.4/character-motion/younger-sister/sister-bloom-outfit-blink-384.webp",
+          "sha256": "335407d77b9f82a300ecb242973d359e11fd1a0857b5b5345d0a11836b0311e2",
+          "bytes": 99330,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        },
+        {
+          "width": 1024,
+          "height": 1536,
+          "path": "public/assets/v6.4/character-motion/younger-sister/sister-bloom-outfit-blink-1024.webp",
+          "sha256": "6260cac393a248ab9d0c5474ea17f5aa0cabb70dcbf3117f05cc6053912484b3",
+          "bytes": 435672,
+          "alphaExact": true,
+          "visibleRgbMAE": 0.0
+        }
+      ],
+      "productionUrlPass": "PENDING"
+    }
+  ]
+}

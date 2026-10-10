@@ -1,0 +1,133 @@
+/* Reward ceremony: one soft reveal around the learner; no falling ribbons. */
+.v653-reward-ceremony.v4-reward-scrim {
+  background:rgba(14,24,49,.70);
+  backdrop-filter:blur(12px);
+  padding:16px;
+}
+.v653-reward-ceremony .v4-reward-modal {
+  width:min(480px,100%);
+  max-height:calc(100dvh - 32px);
+  border:1px solid #d5e2f0;
+  border-radius:30px;
+  padding:12px 24px 24px;
+  background:radial-gradient(ellipse at 50% 18%,#fff9da,transparent 42%),linear-gradient(160deg,#fff,#f1f6fc);
+  color:#243957;
+  box-shadow:0 24px 80px rgba(5,20,48,.28),inset 0 1px #fff;
+  animation:v653RewardEnter 420ms cubic-bezier(.2,.7,.25,1) both;
+}
+.v653-reward-ceremony .v4-reward-skip {
+  position:relative;
+  align-self:flex-end;
+  top:auto;
+  right:auto;
+  flex:none;
+  min-height:44px;
+  margin:0 -8px 2px 0;
+  border:0;
+  background:transparent;
+  color:#52647c;
+  font-size:14px;
+}
+.v653-reward-ceremony .v64-reward-content { padding:0 2px 4px; }
+.v653-reward-ceremony .v653-reward-portrait {
+  width:170px;
+  height:170px;
+  align-items:center;
+  position:relative;
+  isolation:isolate;
+  margin:0 auto 16px;
+  border-radius:50%;
+  background:linear-gradient(145deg,#fffdf1,#f6e5ac);
+  border:1px solid #e9d7a4;
+  box-shadow:0 0 0 7px rgba(249,226,161,.23),0 12px 26px rgba(154,116,30,.12);
+  animation:v653RewardPortrait 700ms cubic-bezier(.2,.7,.25,1) both;
+}
+.v653-reward-ceremony .v653-reward-portrait .avatar-renderer { --avatar-renderer-size:160px; }
+.v653-reward-medal { width:128px; height:128px; object-fit:contain; }
+.v653-reward-seal {
+  position:absolute;
+  right:4px;
+  bottom:2px;
+  display:grid;
+  place-items:center;
+  width:36px;
+  height:36px;
+  border:3px solid #fff;
+  border-radius:50%;
+  color:#fff;
+  background:#238667;
+  box-shadow:0 3px 8px #183e3326;
+}
+.v653-reward-seal svg { width:20px; height:20px; stroke-width:3px; }
+.v653-reward-ceremony .v4-reward-kicker { font-size:14px; color:#806124; letter-spacing:.05em; }
+.v653-reward-ceremony .v4-reward-modal h2 { font-size:clamp(26px,5vw,34px); line-height:1.25; margin:8px 0; text-wrap:balance; }
+.v653-reward-ceremony .v64-reward-content > p { color:#52647c; font-size:15px; line-height:1.6; overflow-wrap:anywhere; margin:0 auto 20px; max-width:30ch; }
+.v653-reward-ceremony .v4-reward-resource-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.v653-reward-ceremony .v4-reward-resource-grid[data-resource-count="1"] { grid-template-columns:minmax(0,200px); justify-content:center; }
+.v653-reward-ceremony .v4-reward-resource-grid > div { min-height:74px; grid-template-columns:26px auto; column-gap:8px; row-gap:1px; padding:10px; background:#fff; border:1px solid #dce5ef; border-radius:18px; box-shadow:0 3px 8px #233e6210; justify-content:center; }
+.v653-reward-ceremony .v4-reward-resource-grid svg { grid-row:1/3; color:#b87c16; width:24px; height:24px; }
+.v653-reward-ceremony .v4-reward-resource-grid strong { color:#273f61; font-size:24px; line-height:1.2; white-space:nowrap; }
+.v653-reward-ceremony .v4-reward-resource-grid span { color:#52647c; font-size:13px; white-space:nowrap; }
+.v653-reward-ceremony .v4-reward-continue { width:100%; min-height:52px; margin-top:18px; color:#fff; background:linear-gradient(180deg,#397ba8,#26658f); border:1px solid #235d85; box-shadow:0 3px 0 #194e72; border-radius:16px; font-size:16px; }
+.v653-reward-ceremony :is(.v4-new-badge,.v4-level-up-banner) { flex-wrap:wrap; background:#f3edff; border-color:#dcd0f0; color:#57417f; }
+.v653-reward-ceremony :is(.v4-new-badge,.v4-level-up-banner) > span { color:#57417f; }
+.v653-reward-ceremony .v64-level-transition { color:#57417f; }
+.v653-reward-ceremony .v64-level-transition > small { color:#52647c; }
+.v653-reward-ceremony :is(button:focus-visible) { outline:3px solid #715dc7; outline-offset:3px; }
+
+/* The lesson podium keeps the accepted raster badges and removes both legacy
+   pseudo-elements, including the old !important ribbon background. */
+.v4-quest-shell .v653-reward-podium::before,
+.v4-quest-shell .v653-reward-podium::after { content:none; }
+.v4-quest-shell .v653-reward-podium {
+  border:1px solid #dce5ef;
+  background:radial-gradient(ellipse at 50% 8%,#fff4cb,transparent 48%),linear-gradient(150deg,#fff,#edf5fb);
+  box-shadow:inset 0 1px #fff,0 8px 26px #22416d0d;
+}
+.v4-quest-shell .v653-reward-podium .v4-reward-orbit {
+  position:relative;
+  align-items:center;
+  min-height:126px;
+  animation:v653RewardPortrait 700ms cubic-bezier(.2,.7,.25,1) both;
+}
+.v4-quest-shell .v653-reward-podium .v4-reward-orbit img { animation:none; filter:drop-shadow(0 6px 7px #7b5f2226); }
+.v4-quest-shell .v653-reward-podium .v4-reward-orbit img:nth-child(2) { transform:scale(1.22); }
+.v4-quest-shell .v653-reward-podium .v4-reward-values { flex-wrap:wrap; }
+.v4-quest-shell .v653-reward-podium .v4-reward-values > span { white-space:nowrap; }
+.dark .v653-reward-ceremony .v4-reward-modal { background:radial-gradient(ellipse at 50% 12%,#4d482f,transparent 45%),linear-gradient(160deg,#26334b,#202a40); color:#f7f9ff; border-color:#56627c; }
+.dark .v653-reward-ceremony :is(.v4-reward-skip,.v64-reward-content > p,.v4-reward-resource-grid span,.v64-level-transition > small) { color:#c1cee0; }
+.dark .v653-reward-ceremony .v4-reward-kicker { color:#efd598; }
+.dark .v653-reward-ceremony .v4-reward-resource-grid > div { background:#303f58; border-color:#50617b; }
+.dark .v653-reward-ceremony .v4-reward-resource-grid strong { color:#fff; }
+.dark .v653-reward-ceremony .v4-reward-resource-grid svg { color:#f2cc77; }
+@keyframes v653RewardEnter { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+@keyframes v653RewardPortrait { from { opacity:0; transform:translateY(8px) scale(.96); } to { opacity:1; transform:none; } }
+@media (max-width:480px), (max-height:700px) {
+  .v653-reward-ceremony .v4-reward-modal { padding:8px 16px 18px; }
+  .v653-reward-ceremony .v653-reward-portrait { width:112px; height:112px; margin-bottom:14px; }
+  .v653-reward-ceremony .v653-reward-portrait .avatar-renderer { --avatar-renderer-size:110px; }
+  .v653-reward-medal { width:90px; height:90px; }
+  .v653-reward-ceremony .v4-reward-resource-grid[data-resource-count="4"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .v653-reward-ceremony .v4-reward-modal,
+  .v653-reward-ceremony .v653-reward-portrait,
+  .v4-quest-shell .v653-reward-podium .v4-reward-orbit { animation:none; }
+}
+:root[data-motion-effects='false'] .v653-reward-ceremony .v4-reward-modal,
+:root[data-motion-effects='false'] .v653-reward-ceremony .v653-reward-portrait,
+:root[data-motion-effects='false'] .v4-quest-shell .v653-reward-podium .v4-reward-orbit { animation:none; }
+/* Short phones retain the new badge in the first view alongside the action. */
+@media (max-height:620px) {
+  .v653-reward-ceremony .v653-reward-portrait { width:80px; height:80px; margin-bottom:10px; }
+  .v653-reward-ceremony .v653-reward-portrait .avatar-renderer { --avatar-renderer-size:78px; }
+  .v653-reward-ceremony .v4-reward-modal h2 { font-size:24px; margin:4px 0; }
+  .v653-reward-ceremony .v64-reward-content > p { font-size:14px; line-height:1.45; margin-bottom:12px; }
+  .v653-reward-ceremony .v4-reward-resource-grid > div { min-height:62px; padding:8px; }
+  .v653-reward-ceremony .v4-new-badge { display:grid; grid-template-columns:82px minmax(0,1fr); column-gap:10px; row-gap:2px; margin-top:10px; padding:8px 12px; text-align:left; }
+  .v653-reward-ceremony .v4-new-badge > svg { display:none; }
+  .v653-reward-ceremony .v4-new-badge > .v30-game-badge { grid-column:1; grid-row:1/3; }
+  .v653-reward-ceremony .v4-new-badge > :is(span,strong) { grid-column:2; min-width:0; overflow-wrap:anywhere; }
+  .v653-reward-ceremony .v4-new-badge > span { align-self:end; }
+  .v653-reward-ceremony .v4-reward-continue { margin-top:12px; }
+}

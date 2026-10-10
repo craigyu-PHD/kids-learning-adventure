@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {assertV652NativeRepairAdmission,V652_NATIVE_REPAIR_LOCK} from './v652_native_repair_admission';
+import {assertV652NewDetailAdmission} from './v652_new_detail_admission';
+const ROOT='qa/v652/astra/20260927-native-repair-admission/';
+const manifest=JSON.parse(fs.readFileSync(ROOT+'manifest-frozen.json','utf8'));
+const positive=assertV652NativeRepairAdmission(manifest);
+const historical=assertV652NewDetailAdmission(positive.historicalManifest);
+assert.equal(positive.pairCount,400);assert.equal(positive.bindingCount,488);assert.equal(historical.detailCount,92);
+const results:{name:string;status:string;error:string}[]=[];
+function negative(name:string,action:()=>unknown){let error='';try{action();}catch(e){error=String(e);}assert(error,`${name} unexpectedly admitted`);results.push({name,status:'REJECTED',error:error.slice(0,800)});}
+const mutate=(fn:(m:typeof manifest)=>void)=>{const m=structuredClone(manifest);fn(m);return()=>assertV652NativeRepairAdmission(m);};
+negative('wrong-avatar',mutate(m=>{m.accessories.find((x:{id:string})=>x.id==='hair-spike').defaultSkinDetails.brother.overlay=m.accessories.find((x:{id:string})=>x.id==='hair-spike').defaultSkinDetails.sister.overlay;}));
+negative('missing-layer',mutate(m=>{delete m.accessories.find((x:{id:string})=>x.id==='trail-backpack').frontVariants.brother;}));
+negative('swapped-item',mutate(m=>{m.accessories.find((x:{id:string})=>x.id==='hair-comet').defaultSkinDetails.brother=m.accessories.find((x:{id:string})=>x.id==='hair-wave').defaultSkinDetails.brother;}));
+negative('catalog-mismatch',mutate(m=>{m.accessories.find((x:{id:string})=>x.id==='hair-cloud').catalogVariants.sister=m.accessories.find((x:{id:string})=>x.id==='hair-cloud').catalogVariants.brother;}));
+negative('extra-field-drift-affected',mutate(m=>{m.accessories.find((x:{id:string})=>x.id==='hair-spike').unapproved=true;}));
+negative('extra-field-drift-unaffected',mutate(m=>{m.accessories.find((x:{id:string})=>x.id==='hat-ocean').unapproved=true;}));
+negative('wrong-actual-body',mutate(m=>{m.skins.find((x:{skinId:string;avatarId:string})=>x.skinId==='outfit-racer'&&x.avatarId==='brother').path=m.skins.find((x:{skinId:string;avatarId:string})=>x.skinId==='outfit-racer'&&x.avatarId==='sister').path;}));
+negative('missing-mask',mutate(m=>{delete m.accessories.find((x:{id:string})=>x.id==='hair-wave').defaultSkinDetails.brother.hairVisibilityMask;}));
+negative('padding-drift',mutate(m=>{m.accessories.find((x:{id:string})=>x.id==='hair-comet').defaultSkinDetails.brother.canvasTopPadding=0;}));
+const lock=JSON.parse(fs.readFileSync(V652_NATIVE_REPAIR_LOCK.path,'utf8'));
+function corrupt(name:string,path:string,fn?:(b:Buffer)=>Buffer){negative(name,()=>assertV652NativeRepairAdmission(manifest,{readFile:p=>{const b=fs.readFileSync(p);return p===path?(fn?fn(b):Buffer.concat([b,Buffer.from('drift')])):b;}}));}
+corrupt('stale-source','qa/v652/root/20260927-shop-quality-reopen/spike-native-r1/native-master.png');
+corrupt('screenshot-drift',lock.files.find((x:{path:string})=>x.path.includes('native-132-integrated-light')&&x.path.endsWith('.png')).path);
+corrupt('capture-wrong-avatar',lock.batches[0].captures[0].path,b=>{const c=JSON.parse(b.toString());c.rows[0].proof[0].className=c.rows[0].proof[1].className;return Buffer.from(JSON.stringify(c));});
+corrupt('capture-missing-layer',lock.batches[2].captures[0].path,b=>{const c=JSON.parse(b.toString());c.rows.find((r:{itemId:string})=>r.itemId==='trail-backpack').proof[0].images.pop();return Buffer.from(JSON.stringify(c));});
+corrupt('review-missing-pair',lock.batches[0].review.path,b=>{const c=JSON.parse(b.toString());c.rows.pop();return Buffer.from(JSON.stringify(c));});
+corrupt('integration-duplicate-pair',lock.batches[0].integration.path,b=>{const c=JSON.parse(b.toString());c.pairs[1]=c.pairs[2];return Buffer.from(JSON.stringify(c));});
+corrupt('lock-repin-attempt',V652_NATIVE_REPAIR_LOCK.path);
+const summary={status:'PASS_SCOPED_400_ADMISSION_AND_16_NEGATIVE_CONTROLS',pairCount:positive.pairCount,bindingCount:positive.bindingCount,checkedFileCount:positive.checkedFileCount,old92Count:historical.detailCount,lockSHA256:V652_NATIVE_REPAIR_LOCK.sha256,manifestSHA256:positive.manifestSHA256,helperSHA256:crypto.createHash('sha256').update(fs.readFileSync('scripts/v652_native_repair_admission.ts')).digest('hex'),negativeControls:results,releaseAcceptance:false,mixedEquipmentAcceptance:false};
+fs.writeFileSync(ROOT+'summary.json',JSON.stringify(summary,null,2)+'\n');console.log(JSON.stringify({...summary,negativeControls:results.map(r=>({name:r.name,status:r.status}))},null,2));

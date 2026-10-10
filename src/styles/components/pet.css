@@ -1,0 +1,31 @@
+.v653-pet-companion { display:grid; grid-template-columns:120px minmax(0,1fr); align-items:center; gap:8px; padding:12px; min-width:0; }
+.v653-pet-greet { display:block; width:120px; height:140px; min-width:44px; min-height:44px; padding:0; border:0; background:transparent; border-radius:16px; cursor:pointer; }
+.v653-pet-greet:focus-visible { outline:3px solid var(--primary,#075bc7); outline-offset:2px; }
+.v653-pet-art { display:block; width:100%; height:100%; object-fit:contain; transform-origin:50% 88%; }
+.v653-pet-copy { min-width:0; overflow-wrap:anywhere; }
+.v653-pet-copy h3 { margin:0 0 6px; font-size:16px; line-height:1.4; color:var(--text); }
+.v653-pet-copy p { margin:0 0 6px; font-size:14px; line-height:1.6; color:var(--text); }
+.v653-pet-copy small { font-size:14px; line-height:1.5; color:var(--muted); }
+.v653-pet-retry { min-height:44px; padding:8px 12px; border-radius:12px; }
+.v63-equipment-stage.mode-pet { display:grid; grid-template-rows:auto 1fr auto; gap:16px; padding:18px 14px; }
+.v63-equipment-stage.mode-pet .v63-stage-backdrop { background-image:radial-gradient(ellipse at 50% 60%,#1b628e,#0a2452 78%); }
+.v63-equipment-stage.mode-pet .v63-stage-heading,
+.v63-equipment-stage.mode-pet .v63-stage-status { position:relative; inset:auto; }
+.v653-pet-stage { position:relative; display:grid; grid-template-columns:minmax(0,1fr) 112px; align-items:center; justify-content:center; gap:12px; }
+.v653-pet-companion.is-preview { display:flex; flex-direction:column; text-align:center; padding:0; }
+.v653-pet-companion.is-preview .v653-pet-greet { width:min(180px,100%); height:auto; aspect-ratio:6/7; }
+.v653-pet-companion.is-preview .v653-pet-copy h3,
+.v653-pet-companion.is-preview .v653-pet-copy p { color:#fff; }
+.v63-equipment-stage.mode-pet .v653-pet-companion .v653-pet-copy h3 { color:#fff!important; }
+.v653-pet-companion.is-preview .v653-pet-copy small { color:#d1e4f6; }
+.v653-pet-learner { display:flex; flex-direction:column; align-items:center; gap:8px; font-size:14px; max-width:140px; text-align:center; }
+.v653-mini-pet-art { display:block; width:48px; height:56px; object-fit:contain; }
+.v65-mini-preview-content.mode-pet .v65-mini-preview-visual { flex-basis:104px; width:104px; }
+@media (max-width:760px) {
+  .v653-pet-stage { grid-template-columns:minmax(0,1fr) 112px; gap:8px; }
+  .v653-pet-learner .avatar-renderer { width:88px!important; height:106px!important; }
+}
+@keyframes v653-pet-greeting { 0%,100% { transform:rotate(0); } 35% { transform:rotate(-2deg); } 70% { transform:rotate(2deg); } }
+@media (prefers-reduced-motion:no-preference) {
+  html:not([data-motion-effects="false"]) .v653-pet-companion.is-greeting .v653-pet-art { animation:v653-pet-greeting 700ms ease-out 1; }
+}
